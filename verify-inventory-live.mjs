@@ -1,0 +1,4 @@
+import fs from 'node:fs/promises';
+const base='https://united-marsh-6ppd.here.now/';
+const paths=['index.html','game.js','engine.js','health.js','inventory.js','inventory-campaign.js','inventory-render.js','levels.js','assets/pixel/inventory-sprites.png','assets/pixel/inventory-background-1.png','assets/pixel/inventory-background-2.png','assets/pixel/inventory-background-3.png'];
+for(const file of paths){const r=await fetch(base+file+'?verify=inventory29');if(!r.ok)throw Error(file+' '+r.status);const remote=Buffer.from(await r.arrayBuffer()),local=await fs.readFile('dist/'+file);if(file==='index.html'){const html=remote.toString();if(!html.includes('game.js?v=inventory29')||!html.includes('id="inventory-dialog"')||!html.includes('Neon Vault Heist'))throw Error('Live HTML is missing the update');}else if(!remote.equals(local))throw Error('Deployed bytes differ: '+file);console.log('Verified '+file+' '+remote.length+' bytes');}

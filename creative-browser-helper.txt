@@ -1,0 +1,8 @@
+ const machine=async()=>(await state()).puzzle.machine;
+ const waitFor=async(check,label)=>{const until=Date.now()+20000;while(Date.now()<until){if(check(await state()))return;await wait(40);}throw Error(label+' '+JSON.stringify(await state()));};
+ const faceLeft=async()=>{await page.keyboard.down('ArrowLeft');await wait(70);await page.keyboard.up('ArrowLeft');await wait(50);};
+ const use=async id=>{await select(id);await press('e');};
+ const shoot=async()=>{await select(1);await faceRight();await press('x');await wait(1400);};
+ const bash=async x=>{await move(0,x-120);await page.keyboard.down('ArrowRight');await wait(335);await press('x');await page.keyboard.up('ArrowRight');await wait(300);};
+ const check=async(key,value=true)=>{const g=await machine();if(g[key]!==value)throw Error(key+' expected '+value+' got '+JSON.stringify(g));};
+ await page.locator('#rounds').click();await page.locator('button[data-round="ROUND"]').click();await wait(350);

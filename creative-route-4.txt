@@ -1,0 +1,3 @@
+await bash(320);await check('brake');await move(1,420);await shoot();await check('signal');await move(2,575);await faceRight();await press('x');await move(2,1060);await check('parked');
+await page.screenshot({path:'output/playwright/creative/kart-garage.png'});
+for(const id of [0,1,2])await move(id,1340);

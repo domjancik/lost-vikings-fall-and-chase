@@ -1,0 +1,7 @@
+await move(1,405);await faceRight();await press('z');
+await move(0,210);await jump(300);await move(0,350);await jump(440);await move(0,490);await jump(580);await jump(680);await requireFlag('fuse');
+await move(0,200);await wait(1200);await move(0,610);await press('e');await requireFlag('power');
+await move(2,1140);await faceRight();await press('x');await move(1,1080);await faceRight();await press('x');await wait(600);
+if((await state()).puzzle.turret)throw Error('Pub arcade did not shut down');
+await page.screenshot({path:'output/playwright/creative/pub-arcade-shutdown.png'});
+for(const id of [0,1,2])await move(id,1340);

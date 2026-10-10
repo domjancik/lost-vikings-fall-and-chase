@@ -1,0 +1,5 @@
+from pathlib import Path
+s=Path('browser-vertical39-sky.js').read_text(encoding='utf-8-sig').replace('width:1440,height:900','width:390,height:844').replace('data-round="9"','data-round="10"').replace('vertical39-sky-cleared','vertical39-organ-cleared-mobile')
+start=s.index('await wait(.5);await move(1,230);');end=s.index('return read();});',start)
+s=s[:start]+'''await wait(.5);await board(430);await move(2,980);await wait(1);await move(1,900);await wait(.6);await move(1,930);await face(1,1);await tick({sword:true});if(!read().puzzle.machine.reed)throw Error('Treble reed');await move(0,1030);select(0);await tick({jump:true});await move(0,1120);await wait(.6);await use(0);if(!read().puzzle.machine.resonance)throw Error('Resonator');await move(0,1000);await wait(.5);await board(815);await move(2,300);await wait(2);await move(1,200);await wait(.6);await face(1,1);await tick({sword:true});if(!read().puzzle.machine.bass)throw Error('Bass reed');select(2);await tick({action:true});await wait(.6);await move(1,260);await move(0,260);await wait(.7);await move(2,260);await wait(.4);'''+s[end:]
+Path('browser-vertical39-organ.js').write_text(s,encoding='utf-8')

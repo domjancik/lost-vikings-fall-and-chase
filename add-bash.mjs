@@ -1,0 +1,2 @@
+import fs from 'node:fs';
+for(const file of ['engine.js','campaign.js']){let e=fs.readFileSync(file,'utf8');const anchor=' if(input.sword&&a.id===1';const i=e.indexOf(anchor);e=e.slice(0,i)+" if(input.action&&a.id===0&&a.ground&&Math.abs(a.vx)>=170&&s.cooldown===0){a.bash=.2;s.cooldown=.4;}\n if(a.id===0&&a.bash>0&&s.crate&&(455-a.x)*a.face>0&&Math.abs(a.x-455)<80&&a.y>500)s.crate=false;\n"+e.slice(i);fs.writeFileSync(file,e);}

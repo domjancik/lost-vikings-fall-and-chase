@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path('parallax-render.js');s=p.read_text(encoding='utf-8-sig').replace('round,camera,view){farImages??=', 'round,camera,view,assets={}){if(!assets.far)farImages??=').replace('distant=farImages[round]', 'distant=assets.far||farImages[round]').replace('const near=separateInterior(image,round);','const near=assets.near||separateInterior(image,round);');p.write_text(s,encoding='utf-8')
+p=Path('game-feel.test.js');s=p.read_text(encoding='utf-8-sig').replace('{width:720,height:395});assert.ok(alphas.every', '{width:720,height:395},{far:{complete:true,naturalWidth:720,naturalHeight:480},near:{width:720,height:480}});assert.equal(alphas.length,2);assert.ok(alphas.every');p.write_text(s,encoding='utf-8')
+p=Path('normalize-depth.py');s=p.read_text(encoding='utf-8-sig').replace('720,480 if i==0 else 405', '720,round(720*im.height/im.width)');p.write_text(s,encoding='utf-8')

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vercel/
+output/
+.herenow/
+.playwright-cli/
+
+.vercel
+
+# Local runtimes and secrets
+tools/pixel-fixer-venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+

@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+let route=fs.readFileSync('output/playwright/play-round-5.js','utf8');
+route=route.replace(" const select=async id=>{await page.keyboard.press(String(id+1));await wait(30);};"," const select=async id=>{await page.locator('button[data-hero=\"'+id+'\"]').click();await wait(30);};\n const down=async key=>{const b=await page.locator('[data-key=\"'+(key==='ArrowRight'?'right':'left')+'\"]').boundingBox();await page.mouse.move(b.x+b.width/2,b.y+b.height/2);await page.mouse.down();};\n const up=async()=>page.mouse.up();\n const tap=async key=>page.locator('[data-key=\"'+({Space:'jump',z:'sword',x:'action',e:'interact'}[key])+'\"]').click();");
+route=route.replaceAll("page.keyboard.down(direction)","down(direction)").replaceAll("page.keyboard.up(held)","up()").replaceAll("page.keyboard.down('ArrowRight')","down('ArrowRight')").replaceAll("page.keyboard.up('ArrowRight')","up()").replaceAll("page.keyboard.press('Space')","tap('Space')").replaceAll("page.keyboard.press(key)","tap(key)");
+fs.writeFileSync('output/playwright/play-round-5-overlay.js',route);

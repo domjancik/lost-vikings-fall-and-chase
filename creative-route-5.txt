@@ -1,0 +1,4 @@
+await move(1,890);await faceRight();await press('z');await check('ore');for(let i=0;i<3;i++)await bash(520);await check('air',3);
+await move(2,780);await faceRight();await press('x');await waitFor(st=>st.puzzle.machine.heat===3,'dragon forge heat');
+await page.screenshot({path:'output/playwright/creative/dragon-forge.png'});
+for(const id of [0,1,2])await move(id,1000);

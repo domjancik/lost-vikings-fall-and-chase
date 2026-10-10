@@ -1,0 +1,14 @@
+import fs from 'node:fs';
+let e=fs.readFileSync('engine.js','utf8').replace("s.bridge=s.power&&(s.latch||s.heroes.some(h=>Math.abs(h.x-745)<30&&h.y>530&&h.y<580));","s.bridge=false;").replace("const floors=[{x:0,y:610,w:800},{x:990,y:610,w:450},...platforms];if(s.bridge)floors.push({x:800,y:610,w:190});","const floors=[{x:0,y:610,w:1440},...platforms];").replace("s.turret&&s.latch&&","s.turret&&s.power&&").replace("s.won=s.power&&s.heroes.every","s.won=s.power&&!s.turret&&s.heroes.every");
+fs.writeFileSync('engine.js',e);
+let i=fs.readFileSync('interactions.js','utf8');const a=i.indexOf(" if(s.round===0)return"),b=i.indexOf(" const g=s.machine",a);i=i.slice(0,a)+" if(s.round===0)return [{...common,id:'panel',x:610,y:566,title:'FUSE PANEL',done:s.power,ready:s.fuse,reason:'Find the spare fuse on the highest shelf first.',run:()=>{s.power=true;return 'Circuit restored. Olaf grounds the rogue arcade with his front shield; Baleog shoots from behind.';}}];\n"+i.slice(b);
+i=i.replace("!s.latch?'Hold the plate. Cross with another Viking and USE the far latch.':'Bring all three Vikings to the powered exit.'","s.turret?'Olaf: front shield RIGHT at SHIELD HERE. Baleog: shoot the rogue arcade from behind.':'Bring all three Vikings to the powered exit.'");
+fs.writeFileSync('interactions.js',i);
+let w=fs.readFileSync('world-render.js','utf8'),x=w.indexOf(' const edge=s.round?'),y=w.indexOf(' function plate(',x);
+w=w.slice(0,x)+" deck(0,610,1440,true);\n"+w.slice(y);
+w=w.replace(" if(m!=='runes'&&m!=='altar')plate(745,s.bridge,m==='bumper'||m==='brake'?(s.relay?'HOLD':'GROUND · SHIELD ↑'):'HOLD');","");
+w=w.replace("objects.draw(ctx,row,s.power?1:0,1310","objects.draw(ctx,row,s.power&&!s.turret?1:0,1310").replace("text(s.power?'EXIT · ALL THREE':'PORTAL LOCKED'","text(s.power&&!s.turret?'EXIT · ALL THREE':'ARCADE LOCKED'");
+fs.writeFileSync('world-render.js',w);
+let h=fs.readFileSync('index.html','utf8').replace('Explore the overhead platforms, repair the fuse panel with E, and figure out how to keep the bridge open. E interacts with the latch on the far side. Get all three heroes to the powered green exit to finish. Shutting down the arcade makes the crossing safer.','Explore the overhead shelves and repair the fuse panel with E. Olaf faces right and raises his front shield at SHIELD HERE to open the rogue arcade’s armor. Baleog shoots from behind him. Bring all three to the unlocked exit.');
+fs.writeFileSync('index.html',h);
+for(const f of ['game.js','engine.js','campaign.js','world-render.js','index.html'])fs.writeFileSync(f,fs.readFileSync(f,'utf8').replaceAll('creative11','creative12'));

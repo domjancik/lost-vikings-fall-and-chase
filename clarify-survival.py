@@ -1,0 +1,4 @@
+from pathlib import Path
+q=Path('levels.js');s=q.read_text(encoding='utf-8-sig').replace('Baleog cuts the hanging ore chain. Erik run-bashes the bellows three times. Olaf faces RIGHT with his front shield in the dragon’s firing lane to redirect dragon fire into the forge.', 'Baleog cuts the ore chain, then retreats. Put Olaf near the crucible facing RIGHT with his front shield between the crew and dragon BEFORE Erik run-bashes the bellows. Three redirected flames forge the key.');q.write_text(s,encoding='utf-8')
+q=Path('interactions.js');s=q.read_text(encoding='utf-8-sig').replace("g.air===0?'Erik: run-bash the bellows. Pressure '","g.air===0?'First position Olaf shield RIGHT near the crucible; keep crew to his left. Erik: run-bash bellows. Pressure '");q.write_text(s,encoding='utf-8')
+q=Path('world-render.js');s=q.read_text(encoding='utf-8').replace("mark(780,'DEFLECT · SHIELD →'", "mark(940,'SHIELD → · CREW STAY LEFT'");q.write_text(s,encoding='utf-8')

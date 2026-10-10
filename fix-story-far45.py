@@ -1,0 +1,5 @@
+from pathlib import Path
+p=Path('story-render.js');s=p.read_text(encoding='utf-8-sig');s="import {storyFarLayout} from './story-background.js?v=pipeline44';\n"+s;s=s.replace('size=1200,start=snapPixel(camera.x-camera.x*.16),top=snapPixel(camera.y+view.height/2-size/2-camera.y*.08)','layout=storyFarLayout(camera,view)');s=s.replace('for(let i=-1;i<4;i++)far.draw(ctx,index,start+i*size,top,size,size);','for(const x of layout.tiles)far.draw(ctx,index,x,layout.y,layout.size,layout.size);');s=s.replace("}\nexport function drawStoryWorld", " return layout;\n}\nexport function drawStoryWorld",1);p.write_text(s,encoding='utf-8')
+p=Path('game.js');s=p.read_text(encoding='utf-8-sig').replace('drawStoryBackground(ctx,s,{x:camera,y:vertical},viewport);',"canvas.dataset.storyBackground=JSON.stringify(drawStoryBackground(ctx,s,{x:camera,y:vertical},viewport));");p.write_text(s,encoding='utf-8')
+for name in ['build.mjs','publish-update.mjs']:
+ p=Path(name);s=p.read_text(encoding='utf-8-sig').replace("'story-render.js',","'story-render.js','story-background.js',");p.write_text(s,encoding='utf-8')

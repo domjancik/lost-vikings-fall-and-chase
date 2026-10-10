@@ -1,0 +1,1 @@
+async page=>{await page.setViewportSize({width:1088,height:500});await page.goto('http://127.0.0.1:3000/output/playwright/observatory-pipeline44-comparison.html');for(const im of await page.locator('img').all())await im.evaluate(e=>e.decode());await page.screenshot({path:'output/playwright/observatory-pipeline44-comparison.png'});}

@@ -1,0 +1,14 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {createState,step} from './engine.js';
+import {interactionObjects} from './interactions.js';
+const ticks=(s,n,input={})=>{for(let i=0;i<n;i++)step(s,i===0?input:{},1/120);};
+test('arcade rounds replace the repeated crossing with five distinct machine puzzles',()=>{assert.deepEqual([1,2,3,4,5].map(r=>createState(r).level.mechanic),['cargo','bankshot','portals','tow','forge']);for(let r=1;r<=5;r++)assert.ok(!interactionObjects(createState(r)).some(o=>o.id==='latch'));});
+test('cargo lift carries a waiting non-jumping Viking to the upper deck',()=>{const s=createState(1);s.machine.liftOn=true;s.machine.liftPause=0;const b=s.heroes[1];b.x=590;b.y=566;b.ground=true;b.support='lift';ticks(s,300);assert.ok(b.y<400);assert.equal(b.support,'lift');});
+test('a wrong pinball bank shot resets the combo rather than opening the portal',()=>{const s=createState(2);s.machine.score=1;s.shots.push({kind:'bank',x:889,y:340,v:500,vy:0,lane:1});ticks(s,4);assert.equal(s.machine.score,0);assert.equal(s.power,false);});
+test('maze portals require the bell and then transport through a wall using USE',()=>{const s=createState(3);s.heroes[0].x=340;s.heroes[0].y=566;step(s,{interact:true},1/120);assert.equal(s.heroes[0].x,340);assert.ok(s.feedback.message.includes('bash'));s.machine.bell=true;step(s,{interact:true},1/120);assert.equal(s.heroes[0].x,630);});
+test('only Olaf with a forward shield can push the stalled kart',()=>{const s=createState(4),o=s.heroes[2];o.x=575;o.y=566;o.ground=true;s.active=2;step(s,{right:true},1/120);assert.equal(s.machine.cartX,620);s.machine.brake=true;o.shield=true;for(let i=0;i<80;i++)step(s,{right:true},1/120);assert.ok(s.machine.cartX>660);});
+test('dragon fire heats the forge only with ore and bellows pressure',()=>{for(const ready of [false,true]){const s=createState(5);s.machine.ore=ready;s.machine.air=ready?2:0;s.shots.push({kind:'forge-fire',x:994,y:488,v:360,vy:0});ticks(s,4);assert.equal(s.machine.heat,ready?1:0);}});
+test('a ghost must actually reflect into its eye to open the maze curse',()=>{const s=createState(3),o=s.heroes[2];o.x=720;o.y=456;o.ground=true;o.shield=true;o.face=-1;s.shots.push({kind:'ghost',x:705,y:476,v:240,vy:0});ticks(s,80);assert.equal(s.machine.mirror,true);});
+test('pinball jackpot remains unlocked if another reflected arrow reaches a bell',()=>{const s=createState(2);s.machine.score=3;s.shots.push({kind:'bank',x:889,y:340,v:500,vy:0,lane:1});ticks(s,4);assert.equal(s.machine.score,3);assert.equal(s.power,true);});
+test('haunted portals connect chambers at different elevations',()=>{const s=createState(3);s.machine.bell=true;s.heroes[0].x=340;s.heroes[0].y=566;step(s,{interact:true},1/120);assert.equal(s.heroes[0].y,456);assert.equal(s.level.exit.y,390);});

@@ -1,0 +1,1 @@
+import fs from 'node:fs/promises';for(const f of ['game.js','portal-effects.js','world-render.js','style.css']){const r=await fetch('https://united-marsh-6ppd.here.now/'+f+'?portal=30');if(!r.ok||!Buffer.from(await r.arrayBuffer()).equals(await fs.readFile('dist/'+f)))throw Error('Live mismatch '+f);console.log('Verified '+f);}

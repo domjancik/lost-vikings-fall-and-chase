@@ -1,0 +1,9 @@
+import fs from 'node:fs';
+let m=fs.readFileSync('movement.js','utf8');m=m.replace('h.x=Math.max(20,Math.min(1415,h.x));', 'if(h.x<20||h.x>1415)h.vx=0;h.x=Math.max(20,Math.min(1415,h.x));');fs.writeFileSync('movement.js',m);
+let r=fs.readFileSync('sprite-render.js','utf8');r=r.replace(" else if(!h.ground)"," else if(h.id===2&&h.shieldPose!==undefined&&Math.abs(h.shieldPose-(h.shieldUp?1:h.shield?.4:0))>.075){pose=h.shieldUp?'shield-raise':'shield-lower';frame=clamp(Math.floor(h.shieldPose*6),0,6);}\n else if(!h.ground)");
+r=r.replace("const leg=running?runLegs[frame]:air?[-5,5,6,3]:[0,0,0,0];", "const shieldTransition=pose==='shield-raise'||pose==='shield-lower';const shieldRise=shieldTransition?clamp((frame/6-.4)/.6,0,1):h.shieldUp?1:0;\n const leg=running?runLegs[frame]:pose==='rise'?(frame?[-8,7,12,5]:[-6,6,9,3]):pose==='fall'?(frame?[-2,3,2,0]:[-4,5,4,1]):air?[-5,5,6,3]:[0,0,0,0];");
+r=r.replace("rearY=28+(air?-8:0);", "rearY=28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);");r=r.replace("if(pose==='overhead'||pose==='float'||h.shieldUp){rearX=-20;rearY=0;}", "if(shieldRise>0){rearX=rearX*(1-shieldRise)-20*shieldRise;rearY*=1-shieldRise;}");
+r=r.replace("handY=28+(air?-8:0);", "handY=28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);");r=r.replace("if(h.shieldUp){handX=20;handY=0;}","if(shieldRise>0){handX=handX*(1-shieldRise)+20*shieldRise;handY*=1-shieldRise;}");
+r=r.replace("if(raised){rect(outline", "if(shieldTransition){const t=shieldRise,xx=14-48*t,yy=13-27*t,ww=23+45*t,hh=29-20*t;rect(outline,xx-1,yy-1,ww+2,hh+2);rect('#936b38',xx,yy,ww,hh);rect('#e7c369',xx+1,yy+1,ww-2,Math.min(5,hh-2));rect('#b7c6b4',xx+ww/2-3,yy,6,hh);rect('#f5e5b9',xx+ww/2-3,yy,2,hh);}else if(raised){rect(outline");
+fs.writeFileSync('sprite-render.js',r);
+for(const file of ['engine.js','campaign.js','game.js','index.html']){let x=fs.readFileSync(file,'utf8').replaceAll('motion5','motion6');fs.writeFileSync(file,x);}

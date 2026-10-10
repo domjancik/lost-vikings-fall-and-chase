@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+let l=fs.readFileSync('levels.js','utf8').replace("platforms:[{x:80,y:450,w:100},{x:540,y:340,w:120},{x:1180,y:470,w:130}],floors:[{x:0,y:610,w:1440}],exit:{x:1340,y:610,w:180}","platforms:[],floors:[{x:0,y:610,w:480},{x:510,y:500,w:450},{x:990,y:390,w:450}],exit:{x:1340,y:390,w:180}");
+fs.writeFileSync('levels.js',l);
+let i=fs.readFileSync('interactions.js','utf8').replace("id,x,y:566,title,done:false","id,x,y:x>990?346:x>480?456:566,title,done:false").replace("h.x=dest;h.prevX=dest;h.vx=0;","h.x=dest;h.y=dest>990?346:dest>480?456:566;h.prevX=dest;h.prevY=h.y;h.vx=0;h.vy=0;h.ground=true;");
+fs.writeFileSync('interactions.js',i);
+let c=fs.readFileSync('campaign.js','utf8').replace("m==='portals'&&Math.floor","m==='portals'&&!g.mirror&&Math.floor").replace("{x:570,y:586,v:240","{x:570,y:476,v:240").replace("p.kind==='ghost'&&o.shield&&!o.shieldUp&&o.face===-1&&Math.abs(p.x-o.x)<35","p.kind==='ghost'&&o.shield&&!o.shieldUp&&o.face===-1&&Math.abs(p.x-o.x)<35&&Math.abs(p.y-o.y-20)<30");
+fs.writeFileSync('campaign.js',c);
+let w=fs.readFileSync('world-render.js','utf8').replace("mark=(x,label,on=false)=>{tile(6,x-28,599,56,11);text(label,x,640","mark=(x,label,on=false,floor=610)=>{tile(6,x-28,floor-11,56,11);text(label,x,floor+30").replace("mark(720,'MIRROR · SHIELD ←',g.mirror);objects.draw(ctx,row,3,553,555,34,55)","mark(720,'MIRROR · SHIELD ←',g.mirror,500);objects.draw(ctx,row,3,553,445,34,55)").replace("'GHOST EYE',570,540","'GHOST EYE',570,430").replace("row,2,854,548,32,62","row,2,854,438,32,62").replace("'CURSED VINES',870,528","'CURSED VINES',870,418").replace("prop(4,o.x-34,510,68,100)","prop(4,o.x-34,o.y-56,68,100)");
+fs.writeFileSync('world-render.js',w);
+let t=fs.readFileSync('creative.test.js','utf8').replace("o.x=720;o.y=566;o.ground=true;o.shield=true","o.x=720;o.y=456;o.ground=true;o.shield=true").replace("kind:'ghost',x:705,y:586","kind:'ghost',x:705,y:476");fs.writeFileSync('creative.test.js',t);
+for(const f of ['game.js','engine.js','campaign.js','world-render.js','index.html'])fs.writeFileSync(f,fs.readFileSync(f,'utf8').replaceAll('creative12','creative13'));

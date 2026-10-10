@@ -1,0 +1,5 @@
+await bash(290);await check('bell');await move(0,340);await use(0);
+await move(2,340);await use(2);await move(2,720);await faceLeft();await press('x');await waitFor(st=>st.puzzle.machine.mirror,'ghost reflected into eye');
+await move(1,340);await use(1);await move(1,810);await faceRight();await press('z');await check('seal');
+await page.screenshot({path:'output/playwright/creative/haunted-rooms.png'});
+for(const id of [1,2,0]){await move(id,830);await use(id);await move(id,1340);}

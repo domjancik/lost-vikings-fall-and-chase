@@ -1,0 +1,16 @@
+from pathlib import Path
+base=Path('browser-collision22-round-1.js').read_text(encoding='utf-8-sig');base=base[:base.index('await page.locator',base.index('const check='))]
+base=base.replace("won:el.dataset.won==='true',", "won:el.dataset.won==='true',failed:el.dataset.failed==='true',items:JSON.parse(el.dataset.items),")
+base=base.replace('if(st.won)break;',"if(st.failed)throw Error('Viking died '+JSON.stringify(st));if(st.won)break;")
+setup='''
+ await page.setViewportSize({width:1440,height:900});await page.goto('http://127.0.0.1:3000/?inventory=29');await page.locator('#rounds').click();await page.locator('[data-round="ROUND"]').click();await wait(300);
+ const bagItem=async(id,type,close=true)=>{await select(id);await page.locator('#bag').click();const h=(await state()).heroes[id],slot=h.inventory.indexOf(type);if(slot<0)throw Error('Missing '+type+' '+JSON.stringify(h));await page.locator('[data-slot="'+slot+'"]').click();if(close)await page.locator('#use-item').click();};
+ const climb=async()=>{await move(0,240);await jump(320);await move(0,380);await jump(470);await move(0,520);await jump(610);};
+'''
+routes={6:'''await move(1,300);await faceRight();await press('Space');await move(1,350);await use(1);await climb();await use(0);await move(0,720);await wait(1600);await move(0,620);await move(1,600);
+await bagItem(0,'spice',false);await page.locator('#give-target').selectOption('1');await page.locator('#give-item').click();await page.locator('#close-inventory').click();
+await bagItem(1,'flour');await bagItem(1,'spice');await move(2,1040);await faceRight();await move(1,990);await bagItem(1,'dough');await use(1);await waitFor(st=>st.puzzle.machine.baked,'baked ticket');await use(1);await move(1,1200);await bagItem(1,'ticket');await requireFlag('power');''',7:'''await move(1,250);await faceRight();await press('Space');await move(1,300);await use(1);await climb();await use(0);await move(0,680);await wait(1600);await move(0,630);await bagItem(0,'red');await move(1,620);await bagItem(1,'lamp');await use(1);await check('sunset');await move(1,875);await faceRight();await press('Space');await check('motor');await move(1,1000);await use(1);await move(1,630);await bagItem(1,'blue');await use(1);await check('ocean');await requireFlag('power');''',8:'''await move(1,520);await use(1);await move(1,780);await faceRight();await bagItem(1,'bomb');await move(1,620);await wait(2500);await check('gate');await move(0,520);await use(0);await move(0,530);await jump(600);await move(0,650);await jump(740);await move(0,940);await faceRight();await bagItem(0,'bomb');await move(0,760);await wait(2500);await check('safe');await move(0,970);await use(0);await move(0,1180);await wait(1600);await move(0,1260);await bagItem(0,'key');await requireFlag('power');'''}
+for r,route in routes.items():
+ Path(f'browser-inventory29-round-{r}.js').write_text(base+setup.replace('ROUND',str(r))+route+'''
+ for(const id of [0,1,2])await move(id,1340);await wait(500);const final=await state();if(!final.won||final.failed||final.heroes.some(h=>h.hp<=0))throw Error('Not cleared '+JSON.stringify(final));console.log('CLEARED '+JSON.stringify(final));await page.screenshot({path:'output/playwright/inventory29-round-ROUND.png'});
+}'''.replace('ROUND',str(r)),encoding='utf-8')

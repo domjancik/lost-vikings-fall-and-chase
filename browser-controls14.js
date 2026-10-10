@@ -1,0 +1,14 @@
+async page=>{
+ await page.setViewportSize({width:390,height:844});await page.goto('https://united-marsh-6ppd.here.now/?controls=14');await page.locator('#play').click();await page.keyboard.press('F2');await page.locator('#debug-level').selectOption('0');await page.locator('#debug-go').click();await page.waitForTimeout(350);
+ const state=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),shadows:JSON.parse(c.dataset.shadows)}));
+ const right=await page.locator('[data-key=right]').boundingBox(),jump=await page.locator('[data-key=primary]').boundingBox();
+ const session=await page.context().newCDPSession(page);const point=(r,id)=>({id,x:r.x+r.width/2,y:r.y+r.height/2});
+ await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point(right,1)]});await page.waitForTimeout(160);const before=await state();
+ await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[point(right,1),point(jump,2)]});await page.waitForTimeout(130);const airborne=await state();
+ if(airborne.heroes[0].y>=540||airborne.heroes[0].x<=before.heroes[0].x)throw Error('Two-finger jump/movement failed');if(airborne.shadows[0].y!==610)throw Error('Shadow left floor');
+ await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[point(right,1)]});await page.waitForTimeout(140);if((await state()).heroes[0].x<=airborne.heroes[0].x)throw Error('Releasing jump stopped movement');await session.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+ await page.screenshot({path:'output/playwright/story41-mobile.png'});
+ for(const size of [{width:320,height:740},{width:390,height:844},{width:844,height:390}]){await page.setViewportSize(size);const boxes=await page.locator('[data-key]').evaluateAll(es=>es.map(e=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height};}));for(let i=0;i<boxes.length;i++){const a=boxes[i];if(a.x<0||a.x+a.w>size.width||a.w<44||a.h<44)throw Error('Control out of bounds');for(let j=i+1;j<boxes.length;j++){const b=boxes[j];if(a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y)throw Error('Control overlap');}}}
+ await page.keyboard.press('3');await page.keyboard.press('Space');await page.waitForTimeout(100);if(!(await state()).heroes[2].shieldUp)throw Error('Olaf primary');await page.keyboard.press('d');await page.waitForTimeout(100);if((await state()).heroes[2].shieldUp)throw Error('Olaf alternate');await page.keyboard.press('2');const x=(await state()).heroes[1].x;await page.keyboard.press('d');await page.waitForTimeout(100);if((await state()).heroes[1].x!==x)throw Error('D incorrectly moves right');await page.waitForTimeout(500);await page.keyboard.press('Space');await page.waitForTimeout(50);if(await page.locator('#game').getAttribute('data-pose')!=='sword')throw Error('Baleog primary sword');await page.screenshot({path:'output/playwright/story41-landscape.png'});
+}
+

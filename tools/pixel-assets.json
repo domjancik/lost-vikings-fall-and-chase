@@ -1,0 +1,622 @@
+[
+  {
+    "target": "assets/pixel/background-fx.png",
+    "size": [
+      512,
+      256
+    ],
+    "source": "generated/exec-226b3b77-20fd-425a-bf66-fed19c538b4d.png"
+  },
+  {
+    "target": "assets/pixel/story-far.png",
+    "size": [
+      1024,
+      512
+    ],
+    "source": "generated/exec-10435759-0761-438c-a32b-739d04c8d1dd.png"
+  },
+  {
+    "target": "assets/pixel/story-near.png",
+    "size": [
+      1024,
+      512
+    ],
+    "source": "generated/exec-f1f0010c-2de2-4f71-9675-2b16eda3b9f4.png"
+  },
+  {
+    "target": "assets/pixel/story-enemies.png",
+    "size": [
+      512,
+      512
+    ],
+    "source": "generated/exec-2ea621b5-ef7b-4d81-86e3-48ab40524f3a.png"
+  },
+  {
+    "target": "assets/pixel/story-doors.png",
+    "size": [
+      512,
+      256
+    ],
+    "source": "generated/exec-a7e1b778-3d77-451f-837f-768135294ca5.png"
+  },
+  {
+    "target": "assets/pixel/machine-states.png",
+    "size": [
+      512,
+      384
+    ],
+    "source": "generated/exec-b294503f-cd0d-46bd-b31f-3cf1494dbeab.png"
+  },
+  {
+    "target": "assets/pixel/vertical-props.png",
+    "size": [
+      512,
+      256
+    ],
+    "source": "generated/exec-ae6ea3ae-2dce-4238-a984-011dfb295e0c.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-9.png",
+    "size": [
+      720,
+      720
+    ],
+    "source": "generated/exec-006443f2-b73b-495e-b068-9df71b7ed77d.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-9.png",
+    "size": [
+      720,
+      720
+    ],
+    "source": "generated/exec-75818ceb-0d4f-464a-9be5-2ecef814af3f.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-10.png",
+    "size": [
+      720,
+      720
+    ],
+    "source": "generated/exec-38e65d68-9e7f-4027-a262-d5fe906e9eac.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-10.png",
+    "size": [
+      720,
+      720
+    ],
+    "source": "generated/exec-38973054-74b9-49fc-ab33-876c2ffaa2ae.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-0.png",
+    "size": [
+      720,
+      480
+    ],
+    "source": "generated/exec-58a68064-0f10-479f-a8bc-0443da0e0a8c.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-1.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-073fe7f4-346b-4a26-8b63-ff4b58ac4e95.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-2.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-a183ec17-aec0-4812-90e3-b1964ac1d5fc.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-3.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-f85cfbbb-c6bb-4495-a3d4-07f40f6f028c.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-4.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-05bdd9d3-8540-474b-9cc0-85d008e70aa9.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-5.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-5a60799c-c42a-4364-948f-ad43283b3183.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-6.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-a9becb87-2a9e-4271-8f99-c85874876ab0.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-7.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-d5917ce1-a83e-41c8-a82c-26acf7e1eedd.png"
+  },
+  {
+    "target": "assets/pixel/depth-near-8.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-bf0f0cf3-ac79-4206-80e0-fcd6ef467940.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-0.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-d3a1624e-a40e-471e-bbd0-bab7198c547b.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-1.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-e2cc7e8e-9685-4444-a172-2cef9873eb6d.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-2.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-db8d9923-3886-433d-9ec6-a884892972b0.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-3.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-2dcf3c40-f235-4b90-9143-6ea803a79089.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-4.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-bccbaf11-acd6-472e-985d-c3d012f5990c.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-5.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "generated/exec-639eacd5-bc98-4a09-b341-b16f4af1db87.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-6.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-b37bdc09-5015-43e2-8d2d-5118ad1a9a56.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-7.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-8230c6bb-5250-461a-9721-0f5a3c491dc5.png"
+  },
+  {
+    "target": "assets/pixel/depth-far-8.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "generated/exec-15fa49fc-9fe7-45d4-a5ff-e39b14b82776.png"
+  },
+  {
+    "target": "assets/pixel/inventory-sprites.png",
+    "size": [
+      320,
+      320
+    ],
+    "source": "assets/inventory-sprites.png",
+    "pieces": [
+      {
+        "crop": [
+          0,
+          0,
+          312,
+          315
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          0,
+          0
+        ]
+      },
+      {
+        "crop": [
+          312,
+          0,
+          623,
+          315
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          80,
+          0
+        ]
+      },
+      {
+        "crop": [
+          623,
+          0,
+          934,
+          315
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          160,
+          0
+        ]
+      },
+      {
+        "crop": [
+          934,
+          0,
+          1246,
+          315
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          240,
+          0
+        ]
+      },
+      {
+        "crop": [
+          0,
+          315,
+          312,
+          620
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          0,
+          80
+        ]
+      },
+      {
+        "crop": [
+          312,
+          315,
+          623,
+          620
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          80,
+          80
+        ]
+      },
+      {
+        "crop": [
+          623,
+          315,
+          934,
+          620
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          160,
+          80
+        ]
+      },
+      {
+        "crop": [
+          934,
+          315,
+          1246,
+          620
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          240,
+          80
+        ]
+      },
+      {
+        "crop": [
+          0,
+          620,
+          312,
+          915
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          0,
+          160
+        ]
+      },
+      {
+        "crop": [
+          312,
+          620,
+          623,
+          915
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          80,
+          160
+        ]
+      },
+      {
+        "crop": [
+          623,
+          620,
+          934,
+          915
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          160,
+          160
+        ]
+      },
+      {
+        "crop": [
+          934,
+          620,
+          1246,
+          915
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          240,
+          160
+        ]
+      },
+      {
+        "crop": [
+          0,
+          915,
+          312,
+          1262
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          0,
+          240
+        ]
+      },
+      {
+        "crop": [
+          312,
+          915,
+          623,
+          1262
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          80,
+          240
+        ]
+      },
+      {
+        "crop": [
+          623,
+          915,
+          934,
+          1262
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          160,
+          240
+        ]
+      },
+      {
+        "crop": [
+          934,
+          915,
+          1246,
+          1262
+        ],
+        "size": [
+          80,
+          80
+        ],
+        "at": [
+          240,
+          240
+        ]
+      }
+    ]
+  },
+  {
+    "target": "assets/pixel/inventory-background-1.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "assets/inventory-backgrounds.png",
+    "crop": [
+      0,
+      0,
+      1024,
+      480
+    ]
+  },
+  {
+    "target": "assets/pixel/inventory-background-2.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "assets/inventory-backgrounds.png",
+    "crop": [
+      0,
+      480,
+      1024,
+      970
+    ]
+  },
+  {
+    "target": "assets/pixel/inventory-background-3.png",
+    "size": [
+      720,
+      360
+    ],
+    "source": "assets/inventory-backgrounds.png",
+    "crop": [
+      0,
+      970,
+      1024,
+      1536
+    ]
+  },
+  {
+    "target": "assets/pixel/arcade-pub.png",
+    "size": [
+      720,
+      480
+    ],
+    "source": "assets/arcade-pub.png"
+  },
+  {
+    "target": "assets/pixel/arcade-background-1.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "assets/arcade-background-1.png"
+  },
+  {
+    "target": "assets/pixel/arcade-background-2.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "assets/arcade-background-2.png"
+  },
+  {
+    "target": "assets/pixel/arcade-background-3.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "assets/arcade-background-3.png"
+  },
+  {
+    "target": "assets/pixel/arcade-background-4.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "assets/arcade-background-4.png"
+  },
+  {
+    "target": "assets/pixel/arcade-background-5.png",
+    "size": [
+      720,
+      405
+    ],
+    "source": "assets/arcade-background-5.png"
+  },
+  {
+    "target": "assets/pixel/foreground-tiles.png",
+    "size": [
+      360,
+      270
+    ],
+    "source": "assets/foreground-tiles.png"
+  },
+  {
+    "target": "assets/pixel/world-objects.png",
+    "size": [
+      256,
+      384
+    ],
+    "source": "assets/world-objects.png"
+  },
+  {
+    "target": "assets/pixel/puzzle-machines.png",
+    "size": [
+      495,
+      198
+    ],
+    "source": "assets/puzzle-machines.png"
+  },
+  {
+    "target": "assets/pixel/parallax-scenes.png",
+    "size": [
+      720,
+      480
+    ],
+    "source": "assets/parallax-scenes.png"
+  }
+]

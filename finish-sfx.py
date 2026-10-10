@@ -1,0 +1,10 @@
+from pathlib import Path
+p=Path('sound-effects.js');s=p.read_text(encoding='utf-8-sig').replace("step:[noise", "plunger:[tone(220,950,.14,.16),tone(760,120,.45,.12,'sine',.06),noise(2200,500,.06,.1)],step:[noise");p.write_text(s,encoding='utf-8')
+p=Path('audio-events.js');s=p.read_text(encoding='utf-8-sig').replace("charged:'unlock'", "plungerAt:'plunger',charged:'unlock'")
+s=s.replace("if(g.ingredients.length>p.g.ingredients.length)","if(current.feedback!==p.feedback&&/no nearby|bag full|already at full|item kept|wrong|move the vikings/i.test(s.feedback?.message||''))add('wrong');\n if(g.ingredients.length>p.g.ingredients.length)")
+p.write_text(s,encoding='utf-8')
+p=Path('game.js');s=p.read_text(encoding='utf-8-sig').replace("pitch:e.name==='step'?[1.2,1,.75][e.id]:1", "pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5][s.round]:1");p.write_text(s,encoding='utf-8')
+p=Path('audio-events.test.js');s=p.read_text(encoding='utf-8-sig');s+='''
+test('real shield collision and reflection emit metal impacts and reflection cues',()=>{for(const round of [0,2]){const s=createState(round),observe=createSoundEvents();s.heroes[2].x=650;s.heroes[2].y=566;s.heroes[2].ground=true;s.heroes[2].face=round===0?1:-1;s.shots.push({x:round===0?700:580,y:586,v:round===0?-280:580,kind:round===0?'bolt':'arrow'});observe(s);const sounds=[];for(let i=0;i<30;i++){step(s,{},1/120);sounds.push(...observe(s).map(e=>e.name));}assert.ok(sounds.includes(round===0?'shieldHit':'reflect'),sounds.join(','));}});
+test('forge pouring and spring plunger effects sound once per physical event',()=>{const s=createState(5),observe=createSoundEvents();s.machine.ore=true;s.machine.oreCutAt=0;observe(s);const sounds=[];for(let i=0;i<200;i++){s.time+=1/120;sounds.push(...observe(s).map(e=>e.name));}assert.equal(sounds.filter(x=>x==='pour').length,1);s.machine.plungerAt=s.time;assert.ok(observe(s).some(e=>e.name==='plunger'));assert.equal(observe(s).length,0);});
+''';p.write_text(s,encoding='utf-8')

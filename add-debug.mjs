@@ -1,0 +1,10 @@
+import fs from 'node:fs';
+let html=fs.readFileSync('index.html','utf8').replace('<span id="timer">','<button id="debug" aria-label="Open debug panel">DEBUG</button><span id="timer">');
+html=html.replace('<dialog id="round-dialog">','<dialog id="debug-dialog"><button id="close-debug" class="close" aria-label="Close debug panel">×</button><span class="eyebrow">PLAYTEST TOOLS</span><h2>Skip to any level.</h2><p>Changing levels starts that puzzle fresh.</p><label for="debug-level">Level</label><select id="debug-level"></select><div class="debug-actions"><button id="debug-prev">← PREVIOUS</button><button id="debug-go">LOAD LEVEL</button><button id="debug-next">SKIP NEXT →</button></div><h3>Current puzzle status</h3><pre id="debug-status"></pre><small>F2 opens this panel. Close it to resume playing.</small></dialog><dialog id="round-dialog">');
+html=html.replaceAll('world7','world8');fs.writeFileSync('index.html',html);
+let g=fs.readFileSync('game.js','utf8').replaceAll('world7','world8');
+g=g.replace("document.querySelector('#fullscreen').onclick",fs.readFileSync('debug-snippet.txt','utf8')+"\ndocument.querySelector('#fullscreen').onclick");
+g=g.replace("if(dialog.open)return;","if(e.key==='F2'){e.preventDefault();if(debugDialog.open)debugDialog.close();else openDebug();return;}if(dialog.open||debugDialog.open||roundDialog.open)return;");
+fs.writeFileSync('game.js',g);
+for(const f of ['world-render.js','engine.js','campaign.js'])fs.writeFileSync(f,fs.readFileSync(f,'utf8').replaceAll('world7','world8'));
+fs.appendFileSync('style.css','\n#debug{font-size:10px;font-family:monospace;letter-spacing:1px}#debug-dialog select{display:block;width:100%;padding:12px;margin:12px 0;background:#17241f;color:#edf1cf;border:1px solid #728951;border-radius:6px}.debug-actions{display:flex;gap:8px;flex-wrap:wrap}.debug-actions button{padding:12px;border:1px solid #7b9558;background:#263527;color:#edf1cf;cursor:pointer}.debug-actions button:disabled{opacity:.35}#debug-status{white-space:pre-wrap;font-size:12px;line-height:1.6;color:#d3dfb9;background:#17241f;padding:14px}#debug-dialog{max-height:85dvh;overflow:auto}\n');

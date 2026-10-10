@@ -1,0 +1,2 @@
+from pathlib import Path
+p=Path('parallax-render.js');s=p.read_text(encoding='utf-8-sig');a=s.index('const farImages=');b=s.index('// Retained',a);s=s[:a]+'let farImages;const cutouts=new WeakMap();\n'+s[b:];s=s.replace('const layout=depthLayout(round,camera,view),distant=farImages[round];',"farImages??=Array.from({length:9},(_,i)=>{const image=new Image();image.src='assets/pixel/depth-far-'+i+'.png';return image;});const layout=depthLayout(round,camera,view),distant=farImages[round];");p.write_text(s,encoding='utf-8')

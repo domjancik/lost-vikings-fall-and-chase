@@ -1,0 +1,6 @@
+import {snapPixel} from './pixel-grid.js?v=far45';
+export function cellBounds(data,width,height,cols,rows,n){const x0=Math.floor(n%cols*width/cols),y0=Math.floor(Math.floor(n/cols)*height/rows),x1=Math.floor((n%cols+1)*width/cols),y1=Math.floor((Math.floor(n/cols)+1)*height/rows);let left=x1,right=x0-1,top=y1,bottom=y0-1;
+ for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)if(data[(y*width+x)*4+3]>=128){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
+ return right<left?null:{x:left,y:top,w:right-left+1,h:bottom-top+1};
+}
+export function createAtlas(src,cols,rows,trim=false){const image=new Image(),cells=[];image.onload=()=>{if(!trim)return;const c=document.createElement('canvas');c.width=image.width;c.height=image.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);const data=g.getImageData(0,0,c.width,c.height).data;for(let n=0;n<cols*rows;n++)cells[n]=cellBounds(data,c.width,c.height,cols,rows,n);};image.src=src;return {image,draw(ctx,n,x,y,w,h){if(!image.complete||!image.naturalWidth)return;const cw=image.width/cols,ch=image.height/rows,p=trim?cells[n]:{x:n%cols*cw,y:Math.floor(n/cols)*ch,w:cw,h:ch};if(p)ctx.drawImage(image,p.x,p.y,p.w,p.h,snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));}};}

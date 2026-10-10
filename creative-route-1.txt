@@ -1,0 +1,4 @@
+await move(2,230);await press('Space');await waitFor(st=>st.puzzle.machine.charged,'reactor charge');
+await move(0,260);await jump(350);await move(0,380);await jump(470);await use(0);await check('liftOn');await move(0,520);await jump(740);
+for(const id of [1,2]){await move(id,475);await waitFor(st=>st.puzzle.machine.liftY>=609,'lift lower dock');await move(id,580);await waitFor(st=>st.heroes[id].y<350&&st.heroes[id].ground,'elevator rider at top');await move(id,760);if(id===1){await move(1,850);await shoot();await check('hatch');await page.screenshot({path:'output/playwright/creative/cargo-machinery.png'});}}
+for(const id of [0,1,2])await move(id,1340);

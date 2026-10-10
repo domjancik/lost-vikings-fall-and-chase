@@ -1,0 +1,8 @@
+ await page.locator('#debug').click();await page.locator('#debug-level').selectOption('1');await page.locator('#debug-go').click();await wait(300);
+ await move(1,405);await faceRight();await press('z');await move(0,610);await press('e');
+ const feedback=await page.locator('#toast').textContent();if(!feedback.includes('core'))throw Error('Missing clear prerequisite feedback: '+feedback);if((await state()).puzzle.power)throw Error('Console powered without core');
+ await page.screenshot({path:'output/playwright/ship-lever-feedback.png'});
+ await page.locator('#debug').click();if(!(await page.locator('#debug-status').textContent()).includes('power: false'))throw Error('Debug status incorrect');
+ await page.screenshot({path:'output/playwright/mobile-debug-panel.png'});await page.locator('#debug-prev').click();await wait(200);
+ if((await state()).round!==0)throw Error('Debug previous failed after completion');await page.screenshot({path:'output/playwright/mobile-pub-foreground.png'});
+}

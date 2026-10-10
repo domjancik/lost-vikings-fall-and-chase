@@ -1,0 +1,16 @@
+from pathlib import Path
+p=Path('game.js');s=p.read_text(encoding='utf-8-sig');needle="for(let i=0;i<3;i++){const g=document.querySelector('#portrait'+i).getContext('2d');"
+s=s.replace(needle,"""for(const card of document.querySelectorAll('.hero-card')){const info=card.querySelector('div');info.classList.add('hero-info');const bag=document.createElement('span');bag.className='hud-bag';bag.setAttribute('role','group');bag.setAttribute('aria-label','Carried items');for(let slot=0;slot<4;slot++){const icon=document.createElement('canvas');icon.width=16;icon.height=16;icon.dataset.slot=String(slot);icon.setAttribute('role','img');bag.append(icon);}info.append(bag);}
+function updateHudBag(h,card){const icons=card.querySelectorAll('.hud-bag canvas');icons.forEach((icon,slot)=>{const type=h.inventory[slot],selected=slot===h.itemSlot,label=(type?itemTypes[type].name:'Empty')+(selected?' · selected':'');icon.dataset.item=type||'';icon.classList.toggle('selected',selected);icon.setAttribute('aria-label','Slot '+(slot+1)+': '+label);icon.title=label;const key=type||'empty';if(icon.dataset.painted!==key){const g=icon.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,16,16);if(!type||drawItemSprite(g,itemTypes[type].icon,8,14,12,12))icon.dataset.painted=key;}});}
+"""+needle)
+s=s.replace("el.classList.toggle('dead',!!s.heroes[i].dead);", "updateHudBag(s.heroes[i],el);el.classList.toggle('dead',!!s.heroes[i].dead);")
+p.write_text(s,encoding='utf-8')
+p=Path('inventory-render.js');s=p.read_text(encoding='utf-8-sig');s=s.replace("if(c)ctx.drawImage(image,c.x,c.y,c.w,c.h,snapPixel(x-w/2),snapPixel(y-h),snapPixel(w),snapPixel(h));}", "if(!c)return false;ctx.drawImage(image,c.x,c.y,c.w,c.h,snapPixel(x-w/2),snapPixel(y-h),snapPixel(w),snapPixel(h));return true;}");p.write_text(s,encoding='utf-8')
+p=Path('style.css');p.write_text(p.read_text(encoding='utf-8-sig')+'''
+/* Four tiny inventory slots fit inside the existing crew cards. */
+.hero-card{position:relative;gap:4px}.hero-card .hero-info{min-width:0;display:flex;flex-direction:column;gap:3px}.hero-card .hero-name{font-size:9px;line-height:10px}.hero-card>canvas{width:24px;height:27px;align-self:flex-start}.hero-card .hud-health{position:absolute;left:7px;bottom:3px;margin:0;gap:2px}.hero-card .hud-health i{width:5px;height:3px}.hud-bag{display:flex;gap:2px;line-height:0}.hero-card .hud-bag canvas{box-sizing:content-box;width:14px;height:14px;border:1px solid #675541;background:#17131deb;image-rendering:pixelated}.hero-card .hud-bag canvas.selected{border-color:#e4bf73;box-shadow:0 0 0 1px #302515}.hero-card:not(.active) .hud-bag canvas.selected{border-color:#96816a;box-shadow:none}
+@media(max-width:600px){.hero-card{padding:2px 3px;gap:3px}.hero-card>canvas{width:22px;height:27px}.hero-card .hud-health{left:4px}.hero-card .hero-name{font-size:8px}.hud-bag{gap:1px}.hero-card .hud-bag canvas{width:12px;height:12px}.hero-card .hero-info{gap:4px}}
+@media(max-height:500px){.hero-card .hero-info{gap:2px}.hero-card>canvas{height:25px}.hero-card .hud-health{bottom:2px}}
+''',encoding='utf-8')
+for p in list(Path('.').glob('*.js'))+[Path('index.html')]:
+ s=p.read_text(encoding='utf-8-sig');p.write_text(s.replace('depth35','baghud36'),encoding='utf-8')

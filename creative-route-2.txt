@@ -1,0 +1,4 @@
+await move(2,650);await faceLeft();await press('x');await move(0,335);await jump(550);await use(0);await check('lane',1);await move(1,420);await shoot();await check('score',1);
+await use(0);await use(0);await shoot();await check('score',2);await use(0);await use(0);await shoot();await check('score',3);
+await page.screenshot({path:'output/playwright/creative/bankshot-machinery.png'});
+for(const id of [0,1,2]){await move(id,100);await wait(1100);}

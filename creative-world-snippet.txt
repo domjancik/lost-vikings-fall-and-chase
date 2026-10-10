@@ -1,0 +1,52 @@
+ if(s.round){
+  const g=s.machine,prop=(n,x,y,w,h)=>puzzles.draw(ctx,Math.floor(n/5),n%5,x,y,w,h);
+  for(const f of s.level.floors)deck(f.x,f.y,f.w,true);
+  for(const p of s.level.platforms)deck(p.x,p.y,p.w);
+  const mark=(x,label,on=false)=>{tile(6,x-28,599,56,11);text(label,x,640,on?'#fff3ac':c,10);};
+  const meter=(x,y,value,max,label)=>{box('#111b26',x-42,y,84,9);box(c,x-40,y+2,80*Math.min(value/max,1),5);text(label,x,y-8,c,10);};
+  if(m==='cargo'){
+   prop(0,170,220,120,260);mark(230,'CHARGE · SHIELD ↑',g.charged);meter(230,520,g.charge,3,'REACTOR '+Math.floor(g.charge/3*100)+'%');
+   prop(1,500,g.liftY-155,180,170);deck(500,g.liftY,180);text(g.liftOn?'LIFT · BOARD WHEN LOW':'CARGO LIFT',590,g.liftY+47,c,10);
+   if(!g.hatch){objects.draw(ctx,row,3,899,340,42,50);text('BOW · HATCH LOCK',920,324,c,10);for(let y=260;y<390;y+=40)tile(3,1200,y,24,40);}
+   text('UPPER DECK →',1120,425,c,13);
+  }
+  if(m==='bankshot'){
+   tile(6,303,588,64,22);text('JUMP · PLUNGER',335,638,c,10);mark(650,'MIRROR · SHIELD ←',s.heroes[2].shield&&s.heroes[2].face===-1);
+   prop(3,610,490,80,100);prop(2,1010,230,200,210);
+   for(let i=0;i<3;i++){objects.draw(ctx,row,3,869,[440,340,240][i]-22,42,44);text(['LOW','MIDDLE','HIGH'][i],890,[440,340,240][i]-35,g.lane===i?'#fff8a8':c,11);}
+   text('COMBO: MIDDLE → LOW → HIGH',1020,140,c,14);meter(1030,472,g.score,3,'JACKPOT '+g.score+'/3');
+   text('← RETURN TO THE LEFT EXIT',260,715,c,12);
+  }
+  if(m==='portals'){
+   for(const x of [480,960])for(let y=0;y<610;y+=52)tile(3,x,y,30,52);
+   text('I · BELL CHAMBER',220,240,c,15);text('II · MIRROR CHAMBER',740,220,c,15);text('III · DEPARTURE',1210,230,c,15);
+   if(!g.bell){objects.draw(ctx,row,2,274,553,30,57);text('RUN → BASH',260,534,c,11);}
+   mark(720,'MIRROR · SHIELD ←',g.mirror);objects.draw(ctx,row,3,553,555,34,55);text(g.mirror?'EYE SILENCED':'GHOST EYE',570,540,c,10);
+   if(!g.seal){objects.draw(ctx,row,2,854,548,32,62);text(g.mirror?'Z · CUT VINES':'CURSED VINES',870,528,c,10);}
+  }
+  if(m==='tow'){
+   prop(5,g.cartX-48,540,96,70);text(g.parked?'PARKED':'OLAF · SHIELD → + WALK',g.cartX,518,c,10);
+   if(!g.brake){prop(6,295,552,50,58);text('ERIK · RUN → BASH',320,530,c,10);}
+   for(let x=390;x<1040;x+=80)text(g.brake?'·':'←',x,645,c,14);
+   text('UNDERPASS',600,474,c,12);mark(1030,'GARAGE',g.parked);
+   objects.draw(ctx,row,3,1085,550,50,60);text(g.signal?'TRAFFIC GREEN':'BOW · TRAFFIC LAMP',1110,530,g.signal?'#b6ffa2':'#ff9a83',11);
+   if(!s.power)for(let y=390;y<610;y+=44)tile(3,1190,y,24,44);
+  }
+  if(m==='forge'){
+   prop(9,1160,366,280,244);
+   if(!g.ore){prop(7,915,335,55,265);text('Z · CUT ORE CHAIN',940,316,c,11);}
+   prop(8,930,453,140,157);meter(1000,420,g.heat,3,'FORGE '+g.heat+'/3');
+   tile(3,495,553,50,57);tile(6,500,547,40,14);text('RUN → BASH · BELLOWS',520,533,c,10);meter(520,510,g.air,3,'PRESSURE '+g.air+'/3');
+   mark(780,'DEFLECT · SHIELD →',s.heroes[2].shield&&s.heroes[2].face===1);
+   text('BORROW THE DRAGON’S FIRE',1020,205,c,15);
+  }
+  for(const o of interactionObjects(s)){
+   if(o.kind==='portal'){ctx.globalAlpha=o.ready?1:.38;prop(4,o.x-34,510,68,100);ctx.globalAlpha=1;}
+   else if(o.id!=='garage-info'&&o.id!=='forge-info')tile(o.done?5:4,o.x-22,o.y+2,44,42);
+   text(o.title,o.x,o.y-14,o.done?'#fff4b2':c,10);
+  }
+  const near=nearbyInteraction(s);if(near)text(near.kind==='portal'?'USE / E · TRAVEL':near.done?'✓ ACTIVE':'USE / E',near.x,near.y-36,'#fff5c6',12);
+  const e=s.level.exit;
+  if(s.power||m!=='forge'){objects.draw(ctx,row,s.power?1:0,e.x-40,e.y-120,80,120);text(s.power?'EXIT · ALL THREE':'EXIT LOCKED',e.x,e.y-134,c,12);}
+  return;
+ }

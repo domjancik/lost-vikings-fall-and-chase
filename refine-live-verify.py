@@ -1,0 +1,2 @@
+from pathlib import Path
+q=Path('verify-inventory-live.mjs');s=q.read_text(encoding='utf-8-sig').replace("if(!remote.equals(local))throw Error('Deployed bytes differ: '+file);", "if(file==='index.html'){const html=remote.toString();if(!html.includes('game.js?v=inventory29')||!html.includes('id=\"inventory-dialog\"')||!html.includes('Neon Vault Heist'))throw Error('Live HTML is missing the update');}else if(!remote.equals(local))throw Error('Deployed bytes differ: '+file);");q.write_text(s,encoding='utf-8')

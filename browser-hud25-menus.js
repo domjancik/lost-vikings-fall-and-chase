@@ -1,0 +1,1 @@
+async page=>{await page.setViewportSize({width:1440,height:900});await page.goto('https://united-marsh-6ppd.here.now/?hud=25');await page.screenshot({path:'output/playwright/story41-title.png'});await page.locator('#rounds').click();await page.screenshot({path:'output/playwright/story41-menu.png'});}

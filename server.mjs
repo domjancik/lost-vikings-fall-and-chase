@@ -1,0 +1,3 @@
+import http from 'node:http';import fs from 'node:fs';import path from 'node:path';
+const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.png':'image/png','.json':'application/json'};
+http.createServer((req,res)=>{const p=path.resolve('.','.'+decodeURIComponent(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!p.startsWith(process.cwd()+path.sep)){res.writeHead(403);res.end();return;}fs.readFile(p,(err,data)=>{res.writeHead(err?404:200,{'Content-Type':mime[path.extname(p)]||'application/octet-stream'});res.end(err?'Not found':data);});}).listen(3000,'127.0.0.1',()=>console.log('Last Call on http://localhost:3000'));

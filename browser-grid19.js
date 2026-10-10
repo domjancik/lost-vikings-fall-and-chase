@@ -1,0 +1,6 @@
+async page=>{
+ await page.setViewportSize({width:1440,height:900});await page.goto('https://united-marsh-6ppd.here.now/?grid=19');await page.locator('#play').click();
+ await page.evaluate(()=>{window.gridIssues=[];for(const name of ['translate','rotate']){const original=CanvasRenderingContext2D.prototype[name];CanvasRenderingContext2D.prototype[name]=function(...args){if(this.canvas.height===395&&this.canvas.id!=='game'){if(name==='translate'&&args.some(v=>Math.abs(v/2-Math.round(v/2))>1e-7))window.gridIssues.push({name,args});if(name==='rotate'&&Math.abs(args[0]/(Math.PI/36)-Math.round(args[0]/(Math.PI/36)))>1e-7)window.gridIssues.push({name,args});}return original.apply(this,args);};}});
+ for(let round=0;round<6;round++){await page.locator('#debug').click();await page.locator('#debug-level').selectOption(String(round));await page.locator('#debug-go').click();await page.waitForTimeout(600);const info=await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.environment));if(Math.abs(info.phase*3-Math.round(info.phase*3))>1e-6)throw Error('Fractional animation frame');await page.screenshot({path:'output/playwright/story41-'+round+'.png'});}
+ const issues=await page.evaluate(()=>window.gridIssues);if(issues.length)throw Error('Unsnapped transforms '+JSON.stringify(issues.slice(0,5)));
+}

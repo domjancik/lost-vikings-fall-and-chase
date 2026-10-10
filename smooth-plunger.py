@@ -1,0 +1,6 @@
+from pathlib import Path
+q=Path('plunger.js');s=q.read_text(encoding='utf-8');s=s.replace('export function plungerPose(s){', '''export function updatePlunger(s,dt){const target=s.heroes.some(onPlunger)?1:0,g=s.machine,value=g.plungerCompression||0;g.plungerCompression=value<target?Math.min(target,value+dt*10):Math.max(target,value-dt*7);}
+export function plungerPose(s){''');s=s.replace("let capY=pressed?610:594,stage=pressed?'compressed':'idle';", "const compression=s.machine.plungerCompression||0;let capY=594+16*compression,stage=pressed?(compression<.98?'compressing':'compressed'):'idle';")
+q.write_text(s,encoding='utf-8')
+q=Path('campaign.js');s=q.read_text(encoding='utf-8').replace("import {oreReady}","import {updatePlunger} from './plunger.js?v=ground32';\nimport {oreReady}");s=s.replace('integrateMotion(s,floors,walls,dt);','integrateMotion(s,floors,walls,dt);if(m===\'bankshot\')updatePlunger(s,dt);');q.write_text(s,encoding='utf-8')
+q=Path('grounded-plunger.test.js');s=q.read_text(encoding='utf-8-sig').replace("h.x=335;assert.equal(plungerPose(s).stage,'compressed');", "h.x=335;step(s,{},1/120);assert.equal(plungerPose(s).stage,'compressing');const partial=plungerPose(s).capY;for(let i=0;i<15;i++)step(s,{},1/120);assert.equal(plungerPose(s).stage,'compressed');assert.ok(partial<plungerPose(s).capY);");q.write_text(s,encoding='utf-8')

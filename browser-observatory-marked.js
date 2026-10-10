@@ -1,0 +1,1 @@
+async page=>{await page.setViewportSize({width:1440,height:990});await page.goto('http://127.0.0.1:3000/output/playwright/observatory-marked.html');await page.locator('img').evaluate(im=>im.decode());await page.screenshot({path:'output/playwright/observatory-marked.png'});}

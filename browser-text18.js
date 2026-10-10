@@ -1,0 +1,5 @@
+async page=>{
+ const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.setViewportSize({width:1440,height:900});await page.goto('https://united-marsh-6ppd.here.now/?text=18');await page.locator('#play').click();
+ for(const size of [{width:1440,height:900},{width:390,height:844},{width:844,height:390}]){await page.setViewportSize(size);for(let r=0;r<6;r++){await page.locator('#debug').click();await page.locator('#debug-level').selectOption(String(r));await page.locator('#debug-go').click();await page.waitForTimeout(250);const info=await page.locator('#game-labels').evaluate(c=>({min:+c.dataset.minFont,count:JSON.parse(c.dataset.labels).length,width:c.width,cssWidth:c.clientWidth,dpr:devicePixelRatio,pointer:getComputedStyle(c).pointerEvents}));if(info.min<11||!info.count||Math.abs(info.width-info.cssWidth*info.dpr)>1||info.pointer!=='none')throw Error('Text readability regression '+JSON.stringify(info));await page.screenshot({path:'output/playwright/story41-'+r+'-'+size.width+'.png'});}}
+ if(errors.length)throw Error(errors.join('\n'));
+}

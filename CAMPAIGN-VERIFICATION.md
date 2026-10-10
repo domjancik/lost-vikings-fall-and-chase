@@ -10,7 +10,7 @@ Art validation preserves every scenery pixel from its source crop, checks all ei
 
 ## Browser evidence
 
-All eight chapters cleared through production keyboard controls with all three crew alive and zero JavaScript runtime errors. Initial remaining HP by chapter: 2/3/3, 3/3/3, 3/3/3, 3/3/3, 3/1/3, 3/3/3, 3/3/3, 3/3/3. Affected chapters2/5/6 were replayed with unobscured mechanism captures; chapter6's visual rerun ended at3/3/2. Test driver resumes the real pause UI after browser focus loss and waits on simulation time.
+All eight chapters cleared through production keyboard controls with all three crew alive and zero JavaScript runtime errors. Initial remaining HP by chapter: 2/3/3, 3/3/3, 3/3/3, 3/3/3, 3/1/3, 3/3/3, 3/3/3, 3/3/3. Affected chapters2/5/6 were replayed with unobscured mechanism captures; chapter6's visual rerun ended at3/3/2; its subsequent post-dependency-fix replay ended at3/3/3. Test driver resumes the real pause UI after browser focus loss and waits on simulation time.
 
 Evidence files are in output/playwright/campaign46-*.png and output/campaign-redo/browser-*.log. Drivers browser-campaign46-0.js through -7.js are versioned. They send production keyboard events and read diagnostic DOM state; no private gameplay state is changed.
 
@@ -23,3 +23,6 @@ Grounding is a mandatory acceptance gate: backgrounds retain connected bases/sup
 ## Version control
 
 Git contains a pre-rebuild baseline, design/review specifications, and the implementation with reproducible generated-art sources. Credentials and local runtimes are ignored. The vendored pixel-art-fixer submodule retains the corrected local positive-weight change; tools/pixel-fixer-positive-weights.patch reproduces it on a fresh checkout.
+
+Additional UI checks: Enter continued chapter6 into chapter7 retaining exactly one archive. Sixteen spawn captures cover both zooms for every chapter. A real pointer hold moved Erik129.6 units and the mobile ACTION button jumped him; the canvas fills the390×844 viewport. Browser auto-pause on focus loss is handled through the production pause button in the driver.
+`Space` continued the completed ownership core into chapter8 with exactly one archive; all crew survived the core replay at3/3/3.

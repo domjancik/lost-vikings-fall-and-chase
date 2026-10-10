@@ -200,3 +200,9 @@ The distant scenery has finer, softer detail than crew sprites/foreground tiles;
 - I3/V1: representative grounding screenshots independently inspected and the misleading filled open-gate frame repaired.
 
 No implementation or assets were edited by this reviewer.
+
+## Zoom and continuation follow-up
+
+Independently inspected the new1x/2x screenshot pairs for chapter6 (`campaign46-zoom-5-1.png`, `campaign46-zoom-5-2.png`) and chapter8 (`campaign46-zoom-7-1.png`, `campaign46-zoom-7-2.png`). In both views, crew feet meet their terrain plane, distant structural silhouettes remain coherent, image proportions are preserved, and the zoom change introduces no visible background seam, detached cutout, or new grounding gap. Chapter8 at1x exposes the lift track/upper landing as physically connected structure. These representative pairs strengthen the visual acceptance gate; the remaining chapter pairs were supplied but not individually inspected by this reviewer in this follow-up.
+
+The implementation agent reports chapter6's dependency-fixed real-browser rerun completed with HP3/3/3 and Enter continuation produced exactly one actual archive in chapter7. It also reports real mobile pointer movement/jump, a390×844 full canvas and no new page errors. These are clearly attributed browser results, separate from this reviewer's direct screenshot inspection and independently run188-test suite. No new blocker found.

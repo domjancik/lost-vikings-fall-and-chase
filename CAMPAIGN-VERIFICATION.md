@@ -26,3 +26,7 @@ Git contains a pre-rebuild baseline, design/review specifications, and the imple
 
 Additional UI checks: Enter continued chapter6 into chapter7 retaining exactly one archive. Sixteen spawn captures cover both zooms for every chapter. A real pointer hold moved Erik129.6 units and the mobile ACTION button jumped him; the canvas fills the390×844 viewport. Browser auto-pause on focus loss is handled through the production pause button in the driver.
 `Space` continued the completed ownership core into chapter8 with exactly one archive; all crew survived the core replay at3/3/3.
+
+## Published build
+
+arc46 published to https://united-marsh-6ppd.here.now/ on2026-10-10. Real-browser live check confirmed Story chapter1, all8 chapter choices,13 new module/art requests atHTTP200, hints false,390x844 canvas and zero page errors. Live captures: output/playwright/campaign46-live.png and campaign46-live-mobile.png.

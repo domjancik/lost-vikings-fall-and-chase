@@ -1,6 +1,6 @@
-import {onPlunger} from './plunger.js?v=far45';
-import {damage} from './health.js?v=far45';
-import {SHIELD} from './hero-geometry.js?v=far45';
+import {onPlunger} from './plunger.js?v=arc46';
+import {damage} from './health.js?v=arc46';
+import {SHIELD} from './hero-geometry.js?v=arc46';
 // World units / second. Fast acceleration, short stopping distances, distinct weight.
 export const motionProfiles=[{speed:230,accel:1650,brake:2600,air:1250},{speed:175,accel:1150,brake:2300,air:950},{speed:150,accel:900,brake:2100,air:750}];
 const approach=(value,target,amount)=>value<target?Math.min(target,value+amount):Math.max(target,value-amount);

@@ -1,5 +1,5 @@
-import {shieldTransform} from './hero-geometry.js?v=far45';
-import {snapPixel} from './pixel-grid.js?v=far45';
+import {shieldTransform} from './hero-geometry.js?v=arc46';
+import {snapPixel} from './pixel-grid.js?v=arc46';
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export function animationFor(h){
  let pose='idle',frame=Math.floor((h.animTime||0)*[2.7,2.2,2.4][h.id]+[0,1.4,2.8][h.id])%4;

@@ -1,5 +1,5 @@
-import {machinePose} from './machine-animation.js?v=far45';
-import {snapPixel,animationTime} from './pixel-grid.js?v=far45';
+import {machinePose} from './machine-animation.js?v=arc46';
+import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 const atlas=new Image();atlas.src='assets/pixel/machine-states.png?v=pipeline44';
 const flames=new Image();flames.src='assets/pixel/background-fx.png?v=pipeline44';
 // Equal fixed source cells preserve pivots and scale across every state.

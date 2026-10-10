@@ -1,5 +1,5 @@
-import {coverRect} from './background-render.js?v=far45';
-import {snapPixel} from './pixel-grid.js?v=far45';
+import {coverRect} from './background-render.js?v=arc46';
+import {snapPixel} from './pixel-grid.js?v=arc46';
 const effect=(kind,x,y,width,height,phase=0,layer='near')=>({kind,x,y,width,height,phase,layer});
 const fire=(x,y,width=8,height=12,phase=0)=>effect('fire',x,y,width,height,phase);
 const candles=(x,y,phase=0)=>[-5,0,5].map((offset,i)=>fire(x+offset,y+(i===1?-3:0),5,9,phase+i*2));

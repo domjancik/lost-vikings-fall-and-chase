@@ -1,14 +1,14 @@
-import {drawMachine} from './machine-render.js?v=far45';
-import {machinePose} from './machine-animation.js?v=far45';
-import {drawVerticalWorld} from './vertical-render.js?v=far45';
-import {drawPlunger} from './plunger.js?v=far45';
-import {drawForgeMaterial} from './forge-material.js?v=far45';
-import {drawPortal} from './portal-effects.js?v=far45';
-import {drawInventoryWorld} from './inventory-render.js?v=far45';
-import {ghostLayout} from './ghost-layout.js?v=far45';
-import {snapPixel,snapAngle,animationTime,spritePose} from './pixel-grid.js?v=far45';
-import {environmentPose} from './environment-animation.js?v=far45';
-import {interactionObjects,nearbyInteraction} from './interactions.js?v=far45';
+import {drawMachine} from './machine-render.js?v=arc46';
+import {machinePose} from './machine-animation.js?v=arc46';
+import {drawVerticalWorld} from './vertical-render.js?v=arc46';
+import {drawPlunger} from './plunger.js?v=arc46';
+import {drawForgeMaterial} from './forge-material.js?v=arc46';
+import {drawPortal} from './portal-effects.js?v=arc46';
+import {drawInventoryWorld} from './inventory-render.js?v=arc46';
+import {ghostLayout} from './ghost-layout.js?v=arc46';
+import {snapPixel,snapAngle,animationTime,spritePose} from './pixel-grid.js?v=arc46';
+import {environmentPose} from './environment-animation.js?v=arc46';
+import {interactionObjects,nearbyInteraction} from './interactions.js?v=arc46';
 function sheet(src,cols,rows){
  const img=new Image(),cells=[];img.src=src;
  img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);const data=g.getImageData(0,0,c.width,c.height).data;

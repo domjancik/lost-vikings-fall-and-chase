@@ -1,6 +1,6 @@
-import {drawMachine,drawSafeDoor} from './machine-render.js?v=far45';
-import {itemTypes} from './inventory.js?v=far45';
-import {snapPixel,animationTime} from './pixel-grid.js?v=far45';
+import {drawMachine,drawSafeDoor} from './machine-render.js?v=arc46';
+import {itemTypes} from './inventory.js?v=arc46';
+import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 const image=new Image(),cells=[];image.src='assets/pixel/inventory-sprites.png?v=pipeline44';image.onload=()=>{const c=document.createElement('canvas');c.width=image.width;c.height=image.height;const g=c.getContext('2d');g.drawImage(image,0,0);const data=g.getImageData(0,0,c.width,c.height).data;for(let n=0;n<16;n++){const x0=n%4*c.width/4,y0=Math.floor(n/4)*c.height/4;let l=x0+c.width/4,r=x0,t=y0+c.height/4,b=y0;for(let y=y0;y<y0+c.height/4;y++)for(let x=x0;x<x0+c.width/4;x++)if(data[(y*c.width+x)*4+3]>30){l=Math.min(l,x);r=Math.max(r,x);t=Math.min(t,y);b=Math.max(b,y);}cells[n]={x:l,y:t,w:r-l+1,h:b-t+1};}};
 export function drawItemSprite(ctx,n,x,y,w=32,h=32){const c=cells[n];if(!c)return false;ctx.drawImage(image,c.x,c.y,c.w,c.h,snapPixel(x-w/2),snapPixel(y-h),snapPixel(w),snapPixel(h));return true;}
 export function drawInventoryWorld(ctx,s,text,box){const g=s.machine,c=s.level.accent,t=animationTime(s.time),status=text.status||text,clue=text.clue||text;

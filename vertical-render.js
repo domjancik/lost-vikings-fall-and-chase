@@ -1,6 +1,6 @@
-import {verticalWind} from './vertical-campaign.js?v=far45';
-import {snapPixel,animationTime,snapAngle} from './pixel-grid.js?v=far45';
-import {drawPortal} from './portal-effects.js?v=far45';
+import {verticalWind} from './vertical-campaign.js?v=arc46';
+import {snapPixel,animationTime,snapAngle} from './pixel-grid.js?v=arc46';
+import {drawPortal} from './portal-effects.js?v=arc46';
 const image=new Image(),cells=[];image.src='assets/pixel/vertical-props.png?v=pipeline44';image.onload=()=>{const c=document.createElement('canvas');c.width=image.width;c.height=image.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);const d=g.getImageData(0,0,c.width,c.height).data,w=c.width/4,h=c.height/2;for(let n=0;n<8;n++){const ox=n%4*w,oy=Math.floor(n/4)*h;let l=w,t=h,r=0,b=0;for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(d[((oy+y)*c.width+ox+x)*4+3]>128){l=Math.min(l,x);t=Math.min(t,y);r=Math.max(r,x);b=Math.max(b,y);}cells[n]={x:ox+l,y:oy+t,w:r-l+1,h:b-t+1};}};
 function sprite(ctx,n,x,y,w,h,angle=0){const cell=cells[n];if(!cell)return;ctx.save();ctx.translate(snapPixel(x),snapPixel(y-h/2));ctx.rotate(snapAngle(angle));ctx.drawImage(image,cell.x,cell.y,cell.w,cell.h,-snapPixel(w/2),-snapPixel(h/2),snapPixel(w),snapPixel(h));ctx.restore();}
 function fan(ctx,x,bottom,running,t){sprite(ctx,0,x,bottom+15,80,96);const cell=cells[0];if(!running||!cell)return;const cy=snapPixel(bottom-40);ctx.save();ctx.translate(snapPixel(x),cy);ctx.fillStyle='#111f28';for(let y=-38;y<=38;y+=2){const w=Math.floor(Math.sqrt(Math.max(0,38*38-y*y))/2)*2;ctx.fillRect(-w,y,w*2,2);}ctx.rotate(Math.floor(t*8)*Math.PI/4);ctx.drawImage(image,cell.x,cell.y,cell.w,cell.w,-40,-40,80,80);ctx.restore();}

@@ -1,6 +1,6 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=far45';
-import {segmentHit} from './projectile-collision.js?v=far45';
-import {damage} from './health.js?v=far45';
+import {prepareMotion,integrateMotion} from './movement.js?v=arc46';
+import {segmentHit} from './projectile-collision.js?v=arc46';
+import {damage} from './health.js?v=arc46';
 export const verticalWind=[{x:395,w:125,bottom:690,top:246},{x:745,w:115,bottom:290,top:-254}];
 const report=(s,message)=>s.feedback={sequence:(s.feedback?.sequence||0)+1,message};
 export function setupVerticalLevel(s){Object.assign(s.machine,{screen:false,chime:false,aligned:false,drafts:[false,false],reed:false,resonance:false,bass:false,riders:0,floatDistance:0});if(s.level.spawnY!==undefined)for(const h of s.heroes)h.y=h.prevY=s.level.spawnY;}

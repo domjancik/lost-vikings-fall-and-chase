@@ -1,0 +1,30 @@
+const f=(x,y,w)=>({x,y,w}),shaft=x=>[f(0,610,x),f(x+144,610,3200-x-144)];
+const base={worldWidth:3200,worldTop:-100,worldBottom:1040,deathY:1020,floors:[f(0,610,3200)],platforms:[],spawnY:566,exit:{x:3100,y:610,w:150},mechanic:'descent'};
+const chapter=(name,subtitle,accent,scene,story,hint,extra={})=>({...base,name,subtitle,accent,scene,story,hint,...extra});
+export const storyLevels=[
+ chapter('AFTER THE LAST CREDIT','The return slot opens below the promise.','#efbe6c',0,['The Neon Stag closes tonight. Three brass warriors bow above its last lit cabinet.','The game offers a way home. Behind its coin return, something is still asking for another credit.'],'Hold the recessed tread; secure its ratchet from the other side. The wafer fits its outline. The frayed thread holds the shutter weight.',{platforms:[f(1250,410,180)]}),
+ chapter('THE RETURN ADDRESS','A finish line is an instruction to return.','#f39291',1,['The same parcel passes again. Its driver has delivered it a thousand times.','The address is not a place. It is a loop. Baleog: “Then we change the route.”'],'Set the routing handle and release the exposed glass diaphragm. Let the packet arrive; its cradle becomes a lift.',{floors:[f(0,610,3200)],platforms:[f(1994,250,1206)],exit:{x:3100,y:250,w:150}}),
+ chapter('WHEN THE NAMES GO OUT','Memory reclamation has inhabitants.','#b9dacc',2,['The empty windows once had names. A pale sweep removes another row while they watch.','Olaf stands between the sweep and a worker. “Finish what you were doing.”'],'Reach the high isolation handle. Protect the exposed worker from deletion pulses until the stroke finishes. Release the reed carrier locally.',{platforms:[f(600,410,180)]}),
+ chapter('A WORLD BEING MADE','They were making replacements for the erased.','#a7d4b4',3,['Beyond memory, ceramic streets emerge from a stamp. Every new house is empty.','The makers stop repeating their task. A neighborhood can be made for the people still here.'],'Cut the stamp restraint and wait for its physical landing. The reusable lift reaches the construction deck; glass diaphragms are fragile.',{floors:[f(0,610,3200)],platforms:[f(1644,250,1556)],exit:{x:3100,y:250,w:150}}),
+ chapter('ROOM FOR THE UNFINISHED','A perfect home has no room for these people.','#d4a1c1',4,['The archive offers a perfect reconstruction of home. None of their new companions are in it.','They choose the unfinished weave. Inside it, small windows are still being lit.'],'Reach the woven archive shelf with Olaf. Mount it in the matching cradle, wait for the copy and take the portable archive back. Secure the inhabited route.',{platforms:[f(750,410,180)]}),
+ chapter('THE SKY HAS A BACK','Light is leaking through a larger world.','#9bdce3',5,['The sky ends at a shutter. Behind it, daylight falls onto an empty pub.','Three brass figures wait above the bar. Erik: “We can see the outside. We still have no weight there.”'],'Release the projection screen and glass diaphragm. Reusable lifts connect the decks; Olaf can float to the lower tread. Secure the upper gate and reunite.',{floors:[f(0,610,1850),f(1994,610,356),f(2350,810,850)],platforms:[f(1994,130,506),f(2844,130,356)],exit:{x:3100,y:130,w:150}}),
+ chapter('WHAT A RESET COSTS','The bodies are real. Their spare lives are not.','#c4c5b2',6,['The oldest core owns the three brass bodies. It also owns every reset they have survived.','Keeping their copies would leave no space for the archive. All three choose the people they have carried.'],'Mount the archive, confirm the loss of reset storage, and watch the reservoirs drain. Each cradle takes one occupant; USE again steps out before the last crossing.'),
+ chapter('WEIGHT OF RAIN','There is no next credit.','#c8ba96',7,['A screw is a pillar. Their bodies are heavy brass. Rain falls without repeating.','The archive is warm under Olaf’s arm. Outside, there is somewhere to go.'],'Reach the escape latch by lift. Release the gutter cord beside its track. Two people hold the final treads while the third secures the ratchet.',{floors:[f(0,610,3200)],platforms:[f(1144,330,206)]})
+];
+const gate=(id,x,y=610)=>({id,x,y,h:300,progress:0,target:false,secured:false});
+const lift=(id,x,low,high)=>({id,x,w:144,low,high,y:low,target:low,v:0});
+const payload=(id,kind,x,y,toX,toY,duration=1.6)=>({id,kind,x,y,fromX:x,fromY:y,toX,toY,duration,progress:0,released:false,arrived:false});
+export function makeStoryMachines(round){
+ const g={gates:[],lifts:[],payloads:[],cuts:[],targets:[],treads:[],flags:{},work:0,operator:null,copy:0,copying:false,archiveMounted:false,reset:0,resetting:false,transferred:[false,false,false]};
+ const gates=(...v)=>g.gates=v,cut=(id,x,p)=>{g.cuts.push({id,x,y:566,payload:p,cut:false});g.payloads.push(p);};
+ switch(round){
+ case 0:gates(gate('sluice',800),gate('wafer',1750),gate('weight',2600));g.treads=[{x:500,y:610,gate:'sluice'}];cut('thread',2350,payload('weight','weight',2410,430,2410,590));break;
+ case 1:gates(gate('arrival',2250,250));g.lifts=[lift('packet',1850,610,250)];g.targets=[{id:'diaphragm',x:1100,y:586,hit:false}];g.payloads=[payload('packet','packet',1150,570,1660,570,4)];break;
+ case 2:gates(gate('isolation',1950),gate('residents',2650));cut('reed',2050,payload('reed','reed',2110,570,2420,570,3));break;
+ case 3:gates(gate('stamp',1200),gate('canopy',2600,250));g.lifts=[lift('ceramic',1500,610,250)];cut('stamp',850,payload('stamp','stamp',900,440,900,590,2));g.targets=[{id:'canopy',x:2420,y:226,hit:false}];break;
+ case 4:gates(gate('inhabited',2100),gate('archive',2700));g.treads=[{x:1800,y:610,gate:'inhabited'}];break;
+ case 5:gates(gate('sky',2870,130));g.lifts=[lift('screen',1850,610,130),lift('return',2700,810,130)];cut('screen',1250,payload('screen','gill',1310,490,1310,570));g.targets=[{id:'screen',x:1500,y:586,hit:false}];g.treads=[{x:2530,y:810,gate:'sky'}];break;
+ case 6:gates(gate('ownership',1500));break;
+ case 7:gates(gate('hatch',1600),gate('rain',2700));g.lifts=[lift('marquee',1000,610,330)];cut('gutter',2050,payload('gutter','gill',2110,490,2110,570));g.treads=[{x:2400,y:610,gate:'rain'},{x:2500,y:610,gate:'rain'}];break;
+ }return g;
+}

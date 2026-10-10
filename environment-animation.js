@@ -1,4 +1,4 @@
-import {snapPixel,snapAngle,animationTime} from './pixel-grid.js?v=far45';
+import {snapPixel,snapAngle,animationTime} from './pixel-grid.js?v=arc46';
 export function projectilePose(p,alpha=1){return {x:snapPixel((p.prevX??p.x)+(p.x-(p.prevX??p.x))*alpha),y:snapPixel((p.prevY??p.y)+(p.y-(p.prevY??p.y))*alpha),angle:snapAngle(Math.atan2(p.vy||0,p.v||0))};}
 export function environmentPose(s){const g=s.machine,hit=g.lastBankHit;return {phase:animationTime(s.time)*4,mirrorAngle:snapAngle(Math.atan2([440,340,240][g.lane]-586,255)),hitStrength:hit?Math.max(0,1-animationTime(s.time-hit.time)/.7):0,nextLane:[1,0,2][Math.min(g.score,2)]};}
 export function drawProjectile(ctx,p,alpha,time){

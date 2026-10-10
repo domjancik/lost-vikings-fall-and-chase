@@ -1,42 +1,57 @@
-import {storyFarLayout} from './story-background.js?v=far45';
-import {createAtlas as atlas} from './sprite-atlas.js?v=far45';
-import {storyDoors,storyObjects,storyWalls} from './story-campaign.js?v=far45';
-import {drawItemSprite} from './inventory-render.js?v=far45';
-import {itemTypes} from './inventory.js?v=far45';
-import {drawMachine} from './machine-render.js?v=far45';
-import {drawPortal} from './portal-effects.js?v=far45';
-import {snapPixel,animationTime,snapAngle} from './pixel-grid.js?v=far45';
-const doors=atlas('assets/pixel/story-doors.png?v=pipeline44',4,2);
-const far=atlas('assets/pixel/story-far.png?v=pipeline44',4,2),near=atlas('assets/pixel/story-near.png?v=pipeline44',4,2),enemyArt=atlas('assets/pixel/story-enemies.png?v=pipeline44',4,4),terrain=atlas('assets/pixel/foreground-tiles.png?v=pipeline44',8,6,true),objects=atlas('assets/pixel/world-objects.png?v=pipeline44',4,6,true),puzzles=atlas('assets/pixel/puzzle-machines.png?v=pipeline44',5,2,true),fx=atlas('assets/pixel/background-fx.png?v=pipeline44',8,4);
-export function drawStoryBackground(ctx,s,camera,view){const index=s.level.scene,t=animationTime(s.time),layout=storyFarLayout(camera,view);ctx.fillStyle='#141b26';ctx.fillRect(camera.x,camera.y,view.width,view.height);
- for(const x of layout.tiles)far.draw(ctx,index,x,layout.y,layout.size,layout.size);
- const shift=snapPixel(camera.x*.25);for(const [i,x] of [180,1100,2080].entries()){const width=s.round===7?720:630;near.draw(ctx,index,x+shift,snapPixel(610-width*.96),width,width);}
- // Authored emitters and weather use independent, discrete clocks.
- if(s.round===3)for(const x of [560,1250,2200]){fx.draw(ctx,8+Math.floor(t*12+x/73)%8,x,370,48,64);fx.draw(ctx,Math.floor(t*12+x/29)%8,x+120,520,38,74);}
- if([0,7].includes(s.round))for(let i=0;i<45;i++){const x=snapPixel(camera.x+(i*79+Math.floor(t*40))%(view.width+40)),y=snapPixel(camera.y+(i*83+Math.floor(t*240))%(view.height+40));ctx.fillStyle='#a3b6c4';ctx.fillRect(x,y,2,8);}
- return layout;
+import {createAtlas} from './sprite-atlas.js?v=arc46';
+import {storyObjects,storyWalls} from './story-campaign.js?v=arc46';
+import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
+import {drawPortal} from './portal-effects.js?v=arc46';
+import {ease,gateFrameRects} from './story-mechanisms.js?v=arc46';
+const art=createAtlas('assets/campaign46/machines.png?v=arc46',8,4,true);
+const frames=createAtlas('assets/campaign46/machines.png?v=arc46',8,4);
+const scenes=Array.from({length:8},(_,i)=>{const im=new Image();im.src='assets/campaign46/scene-'+i+'.png?v=arc46';return im;});
+const palettes=['#2b241a','#152331','#18252b','#24352b','#30232f','#13282f','#202425','#292821'];
+export function drawStoryItem(ctx,type,x,bottom,w,h){if(!art.image.complete||!art.image.naturalWidth)return false;art.draw(ctx,type==='archive'?16:14,x-w/2,bottom-h,w,h);return true;}
+export function drawStoryBackground(ctx,s,camera,view){
+ const im=scenes[s.round],w=snapPixel(Math.max(view.width*1.18,view.height*1.5)),h=snapPixel(w/1.5),travel=Math.max(1,3200-view.width),fraction=Math.min(1,Math.max(0,camera.x/travel));
+ const x=snapPixel(camera.x-(w-view.width)*fraction),y=snapPixel(camera.y-(h-view.height)*.35);
+ ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,camera.y,view.width,view.height);if(im.complete&&im.naturalWidth)ctx.drawImage(im,x,y,w,h);
+ // Complete architecture layers retain their own support planes. No isolated
+ // transparent building cutouts: the bases and pillars share one transform.
+ const base=s.round===5?810:610,shift=snapPixel(camera.x*.18);ctx.fillStyle=palettes[s.round];ctx.fillRect(shift,base,3500,s.level.worldBottom-base);
+ for(let n=0;n<7;n++){const px=snapPixel(300+n*470+shift);ctx.fillStyle=s.level.accent+'25';ctx.fillRect(px,base-210,20,210);ctx.fillRect(px-45,base-16,110,16);ctx.fillRect(px-8,base-212,36,8);}
+ return {x,y,size:w,height:h,tiles:[x],native:[768,512],ground:base};
 }
-export function drawStoryWorld(ctx,s,text,box){const g=s.machine,c=s.level.accent,t=animationTime(s.time),status=text.status||text,row=[0,1,3,5,3,1,3,0][s.round];
- const tile=(n,x,y,w,h)=>terrain.draw(ctx,row*8+n,x,y,w,h);
- const deck=p=>{for(let x=p.x;x<p.x+p.w;x+=48)tile(1,x,p.y,Math.min(48,p.x+p.w-x),30);tile(0,p.x,p.y,24,30);tile(2,p.x+p.w-24,p.y,24,30);if(s.level.floors.includes(p)&&p.y>=610)for(let y=p.y+30;y<s.level.worldBottom;y+=64)for(let x=p.x;x<p.x+p.w;x+=64)tile(3,x,y,Math.min(64,p.x+p.w-x),64);else for(let x=p.x+12;x<p.x+p.w;x+=160)tile(3,x,p.y+30,12,48);};
- for(const p of [...s.level.floors,...s.level.platforms])deck(p);
- const prop=(n,x,bottom,w=64,h=74)=>objects.draw(ctx,row*4+n,x-w/2,bottom-h,w,h);
- const gate=(x,top,bottom,open)=>{const width=28;if(!open)for(let y=top;y<bottom;y+=48)tile(3,x,y,width,Math.min(48,bottom-y));box(open?'#81d9a9':'#cc9d69',x-4,bottom-104,width+8,6);};
- for(const w of storyWalls(s))if(w.on)gate(w.x,Math.max(w.top,300),w.bottom,false);
- for(const d of storyDoors(s)){const ready=!d.lock||g[d.lock];doors.draw(ctx,(s.round===2?4:s.round===0||s.round===7?0:s.round===6?6:2)+(ready?1:0),d.x-54,d.y-120,108,126);if(ready&&s.round===2)drawPortal(ctx,d.x,d.y-54,30,62,s.time,c,true);status(d.id.toUpperCase(),d.x,d.y-123,ready?c:'#99899c',10);if(Math.abs(s.heroes[s.active].x-d.x)<52&&Math.abs(s.heroes[s.active].y+44-d.y)<62)status(ready?'USE · ENTER':'SEALED',d.x,d.y-144,ready?'#fff0ad':'#df9286',10);}
- for(const i of s.items){drawItemSprite(ctx,itemTypes[i.type].icon,i.x,i.y+44,30,30);status(itemTypes[i.type].name.toUpperCase(),i.x,i.y-12,c,10);}
- for(const b of s.bombs){drawItemSprite(ctx,10,b.x,b.y+14,28,28);status(b.fuse.toFixed(1),b.x,b.y-26,'#ffd192',11);}
- if(s.blast&&s.time-s.blast.time<.45){const age=animationTime(s.time-s.blast.time);for(let i=0;i<12;i++)box(i%2?'#ffe59b':'#ef985f',s.blast.x+Math.cos(i)*age*160,s.blast.y+Math.sin(i)*age*160,6,6);}
- const machine=(x,y,label,on=false)=>{tile(on?5:4,x-24,y+44-38,48,38);status(label,x,y-16,on?'#caffab':c,11);};
- for(const obj of storyObjects(s).filter(o=>o.kind!=='story-door'))machine(obj.x,obj.y,obj.title,obj.id==='dispatch'?g.dispatch:obj.id==='telescope'?g.aligned:obj.id==='interlock'?g.interlock:obj.id.startsWith('transfer')?g.transferred[+obj.id.slice(-1)]:obj.id.startsWith('draft')?g.drafts[+obj.id.slice(-1)]:false);
- if(s.round===0){drawItemSprite(ctx,11,880,600,34,52);if(!g.cable){prop(2,1640,610,42,64);status('CABINET TETHER',1640,525,c,11);}status('LAST SERVICE · STAFF ONLY',890,330,c,12);}
- if(s.round===1){puzzles.draw(ctx,5,g.cartX-60,530,120,80);status(g.parked?'DELIVERED':'UNOPENED PARCEL',g.cartX,500,c,11);prop(3,1790,610,42,56);status(g.delivery?'BERTH READY':'DELIVERY LOCK',1790,535,c,11);box('#7b879d',2380,604,130,6);}
- if(s.round===2){if(!g.bell){prop(2,550,610,40,64);status('STONE BELL',550,520,c,11);}prop(3,1320,540,38,60);status(g.mirror?'EYE RELEASED':'RETURNING EYE',1320,470,c,11);if(!g.seal){prop(2,1670,610,42,70);status('BOUND DOOR',1670,522,c,11);}}
- if(s.round===3){ctx.save();ctx.translate(990,0);drawMachine(ctx,s,'dragon',1300,720,280,280);ctx.restore();puzzles.draw(ctx,8,1950,440,140,170);if(!g.ore)puzzles.draw(ctx,7,1740,315,110,200);else{const age=animationTime(s.time-g.oreCutAt),progress=Math.min(1,age/1.33),x=snapPixel(1800+220*progress);if(progress<1){puzzles.draw(ctx,7,x-40,470+progress*60,80,110);for(let i=0;i<6;i++)box('#c5a0e7',x-10+i*5,540+progress*45+i%2*8,4,4);}else for(let i=0;i<6;i++)box(g.heat?'#ffa658':'#a183c8',1990+i*10,484+i%2*6,8,6);}status('FORGE '+g.heat+'/3',2020,417,c,12);const press=snapPixel(Math.sin(Math.min(Math.max(0,s.time-g.lastPump)/.5,1)*Math.PI)*18);tile(3,825,553+press,50,57-press);tile(6,830,547+press,40,14);status('PRESSURE '+g.air+'/3',850,515,c,11);drawMachine(ctx,s,'oven',2410,612,132,132);status(g.baked?'TICKET READY':'DEPARTURE OVEN',2410,448,c,11);}
- if(s.round===4){drawItemSprite(ctx,9,900,610,82,82);status(g.gallery?'RED PROJECTION':'PROJECTOR',900,500,c,11);if(g.gallery){box('#d86f9b',900,551,100,4);drawItemSprite(ctx,7,922,565,26,26);}drawItemSprite(ctx,15,1850,610,100,86);if(g.safe)box('#161926',1828,553,42,44);status(g.safe?'VAULT OPEN':'ARCHIVE VAULT',1850,501,c,11);drawItemSprite(ctx,6,2520,610,36,60);}
- if(s.round===5){for(const [i,x,bottom] of [[0,490,690],[1,1460,370]]){puzzles.draw(ctx,6,x-45,bottom-70,90,70);if(g.drafts[i]){for(let n=0;n<32;n++){const yy=bottom-(Math.floor(t*165)+n*29)%520;box('#9bdde3',x-50+(n*23)%100,yy,2,8);}ctx.save();ctx.translate(snapPixel(x),bottom-38);ctx.rotate(snapAngle(t*5));box('#9bcbd3',-30,-3,60,6);box('#9bcbd3',-3,-30,6,60);ctx.restore();}}if(!g.screen)prop(2,290,610,44,66);prop(3,1170,280,36,55);status(g.chime?'CHIME RINGING':'HIGH CHIME',1170,194,c,11);}
- if(s.round===6){for(const [i,x] of [[0,1700],[1,2040],[2,2370]]){puzzles.draw(ctx,0,x-34,460,68,150);status(g.transferred[i]?'BODY MOVING OUTSIDE':'CHANNEL '+(i+1),x,430,c,11);}if(!g.restraint)prop(2,1040,610,44,60);box('#24282b',1298,450,84,8);box('#9cdfc4',1300,452,80*g.charge,4);status('ORGAN PRESSURE',1340,430,c,11);}
- if(s.round===7){if(!g.cord)prop(2,1730,610,44,64);status(g.hatch?'OPEN TO THE RAIN':'SERVICE HATCH',1440,203,c,11);}
- for(const e of s.enemies){const row=e.hp<=0||e.hurt>0?3:e.kind==='wraith'?1:e.kind==='crawler'?2:0,frame=e.hurt>0&&e.hp>0?0:e.hp<=0?Math.min(3,Math.floor((s.time-e.deadAt)*8)):Math.floor(t*8+e.phase)%4;ctx.save();ctx.translate(snapPixel(e.x),snapPixel(e.y+44+8));if(e.face>0)ctx.scale(-1,1);enemyArt.draw(ctx,row*4+frame,-40,-80,80,80);ctx.restore();if(e.hp>0){if(e.hurt>0)box('#fff4bd',e.x-8,e.y+12,16,6);if(s.time>e.shotAt-.45&&s.time<e.shotAt)status('!',e.x,e.y-24,'#ffac6a',18);}}
- if(s.round!==6){const e=s.level.exit;doors.draw(ctx,(s.round===7?6:2)+(s.power?1:0),e.x-58,e.y-138,116,146);if(s.power&&s.round!==7)drawPortal(ctx,e.x,e.y-62,40,80,s.time,c,true);status(s.round===7?'OUTSIDE':s.power?'DEPARTURE · ALL THREE':'DEPARTURE SEALED',e.x,e.y-145,c,12);}
+export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime(s.time),c=s.level.accent,status=text.status||text;
+ const sprite=(n,x,bottom,w=60,h=60)=>art.draw(ctx,n,x-w/2,bottom-h,w,h);
+ const wire=(x,y,toX,toY,on)=>{const yy=Math.min(y,toY)-120;ctx.strokeStyle=on?c:'#625846';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(snapPixel(x),snapPixel(y));ctx.lineTo(snapPixel(x),snapPixel(yy));ctx.lineTo(snapPixel(toX),snapPixel(yy));ctx.lineTo(snapPixel(toX),snapPixel(toY));ctx.stroke();if(on){const span=Math.abs(toX-x),p=snapPixel(x+Math.sign(toX-x)*(Math.floor(t*100)%Math.max(1,span)));box('#f7efd3',p,yy-2,8,4);}};
+ for(const p of [...s.level.floors,...s.level.platforms]){
+  // Texture is bounded by collision geometry; its actual top is the foot plane.
+  for(let x=p.x;x<p.x+p.w;x+=64)art.draw(ctx,s.round,x,p.y,Math.min(64,p.x+p.w-x),64);
+  if(s.level.platforms.includes(p)){for(let x=p.x+20;x<p.x+p.w;x+=120){box(palettes[s.round],x,p.y+62,14,120);box(c+'66',x,p.y+62,4,120);}box('#f1dfb5',p.x,p.y,p.w,2);}else for(let y=p.y+64;y<s.level.worldBottom;y+=64)for(let x=p.x;x<p.x+p.w;x+=64)art.draw(ctx,s.round,x,y,Math.min(64,p.x+p.w-x),64);
+ }
+ for(const l of g.lifts){box('#121b20',l.x+6,l.high-20,8,l.low-l.high+40);box('#121b20',l.x+l.w-14,l.high-20,8,l.low-l.high+40);box(c+'66',l.x+8,l.high-20,2,l.low-l.high+40);box(c+'66',l.x+l.w-12,l.high-20,2,l.low-l.high+40);sprite(12,l.x+l.w/2,l.y+24,l.w,26);box('#f8e7bc',l.x,l.y,l.w,4);for(const y of [l.low,l.high]){box('#172126',l.x-28,y,28,24);box('#172126',l.x+l.w,y,28,24);} }
+ for(const d of g.gates){const w=storyWalls(s).find(v=>v.id===d.id);for(const r of gateFrameRects(d))box('#191c22',r.x,r.y,r.w,r.h);ctx.save();ctx.beginPath();ctx.rect(d.x-12,d.y-d.h,56,d.h);ctx.clip();sprite(8,d.x+16,w.bottom,32,d.h);ctx.restore();box(c,d.x-8,d.y-d.h-12,48,6);if(d.secured)sprite(10,d.x+15,d.y-d.h-20,24,30);}
+ for(const p of g.treads){sprite(9,p.x,p.y+8,64,p.held?10:16);const d=g.gates.find(v=>v.id===p.gate);wire(p.x,p.y-12,d.x+16,d.y-16,p.held||d.secured);}
+ for(const obj of storyObjects(s)){const isLift=obj.id.startsWith('lift-');if(!isLift)sprite(obj.id.startsWith('body')?23:10,obj.x,obj.y+44,50,56);else sprite(10,obj.x-54,obj.y+44,26,32);if(Math.abs(s.heroes[s.active].x-obj.x)<70&&Math.abs(s.heroes[s.active].y-obj.y)<60)status(obj.title,obj.x,obj.y-22,obj.ready?c:'#d78d8a',10);}
+ for(const v of g.targets){sprite(13,v.x,v.y+18,38,38);const base=[...s.level.floors,...s.level.platforms].find(p=>v.x>=p.x&&v.x<=p.x+p.w&&p.y>=v.y);if(base)box('#52666d',v.x-3,v.y+18,6,base.y-v.y-18);if(v.hit){box('#111c24',v.x-9,v.y-9,18,18);const fall=Math.min(24,(s.time-(v.hitAt??s.time))*80);for(let i=0;i<4;i++)box('#fdccab',v.x-15+i*8,v.y+14+fall+i%2*4,4,4);}else{for(let n=0;n<4;n++)box('#edf1df',v.x-8+n*4,v.y-10+n*4,2,4);if(Math.floor(t*3)%2)box('#ffe3bf',v.x-5,v.y-5,4,4);}if(Math.abs(s.heroes[s.active].x-v.x)<100)status('GLASS DIAPHRAGM',v.x,v.y-36,c,10);}
+ for(const cut of g.cuts){const p=cut.payload,anchor=cut.x,top=Math.min(p.fromY,p.toY)-100;sprite(11,anchor,610,40,56);box('#28343a',anchor-46,top,12,610-top);box('#475961',anchor-46,top,p.fromX-anchor+92,12);sprite(9,anchor,top+20,24,20);const released=cut.cut,age=released?Math.min(1,(s.time-cut.cutAt)/.35):0;ctx.strokeStyle='#f6e2b1';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(anchor,556);if(!released){ctx.lineTo(anchor,top+12);ctx.lineTo(p.x,top+12);ctx.lineTo(p.x,p.y-30);}else ctx.lineTo(snapPixel(anchor+20),snapPixel(556-age*24));ctx.stroke();if(released)for(let i=0;i<5;i++)box('#e8c48f',anchor+20+i*4,552-age*24+i%2*4,2,4);}
+ for(const p of g.payloads){const n={weight:18,packet:20,reed:20,stamp:19,gill:21}[p.kind];if(p.fromY!==p.toY){box('#171d23',p.x-48,Math.min(p.fromY,p.toY)-80,6,Math.abs(p.toY-p.fromY)+100);box('#171d23',p.x+42,Math.min(p.fromY,p.toY)-80,6,Math.abs(p.toY-p.fromY)+100);}else{box('#182127',p.fromX-40,p.y+16,p.toX-p.fromX+80,14);for(let x=p.fromX-30;x<p.toX+30;x+=48)sprite(9,x,p.y+42,24,20);}sprite(n,p.x,p.y+16,80,80);if(p.arrived)box(c,p.x-24,p.y-30,48,4);}
+ const output=g.payloads[0],outputGate=s.round===0?'weight':s.round===2?'residents':s.round===3?'stamp':null;if(outputGate){const d=g.gates.find(v=>v.id===outputGate);wire(output.toX,output.toY,d.x+16,d.y-30,output.arrived);}
+ for(const i of s.items){sprite(i.type==='archive'?16:14,i.x,i.y+44,32,36);if(Math.abs(i.x-s.heroes[s.active].x)<90)status('USE · PICK UP',i.x,i.y-10,c,10);}
+ if(s.round===0){sprite(15,1500,610,54,60);wire(1500,550,1750,550,g.flags.wafer);}
+ if(s.round===1){wire(700,552,1100,566,g.flags.route);wire(1660,580,1922,590,g.payloads[0].arrived);}
+ if(s.round===2){sprite(24,1800,610,76,78);box('#172023',1460,510,80,16);box(c,1464,514,72*g.work,8);wire(690,385,1500,536,g.flags.isolated);sprite(20,1500,608,84,42);box(c,1470,580,60*ease(g.workPose||0),6);}
+ if(s.round===4){sprite(17,1200,610,72,64);sprite(20,1400,610,110,106);wire(1200,574,1400,580,g.copying||g.flags.copied);if(g.copying){const p=g.copy<.5?ease(g.copy*2):1-ease((g.copy-.5)*2);sprite(16,snapPixel(1200+p*200),592,36,40);}if(g.flags.copied)box('#fff1bd',1360,545,80,6);}
+ if(s.round===5){
+  box('#25424b',2578,320,12,490);box('#547e88',2492,320,98,18);sprite(13,2530,350,34,34);if(s.time%1.2>.85)box('#f2b6af',2524,344,12,8);
+  // The canopy opens onto the physical pub and its three waiting bodies.
+  // Its rails, shutters and viewing window stay at their authored coordinates.
+  const p=ease(g.payloads[0].progress),x=2130,y=-120;box('#0d1921',x-12,y-12,344,230);box('#7db4bd',x-10,y-10,340,6);box('#7db4bd',x-10,y+206,340,6);box('#4f7781',x+12,y+212,10,38);box('#4f7781',x+298,y+212,10,38);
+  const outside=scenes[5],bodies=scenes[0];if(outside.complete&&outside.naturalWidth)ctx.drawImage(outside,475,10,255,150,x,y,320,200);if(bodies.complete&&bodies.naturalWidth)ctx.drawImage(bodies,380,80,190,90,x+56,y+110,208,76);
+  ctx.save();ctx.beginPath();ctx.rect(x,y,320,200);ctx.clip();for(const [n,dir]of [[0,-1],[1,1]]){const xx=snapPixel(x+n*160+dir*p*164);for(let yy=y;yy<y+200;yy+=40)art.draw(ctx,21,xx,yy,160,40);}ctx.restore();wire(1310,480,x+160,y+200,g.payloads[0].released);if(p===1)status('THREE BODIES · BEYOND THE GLASS',x+160,y-28,c,11);
+ }
+ if(s.round===7&&g.payloads[0].arrived){
+  // Water follows the lowered gutter into its supported side drain.
+  box('#789196',2080,568,170,10);box('#526970',2240,572,12,38);for(let n=0;n<7;n++){const xx=snapPixel(2110+(Math.floor(t*80)+n*17)%130);box('#b9d5df',xx,564,6,4);}for(let n=0;n<5;n++)box('#91b5c7',2244,578+(Math.floor(t*95)+n*7)%26,2,6);
+ }
+ if(s.round===6){sprite(17,950,610,72,70);if(g.archiveMounted)sprite(16,950,552,40,48);for(const [i,x]of [[0,1050],[1,1140],[2,1230]]){sprite(22,x,480,60,130);box('#a8dfe0',x-12,466-72*(1-g.reset),24,72*(1-g.reset));wire(x,490,1500,550,g.resetting);}for(let n=0;n<3;n++){wire(1500,554,2000+n*300,500,g.reset>=1);if(g.transferred[n]){sprite(16,2000+n*300,522,24,28);box(c,1980+n*300,550,40,4);}}}
+ for(const e of s.enemies){if(e.hp<=0&&s.time-e.deadAt>1)continue;const frame=Math.floor(t*8+e.phase)%4,index=(s.round===2?24:28)+frame;ctx.save();ctx.translate(snapPixel(e.x),snapPixel(e.y+44));if(e.face<0)ctx.scale(-1,1);if(e.hp<=0){ctx.globalAlpha=Math.max(0,1-(s.time-e.deadAt));ctx.rotate(Math.PI/2);}frames.draw(ctx,index,-34,-80,68,80);ctx.restore();if(e.hp>0&&s.time>e.shotAt-.45&&s.time<e.shotAt)status('!',e.x,e.y-24,'#ffba90',16);}
+ if(s.round!==6){const e=s.level.exit;sprite(8,e.x-55,e.y,28,130);sprite(8,e.x+55,e.y,28,130);box(c,e.x-70,e.y-140,140,10);if(s.power){if(s.round!==7)drawPortal(ctx,e.x,e.y-60,42,90,s.time,c,true);else{box('#c5dadd',e.x-44,e.y-128,88,128);for(let n=0;n<9;n++)box('#789cb2',e.x-34+n*9,e.y-126+(Math.floor(t*120)+n*17)%116,2,8);}}status(s.round===7?'OUTSIDE':s.power?'ALL THREE':'OUTPUT SEALED',e.x,e.y-153,c,11);}
 }

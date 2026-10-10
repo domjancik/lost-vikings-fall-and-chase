@@ -1,25 +1,29 @@
 import assert from 'node:assert/strict';import {step} from './engine.js';
 export function playStoryRoute(s,hz=120){const events=[],dt=1/hz;
- const tick=(input={},seconds=dt)=>{for(let i=0;i<Math.max(1,Math.round(seconds*hz));i++){const cmd=i===0?input:{left:input.left,right:input.right};events.push({id:s.active,input:cmd});step(s,cmd,dt);assert.equal(s.failed,false,'Death in '+s.round+' '+JSON.stringify(s.heroes));}};
- const move=(id,x)=>{s.active=id;let done=false;for(let i=0;i<hz*25;i++){if(s.won){done=true;break;}const h=s.heroes[id],d=x-h.x;if(Math.abs(d)<3&&Math.abs(h.vx)<12){done=true;break;}const brake=h.ground?[2600,2300,2100][id]:[1250,950,750][id],stop=h.vx*Math.abs(h.vx)/(2*brake),r=d-stop;tick(Math.abs(r)<2?{}:r>0?{right:true}:{left:true});}tick({},.15);assert.ok(done,'Blocked '+id+' -> '+x+' '+JSON.stringify(s.heroes));};
+ const tick=(input={},seconds=dt)=>{for(let i=0;i<Math.max(1,Math.round(seconds*hz));i++){const cmd=i===0?input:{left:input.left,right:input.right};events.push({id:s.active,input:cmd});step(s,cmd,dt);assert.equal(s.failed,false,'Death '+s.round+' '+JSON.stringify(s.heroes));}};
+ const move=(id,x)=>{s.active=id;let done=false;for(let i=0;i<hz*28;i++){if(s.won){done=true;break;}const h=s.heroes[id],d=x-h.x;if(Math.abs(d)<3&&Math.abs(h.vx)<12){done=true;break;}const brake=h.ground?[2600,2300,2100][id]:[1250,950,750][id],stop=h.vx*Math.abs(h.vx)/(2*brake),r=d-stop;tick(Math.abs(r)<2?{}:r>0?{right:true}:{left:true});}tick({},.15);assert.ok(done,'Blocked '+s.round+' '+id+' → '+x+' '+JSON.stringify(s.heroes));};
  const face=(id,dir=1)=>{s.active=id;tick(dir>0?{right:true}:{left:true},.06);tick({},.1);};
- const use=id=>{s.active=id;tick({interact:true});tick({},.1);};const item=(id,type)=>{s.active=id;const h=s.heroes[id];h.itemSlot=h.inventory.indexOf(type);assert.ok(h.itemSlot>=0,'Missing '+type);tick({item:true});};
- const jump=x=>{s.active=0;tick({jump:true});move(0,x);tick({},.8);};
- const climb=x=>{move(0,x-20);jump(x+60);move(0,x+120);jump(x+220);move(0,x+265);jump(x+370);};
- const sword=()=>{face(1);tick({sword:true});};const bow=(wait=.6)=>{face(1);tick({action:true});tick({},wait);};
- const clearEnemies=(max=Infinity)=>{for(const e of s.enemies.filter(e=>e.hp>0&&e.x<max)){move(1,e.left-490);while(e.hp>0){bow(1.2);assert.ok(s.time<500,'Enemy not reachable');}}};
- const bash=x=>{move(0,x-120);s.active=0;tick({right:true},.32);tick({action:true,right:true},.15);tick({},.3);};
- const board=x=>{move(2,x);tick({},.8);s.active=2;tick({jump:true});move(1,x+10);move(0,x-10);tick({},.1);assert.equal(s.heroes[1].support,2,'Baleog shield boarding');assert.equal(s.heroes[0].support,2,'Erik shield boarding '+JSON.stringify(s.heroes));};
+ const use=id=>{s.active=id;tick({interact:true});tick({},.1);};
+ const item=(id,type)=>{s.active=id;s.heroes[id].itemSlot=s.heroes[id].inventory.indexOf(type);assert.ok(s.heroes[id].itemSlot>=0,'Missing '+type);tick({item:true});};
+ const jump=x=>{s.active=0;tick({jump:true});move(0,x);tick({},.7);};
+ const boost=(ox,shelf)=>{move(2,ox);s.active=2;tick({jump:true});move(0,ox-55);jump(ox);assert.equal(s.heroes[0].support,2,'Shield boarding');jump(shelf);assert.equal(s.heroes[0].y,366,'Shelf landing');};
+ const sword=x=>{move(1,x-55);face(1);tick({sword:true});tick({},2.2);};
+ const bow=(x,wait=1)=>{move(1,x);face(1);tick({action:true});tick({},wait);};
+ const clear=(from)=>{for(const e of s.enemies.filter(e=>e.hp>0)){const firing=from??e.left-450;face(2);tick({action:true});move(2,firing+60);move(1,firing);face(1);let n=0;while(e.hp>0&&n++<12){tick({action:true});tick({},.7);}assert.equal(e.hp,0,'Defeat '+e.x);tick({},1);}};
+ const secure=(holder,pad,runner,latch)=>{move(holder,pad);tick({},1.3);move(runner,latch);use(runner);tick({},.3);};
+ const ride=(index,ids=[0,1,2])=>{const l=s.machine.lifts[index];for(const [n,id]of ids.entries())move(id,l.x+30+n*40);use(ids[ids.length-1]);tick({},5);assert.ok(Math.abs(l.y-l.target)<.1,'Lift arrival');for(const id of ids)assert.ok(Math.abs(s.heroes[id].y+44-l.y)<.1,'Rider '+id);};
  tick({},.5);
  switch(s.round){
- case 0:climb(360);use(0);assert.ok(s.heroes[0].inventory.includes('serviceKey'));move(0,860);tick({},1.2);item(0,'serviceKey');move(0,600);clearEnemies();move(1,1585);sword();assert.ok(s.machine.cable);break;
- case 1:clearEnemies();climb(930);use(0);assert.ok(s.machine.dispatch);move(1,1700);bow();assert.ok(s.machine.delivery);move(2,1490);face(2);move(2,2330);assert.ok(s.machine.parked);break;
- case 2:bash(550);assert.ok(s.machine.bell);move(2,760);use(2);move(2,1450);face(2,-1);s.active=2;tick({action:true});tick({},3.2);assert.ok(s.machine.mirror);move(1,760);use(1);move(1,1610);sword();assert.ok(s.machine.seal);for(const id of [0,1,2]){if(s.heroes[id].x<900){move(id,760);use(id);}move(id,1730);use(id);}s.active=1;face(1);bow(.8);break;
- case 3:clearEnemies();move(1,1740);sword();move(2,1940);face(2);move(1,1740);for(let i=0;i<3;i++)bash(850);tick({},7);assert.equal(s.machine.heat,3);move(0,2020);use(0);move(0,2520);item(0,'ticket');break;
- case 4:move(2,610);s.active=2;tick({jump:true});move(0,560);jump(610);assert.equal(s.heroes[0].support,2);jump(730);use(0);move(0,890);tick({},1);item(0,'red');move(0,700);clearEnemies(1800);move(1,1370);use(1);move(1,1790);face(1);item(1,'bomb');move(1,1580);tick({},2.3);assert.ok(s.machine.safe);clearEnemies();move(1,1910);use(1);move(1,2520);item(1,'archive');break;
- case 5:move(1,230);sword();board(490);use(2);tick({},3.5);move(2,800);move(1,1000);bow(.6);assert.ok(s.machine.chime);board(1460);use(2);tick({},4.1);move(2,1780);move(0,2190);jump(2330);use(0);assert.ok(s.machine.aligned);break;
- case 6:climb(350);use(0);move(1,985);sword();assert.ok(s.machine.restraint);move(2,1340);s.active=2;tick({jump:true});tick({},2);assert.ok(s.machine.charge>=1);for(const [id,x] of [[0,1700],[1,2040],[2,2370]]){move(id,x);use(id);}assert.ok(s.machine.transferred.every(Boolean));break;
- case 7:clearEnemies();climb(1080);use(0);move(1,1670);sword();assert.ok(s.machine.cord&&s.machine.hatch);break;
+ case 0:secure(2,500,0,950);boost(1190,1300);move(0,1320);use(0);move(0,1500);tick({},1);item(0,'serviceKey');tick({},1.3);clear(1810);sword(2350);break;
+ case 1:move(0,700);use(0);bow(950);tick({},4.5);ride(0);clear(2020);break;
+ case 2:boost(550,660);move(0,690);use(0);move(0,1000);tick({},1);move(2,1600);face(2);s.active=2;tick({action:true});move(1,1500);use(1);tick({},4.5);assert.equal(s.machine.work,1,'Protected stroke');sword(2050);tick({},3);break;
+ case 3:sword(850);tick({},1.3);ride(0);clear(2110);bow(2300);tick({},1.3);break;
+ case 4:boost(690,790);move(0,830);use(0);move(0,1200);tick({},1);item(0,'archive');tick({},3.2);use(0);assert.ok(s.heroes[0].inventory.includes('archive'));secure(2,1800,1,2240);move(1,1900);clear(2220);break;
+ case 5:sword(1250);bow(1380);ride(0);clear(2040);move(0,2280);s.active=2;tick({jump:true});move(2,2470);move(2,2530);tick({},7);assert.equal(s.heroes[2].y,766,'Float lower landing');
+  // Other crew return down the reusable first lift, then traverse the lower route.
+  for(const id of [0,1])move(id,1920);use(1);tick({},5);for(const id of [0,1])move(id,2770);use(1);tick({},6);move(1,2950);use(1);move(0,3100);move(1,3100);move(2,2770);use(2);tick({},6);use(2);tick({},6);break;
+ case 6:move(2,950);item(2,'archive');move(0,1300);use(0);tick({},5.3);for(const [id,x]of [[0,2000],[1,2300],[2,2600]]){move(id,x);use(id);}break;
+ case 7:move(2,1550);face(2);ride(0,[0]);move(0,1200);use(0);move(0,1450);tick({},1.5);move(0,1300);move(0,1070);use(0);tick({},4);for(const id of [0,1])move(id,1400);tick({},1.3);clear(1620);sword(2050);tick({},2);move(0,2400);move(2,2500);tick({},1.3);move(1,2820);use(1);break;
  }
- if(s.round!==6){for(const id of [0,1,2])move(id,2720);tick({},.3);}assert.ok(s.won,'Uncleared '+s.round+' '+JSON.stringify(s.machine));assert.ok(s.heroes.every(h=>h.hp>0));return events;
+ if(s.round!==6){for(const id of [0,1,2])move(id,3100);tick({},.3);}assert.ok(s.won,'Uncleared '+s.round+' '+JSON.stringify(s.machine));assert.ok(s.heroes.every(h=>h.hp>0));return events;
 }

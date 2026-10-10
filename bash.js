@@ -1,4 +1,4 @@
-import {snapPixel,animationTime} from './pixel-grid.js?v=far45';
+import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 export const BASH_DURATION=.36;
 export function startBash(s,dt){const h=s.heroes[s.active];if(h.id!==0||!h.ground||!(h.bashBuffer>0)||Math.abs(h.vx)<130||s.cooldown>0)return false;h.bash=BASH_DURATION;h.bashBuffer=0;h.bashFace=h.face;h.vx=h.face*320;h.moveX=h.vx*dt;s.cooldown=.46;return true;}
 export function bashImpact(s,x,y){s.impact={kind:'bash',x,y,time:s.time};}

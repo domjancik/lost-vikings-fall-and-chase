@@ -1,4 +1,4 @@
-import {snapPixel} from './pixel-grid.js?v=far45';
+import {snapPixel} from './pixel-grid.js?v=arc46';
 export function cellBounds(data,width,height,cols,rows,n){const x0=Math.floor(n%cols*width/cols),y0=Math.floor(Math.floor(n/cols)*height/rows),x1=Math.floor((n%cols+1)*width/cols),y1=Math.floor((Math.floor(n/cols)+1)*height/rows);let left=x1,right=x0-1,top=y1,bottom=y0-1;
  for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)if(data[(y*width+x)*4+3]>=128){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}
  return right<left?null:{x:left,y:top,w:right-left+1,h:bottom-top+1};

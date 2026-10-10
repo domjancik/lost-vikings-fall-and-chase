@@ -1,11 +1,11 @@
-import {updatePlunger} from './plunger.js?v=far45';
-import {oreReady} from './forge-material.js?v=far45';
-import {startBash,bashImpact} from './bash.js?v=far45';
-import {damage} from './health.js?v=far45';
-import {segmentHit} from './projectile-collision.js?v=far45';
-import {shieldHit} from './projectile-collision.js?v=far45';
-import {ghostLayout} from './ghost-layout.js?v=far45';
-import {prepareMotion,integrateMotion} from './movement.js?v=far45';
+import {updatePlunger} from './plunger.js?v=arc46';
+import {oreReady} from './forge-material.js?v=arc46';
+import {startBash,bashImpact} from './bash.js?v=arc46';
+import {damage} from './health.js?v=arc46';
+import {segmentHit} from './projectile-collision.js?v=arc46';
+import {shieldHit} from './projectile-collision.js?v=arc46';
+import {ghostLayout} from './ghost-layout.js?v=arc46';
+import {prepareMotion,integrateMotion} from './movement.js?v=arc46';
 export function feedback(s,message){s.feedback={sequence:(s.feedback?.sequence||0)+1,message};}
 export function campaignStep(s,input,dt){
  const a=s.heroes[s.active],o=s.heroes[2],g=s.machine,m=s.level.mechanic;

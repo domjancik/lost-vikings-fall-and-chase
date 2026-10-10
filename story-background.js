@@ -1,4 +1,4 @@
-import {snapPixel} from './pixel-grid.js?v=far45';
+import {snapPixel} from './pixel-grid.js?v=arc46';
 // Fit distant scenery in screen space so gameplay zoom does not zoom the sky.
 export function storyFarLayout(camera,view){
  const size=snapPixel(Math.max(view.width,view.height)*1.08),margin=(size-view.height)/2;

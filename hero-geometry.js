@@ -1,4 +1,4 @@
-import {snapPixel,snapAngle} from './pixel-grid.js?v=far45';
+import {snapPixel,snapAngle} from './pixel-grid.js?v=arc46';
 export const SHIELD={width:28,height:48,upTop:-36,upWidth:48};
 export function shieldTransform(h,pose,frame){
  const transition=pose==='shield-raise'||pose==='shield-lower';

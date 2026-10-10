@@ -1,7 +1,8 @@
+import {mechanismSnapshot,mechanismSounds} from './story-audio.js?v=arc46';
 // Observe simulation changes, not held inputs: effects occur once at their real trigger.
 export function createSoundEvents(){let previous=null,state=null,lastStep=[0,0,0],lastFuse=0,lastMachine=0,lastAmbient=0;return s=>{
  const heroes=s.heroes.map(h=>({...h,inventory:[...h.inventory]})),g={...s.machine,transferMask:s.machine.transferred?.reduce((n,on,i)=>n+(on?1<<i:0),0),draftMask:s.machine.drafts?.reduce((n,on,i)=>n+(on?1<<i:0),0),ingredients:[...(s.machine.ingredients||[])]};
- const current={time:s.time,heroes,g,shots:s.shots.map(p=>({ref:p,kind:p.kind})),bombs:s.bombs.length,blast:s.blast?.time,impact:s.impact?.time,fuse:s.fuse,power:s.power,turret:s.turret,crate:s.crate,failed:s.failed,won:s.won,feedback:s.feedback?.sequence};
+ const current={mechanisms:mechanismSnapshot(s),time:s.time,heroes,g,shots:s.shots.map(p=>({ref:p,kind:p.kind})),bombs:s.bombs.length,blast:s.blast?.time,impact:s.impact?.time,fuse:s.fuse,power:s.power,turret:s.turret,crate:s.crate,failed:s.failed,won:s.won,feedback:s.feedback?.sequence};
  if(state!==s){state=s;previous=current;lastStep=[s.time,s.time,s.time];lastFuse=lastMachine=lastAmbient=s.time;return [];}
  const events=[],add=(name,x=s.heroes[s.active].x,id=s.active)=>events.push({name,x,id}),p=previous;
  for(const h of heroes){const old=p.heroes[h.id];if(h.hp<old.hp)add(h.hp<=0?'death':'hurt',h.x,h.id);if(h.hp>old.hp)add('heal',h.x,h.id);
@@ -13,7 +14,7 @@ export function createSoundEvents(){let previous=null,state=null,lastStep=[0,0,0
   if(Math.abs(h.x-old.x)>180)add('portal',h.x,h.id);
  }
  for(const shot of current.shots){const old=p.shots.find(x=>x.ref===shot.ref);if(!old)add(shot.kind==='arrow'?'bow':shot.kind==='fire'?'forge':shot.kind==='ghost'?'ambient':'lever',shot.ref.x,1);else if(old.kind!==shot.kind)add('reflect',shot.ref.x,2);}
- for(const old of p.shots){if(!current.shots.some(x=>x.ref===old.ref)&&old.ref.dead){const o=heroes[2];if(Math.abs(old.ref.x-o.x)<65&&Math.abs(old.ref.y-o.y)<65&&!heroes.some(h=>h.hp<p.heroes[h.id].hp))add('shieldHit',o.x,2);else if(old.ref.x>0&&old.ref.x<1440&&old.ref.y<650)add('impact',old.ref.x);}}
+ for(const old of p.shots){if(!current.shots.some(x=>x.ref===old.ref)&&old.ref.dead){const o=heroes[2];if(Math.abs(old.ref.x-o.x)<65&&Math.abs(old.ref.y-o.y)<65&&!heroes.some(h=>h.hp<p.heroes[h.id].hp))add('shieldHit',o.x,2);else if(old.ref.x>0&&old.ref.x<(s.level.worldWidth??1440)&&old.ref.y<(s.level.deathY??650))add('impact',old.ref.x);}}
  if(current.impact!==p.impact&&current.impact!==undefined)add('impact',s.impact.x);
  if(current.bombs>p.bombs)add('bombPlace');if(current.blast!==p.blast&&current.blast!==undefined)add('explosion',s.blast.x);
  if(s.bombs.length&&s.time-lastFuse>Math.max(.09,Math.min(...s.bombs.map(b=>b.fuse))*.22)){add('fuse',s.bombs[0].x);lastFuse=s.time;}
@@ -24,6 +25,7 @@ export function createSoundEvents(){let previous=null,state=null,lastStep=[0,0,0
  if(current.feedback!==p.feedback&&/no nearby|bag full|already at full|item kept|wrong|move the vikings/i.test(s.feedback?.message||''))add('wrong');
  if(g.ingredients.length>p.g.ingredients.length)add('mix',620);if(g.lastBankHit?.time!==p.g.lastBankHit?.time&&g.lastBankHit)add(g.lastBankHit.correct?'bell':'wrong',890);
  if(g.oreCutAt!==undefined&&s.time-g.oreCutAt>=1.1&&(p.g.oreCutAt===undefined||p.time-g.oreCutAt<1.1))add('pour',1000);
+ mechanismSounds(current.mechanisms,p.mechanisms,add,s.time-lastMachine>.22);
  if(s.time-lastMachine>.22){if(g.liftOn&&Math.abs(g.liftY-p.g.liftY)>.01)add('lift',590);if(Math.abs(g.cartX-p.g.cartX)>.01)add('cart',g.cartX);lastMachine=s.time;}
  if(s.time-lastAmbient>2.4){add('ambient',s.round===5?1250:s.round===7?870:720);lastAmbient=s.time;}
  if(s.combat?.time!==p.combat&&s.combat)add('impact',s.combat.x);current.combat=s.combat?.time;previous=current;return events.filter((e,i)=>events.findIndex(x=>x.name===e.name&&x.id===e.id)===i);

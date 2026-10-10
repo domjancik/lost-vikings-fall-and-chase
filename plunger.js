@@ -1,4 +1,4 @@
-import {snapPixel,animationTime} from './pixel-grid.js?v=far45';
+import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 export const onPlunger=h=>h.ground&&h.support!==2&&Math.abs(h.x-335)<48&&Math.abs(h.y+44-610)<2;
 export function updatePlunger(s,dt){const target=s.heroes.some(onPlunger)?1:0,g=s.machine,value=g.plungerCompression||0;g.plungerCompression=value<target?Math.min(target,value+dt*10):Math.max(target,value-dt*7);}
 export function plungerPose(s){const age=s.machine.plungerAt===undefined?Infinity:animationTime(Math.max(0,s.time-s.machine.plungerAt)),pressed=s.heroes.some(onPlunger);const compression=s.machine.plungerCompression||0;let capY=594+16*compression,stage=pressed?(compression<.98?'compressing':'compressed'):'idle';

@@ -1,4 +1,4 @@
-import {animationTime,snapPixel} from './pixel-grid.js?v=far45';
+import {animationTime,snapPixel} from './pixel-grid.js?v=arc46';
 const age=(time,event)=>Number.isFinite(event)?Math.max(0,animationTime(time-event)):Infinity;
 export function machinePose(s){
  const g=s.machine,t=animationTime(s.time),mixAge=age(t,g.mixedAt),shotAge=age(t,g.dragonShotAt);

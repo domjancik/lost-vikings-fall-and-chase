@@ -2,6 +2,7 @@
 export function groundShadow(state,hero,pubPlatforms){
  const surfaces=state.campaign!=='story'&&state.round===0?[{x:0,y:610,w:1440},...pubPlatforms]:[...state.level.floors,...state.level.platforms];
  if(state.level.mechanic==='cargo')surfaces.push({x:500,y:state.machine.liftY,w:180});
+ if(state.campaign==='story')surfaces.push(...state.machine.lifts.map(l=>({x:l.x,y:l.y,w:l.w})));
  const feet=hero.y+44;
  const below=surfaces.filter(p=>hero.x>=p.x&&hero.x<=p.x+p.w&&p.y>=feet-2).sort((a,b)=>a.y-b.y)[0];
  if(!below)return null;

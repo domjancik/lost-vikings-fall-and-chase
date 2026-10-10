@@ -1,5 +1,5 @@
-import {damage} from './health.js?v=far45';
-import {segmentHit,shieldHit} from './projectile-collision.js?v=far45';
+import {damage} from './health.js?v=arc46';
+import {segmentHit,shieldHit} from './projectile-collision.js?v=arc46';
 export function makeEnemy(x,floor,left,right,kind='sentry'){return {x,y:floor-44,left,right,kind,face:-1,hp:kind==='wraith'?1:2,speed:kind==='crawler'?48:66,phase:x*.013,shotAt:3+x/2000,hurt:0};}
 export function hurtEnemy(s,e,amount=1){if(e.hp<=0||e.hurt>0)return false;e.hp=Math.max(0,e.hp-amount);e.hurt=.2;e.hitAt=s.time;if(!e.hp){e.deadAt=s.time;s.combat={time:s.time,x:e.x};}return true;}
 export function updateEnemies(s,dt,walls){for(const e of s.enemies){e.hurt=Math.max(0,e.hurt-dt);if(e.hp<=0)continue;

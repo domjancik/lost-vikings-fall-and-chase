@@ -1,4 +1,4 @@
-import {snapPixel,snapAngle,animationTime} from './pixel-grid.js?v=far45';
+import {snapPixel,snapAngle,animationTime} from './pixel-grid.js?v=arc46';
 export const ORE_LOAD_TIME=4/3;
 const clamp=v=>Math.max(0,Math.min(1,v));
 export function oreReady(s){const g=s.machine;return g.ore&&(g.oreCutAt===undefined||s.time-g.oreCutAt>=ORE_LOAD_TIME);}

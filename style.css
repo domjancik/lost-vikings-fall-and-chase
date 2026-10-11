@@ -49,4 +49,4 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 
 .campaign-choices{display:flex;gap:8px;margin-bottom:18px}.campaign-choices button{flex:1;font-size:11px}.campaign-choices .selected{color:#e9c77b;border-color:#e9c77b}#play-story{margin-bottom:10px}#chapter-dialog{max-width:580px}#chapter-story p{font-size:17px;line-height:1.6;color:#d8cbb0}.story-skip{display:block;margin:18px 0;font-size:12px}.story-skip input{margin-right:8px}
 
-.ladder-controls{display:none;gap:6px;flex-direction:column}body.has-ladders .ladder-controls{display:flex}.ladder-controls button{min-height:38px;height:38px;font-size:20px}#play-cycle{color:#cffcf1}
+.ladder-controls{display:flex;gap:6px;flex-direction:column}body.has-ladders .ladder-controls{display:flex}.ladder-controls button{min-height:38px;height:38px;font-size:20px}#play-cycle{color:#cffcf1}

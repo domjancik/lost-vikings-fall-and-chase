@@ -1,0 +1,17 @@
+async page=>{
+ const errors=[];page.on('pageerror',e=>errors.push(String(e)));await page.setViewportSize({width:1440,height:900});
+ await page.goto('http://127.0.0.1:3003/?campaign=cycle&look=58');await page.locator('#play-cycle').click();await page.waitForTimeout(800);
+ const read=()=>page.locator('#game').evaluate(e=>({camera:JSON.parse(e.dataset.camera),heroes:JSON.parse(e.dataset.heroes)}));
+ const base=await read();await page.keyboard.down('ArrowUp');await page.waitForTimeout(650);const up=await read();await page.keyboard.up('ArrowUp');await page.waitForTimeout(650);const restored=await read();
+ await page.keyboard.down('ArrowDown');await page.waitForTimeout(650);const down=await read();await page.keyboard.up('ArrowDown');
+ if(up.camera.y>=base.camera.y-100||down.camera.y<=base.camera.y+50||Math.abs(restored.camera.y-base.camera.y)>4)throw Error('Camera offsets:'+JSON.stringify({base,up,down,restored}));
+ if(up.heroes[0].y!==base.heroes[0].y)throw Error('Look moved hero');
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(650);const mobileBase=await read();const button=await page.locator('[data-key="up"]').boundingBox();await page.mouse.move(button.x+button.width/2,button.y+button.height/2);await page.mouse.down();await page.waitForTimeout(650);const mobileUp=await read();await page.mouse.up();
+ if(mobileUp.camera.look!==-1||mobileUp.camera.y>=mobileBase.camera.y-100)throw Error('Mobile look failed');
+ const layouts=[];for(const size of [{width:390,height:844},{width:844,height:390}]){await page.setViewportSize(size);const boxes=await page.locator('.mobile-controls button').evaluateAll(bs=>bs.map(b=>{const r=b.getBoundingClientRect();return{x:r.x,y:r.y,w:r.width,h:r.height}}));for(const b of boxes)if(b.x<0||b.y<0||b.x+b.w>size.width+1||b.y+b.h>size.height+1)throw Error('Control outside viewport');for(let i=0;i<boxes.length;i++)for(let j=i+1;j<boxes.length;j++){const a=boxes[i],b=boxes[j];if(a.x<b.x+b.w&&a.x+a.w>b.x&&a.y<b.y+b.h&&a.y+a.h>b.y)throw Error('Overlap');}layouts.push({size,buttons:boxes.length});}
+ await page.setViewportSize({width:1440,height:900});
+ await page.evaluate(async()=>{const read=()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0];const t=performance.now();let held='';while(Math.abs(read().x-650)>2||Math.abs(read().vx)>10){if(performance.now()-t>10000)throw Error('Ladder timeout');const h=read(),d=650-h.x-h.vx*Math.abs(h.vx)/5200,k=Math.abs(d)<2?'':d>0?'ArrowRight':'ArrowLeft';if(k!==held){if(held)window.dispatchEvent(new KeyboardEvent('keyup',{key:held}));held=k;if(k)window.dispatchEvent(new KeyboardEvent('keydown',{key:k}));}await new Promise(r=>requestAnimationFrame(r));}if(held)window.dispatchEvent(new KeyboardEvent('keyup',{key:held}));});
+ const ladderBase=await read();await page.keyboard.down('ArrowUp');await page.waitForTimeout(450);const ladderUp=await read();await page.keyboard.up('ArrowUp');if(!ladderUp.heroes[0].climbing||ladderUp.camera.look!==0||ladderUp.heroes[0].y>=ladderBase.heroes[0].y-20)throw Error('Ladder priority failed');
+ await page.screenshot({path:'output/playwright/look58-ladder.png'});if(errors.length)throw Error(errors.join('\n'));
+ return{keyboard:{base:base.camera.y,up:up.camera.y,down:down.camera.y,restored:restored.camera.y},mobile:{base:mobileBase.camera.y,up:mobileUp.camera.y},layouts,ladder:{look:ladderUp.camera.look,y:ladderUp.heroes[0].y},errors};
+}

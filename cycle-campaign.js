@@ -1,6 +1,7 @@
 import {prepareMotion,integrateMotion} from './movement.js?v=support57';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {damage} from './health.js?v=arc46';
+import {ladderAtHero} from './ladder-context.js?v=look58';
 const floor=(x,y,w)=>({x,y,w});
 export const cycleLevels=[{
  name:'THE CYCLE OF DEPTHS',subtitle:'Change the circulation. Bring everyone back together.',
@@ -55,7 +56,7 @@ export function cycleStep(s,input,dt){
  g.selectorPose=approach(g.selectorPose,g.selector?1:0,dt/.6);
  const climbers=[];
  for(const h of s.heroes){
-  if(h.id===s.active){const l=s.level.ladders.find(l=>Math.abs(h.x-l.x)<26&&h.y+44>=l.top-5&&h.y+44<=l.bottom+5);
+  if(h.id===s.active){const l=ladderAtHero(s.level,h);
    if((input.up||input.down)&&l)h.climbing=true;
    if(input.left||input.right||input.jump)h.climbing=false;
   }

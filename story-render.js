@@ -1,3 +1,4 @@
+import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=native47';
 import {createAtlas} from './sprite-atlas.js?v=arc46';
 import {storyObjects,storyWalls} from './story-campaign.js?v=arc46';
@@ -32,9 +33,9 @@ export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime
  const sprite=(n,x,bottom,w=60,h=60)=>art.draw(ctx,n,x-w/2,bottom-h,w,h);
  const wire=(x,y,toX,toY,on)=>{const yy=Math.min(y,toY)-120;ctx.strokeStyle=on?c:'#625846';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(snapPixel(x),snapPixel(y));ctx.lineTo(snapPixel(x),snapPixel(yy));ctx.lineTo(snapPixel(toX),snapPixel(yy));ctx.lineTo(snapPixel(toX),snapPixel(toY));ctx.stroke();if(on){const span=Math.abs(toX-x),p=snapPixel(x+Math.sign(toX-x)*(Math.floor(t*100)%Math.max(1,span)));box('#f7efd3',p,yy-2,8,4);}};
  for(const p of [...s.level.floors,...s.level.platforms]){
-  // Texture is bounded by collision geometry; its actual top is the foot plane.
-  for(let x=p.x;x<p.x+p.w;x+=64)art.draw(ctx,s.round,x,p.y,Math.min(64,p.x+p.w-x),64);
-  if(s.level.platforms.includes(p)){for(let x=p.x+20;x<p.x+p.w;x+=120){box(palettes[s.round],x,p.y+62,14,120);box(c+'66',x,p.y+62,4,120);}box('#f1dfb5',p.x,p.y,p.w,2);}else for(let y=p.y+64;y<s.level.worldBottom;y+=64)for(let x=p.x;x<p.x+p.w;x+=64)art.draw(ctx,s.round,x,y,Math.min(64,p.x+p.w-x),64);
+  drawTerrain(ctx,s,p.x,p.y,p.w,s.level.platforms.includes(p)?64:s.level.worldBottom-p.y);
+  if(s.level.platforms.includes(p)){for(let x=p.x+20;x<p.x+p.w;x+=120){box(palettes[s.round],x,p.y+62,14,120);box(c+'66',x,p.y+62,4,120);}}
+
  }
  for(const l of g.lifts){box('#121b20',l.x+6,l.high-20,8,l.low-l.high+40);box('#121b20',l.x+l.w-14,l.high-20,8,l.low-l.high+40);box(c+'66',l.x+8,l.high-20,2,l.low-l.high+40);box(c+'66',l.x+l.w-12,l.high-20,2,l.low-l.high+40);sprite(12,l.x+l.w/2,l.y+24,l.w,26);box('#f8e7bc',l.x,l.y,l.w,4);for(const y of [l.low,l.high]){box('#172126',l.x-28,y,28,24);box('#172126',l.x+l.w,y,28,24);} }
  for(const d of g.gates){const w=storyWalls(s).find(v=>v.id===d.id);for(const r of gateFrameRects(d))box('#191c22',r.x,r.y,r.w,r.h);ctx.save();ctx.beginPath();ctx.rect(d.x-12,d.y-d.h,56,d.h);ctx.clip();sprite(8,d.x+16,w.bottom,32,d.h);ctx.restore();box(c,d.x-8,d.y-d.h-12,48,6);if(d.secured)sprite(10,d.x+15,d.y-d.h-20,24,30);}

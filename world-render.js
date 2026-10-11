@@ -1,3 +1,4 @@
+import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawMachine} from './machine-render.js?v=arc46';
 import {machinePose} from './machine-animation.js?v=arc46';
 import {drawVerticalWorld} from './vertical-render.js?v=arc46';
@@ -23,9 +24,7 @@ export function drawWorld(ctx,s,platforms,text,box){
  box('#0c142028',0,0,1440,790);status(s.level.name,720,43,c,18);
  function tile(col,x,y,w,h){terrain.draw(ctx,row,col,x,y,w,h);}
  function deck(x,y,w,ground=false){
-  if(ground){for(let yy=y+28;yy<790;yy+=56)for(let xx=x;xx<x+w;xx+=56)tile(3,xx,yy,Math.min(56,x+w-xx),56);}
-  for(let xx=x+24;xx<x+w-24;xx+=40)tile(1,xx,y,Math.min(40,x+w-24-xx),ground?32:38);
-  tile(0,x,y,24,ground?32:38);tile(2,x+w-24,y,24,ground?32:38);
+  drawTerrain(ctx,s,x,y,w,ground?(s.level.worldBottom??790)-y:40);
  }
  if(s.round>=9){drawVerticalWorld(ctx,s,text,box,deck);return;}
  if(s.round>=6){for(const f of s.level.floors)deck(f.x,f.y,f.w,true);for(const f of s.level.platforms)deck(f.x,f.y,f.w);drawInventoryWorld(ctx,s,text,box);drawPortal(ctx,s.level.exit.x,s.level.exit.y-58,48,84,s.time,c,s.power);return;}

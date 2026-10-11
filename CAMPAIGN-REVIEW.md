@@ -226,3 +226,31 @@ Independently ran the five `scene-resolution.test.js` / `story-render.test.js` t
 Independently inspected the actual `native47-5-{1,2}.png` and `native47-7-{1,2}.png` pairs against earlier campaign46 zoom captures, plus native47 chapters1/3/5/7 at2x and portrait mobile. Native47 retains the intended architectural framing without the prototype's abrupt enlargement. Fine texture has more uniform grid sampling at2x. Scenery supports remain coherent, crew feet stay on visible terrain, and no new detached cutout, seam, support drift or visibly invented color is present in the inspected evidence.
 
 The original generated art remains more detailed than crew sprites, so this acceptance does not claim that resolution preparation turns every painterly texture into authored pixel-art shapes. It verifies the requested display-grid correction, framing continuity and grounding in representative screenshots. No unresolved blocker from the native-resolution review remains.
+
+## Terrain48 review — preliminary
+
+Inspected `terrain-layout.js`, `terrain-render.js`, shared Arcade deck integration and Story surface integration. The new planner uses top/corner/side/bottom pieces separately from interior material, clips to the supplied surface rectangle, preserves the two-world-unit source scale, and limits alternate infill to deterministic sparse variants. Collision geometry is unchanged.
+
+Independently viewed actual `terrain48-story-0.png`, `terrain48-story-3.png`, `terrain48-story-5.png`, `terrain48-story-7.png`, `terrain48-arcade-0.png` and `terrain48-mobile.png`. Interior is visibly quieter than the prior ornate blocks. Top contact reads as one consistent boundary; crew feet remain at that surface. Wood/metal/ceramic materials now read as continuous masses rather than repeated decorative panels. Mobile ground contact is preserved. Some repeated vertical seams/cracks remain visible, especially mint ceramic; this is a nonblocking art repetition observation, not an invented-color artifact.
+
+**Blocking T1 — moving Arcade terrain is not snapped to the world grid.** `drawTerrain` passes rawx/y/w/h to clipping, fill and atlas positions. Shared Arcade `deck` calls it with continuously moving `g.liftY`, producing fractional-world coordinates and possible texture shimmer. Snap the visual rectangle and tile destinations before drawing while preserving the actual collision surface. Add a fractional lift-position rendering regression. Static spawn screenshots cannot prove movement quantization.
+
+Upper-platform side/bottom/support inspection and a post-fix moving-platform screenshot remain pending. No implementation or artwork was edited by this reviewer.
+
+## Terrain48 grounding follow-up
+
+**T1 is resolved.** `terrainPlan` snaps visual bounds to the two-world-unit grid, all tile commands derive from those bounds, and the renderer uses the snapped clipping rectangle. Independently ran the five terrain layout/art tests:5 pass, including the new fractional moving-position assertion.
+
+Independently inspected the latest `campaign46-chapter-2-machinery.png` and `campaign46-2-lift-travel.png`. Crew feet meet the moving cradle and upper landing surfaces. The new landing's top edge, side/bottom texture and downward supports remain attached and are clipped to its rectangle. No new foot gap or unsupported platform edge is visible. This closes the movement/support visual requirement for the changed terrain rendering in representative production-route evidence.
+
+The implementation agent reports a refined source and infill crop correcting separator pixels. At this review's read time, `terrain48-story-3.png` and `terrain48-story-7.png` still show strong dark interior seams, likely from the earlier survey. Final post-crop survey evidence is therefore pending for texture-quality acceptance; it does not invalidate the verified geometry/grid fix. No implementation or artwork was edited by the reviewer.
+
+## Terrain48 final texture verdict
+
+**Accepted. No unresolved blocking terrain finding remains in the inspected final evidence.** Independently viewed the refreshed post-crop `terrain48-story-3.png`, `terrain48-story-5.png`, `terrain48-story-7.png`, `terrain48-arcade-0.png` and `terrain48-mobile.png` with the image-view tool.
+
+The strong repeated black vertical atlas separators are gone. Blue/wood/mobile infill now reads as a continuous quiet material mass; mint ceramic is similarly subdued, with one visible horizontal course line rather than a repeating panel grid. Top surfaces remain distinct from their infill, and crew feet meet those surfaces in all inspected frames. The previously verified chapter2 upper landing and moving lift evidence retain correct support/contact. Quantization T1 remains repaired and its regression passes.
+
+A faint repeating texture grain/course is still perceptible in the mint material, but it is now low-impact material structure rather than the earlier ornate or black-separator pattern. This is a nonblocking aesthetic observation. The implementation agent reports the full19-scene survey completed without new browser errors and the198-test suite/build pass; this reviewer independently verified the five focused terrain/art tests and inspected the representative final screenshots listed above.
+
+No implementation or artwork was edited by this reviewer. Grounding, source-grid integrity and quiet-infill acceptance gates remain required for future changes.

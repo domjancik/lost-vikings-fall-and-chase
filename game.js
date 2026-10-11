@@ -1,6 +1,6 @@
 import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc46';
 import {storyLevels} from './story-campaign.js?v=arc46';
-import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=native47';
+import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=terrain48';
 import {createSoundEvents} from './audio-events.js?v=arc46';
 import {createSoundLayer} from './sound-effects.js?v=arc46';
 import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';
@@ -20,7 +20,7 @@ import {createControls,keyAction} from './controls.js?v=arc46';
 import {groundShadow} from './ground-shadow.js?v=arc46';
 import {drawSprite,animationFor} from './sprite-render.js?v=arc46';
 import {levels as arcadeLevels} from './levels.js?v=arc46';
-import {drawWorld} from './world-render.js?v=arc46';
+import {drawWorld} from './world-render.js?v=terrain48';
 import {objective,nearbyInteraction,debugState} from './interactions.js?v=arc46';
 import {createState,step,platforms,W,H} from './engine.js?v=arc46';
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;

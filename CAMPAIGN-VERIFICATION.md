@@ -39,3 +39,10 @@ arc46 published to https://united-marsh-6ppd.here.now/ on2026-10-10. Real-browse
 The new preparation works directly from unmodified Story scene pixels and caches the exact intended display raster. Tests cover nonnegative weighted source-cell color bounds, identity preparation, source duplication on larger views, portrait/ultrawide coverage, width-threshold continuity and full-resolution canopy-reveal crops. Independent visual review found no unresolved blocker in representative before/after scene and mobile captures. Artwork's authored style is preserved; preparation does not invent missing original detail.
 
 Published native47 verified in the live browser: exact2-world-unit scene grid, all8 chapter choices,14 module/art responses atHTTP200,390×844 mobile canvas and zero page errors. Real resize checks at1301/1302 pixels stayed on675×450 grids;1920 pixels selected996×664 without a scale jump.
+
+
+## Terrain48 material sets —2026-10-11
+
+198 tests pass with zero failures/skips and the build succeeds. Both campaigns use the new eight-material terrain atlas: top corners/repeat, exterior sides, quiet infill variants and bottom edge. The generated source was refined to remove big cracks/panel motifs; measured extraction excludes separator pixels. Regressions check low infill contrast, seam-free edges, clipping, deterministic variant selection and fractional moving-platform pixel snapping. The64 prepared sprites pass original source-cell color bounds.
+
+All19 Story/Arcade spawn scenes plus mobile were surveyed in the real browser with zero page errors after final art extraction. Chapter2 was replayed through production keyboard controls and cleared with HP3/3/3; upper-landing and lift captures support grounding acceptance. Sources/preparation/prompt provenance are in TERRAIN-SETS.md.

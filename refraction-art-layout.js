@@ -1,0 +1,1 @@
+export const refractionArt={"basePivot": [32, 27], "emitterLens": [54, 37], "liftRim": 33, "sceneSize": [1400, 509], "sceneFloor": 413, "cellSize": 64, "worldSize": 128, "machineBaseShifts": [3, 3, 3, 3, 5, 5, 5, 5, 4, 4, 4, 4]};

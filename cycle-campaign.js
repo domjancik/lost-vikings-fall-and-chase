@@ -2,6 +2,7 @@ import {prepareMotion,integrateMotion} from './movement.js?v=support57';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {damage} from './health.js?v=arc46';
 import {ladderAtHero} from './ladder-context.js?v=look58';
+import {refractionLevel,setupRefraction,refractionObjects,refractionStep} from './refraction-campaign.js?v=refraction62';
 const floor=(x,y,w)=>({x,y,w});
 export const cycleLevels=[{
  name:'THE CYCLE OF DEPTHS',subtitle:'Change the circulation. Bring everyone back together.',
@@ -11,15 +12,16 @@ export const cycleLevels=[{
  floors:[floor(0,940,850),floor(1280,940,160),floor(1700,940,350),floor(2210,940,590),floor(0,1120,2800)],
  platforms:[floor(500,500,350),floor(1000,390,180),floor(1460,260,220),floor(2210,260,590)],
  ladders:[{x:650,top:500,bottom:1120}],exit:{x:2600,y:260,w:170}
-}];
+},refractionLevel];
 export function setupCycle(s){
+ if(s.round===1){setupRefraction(s);return;}
  s.level=cycleLevels[0];s.crate=false;s.turret=false;s.enemies=[];
  for(const h of s.heroes){h.y=896;h.ground=true;}
  s.machine={released:false,cutAt:-1,brake:false,brakePose:0,damper:0,damperReleased:false,selector:false,selectorPose:0,
   carrier:{x:850,y:940,w:160,segment:0,high:500,v:0,pause:1.5,laps:0,support:'cycle-carrier'},highArrival:false};
 }
 export function cycleSurfaces(s){return [s.machine.carrier,...s.level.floors,...s.level.platforms];}
-export function cycleObjects(s){return [
+export function cycleObjects(s){if(s.level.mechanic==='refraction')return refractionObjects(s);return [
  {id:'wind-brake',x:1070,y:346,radius:65,title:'WIND BRAKE',ready:true,done:s.machine.brake,run:()=>{s.machine.brake=true;return 'Brake pin withdrawn.';}},
  {id:'routing',x:1600,y:216,radius:65,title:'RAIL SELECTOR',ready:true,done:s.machine.selector,run:()=>{s.machine.selector=!s.machine.selector;return 'Route queued for the bottom dock.';}}
 ];}
@@ -39,6 +41,7 @@ export function advanceCycleCarrier(s,dt){
  }
 }
 export function cycleStep(s,input,dt){
+ if(s.level.mechanic==='refraction'){refractionStep(s,input,dt);return;}
  s.time+=dt;s.cooldown=Math.max(0,s.cooldown-dt);const g=s.machine,a=s.heroes[s.active];
  for(const h of s.heroes)h.swing=Math.max(0,(h.swing||0)-dt);
  prepareMotion(s,input,dt);

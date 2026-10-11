@@ -1,4 +1,4 @@
-import {cycleObjects} from './cycle-campaign.js?v=support57';
+import {cycleObjects} from './cycle-campaign.js?v=refraction62';
 import {storyObjects} from './story-campaign.js?v=support57';
 import {verticalObjects} from './vertical-campaign.js?v=support57';
 import {inventoryObjects} from './inventory-campaign.js?v=support57';

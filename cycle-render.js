@@ -1,4 +1,5 @@
 import {cycleGatePose,drawCycleGateField} from './cycle-gate.js?v=gate61';
+import {drawRefractionWorld} from './refraction-render.js?v=refraction62';
 import {cycleRailStatus,railSignals} from './cycle-rail.js?v=rail60';
 import {createAtlas} from './sprite-atlas.js?v=ground59';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
@@ -9,6 +10,7 @@ const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
+ if(s.level.mechanic==='refraction')return drawRefractionWorld(ctx,s,camera,viewport);
  const g=s.machine,c=g.carrier,box=(color,x,y,w,h)=>{ctx.fillStyle=color;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
  box('#172f3a',camera.x,camera.y,viewport.width,viewport.height);
  if(scene.complete&&scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,offset=snapPixel(camera.x*.75);for(let x=offset-w;x<camera.x+viewport.width;x+=w)ctx.drawImage(scene,x,1120-h,w,h);}

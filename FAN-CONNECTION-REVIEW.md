@@ -47,3 +47,10 @@ contact blocker is visible in the reviewed frames. The central visual gate's
 new requirement to review every cable/duct terminal after grounding changes
 addresses the missed dependency. This verdict does not certify unrelated
 machinery connections or uncaptured legacy props.
+
+## Live verification
+
+Commitface857 published2026-10-12. Live entry and all four changed runtime
+modules match the accepted release by SHA256. Public1x/2x plus all four animated
+fan frames pass port registration and ground gap0; zero page errors. Captures
+output/playwright/fan66-live-*. Full root suite269pass,0fail.

@@ -17,3 +17,7 @@ Independently ran `node --test camera-look.test.js cycle-campaign.test.js`: **15
 Read the browser driver's actual keyboard/pointer checks. The implementation agent reports normal camera Y692, held-Up Y516, release Y692, held-Down Y804; mobile held-Up also reached Y516. Seven touch controls fit without overlap in both390x844 and844x390 viewports. Walking Erik to the ladder with directional keyboard input and holding Up climbed to Y824.75 with camera look0. No page errors occurred; the only reported console404 was the favicon. Those browser measurements are reported evidence, not a separate browser run performed by this reviewer.
 
 The implementation agent separately reports root243 passing tests, an isolated focused19 passes, and isolated full snapshot233 passes with4 optional-tooling skips and no failures. Only the15 focused tests above were independently executed here. No implementation or assets were edited by this reviewer.
+
+## Published verification
+
+Published look58 to the existing here.now site. Live entry, control labels, CSS and six changed runtime files match the tested snapshot byte-for-byte. Repeated the actual keyboard/pointer driver on the live URL: camera Y692 -> Up516 -> release692, Down804; touch Up516; seven controls fit without overlap in both mobile orientations; ladder Up climbed to Y826 with look0. No page errors.

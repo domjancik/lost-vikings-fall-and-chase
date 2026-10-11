@@ -1,5 +1,14 @@
 # Support57 independent review
 
+## Live deployment verification (implementation record)
+
+Live entry point and all 11 changed modules exactly match the tested release.
+Ordinary keyboard boarding and carrier travel also passed on the public site:
+528 horizontal frames, maximum relative drift 1.14e-13 world units, both heroes
+healthy and attached to their respective supports, zero page errors.
+The expanded seven-test regression set additionally verifies walking across
+and off a moving shield. Root-only suite: 241 pass, zero failures or skips.
+
 ## Source and simulation verdict
 
 **Code and focused regression gate accepted; actual browser contact evidence remains pending.** No art or collision plane changes are included, and this review does not approve the unfinished Vikings55 assets.

@@ -23,3 +23,12 @@ The reusable-helper issue above is resolved: current `drawGrounded` calls `ctx.d
 Read the refreshed `browser-ground59.js`: its offscreen production-atlas check scans rendered alpha pixels, rather than trusting returned placement alone. The implementation agent reports all eight combinations (frames0–3, trimfalse/true) render atY820 with both logical and scanned actual bottom940. The running production fan sampled all four frames with zero contact gap; refreshed1x/2x/mobile captures were produced without page errors. These browser executions are reported evidence; independent source/alpha/image inspections and the three-test run are this reviewer's checks.
 
 **Ground59 accepted for the existing fan placement and corrected grounding helper. No remaining blocker in this scope.** Earlier canvas-bottom/scene-survey assumptions failed and must not be reused. This verdict does not certify every other standing prop or support in the game, and does not approve the pending Vikings55 art.
+
+## Live verification
+
+Ground59 published successfully after retrying a transient upload reset. Live
+entry and three changed runtime modules match the reviewed snapshot. Repeated
+actual rendered-alpha scans on the public game: all four frames with both
+trim configurations end atY940; production active frames each report gap0.
+Live1x/2x/mobile screenshots retained under output/playwright/ground59-live-*.
+No page errors. Final root suite:246 passing, zero failures or skips.

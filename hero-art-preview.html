@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Last Call — Vikings63</title>
+<style>body{margin:0;background:#111a22;color:#e8dcc3;font:16px system-ui}main{max-width:1050px;margin:auto;padding:24px}h1{font-size:26px}p{line-height:1.5}canvas{width:100%;height:auto;image-rendering:pixelated;background:#1c2931;border:1px solid #596463}button{padding:10px 16px;background:#b99a5d;color:#14212a;border:0;cursor:pointer}a{color:#efcf8e}</style>
+<main><h1>Three Vikings. Three silhouettes.</h1><p>Erik: lean rust scout · Baleog: upright teal warrior · Olaf: broad ochre defender</p><button id="direction">FACE LEFT / RIGHT</button> <button id="gray">GRAYSCALE</button><p id="pose"></p><canvas width="960" height="530" id="preview"></canvas><p><a href="/?campaign=cycle&vikings=63">Play the circulation engine</a></p></main>
+<script type="module">
+import {drawSprite,whenHeroesReady} from './sprite-render.js?v=vikings63';
+import {drawHeroArt} from './hero-art.js?v=vikings63';
+const c=document.querySelector('canvas'),g=c.getContext('2d');let face=1,gray=false;
+document.querySelector('#direction').onclick=()=>face=-face;document.querySelector('#gray').onclick=()=>{gray=!gray;c.style.filter=gray?'grayscale(1)':'none';};
+await whenHeroesReady();window.heroPreviewReady=true;
+function draw(ms){const t=ms/1000;g.clearRect(0,0,960,530);g.imageSmoothingEnabled=false;g.fillStyle='#35414a';g.fillRect(0,196,960,4);g.fillRect(0,446,960,4);
+ for(let id=0;id<3;id++){
+  const x=160+id*320,h={id,face,ground:true,animTime:t,walk:t*10,vx:130,shield:true,shieldUp:false};
+  drawSprite(g,h,x,108,2);
+  const action=['bash','sword','overhead'][id],f=id===2?Math.floor(t*3)%4:Math.floor(t*8)%6;
+  drawHeroArt(g,{...h,shieldUp:id===2},x,358,action,f,2);
+ }
+ document.querySelector('#pose').textContent='RUN CYCLES  /  HEAD BASH · SWORD · OVERHEAD SHIELD';requestAnimationFrame(draw);
+}requestAnimationFrame(draw);
+</script></html>

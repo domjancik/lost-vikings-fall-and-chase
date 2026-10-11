@@ -1,0 +1,1398 @@
+{
+  "erik": {
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "scale": 0.17307692307692307,
+    "nativeStandingHeight": 36,
+    "soleCenterSource": [
+      98.3158042123097,
+      244.0
+    ],
+    "frames": [
+      {
+        "cell": 0,
+        "bounds": [
+          19,
+          28,
+          45,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 1,
+        "bounds": [
+          23,
+          28,
+          44,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 2,
+        "bounds": [
+          24,
+          28,
+          46,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 3,
+        "bounds": [
+          21,
+          28,
+          46,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 4,
+        "bounds": [
+          19,
+          28,
+          45,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 5,
+        "bounds": [
+          24,
+          28,
+          44,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 6,
+        "bounds": [
+          22,
+          28,
+          44,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 7,
+        "bounds": [
+          20,
+          28,
+          45,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 8,
+        "bounds": [
+          24,
+          27,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 9,
+        "bounds": [
+          23,
+          27,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 10,
+        "bounds": [
+          22,
+          27,
+          40,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 11,
+        "bounds": [
+          22,
+          27,
+          40,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 12,
+        "bounds": [
+          20,
+          28,
+          42,
+          61
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 13,
+        "bounds": [
+          20,
+          26,
+          41,
+          61
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 14,
+        "bounds": [
+          19,
+          26,
+          42,
+          61
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 15,
+        "bounds": [
+          20,
+          34,
+          40,
+          61
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 16,
+        "bounds": [
+          24,
+          23,
+          42,
+          62
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 17,
+        "bounds": [
+          21,
+          28,
+          42,
+          62
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 18,
+        "bounds": [
+          23,
+          23,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 19,
+        "bounds": [
+          20,
+          27,
+          40,
+          62
+        ],
+        "offset": [
+          15,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 20,
+        "bounds": [
+          17,
+          37,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 21,
+        "bounds": [
+          18,
+          30,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 22,
+        "bounds": [
+          19,
+          30,
+          39,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 23,
+        "bounds": [
+          20,
+          28,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 24,
+        "bounds": [
+          21,
+          33,
+          40,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 25,
+        "bounds": [
+          18,
+          33,
+          40,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 26,
+        "bounds": [
+          15,
+          35,
+          44,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 27,
+        "bounds": [
+          15,
+          35,
+          45,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 28,
+        "bounds": [
+          19,
+          31,
+          42,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 29,
+        "bounds": [
+          21,
+          33,
+          39,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 30,
+        "bounds": [
+          19,
+          26,
+          41,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 31,
+        "bounds": [
+          20,
+          35,
+          38,
+          62
+        ],
+        "offset": [
+          15,
+          23
+        ],
+        "grounded": true
+      }
+    ]
+  },
+  "baleog": {
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "scale": 0.18052256532066507,
+    "nativeStandingHeight": 38,
+    "soleCenterSource": [
+      98.76175892724834,
+      246.0
+    ],
+    "frames": [
+      {
+        "cell": 0,
+        "bounds": [
+          17,
+          26,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 1,
+        "bounds": [
+          20,
+          26,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 2,
+        "bounds": [
+          19,
+          26,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 3,
+        "bounds": [
+          16,
+          26,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 4,
+        "bounds": [
+          15,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 5,
+        "bounds": [
+          19,
+          27,
+          46,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 6,
+        "bounds": [
+          18,
+          26,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 7,
+        "bounds": [
+          17,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 8,
+        "bounds": [
+          23,
+          25,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 9,
+        "bounds": [
+          22,
+          26,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 10,
+        "bounds": [
+          21,
+          26,
+          46,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 11,
+        "bounds": [
+          20,
+          25,
+          45,
+          62
+        ],
+        "offset": [
+          14,
+          19
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 12,
+        "bounds": [
+          19,
+          28,
+          47,
+          61
+        ],
+        "offset": [
+          14,
+          18
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 13,
+        "bounds": [
+          18,
+          20,
+          46,
+          57
+        ],
+        "offset": [
+          14,
+          18
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 14,
+        "bounds": [
+          21,
+          27,
+          48,
+          61
+        ],
+        "offset": [
+          14,
+          18
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 15,
+        "bounds": [
+          19,
+          30,
+          47,
+          61
+        ],
+        "offset": [
+          14,
+          18
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 16,
+        "bounds": [
+          24,
+          23,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 17,
+        "bounds": [
+          23,
+          27,
+          46,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 18,
+        "bounds": [
+          23,
+          23,
+          46,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 19,
+        "bounds": [
+          20,
+          26,
+          43,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 20,
+        "bounds": [
+          17,
+          32,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 21,
+        "bounds": [
+          19,
+          27,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 22,
+        "bounds": [
+          19,
+          28,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 23,
+        "bounds": [
+          20,
+          32,
+          42,
+          62
+        ],
+        "offset": [
+          14,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 24,
+        "bounds": [
+          19,
+          21,
+          42,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 25,
+        "bounds": [
+          14,
+          30,
+          45,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 26,
+        "bounds": [
+          14,
+          30,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 27,
+        "bounds": [
+          17,
+          29,
+          47,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 28,
+        "bounds": [
+          20,
+          29,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 29,
+        "bounds": [
+          18,
+          29,
+          43,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 30,
+        "bounds": [
+          17,
+          29,
+          48,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 31,
+        "bounds": [
+          17,
+          29,
+          42,
+          62
+        ],
+        "offset": [
+          14,
+          21
+        ],
+        "grounded": true
+      }
+    ]
+  },
+  "olaf": {
+    "sourceSize": [
+      1536,
+      1024
+    ],
+    "scale": 0.16901408450704225,
+    "nativeStandingHeight": 36,
+    "soleCenterSource": [
+      95.68271215086284,
+      246.0
+    ],
+    "frames": [
+      {
+        "cell": 0,
+        "bounds": [
+          17,
+          27,
+          46,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 1,
+        "bounds": [
+          21,
+          27,
+          46,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 2,
+        "bounds": [
+          21,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 3,
+        "bounds": [
+          19,
+          29,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          23
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 4,
+        "bounds": [
+          20,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 5,
+        "bounds": [
+          24,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 6,
+        "bounds": [
+          23,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 7,
+        "bounds": [
+          23,
+          27,
+          47,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 8,
+        "bounds": [
+          23,
+          28,
+          44,
+          62
+        ],
+        "offset": [
+          16,
+          22
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 9,
+        "bounds": [
+          22,
+          28,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          22
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 10,
+        "bounds": [
+          21,
+          28,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          22
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 11,
+        "bounds": [
+          20,
+          28,
+          40,
+          62
+        ],
+        "offset": [
+          16,
+          22
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 12,
+        "bounds": [
+          16,
+          38,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 13,
+        "bounds": [
+          18,
+          31,
+          41,
+          60
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 14,
+        "bounds": [
+          22,
+          24,
+          41,
+          61
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 15,
+        "bounds": [
+          21,
+          23,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": false
+      },
+      {
+        "cell": 16,
+        "bounds": [
+          20,
+          22,
+          42,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 17,
+        "bounds": [
+          19,
+          27,
+          42,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 18,
+        "bounds": [
+          21,
+          22,
+          44,
+          62
+        ],
+        "offset": [
+          16,
+          21
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 19,
+        "bounds": [
+          20,
+          23,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 20,
+        "bounds": [
+          17,
+          37,
+          42,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 21,
+        "bounds": [
+          16,
+          29,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 22,
+        "bounds": [
+          18,
+          28,
+          39,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 23,
+        "bounds": [
+          20,
+          30,
+          42,
+          62
+        ],
+        "offset": [
+          16,
+          20
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 24,
+        "bounds": [
+          22,
+          26,
+          43,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 25,
+        "bounds": [
+          21,
+          27,
+          44,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 26,
+        "bounds": [
+          21,
+          25,
+          44,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 27,
+        "bounds": [
+          20,
+          24,
+          40,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 28,
+        "bounds": [
+          19,
+          24,
+          39,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 29,
+        "bounds": [
+          19,
+          24,
+          39,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 30,
+        "bounds": [
+          19,
+          24,
+          41,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      },
+      {
+        "cell": 31,
+        "bounds": [
+          20,
+          24,
+          40,
+          62
+        ],
+        "offset": [
+          16,
+          24
+        ],
+        "grounded": true
+      }
+    ]
+  },
+  "shield": {
+    "nativeSize": [
+      14,
+      24
+    ],
+    "worldSize": [
+      28,
+      48
+    ]
+  }
+}

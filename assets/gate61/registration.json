@@ -1,0 +1,18 @@
+{
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "nativeSize": [
+    64,
+    64
+  ],
+  "worldSize": [
+    128,
+    128
+  ],
+  "sourcePixelWorldSize": 2,
+  "soleShiftNative": 2,
+  "baseBottomNative": 64,
+  "method": "single uniform nearest-neighbor sample of accepted coarse source; base translation only"
+}

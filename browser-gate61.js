@@ -1,0 +1,30 @@
+async page=>{
+ const errors=[];page.on('pageerror',e=>errors.push(String(e)));
+ await page.setViewportSize({width:1440,height:900});await page.goto('http://127.0.0.1:3006/?campaign=cycle&gate=61');await page.locator('#play-cycle').click();if(await page.locator('#zoom').textContent()!=='2×')await page.locator('#zoom').click();
+ try{await page.exposeBinding('gate61Capture',async(_,name)=>page.screenshot({path:'output/playwright/gate61-'+name+'.png'}));}catch(e){if(!String(e).includes('already registered'))throw e;}
+try{await page.exposeBinding('gate61Powered',async()=>{await page.waitForTimeout(400);await page.screenshot({path:'output/playwright/gate61-powered-2x.png'});await page.locator('#zoom').click();await page.waitForTimeout(400);await page.screenshot({path:'output/playwright/gate61-powered-1x.png'});await page.setViewportSize({width:844,height:390});await page.waitForTimeout(400);await page.screenshot({path:'output/playwright/gate61-mobile-1x.png'});await page.locator('#zoom').click();await page.waitForTimeout(400);await page.screenshot({path:'output/playwright/gate61-mobile-2x.png'});await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(400);});}catch(e){if(!String(e).includes('already registered'))throw e;}
+ const result=await page.evaluate(async()=>{
+  const read=()=>{const e=document.querySelector('#game');return {heroes:JSON.parse(e.dataset.heroes),machine:JSON.parse(e.dataset.puzzle).machine,won:e.dataset.won==='true',failed:e.dataset.failed==='true',time:Number(e.dataset.simTime)};};
+  const held=new Set();let active=0;
+  const pulse=key=>{for(const type of ['keydown','keyup'])window.dispatchEvent(new KeyboardEvent(type,{key,code:key===' '?'Space':key,bubbles:true}));};
+  const select=id=>{if(id!==active){pulse(String(id+1));active=id;}};
+  const input=v=>{for(const [key,on] of [['ArrowLeft',!!v.left],['ArrowRight',!!v.right],['ArrowUp',!!v.up],['ArrowDown',!!v.down]]){if(on&&!held.has(key)){held.add(key);window.dispatchEvent(new KeyboardEvent('keydown',{key,code:key,bubbles:true}));}else if(!on&&held.has(key)){held.delete(key);window.dispatchEvent(new KeyboardEvent('keyup',{key,code:key,bubbles:true}));}}if(v.jump||v.sword)pulse(' ');if(v.action)pulse('d');if(v.interact)pulse('e');};
+  const frame=()=>new Promise(r=>requestAnimationFrame(r));
+  const tick=async(v={},seconds=.03)=>{input(v);const t=read().time;while(read().time-t<seconds&&!read().won){await frame();if(read().failed)throw Error('Died '+JSON.stringify(read()));}input({});};
+  const until=async(condition,controls=()=>({}),limit=100)=>{const start=performance.now();while(performance.now()-start<limit*1000){if(condition()){input({});return;}input(controls());await frame();if(read().failed)throw Error('Died '+JSON.stringify(read()));}throw Error('Timeout '+JSON.stringify(read()));};
+  const move=async(id,x)=>{select(id);await until(()=>read().won||Math.abs(read().heroes[id].x-x)<3&&Math.abs(read().heroes[id].vx)<12,()=>{const h=read().heroes[id],brake=h.ground?[2600,2300,2100][id]:[1250,950,750][id],d=x-h.x-h.vx*Math.abs(h.vx)/(2*brake);return Math.abs(d)<2?{}:d>0?{right:true}:{left:true};});await tick({},.15);};
+  const climb=async(id,feet)=>{await move(id,650);await until(()=>Math.abs(read().heroes[id].y+44-feet)<2,()=>({up:feet<read().heroes[id].y+44,down:feet>read().heroes[id].y+44}));await tick({},.03);};
+  const capture=async name=>{input({});await window.gate61Capture(name);};
+  await capture('start');await move(1,400);await tick({sword:true});await capture('restraint-cut');
+  await climb(0,500);await move(0,820);await until(()=>{const c=read().machine.carrier;return c.x===850&&c.y===500&&c.pause>.8;});await move(0,895);await capture('rider-deck');await tick({jump:true,right:true});await until(()=>read().heroes[0].ground&&read().heroes[0].y+44===390,()=>({right:true}),3);await move(0,1125);await capture('brake-before');await tick({interact:true},.18);await capture('brake-middle');await tick({},.6);await capture('brake');
+  await climb(1,500);await move(1,820);await tick({action:true});await until(()=>read().machine.damper===1);await capture('damper');await move(1,700);
+  await move(2,820);await until(()=>{const c=read().machine.carrier;return c.x===850&&c.y===940&&c.pause>.8;});await move(2,880);await until(()=>{const h=read().heroes[2];return h.x>=1300&&h.x<=1410&&h.y+44===500;});await tick({jump:true});await until(()=>read().heroes[2].y+44<380);await capture('draft');await until(()=>read().heroes[2].y+44<240);await move(2,1560);await until(()=>read().heroes[2].ground&&read().heroes[2].y+44===260);await tick({interact:true});await capture('selector');
+  await tick({jump:true});await move(2,1668);await until(()=>{const c=read().machine.carrier;return c.high===260&&c.segment===1&&c.x>1560&&c.x<1610;});await until(()=>read().heroes[2].support==='cycle-carrier',()=>({right:true}),3);await tick({});
+  const upperDock=id=>{const s=read(),c=s.machine.carrier;return c.x===2050&&c.y===260&&c.pause>.8&&s.heroes[id].y+44===260;};
+  await until(()=>upperDock(2));await move(2,2350);await window.gate61Powered();const gate=JSON.parse(document.querySelector('#game').dataset.cycleArt).gate;if(!gate.active||gate.gap!==0||gate.w/gate.nativeWidth!==2)throw Error('Powered gate incorrect');await move(2,2600);await capture('olaf-exit');
+  for(const id of [0,1]){await climb(id,940);await move(id,820);await until(()=>{const c=read().machine.carrier;return c.x===850&&c.y===940&&c.pause>.8;});await move(id,880);await until(()=>upperDock(id));await move(id,2600);}
+  await tick({},.3);await capture('clear');const end=read();if(!end.won)throw Error('Incomplete '+JSON.stringify(end));return {won:end.won,health:end.heroes.map(h=>h.hp),time:end.time};
+ });
+ await page.waitForFunction(()=>!document.querySelector('#win').hidden);await page.keyboard.press('Enter');await page.waitForFunction(()=>document.querySelector('#game').dataset.won==='false');
+ if(errors.length)throw Error(errors.join(';'));return {result,enterContinues:true,errors};
+}

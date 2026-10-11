@@ -1,9 +1,10 @@
+import {cycleGatePose,drawCycleGateField} from './cycle-gate.js?v=gate61';
 import {cycleRailStatus,railSignals} from './cycle-rail.js?v=rail60';
 import {createAtlas} from './sprite-atlas.js?v=ground59';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
-const atlas=createAtlas('assets/cycle52/machines.png',4,4),fan=createAtlas('assets/cycle52/fan.png',4,1);
+const atlas=createAtlas('assets/cycle52/machines.png',4,4),fan=createAtlas('assets/cycle52/fan.png',4,1),gate=createAtlas('assets/gate61/gate.png',1,1);
 const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return i;};
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
@@ -44,6 +45,6 @@ export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
  text(rail.queued?rail.requested.toUpperCase()+' QUEUED':rail.active.toUpperCase()+' ACTIVE',1600,150,rail.queued?'#e9b66b':'#b6fff0',11);
  // Native row2 is the rear railing; row8 is the actual walking deck.
  if(carrier.complete&&carrier.naturalWidth)ctx.drawImage(carrier,snapPixel(c.x),snapPixel(c.y)-16,160,64);
- atlas.draw(ctx,15,2536,132,128,128);
- return {ready:connectionsReady()&&[scene,ladder,carrier,atlas.image,fan.image].every(i=>i.complete&&i.naturalWidth),nativeScene:[scene.naturalWidth,scene.naturalHeight],rail:{...rail,signals},fan:fanContact?{frame:fanFrame,y:fanContact.y,bottom:fanContact.visibleBottom,surfaceY:fanContact.surface.y,gap:fanContact.surface.y-fanContact.visibleBottom}:null,carrier:{x:snapPixel(c.x),y:snapPixel(c.y)},draft,connections:{ready:connectionsReady(),frame:Math.floor(s.time*5)%4,brake:brakeCable.anchors,duct:duct.anchors,selector:selectorCable.anchors}};
+ const gatePose=cycleGatePose(g,s.time);drawCycleGateField(ctx,gatePose);ctx.save();if(gatePose.active){ctx.shadowColor='#78ffe0';ctx.shadowBlur=6*gatePose.glow;}const gateContact=gate.drawGrounded(ctx,0,gatePose,[...s.level.platforms,...s.level.floors]);ctx.restore();
+ return {ready:connectionsReady()&&[scene,ladder,carrier,atlas.image,fan.image,gate.image].every(i=>i.complete&&i.naturalWidth),nativeScene:[scene.naturalWidth,scene.naturalHeight],gate:{...gatePose,ready:!!gateContact,bottom:gateContact?.visibleBottom,gap:gateContact?gateContact.surface.y-gateContact.visibleBottom:null},rail:{...rail,signals},fan:fanContact?{frame:fanFrame,y:fanContact.y,bottom:fanContact.visibleBottom,surfaceY:fanContact.surface.y,gap:fanContact.surface.y-fanContact.visibleBottom}:null,carrier:{x:snapPixel(c.x),y:snapPixel(c.y)},draft,connections:{ready:connectionsReady(),frame:Math.floor(s.time*5)%4,brake:brakeCable.anchors,duct:duct.anchors,selector:selectorCable.anchors}};
 }

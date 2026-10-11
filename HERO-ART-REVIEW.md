@@ -190,3 +190,12 @@ the independent source/code/test/image inspection. I did not run a separate
 browser playthrough. No remaining blocker is found for this character-art
 replacement in the reviewed contexts; this verdict does not certify every
 legacy background or every uncaptured animation instant.
+
+## Live release verification — 2026-10-12
+
+Commit e2d3f95 published to the existing here.now game. Live HTML, four character
+modules and all four native sprite PNGs match the reviewed release by SHA256.
+Real public1x/2x smoke and shield boarding pass: Erik feet530 equals Olaf's
+walking plane530; all heroesHP3, zero page errors. Local full Refraction clear
+with final sprites:103.7166667seconds, HP[3,3,3], Entercontinues. Root266tests pass.
+Captured evidence output/playwright/vikings63-live-{pub-1x,pub-2x,shield-passenger}.

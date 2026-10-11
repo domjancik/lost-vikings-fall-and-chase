@@ -1,8 +1,9 @@
+import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
 import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {cycleGatePose,drawCycleGateField} from './cycle-gate.js?v=gate61';
 import {drawRefractionWorld} from './refraction-render.js?v=vertical65';
 import {cycleRailStatus,railSignals} from './cycle-rail.js?v=rail60';
-import {createAtlas} from './sprite-atlas.js?v=ground59';
+import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
@@ -32,15 +33,17 @@ export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
  if(g.cutAt>=0&&s.time-g.cutAt<.4){const t=s.time-g.cutAt;box('#d7b37a',450-t*100,894+t*40,12,4);box('#d7b37a',450+t*100,894+t*40,12,4);}
  atlas.draw(ctx,12+Math.min(2,Math.floor(g.brakePose*2.99)),1038,326,64,64);
  // Flanged air duct and flexible brake control terminate on actual housings.
- const duct=drawConnection(ctx,[[1300,518],[1300,770],[1360,770],[1360,820]],'pipe');
- const brakeCable=drawConnection(ctx,[[1094,364],[1200,364],[1200,850],[1300,850]],'cable',{time:s.time,phase:0});
+ const fanFrame=g.released?Math.floor(s.time*9)%4:0,fanRect={x:1296,y:812,w:128,h:128},fanSurfaces=[...s.level.floors,...s.level.platforms];
+ const fanContact=fan.placement(fanFrame,fanRect,fanSurfaces),fanRoutes=fanContact?cycleFanConnections(fanContact):null;
+ const duct=fanRoutes?drawConnection(ctx,fanRoutes.duct,'pipe'):{anchors:[]};
+ const brakeCable=fanRoutes?drawConnection(ctx,fanRoutes.cable,'cable',{time:s.time,phase:0}):{anchors:[]};
  const selectorCable=drawConnection(ctx,[[1632,232],[1744,232],[1744,128],[816,128],[816,542],[850,542]],'cable',{time:s.time,phase:2});
  // The selector operates the actual low/high branch, not a random track point.
  drawConnectionTile(ctx,c.high===260?31:30,850,542,1);
  drawConnectionTile(ctx,g.brakePose<.5?30:31,1134,364);
  // The hinge lens stays exposed at the actual projectile collision position.
  atlas.draw(ctx,4+Math.min(3,Math.floor(g.damper*3.99)),1268,456,64,64);
- const fanFrame=g.released?Math.floor(s.time*9)%4:0;const fanContact=fan.drawGrounded(ctx,fanFrame,{x:1296,y:812,w:128,h:128},[...s.level.floors,...s.level.platforms]);
+ fan.drawGrounded(ctx,fanFrame,fanRect,fanSurfaces);
  const draft=g.brakePose===1&&g.damper===1;
  if(draft)for(let n=0;n<18;n++){const y=940-((s.time*180+n*43)%680),x=1298+(n*26)%128;box('#a0e5e5',x,y,2,12);}
  atlas.draw(ctx,12+Math.min(2,Math.floor(g.selectorPose*2.99)),1568,196,64,64);

@@ -100,3 +100,11 @@ A missing base/support must remain a failed check, never a silent canvas-edge
 fallback. Inspect every animation frame for zero gap and stable registration.
 Review runtime contact diagnostics AND close screenshots at 1x, 2x and mobile;
 prior approval or level completion cannot waive an unexplained visible gap.
+
+## Connections after grounding corrections
+
+Cables, ducts, shafts and hoses must use ports on the final grounded sprite
+placement, never its old nominal rectangle. Critique must inspect every
+connection terminal against actual opaque housing pixels after placement changes,
+including all animation frames. Draw the housing over its terminal to seat the
+connection naturally; retain physical floor contact and pixel-grid coordinates.

@@ -1,5 +1,6 @@
+import {heroDrawOrder} from './hero-render-order.js?v=platform56r3';
 import {cycleLevels} from './cycle-campaign.js?v=cycle52';
-import {drawCycleWorld} from './cycle-render.js?v=connections53';
+import {drawCycleWorld} from './cycle-render.js?v=platform56r3';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc46';
@@ -22,7 +23,7 @@ import {drawProjectile,projectilePose,environmentPose} from './environment-anima
 import {drawBackground,viewportSize} from './background-render.js?v=arc46';
 import {createControls,keyAction} from './controls.js?v=cycle52';
 import {groundShadow} from './ground-shadow.js?v=cycle52';
-import {drawSprite,animationFor} from './sprite-render.js?v=cycle52';
+import {drawSprite,animationFor} from './sprite-render.js?v=platform56r3';
 import {levels as arcadeLevels} from './levels.js?v=arc46';
 import {drawWorld} from './world-render.js?v=terrain48';
 import {objective,nearbyInteraction,debugState} from './interactions.js?v=cycle52';
@@ -50,7 +51,7 @@ function draw(){
  canvas.dataset.plunger=campaign==='arcade'&&s.round===2?JSON.stringify(plungerPose(s)):'';canvas.dataset.forgeMaterial=campaign==='arcade'&&s.round===5?JSON.stringify(forgeMaterialPose(s)):'';canvas.dataset.environment=JSON.stringify(environmentPose(s));canvas.dataset.animations=JSON.stringify(s.heroes.map(h=>({id:h.id,...animationFor(h)})));canvas.dataset.impact=JSON.stringify(s.impact||null);canvas.dataset.shots=JSON.stringify(s.shots.map(p=>({...projectilePose(p,renderAlpha),kind:p.kind})));for(const p of s.shots)drawProjectile(ctx,p,renderAlpha,s.time);
  const shadows=s.heroes.map(h=>groundShadow(s,{x:(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,y:(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha},platforms));canvas.dataset.shadows=JSON.stringify(shadows);
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
- for(const h of s.heroes){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();if(h.id===s.active){text('▼',h.x,h.y-(h.shieldUp?48:14),colors[h.id],13);}for(let n=0;n<3;n++)box(n<h.hp?colors[h.id]:'#514953',h.x-10+n*8,h.y-8,5,3);}
+ for(const h of heroDrawOrder(s.heroes)){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();if(h.id===s.active){text('▼',h.x,h.y-(h.shieldUp?48:14),colors[h.id],13);}for(let n=0;n<3;n++)box(n<h.hp?colors[h.id]:'#514953',h.x-10+n*8,h.y-8,5,3);}
  drawBashEffects(ctx,s,box,text);
  if(paused&&started&&!s.won){box('#0e181bcc',0,0,W,H);text('PAUSED',camera+viewWidth/2,vertical+sceneHeight/2,'#d5ef83',36);text('ESC / Ⅱ TO RESUME',camera+viewWidth/2,vertical+sceneHeight/2+35,'#d9ddc8',12);}
  ctx.restore();screen.clearRect(0,0,canvas.width,canvas.height);screen.drawImage(surface,0,0,surface.width*WORLD_PIXEL,surface.height*WORLD_PIXEL);drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);

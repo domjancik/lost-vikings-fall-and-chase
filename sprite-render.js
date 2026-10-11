@@ -1,4 +1,4 @@
-import {shieldTransform} from './hero-geometry.js?v=arc46';
+import {SHIELD,shieldTransform} from './hero-geometry.js?v=platform56r3';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export function animationFor(h){
@@ -52,7 +52,7 @@ function raster(h,pose,frame){
  rect('#2a2827',-wide,32,wide*2,4);rect('#7d5533',-wide+1,33,wide*2-2,2);rect('#f2d99b',-3,31,7,6);rect('#907041',-1,33,3,2);
  // Rear arm swings opposite the leading foot.
  let rearX=-wide-3-(running?leg[0]*.7:0),rearY=climbing?[6,12,20,12][frame]:28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
- if(shieldRise>0){rearX=rearX*(1-shieldRise)-20*shieldRise;rearY*=1-shieldRise;}
+ if(shieldRise>0){rearX=rearX*(1-shieldRise)-20*shieldRise;rearY=rearY*(1-shieldRise)+(SHIELD.upTop+SHIELD.width/2)*shieldRise;}
  segment(-wide+1,20,rearX,rearY,6,p.dark,p.light);rect(p.shadow,rearX-3,rearY,6,5);rect(p.skin,rearX-3,rearY,4,3);
  // Head, shaded nose and brows.
  poly(outline,[[-11,2],[-12,12],[-8,20],[10,20],[14,11],[10,2]]);rect(p.shadow,-10,4,22,14);rect(p.skin,-9,4,17,12);rect('#ffe0b0',-7,6,8,4);rect('#ebaa72',9,10,7,5);rect('#ffd4a1',10,10,5,2);
@@ -70,7 +70,7 @@ function raster(h,pose,frame){
  let handX=wide+3+(running?leg[0]*.65:0),handY=climbing?[20,12,6,12][frame]:28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
  if(pose==='bow'){handX=26;handY=18;}
  if(pose==='sword'){handX=[13,15,22,27,24,18][frame];handY=[11,6,11,20,29,27][frame];}
- if(shieldRise>0){handX=handX*(1-shieldRise)+20*shieldRise;handY*=1-shieldRise;}
+ if(shieldRise>0){handX=handX*(1-shieldRise)+20*shieldRise;handY=handY*(1-shieldRise)+(SHIELD.upTop+SHIELD.width/2)*shieldRise;}
  segment(wide-1,20,handX,handY,6,p.dark,p.light);rect(p.shadow,handX-3,handY,6,5);rect(p.skin,handX-2,handY,4,3);
  if(h.id===1){
   if(pose==='sword'){

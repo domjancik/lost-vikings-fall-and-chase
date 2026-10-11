@@ -4,7 +4,8 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
 const atlas=createAtlas('assets/cycle52/machines.png',4,4),fan=createAtlas('assets/cycle52/fan.png',4,1);
 const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return i;};
-const scene=load('scene'),ladder=load('ladder'),carrier=load('carrier');
+const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
+ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport){
  const g=s.machine,c=g.carrier,box=(color,x,y,w,h)=>{ctx.fillStyle=color;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
  box('#172f3a',camera.x,camera.y,viewport.width,viewport.height);
@@ -17,7 +18,7 @@ export function drawCycleWorld(ctx,s,camera,viewport){
  drawConnectionTile(ctx,28,850,542,3);drawConnectionTile(ctx,28,2210,542,1);
  for(const p of s.level.floors)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,p.y===1120?80:64);
  for(const p of s.level.platforms)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,28);
- if(ladder.complete&&ladder.naturalWidth)for(let y=500;y<1120;y+=80){const h=Math.min(80,1120-y);ctx.drawImage(ladder,0,0,16,h/2,634,y,32,h);}
+ if(ladder.complete&&ladder.naturalWidth)for(let y=500;y<1120;y+=26){const h=Math.min(26,1120-y);ctx.drawImage(ladder,0,0,24,h/2,626,y,48,h);}
  atlas.draw(ctx,g.released?11:10,418,876,64,64);
  if(g.cutAt>=0&&s.time-g.cutAt<.4){const t=s.time-g.cutAt;box('#d7b37a',450-t*100,894+t*40,12,4);box('#d7b37a',450+t*100,894+t*40,12,4);}
  atlas.draw(ctx,12+Math.min(2,Math.floor(g.brakePose*2.99)),1038,326,64,64);

@@ -35,6 +35,12 @@ left, middle and right portions while the camera moves; no exposed sky strip
 may separate the foundation from its floor. Preserve pixel-grid dimensions.
 Hanging structures must visibly join their ceiling beam instead.
 
+For character-supported platforms, inspect visible rider soles against the
+declared walking plane, including center-plane contact on Olaf's raised shield.
+Check paint order: the supporting sprite must not hide the rider's soles and
+make correct physics look like edge contact. Hands must still visibly grip
+the support when its rendered position changes.
+
 Every platform post needs an identified lower floor/deck at the same x interval.
 Trace from deck underside to that footing in the screenshot. Reject fixed-length
 posts that end in air. Check upper decks, split-height lower floors and side

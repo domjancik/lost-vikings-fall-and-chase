@@ -85,3 +85,11 @@ Other final evidence inspected includes catch/upper/lower moving and settled vie
 Independently executed **13 passing focused tests**, including actual native-PNG validation and full60/120Hz routes. The implementation agent reports latest full ordinary-input browser clear at103.266seconds, all heroesHP3, Enter continuation and zero page errors, with no mechanic edits afterward; latest mobile pointer movement/bow releases the draft. It separately reports265 root tests passing. This reviewer independently read source, ran focused tests/alpha checks and inspected production captures; no separate browser playthrough was performed. These evidence boundaries are explicit and no prior route/survey approval substitutes for the corrected final images.
 
 **No remaining blocking finding in the Refraction Gate scope.** Both required art gates are separately accepted. This does not approve pending Vikings55 art or certify unrelated legacy scenery.
+
+## Published release verification — 2026-10-12
+
+Implementation commit b954c3b published to the existing here.now site. Live HTML,
+10 runtime modules and all6 native Refraction assets match the isolated reviewed
+release by SHA256. Real live-browser1x/2x and844x390 mobile checks pass; pointer
+movement and bow release the draft, every measured support contact has gap0,
+and no page errors occurred. Captures: output/playwright/refraction62-live-*.

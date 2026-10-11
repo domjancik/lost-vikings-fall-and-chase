@@ -1,4 +1,4 @@
-import {createAtlas} from './sprite-atlas.js?v=arc46';
+import {createAtlas} from './sprite-atlas.js?v=ground59';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
@@ -31,7 +31,7 @@ export function drawCycleWorld(ctx,s,camera,viewport){
  drawConnectionTile(ctx,g.brakePose<.5?30:31,1134,364);
  // The hinge lens stays exposed at the actual projectile collision position.
  atlas.draw(ctx,4+Math.min(3,Math.floor(g.damper*3.99)),1268,456,64,64);
- fan.draw(ctx,g.released?Math.floor(s.time*9)%4:0,1296,812,128,128);
+ const fanFrame=g.released?Math.floor(s.time*9)%4:0;const fanContact=fan.drawGrounded(ctx,fanFrame,{x:1296,y:812,w:128,h:128},[...s.level.floors,...s.level.platforms]);
  const draft=g.brakePose===1&&g.damper===1;
  if(draft)for(let n=0;n<18;n++){const y=940-((s.time*180+n*43)%680),x=1298+(n*26)%128;box('#a0e5e5',x,y,2,12);}
  atlas.draw(ctx,12+Math.min(2,Math.floor(g.selectorPose*2.99)),1568,196,64,64);
@@ -39,5 +39,5 @@ export function drawCycleWorld(ctx,s,camera,viewport){
  // Native row2 is the rear railing; row8 is the actual walking deck.
  if(carrier.complete&&carrier.naturalWidth)ctx.drawImage(carrier,snapPixel(c.x),snapPixel(c.y)-16,160,64);
  atlas.draw(ctx,15,2536,132,128,128);
- return {ready:connectionsReady()&&[scene,ladder,carrier,atlas.image,fan.image].every(i=>i.complete&&i.naturalWidth),nativeScene:[scene.naturalWidth,scene.naturalHeight],carrier:{x:snapPixel(c.x),y:snapPixel(c.y)},draft,connections:{ready:connectionsReady(),frame:Math.floor(s.time*5)%4,brake:brakeCable.anchors,duct:duct.anchors,selector:selectorCable.anchors}};
+ return {ready:connectionsReady()&&[scene,ladder,carrier,atlas.image,fan.image].every(i=>i.complete&&i.naturalWidth),nativeScene:[scene.naturalWidth,scene.naturalHeight],fan:fanContact?{frame:fanFrame,y:fanContact.y,bottom:fanContact.visibleBottom,surfaceY:fanContact.surface.y,gap:fanContact.surface.y-fanContact.visibleBottom}:null,carrier:{x:snapPixel(c.x),y:snapPixel(c.y)},draft,connections:{ready:connectionsReady(),frame:Math.floor(s.time*5)%4,brake:brakeCable.anchors,duct:duct.anchors,selector:selectorCable.anchors}};
 }

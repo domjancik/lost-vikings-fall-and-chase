@@ -87,3 +87,16 @@ Diagnostic pauses and viewport changes must settle before resuming input. Check
 that a critical commanded pose actually applied before leaving a safe platform.
 A driver exception or failed route is failed evidence, even if earlier pictures
 look correct; repair the harness and repeat the affected route.
+
+### Entity base anchors
+
+For every floor-standing sprite, record its alpha-derived visible bottom and
+identified supporting floor/platform. Transparent cell padding is not contact.
+Use `createAtlas.drawGrounded` for animated floor-standing props; choose the
+nearest authored surface below the entity center, preserve cell scale, and
+align the visible base to that surface. Broad-base detection ignores isolated
+alpha noise. Narrow feet or hanging objects need an explicit reviewed anchor.
+A missing base/support must remain a failed check, never a silent canvas-edge
+fallback. Inspect every animation frame for zero gap and stable registration.
+Review runtime contact diagnostics AND close screenshots at 1x, 2x and mobile;
+prior approval or level completion cannot waive an unexplained visible gap.

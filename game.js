@@ -1,6 +1,6 @@
 import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc46';
 import {storyLevels} from './story-campaign.js?v=arc46';
-import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=arc46';
+import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=native47';
 import {createSoundEvents} from './audio-events.js?v=arc46';
 import {createSoundLayer} from './sound-effects.js?v=arc46';
 import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';

@@ -1,3 +1,4 @@
+import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=native47';
 import {createAtlas} from './sprite-atlas.js?v=arc46';
 import {storyObjects,storyWalls} from './story-campaign.js?v=arc46';
 import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
@@ -5,18 +6,27 @@ import {drawPortal} from './portal-effects.js?v=arc46';
 import {ease,gateFrameRects} from './story-mechanisms.js?v=arc46';
 const art=createAtlas('assets/campaign46/machines.png?v=arc46',8,4,true);
 const frames=createAtlas('assets/campaign46/machines.png?v=arc46',8,4);
-const scenes=Array.from({length:8},(_,i)=>{const im=new Image();im.src='assets/campaign46/scene-'+i+'.png?v=arc46';return im;});
+const scenes=new Map(),preparedScenes=new Map(),sourcePixels=new Map();
+function sceneImage(round){if(!scenes.has(round)){const im=new Image();im.src='assets/campaign46/scene-'+round+'.png?v=native47';scenes.set(round,im);}return scenes.get(round);}
+function displayScene(round,width,height){
+ const image=sceneImage(round);if(!image.complete||!image.naturalWidth)return null;
+ if(typeof document==='undefined')return image;
+ const key=round+':'+width+':'+height;if(preparedScenes.has(key))return preparedScenes.get(key);
+ if(!sourcePixels.has(round)){const c=document.createElement('canvas');c.width=image.naturalWidth;c.height=image.naturalHeight;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);sourcePixels.set(round,g.getImageData(0,0,c.width,c.height).data);}
+ const c=document.createElement('canvas');c.width=width;c.height=height;const g=c.getContext('2d'),pixels=g.createImageData(width,height);pixels.data.set(prepareScenePixels(sourcePixels.get(round),image.naturalWidth,image.naturalHeight,width,height));g.putImageData(pixels,0,0);
+ if(preparedScenes.size>=12)preparedScenes.delete(preparedScenes.keys().next().value);preparedScenes.set(key,c);return c;
+}
 const palettes=['#2b241a','#152331','#18252b','#24352b','#30232f','#13282f','#202425','#292821'];
 export function drawStoryItem(ctx,type,x,bottom,w,h){if(!art.image.complete||!art.image.naturalWidth)return false;art.draw(ctx,type==='archive'?16:14,x-w/2,bottom-h,w,h);return true;}
 export function drawStoryBackground(ctx,s,camera,view){
- const im=scenes[s.round],w=snapPixel(Math.max(view.width*1.18,view.height*1.5)),h=snapPixel(w/1.5),travel=Math.max(1,3200-view.width),fraction=Math.min(1,Math.max(0,camera.x/travel));
+ const resolution=sceneResolution(view),im=displayScene(s.round,resolution.nativeWidth,resolution.nativeHeight),w=resolution.width,h=resolution.height,travel=Math.max(1,3200-view.width),fraction=Math.min(1,Math.max(0,camera.x/travel));
  const x=snapPixel(camera.x-(w-view.width)*fraction),y=snapPixel(camera.y-(h-view.height)*.35);
- ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,camera.y,view.width,view.height);if(im.complete&&im.naturalWidth)ctx.drawImage(im,x,y,w,h);
+ ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,camera.y,view.width,view.height);if(im)ctx.drawImage(im,x,y,w,h);
  // Complete architecture layers retain their own support planes. No isolated
  // transparent building cutouts: the bases and pillars share one transform.
  const base=s.round===5?810:610,shift=snapPixel(camera.x*.18);ctx.fillStyle=palettes[s.round];ctx.fillRect(shift,base,3500,s.level.worldBottom-base);
  for(let n=0;n<7;n++){const px=snapPixel(300+n*470+shift);ctx.fillStyle=s.level.accent+'25';ctx.fillRect(px,base-210,20,210);ctx.fillRect(px-45,base-16,110,16);ctx.fillRect(px-8,base-212,36,8);}
- return {x,y,size:w,height:h,tiles:[x],native:[768,512],ground:base};
+ return {x,y,size:w,height:h,tiles:[x],native:[resolution.nativeWidth,resolution.nativeHeight],ready:!!im,source:sceneImage(s.round).src,ground:base};
 }
 export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime(s.time),c=s.level.accent,status=text.status||text;
  const sprite=(n,x,bottom,w=60,h=60)=>art.draw(ctx,n,x-w/2,bottom-h,w,h);
@@ -34,7 +44,7 @@ export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime
  for(const cut of g.cuts){const p=cut.payload,anchor=cut.x,top=Math.min(p.fromY,p.toY)-100;sprite(11,anchor,610,40,56);box('#28343a',anchor-46,top,12,610-top);box('#475961',anchor-46,top,p.fromX-anchor+92,12);sprite(9,anchor,top+20,24,20);const released=cut.cut,age=released?Math.min(1,(s.time-cut.cutAt)/.35):0;ctx.strokeStyle='#f6e2b1';ctx.lineWidth=4;ctx.beginPath();ctx.moveTo(anchor,556);if(!released){ctx.lineTo(anchor,top+12);ctx.lineTo(p.x,top+12);ctx.lineTo(p.x,p.y-30);}else ctx.lineTo(snapPixel(anchor+20),snapPixel(556-age*24));ctx.stroke();if(released)for(let i=0;i<5;i++)box('#e8c48f',anchor+20+i*4,552-age*24+i%2*4,2,4);}
  for(const p of g.payloads){const n={weight:18,packet:20,reed:20,stamp:19,gill:21}[p.kind];if(p.fromY!==p.toY){box('#171d23',p.x-48,Math.min(p.fromY,p.toY)-80,6,Math.abs(p.toY-p.fromY)+100);box('#171d23',p.x+42,Math.min(p.fromY,p.toY)-80,6,Math.abs(p.toY-p.fromY)+100);}else{box('#182127',p.fromX-40,p.y+16,p.toX-p.fromX+80,14);for(let x=p.fromX-30;x<p.toX+30;x+=48)sprite(9,x,p.y+42,24,20);}sprite(n,p.x,p.y+16,80,80);if(p.arrived)box(c,p.x-24,p.y-30,48,4);}
  const output=g.payloads[0],outputGate=s.round===0?'weight':s.round===2?'residents':s.round===3?'stamp':null;if(outputGate){const d=g.gates.find(v=>v.id===outputGate);wire(output.toX,output.toY,d.x+16,d.y-30,output.arrived);}
- for(const i of s.items){sprite(i.type==='archive'?16:14,i.x,i.y+44,32,36);if(Math.abs(i.x-s.heroes[s.active].x)<90)status('USE · PICK UP',i.x,i.y-10,c,10);}
+ for(const i of s.items){sprite(i.type==='archive'?16:14,i.x,i.y+44,32,36);if(Math.abs(i.x-s.heroes[s.active].x)<90)status('USE Â· PICK UP',i.x,i.y-10,c,10);}
  if(s.round===0){sprite(15,1500,610,54,60);wire(1500,550,1750,550,g.flags.wafer);}
  if(s.round===1){wire(700,552,1100,566,g.flags.route);wire(1660,580,1922,590,g.payloads[0].arrived);}
  if(s.round===2){sprite(24,1800,610,76,78);box('#172023',1460,510,80,16);box(c,1464,514,72*g.work,8);wire(690,385,1500,536,g.flags.isolated);sprite(20,1500,608,84,42);box(c,1470,580,60*ease(g.workPose||0),6);}
@@ -44,8 +54,8 @@ export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime
   // The canopy opens onto the physical pub and its three waiting bodies.
   // Its rails, shutters and viewing window stay at their authored coordinates.
   const p=ease(g.payloads[0].progress),x=2130,y=-120;box('#0d1921',x-12,y-12,344,230);box('#7db4bd',x-10,y-10,340,6);box('#7db4bd',x-10,y+206,340,6);box('#4f7781',x+12,y+212,10,38);box('#4f7781',x+298,y+212,10,38);
-  const outside=scenes[5],bodies=scenes[0];if(outside.complete&&outside.naturalWidth)ctx.drawImage(outside,475,10,255,150,x,y,320,200);if(bodies.complete&&bodies.naturalWidth)ctx.drawImage(bodies,380,80,190,90,x+56,y+110,208,76);
-  ctx.save();ctx.beginPath();ctx.rect(x,y,320,200);ctx.clip();for(const [n,dir]of [[0,-1],[1,1]]){const xx=snapPixel(x+n*160+dir*p*164);for(let yy=y;yy<y+200;yy+=40)art.draw(ctx,21,xx,yy,160,40);}ctx.restore();wire(1310,480,x+160,y+200,g.payloads[0].released);if(p===1)status('THREE BODIES · BEYOND THE GLASS',x+160,y-28,c,11);
+  const outside=sceneImage(5),bodies=sceneImage(0);if(outside.complete&&outside.naturalWidth)ctx.drawImage(outside,475,10,255,150,x,y,320,200);if(bodies.complete&&bodies.naturalWidth)ctx.drawImage(bodies,380,80,190,90,x+56,y+110,208,76);
+  ctx.save();ctx.beginPath();ctx.rect(x,y,320,200);ctx.clip();for(const [n,dir]of [[0,-1],[1,1]]){const xx=snapPixel(x+n*160+dir*p*164);for(let yy=y;yy<y+200;yy+=40)art.draw(ctx,21,xx,yy,160,40);}ctx.restore();wire(1310,480,x+160,y+200,g.payloads[0].released);if(p===1)status('THREE BODIES Â· BEYOND THE GLASS',x+160,y-28,c,11);
  }
  if(s.round===7&&g.payloads[0].arrived){
   // Water follows the lowered gutter into its supported side drain.

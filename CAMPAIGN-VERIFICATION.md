@@ -30,3 +30,10 @@ Additional UI checks: Enter continued chapter6 into chapter7 retaining exactly o
 ## Published build
 
 arc46 published to https://united-marsh-6ppd.here.now/ on2026-10-10. Real-browser live check confirmed Story chapter1, all8 chapter choices,13 new module/art requests atHTTP200, hints false,390x844 canvas and zero page errors. Live captures: output/playwright/campaign46-live.png and campaign46-live-mobile.png.
+
+
+## Native47 display-grid correction —2026-10-11
+
+193 tests pass with zero failures/skips; build succeeds. All eight Story scenes were checked in the browser at1x/2x, with zero page errors. At1440×900 the scene grids are747×498 and375×250; each prepared pixel draws at exactly2 world units. Portrait grids adapt to viewport dimensions. No fixed256×256 scenery grid is used by active campaigns. Arcade depth sources already have scene-specific720-wide grids.
+
+The new preparation works directly from unmodified Story scene pixels and caches the exact intended display raster. Tests cover nonnegative weighted source-cell color bounds, identity preparation, source duplication on larger views, portrait/ultrawide coverage, width-threshold continuity and full-resolution canopy-reveal crops. Independent visual review found no unresolved blocker in representative before/after scene and mobile captures. Artwork's authored style is preserved; preparation does not invent missing original detail.

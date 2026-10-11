@@ -50,3 +50,25 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 .campaign-choices{display:flex;gap:8px;margin-bottom:18px}.campaign-choices button{flex:1;font-size:11px}.campaign-choices .selected{color:#e9c77b;border-color:#e9c77b}#play-story{margin-bottom:10px}#chapter-dialog{max-width:580px}#chapter-story p{font-size:17px;line-height:1.6;color:#d8cbb0}.story-skip{display:block;margin:18px 0;font-size:12px}.story-skip input{margin-right:8px}
 
 .ladder-controls{display:flex;gap:6px;flex-direction:column}body.has-ladders .ladder-controls{display:flex}.ladder-controls button{min-height:38px;height:38px;font-size:20px}#play-cycle{color:#cffcf1}
+
+/* Both movement directions share the bottom thumb row. */
+.movement-pad .ladder-controls{grid-column:1 / -1;grid-row:1;flex-direction:row}
+.movement-pad .ladder-controls button{flex:1;min-height:44px;height:44px}
+.movement-pad [data-key=left]{grid-column:1;grid-row:2}
+.movement-pad [data-key=right]{grid-column:2;grid-row:2}
+
+/* Character switching sits directly above the right-hand action buttons. */
+@media(max-width:960px),(pointer:coarse){
+ :root{--touch-bottom:max(12px,var(--safe-bottom));--action-height:110px}
+ .below{position:fixed;top:auto;left:auto;right:max(12px,env(safe-area-inset-right));bottom:calc(var(--touch-bottom) + var(--action-height) + 12px);width:114px;height:auto;z-index:7}
+ .crew{flex-direction:column;gap:6px;width:100%}
+ .crew .hero-card{flex:none;width:100%;height:44px;min-height:44px;min-width:0;justify-content:flex-start;padding:3px 5px}
+ .crew .hero-card .hero-name{font-size:9px}
+ .crew .hero-card .hero-name kbd{display:none}
+ .mobile-controls{bottom:var(--touch-bottom)}
+}
+@media(max-height:500px) and (max-width:960px){
+ :root{--touch-bottom:max(8px,var(--safe-bottom));--action-height:102px}
+ .below{bottom:calc(var(--touch-bottom) + var(--action-height) + 10px)}
+}
+@media(max-width:360px){.below{right:8px}.mobile-controls{right:8px}}

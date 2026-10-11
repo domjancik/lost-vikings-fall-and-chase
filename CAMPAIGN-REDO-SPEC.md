@@ -69,6 +69,12 @@ Generate eight distinct landscape scenes in two four-scene sheets at useful nati
 
 ## Grounding implementation clarification
 
+VISUAL-REVIEW-GATE.md is mandatory: inspect substantial opaque foundation pixels,
+trace every platform post to a named lower surface, and validate every object's
+initial/intermediate/completed state with production-control before/after images.
+Do not accept canvas bounds, any-one-alpha-pixel contact, toasts or successful
+logic as visual proof. This tightens the earlier screenshot review requirements.
+
 Human scale is a required critique gate: follow HUMAN-SCALE.md. The Vikings are
 adult humans, never dwarves or miniature toys. This supersedes the earlier
 miniature marquee / giant-screw art direction, while retaining brass embodiment

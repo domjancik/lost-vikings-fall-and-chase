@@ -1,4 +1,4 @@
-import {storyObjects} from './story-campaign.js?v=arc46';
+import {storyObjects} from './story-campaign.js?v=ground51';
 import {verticalObjects} from './vertical-campaign.js?v=arc46';
 import {inventoryObjects} from './inventory-campaign.js?v=arc46';
 export function interactionObjects(s){

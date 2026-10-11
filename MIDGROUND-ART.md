@@ -1,5 +1,9 @@
 # Campaign middle scenery
 
+Ground51 corrects foundation anchoring using the lowest substantial opaque row,
+not isolated bottom pixels. Foundations enter the terrain by one native pixel
+so their last visible strip cannot sit above it. See VISUAL-REVIEW-GATE.md.
+
 Scale50 correction: HUMAN-SCALE.md supersedes the original sizes below. Chapters
 1–7 now use 384×256 world dimensions, and the pub has new ordinary human-scale
 architecture at 576×384 middle / 384×256 far dimensions. Mid49 sources remain

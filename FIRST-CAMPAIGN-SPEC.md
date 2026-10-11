@@ -58,6 +58,9 @@ Implement the first Astra narrative: escaping ownership during an arcade's perma
 
 ## Completion report
 
+Follow VISUAL-REVIEW-GATE.md for pixel contact, complete load-bearing supports
+and explicit per-object interaction-state screenshots in the critique cycle.
+
 The critique cycle must also enforce HUMAN-SCALE.md: adult Vikings, plausible
 ordinary doors, furniture and inhabited rooms, coherent depth scaling, and no
 unintended miniature reading. Human-scale review is required with grounding.

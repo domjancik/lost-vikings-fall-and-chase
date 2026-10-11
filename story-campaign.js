@@ -1,4 +1,5 @@
 import {prepareMotion,integrateMotion} from './movement.js?v=arc46';
+import {deviceDone,advanceDeviceVisuals} from './story-visuals.js?v=ground51';
 import {startBash,bashImpact} from './bash.js?v=arc46';
 import {shieldHit,segmentHit} from './projectile-collision.js?v=arc46';
 import {giveItem,pickupItem,useItem,message} from './inventory.js?v=arc46';
@@ -24,7 +25,7 @@ export function setupStory(s){
  };
 }
 export function storyObjects(s){const g=s.machine,h=s.heroes[s.active],out=[];
- const device=(id,x,y,title,ready,run,reason='The connected mechanism is still constrained.')=>out.push({id,x,y,title,ready,done:false,radius:58,kind:'machine',reason,run});
+ const device=(id,x,y,title,ready,run,reason='The connected mechanism is still constrained.')=>out.push({id,x,y,title,ready,done:deviceDone(g,id),radius:58,kind:'machine',reason,run});
  for(const [id,x,y] of s.round===0?[['sluice',950,566]]:s.round===4?[['inhabited',2240,566]]:s.round===5?[['sky',2950,86]]:s.round===7?[['rain',2820,566]]:[]){const d=g.gates.find(v=>v.id===id);device('ratchet-'+id,x,y,'SECURE RATCHET',true,()=>{d.secured=true;return 'Ratchet secured. Everyone can leave the tread.';});}
  for(const l of g.lifts)for(const y of [l.low,l.high])device('lift-'+l.id+'-'+y,l.x+72,y-44,'LIFT '+(l.target===l.low?'UP':'DOWN'),s.round===1?g.payloads[0].arrived:l.id==='screen'?g.payloads[0].arrived&&g.targets[0].hit:true,()=>{l.target=l.target===l.low?l.high:l.low;return 'The cradle moves along its track.';},l.id==='screen'?'Release the screen restraint and exposed glass diaphragm first.':'The packet has not reached its landing.');
  if(s.round===1)device('route',700,566,'ROUTE OUT',true,()=>{g.flags.route=true;return 'The return address is disconnected.';});
@@ -53,7 +54,7 @@ export function storyStep(s,input,dt){
  if(input.action&&a.id===1&&!a.transferred&&s.cooldown===0){a.bow=.28;s.cooldown=.35;s.shots.push({kind:'arrow',x:a.x+a.face*25,y:a.y+20,v:a.face*580});}
  if(a.id===0&&a.bash>0)for(const e of s.enemies)if(melee(e.x,e.y)){hurtEnemy(s,e);bashImpact(s,e.x,e.y);}
  if(input.interact){const obj=storyObjects(s).filter(v=>close(a,v.x,v.y,v.radius)).sort((u,v)=>Math.abs(a.x-u.x)-Math.abs(a.x-v.x))[0];if(a.transferred)message(s,obj?.run()||'Use your cradle to step out.');else if(!pickupItem(s))message(s,obj?(obj.ready?obj.run():obj.reason):'No reachable handle or loose item here.');}
- if(input.item&&!a.transferred)useItem(s);goals(s,dt);g.workPose=(g.workPose||0)+Math.sign(g.work-(g.workPose||0))*Math.min(Math.abs(g.work-(g.workPose||0)),dt/.8);advanceMechanisms(g,s.heroes,dt);
+ if(input.item&&!a.transferred)useItem(s);goals(s,dt);advanceDeviceVisuals(g,dt);g.workPose=(g.workPose||0)+Math.sign(g.work-(g.workPose||0))*Math.min(Math.abs(g.work-(g.workPose||0)),dt/.8);advanceMechanisms(g,s.heroes,dt);
  const frozen=s.heroes.filter(h=>h.transferred).map(h=>({h,x:h.x,y:h.y}));integrateMotion(s,storySurfaces(s),storyWalls(s),dt);for(const p of frozen)Object.assign(p.h,{x:p.x,y:p.y,vx:0,vy:0});
  if(s.round===2&&g.operator!==null&&g.work<1&&Math.floor((s.time-dt)/.9)!==Math.floor(s.time/.9))s.shots.push({kind:'bolt',x:1800,y:586,v:-280});
  if(s.round===5&&Math.floor((s.time-dt)/1.2)!==Math.floor(s.time/1.2))s.shots.push({kind:'drop',x:2530,y:350,v:0,vy:260});

@@ -48,3 +48,15 @@ test('two shield riders remain attached through a full carrier circuit and corne
  }
  assert.equal(c.laps,1);
 });
+
+test('a rider can walk across and off a shield on a moving carrier',()=>{
+ const s=createState(0,'cycle');s.active=0;s.machine.released=true;
+ const c=s.machine.carrier,o=s.heroes[2],e=s.heroes[0];
+ Object.assign(c,{x:900,y:500,segment:1,high:500,pause:0,v:180});
+ Object.assign(o,{x:970,y:456,ground:true,support:'cycle-carrier',shieldUp:true,shield:true});
+ Object.assign(e,{x:970,y:376,ground:true,support:2});
+ for(let n=0;n<8;n++)step(s,{right:true},1/60);
+ assert.equal(e.support,2);assert.ok(e.x-o.x>5,'Own walking input was lost');
+ for(let n=0;n<30&&e.support===2;n++)step(s,{right:true},1/60);
+ assert.equal(e.support,null);assert.ok(e.x-o.x>39);assert.equal(o.support,'cycle-carrier');
+});

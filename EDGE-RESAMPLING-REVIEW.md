@@ -64,3 +64,12 @@ every tiling artifact; terrain needs its own targeted inspection if pursued.
 Final recommendation: accept the scenery-resampling correction. No blocking
 new feature loss, alpha damage, scale change or grounding regression is found
 in the reviewed comparisons and runtime evidence.
+
+## Published verification —2026-10-12
+
+Commitc9c9382 published to the existing site. Live HTML, four changed runtime
+modules and all nine rebuilt scenery planes match the reviewed release by
+SHA256. Public all8chapter1x/2x and mobilepub checks pass with identical native
+sizes, foundation offsets and floor/ceiling contact metadata; zero page errors.
+Evidence output/playwright/edge67-live-*. Root273tests pass. This record remains
+scoped to resampling color bleed, not painted source halos or terrain tiling.

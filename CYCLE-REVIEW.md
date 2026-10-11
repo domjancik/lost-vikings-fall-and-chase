@@ -93,3 +93,9 @@ won=true, health=[3,3,3], simulation time156.8416667, zero page errors, and
 Enter successfully continued/restarted the standalone puzzle. Final full suite:
 220 tests pass, zero failures. Browser mobile landscape verified actual pointer
 ladder climbing, seven controls in bounds, and zero pairwise control overlap.
+
+Subsequent coverage closes the simultaneous-world-physics evidence gap:
+`three passengers remain aboard through a high circuit with full world physics`
+passes, including all gallery crossings and corners. Latest complete suite:
+221 pass. Public portrait smoke and fifteen live module/asset byte checks pass;
+host-augmented HTML exposes the new campaign and ladder controls.

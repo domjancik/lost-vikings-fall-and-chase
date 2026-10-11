@@ -26,6 +26,15 @@ test('three passengers share continuous carrier displacement through every corne
  }
  assert.ok(corners>=4);
 });
+test('three passengers remain aboard through a high circuit with full world physics',()=>{
+ const s=createState(0,'cycle');s.machine.released=true;s.machine.selector=true;
+ for(const h of s.heroes)Object.assign(h,{x:880+h.id*35,y:896,vy:0,ground:true,support:'cycle-carrier'});
+ for(let n=0;n<5000&&s.machine.carrier.laps<1;n++){
+  step(s,{},1/120);
+  for(const h of s.heroes){assert.equal(h.support,'cycle-carrier');assert.ok(Math.abs(h.y+44-s.machine.carrier.y)<.01);assert.equal(h.hp,3);}
+ }
+ assert.equal(s.machine.carrier.laps,1);
+});
 test('selector reversal is queued until the next bottom-left dock',()=>{
  const s=createState(0,'cycle'),c=s.machine.carrier;s.machine.released=true;
  Object.assign(c,{x:1000,y:260,high:260,segment:1,pause:0});s.machine.selector=false;

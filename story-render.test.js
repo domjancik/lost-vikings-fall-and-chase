@@ -26,7 +26,7 @@ test('pub furniture keeps authored world scale across viewport and zoom changes'
   for(const view of [{width:1264,height:790},{width:632,height:395},{width:2000,height:1000}]){
    const bg=drawStoryBackground(ctx,s,{x:713.7,y:140},view);
    assert.equal(bg.size,384);assert.equal(bg.height,256);
-   assert.deepEqual(bg.native,[192,128]);assert.ok(bg.source.includes('scale50/pub-far.png'));
+   assert.deepEqual(bg.native,[192,128]);assert.ok(bg.source.includes('scale67/pub-far.png'));
    assert.ok(bg.middle.pieces.every(p=>p.w===576&&p.h===384&&p.y+p.h===612));
    assert.ok(bg.tiles.every(x=>Math.abs(x%2)===0));
   }

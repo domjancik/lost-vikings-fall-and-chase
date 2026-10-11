@@ -2,8 +2,8 @@ import {farSceneY} from './vertical-parallax.js?v=vertical65';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawInteractionArt} from './interaction-art.js?v=ground51';
 import {platformSupports} from './story-visuals.js?v=ground51';
-import {drawMiddleScenery} from './midground-render.js?v=ground51';
-import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=native47';
+import {drawMiddleScenery} from './midground-render.js?v=edge67';
+import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=edge67';
 import {createAtlas} from './sprite-atlas.js?v=arc46';
 import {storyObjects,storyWalls} from './story-campaign.js?v=support57';
 import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
@@ -12,7 +12,7 @@ import {ease,gateFrameRects} from './story-mechanisms.js?v=arc46';
 const art=createAtlas('assets/campaign46/machines.png?v=arc46',8,4,true);
 const frames=createAtlas('assets/campaign46/machines.png?v=arc46',8,4);
 const scenes=new Map(),preparedScenes=new Map(),sourcePixels=new Map();
-function sceneImage(round){if(!scenes.has(round)){const im=new Image();im.src=round===7?'assets/scale50/pub-far.png?v=scale50':'assets/campaign46/scene-'+round+'.png?v=native47';scenes.set(round,im);}return scenes.get(round);}
+function sceneImage(round){if(!scenes.has(round)){const im=new Image();im.src=round===7?'assets/scale67/pub-far.png?v=edge67':'assets/campaign46/scene-'+round+'.png?v=native47';scenes.set(round,im);}return scenes.get(round);}
 function displayScene(round,width,height){
  const image=sceneImage(round);if(!image.complete||!image.naturalWidth)return null;
  if(typeof document==='undefined')return image;

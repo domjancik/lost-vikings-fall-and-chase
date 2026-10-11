@@ -1,6 +1,27 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {sceneResolution,prepareScenePixels} from './scene-resolution.js';
+
+test('contrast guard preserves thin light and dark features instead of making ghost colors',()=>{
+ for(const [center,neighbor] of [[[255,255,255],[0,0,0]],[[0,0,0],[255,255,255]],[[30,30,220],[220,30,30]]]){
+  const source=new Uint8ClampedArray([...neighbor,255,...center,255,...neighbor,255]);
+  assert.deepEqual([...prepareScenePixels(source,3,1,1,1)],[...center,255]);
+ }
+});
+
+test('nearby tones still interpolate, while zero tolerance keeps the center sample',()=>{
+ const source=new Uint8ClampedArray([40,40,40,255,60,60,60,255,70,70,70,255]);
+ const soft=prepareScenePixels(source,3,1,1,1);
+ assert.ok(soft[0]>40&&soft[0]<70);assert.notEqual(soft[0],60);
+ assert.deepEqual([...prepareScenePixels(source,3,1,1,1,{contrastLimit:0})],[60,60,60,255]);
+});
+
+test('transparent cutouts never acquire neighboring colors or an alpha fringe',()=>{
+ const source=new Uint8ClampedArray([255,0,0,255,255,0,0,0,255,0,0,255]);
+ assert.deepEqual([...prepareScenePixels(source,3,1,1,1,{preserveAlpha:true})],[0,0,0,0]);
+ const opaque=new Uint8ClampedArray([0,0,255,0,255,0,0,255,0,0,255,0]);
+ assert.deepEqual([...prepareScenePixels(opaque,3,1,1,1,{preserveAlpha:true})],[255,0,0,255]);
+});
 test('scene native grids follow the intended display size at both zooms and phone layouts',()=>{
  for(const view of [{width:1264,height:790},{width:632,height:395},{width:365,height:790},{width:183,height:395}]){
   const p=sceneResolution(view),wanted=Math.max(view.width*1.18,view.height*1.5);

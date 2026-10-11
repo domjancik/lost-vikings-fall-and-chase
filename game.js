@@ -4,7 +4,7 @@ const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLe
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc46';
 import {storyLevels} from './story-campaign.js?v=support57';
-import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=vertical65';
+import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=edge67';
 import {createSoundEvents} from './audio-events.js?v=refraction62';
 import {createSoundLayer} from './sound-effects.js?v=arc46';
 import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';

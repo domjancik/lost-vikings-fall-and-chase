@@ -33,3 +33,15 @@ Full scenes must not use a fixed256×256 cell or a sprite-atlas resolution polic
 New Story sources remain unmodified768×512 crops. `scene-resolution.js` computes the intended far-scene coverage from viewport dimensions, then chooses an exact3:2 display raster, rounded only enough to maintain whole rows/columns. `story-render.js` prepares that grid directly from the original source pixels once per scene/size and caches at most12 canvases. Every prepared pixel renders at two world units. Reduction uses nonnegative center weights plus a positive epsilon; RGB cannot escape each source cell's bounds. Larger views duplicate source samples, preserving detail available in the source. Never magnify scenery because a resolution bucket was crossed. Camera travel, framing, and supports retain their established relationships. Native crops used by the canopy reveal remain full resolution.
 
 Tests cover fractional cell boundaries, no invented colors, identity preparation, both zooms, portrait and ultrawide displays, tight coverage bounds around width thresholds, and the full-resolution canopy crop. `browser-native47.js` captures every chapter at both zooms and checks that source pixels map to exactly two world units.
+
+## Contrast-aware scenery sampling(edge67)
+
+Positive weights prevent overshoot but still mix unrelated high-contrast colors.
+Use scene-resolution.js guarded center-color resampling for campaign far scenes
+and tools/prepare-scale67.py for middle-plane assets. Default48-channel color
+limit excludes distant colors; smooth positive range weights blend nearby tones.
+Always use retained originals once at existing native/display dimensions, with
+binary-alpha crossings excluded. Original8middlefoundation offsets must survive.
+Do not apply this as repeated sharpening/filtering of already-packed assets or
+as a rescue for character/sprite source density. Source67 README records sources,
+comparison controls, limitations and rebuild commands.

@@ -8,6 +8,7 @@ export function animationFor(h){
  else if(h.bow>0){pose='bow';frame=clamp(Math.floor((.28-h.bow)/.28*4),0,3);}
  else if(h.bash>0){pose='bash';frame=clamp(Math.floor((.36-h.bash)/.36*6),0,5);}
  else if(h.id===2&&h.shieldPose!==undefined&&Math.abs(h.shieldPose-(h.shieldUp?1:h.shield?.4:0))>.075){pose=h.shieldUp?'shield-raise':'shield-lower';frame=clamp(Math.floor(h.shieldPose*6),0,6);}
+ else if(h.climbing){pose='climb';frame=h.climbMoving?Math.floor((h.animTime||0)*6)%4:0;}
  else if(!h.ground){pose=h.id===2&&h.shieldUp?'float':h.vy<0?'rise':'fall';frame=pose==='float'?Math.floor((h.animTime||0)*8)%4:Math.abs(h.vy)>280?1:0;}
  else if(h.land>0){pose='land';frame=clamp(Math.floor((.12-h.land)/.12*3),0,2);}
  else if(Math.abs(h.vx||0)>7){pose=h.turn?'turn':'run';frame=Math.floor(h.walk||0)%8;}
@@ -27,9 +28,9 @@ function raster(h,pose,frame){
  const rect=(c,x,y,w,z)=>{g.fillStyle=c;g.fillRect(Math.round(x),Math.round(y),Math.round(w),Math.round(z));};
  const poly=(c,points)=>{g.fillStyle=c;g.beginPath();points.forEach(([x,y],i)=>i?g.lineTo(Math.round(x),Math.round(y)):g.moveTo(Math.round(x),Math.round(y)));g.closePath();g.fill();};
  const segment=(x,y,x2,y2,width,dark,light)=>{const n=Math.ceil(Math.max(Math.abs(x2-x),Math.abs(y2-y)));for(let i=0;i<=n;i++){const t=n?i/n:0;rect(outline,x+(x2-x)*t-width/2-1,y+(y2-y)*t-width/2-1,width+2,width+2);rect(dark,x+(x2-x)*t-width/2,y+(y2-y)*t-width/2,width,width);rect(light,x+(x2-x)*t-width/2,y+(y2-y)*t-width/2,Math.max(1,width/3),width-1);}};
- const running=pose==='run'||pose==='turn',air=pose==='rise'||pose==='fall'||pose==='float';
+ const running=pose==='run'||pose==='turn',climbing=pose==='climb',air=pose==='rise'||pose==='fall'||pose==='float';
  const shieldTransition=pose==='shield-raise'||pose==='shield-lower';const shieldRise=shieldTransition?clamp((frame/6-.4)/.6,0,1):h.shieldUp?1:0;
- const leg=pose==='bash'?runLegs[(frame*2)%8]:running?runLegs[frame]:pose==='rise'?(frame?[-8,7,12,5]:[-6,6,9,3]):pose==='fall'?(frame?[-2,3,2,0]:[-4,5,4,1]):air?[-5,5,6,3]:[0,0,0,0];const crouch=pose==='bash'?[2,4,7,6,3,0][frame]:pose==='land'?[4,2,0][frame]:0;
+ const leg=pose==='bash'?runLegs[(frame*2)%8]:climbing?[[0,0,10,0],[0,0,6,4],[0,0,0,10],[0,0,4,6]][frame]:running?runLegs[frame]:pose==='rise'?(frame?[-8,7,12,5]:[-6,6,9,3]):pose==='fall'?(frame?[-2,3,2,0]:[-4,5,4,1]):air?[-5,5,6,3]:[0,0,0,0];const crouch=pose==='bash'?[2,4,7,6,3,0][frame]:pose==='land'?[4,2,0][frame]:0;
  const bob=running?[0,-1,-2,-1,0,-1,-2,-1][frame]:pose==='idle'&&frame===2?-1:0;
  const lean=pose==='bash'?[-3,3,14,16,9,3][frame]:pose==='turn'?-3:running?2:0;
  rect('#080b1044',-wide-5,44,wide*2+10,3);
@@ -50,7 +51,7 @@ function raster(h,pose,frame){
  if(h.id===2){for(let y=22;y<32;y+=3)for(let x=-12;x<12;x+=4)rect((x+y)%3?'#b9aa70':'#dcc99a',x+(y%2),y,2,1);}
  rect('#2a2827',-wide,32,wide*2,4);rect('#7d5533',-wide+1,33,wide*2-2,2);rect('#f2d99b',-3,31,7,6);rect('#907041',-1,33,3,2);
  // Rear arm swings opposite the leading foot.
- let rearX=-wide-3-(running?leg[0]*.7:0),rearY=28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
+ let rearX=-wide-3-(running?leg[0]*.7:0),rearY=climbing?[6,12,20,12][frame]:28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
  if(shieldRise>0){rearX=rearX*(1-shieldRise)-20*shieldRise;rearY*=1-shieldRise;}
  segment(-wide+1,20,rearX,rearY,6,p.dark,p.light);rect(p.shadow,rearX-3,rearY,6,5);rect(p.skin,rearX-3,rearY,4,3);
  // Head, shaded nose and brows.
@@ -66,7 +67,7 @@ function raster(h,pose,frame){
  rect('#ddd2aa',-14,3,28,4);rect('#8e8e73',-13,6,26,2);for(const x of [-11,-6,6,11])rect('#f5efd1',x,4,2,2);rect('#ceb57a',-2,-7,5,15);rect('#f7dfa0',-2,-6,2,13);
  for(const sign of [-1,1]){poly(outline,[[sign*12,-2],[sign*18,-3],[sign*22,-9],[sign*19,-14],[sign*17,-13],[sign*17,-7],[sign*12,-6]]);poly('#eee5c8',[[sign*13,-3],[sign*18,-4],[sign*20,-9],[sign*18,-12],[sign*18,-7],[sign*13,-5]]);rect('#b6b899',sign<0?-19:17,-5,3,3);}
  // Forearm and weapon poses: anticipation, extension and recovery.
- let handX=wide+3+(running?leg[0]*.65:0),handY=28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
+ let handX=wide+3+(running?leg[0]*.65:0),handY=climbing?[20,12,6,12][frame]:28+(pose==='rise'?-16:pose==='fall'?-4:air?-8:0);
  if(pose==='bow'){handX=26;handY=18;}
  if(pose==='sword'){handX=[13,15,22,27,24,18][frame];handY=[11,6,11,20,29,27][frame];}
  if(shieldRise>0){handX=handX*(1-shieldRise)+20*shieldRise;handY*=1-shieldRise;}

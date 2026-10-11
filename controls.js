@@ -1,4 +1,4 @@
-export function keyAction(key){return {ArrowLeft:'left',ArrowRight:'right',' ':'primary',f:'primary',Enter:'primary',d:'secondary',x:'secondary',z:'sword',e:'interact',s:'interact',q:'item'}[key];}
+export function keyAction(key){return {ArrowLeft:'left',ArrowRight:'right',ArrowUp:'up',ArrowDown:'down',' ':'primary',f:'primary',Enter:'primary',d:'secondary',x:'secondary',z:'sword',e:'interact',s:'interact',q:'item'}[key];}
 export function createControls(){
  const held=new Map(),pending=new Set();
  return {
@@ -7,6 +7,6 @@ export function createControls(){
   has(action){return [...held.values()].includes(action);},
   clear(){held.clear();pending.clear();},
   discard(){pending.clear();},
-  consume(hero){const primary=pending.has('primary');const result={left:this.has('left'),right:this.has('right'),jump:primary&&hero!==1,sword:pending.has('sword')||(primary&&hero===1),action:pending.has('secondary'),interact:pending.has('interact'),item:pending.has('item')};pending.clear();return result;}
+  consume(hero){const primary=pending.has('primary');const result={left:this.has('left'),right:this.has('right'),up:this.has('up'),down:this.has('down'),jump:primary&&hero!==1,sword:pending.has('sword')||(primary&&hero===1),action:pending.has('secondary'),interact:pending.has('interact'),item:pending.has('item')};pending.clear();return result;}
  };
 }

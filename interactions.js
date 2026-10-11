@@ -1,8 +1,9 @@
+import {cycleObjects} from './cycle-campaign.js?v=cycle52';
 import {storyObjects} from './story-campaign.js?v=ground51';
 import {verticalObjects} from './vertical-campaign.js?v=arc46';
 import {inventoryObjects} from './inventory-campaign.js?v=arc46';
 export function interactionObjects(s){
- if(s.campaign==='story')return storyObjects(s);if(s.round>=9)return verticalObjects(s);if(s.round>=6)return inventoryObjects(s);
+ if(s.campaign==='cycle')return cycleObjects(s);if(s.campaign==='story')return storyObjects(s);if(s.round>=9)return verticalObjects(s);if(s.round>=6)return inventoryObjects(s);
  const common={kind:'lever',radius:76};
  if(s.round===0)return [{...common,id:'panel',x:610,y:566,title:'FUSE PANEL',done:s.power,ready:s.fuse,reason:'Find the spare fuse on the highest shelf first.',run:()=>{s.power=true;return 'Circuit restored. Olaf grounds the rogue arcade with his front shield; Baleog shoots from behind.';}}];
  const g=s.machine,m=s.level.mechanic,h=s.heroes[s.active];
@@ -20,7 +21,7 @@ export function interactionObjects(s){
 }
 export function nearbyInteraction(s){const h=s.heroes[s.active];return interactionObjects(s).filter(o=>Math.abs(h.x-o.x)<=o.radius&&Math.abs(h.y-o.y)<66).sort((a,b)=>Math.abs(h.x-a.x)-Math.abs(h.x-b.x))[0]||null;}
 export function useInteraction(s){const o=nearbyInteraction(s);let message;if(!o)message='No interactive object nearby. Follow the current mission, or move beside a marked USE object.';else if(o.done)message='This machine is already active.';else if(!o.ready)message=o.reason;else message=o.run();s.feedback={sequence:(s.feedback?.sequence||0)+1,message,id:o?.id||'none'};}
-export function objective(s){
+export function objective(s){if(s.campaign==='cycle')return s.level.hint;
  if(s.failed)return s.failure;if(s.campaign==='story')return s.won?'All three crossed.':s.power?'Bring everyone to the departure.':s.level.hint;if(s.won)return 'Round complete. Everyone made it.';if(s.round>=6)return s.power?'Bring all three to the exit.':s.level.hint;
  if(s.round===0)return !s.fuse?'Erik: find the spare fuse on the highest shelf.':!s.power?'Use the fuse panel beside the striped gate.':s.turret?'Olaf: front shield RIGHT in the arcade firing lane. Baleog: shoot the rogue arcade from behind.':'Bring all three Vikings to the powered exit.';
  const g=s.machine,m=s.level.mechanic;
@@ -31,4 +32,4 @@ export function objective(s){
  return !g.ore?'Baleog: cut the hanging ore chain beside the crucible.':g.heat>=3?'Key forged. Bring everyone to the CENTRAL FORGE PORTAL.':g.air===0?'First position Olaf shield RIGHT near the crucible; keep crew to his left. Erik: run-bash bellows. Pressure '+g.air+'/3; forge '+g.heat+'/3.':'Olaf: front shield RIGHT in the dragon’s firing lane. Pressure '+g.air+'/3; forge '+g.heat+'/3.';
 }
 
-export function debugState(s){if(s.campaign==='story')return {...s.machine,enemies:s.enemies,inventory:s.heroes.map(h=>h.inventory)};if(s.round>=6)return {...s.machine,items:s.items,inventory:s.heroes.map(h=>h.inventory),health:s.heroes.map(h=>h.hp)};if(!s.round)return {fuseFound:s.fuse,power:s.power,arcadeAlive:s.turret,completed:s.won};const keys={cargo:['charge','charged','liftOn','liftY','hatch'],bankshot:['lane','score'],portals:['bell','mirror','seal'],tow:['brake','cartX','parked','signal'],forge:['ore','air','heat']}[s.level.mechanic];return {...Object.fromEntries(keys.map(k=>[k,s.machine[k]])),portalOpen:s.power,completed:s.won};}
+export function debugState(s){if(s.campaign==='cycle')return {...s.machine,completed:s.won};if(s.campaign==='story')return {...s.machine,enemies:s.enemies,inventory:s.heroes.map(h=>h.inventory)};if(s.round>=6)return {...s.machine,items:s.items,inventory:s.heroes.map(h=>h.inventory),health:s.heroes.map(h=>h.hp)};if(!s.round)return {fuseFound:s.fuse,power:s.power,arcadeAlive:s.turret,completed:s.won};const keys={cargo:['charge','charged','liftOn','liftY','hatch'],bankshot:['lane','score'],portals:['bell','mirror','seal'],tow:['brake','cartX','parked','signal'],forge:['ore','air','heat']}[s.level.mechanic];return {...Object.fromEntries(keys.map(k=>[k,s.machine[k]])),portalOpen:s.power,completed:s.won};}

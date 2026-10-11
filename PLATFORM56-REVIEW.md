@@ -1,5 +1,14 @@
 # Platform56 independent review
 
+## Deployment verification (implementation record)
+
+Published to the existing site after the gate accepted. Live HTML selects
+`game.js?v=platform56r3`; six changed modules/assets match the verified release
+byte for byte. The live production keyboard approach and mobile pointer climb
+passed, with seven controls in bounds, no overlap and zero page errors.
+Root-only test invocation: 234 pass, no failures or skips. Native ladder checks
+pass for continuous rails, joined rung, binary alpha and seam contact.
+
 ## Scope and verdict
 
 **Accepted for the widened Cycle ladder and centered overhead-shield contact only. No remaining blocking finding in the inspected current evidence.** This review does not approve or publish the unfinished Vikings55 replacement. The isolated release uses the previously published body renderer, with its shield grip/draw ordering corrected.

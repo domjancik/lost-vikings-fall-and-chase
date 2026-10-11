@@ -52,3 +52,11 @@ found. Existing source/processing acceptance remains applicable because raster
 assets and native scaling are unchanged. Parent reports 268 root tests passing
 and zero errors in the normal-input desktop/mobile pan checks; those reports
 supplement the independent code, focused-test and image inspection above.
+
+## Published verification
+
+Commit1e7f72b published2026-10-12. Live entry and all seven runtime modules
+match the reviewed release by SHA256. Public ordinary-Up camera-pan checks pass
+in Story0/5, Arcade9, and both puzzle rooms; zero page errors. Captures are
+output/playwright/vertical65-live-*. No gameplay physics changed. Root268tests
+pass, including both zooms at negative camera limits and effect registration.

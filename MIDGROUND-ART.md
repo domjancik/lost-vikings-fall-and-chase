@@ -31,3 +31,7 @@ and preservation of the canopy reveal's full-resolution source crop.
 - Preparation checks all eight runtime sprites for binary alpha and support-edge
   contact. Source panels retain their aspect ratio; no background repaint or
   forced full-scene 256×256 downsampling is introduced.
+- Published mid49 verified live: 26 relevant modules/assets return HTTP 200,
+  eight chapter menu entries, ready middle artwork, full 390×844 mobile canvas,
+  zero page errors. Game modules and the complete HTML body match local UTF-8
+  sources exactly; hosting-added head metadata is excluded from that comparison.

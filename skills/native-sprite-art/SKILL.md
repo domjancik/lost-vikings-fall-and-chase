@@ -7,8 +7,8 @@ description: Generate and review pixel-art game sprites at the native pixel dens
 
 Before generating, record the intended world/display dimensions, game pixel
 size, native cell dimensions, opaque subject height and animation anchors.
-For this engine one native pixel occupies2world units. A72world-unit person
-therefore needs36deliberate native pixels of height, not a detailed painted
+For this engine one native pixel occupies 2 world units. A 72-world-unit person
+therefore needs 36 deliberate native pixels of height, not a detailed painted
 figure reduced from hundreds of pixels.
 
 Generate the subject at that **native detail density**. A larger output file
@@ -19,7 +19,7 @@ Generated output dimensions do not prove native density; inspect the artwork.
 
 Never rely on pixel-grid detection, quantization or downsampling to rescue
 artwork designed at a fundamentally higher resolution. Reject and regenerate
-that source. Do not force unrelated assets into a universal256square, change
+that source. Do not force unrelated assets into a universal 256×256 square, change
 world scale to disguise bad art, or repeatedly process a processed sprite.
 
 Use the retained original source once. Normalize the sheet's scale consistently;
@@ -35,7 +35,7 @@ Before replacing or publishing an asset, provide the critique reviewer:
 2. Source-to-runtime comparison at the same apparent size, plus an enlarged
    nearest-neighbor view. Reject lost features, isolated noise pixels, broken
    outlines, changed silhouettes, inconsistent pixel sizes and damaged alpha.
-3. Actual production gameplay at1x and2x, including mobile where relevant;
+3. Actual production gameplay at 1x and 2x, including mobile where relevant;
    not just an isolated sheet or large art preview. Readability at gameplay
    size takes precedence over the attractive enlarged image.
 4. All key poses, mirror direction, contacts, extreme equipment bounds and
@@ -46,3 +46,8 @@ and the **processed/in-game gate** separately. Passing image dimensions,
 alpha tests or gameplay completion cannot substitute for either visual gate.
 If either fails, correct the art and repeat the affected evidence before
 publishing. User approval is not required for this internal correction loop.
+
+Record the target dimensions, source paths, evidence paths and each gate's
+verdict in the relevant review log. Have the critique subagent apply
+[the repository visual review gate](../../VISUAL-REVIEW-GATE.md); leave a
+failed or missing gate pending until corrected evidence is reviewed.

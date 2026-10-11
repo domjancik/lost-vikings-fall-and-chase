@@ -2,6 +2,30 @@
 
 This is mandatory in the campaign critique cycle, alongside HUMAN-SCALE.md.
 
+## Native sprite resolution
+
+Apply [native-sprite-art](skills/native-sprite-art/SKILL.md) to every generated
+or replacement sprite, including characters, equipment and animated props.
+Before generation record its intended display/world size, native pixel size,
+cell dimensions, subject height and animation anchors. Generate matching native
+detail density; a large output may enlarge those pixels but must not add detail
+that will be destroyed at the target size. Reject high-resolution painted art
+that needs downsampling or grid detection to rescue it.
+
+The critique subagent must record two separate verdicts in the review log:
+
+- **Source gate:** inspect the original beside its intended native-size view.
+  Accept only deliberate, readable pixel clusters at the target density.
+- **Runtime gate:** compare original and processed art at the same apparent
+  size, then inspect actual gameplay at 1x/2x and mobile where relevant. Check
+  silhouettes, outlines, noise, alpha, mirrored poses, equipment bounds,
+  stable frame registration and actual visible contacts.
+
+Record dimensions and source/capture paths with both verdicts. Missing evidence
+or a failed verdict blocks publication of the affected assets. Correct the art
+and repeat the affected review. Dimensions, alpha tests and level completion
+cannot substitute for visual acceptance.
+
 ## Ground contact
 
 Review visible opaque pixels, not canvas bounds or a single stray alpha pixel.

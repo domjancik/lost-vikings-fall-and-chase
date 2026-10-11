@@ -1,4 +1,5 @@
 import {drawTerrain} from './terrain-render.js?v=terrain48';
+import {drawMiddleScenery} from './midground-render.js?v=mid49';
 import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=native47';
 import {createAtlas} from './sprite-atlas.js?v=arc46';
 import {storyObjects,storyWalls} from './story-campaign.js?v=arc46';
@@ -25,9 +26,9 @@ export function drawStoryBackground(ctx,s,camera,view){
  ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,camera.y,view.width,view.height);if(im)ctx.drawImage(im,x,y,w,h);
  // Complete architecture layers retain their own support planes. No isolated
  // transparent building cutouts: the bases and pillars share one transform.
- const base=s.round===5?810:610,shift=snapPixel(camera.x*.18);ctx.fillStyle=palettes[s.round];ctx.fillRect(shift,base,3500,s.level.worldBottom-base);
- for(let n=0;n<7;n++){const px=snapPixel(300+n*470+shift);ctx.fillStyle=s.level.accent+'25';ctx.fillRect(px,base-210,20,210);ctx.fillRect(px-45,base-16,110,16);ctx.fillRect(px-8,base-212,36,8);}
- return {x,y,size:w,height:h,tiles:[x],native:[resolution.nativeWidth,resolution.nativeHeight],ready:!!im,source:sceneImage(s.round).src,ground:base};
+ const base=s.round===5?810:610;ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,base,view.width,s.level.worldBottom-base);
+ const middle=drawMiddleScenery(ctx,s.round,camera,view);
+ return {x,y,size:w,height:h,tiles:[x],native:[resolution.nativeWidth,resolution.nativeHeight],ready:!!im,source:sceneImage(s.round).src,ground:base,middle};
 }
 export function drawStoryWorld(ctx,s,text,box){const g=s.machine,t=animationTime(s.time),c=s.level.accent,status=text.status||text;
  const sprite=(n,x,bottom,w=60,h=60)=>art.draw(ctx,n,x-w/2,bottom-h,w,h);

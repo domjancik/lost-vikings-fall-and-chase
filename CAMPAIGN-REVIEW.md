@@ -254,3 +254,15 @@ The strong repeated black vertical atlas separators are gone. Blue/wood/mobile i
 A faint repeating texture grain/course is still perceptible in the mint material, but it is now low-impact material structure rather than the earlier ornate or black-separator pattern. This is a nonblocking aesthetic observation. The implementation agent reports the full19-scene survey completed without new browser errors and the198-test suite/build pass; this reviewer independently verified the five focused terrain/art tests and inspected the representative final screenshots listed above.
 
 No implementation or artwork was edited by this reviewer. Grounding, source-grid integrity and quiet-infill acceptance gates remain required for future changes.
+
+## Mid49 generated middle architecture verdict
+
+**Accepted for the changed scenery. No blocking finding remains in the inspected evidence.** Read `MIDGROUND-ART.md`, `midground-layout.js`, `midground-render.js` and the story background integration. Independently inspected all eight spawn scenes at both zooms (`mid49-{0..7}-{1,2}.png`), mobile, direct source sprites 0/2/4/5/7, and the normal-route `mid49-6-route-canopy-reveal.png`.
+
+Floor architecture has complete bases meeting the visible support plane; its foundations share its camera transform. Canopy scenery instead hangs from its own ceiling beam. The upper-route reveal retains attached vertical architecture, an explicit supported deck and correct crew foot contact. No translucent pillar ghosts or separated moving foundations are visible. All eight sprite alpha channels contain only 0 and 255, independently measured; the renderer draws with alpha 1. Fixed 768x512 world rectangles preserve aspect and snapped two-unit coordinates at both zooms.
+
+Foreground levers, capsules, doors and lifts remain distinct through brighter color and a different edge/material treatment. Background arches and shelves are architectural detail rather than false lever/key/button cues. Some horizontal background ledges can resemble a route at first glance, especially memory/archive architecture; this is a nonblocking observation because their recessed dark treatment differs from the continuous capped foreground platforms. Do not add bright controls or foreground terrain caps to those decorative ledges in future art passes.
+
+Independently ran `node --test midground-layout.test.js`: 1 pass, including support anchors, aspect, fractional-camera quantization and coverage. The implementation agent reports 199 full tests/build passing and the normal-input canopy route completing with all three heroes at full health and no page errors. This reviewer inspected the supplied production screenshots rather than conducting a separate browser playthrough. Static evidence does not replace the existing continuous grounding and foot-pivot regression gates.
+
+No implementation or artwork was edited by this reviewer.

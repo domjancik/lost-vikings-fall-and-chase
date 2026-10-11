@@ -5,7 +5,7 @@ import {giveItem,pickupItem,useItem,message} from './inventory.js?v=arc46';
 import {damage} from './health.js?v=arc46';
 import {makeEnemy,updateEnemies,hurtEnemy,nearestEnemyHit} from './story-enemies.js?v=arc46';
 import {advanceMechanisms,gateWall,liftSurface} from './story-mechanisms.js?v=arc46';
-import {storyLevels,makeStoryMachines} from './story-layout.js?v=arc46';
+import {storyLevels,makeStoryMachines} from './story-layout.js?v=scale50';
 export {storyLevels};
 const close=(h,x,y=566,r=64)=>Math.abs(h.x-x)<r&&Math.abs(h.y-y)<60;
 export const storyDoors=s=>s.machine.gates;

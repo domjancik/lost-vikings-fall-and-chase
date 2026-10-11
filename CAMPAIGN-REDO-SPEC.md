@@ -69,4 +69,10 @@ Generate eight distinct landscape scenes in two four-scene sheets at useful nati
 
 ## Grounding implementation clarification
 
+Human scale is a required critique gate: follow HUMAN-SCALE.md. The Vikings are
+adult humans, never dwarves or miniature toys. This supersedes the earlier
+miniature marquee / giant-screw art direction, while retaining brass embodiment
+and the escape story. Ordinary inhabited architecture must provide adult scale
+references. Review both zooms, depth layers and upper routes alongside grounding.
+
 Lift shafts cut through upper decks. Lower landings retain a solid backstop floor so a called-away lift never leaves a lethal boarding pit. Rendered platform tops and collision feet use the same y. Enemy frames are aligned to the actual bottom alpha pixel in a fixed cell; normalized frames all end at row128. Scenery structures retain their baked supports as a whole layer, instead of isolated cutout architecture. Gate frames contain only side rails and a header, so an opened leaf leaves a visible passage. Independent screenshot review is required for these claims.

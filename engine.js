@@ -1,4 +1,4 @@
-import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=arc46';
+import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=scale50';
 import {setupVerticalLevel,verticalStep} from './vertical-campaign.js?v=arc46';
 import {startBash,bashImpact} from './bash.js?v=arc46';
 import {shieldControls,shieldHit,segmentHit} from './projectile-collision.js?v=arc46';

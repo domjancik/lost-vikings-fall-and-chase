@@ -1,5 +1,10 @@
 # Campaign middle scenery
 
+Scale50 correction: HUMAN-SCALE.md supersedes the original sizes below. Chapters
+1–7 now use 384×256 world dimensions, and the pub has new ordinary human-scale
+architecture at 576×384 middle / 384×256 far dimensions. Mid49 sources remain
+preserved as provenance. No giant-screw pub scenery is used by the current story.
+
 Replace the temporary translucent pillars with eight distinct generated architecture sets.
 Keep the original far scenery and its display-sized native raster preparation unchanged.
 

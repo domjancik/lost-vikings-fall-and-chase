@@ -266,3 +266,23 @@ Foreground levers, capsules, doors and lifts remain distinct through brighter co
 Independently ran `node --test midground-layout.test.js`: 1 pass, including support anchors, aspect, fractional-camera quantization and coverage. The implementation agent reports 199 full tests/build passing and the normal-input canopy route completing with all three heroes at full health and no page errors. This reviewer inspected the supplied production screenshots rather than conducting a separate browser playthrough. Static evidence does not replace the existing continuous grounding and foot-pivot regression gates.
 
 No implementation or artwork was edited by this reviewer.
+
+## Scale50 adult-human art review
+
+Adult-human scale is now a blocking acceptance criterion alongside grounding, puzzle semantics and animation. The Viking standing silhouette is the reference; stocky sprite anatomy does not authorize dwarf, toy or miniature environments. `HUMAN-SCALE.md` supersedes the older miniature-pub wording in the historical first-campaign outline.
+
+Independently inspected all eight `scale50-{0..7}-{1,2}.png` spawn views and `scale50-mobile.png`, and read the revised scale brief, middle renderer/layout and far-background integration. **The inspected spawn/depth evidence passes; no blocking everyday-prop scale conflict was found.** Ordinary pub doors read about 1.4-1.6 standing silhouettes when measured from their own raised thresholds. Counters are roughly two-thirds of a silhouette above their bar floor, and chair seats are substantially lower. Do not measure those heights from the foreground floor when a background bay has a raised plinth. The giant screw, enlarged paper and magnified wood-grain cues are absent. The farther pub layer is authored smaller than the middle layer, with world sizes fixed across zooms.
+
+Chapters 1-7 middle inhabited cells/windows now establish a smaller recessed architecture scale instead of making the crew knee-high to its inhabitants. The unchanged far layers were audited visually: their dominant references are industrial conduits, multi-storey spans, chamber glazing and distant architecture. No clear giant chair/mug/ordinary access-handle cue was found. Coin-return brass figures read as statues/display imagery rather than physical taller pub residents; ceramic city patterns read as the chapter's manufactured-world motifs. Those exemptions do not allow oversized everyday furnishings in future chapters.
+
+Foundation contact, pixel aspect, opacity and foreground puzzle visibility remain intact in the inspected scenes. The mobile pub door and crew retain plausible relative scale. Independently ran the updated middle-layout test: 1 pass. This checks fixed dimensions/support anchors and fractional-camera quantization, not semantic human scale.
+
+A fresh Scale50 upper-route/reveal screenshot remains requested to close the upper-context portion of this gate. The prior Mid49 upper-route evidence cannot demonstrate the newly resized/replaced scenery at that camera position. This is an evidence limitation, not an observed art blocker; final acceptance for upper contexts is pending that image. No implementation or artwork was edited by this reviewer.
+
+## Scale50 upper-context final verdict
+
+**Accepted. The pending upper-route evidence gate is closed, with no unresolved blocking scale or grounding finding in the inspected Scale50 evidence.** Independently viewed `scale50-canopy-reveal.png` and `scale50-pub-upper-lift.png` through the image-view tool.
+
+The canopy's newly reduced hanging assemblies attach to the ceiling structure and remain behind the supported upper deck. The revealed brass figures are comparable in standing size to the foreground crew; the pub-window image reads as a projected scene within the machine. Crew feet meet the deck. The physical pub upper context contains the new normal-scale balcony, windows and railing rather than the old giant screw or magnified timber. Its railing reads around two-thirds of Erik's rendered height, consistent with an adult reference at that depth. Erik's feet meet the lift's highlighted top surface and the lift remains on its rails. Large foreground levers are industrial puzzle machinery, rather than an implied household furnishing scale.
+
+Together with the previously inspected all-eight/both-zoom spawn views and mobile, this closes the changed art's human-scale review. The implementation agent reports the fresh normal-input canopy route won with health 3/3/2 and the pub route with 3/3/3, without page errors. This reviewer independently inspected supplied route images, not a separate live playthrough. Human scale remains a required future review gate; historical miniature-pub phrasing must not be reused as art direction.

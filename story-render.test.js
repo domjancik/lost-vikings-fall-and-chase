@@ -17,3 +17,18 @@ test('canopy reveal retains full-resolution crop sources after scene cache chang
   assert.equal(pub.length,4);assert.ok(pub.every(a=>a[0].src.endsWith('scene-5.png?v=native47')));
  }finally{globalThis.Image=previous;}
 });
+test('pub furniture keeps authored world scale across viewport and zoom changes',async()=>{
+ const previous=globalThis.Image;
+ globalThis.Image=class{complete=true;naturalWidth=768;naturalHeight=512;};
+ try{
+  const {drawStoryBackground}=await import('./story-render.js');
+  const ctx=new Proxy({},{get:()=>()=>{}}),s=createState(7,'story');
+  for(const view of [{width:1264,height:790},{width:632,height:395},{width:2000,height:1000}]){
+   const bg=drawStoryBackground(ctx,s,{x:713.7,y:140},view);
+   assert.equal(bg.size,384);assert.equal(bg.height,256);
+   assert.deepEqual(bg.native,[192,128]);assert.ok(bg.source.includes('scale50/pub-far.png'));
+   assert.ok(bg.middle.pieces.every(p=>p.w===576&&p.h===384&&p.y+p.h===610));
+   assert.ok(bg.tiles.every(x=>Math.abs(x%2)===0));
+  }
+ }finally{globalThis.Image=previous;}
+});

@@ -1,15 +1,15 @@
 import {drawTerrain} from './terrain-render.js?v=terrain48';
-import {drawMiddleScenery} from './midground-render.js?v=mid49';
+import {drawMiddleScenery} from './midground-render.js?v=scale50';
 import {sceneResolution,prepareScenePixels} from './scene-resolution.js?v=native47';
 import {createAtlas} from './sprite-atlas.js?v=arc46';
-import {storyObjects,storyWalls} from './story-campaign.js?v=arc46';
+import {storyObjects,storyWalls} from './story-campaign.js?v=scale50';
 import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 import {drawPortal} from './portal-effects.js?v=arc46';
 import {ease,gateFrameRects} from './story-mechanisms.js?v=arc46';
 const art=createAtlas('assets/campaign46/machines.png?v=arc46',8,4,true);
 const frames=createAtlas('assets/campaign46/machines.png?v=arc46',8,4);
 const scenes=new Map(),preparedScenes=new Map(),sourcePixels=new Map();
-function sceneImage(round){if(!scenes.has(round)){const im=new Image();im.src='assets/campaign46/scene-'+round+'.png?v=native47';scenes.set(round,im);}return scenes.get(round);}
+function sceneImage(round){if(!scenes.has(round)){const im=new Image();im.src=round===7?'assets/scale50/pub-far.png?v=scale50':'assets/campaign46/scene-'+round+'.png?v=native47';scenes.set(round,im);}return scenes.get(round);}
 function displayScene(round,width,height){
  const image=sceneImage(round);if(!image.complete||!image.naturalWidth)return null;
  if(typeof document==='undefined')return image;
@@ -21,6 +21,15 @@ function displayScene(round,width,height){
 const palettes=['#2b241a','#152331','#18252b','#24352b','#30232f','#13282f','#202425','#292821'];
 export function drawStoryItem(ctx,type,x,bottom,w,h){if(!art.image.complete||!art.image.naturalWidth)return false;art.draw(ctx,type==='archive'?16:14,x-w/2,bottom-h,w,h);return true;}
 export function drawStoryBackground(ctx,s,camera,view){
+ if(s.round===7){
+  // Pub bays have authored human references. Resizing the viewport must never
+  // enlarge their furniture; their farther plane is smaller than middle bays.
+  const w=384,h=256,im=displayScene(7,192,128),shift=snapPixel(camera.x*.78),y=418,tiles=[];
+  ctx.fillStyle=palettes[7];ctx.fillRect(camera.x,camera.y,view.width,view.height);
+  for(let n=Math.floor((camera.x-shift)/w);n<=Math.floor((camera.x+view.width-shift)/w);n++){const x=n*w+shift;tiles.push(x);if(im)ctx.drawImage(im,x,y,w,h);}
+  const middle=drawMiddleScenery(ctx,7,camera,view);
+  return {x:tiles[0],y,size:w,height:h,tiles,native:[192,128],ready:!!im,source:sceneImage(7).src,ground:610,middle};
+ }
  const resolution=sceneResolution(view),im=displayScene(s.round,resolution.nativeWidth,resolution.nativeHeight),w=resolution.width,h=resolution.height,travel=Math.max(1,3200-view.width),fraction=Math.min(1,Math.max(0,camera.x/travel));
  const x=snapPixel(camera.x-(w-view.width)*fraction),y=snapPixel(camera.y-(h-view.height)*.35);
  ctx.fillStyle=palettes[s.round];ctx.fillRect(camera.x,camera.y,view.width,view.height);if(im)ctx.drawImage(im,x,y,w,h);

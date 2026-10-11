@@ -58,4 +58,8 @@ Implement the first Astra narrative: escaping ownership during an arcade's perma
 
 ## Completion report
 
+The critique cycle must also enforce HUMAN-SCALE.md: adult Vikings, plausible
+ordinary doors, furniture and inhabited rooms, coherent depth scaling, and no
+unintended miniature reading. Human-scale review is required with grounding.
+
 Report campaign link, chapter count, meaningful mechanics, fresh test results, browser-playthrough evidence, and any actual limitations. Keep generated asset prompts and validation notes in the workspace.

@@ -23,3 +23,9 @@ Production transparent pixel-art sprite sheet for serious side-view puzzle game,
 ## Display-grid correction
 
 native47 keeps all original scene PNGs unchanged. The renderer prepares a cached display grid directly from those pixels using the actual viewport and positive source-cell weights. There is no256×256 scenery limit and no stepped-resolution magnification. Original sources still support full-resolution narrative-window crops.
+# Human-scale correction
+
+The historical prompts below record original provenance, not current permission
+to depict miniature Vikings. HUMAN-SCALE.md supersedes the giant-screw and
+miniature-pub directions. Scale50 replaces those pub assets and corrects middle
+layer world dimensions; generated source files remain preserved for history.

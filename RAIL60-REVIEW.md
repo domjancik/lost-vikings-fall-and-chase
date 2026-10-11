@@ -15,3 +15,12 @@ The implementation agent reports the successful actual-keyboard sequence cut res
 ## Final label presentation follow-up
 
 Independently inspected refreshed `rail60-selector.png`, `rail60-upper-active.png`, `rail60-overview.png`, `rail60-mobile.png` and new `rail60-mobile-2x.png` after the status anchor moved fromY182 toY150. The amber queued and cyan active text now sits visibly above Olaf's overhead shield, without crossing its pixels, and remains readable in both mobile zoom views. The earlier nonblocking overlap note is resolved. The implementation agent reports the ordinary-control sequence was repeated successfully through both queue and actual dock activation. No other change is implied; final Rail60 acceptance stands with no remaining finding in this scope.
+
+## Published verification
+
+Rail60 is live. Entry and three changed runtime modules match the reviewed
+snapshot byte-for-byte. Public ordinary-control smoke check confirms lower
+railY542 initially active, and26 pixel-grid direction signals animate after
+Baleog cuts the restraint; no page errors. Local ordinary-control queued-to-dock
+activation route was repeated twice successfully, with1x/2x/mobile captures.
+Live smoke capture: output/playwright/rail60-live.png. Root suite248 passes.

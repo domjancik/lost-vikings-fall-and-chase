@@ -52,3 +52,7 @@ world sizes stay constant at either zoom; zoom changes the view, not prop scale.
 All eight chapters at both zooms plus mobile load without page errors. Fresh
 production-control runs complete canopy with health 3/3/2 and pub with 3/3/3;
 upper canopy reveal and pub lift screenshots are available for the critique gate.
+The independent critique accepted spawn, mobile and upper-route evidence.
+Live deployment checks pass: 27 relevant modules/assets return HTTP 200,
+390×844 full mobile canvas, no page errors, and exact deployed module bytes match
+local UTF-8 sources. The live pub maintains authored far/middle sizes at both zooms.

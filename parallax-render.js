@@ -1,5 +1,5 @@
 import {drawBackground} from './background-render.js?v=arc46';
-import {depthScenes,depthLayout} from './background-depth.js?v=arc46';
+import {depthScenes,depthLayout} from './background-depth.js?v=vertical65';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawBackgroundEffects} from './background-effects.js?v=arc46';
 const images=new Map();let fxAtlas;function effectAtlas(){if(!fxAtlas){fxAtlas=new Image();fxAtlas.src='assets/pixel/background-fx.png?v=pipeline44';}return fxAtlas;}

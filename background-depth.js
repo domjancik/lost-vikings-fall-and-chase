@@ -1,3 +1,4 @@
+import {farSceneY} from './vertical-parallax.js?v=vertical65';
 // Complete object silhouettes replace approximate geometric background masks.
 export const depthScenes=[
  {name:'pub back wall',height:480,farHeight:405,groundY:312,openings:4,farSource:'assets/pixel/depth-far-0.png',nearSource:'assets/pixel/depth-near-0.png'},
@@ -13,5 +14,6 @@ export const depthScenes=[
  {name:'abyssal organ',height:720,groundY:720,openings:1,farSource:'assets/pixel/depth-far-10.png',nearSource:'assets/pixel/depth-near-10.png'}
 ];
 export function depthLayout(round,camera,view){const scene=depthScenes[round],width=Math.max(1440,Math.ceil(view.width/1440)*1440),scale=width/720,center=view.width>1440?(view.width-width)/2:0;
- return {far:{layer:0,name:scene.name,speed:.12,verticalSpeed:.08,x:Math.round((center-Math.max(0,camera.x)*.12)/2)*2,y:Math.round((-camera.y*.08-(round>=9?80:0))/2)*2,width,height:round>=9?1440:790},near:{layer:1,name:'original interior',speed:.72,verticalSpeed:1,x:Math.round((center-Math.max(0,camera.x)*.72)/2)*2,y:610-scene.groundY*scale-camera.y,width,height:scene.height*scale,ground:610}};
+ const height=round>=9?1440:790,vertical=farSceneY(camera.y,view.height,height,round>=9?-650:0,790);
+ return {far:{layer:0,name:scene.name,speed:.12,verticalSpeed:vertical.verticalSpeed,x:Math.round((center-Math.max(0,camera.x)*.12)/2)*2,y:vertical.y-camera.y,width,height},near:{layer:1,name:'original interior',speed:.72,verticalSpeed:1,x:Math.round((center-Math.max(0,camera.x)*.72)/2)*2,y:610-scene.groundY*scale-camera.y,width,height:scene.height*scale,ground:610}};
 }

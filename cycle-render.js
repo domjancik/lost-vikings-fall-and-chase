@@ -1,5 +1,6 @@
+import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {cycleGatePose,drawCycleGateField} from './cycle-gate.js?v=gate61';
-import {drawRefractionWorld} from './refraction-render.js?v=refraction62';
+import {drawRefractionWorld} from './refraction-render.js?v=vertical65';
 import {cycleRailStatus,railSignals} from './cycle-rail.js?v=rail60';
 import {createAtlas} from './sprite-atlas.js?v=ground59';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
@@ -13,7 +14,7 @@ export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
  if(s.level.mechanic==='refraction')return drawRefractionWorld(ctx,s,camera,viewport);
  const g=s.machine,c=g.carrier,box=(color,x,y,w,h)=>{ctx.fillStyle=color;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
  box('#172f3a',camera.x,camera.y,viewport.width,viewport.height);
- if(scene.complete&&scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,offset=snapPixel(camera.x*.75);for(let x=offset-w;x<camera.x+viewport.width;x+=w)ctx.drawImage(scene,x,1120-h,w,h);}
+ if(scene.complete&&scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,offset=snapPixel(camera.x*.75);for(let x=offset-w;x<camera.x+viewport.width;x+=w)ctx.drawImage(scene,x,backdropY(camera.y,1120-h),w,h);}
  // Structural piers meet a lower deck or the recovery floor, never thin air.
  for(const p of s.level.platforms){const base=s.level.floors.filter(f=>f.y>p.y&&p.x+20>=f.x&&p.x+20<=f.x+f.w).sort((a,b)=>a.y-b.y)[0]?.y??1120;for(const x of [p.x+16,p.x+p.w-32]){box('#263f48',x,p.y+24,16,base-p.y-24);box('#77938c',x,p.y+24,4,base-p.y-24);}}
  // Authored structural rails form a physical loop, with explicit junctions.

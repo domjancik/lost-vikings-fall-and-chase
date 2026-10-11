@@ -1,3 +1,4 @@
+import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {refractionArt} from './refraction-art-layout.js?v=refraction62';
 import {refractionBeam} from './refraction-campaign.js?v=refraction62';
 import {refractionConnections} from './refraction-connections.js?v=refraction62';
@@ -24,7 +25,7 @@ function ray(ctx,from,to,time){
 export function drawRefractionWorld(ctx,s,camera,viewport){
  const g=s.machine,surfaces=[...s.level.floors,...s.level.platforms],contacts=[];
  ctx.fillStyle='#151b38';ctx.fillRect(camera.x,camera.y,viewport.width,viewport.height);
- const background={x:snapPixel(camera.x*.12),y:900-refractionArt.sceneFloor*2,width:2800,height:refractionArt.sceneSize[1]*2};
+ const background={x:snapPixel(camera.x*.12),y:backdropY(camera.y,900-refractionArt.sceneFloor*2),verticalSpeed:.22,width:2800,height:refractionArt.sceneSize[1]*2};
  if(scene.complete&&scene.naturalWidth){ctx.save();ctx.filter='brightness(.72)';ctx.drawImage(scene,background.x,background.y,background.width,background.height);ctx.restore();}
  // Structural sprites extend from each complete deck to an actual lower surface.
  for(const p of s.level.platforms)for(const x of [p.x+16,p.x+p.w-32]){

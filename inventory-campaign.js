@@ -1,4 +1,4 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=arc46';
+import {prepareMotion,integrateMotion} from './movement.js?v=support57';
 import {shieldHit,segmentHit} from './projectile-collision.js?v=arc46';
 import {startBash} from './bash.js?v=arc46';
 import {damage} from './health.js?v=arc46';

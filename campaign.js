@@ -5,7 +5,7 @@ import {damage} from './health.js?v=arc46';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {shieldHit} from './projectile-collision.js?v=arc46';
 import {ghostLayout} from './ghost-layout.js?v=arc46';
-import {prepareMotion,integrateMotion} from './movement.js?v=arc46';
+import {prepareMotion,integrateMotion} from './movement.js?v=support57';
 export function feedback(s,message){s.feedback={sequence:(s.feedback?.sequence||0)+1,message};}
 export function campaignStep(s,input,dt){
  const a=s.heroes[s.active],o=s.heroes[2],g=s.machine,m=s.level.mechanic;

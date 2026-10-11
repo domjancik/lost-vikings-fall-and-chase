@@ -20,7 +20,9 @@ export function prepareMotion(s,input,dt){
  }
 }
 export function integrateMotion(s,floors,walls,dt,pub=false){
- const o=s.heroes[2],ox=o.x,oy=o.y;
+ // Include displacement already applied by a moving platform this frame.
+ // prepareMotion records this origin before platforms carry their passengers.
+ const o=s.heroes[2],ox=o.prevX??o.x;
  for(const h of [o,s.heroes[0],s.heroes[1]]){
   if(h.id!==2&&h.support===2&&o.shieldUp){h.x+=o.x-ox;h.y=o.y+SHIELD.upTop-44;}
   const prev=h.y,impact=h.vy;h.x+=h.moveX||0;const right=(s.level.worldWidth??1440)-25;if(h.x<20||h.x>right)h.vx=0;h.x=Math.max(20,Math.min(right,h.x));

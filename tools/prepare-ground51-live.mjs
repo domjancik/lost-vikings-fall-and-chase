@@ -8,6 +8,6 @@ smoke=smoke.replace("const urls=[", "const urls=['interaction-art.js?v=ground51'
 fs.writeFileSync('browser-ground51-live.js',smoke);
 let controls=fs.readFileSync('browser-ground51-first.js','utf8');
 controls=controls.replaceAll('http://127.0.0.1:3000/','https://united-marsh-6ppd.here.now/')
- .replaceAll('sprite51Capture0','sprite51LiveCapture0')
+ .replaceAll('sprite51Capture','sprite51LiveCapture')
  .replaceAll('output/playwright/sprite51-first','output/playwright/sprite51-live');
 fs.writeFileSync('browser-ground51-live-first.js',controls);

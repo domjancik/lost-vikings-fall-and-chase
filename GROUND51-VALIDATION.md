@@ -32,3 +32,14 @@ Validation on 2026-10-11:
 Independent visual findings and inspected captures are recorded in
 `CAMPAIGN-REVIEW.md`. The mandatory future gate is `VISUAL-REVIEW-GATE.md`;
 logic success cannot substitute for visible own-object state or pixel contact.
+
+## Published verification
+
+Deployed to the existing authenticated here.now site. Nineteen changed modules
+and assets match local bytes exactly. Live browser smoke checked 31 asset URLs,
+all eight chapter entries, native-grid rendering, hidden hints and a full-screen
+390×844 mobile canvas with no page errors. The live normal-control first chapter
+cleared with health 3/3/3; its generated lever and socket states were captured.
+The persistent browser's existing capture callback initially retained local
+capture filenames, so these actual live captures were copied to `sprite51-live-*`
+and the standalone live driver now renames its entire binding prefix consistently.

@@ -10,7 +10,7 @@ async page=>{const errors=[];page.on('pageerror',e=>errors.push(String(e)));awai
    const face=async(id,dir=1)=>{select(id);await tick(dir>0?{right:true}:{left:true},.06);await tick({},.1);};
    const use=async id=>{select(id);await tick({interact:true},.1);};
    const item=async(id,type)=>{select(id);const h=read().heroes[id],slot=h.inventory.indexOf(type);if(slot<0)throw Error('Missing '+type);for(let i=0;i<(slot-h.itemSlot+4)%4;i++)pulse(']');await tick({item:true});};
-const s={get round(){return round},get heroes(){return read().heroes},get machine(){return read().machine},get enemies(){return read().enemies}};const capture=async label=>{resume();input({});await window['sprite51Capture'+round](label);resume();held.clear();};
+const s={get round(){return round},get heroes(){return read().heroes},get machine(){return read().machine},get enemies(){return read().enemies}};const capture=async label=>{resume();input({});await window['sprite51LiveCapture'+round](label);resume();held.clear();};
  const jump=async x=>{select(0);await tick({jump:true});await move(0,x);await tick({},.7);};
  const boost=async (ox,shelf)=>{await move(2,ox);select(2);await tick({jump:true});await move(0,ox-55);await jump(ox);if(read().heroes[0].support!==2)throw Error('Shield boarding');await jump(shelf);if(read().heroes[0].y!==366)throw Error('Shelf landing');};
  const sword=async x=>{await move(1,x-55);await face(1);await capture('restraint-before');await tick({sword:true});await tick({},2.2);await capture('restraint-after');};

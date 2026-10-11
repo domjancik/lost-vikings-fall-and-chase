@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Mechanical connection kit</title><style>body{margin:0;background:#11252d;color:#e4dac3;font:16px system-ui}main{max-width:1000px;margin:24px auto}h1{font-size:24px}canvas{width:100%;image-rendering:pixelated;border:1px solid #46616a}p{color:#a8bec0}</style><main><h1>Mechanical connection kit</h1><p>Braided control cable · flanged air duct · bolted carrier rail. Fixed ports; animated cable bellies.</p><canvas id="kit" width="480" height="260"></canvas><p>Shared 32-unit tiles, rendered on the game's two-unit pixel grid. Terminal mounts, corners and junctions are authored sprites.</p></main><script type="module">
+import {drawConnection,drawConnectionTile} from './connection-render.js?v=connections53';
+const c=document.querySelector('canvas'),g=c.getContext('2d');g.imageSmoothingEnabled=false;
+function frame(t){g.setTransform(.5,0,0,.5,0,0);g.fillStyle='#142c34';g.fillRect(0,0,960,520);
+drawConnection(g,[[48,64],[256,64],[256,160],[400,160]],'cable',{time:t/1000});
+drawConnection(g,[[48,256],[192,256],[192,352],[400,352]],'pipe');
+drawConnection(g,[[512,64],[864,64],[864,352],[512,352],[512,64]],'rail');
+drawConnection(g,[[512,208],[864,208]],'rail');drawConnectionTile(g,28,512,208,3);drawConnectionTile(g,28,864,208,1);
+drawConnection(g,[[48,448],[368,448]],'cable',{time:t/1000,phase:2});
+for(let i=0;i<4;i++)drawConnectionTile(g,16+i,560+i*64,448);
+requestAnimationFrame(frame);}requestAnimationFrame(frame);
+</script></html>

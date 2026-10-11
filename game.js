@@ -1,5 +1,5 @@
 import {cycleLevels} from './cycle-campaign.js?v=cycle52';
-import {drawCycleWorld} from './cycle-render.js?v=cycle52';
+import {drawCycleWorld} from './cycle-render.js?v=connections53';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc46';

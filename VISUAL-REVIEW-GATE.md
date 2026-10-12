@@ -131,6 +131,27 @@ mobile evidence and passenger soles when a pose can carry another Viking.
 
 ## Acceptance
 
+### Full movement envelopes and fluid transitions
+
+Inspect the whole swept range of moving machinery, including its resting state
+after water recedes or another support disappears. A float must berth on visible
+structural support before it intersects a bell, wheel or actuator beneath it.
+Use one authoritative physical deck height for riders, artwork and all ports.
+Check docking approach, first contact and the final drained state. An actuator
+is not a parking support unless its construction explicitly communicates that
+role. Include actual support contact, rather than accepting a completed route.
+
+For buoyancy, measure actual per-step character displacement through side entry,
+submerged ladder release and surface settling. Reject direct surface-height
+assignments that teleport a deep character. For ground contacts, distinguish
+the visible structural tire/foot from a dark shadow or stray alpha at the bottom
+of a cell. Preserve native scale; correct registration by translation.
+
+Exercise attached hose/cable geometry across the full relative movement range,
+including when endpoint heights cross. One invalid intermediate bend can stop
+the render loop even when start and end screenshots look correct. Require a
+normal-control browser completion with no page errors after final art integration.
+
 Run focused pixel/support/state regressions, all normal-control simulation
 routes, and the affected production browser routes. Independently inspect the
 state matrix and contact screenshots before accepting. A route clearing and

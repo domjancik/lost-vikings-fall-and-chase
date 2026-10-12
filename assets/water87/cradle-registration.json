@@ -1,0 +1,86 @@
+{
+  "original": "cradle-raw-v1.png",
+  "originalLogicalCanvas": [
+    128,
+    128
+  ],
+  "rawPixelsPerNative": 9.796875,
+  "originalAlphaBounds": [
+    23,
+    184,
+    1231,
+    1079
+  ],
+  "nativeOriginalAffine": [
+    9.796875,
+    0,
+    0.0,
+    0,
+    9.796875,
+    -18.25
+  ],
+  "nativeCell": [
+    128,
+    128
+  ],
+  "baselineExclusive": 112,
+  "beamSeatY": 12,
+  "beamDepthNative": 12,
+  "legsExtendedNative": 14,
+  "modules": [
+    {
+      "source": [
+        0,
+        0,
+        128,
+        58
+      ],
+      "dest": [
+        0,
+        -14
+      ]
+    },
+    {
+      "source": [
+        0,
+        58,
+        128,
+        72
+      ],
+      "dest": [
+        0,
+        44
+      ]
+    },
+    {
+      "source": [
+        0,
+        58,
+        128,
+        128
+      ],
+      "dest": [
+        0,
+        58
+      ]
+    },
+    {
+      "source": [
+        0,
+        72,
+        128,
+        76
+      ],
+      "dest": [
+        0,
+        56
+      ]
+    }
+  ],
+  "nativeBounds": [
+    2,
+    7,
+    126,
+    112
+  ]
+}

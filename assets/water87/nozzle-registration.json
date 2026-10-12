@@ -1,0 +1,39 @@
+{
+  "raw": "extra-raw-v1.png",
+  "originalBounds": [
+    1012,
+    122,
+    1540,
+    766
+  ],
+  "rawPixelsPerNative": 9.239583333333334,
+  "alphaThresholdOnce": 128,
+  "originalExteriorMattePixelsRejected": 0,
+  "originalAffine": [
+    9.239583333333334,
+    0,
+    832.5,
+    0,
+    9.239583333333334,
+    -84.04166666666674
+  ],
+  "nativeBounds": [
+    19,
+    22,
+    77,
+    92
+  ],
+  "inlet": [
+    48,
+    23
+  ],
+  "mouth": [
+    48,
+    85
+  ],
+  "streamMouthWidthWorld": 56,
+  "nativeCell": [
+    96,
+    96
+  ]
+}

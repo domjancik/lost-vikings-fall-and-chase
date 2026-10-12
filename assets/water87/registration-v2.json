@@ -1,0 +1,457 @@
+{
+  "original": "machines-raw-v2.png",
+  "alphaThresholdOnce": 128,
+  "scaleUniform": 4.25,
+  "cell": [
+    96,
+    96
+  ],
+  "baselineExclusive": 92,
+  "records": [
+    {
+      "cell": 0,
+      "name": "pontoon",
+      "originalComponents": [
+        3
+      ],
+      "originalBounds": [
+        10,
+        109,
+        389,
+        406
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        -4.5,
+        0,
+        4.25,
+        15.0
+      ],
+      "nativeBounds": [
+        3,
+        22,
+        93,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 1,
+      "name": "mobile-bell",
+      "originalComponents": [
+        1
+      ],
+      "originalBounds": [
+        404,
+        30,
+        735,
+        406
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        365.5,
+        0,
+        4.25,
+        15.0
+      ],
+      "nativeBounds": [
+        9,
+        4,
+        87,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 2,
+      "name": "fixed-bell",
+      "originalComponents": [
+        2
+      ],
+      "originalBounds": [
+        755,
+        30,
+        1097,
+        403
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        722.0,
+        0,
+        4.25,
+        12.0
+      ],
+      "nativeBounds": [
+        8,
+        4,
+        88,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 3,
+      "name": "crank-housing",
+      "originalComponents": [
+        4
+      ],
+      "originalBounds": [
+        1104,
+        129,
+        1442,
+        403
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        1069.0,
+        0,
+        4.25,
+        12.0
+      ],
+      "nativeBounds": [
+        8,
+        28,
+        88,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 4,
+      "name": "crank-wheel",
+      "originalComponents": [
+        7
+      ],
+      "originalBounds": [
+        56,
+        471,
+        396,
+        744
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        22.0,
+        0,
+        4.25,
+        353.0
+      ],
+      "nativeBounds": [
+        8,
+        28,
+        88,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 5,
+      "name": "threaded-rod",
+      "originalComponents": [
+        5
+      ],
+      "originalBounds": [
+        495,
+        428,
+        616,
+        772
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        351.5,
+        0,
+        4.25,
+        381.0
+      ],
+      "nativeBounds": [
+        34,
+        11,
+        62,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 6,
+      "name": "valve-housing",
+      "originalComponents": [
+        6
+      ],
+      "originalBounds": [
+        712,
+        428,
+        1018,
+        756
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        661.0,
+        0,
+        4.25,
+        365.0
+      ],
+      "nativeBounds": [
+        12,
+        15,
+        84,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 7,
+      "name": "valve-wheel",
+      "originalComponents": [
+        8
+      ],
+      "originalBounds": [
+        1141,
+        497,
+        1421,
+        723
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        1077.0,
+        0,
+        4.25,
+        332.0
+      ],
+      "nativeBounds": [
+        15,
+        39,
+        81,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 8,
+      "name": "sluice-rim",
+      "originalComponents": [
+        13
+      ],
+      "originalBounds": [
+        19,
+        915,
+        415,
+        1050
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        13.0,
+        0,
+        4.25,
+        659.0
+      ],
+      "nativeBounds": [
+        1,
+        60,
+        95,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 9,
+      "name": "sluice-cover",
+      "originalComponents": [
+        12
+      ],
+      "originalBounds": [
+        439,
+        914,
+        739,
+        1020
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        385.0,
+        0,
+        4.25,
+        629.0
+      ],
+      "nativeBounds": [
+        13,
+        67,
+        83,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 10,
+      "name": "service-gate",
+      "originalComponents": [
+        9
+      ],
+      "originalBounds": [
+        811,
+        778,
+        994,
+        1045
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        698.5,
+        0,
+        4.25,
+        654.0
+      ],
+      "nativeBounds": [
+        26,
+        29,
+        70,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    },
+    {
+      "cell": 11,
+      "name": "retaining-chain",
+      "originalComponents": [
+        10,
+        11
+      ],
+      "originalBounds": [
+        1088,
+        785,
+        1408,
+        1045
+      ],
+      "originalPixelsPerNativePixel": 4.25,
+      "sourceTransform": [
+        4.25,
+        0,
+        1044.0,
+        0,
+        4.25,
+        654.0
+      ],
+      "nativeBounds": [
+        10,
+        31,
+        86,
+        92
+      ],
+      "floorBaselineExclusive": 92,
+      "nativeCell": [
+        96,
+        96
+      ],
+      "worldSize": [
+        192,
+        192
+      ]
+    }
+  ]
+}

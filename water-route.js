@@ -10,14 +10,17 @@ export function runWaterRoute(hz=120,onTick=()=>{}){
   return{left:dx<-2,right:dx>2,up:dy<-2,down:dy>2};});};
  const climb=(id,x,feet)=>{move(id,x);until(()=>Math.abs(s.heroes[id].y+44-feet)<1,()=>({up:feet<s.heroes[id].y+44,down:feet>s.heroes[id].y+44}));tick({},3);};
  s.active=2;tick({jump:true});move(2,710);stages.push('local-jet-shelter');
- swim(640,880);swim(820,880);swim(940,856);tick({interact:true});until(()=>s.machine.valvePose===1);stages.push('inlet-closed');
- s.active=2;tick({action:true});move(2,1550);until(()=>Math.abs(s.machine.float.vx)<1);stages.push('air-towed-to-crank');
- move(1,950);climb(1,950,900);tick({},Math.ceil(2*hz));climb(1,950,1000);move(1,1635);
+ swim(640,880);swim(820,880);swim(940,856);swim(1100,856);tick({interact:true});until(()=>s.machine.valvePose===1);swim(940,856);stages.push('inlet-closed');
+ s.active=2;tick({action:true});move(2,1522);until(()=>Math.abs(s.machine.float.vx)<1);stages.push('air-towed-to-crank');
+ move(1,950);climb(1,950,900);tick({},Math.ceil(2*hz));climb(1,950,1000);move(1,1660);
  tick({sword:true});tick({},Math.ceil(.3*hz));tick({interact:true});until(()=>s.machine.wound===1,()=>({right:true}),12);tick({interact:true});stages.push('chain-and-crank');
  until(()=>s.machine.waterY===950,()=>({}),15);stages.push('shallow-recovery');
- s.active=2;tick({jump:true});move(2,2190);climb(2,2190,540);move(2,2300);
- move(1,2190);climb(1,2190,540);move(1,2300);
- climb(0,950,1000);move(0,2190);climb(0,2190,540);move(0,2300);
+ s.active=2;tick({jump:true});move(2,2080);climb(2,2080,540);move(2,2300);
+ move(1,2080);climb(1,2080,540);move(1,2300);
+ climb(0,950,1000);move(0,2080);climb(0,2080,540);move(0,2300);
  tick({},5);if(!s.won)throw Error('Water route did not clear');
  return{s,stages};
 }
+
+
+

@@ -1,0 +1,35 @@
+{
+  "original": "link-raw-v2.png",
+  "originalLogicalCanvas": [
+    128,
+    128
+  ],
+  "rawPixelsPerNative": 9.796875,
+  "alphaThresholdOnce": 128,
+  "affine": [
+    9.796875,
+    0,
+    156.75,
+    0,
+    9.796875,
+    160.75
+  ],
+  "nativeBounds": [
+    43,
+    42,
+    53,
+    54
+  ],
+  "nativePivot": [
+    48,
+    48
+  ],
+  "chainPlacementPivot": [
+    48,
+    33
+  ],
+  "nativeCell": [
+    96,
+    96
+  ]
+}

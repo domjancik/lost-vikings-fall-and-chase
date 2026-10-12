@@ -1,0 +1,29 @@
+{
+  "role": "pad-only anatomy guide for imagegen; not production sprite",
+  "source": "olaf-idle-guide-native.png",
+  "sourceCell": [
+    64,
+    64
+  ],
+  "canvas": [
+    128,
+    128
+  ],
+  "offset": [
+    32,
+    64
+  ],
+  "root": [
+    64,
+    104
+  ],
+  "soleExclusive": 126,
+  "wholeVisibleHeightNative": 36,
+  "nativePixelWorldSize": 2,
+  "previewScaleInteger": 8,
+  "preview": [
+    1024,
+    1024
+  ],
+  "resampling": "none for native padding; nearest integer enlargement only"
+}

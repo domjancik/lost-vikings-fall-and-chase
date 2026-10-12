@@ -1,0 +1,36 @@
+import {createRequire} from 'node:module';import fs from 'node:fs';import http from 'node:http';import path from 'node:path';
+if(process.argv.includes('--live'))process.env.WARDEN89_LIVE='1';
+const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');const {chromium}=require('playwright');
+const root=path.resolve('output/release-warden89/dist'),out='output/warden89';fs.mkdirSync(out,{recursive:true});
+const mime={'.html':'text/html','.js':'text/javascript','.png':'image/png','.css':'text/css','.json':'application/json'};
+const server=process.env.WARDEN89_LIVE?null:http.createServer((req,res)=>{const f=path.resolve(root,'.'+(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!f.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}fs.readFile(f,(err,b)=>{res.writeHead(err?404:200,{'Content-Type':mime[path.extname(f)]||'application/octet-stream'});res.end(err?'Missing':b);});}).listen(3044,'127.0.0.1');
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
+try{
+ await page.goto((process.env.WARDEN89_LIVE?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3044/')+'?skin=imagegen88&campaign=cycle&puzzle=warden&release=89');await page.locator('#play-warden').click();
+ await page.waitForFunction(()=>{const a=JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}');return a.ready&&a.sourceDensity?.startsWith('512native');});
+ const state=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,won:c.dataset.won==='true',failed:c.dataset.failed==='true',art:JSON.parse(c.dataset.cycleArt),time:+c.dataset.simTime,camera:JSON.parse(c.dataset.camera),canvasRect:{x:c.getBoundingClientRect().x,y:c.getBoundingClientRect().y,width:c.getBoundingClientRect().width,height:c.getBoundingClientRect().height}}));
+ const held=new Set(),evidence={};
+ const keys=async names=>{for(const k of [...held])if(!names.includes(k)){await page.keyboard.up(k);held.delete(k);}for(const k of names)if(!held.has(k)){await page.keyboard.down(k);held.add(k);}};
+ const tap=async k=>{await keys([]);await page.keyboard.press(k,{delay:60});await page.waitForTimeout(60);};
+ const shot=async name=>{await page.screenshot({path:out+'/'+(process.env.WARDEN89_LIVE?'live-':'')+name+'.png'});evidence[name]=await state();};
+ const until=async(cond,input=()=>[],limit=35000)=>{const start=Date.now();while(Date.now()-start<limit){const s=await state();if(s.failed)throw Error('Death '+JSON.stringify(s));if(cond(s)){await keys([]);return;}await keys(input(s));await page.waitForTimeout(25);}throw Error('Timeout '+JSON.stringify(await state()));};
+ const move=async(id,x)=>{await tap(String(id+1));await until(s=>s.won||Math.abs(s.heroes[id].x-x)<5&&Math.abs(s.heroes[id].vx)<16,s=>{const h=s.heroes[id],d=x-h.x-h.vx*Math.abs(h.vx)/3000;return Math.abs(d)<3?[]:[d>0?'ArrowRight':'ArrowLeft'];});await page.waitForTimeout(120);};
+ const climb=async(id,x,feet)=>{await move(id,x);await until(s=>Math.abs(s.heroes[id].y+44-feet)<2,s=>[feet<s.heroes[id].y+44?'ArrowUp':'ArrowDown']);await tap('ArrowRight');};
+ await tap('ArrowRight');await page.locator('#restart').click();await page.waitForTimeout(100);
+ const restarted=await state();if(restarted.heroes.some(h=>h.hp!==3)||restarted.machine.disabled)throw Error('Restart did not reset encounter');
+ if((await state()).camera.zoom!==1)await page.locator('#zoom').click();
+ await shot('initial-1x');await page.locator('#zoom').click();await shot('initial-2x');
+ await move(2,1410);await tap('Space');await until(s=>s.machine.cycle%5>=2&&s.machine.cycle%5<2.25,()=>[],6000);await move(2,1490);await until(s=>s.machine.kneel===1,()=>[],8000);await shot('brace-2x');await page.locator('#zoom').click();await shot('brace-1x');await page.locator('#zoom').click();
+ await climb(1,1940,700);await tap('ArrowLeft');await shot('lens-closed');
+ await climb(0,650,760);await move(0,880);await keys(['ArrowRight']);await page.keyboard.press('Space');await until(s=>s.heroes[0].support==='warden-spine',()=>['ArrowRight'],3000);await shot('spine');
+ await move(0,1280);await page.locator('#zoom').click();await page.waitForTimeout(300);await shot('cap-before');await until(s=>s.machine.exposure>0,()=>['ArrowRight','d'],6500);await shot('cap-start');await page.waitForTimeout(100);await shot('cap-middle');await page.waitForTimeout(140);await shot('cap-full');await until(s=>s.machine.shutter===1,()=>[],1000);await tap('2');await page.waitForTimeout(350);await shot('lens-open');await tap('d');await until(s=>s.machine.disabled,()=>[],3000);await shot('shutdown-start');await page.waitForTimeout(650);await shot('shutdown-middle');await until(s=>s.machine.release===1,()=>[],2500);await shot('shutdown-complete');await page.locator('#zoom').click();
+ await move(0,1700);await until(s=>s.heroes[0].ground&&Math.abs(s.heroes[0].y+44-940)<2,()=>[],6000);
+ await tap('2');await until(s=>s.heroes[1].y+44>930,()=>['ArrowLeft'],6000);await until(s=>s.heroes[1].ground,()=>[],3000);await tap('3');await tap('Space');
+ for(const id of [0,1,2]){await climb(id,1760,870);await move(id,1850+id*35);}await shot('boarded-2x');await page.locator('#zoom').click();await shot('boarded-1x');await page.locator('#zoom').click();
+ await page.setViewportSize({width:844,height:390});await shot('boarded-mobile-2x');await page.locator('#zoom').click();await shot('boarded-mobile-1x');await page.setViewportSize({width:1440,height:900});await page.locator('#zoom').click();
+ await tap('1');await tap('e');await until(s=>s.machine.cargo.distance>360,()=>[],8000);await shot('lift-middle');await until(s=>s.machine.cargo.distance===710,()=>[],8000);await shot('upper-dock');
+ for(const id of [0,1,2])await move(id,2800);await until(s=>s.won,()=>[],2000);await shot('exit');const result=await state();
+ await page.waitForFunction(()=>!document.querySelector('#win').hidden);await tap('Enter');await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='0'&&document.querySelector('#game').dataset.won==='false');await shot('continued');
+ fs.writeFileSync(out+'/'+(process.env.WARDEN89_LIVE?'live-':'')+'browser-route.json',JSON.stringify({won:result.won,hp:result.heroes.map(h=>h.hp),time:result.time,restart:true,continue:true,evidence,errors},null,2));
+ if(!result.won||errors.length||result.heroes.some(h=>h.hp!==3))throw Error('Failed '+JSON.stringify({errors,result}));console.log(JSON.stringify({won:result.won,hp:result.heroes.map(h=>h.hp),time:result.time,errors}));
+}finally{fs.writeFileSync(out+'/browser-errors.json',JSON.stringify(errors));await browser.close();server?.close();}

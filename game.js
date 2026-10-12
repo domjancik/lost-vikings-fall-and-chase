@@ -13,6 +13,7 @@ import {archiveCheckpoint,applyArchiveCheckpoint} from './story-custody.js?v=arc
 import {storyLevels} from './story-campaign.js?v=vikings70';
 import {drawStoryBackground,drawStoryWorld,drawStoryItem} from './story-render.js?v=edge67';
 import {createSoundEvents} from './audio-events.js?v=clockwork69';
+import {createWardenSounds} from './warden-audio.js?v=warden89';
 import {createSoundLayer} from './sound-effects.js?v=arc46';
 import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';
 import {plungerPose} from './plunger.js?v=arc46';
@@ -72,10 +73,10 @@ function draw(){
  ctx.restore();const clockView=clockworkView(s,viewport);canvas.dataset.clockView=JSON.stringify(clockView);drawClockworkInset(ctx,s,clockView);screen.clearRect(0,0,canvas.width,canvas.height);screen.drawImage(surface,0,0,surface.width*WORLD_PIXEL,surface.height*WORLD_PIXEL);drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);
 }
 function toast(t){document.querySelector('#toast').textContent=t;document.querySelector('#toast').classList.add('show');document.querySelector('#message-label').textContent='MESSAGE';if(hintsVisible)document.querySelector('#clue').classList.add('new-clue');toastUntil=performance.now()+5500;}
-const audio=createSoundLayer(),soundEvents=createSoundEvents();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
+const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
 function updateSoundButton(){const button=document.querySelector('#sound');button.querySelector('span').textContent=sound?'SOUND ON':'SOUND OFF';button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',sound?'Mute sound effects':'Enable sound effects');button.title=sound?'Sound effects on':'Sound effects off';button.classList.toggle('muted',!sound);}
 updateSoundButton();
-function playWorldSounds(){const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of soundEvents(s)){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?.35:1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
+function playWorldSounds(){const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?.35:1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
 for(const event of ['pointerdown','keydown'])document.addEventListener(event,()=>{if(sound)audio.unlock();},{capture:true});
 document.addEventListener('click',e=>{if(!sound||!e.target.closest('button')||e.target.closest('#sound'))return;audio.unlock().then(()=>audio.play(e.target.closest('#play,#restart,#retry-death,#next-round')?'start':'click'));});
 document.addEventListener('visibilitychange',()=>{audio.setEnabled(sound&&!document.hidden);});
@@ -124,7 +125,7 @@ function toggleHints(){hintsVisible=!hintsVisible;updateHints();try{localStorage
 document.querySelector('#hint').onclick=toggleHints;updateHints();
 
 const chapterDialog=document.querySelector('#chapter-dialog');function showChapter(){paused=true;controls.clear();document.querySelector('#chapter-number').textContent='THE LAST EXIT · CHAPTER '+(round+1);document.querySelector('#chapter-title').textContent=s.level.name;document.querySelector('#chapter-story').replaceChildren(...s.level.story.map(line=>{const p=document.createElement('p');p.textContent=line;return p;}));chapterDialog.showModal();}document.querySelector('#chapter-continue').onclick=()=>chapterDialog.close();chapterDialog.addEventListener('close',()=>{paused=false;controls.clear();canvas.focus({preventScroll:true});});document.querySelector('#skip-story').onchange=e=>localStorage.setItem('last-call-story-cards',e.target.checked?'off':'on');document.querySelector('#skip-story').checked=localStorage.getItem('last-call-story-cards')==='off';
-function chooseCampaign(next,start=true){campaign=next;levels=campaignLevels(next);round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(next)))||0));if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='refraction')round=1;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='momentum')round=2;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='clockwork')round=3;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='water')round=4;renderCampaignChoices();if(roundDialog.open)roundDialog.close();started=start;document.querySelector('#start').style.display=start?'none':'';reset();}document.querySelectorAll('[data-campaign]').forEach(b=>b.onclick=()=>chooseCampaign(b.dataset.campaign));document.querySelector('#play-story').onclick=()=>{chooseCampaign('story');document.documentElement.requestFullscreen?.().catch(()=>{});};
+function chooseCampaign(next,start=true){campaign=next;levels=campaignLevels(next);round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(next)))||0));if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='refraction')round=1;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='momentum')round=2;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='clockwork')round=3;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='water')round=4;if(next==='cycle'&&new URLSearchParams(location.search).get('puzzle')==='warden')round=5;renderCampaignChoices();if(roundDialog.open)roundDialog.close();started=start;document.querySelector('#start').style.display=start?'none':'';reset();}document.querySelectorAll('[data-campaign]').forEach(b=>b.onclick=()=>chooseCampaign(b.dataset.campaign));document.querySelector('#play-story').onclick=()=>{chooseCampaign('story');document.documentElement.requestFullscreen?.().catch(()=>{});};
 
 document.querySelector('#play-cycle').onclick=()=>chooseCampaign('cycle');
 document.body.classList.toggle('has-ladders',campaign==='cycle');
@@ -135,5 +136,6 @@ document.querySelector('#play-refraction').onclick=()=>{chooseCampaign('cycle');
 
 document.querySelector('#play-momentum').onclick=()=>{chooseCampaign('cycle');round=2;reset();};
 
+document.querySelector('#play-warden').onclick=()=>{chooseCampaign('cycle');round=5;reset();};
 document.querySelector('#play-water').onclick=()=>{chooseCampaign('cycle');round=4;reset();};
 document.querySelector('#play-clockwork').onclick=()=>{chooseCampaign('cycle');round=3;reset();};

@@ -1,0 +1,16 @@
+// Sounds follow physical state transitions, never held controls.
+export function createWardenSounds(){let state=null,previous=null,lastMotion=-10;return s=>{
+ if(s.level.mechanic!=='warden'){state=null;previous=null;return [];}
+ const g=s.machine,current={braced:g.braced,disabled:g.disabled,exposure:g.exposure,shutter:g.shutter,foot:g.footY,release:g.release,distance:g.cargo.distance,target:g.cargo.target},events=[];
+ if(state!==s){state=s;previous=current;lastMotion=s.time;return events;}
+ const old=previous,add=(name,x,id=0)=>events.push({name,x,id});
+ if(!old.braced&&current.braced)add('shieldHit',1490,2);
+ if(current.exposure>old.exposure+.1)add('plunger',1380);
+ if(!old.disabled&&current.disabled)add('lens',1724,1);
+ if(old.foot<939&&current.foot>=939&&!current.disabled)add('impact',1490,2);
+ if(old.release<1&&current.release===1)add('chain',g.cargo.x);
+ if(current.target!==old.target)add('lever',g.cargo.x);
+ if(old.distance!==current.distance&&current.distance===current.target)add('bell',g.cargo.x);
+ if(s.time-lastMotion>.35&&(Math.abs(current.distance-old.distance)>.01||Math.abs(current.shutter-old.shutter)>.01)){add(current.shutter!==old.shutter?'chain':'cart',g.cargo.x);lastMotion=s.time;}
+ previous=current;return events;
+ };}

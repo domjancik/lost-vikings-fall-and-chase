@@ -1,3 +1,4 @@
+import {wardenLevel,setupWarden,wardenStep,wardenObjects,wardenSurfaces} from './warden-campaign.js?v=warden89';
 import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from './clockwork-campaign.js?v=clockwork71';
 import {waterLevel,setupWater,waterStep,waterObjects,waterSurfaces} from './water-campaign.js?v=water83';
 import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from './momentum-campaign.js?v=momentum72';
@@ -15,8 +16,9 @@ export const cycleLevels=[{
  floors:[floor(0,940,850),floor(1280,940,160),floor(1700,940,350),floor(2210,940,590),floor(0,1120,2800)],
  platforms:[floor(500,500,350),floor(1000,390,180),floor(1460,260,220),floor(2210,260,590)],
  ladders:[{x:650,top:500,bottom:1120}],exit:{x:2600,y:260,w:170}
-},refractionLevel,momentumLevel,clockworkLevel,waterLevel];
+},refractionLevel,momentumLevel,clockworkLevel,waterLevel,wardenLevel];
 export function setupCycle(s){
+ if(s.round===5){setupWarden(s);return;}
  if(s.round===4){setupWater(s);return;}
  if(s.round===3){setupClockwork(s);return;}
  if(s.round===2){setupMomentum(s);return;}
@@ -26,8 +28,8 @@ export function setupCycle(s){
  s.machine={released:false,cutAt:-1,brake:false,brakePose:0,damper:0,damperReleased:false,selector:false,selectorPose:0,
   carrier:{x:850,y:940,w:160,segment:0,high:500,v:0,pause:1.5,laps:0,support:'cycle-carrier'},highArrival:false};
 }
-export function cycleSurfaces(s){if(s.level.mechanic==='water')return waterSurfaces(s);if(s.level.mechanic==='clockwork')return clockSurfaces(s);if(s.level.mechanic==='momentum')return momentumSurfaces(s);return [s.machine.carrier,...s.level.floors,...s.level.platforms];}
-export function cycleObjects(s){if(s.level.mechanic==='water')return waterObjects(s);if(s.level.mechanic==='clockwork')return clockObjects(s);if(s.level.mechanic==='momentum')return momentumObjects(s);if(s.level.mechanic==='refraction')return refractionObjects(s);return [
+export function cycleSurfaces(s){if(s.level.mechanic==='warden')return wardenSurfaces(s);if(s.level.mechanic==='water')return waterSurfaces(s);if(s.level.mechanic==='clockwork')return clockSurfaces(s);if(s.level.mechanic==='momentum')return momentumSurfaces(s);return [s.machine.carrier,...s.level.floors,...s.level.platforms];}
+export function cycleObjects(s){if(s.level.mechanic==='warden')return wardenObjects(s);if(s.level.mechanic==='water')return waterObjects(s);if(s.level.mechanic==='clockwork')return clockObjects(s);if(s.level.mechanic==='momentum')return momentumObjects(s);if(s.level.mechanic==='refraction')return refractionObjects(s);return [
  {id:'wind-brake',x:1070,y:346,radius:65,title:'WIND BRAKE',ready:true,done:s.machine.brake,run:()=>{s.machine.brake=true;return 'Brake pin withdrawn.';}},
  {id:'routing',x:1600,y:216,radius:65,title:'RAIL SELECTOR',ready:true,done:s.machine.selector,run:()=>{s.machine.selector=!s.machine.selector;return 'Route queued for the bottom dock.';}}
 ];}
@@ -47,6 +49,7 @@ export function advanceCycleCarrier(s,dt){
  }
 }
 export function cycleStep(s,input,dt){
+ if(s.level.mechanic==='warden'){wardenStep(s,input,dt);return;}
  if(s.level.mechanic==='water'){waterStep(s,input,dt);return;}
  if(s.level.mechanic==='clockwork'){clockworkStep(s,input,dt);return;}
  if(s.level.mechanic==='momentum'){momentumStep(s,input,dt);return;}

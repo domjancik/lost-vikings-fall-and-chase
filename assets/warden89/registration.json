@@ -1,0 +1,203 @@
+{
+  "nativeSize": [
+    512,
+    512
+  ],
+  "worldPixel": 2,
+  "source": "parts-raw-v2.png",
+  "normalization": "uniform nearest-neighbor only; conservative alpha/chroma matte cleanup; no per-part stretching",
+  "parts": {
+    "body": [
+      0,
+      32,
+      320,
+      104
+    ],
+    "upper-near": [
+      328,
+      32,
+      40,
+      104
+    ],
+    "lower-near": [
+      376,
+      32,
+      36,
+      104
+    ],
+    "upper-far": [
+      424,
+      32,
+      40,
+      104
+    ],
+    "lower-far": [
+      472,
+      32,
+      40,
+      104
+    ],
+    "head-closed": [
+      0,
+      144,
+      104,
+      112
+    ],
+    "head-opening": [
+      104,
+      144,
+      104,
+      112
+    ],
+    "head-open": [
+      208,
+      144,
+      104,
+      112
+    ],
+    "head-broken": [
+      312,
+      144,
+      104,
+      112
+    ],
+    "foot-near": [
+      416,
+      152,
+      48,
+      48
+    ],
+    "foot-far": [
+      464,
+      152,
+      48,
+      48
+    ],
+    "plunger-0": [
+      0,
+      272,
+      80,
+      64
+    ],
+    "plunger-1": [
+      80,
+      272,
+      80,
+      64
+    ],
+    "plunger-2": [
+      160,
+      272,
+      80,
+      64
+    ],
+    "plunger-3": [
+      240,
+      272,
+      80,
+      64
+    ],
+    "wheel": [
+      416,
+      256,
+      96,
+      96
+    ],
+    "clamp": [
+      343,
+      56,
+      14,
+      24
+    ],
+    "hub-far": [
+      430,
+      34,
+      24,
+      24
+    ],
+    "spoke": [
+      440,
+      298,
+      12,
+      4
+    ],
+    "cargo-held": [
+      0,
+      350,
+      168,
+      112
+    ],
+    "cargo-free": [
+      168,
+      350,
+      168,
+      112
+    ],
+    "cargo-running": [
+      336,
+      350,
+      176,
+      112
+    ]
+  },
+  "anchors": {
+    "bodyDeck": 14,
+    "bodyHips": [
+      [
+        54,
+        70
+      ],
+      [
+        108,
+        70
+      ],
+      [
+        284,
+        70
+      ],
+      [
+        300,
+        70
+      ]
+    ],
+    "linkPivots": [
+      [
+        22,
+        14
+      ],
+      [
+        19,
+        14
+      ],
+      [
+        18,
+        14
+      ],
+      [
+        18,
+        14
+      ]
+    ],
+    "linkEndY": 88,
+    "footPivot": [
+      20,
+      15
+    ],
+    "footSole": 39,
+    "headEye": [
+      86,
+      62
+    ],
+    "plungerBase": 50,
+    "plungerCap": [
+      11,
+      35
+    ],
+    "cargoRim": [
+      9,
+      62,
+      159
+    ],
+    "cargoWheelBottom": 97
+  }
+}

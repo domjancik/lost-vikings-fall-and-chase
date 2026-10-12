@@ -1,0 +1,16 @@
+Create a transparent pixel-art game animation atlas, ONLY eight walking frames of Baleog, the muscular sword-and-bow Viking. Image 1 is the EXACT eight-frame anatomical pose/occlusion authority, read left-to-right across top row then bottom row. Image 2 is ONLY the material color/shading style authority, not animation authority. Preserve image 1 distinct eight leg silhouettes, knee/ankle positions and arm movement. Do not substitute standing guards from image 2.
+
+Pixel density is critical: entire atlas is FOUR columns by TWO rows, each cell logically 64x64 native pixels. Figure body is only 38 native pixels tall, and each native pixel is a deliberate chunky square. A large exported file must ONLY enlarge those same native squares, with no finer details. Match the coarse visible pixels and outline block sizes of image 1. Exactly 24-color palette maximum. NO antialiasing, gradient, semitransparent outlines, fine paint, noise, hair strands, texture dithering, or subpixel outlines. Shade with large readable clusters, broad earthy light and shadow planes, like first-era SNES artwork. The intended runtime Viking is ~76 world units tall at 2 world units per native pixel. DO NOT make a high-resolution painting to be downsampled.
+
+Baleog is an adult human, strong build, blue-teal tunic under rounded slate steel shoulder armor, steel horned helmet, long golden beard, leather belt, gray trousers, brown boots. Black-brown crisp one-native-pixel outer outline. Earthy material shading from image 2; avoid flat guide coloring, but all shading clusters must be native chunky blocks. Holds his sword safely angled upward in one hand, other arm counterbalances, shoulders subtly rotate. Same face and adult body silhouette across frames, torso/head move at most one native pixel across the walking cycle.
+
+Eight frame loop MUST show real alternating left/right legs:
+0 near foot leading heel contact, far foot trailing toe;
+1 near foot accepts weight with knee compression, far heel rises;
+2 near leg supports, far leg bends and passes under pelvis;
+3 far knee swings forward, near foot behind pushes off;
+4 FAR foot leads heel contact, NEAR foot trails toe (reverse of 0);
+5 far leg accepts weight, near heel rises;
+6 far leg supports, near leg bends and passes under pelvis;
+7 near knee swings forward, far foot behind pushes off.
+Follow the image 1 geometry. Front boot changes from ahead to behind over the first four frames. Both legs remain individually readable; exactly two arms and two legs, no duplicated hands. Keep planted soles at native cell row61, transparent padding, body root at cell x32. Identical cell sizes and body scale, no labels or frame borders, no floor/shadows/background. Genuine transparent background. This is a source asset, not a concept painting.

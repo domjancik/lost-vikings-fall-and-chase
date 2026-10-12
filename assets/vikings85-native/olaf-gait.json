@@ -1,0 +1,4207 @@
+{
+  "source": "native authored material pixels",
+  "referenceRig": "tools/guide-vikings81.py",
+  "materialDirection": "imagegen85 studies, not sampled artwork",
+  "cell": [
+    64,
+    64
+  ],
+  "nativePixelWorldSize": 2,
+  "origin": [
+    32,
+    40
+  ],
+  "soleExclusive": 62,
+  "guideBodyHeightExcludesCostume": 36,
+  "nativeGeometryProjection": 0.925,
+  "targetWholeSilhouetteWorldHeight": 72,
+  "projectionPurpose": "Author body geometry for the established horn-inclusive display budget; no bitmap scaling",
+  "frames": [
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 0,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "heel",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "farLeg",
+          "kind": "toe",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            42.15426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            43.0,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              42.15426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 55.0,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": 0.0,
+          "groundClearanceNative": 7.0,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.5,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        40.199999999999996,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        34.099999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          35.8,
+          0.0
+        ],
+        "far": [
+          28.5,
+          35.8,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.5,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.5,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            36.6,
+            59.52688598775856,
+            0.0
+          ],
+          "polygon": [
+            [
+              35.12688598775856,
+              58.19649690672327
+            ],
+            [
+              37.4097421365336,
+              57.91619741689143
+            ],
+            [
+              38.27514152344973,
+              59.22045348880568
+            ],
+            [
+              40.12875273527695,
+              59.54698905407914
+            ],
+            [
+              40.23234167717132,
+              60.39065328297426
+            ],
+            [
+              35.26961091896471,
+              61.0
+            ]
+          ],
+          "rollDegrees": -7,
+          "contact": "heel",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "contact"
+        },
+        "far": {
+          "ankle": [
+            27.5,
+            58.83842976796539,
+            0.6
+          ],
+          "polygon": [
+            [
+              26.632524993477993,
+              57.053076269898504
+            ],
+            [
+              28.85415439394285,
+              57.64836007363431
+            ],
+            [
+              29.16795580920167,
+              59.18182956201076
+            ],
+            [
+              30.764271821715603,
+              60.17896304765429
+            ],
+            [
+              30.54427563337846,
+              61.0
+            ],
+            [
+              25.71464650193312,
+              59.705904774487394
+            ]
+          ],
+          "rollDegrees": 15,
+          "contact": "toe",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "toe-off"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.5,
+            0.0
+          ],
+          "joint": [
+            36.78535924131654,
+            52.52934056442199,
+            0.0
+          ],
+          "end": [
+            36.6,
+            59.52688598775856,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 34.64990570343659,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.5,
+            0.6
+          ],
+          "joint": [
+            32.17333106401098,
+            53.62690630873103,
+            0.6
+          ],
+          "end": [
+            27.5,
+            58.83842976796539,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 50.05462099658661,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            35.8,
+            0.0
+          ],
+          "joint": [
+            37.37171349843557,
+            41.56241043133412,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            42.15426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 67.64465457754768,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            35.8,
+            0.6
+          ],
+          "joint": [
+            30.747639560495475,
+            41.36310312740072,
+            0.6
+          ],
+          "end": [
+            34.56826059801996,
+            45.3194720292633,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 22.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            34.0,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            35.0,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.599999999999994,
+            0.0
+          ],
+          [
+            24.275,
+            42.199999999999996,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            47.3,
+            0.0
+          ],
+          [
+            26.375,
+            50.0,
+            0.0
+          ],
+          [
+            29.875,
+            50.9,
+            0.0
+          ],
+          [
+            36.375,
+            50.9,
+            0.0
+          ],
+          [
+            39.775,
+            49.0,
+            0.0
+          ],
+          [
+            41.275,
+            45.8,
+            0.0
+          ],
+          [
+            40.775,
+            41.0,
+            0.0
+          ],
+          [
+            39.275,
+            37.0,
+            0.0
+          ],
+          [
+            35.875,
+            34.5,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          43.15
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          34.2,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.0,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                28.0,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                28.3,
+                23.200000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                38.0,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                37.7,
+                23.200000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.800000000000004,
+              0.0
+            ],
+            [
+              36.0,
+              31.1,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            30.200000000000003,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              34.1,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              36.06961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              38.06474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              40.06474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 0,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 0,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 1,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            42.60426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            43.45,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              42.60426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 55.45,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": 0.45000000000000284,
+          "groundClearanceNative": 6.549999999999997,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.95,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        40.65,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        34.55,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          36.56819805153395,
+          0.0
+        ],
+        "far": [
+          28.5,
+          35.93180194846605,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.95,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.95,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            34.7,
+            59.7,
+            0.0
+          ],
+          "polygon": [
+            [
+              33.400000000000006,
+              58.2
+            ],
+            [
+              35.7,
+              58.2
+            ],
+            [
+              36.400000000000006,
+              59.6
+            ],
+            [
+              38.2,
+              60.150000000000006
+            ],
+            [
+              38.2,
+              61.0
+            ],
+            [
+              33.2,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "compression"
+        },
+        "far": {
+          "ankle": [
+            28.7,
+            57.199901792863926,
+            0.6
+          ],
+          "polygon": [
+            [
+              27.53568050660222,
+              55.59230728015435
+            ],
+            [
+              29.826928312213234,
+              55.79276548847397
+            ],
+            [
+              30.402246561030733,
+              57.24844708572577
+            ],
+            [
+              32.147461359084666,
+              57.95323450662202
+            ],
+            [
+              32.07337897774915,
+              58.8
+            ],
+            [
+              27.092405487290424,
+              58.36422128626171
+            ]
+          ],
+          "rollDegrees": 5,
+          "contact": "airborne",
+          "soleExclusive": 59.8,
+          "airbornePixels": 2.2,
+          "phaseFamily": "early-swing"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.95,
+            0.0
+          ],
+          "joint": [
+            36.74512032308038,
+            53.00541391390599,
+            0.0
+          ],
+          "end": [
+            34.7,
+            59.7,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 49.73830443173151,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.95,
+            0.6
+          ],
+          "joint": [
+            34.52106231701703,
+            53.3120703277147,
+            0.6
+          ],
+          "end": [
+            28.7,
+            57.199901792863926,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 84.17913901356287,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            36.56819805153395,
+            0.0
+          ],
+          "joint": [
+            37.34622791780988,
+            42.33794099577534,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            42.60426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 71.29996011072896,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            35.93180194846605,
+            0.6
+          ],
+          "joint": [
+            30.109115741003958,
+            41.712004932103675,
+            0.6
+          ],
+          "end": [
+            33.24235636160534,
+            46.23227076647819,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 19.17157287525381,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            34.45,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            35.45,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            38.05,
+            0.0
+          ],
+          [
+            24.275,
+            42.65,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            47.75,
+            0.0
+          ],
+          [
+            26.375,
+            50.45,
+            0.0
+          ],
+          [
+            29.875,
+            51.35,
+            0.0
+          ],
+          [
+            36.375,
+            51.35,
+            0.0
+          ],
+          [
+            39.775,
+            49.45,
+            0.0
+          ],
+          [
+            41.275,
+            46.25,
+            0.0
+          ],
+          [
+            40.775,
+            41.45,
+            0.0
+          ],
+          [
+            39.275,
+            37.45,
+            0.0
+          ],
+          [
+            35.875,
+            34.95,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          43.6
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          34.650000000000006,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.450000000000003,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                28.150000000000006,
+                0.0
+              ],
+              [
+                28.0,
+                26.650000000000006,
+                0.0
+              ],
+              [
+                28.3,
+                23.650000000000006,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                28.150000000000006,
+                0.0
+              ],
+              [
+                38.0,
+                26.650000000000006,
+                0.0
+              ],
+              [
+                37.7,
+                23.650000000000006,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              31.250000000000007,
+              0.0
+            ],
+            [
+              36.0,
+              31.550000000000004,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            30.650000000000006,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              34.550000000000004,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              36.51961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              38.51474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              40.51474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 1,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 1,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 2,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            41.80426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            42.65,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              41.80426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 54.65,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": -0.3500000000000014,
+          "groundClearanceNative": 7.350000000000001,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.15,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        39.849999999999994,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        33.74999999999999,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          35.9,
+          0.0
+        ],
+        "far": [
+          28.5,
+          34.99999999999999,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.15,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.15,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            32.0,
+            59.7,
+            0.0
+          ],
+          "polygon": [
+            [
+              30.7,
+              58.2
+            ],
+            [
+              33.0,
+              58.2
+            ],
+            [
+              33.7,
+              59.6
+            ],
+            [
+              35.5,
+              60.150000000000006
+            ],
+            [
+              35.5,
+              61.0
+            ],
+            [
+              30.5,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "passing-stance"
+        },
+        "far": {
+          "ankle": [
+            31.5,
+            56.598532024046044,
+            0.6
+          ],
+          "polygon": [
+            [
+              30.09853202404604,
+              55.19286936452367
+            ],
+            [
+              32.392929339643636,
+              55.032429474912185
+            ],
+            [
+              33.18888323806729,
+              56.38018961365505
+            ],
+            [
+              35.02286458909424,
+              56.803288188558525
+            ],
+            [
+              35.08215759177675,
+              57.65121763127938
+            ],
+            [
+              30.094337340477626,
+              58.0
+            ]
+          ],
+          "rollDegrees": -4,
+          "contact": "airborne",
+          "soleExclusive": 59.0,
+          "airbornePixels": 3.0,
+          "phaseFamily": "passing-swing"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.15,
+            0.0
+          ],
+          "joint": [
+            34.49470968582728,
+            53.159631234904296,
+            0.0
+          ],
+          "end": [
+            32.0,
+            59.7,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 34.08324913865542,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.15,
+            0.6
+          ],
+          "joint": [
+            36.130808018204455,
+            51.34918757940028,
+            0.6
+          ],
+          "end": [
+            31.5,
+            56.598532024046044,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 85.18882279016866,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            35.9,
+            0.0
+          ],
+          "joint": [
+            37.34138789705497,
+            41.67112170824715,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            41.80426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 72.73636617165381,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            34.99999999999999,
+            0.6
+          ],
+          "joint": [
+            28.5,
+            40.99999999999999,
+            0.6
+          ],
+          "end": [
+            30.19959346906221,
+            46.23081083962334,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 18.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            33.65,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            34.65,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.24999999999999,
+            0.0
+          ],
+          [
+            24.275,
+            41.849999999999994,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            46.949999999999996,
+            0.0
+          ],
+          [
+            26.375,
+            49.65,
+            0.0
+          ],
+          [
+            29.875,
+            50.55,
+            0.0
+          ],
+          [
+            36.375,
+            50.55,
+            0.0
+          ],
+          [
+            39.775,
+            48.65,
+            0.0
+          ],
+          [
+            41.275,
+            45.449999999999996,
+            0.0
+          ],
+          [
+            40.775,
+            40.65,
+            0.0
+          ],
+          [
+            39.275,
+            36.65,
+            0.0
+          ],
+          [
+            35.875,
+            34.15,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          42.8
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          33.849999999999994,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.65,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.349999999999994,
+                0.0
+              ],
+              [
+                28.0,
+                25.849999999999994,
+                0.0
+              ],
+              [
+                28.3,
+                22.849999999999994,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.349999999999994,
+                0.0
+              ],
+              [
+                38.0,
+                25.849999999999994,
+                0.0
+              ],
+              [
+                37.7,
+                22.849999999999994,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.449999999999996,
+              0.0
+            ],
+            [
+              36.0,
+              30.749999999999993,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            29.849999999999994,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              33.74999999999999,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              35.71961550602441,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              37.71474360654406,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              39.71474360654406,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 2,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 2,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 3,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            41.65426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            42.5,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              41.65426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 54.5,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": -0.5,
+          "groundClearanceNative": 7.5,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.0,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        39.699999999999996,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        33.599999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          35.618198051533945,
+          0.0
+        ],
+        "far": [
+          28.5,
+          34.98180194846605,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.0,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.0,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            29.2,
+            59.45901907655779,
+            0.0
+          ],
+          "polygon": [
+            [
+              28.007801445278417,
+              57.87198958530069
+            ],
+            [
+              30.30219876087601,
+              58.03242947491218
+            ],
+            [
+              30.90283453281611,
+              59.47784867689682
+            ],
+            [
+              32.660083762724526,
+              60.152070557279146
+            ],
+            [
+              32.600790760042024,
+              61.0
+            ],
+            [
+              27.6129705087429,
+              60.65121763127937
+            ]
+          ],
+          "rollDegrees": 4,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "terminal-stance"
+        },
+        "far": {
+          "ankle": [
+            35.0,
+            57.881353459665974,
+            0.6
+          ],
+          "polygon": [
+            [
+              33.481353459665975,
+              56.60318575332557
+            ],
+            [
+              35.75303664303479,
+              56.24338648373303
+            ],
+            [
+              36.66342673250771,
+              57.516646035038065
+            ],
+            [
+              38.527304701351085,
+              57.77829258529298
+            ],
+            [
+              38.66027399663528,
+              58.617827674798846
+            ],
+            [
+              33.721832293659595,
+              59.4
+            ]
+          ],
+          "rollDegrees": -9,
+          "contact": "airborne",
+          "soleExclusive": 60.4,
+          "airbornePixels": 1.6,
+          "phaseFamily": "late-swing"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.0,
+            0.0
+          ],
+          "joint": [
+            32.290591389801435,
+            53.178235298932165,
+            0.0
+          ],
+          "end": [
+            29.2,
+            59.45901907655779,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 21.7443366694973,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.0,
+            0.6
+          ],
+          "joint": [
+            36.32339725767285,
+            51.00759032013432,
+            0.6
+          ],
+          "end": [
+            35.0,
+            57.881353459665974,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 56.83077545326947,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            35.618198051533945,
+            0.0
+          ],
+          "joint": [
+            37.34622791780988,
+            41.38794099577534,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            41.65426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 71.29996011072896,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            34.98180194846605,
+            0.6
+          ],
+          "joint": [
+            26.890884258996046,
+            40.76200493210367,
+            0.6
+          ],
+          "end": [
+            27.237690589771017,
+            46.25105998456347,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 19.17157287525381,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            33.5,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            34.5,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.099999999999994,
+            0.0
+          ],
+          [
+            24.275,
+            41.699999999999996,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            46.8,
+            0.0
+          ],
+          [
+            26.375,
+            49.5,
+            0.0
+          ],
+          [
+            29.875,
+            50.4,
+            0.0
+          ],
+          [
+            36.375,
+            50.4,
+            0.0
+          ],
+          [
+            39.775,
+            48.5,
+            0.0
+          ],
+          [
+            41.275,
+            45.3,
+            0.0
+          ],
+          [
+            40.775,
+            40.5,
+            0.0
+          ],
+          [
+            39.275,
+            36.5,
+            0.0
+          ],
+          [
+            35.875,
+            34.0,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          42.65
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          33.7,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.5,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.200000000000003,
+                0.0
+              ],
+              [
+                28.0,
+                25.700000000000003,
+                0.0
+              ],
+              [
+                28.3,
+                22.700000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.200000000000003,
+                0.0
+              ],
+              [
+                38.0,
+                25.700000000000003,
+                0.0
+              ],
+              [
+                37.7,
+                22.700000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.300000000000004,
+              0.0
+            ],
+            [
+              36.0,
+              30.6,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            29.700000000000003,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              33.6,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              35.56961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              37.56474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              39.56474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 3,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        28,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 3,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 4,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "toe",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "farLeg",
+          "kind": "heel",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            42.15426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            43.0,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              42.15426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 55.0,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": 0.0,
+          "groundClearanceNative": 7.0,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.5,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        40.199999999999996,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        34.099999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          35.8,
+          0.0
+        ],
+        "far": [
+          28.5,
+          35.8,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.5,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.5,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            27.5,
+            58.83842976796539,
+            0.0
+          ],
+          "polygon": [
+            [
+              26.632524993477993,
+              57.053076269898504
+            ],
+            [
+              28.85415439394285,
+              57.64836007363431
+            ],
+            [
+              29.16795580920167,
+              59.18182956201076
+            ],
+            [
+              30.764271821715603,
+              60.17896304765429
+            ],
+            [
+              30.54427563337846,
+              61.0
+            ],
+            [
+              25.71464650193312,
+              59.705904774487394
+            ]
+          ],
+          "rollDegrees": 15,
+          "contact": "toe",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "toe-off"
+        },
+        "far": {
+          "ankle": [
+            36.6,
+            59.52688598775856,
+            0.6
+          ],
+          "polygon": [
+            [
+              35.12688598775856,
+              58.19649690672327
+            ],
+            [
+              37.4097421365336,
+              57.91619741689143
+            ],
+            [
+              38.27514152344973,
+              59.22045348880568
+            ],
+            [
+              40.12875273527695,
+              59.54698905407914
+            ],
+            [
+              40.23234167717132,
+              60.39065328297426
+            ],
+            [
+              35.26961091896471,
+              61.0
+            ]
+          ],
+          "rollDegrees": -7,
+          "contact": "heel",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "contact"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.5,
+            0.0
+          ],
+          "joint": [
+            32.22393203184555,
+            53.67272883212874,
+            0.0
+          ],
+          "end": [
+            27.5,
+            58.83842976796539,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 37.45391333489118,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.5,
+            0.6
+          ],
+          "joint": [
+            34.6037440777917,
+            52.817566924466945,
+            0.6
+          ],
+          "end": [
+            36.6,
+            59.52688598775856,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 12.095366901863144,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            35.8,
+            0.0
+          ],
+          "joint": [
+            37.37171349843557,
+            41.56241043133412,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            42.15426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 67.64465457754768,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            35.8,
+            0.6
+          ],
+          "joint": [
+            26.25236043950453,
+            41.36310312740072,
+            0.6
+          ],
+          "end": [
+            26.25236043950453,
+            46.86310312740072,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 22.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            34.0,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            35.0,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.599999999999994,
+            0.0
+          ],
+          [
+            24.275,
+            42.199999999999996,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            47.3,
+            0.0
+          ],
+          [
+            26.375,
+            50.0,
+            0.0
+          ],
+          [
+            29.875,
+            50.9,
+            0.0
+          ],
+          [
+            36.375,
+            50.9,
+            0.0
+          ],
+          [
+            39.775,
+            49.0,
+            0.0
+          ],
+          [
+            41.275,
+            45.8,
+            0.0
+          ],
+          [
+            40.775,
+            41.0,
+            0.0
+          ],
+          [
+            39.275,
+            37.0,
+            0.0
+          ],
+          [
+            35.875,
+            34.5,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          43.15
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          34.2,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.0,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                28.0,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                28.3,
+                23.200000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                38.0,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                37.7,
+                23.200000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.800000000000004,
+              0.0
+            ],
+            [
+              36.0,
+              31.1,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            30.200000000000003,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              34.1,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              36.06961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              38.06474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              40.06474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 4,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        24,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        24,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 4,
+      "opaqueBoundsNative": [
+        24,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 5,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            42.60426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            43.45,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              42.60426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 55.45,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": 0.45000000000000284,
+          "groundClearanceNative": 6.549999999999997,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.95,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        40.65,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        34.55,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          35.93180194846605,
+          0.0
+        ],
+        "far": [
+          28.5,
+          36.56819805153395,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.95,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.95,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            28.7,
+            57.199901792863926,
+            0.0
+          ],
+          "polygon": [
+            [
+              27.53568050660222,
+              55.59230728015435
+            ],
+            [
+              29.826928312213234,
+              55.79276548847397
+            ],
+            [
+              30.402246561030733,
+              57.24844708572577
+            ],
+            [
+              32.147461359084666,
+              57.95323450662202
+            ],
+            [
+              32.07337897774915,
+              58.8
+            ],
+            [
+              27.092405487290424,
+              58.36422128626171
+            ]
+          ],
+          "rollDegrees": 5,
+          "contact": "airborne",
+          "soleExclusive": 59.8,
+          "airbornePixels": 2.2,
+          "phaseFamily": "early-swing"
+        },
+        "far": {
+          "ankle": [
+            34.7,
+            59.7,
+            0.6
+          ],
+          "polygon": [
+            [
+              33.400000000000006,
+              58.2
+            ],
+            [
+              35.7,
+              58.2
+            ],
+            [
+              36.400000000000006,
+              59.6
+            ],
+            [
+              38.2,
+              60.150000000000006
+            ],
+            [
+              38.2,
+              61.0
+            ],
+            [
+              33.2,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "compression"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.95,
+            0.0
+          ],
+          "joint": [
+            34.85470029442884,
+            53.86528573014282,
+            0.0
+          ],
+          "end": [
+            28.7,
+            57.199901792863926,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 77.71772936036855,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.95,
+            0.6
+          ],
+          "joint": [
+            35.431913310374384,
+            52.738369235150664,
+            0.6
+          ],
+          "end": [
+            34.7,
+            59.7,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 42.49373620907349,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            35.93180194846605,
+            0.0
+          ],
+          "joint": [
+            37.41788776702386,
+            41.68061588004444,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            42.60426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 63.69471206316037,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            36.56819805153395,
+            0.6
+          ],
+          "joint": [
+            26.890884258996042,
+            42.34840103517157,
+            0.6
+          ],
+          "end": [
+            27.777060075107777,
+            47.776539981711046,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 24.828427124746188,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            34.45,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            35.45,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            38.05,
+            0.0
+          ],
+          [
+            24.275,
+            42.65,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            47.75,
+            0.0
+          ],
+          [
+            26.375,
+            50.45,
+            0.0
+          ],
+          [
+            29.875,
+            51.35,
+            0.0
+          ],
+          [
+            36.375,
+            51.35,
+            0.0
+          ],
+          [
+            39.775,
+            49.45,
+            0.0
+          ],
+          [
+            41.275,
+            46.25,
+            0.0
+          ],
+          [
+            40.775,
+            41.45,
+            0.0
+          ],
+          [
+            39.275,
+            37.45,
+            0.0
+          ],
+          [
+            35.875,
+            34.95,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          43.6
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          34.650000000000006,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.450000000000003,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                28.150000000000006,
+                0.0
+              ],
+              [
+                28.0,
+                26.650000000000006,
+                0.0
+              ],
+              [
+                28.3,
+                23.650000000000006,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                28.150000000000006,
+                0.0
+              ],
+              [
+                38.0,
+                26.650000000000006,
+                0.0
+              ],
+              [
+                37.7,
+                23.650000000000006,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              31.250000000000007,
+              0.0
+            ],
+            [
+              36.0,
+              31.550000000000004,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            30.650000000000006,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              34.550000000000004,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              36.51961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              38.51474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              40.51474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 5,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 5,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 6,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            41.80426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            42.65,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              41.80426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 54.65,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": -0.3500000000000014,
+          "groundClearanceNative": 7.350000000000001,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.15,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        39.849999999999994,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        33.74999999999999,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          34.99999999999999,
+          0.0
+        ],
+        "far": [
+          28.5,
+          35.9,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.15,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.15,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            31.5,
+            56.598532024046044,
+            0.0
+          ],
+          "polygon": [
+            [
+              30.09853202404604,
+              55.19286936452367
+            ],
+            [
+              32.392929339643636,
+              55.032429474912185
+            ],
+            [
+              33.18888323806729,
+              56.38018961365505
+            ],
+            [
+              35.02286458909424,
+              56.803288188558525
+            ],
+            [
+              35.08215759177675,
+              57.65121763127938
+            ],
+            [
+              30.094337340477626,
+              58.0
+            ]
+          ],
+          "rollDegrees": -4,
+          "contact": "airborne",
+          "soleExclusive": 59.0,
+          "airbornePixels": 3.0,
+          "phaseFamily": "passing-swing"
+        },
+        "far": {
+          "ankle": [
+            32.0,
+            59.7,
+            0.6
+          ],
+          "polygon": [
+            [
+              30.7,
+              58.2
+            ],
+            [
+              33.0,
+              58.2
+            ],
+            [
+              33.7,
+              59.6
+            ],
+            [
+              35.5,
+              60.150000000000006
+            ],
+            [
+              35.5,
+              61.0
+            ],
+            [
+              30.5,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "passing-stance"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.15,
+            0.0
+          ],
+          "joint": [
+            36.87803519093434,
+            52.11782477127089,
+            0.0
+          ],
+          "end": [
+            31.5,
+            56.598532024046044,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 84.21837001702762,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.15,
+            0.6
+          ],
+          "joint": [
+            33.657806118758245,
+            52.89914131358343,
+            0.6
+          ],
+          "end": [
+            32.0,
+            59.7,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 34.08324913865542,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            34.99999999999999,
+            0.0
+          ],
+          "joint": [
+            37.44351168847486,
+            40.74109458136264,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            41.80426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 61.961358112444685,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            35.9,
+            0.6
+          ],
+          "joint": [
+            28.5,
+            41.9,
+            0.6
+          ],
+          "end": [
+            30.911041307339925,
+            46.843367254645415,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 26.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            33.65,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            34.65,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.24999999999999,
+            0.0
+          ],
+          [
+            24.275,
+            41.849999999999994,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            46.949999999999996,
+            0.0
+          ],
+          [
+            26.375,
+            49.65,
+            0.0
+          ],
+          [
+            29.875,
+            50.55,
+            0.0
+          ],
+          [
+            36.375,
+            50.55,
+            0.0
+          ],
+          [
+            39.775,
+            48.65,
+            0.0
+          ],
+          [
+            41.275,
+            45.449999999999996,
+            0.0
+          ],
+          [
+            40.775,
+            40.65,
+            0.0
+          ],
+          [
+            39.275,
+            36.65,
+            0.0
+          ],
+          [
+            35.875,
+            34.15,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          42.8
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          33.849999999999994,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.65,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.349999999999994,
+                0.0
+              ],
+              [
+                28.0,
+                25.849999999999994,
+                0.0
+              ],
+              [
+                28.3,
+                22.849999999999994,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.349999999999994,
+                0.0
+              ],
+              [
+                38.0,
+                25.849999999999994,
+                0.0
+              ],
+              [
+                37.7,
+                22.849999999999994,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.449999999999996,
+              0.0
+            ],
+            [
+              36.0,
+              30.749999999999993,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            29.849999999999994,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              33.74999999999999,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              35.71961550602441,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              37.71474360654406,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              39.71474360654406,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 6,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        29,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 6,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    },
+    {
+      "hero": "olaf",
+      "action": "walk",
+      "phase": 7,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "nearArm",
+          "kind": "shield-interior-strap",
+          "point": [
+            42.83977611566205,
+            41.65426447929719,
+            0.0
+          ]
+        }
+      ],
+      "notes": [],
+      "equipment": [
+        {
+          "type": "shield",
+          "shape": "round",
+          "center": [
+            47.6,
+            42.5,
+            0.0
+          ],
+          "angleDegrees": 0,
+          "tiltDegrees": 0.0,
+          "nativeSize": [
+            24,
+            24
+          ],
+          "worldSize": [
+            48,
+            48
+          ],
+          "physicalDiameterNative": 24,
+          "overheadProjectionDepthNative": 6,
+          "projectionSize": [
+            16.970562748477143,
+            24.0
+          ],
+          "grips": {
+            "near": [
+              42.83977611566205,
+              41.65426447929719,
+              0.0
+            ]
+          },
+          "walkingPlaneNativeY": null,
+          "walkingPlaneWorldYRelativeOrigin": null,
+          "undersideNativeY": 54.5,
+          "attachment": "interior-strap",
+          "paintOrder": "after-arms-hides-gripping-palm",
+          "raiseFraction": 0.0,
+          "bodyDrivenBobNative": -0.5,
+          "groundClearanceNative": 7.5,
+          "heldForwardShiftNative": 3.5,
+          "yawDegrees": 45.0,
+          "rollDegrees": -8.0,
+          "projectionExplanation": "Same24native disc: front oblique yaw foreshortens width, raising foreshortens depth, physical diameter stays fixed.",
+          "physicalInteriorStrapNative": [
+            -6.5,
+            -1.5
+          ]
+        }
+      ],
+      "pelvis": [
+        32.0,
+        46.0,
+        0.0
+      ],
+      "chest": [
+        32.5,
+        39.699999999999996,
+        0.0
+      ],
+      "neck": [
+        33.0,
+        33.599999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.7,
+          34.98180194846605,
+          0.0
+        ],
+        "far": [
+          28.5,
+          35.618198051533945,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          32.85,
+          46.0,
+          0.0
+        ],
+        "far": [
+          31.15,
+          46.0,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            35.0,
+            57.881353459665974,
+            0.0
+          ],
+          "polygon": [
+            [
+              33.481353459665975,
+              56.60318575332557
+            ],
+            [
+              35.75303664303479,
+              56.24338648373303
+            ],
+            [
+              36.66342673250771,
+              57.516646035038065
+            ],
+            [
+              38.527304701351085,
+              57.77829258529298
+            ],
+            [
+              38.66027399663528,
+              58.617827674798846
+            ],
+            [
+              33.721832293659595,
+              59.4
+            ]
+          ],
+          "rollDegrees": -9,
+          "contact": "airborne",
+          "soleExclusive": 60.4,
+          "airbornePixels": 1.6,
+          "phaseFamily": "late-swing"
+        },
+        "far": {
+          "ankle": [
+            29.2,
+            59.45901907655779,
+            0.6
+          ],
+          "polygon": [
+            [
+              28.007801445278417,
+              57.87198958530069
+            ],
+            [
+              30.30219876087601,
+              58.03242947491218
+            ],
+            [
+              30.90283453281611,
+              59.47784867689682
+            ],
+            [
+              32.660083762724526,
+              60.152070557279146
+            ],
+            [
+              32.600790760042024,
+              61.0
+            ],
+            [
+              27.6129705087429,
+              60.65121763127937
+            ]
+          ],
+          "rollDegrees": 4,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "terminal-stance"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            32.85,
+            46.0,
+            0.0
+          ],
+          "joint": [
+            37.62239498266774,
+            51.39112661040415,
+            0.0
+          ],
+          "end": [
+            35.0,
+            57.881353459665974,
+            0.0
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 63.51757908989539,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            31.15,
+            46.0,
+            0.6
+          ],
+          "joint": [
+            32.18151144030465,
+            53.125726920709255,
+            0.6
+          ],
+          "end": [
+            29.2,
+            59.45901907655779,
+            0.6
+          ],
+          "lengths": [
+            7.2,
+            7.0
+          ],
+          "flexionDegrees": 33.44640634411272,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.7,
+            34.98180194846605,
+            0.0
+          ],
+          "joint": [
+            37.41788776702386,
+            40.73061588004444,
+            0.0
+          ],
+          "end": [
+            42.83977611566205,
+            41.65426447929719,
+            0.0
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 63.69471206316037,
+          "bendPlaneHint": [
+            1.0,
+            1.0,
+            0.0
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.5,
+            35.618198051533945,
+            0.6
+          ],
+          "joint": [
+            30.10911574100395,
+            41.39840103517157,
+            0.6
+          ],
+          "end": [
+            33.67266218236955,
+            45.58780872125686,
+            0.6
+          ],
+          "lengths": [
+            6.0,
+            5.5
+          ],
+          "flexionDegrees": 24.82842712474619,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "softTissue": {
+        "build": "very-stout",
+        "bellyWidthTargetNative": 18,
+        "shoulderWidthTargetNative": 14,
+        "fullTorsoOutline": [
+          [
+            30.474999999999998,
+            33.5,
+            0.0
+          ],
+          [
+            26.974999999999998,
+            34.5,
+            0.0
+          ],
+          [
+            24.974999999999998,
+            37.099999999999994,
+            0.0
+          ],
+          [
+            24.275,
+            41.699999999999996,
+            0.0
+          ],
+          [
+            24.674999999999997,
+            46.8,
+            0.0
+          ],
+          [
+            26.375,
+            49.5,
+            0.0
+          ],
+          [
+            29.875,
+            50.4,
+            0.0
+          ],
+          [
+            36.375,
+            50.4,
+            0.0
+          ],
+          [
+            39.775,
+            48.5,
+            0.0
+          ],
+          [
+            41.275,
+            45.3,
+            0.0
+          ],
+          [
+            40.775,
+            40.5,
+            0.0
+          ],
+          [
+            39.275,
+            36.5,
+            0.0
+          ],
+          [
+            35.875,
+            34.0,
+            0.0
+          ]
+        ],
+        "bellyCenter": [
+          32.775,
+          42.65
+        ],
+        "limbMassScale": 1.7,
+        "neckWidthNative": 4
+      },
+      "head": {
+        "neckPivot": [
+          33.0,
+          33.7,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.5,
+        "eyeDirection": [
+          1.0,
+          0.0
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.5,
+                27.200000000000003,
+                0.0
+              ],
+              [
+                28.0,
+                25.700000000000003,
+                0.0
+              ],
+              [
+                28.3,
+                22.700000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.5,
+                27.200000000000003,
+                0.0
+              ],
+              [
+                38.0,
+                25.700000000000003,
+                0.0
+              ],
+              [
+                37.7,
+                22.700000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        },
+        "helmet": {
+          "eyeCovered": true,
+          "rimPoints": [
+            [
+              30.0,
+              30.300000000000004,
+              0.0
+            ],
+            [
+              36.0,
+              30.6,
+              0.0
+            ]
+          ],
+          "coveredEyePoint": [
+            35.0,
+            29.700000000000003,
+            0.0
+          ],
+          "noseVisible": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              33.5,
+              33.6,
+              0.0
+            ],
+            [
+              33.84729635533386,
+              35.56961550602442,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              37.56474360654407,
+              0.0
+            ],
+            [
+              33.98680930282211,
+              39.56474360654407,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            2.0,
+            2.0,
+            2.0
+          ],
+          "lengthNative": 6.0,
+          "mode": "long-native-beard",
+          "phase": 7,
+          "attachment": "jaw",
+          "drivenBy": "gravity and small pose follow-through"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        55,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        28,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "cell": 7,
+      "opaqueBoundsNative": [
+        25,
+        26,
+        55,
+        62
+      ]
+    }
+  ]
+}

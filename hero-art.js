@@ -5,7 +5,7 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
 import {normalizeSkin} from './hero-skins.js?v=trial82';
 
-const sheets=[],locomotion=[],trial=[];let shield;
+const sheets=[],locomotion=[],trial=[],native85=[];let shield;
 let selectedSkin='current';
 export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);}
 function ensureLoaded(){
@@ -13,6 +13,7 @@ function ensureLoaded(){
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
  for(const name of ['erik','baleog','olaf'])locomotion.push(load(`assets/vikings70/${name}.png`));
  for(const art of imagegen81)trial.push(load(art.path));
+ for(const name of ['erik','baleog','olaf'])native85.push(load(`assets/vikings85-native/${name}-native.png`));
  shield=load('assets/vikings63/shield.png');
 }
 function load(src){
@@ -20,8 +21,8 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,shield].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,...trial,shield].map(a=>a.promise));};
+export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield].every(a=>a.image.complete&&a.image.naturalWidth);
+export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,...trial,...native85,shield].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -56,12 +57,12 @@ export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
   // Olaf's generated front shield is already part of this frame.
   ctx.restore();return;
  }
- const source=sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
+ const source=sheet==='native85'?native85[h.id].image:sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
  const image=h.brass?bronze(source):source;
  ctx.drawImage(image,cell%cols*HERO_CELL,Math.floor(cell/cols)*HERO_CELL,HERO_CELL,HERO_CELL,
   -HERO_ORIGIN.x*2,-HERO_ORIGIN.y*2,HERO_CELL*2,HERO_CELL*2);
  // The opaque shield face covers the gripping palm in front as well as overhead.
- if(h.id===2)drawShield(ctx,h,pose,frame);
+ if(h.id===2&&sheet!=='native85')drawShield(ctx,h,pose,frame);
  ctx.restore();
 }
 

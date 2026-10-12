@@ -34,7 +34,7 @@ for(const hz of [60,120])test('ordinary controls solve the assembled wheel and r
  const {s,stages}=runClockworkRoute(hz);assert.ok(s.won);assert.deepEqual(s.heroes.map(h=>h.hp),[3,3,3]);assert.equal(stages.at(-1),'exit');
 });
 test('cup weight can seat either passenger and USE releases the prelaunch catch for a retry',()=>{
- const s=createState(3,'cycle');Object.assign(s.machine.half,{mode:'waiting',x:560,y:640});Object.assign(s.heroes[1],{x:560,y:732,ground:true});s.active=1;
+ const s=createState(3,'cycle');Object.assign(s.machine.half,{mode:'waiting',x:560,y:640});Object.assign(s.heroes[1],{x:560,y:720+clock.clockCupFloor(0)-44,ground:true,support:'clock-cup'});s.active=1;
  for(let n=0;n<180;n++)step(s,{},1/120);assert.equal(s.machine.wheel.occupant,1);assert.ok(s.machine.wheel.occupied);
  step(s,{interact:true},1/120);for(let n=0;n<180;n++)step(s,{},1/120);assert.equal(s.machine.wheel.occupied,false);assert.equal(s.machine.wheel.mode,'cup');
 });
@@ -54,21 +54,21 @@ test('an empty carriage can be brought back after reaching the exit ratchet',()=
  for(let n=0;n<120;n++)step(s,{left:true},1/120);assert.ok(s.machine.drive<1);assert.ok(s.machine.exitLatched);
 });
 test('a nonjumping passenger can climb out of the reopened starting cup',()=>{
- const s=createState(3,'cycle');s.machine.entryHold=true;Object.assign(s.machine.half,{mode:'waiting',x:560,y:640});Object.assign(s.heroes[1],{x:520,y:732,ground:true});s.active=1;
+ const s=createState(3,'cycle');s.machine.entryHold=true;Object.assign(s.machine.half,{mode:'waiting',x:560,y:640});Object.assign(s.heroes[1],{x:520,y:720+clock.clockCupFloor(40)-44,ground:true,support:'clock-cup'});s.active=1;
  for(let n=0;n<120;n++)step(s,{up:true},1/120);assert.equal(s.heroes[1].y+44,720);
 });
 test('the final released maintenance ladder reaches the recovery floor',()=>{
  const s=createState(3,'cycle');s.machine.exitLatched=true;s.machine.pinBroken=true;
  for(let n=0;n<360;n++)step(s,{},1/120);assert.ok(s.level.ladders.some(l=>l.release&&l.bottom===1260));
 });
-test('service recovery ladder unfurls only after a physical landing on the far deck',()=>{
- const s=createState(3,'cycle');assert.equal(s.level.ladders.find(l=>l.x===1450).bottom,650);
+test('service deck keeps only its short boarding ladder after landing',()=>{
+ const s=createState(3,'cycle');assert.ok(!s.level.ladders.some(l=>l.x===1450));
  Object.assign(s.heroes[2],{x:990,y:606,ground:true});for(let n=0;n<300;n++)step(s,{},1/120);
- assert.equal(s.level.ladders.find(l=>l.x===1450).bottom,1260);
+ assert.equal(s.level.ladders.find(l=>l.x===1400).bottom,650);
 });
 test('released Erik stands inside the open cup and jumps over its real rim',()=>{
- const s=createState(3,'cycle'),b=s.machine.wheel;Object.assign(b,{x:2460,y:840,mode:'released',occupied:false});Object.assign(s.heroes[0],{x:2460,y:852,ground:true});s.machine.pinBroken=true;s.machine.exitLatched=true;s.machine.collapse=1;
- for(let n=0;n<120;n++)step(s,{right:true},1/120);assert.ok(s.heroes[0].x<=2508);assert.equal(s.heroes[0].y+44,896);
+ const s=createState(3,'cycle'),b=s.machine.wheel;Object.assign(b,{x:2460,y:840,mode:'released',occupied:false});Object.assign(s.heroes[0],{x:2460,y:840+clock.clockCupFloor(0)-44,ground:true,support:'clock-cup'});s.machine.pinBroken=true;s.machine.exitLatched=true;s.machine.collapse=1;
+ for(let n=0;n<120;n++)step(s,{right:true},1/120);assert.ok(s.heroes[0].x<=2500);assert.ok(Math.abs(s.heroes[0].y+44-(840+clock.clockCupFloor(40)))<.001);
  step(s,{jump:true,right:true},1/120);for(let n=0;n<90;n++)step(s,{right:true},1/120);assert.ok(s.heroes[0].x>2540);
 });
 test('late boarding, catch reopening and reverse machinery still complete with ordinary controls',()=>{

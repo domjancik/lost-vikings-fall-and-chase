@@ -1,4 +1,4 @@
-import {drawClockworkWorld} from './clockwork-render.js?v=vikings70';
+import {drawClockworkWorld} from './clockwork-render.js?v=clockwork71';
 import {drawMomentumWorld} from './momentum-render.js?v=momentum68';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
 import {backdropY} from './vertical-parallax.js?v=vertical65';

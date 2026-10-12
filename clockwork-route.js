@@ -8,7 +8,7 @@ export function runClockworkRoute(hz=120,onState=()=>{},options={}){
  assertRoom();function assertRoom(){if(s.level.mechanic!=='clockwork')throw Error('Missing room');}
  const board=()=>{move(0,430);tick({jump:true,right:true});wait(()=>s.heroes[0].x>555,{right:true},3,'cup jump');wait(()=>s.heroes[0].ground,{},3,'cup land');};
  if(!options.lateBoard)board();stages.push('board-cup');
- climb(2,420,380);move(2,450);tick({overhead:true});
+ climb(2,420,380);climb(2,450,300);tick({interact:true});wait(()=>s.machine.catchWound,{},3,'wind regulator');climb(2,450,380);tick({right:true});for(let n=0;n<20;n++)tick();tick({overhead:true});
  climb(1,420,380);climb(1,450,300);tick({right:true});wait(()=>s.heroes[1].support===2,{},3,'shield board');
  s.active=2;wait(()=>s.heroes[2].x>990&&s.heroes[2].ground,{right:true},12,'glide');stages.push('glide');
  move(2,1250);climb(1,1320,400);move(1,1220);tick({left:true});tick({action:true});wait(()=>s.machine.half.mode==='shelf',{},4,'chain fall');stages.push('chain');
@@ -16,8 +16,8 @@ export function runClockworkRoute(hz=120,onState=()=>{},options={}){
  if(options.lateBoard){wait(()=>s.machine.half.mode==='waiting',{},8,'empty catch');board();}
  wait(()=>s.machine.joined,{},8,'join');stages.push('join');
  if(options.reopen){s.active=0;tick({interact:true});wait(()=>s.machine.wheel.mode==='cup',{},2,'reopen');tick({jump:true,left:true});wait(()=>s.heroes[0].x<430,{left:true},3,'leave cradle');wait(()=>s.heroes[0].ground,{},3,'land outside');board();wait(()=>s.machine.joined,{},3,'reboard');}
- climb(2,1450,1260);climb(2,1800,920);move(2,1690);
- climb(1,1320,650);climb(1,1450,1260);climb(1,1800,920);move(1,1770);stages.push('crew-board');
+ move(2,1400);tick({overhead:true});climb(1,1320,650);climb(1,1400,570);tick({right:true});wait(()=>s.heroes[1].support===2,{},3,'second shield board');
+ s.active=2;wait(()=>s.heroes[2].x>1710,{right:true},6,'second glide');wait(()=>s.heroes[2].ground,{},6,'carriage landing');move(2,1690);move(1,1770);stages.push('crew-board');
  s.active=0;wait(()=>s.machine.wheel.mode==='docked',{right:true},15,'launch dock');stages.push('dock');
  if(options.reverse){
   wait(()=>s.machine.carrier.x>1930,{right:true},12,'reverse test outbound stop');for(let n=0;n<hz;n++)tick();wait(()=>s.machine.steamClock%5<.1,{},6,'outbound steam pause');wait(()=>s.machine.drive>.75,{right:true},30,'return check outward');

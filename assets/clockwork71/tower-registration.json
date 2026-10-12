@@ -1,0 +1,49 @@
+{
+  "nativeCell": [
+    64,
+    96
+  ],
+  "worldCell": [
+    128,
+    192
+  ],
+  "worldFooting": 380,
+  "frames": [
+    {
+      "frame": 0,
+      "scale": 0.125,
+      "translation": [
+        0,
+        2
+      ],
+      "sole": 94
+    },
+    {
+      "frame": 1,
+      "scale": 0.125,
+      "translation": [
+        0,
+        2
+      ],
+      "sole": 94
+    },
+    {
+      "frame": 2,
+      "scale": 0.125,
+      "translation": [
+        0,
+        2
+      ],
+      "sole": 94
+    },
+    {
+      "frame": 3,
+      "scale": 0.125,
+      "translation": [
+        0,
+        2
+      ],
+      "sole": 94
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "sourceSize": [
+    1254,
+    1254
+  ],
+  "nativeCell": [
+    64,
+    64
+  ],
+  "worldCell": [
+    128,
+    128
+  ],
+  "uniformScale": 0.20414673046251994,
+  "frames": [
+    {
+      "frame": 0,
+      "bounds": [
+        19,
+        23,
+        46,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 1,
+      "bounds": [
+        19,
+        23,
+        45,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 2,
+      "bounds": [
+        24,
+        23,
+        39,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 3,
+      "bounds": [
+        19,
+        23,
+        45,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 4,
+      "bounds": [
+        19,
+        0,
+        46,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 5,
+      "bounds": [
+        20,
+        0,
+        45,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 6,
+      "bounds": [
+        24,
+        0,
+        40,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 7,
+      "bounds": [
+        19,
+        0,
+        46,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 8,
+      "bounds": [
+        19,
+        0,
+        45,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 9,
+      "bounds": [
+        21,
+        0,
+        43,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 10,
+      "bounds": [
+        22,
+        0,
+        43,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 11,
+      "bounds": [
+        22,
+        0,
+        46,
+        64
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 12,
+      "bounds": [
+        22,
+        18,
+        44,
+        60
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 13,
+      "bounds": [
+        22,
+        18,
+        44,
+        60
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 14,
+      "bounds": [
+        21,
+        18,
+        44,
+        60
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 15,
+      "bounds": [
+        20,
+        18,
+        44,
+        60
+      ],
+      "translation": [
+        0,
+        0
+      ]
+    }
+  ],
+  "status": "UNREVIEWED experiment, not selectable production skin"
+}

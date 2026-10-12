@@ -51,3 +51,15 @@ Record the target dimensions, source paths, evidence paths and each gate's
 verdict in the relevant review log. Have the critique subagent apply
 [the repository visual review gate](../../VISUAL-REVIEW-GATE.md); leave a
 failed or missing gate pending until corrected evidence is reviewed.
+
+## Guided animation anatomy
+
+For articulated sprites, prefer native procedural pose/occlusion guides plus
+imagegen material rendering. Guides must include limb identities, near/far depth,
+foot contacts, shoulder/elbow/hand chains and stable equipment anchors. A guide
+is not proof the generated render preserved the motion. Reject duplicate hands,
+near legs that never exchange front/back, opaque connected alpha fringe, belt
+splice seams and frozen torso/shoulder holds. Do not repair them by pasting fixed
+body rows onto separately generated gait legs. Idle should allow subtle whole
+torso/head breathing with planted feet; look poses need head/neck orientation.
+Shield face must occlude its gripping palm, with unchanged physical dimensions.

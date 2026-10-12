@@ -24,3 +24,17 @@ Independent visual verdicts and inspected captures are recorded in
 WATER87-REVIEW.md. Automated passing alone does not waive those gates.
 
 Swimming-specific Viking frames remain deferred pending character art direction.
+
+## Published verification
+
+Release87 is live at united-marsh-6ppd.here.now. All16 checked deployed HTML,
+runtime, registration and generated art files match the reviewed isolated build
+by SHA256 (excluding only host-injected social metadata). The publication builder
+now asserts every water dependency is in its upload manifest, including frozen
+publishers using double-quoted filenames.
+
+The complete ordinary-keyboard Chrome route against the public URL also passed:
+won=true,3/3/3 health,112.250 simulated seconds, errors=[]. Enter continuation
+and desktop/mobile captures were repeated live. Evidence is retained in
+output/water87-live-route.json. Commits5449c99 and3491a2c contain the correction
+and manifest repair; unrelated local changes were preserved.

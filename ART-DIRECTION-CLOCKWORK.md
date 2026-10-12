@@ -58,6 +58,13 @@ Recheck shield collision and actor-platform contact after anatomy changes.
 
 ## Current scope
 
+The reviewed native silhouettes are motion/anatomy guides. The intended final
+character/material pass uses imagegen, first on one accepted Olaf idle guide.
+Native85 was a direct-authored fallback; do not treat another flat native render
+as a substitute for the requested character direction. Judge generated raw
+native density before processing. A failed imagegen trial stays a trial; never
+downsample high-resolution painted output into the working pose grid.
+
 First finish the Viking visual pass. Do not build the Warden encounter until
 this character direction has earned its separate source/runtime approvals.
 Apply this style brief to future props and new levels; replacing every existing

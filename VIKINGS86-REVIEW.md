@@ -185,3 +185,28 @@ small visible eye/face sliver must remain covered by the low helmet brow.
 Retain original/prompt; do not sample or quantize it into production. A fresh
 render must preserve guide mass/contacts and genuine coarse tile density.
 Processed/actual-game86 gate remains PENDING and NOT APPROVED.
+
+## Second guided Olaf padded trial — original source REJECTED
+
+Inspected assets/vikings86/olaf-padded-material-raw.png and exact
+VIKINGS86-PADDED-OLAF-PROMPT.txt. Padding the unchanged64native guide into128
+logical pixels preserved the intentionally small lower-canvas composition;
+it did not establish compliant native detail density. At1254square, each native
+tile should occupy about9.8source pixels. The raw render still subdivides that
+scale into roughly5pixel details, especially beard strands, helmet glints,
+shield rivets/rim/boss and boot/belt accents, with soft colored outline residue.
+Those features exceed the intended36native body and24native physical shield
+detail budget. Small placement in a large canvas is not native pixel authorship.
+
+Guide silhouette/contact fidelity also remains imperfect: an outside dangling
+arm and armor mass replace the intended body overlap, the exposed belly becomes
+a narrow band, and shield/body relative placement differs. The result has richer
+materials but loses the approved guide's round adult mass. Both density and
+shape need a fresh rendered-source correction; neither sampling nor alpha
+cleanup can approve this rejected original.
+
+**Second padded guided Olaf final-material/source gate: REJECTED.** No processing
+or integration occurred or is approved. **86 processed / actual-game gate:
+NOT ASSESSABLE; NOT APPROVED.** Native85 remains the reviewed existing optional
+skin; the86guides remain reference-only. Full imagegen character quality is
+unfinished, and no direct-native guide fallback is approved by this record.

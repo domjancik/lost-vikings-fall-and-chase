@@ -12,7 +12,13 @@ export function animationFor(h){
  else if(h.climbing){pose='climb';frame=((Math.floor(h.climbPhase||0)%4)+4)%4;}
  else if(!h.ground){pose=h.id===2&&h.shieldUp?'float':h.vy<0?'rise':'fall';frame=pose==='float'?h.vy<-40?0:h.turn||Math.abs(h.vx||0)<35?3:1+Math.floor((h.animTime||0)*4)%2:Math.abs(h.vy)>280?1:0;}
  else if(h.land>0){pose='land';frame=clamp(Math.floor((.12-h.land)/.12*3),0,2);}
- else if(Math.abs(h.vx||0)>7){pose=h.turn?'turn':'run';frame=Math.floor(h.walk||0)%8;}
+ else if(Math.abs(h.vx||0)>7){
+  pose=h.turn?'turn':'run';
+  // walk is accumulated travel / 9, not elapsed time. A full left/right
+  // stride needs room for contact, compression, passing and flight.
+  const strideDistance=[128,112,104][h.id];
+  frame=Math.floor((h.walk||0)*72/strideDistance+1e-8)%8;
+ }
  else if(h.id===2&&h.shieldUp){pose='overhead';}
  return {pose,frame};
 }

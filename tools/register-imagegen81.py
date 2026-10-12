@@ -9,9 +9,11 @@ import numpy as np
 import json
 import statistics
 
-sources = [('assets/vikings81/erik-beard-correction-raw.png',4,2,78),
-           ('assets/vikings80/baleog-imagegen-raw.png',8,5,82),
-           ('assets/vikings81/olaf-imagegen-raw.png',4,2,78)]
+# Whole visible silhouette budget, including horns: matches the existing
+# locomotion's 72/76/72 world scale. This is NOT a native-density approval.
+sources = [('assets/vikings81/erik-beard-correction-raw.png',4,2,72),
+           ('assets/vikings80/baleog-imagegen-raw.png',8,5,76),
+           ('assets/vikings81/olaf-imagegen-raw.png',4,2,72)]
 heroes=[]
 for hero,(path,cols,rows,height) in enumerate(sources):
     image=Image.open(path).convert('RGBA')
@@ -33,6 +35,6 @@ for hero,(path,cols,rows,height) in enumerate(sources):
         c['dy']=round((44-c.pop('sole')*ratio-(4 if hero==0 and frame in (3,7) else 0))/2)*2
         c['dw']=c['sw']*ratio;c['dh']=c['sh']*ratio
         c.pop('top')
-    heroes.append(dict(path=path,cells=cells))
+    heroes.append(dict(path=path,worldHeight=height,scale=ratio,cells=cells))
 Path('imagegen81-registration.js').write_text('/* Raw imagegen trial: uniform per-hero scale, translation-only frame registration. */\nexport const imagegen81='+json.dumps(heroes,indent=2)+';\n')
 print('Registered24 raw gait cells; no source image modified.')

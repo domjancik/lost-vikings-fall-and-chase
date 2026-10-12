@@ -1,10 +1,10 @@
-import {CLOCK_RADIUS,clockRail,clockLiftPlacement,clockCatchPose,steamPhase} from './clockwork-campaign.js?v=clockwork69';
+import {CLOCK_RADIUS,clockRail,clockLiftPlacement,clockCatchPose,steamPhase} from './clockwork-campaign.js?v=vikings70';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawCycleGateField} from './cycle-gate.js?v=gate61';
-import {drawSprite} from './sprite-render.js?v=vikings63';
+import {drawSprite} from './sprite-render.js?v=vikings70';
 const parts=createAtlas('assets/clockwork69/parts.png',4,2),machine=createAtlas('assets/clockwork69/machine.png',4,2),dock=createAtlas('assets/clockwork69/dock.png',4,1),pin=createAtlas('assets/clockwork69/pin.png',4,1),gate=createAtlas('assets/gate61/gate.png',1,1);
 const load=src=>{const i=new Image();i.src=src;return i;};
 const scene=load('assets/clockwork69/scene.png'),catchArt=load('assets/clockwork69/catch.png'),ladder=load('assets/platform56/ladder.png'),lift=load('assets/refraction62/lift.png'),connection=load('assets/connections53/connections.png');

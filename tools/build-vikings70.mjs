@@ -1,0 +1,12 @@
+import fs from 'node:fs';import {execFileSync} from 'node:child_process';
+const root='output/release-vikings70';fs.mkdirSync(root,{recursive:true});
+execFileSync('git',['archive','7a2b629','-o','output/vikings70-base.zip']);
+execFileSync('tools/pixel-fixer-venv/Scripts/python.exe',['-c',`import zipfile;zipfile.ZipFile('output/vikings70-base.zip').extractall('${root}')`]);
+const changed=execFileSync('git',['diff','--name-only'],{encoding:'utf8'}).trim().split(/\r?\n/).filter(f=>f.endsWith('.js')||f==='index.html');
+for(const f of changed)fs.copyFileSync(f,root+'/'+f);
+fs.cpSync('assets/vikings70',root+'/assets/vikings70',{recursive:true});
+const p=root+'/publish-update.mjs';let s=fs.readFileSync(p,'utf8');
+for(const name of ['erik','baleog','olaf'])s=s.replace("'assets/gate61/gate.png'","'assets/gate61/gate.png','assets/vikings70/"+name+".png'");
+fs.writeFileSync(p,s);
+fs.writeFileSync(root+'/server.mjs',fs.readFileSync(root+'/server.mjs','utf8').replace('listen(3000,','listen(3017,'));
+execFileSync('node',['build.mjs'],{cwd:root,stdio:'inherit'});

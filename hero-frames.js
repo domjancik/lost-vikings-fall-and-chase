@@ -2,6 +2,17 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 
 export const HERO_CELL=64;
 export const HERO_ORIGIN={x:32,y:40,sole:62};
+export function heroAnimationCell(h,pose,frame=0){const f=Math.max(0,Math.floor(frame));
+ if(['run','turn','idle','climb','overhead','float'].includes(pose)){
+  const id=h.id,stride=Math.floor(f/2)%4;let cell;
+  if(pose==='run'||pose==='turn')cell=(id===2&&h.shieldUp?8:0)+stride;
+  else if(pose==='climb')cell=(id===2?20:12)+f%4;
+  else if(id===2&&pose==='float')cell=28+Math.min(f,3);
+  else cell=(id===2?h.shieldUp?24:16:8)+f%4;
+  return{sheet:'locomotion',cell,cols:id===2?8:4};
+ }
+ return{sheet:'legacy',cell:heroCell(h.id,pose,f),cols:8};
+}
 export function heroPlacement(h){
  return {x:snapPixel(h.x)-64,y:snapPixel(h.y)-80,sole:62,facing:h.face||1};
 }

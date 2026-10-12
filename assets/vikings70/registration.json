@@ -1,0 +1,828 @@
+{
+  "erik": {
+    "scale": 0.16744186046511628,
+    "nativeHeight": 36,
+    "cell": [
+      64,
+      64
+    ],
+    "cols": 4,
+    "origin": [
+      32,
+      40
+    ],
+    "sole": 62,
+    "source": "erik-source.png",
+    "componentSources": null,
+    "frames": [
+      {
+        "cell": 0,
+        "offset": [
+          0,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          32,
+          17
+        ]
+      },
+      {
+        "cell": 1,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          20
+        ]
+      },
+      {
+        "cell": 2,
+        "offset": [
+          3,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          29,
+          18
+        ]
+      },
+      {
+        "cell": 3,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          16
+        ]
+      },
+      {
+        "cell": 4,
+        "offset": [
+          0,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          32,
+          16
+        ]
+      },
+      {
+        "cell": 5,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          20
+        ]
+      },
+      {
+        "cell": 6,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          17
+        ]
+      },
+      {
+        "cell": 7,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          16
+        ]
+      },
+      {
+        "cell": 8,
+        "offset": [
+          6,
+          14
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          16
+        ]
+      },
+      {
+        "cell": 9,
+        "offset": [
+          6,
+          14
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          16
+        ]
+      },
+      {
+        "cell": 10,
+        "offset": [
+          6,
+          14
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          16
+        ]
+      },
+      {
+        "cell": 11,
+        "offset": [
+          6,
+          14
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          16
+        ]
+      },
+      {
+        "cell": 12,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          15
+        ]
+      },
+      {
+        "cell": 13,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          15
+        ]
+      },
+      {
+        "cell": 14,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          15
+        ]
+      },
+      {
+        "cell": 15,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          15
+        ]
+      }
+    ]
+  },
+  "baleog": {
+    "scale": 0.1523046092184369,
+    "nativeHeight": 38,
+    "cell": [
+      64,
+      64
+    ],
+    "cols": 4,
+    "origin": [
+      32,
+      40
+    ],
+    "sole": 62,
+    "source": "baleog-source.png",
+    "componentSources": null,
+    "frames": [
+      {
+        "cell": 0,
+        "offset": [
+          6,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          12
+        ]
+      },
+      {
+        "cell": 1,
+        "offset": [
+          6,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          12
+        ]
+      },
+      {
+        "cell": 2,
+        "offset": [
+          4,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          12
+        ]
+      },
+      {
+        "cell": 3,
+        "offset": [
+          3,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          29,
+          12
+        ]
+      },
+      {
+        "cell": 4,
+        "offset": [
+          7,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          25,
+          10
+        ]
+      },
+      {
+        "cell": 5,
+        "offset": [
+          7,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          25,
+          10
+        ]
+      },
+      {
+        "cell": 6,
+        "offset": [
+          4,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          10
+        ]
+      },
+      {
+        "cell": 7,
+        "offset": [
+          3,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          29,
+          10
+        ]
+      },
+      {
+        "cell": 8,
+        "offset": [
+          8,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          24,
+          8
+        ]
+      },
+      {
+        "cell": 9,
+        "offset": [
+          7,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          25,
+          8
+        ]
+      },
+      {
+        "cell": 10,
+        "offset": [
+          6,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          8
+        ]
+      },
+      {
+        "cell": 11,
+        "offset": [
+          5,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          27,
+          8
+        ]
+      },
+      {
+        "cell": 12,
+        "offset": [
+          7,
+          19
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          25,
+          9
+        ]
+      },
+      {
+        "cell": 13,
+        "offset": [
+          8,
+          19
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          24,
+          9
+        ]
+      },
+      {
+        "cell": 14,
+        "offset": [
+          6,
+          19
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          9
+        ]
+      },
+      {
+        "cell": 15,
+        "offset": [
+          8,
+          19
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          24,
+          9
+        ]
+      }
+    ]
+  },
+  "olaf": {
+    "scale": 0.225,
+    "nativeHeight": 36,
+    "cell": [
+      64,
+      64
+    ],
+    "cols": 8,
+    "origin": [
+      32,
+      40
+    ],
+    "sole": 62,
+    "source": "olaf-walk-source.png",
+    "componentSources": {
+      "idleFloatGrip": "olaf-grip-source.png",
+      "rearClimb": "olaf-source.png",
+      "strideLegs": "olaf-walk-source.png"
+    },
+    "frames": [
+      {
+        "cell": 0,
+        "offset": [
+          4,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          14
+        ]
+      },
+      {
+        "cell": 1,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          14
+        ]
+      },
+      {
+        "cell": 2,
+        "offset": [
+          1,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          31,
+          13
+        ]
+      },
+      {
+        "cell": 3,
+        "offset": [
+          1,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          31,
+          12
+        ]
+      },
+      {
+        "cell": 4,
+        "offset": [
+          2,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          14
+        ]
+      },
+      {
+        "cell": 5,
+        "offset": [
+          0,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          32,
+          13
+        ]
+      },
+      {
+        "cell": 6,
+        "offset": [
+          0,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          32,
+          12
+        ]
+      },
+      {
+        "cell": 7,
+        "offset": [
+          0,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          32,
+          12
+        ]
+      },
+      {
+        "cell": 8,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          14
+        ]
+      },
+      {
+        "cell": 9,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          14
+        ]
+      },
+      {
+        "cell": 10,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          14
+        ]
+      },
+      {
+        "cell": 11,
+        "offset": [
+          6,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          14
+        ]
+      },
+      {
+        "cell": 12,
+        "offset": [
+          4,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 13,
+        "offset": [
+          4,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 14,
+        "offset": [
+          4,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 15,
+        "offset": [
+          3,
+          13
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          29,
+          16
+        ]
+      },
+      {
+        "cell": 16,
+        "offset": [
+          4,
+          15
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 17,
+        "offset": [
+          4,
+          15
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 18,
+        "offset": [
+          4,
+          15
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 19,
+        "offset": [
+          4,
+          15
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 20,
+        "offset": [
+          4,
+          10
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          28,
+          16
+        ]
+      },
+      {
+        "cell": 21,
+        "offset": [
+          6,
+          10
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          26,
+          16
+        ]
+      },
+      {
+        "cell": 22,
+        "offset": [
+          2,
+          11
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          30,
+          15
+        ]
+      },
+      {
+        "cell": 23,
+        "offset": [
+          5,
+          10
+        ],
+        "climb": true,
+        "helmetSourceNative": [
+          27,
+          16
+        ]
+      },
+      {
+        "cell": 24,
+        "offset": [
+          6,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          9
+        ]
+      },
+      {
+        "cell": 25,
+        "offset": [
+          6,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          9
+        ]
+      },
+      {
+        "cell": 26,
+        "offset": [
+          6,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          8
+        ]
+      },
+      {
+        "cell": 27,
+        "offset": [
+          6,
+          20
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          9
+        ]
+      },
+      {
+        "cell": 28,
+        "offset": [
+          7,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          25,
+          9
+        ]
+      },
+      {
+        "cell": 29,
+        "offset": [
+          2,
+          18
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          30,
+          9
+        ]
+      },
+      {
+        "cell": 30,
+        "offset": [
+          5,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          27,
+          8
+        ]
+      },
+      {
+        "cell": 31,
+        "offset": [
+          6,
+          19
+        ],
+        "climb": false,
+        "helmetSourceNative": [
+          26,
+          8
+        ]
+      }
+    ]
+  }
+}

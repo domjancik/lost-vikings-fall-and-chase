@@ -1,4 +1,4 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {deviceDone,advanceDeviceVisuals} from './story-visuals.js?v=ground51';
 import {startBash,bashImpact} from './bash.js?v=arc46';
 import {shieldHit,segmentHit} from './projectile-collision.js?v=arc46';

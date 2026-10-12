@@ -1,15 +1,15 @@
-import {setupCycle,cycleStep} from './cycle-campaign.js?v=clockwork69';
-import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=support57';
-import {setupVerticalLevel,verticalStep} from './vertical-campaign.js?v=support57';
+import {setupCycle,cycleStep} from './cycle-campaign.js?v=vikings70';
+import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=vikings70';
+import {setupVerticalLevel,verticalStep} from './vertical-campaign.js?v=vikings70';
 import {startBash,bashImpact} from './bash.js?v=arc46';
 import {shieldControls,shieldHit,segmentHit} from './projectile-collision.js?v=arc46';
 import {useInteraction} from './interactions.js?v=momentum68';
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {levels} from './levels.js?v=arc46';
-import {campaignStep} from './campaign.js?v=support57';
+import {campaignStep} from './campaign.js?v=vikings70';
 import {damage} from './health.js?v=arc46';
 import {pickupItem,useItem} from './inventory.js?v=arc46';
-import {inventoryStep,setupInventoryLevel} from './inventory-campaign.js?v=support57';
+import {inventoryStep,setupInventoryLevel} from './inventory-campaign.js?v=vikings70';
 export const W=1440,H=650;
 export function createState(round=0,campaign='arcade'){const state={campaign,round,level:levels[round]||levels[0],key:false,relay:false,heroes:[{id:0,x:100,y:560,vx:0,vy:0,face:1,ground:false,hp:3},{id:1,x:155,y:560,vx:0,vy:0,face:1,ground:false,hp:3},{id:2,x:210,y:560,vx:0,vy:0,face:1,ground:false,hp:3,shield:true,shieldUp:false,shieldPose:.4}],active:0,crate:round===0,fuse:false,power:false,latch:false,turret:true,bridge:false,won:false,time:0,machine:{charge:0,charged:false,liftY:610,liftDir:-1,liftPause:2,liftOn:false,hatch:false,lane:0,score:0,bell:false,mirrorTime:0,mirror:false,seal:false,brake:false,cartX:620,parked:false,signal:false,ore:false,air:0,heat:0,lastPump:-1},shots:[],cooldown:0,hurt:0,failed:false,items:[],bombs:[],itemSerial:0};for(const h of state.heroes){h.inventory=[null,null,null,null];h.itemSlot=0;h.invulnerable=0;}if(campaign==='cycle'){setupCycle(state);return state;}if(campaign==='story'){setupStory(state);return state;}if(round<9)setupInventoryLevel(state);else setupVerticalLevel(state);if(round<6)state.items.push({id:'apple',type:'apple',x:180,y:566},{id:'meat',type:'meat',x:1080,y:566});return state;}
 export const platforms=[{x:245,y:490,w:130},{x:390,y:390,w:125},{x:535,y:290,w:125},{x:590,y:190,w:170}];

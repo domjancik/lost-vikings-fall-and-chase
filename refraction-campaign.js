@@ -1,4 +1,4 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {refractionArt} from './refraction-art-layout.js?v=refraction62';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);

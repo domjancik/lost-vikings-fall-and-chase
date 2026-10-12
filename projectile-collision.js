@@ -1,4 +1,4 @@
-import {SHIELD} from './hero-geometry.js?v=arc46';
+import {SHIELD} from './hero-geometry.js?v=vikings70';
 // Swept collisions keep fast shots from skipping narrow shields or solid props.
 export function segmentHit(x0,y0,x1,y1,box){
  let enter=0,leave=1;

@@ -7,4 +7,4 @@ export function plungerPose(s){const age=s.machine.plungerAt===undefined?Infinit
 export function drawPlunger(ctx,s,tile,box,text){const p=plungerPose(s);tile(6,303,610,64,22);box('#26182d',311,590,48,36);box('#b64f90',307,588,4,38);box('#b64f90',359,588,4,38);box('#efc77e',307,586,4,4);box('#efc77e',359,586,4,4);
  const top=p.capY+8,bottom=p.springBottom;ctx.strokeStyle='#efcf8e';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(335,snapPixel(top));for(let i=1;i<=8;i++)ctx.lineTo(i===8?335:i%2?319:351,snapPixel(top+(bottom-top)*i/8));ctx.stroke();tile(6,309,p.capY,52,8);
  if(p.age!==null&&p.age<.45){for(let i=0;i<8;i++){const a=i*Math.PI/4,r=12+p.age*70;box(i%2?'#ffb9e9':'#fff1b0',335+Math.cos(a)*r,602+Math.sin(a)*r*.5,4,4);}(text.status||text)('BOING!',335,558-Math.round(p.age*25),'#fff0b0',13);}
- text('JUMP · PLUNGER',335,653,s.level.accent,10);}
+ text('JUMP Â· PLUNGER',335,653,s.level.accent,10);}

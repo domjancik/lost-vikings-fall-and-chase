@@ -1,4 +1,4 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {ladderAtHero} from './ladder-context.js?v=look58';
 import {damage} from './health.js?v=arc46';
 import {shieldHit,segmentHit} from './projectile-collision.js?v=arc46';

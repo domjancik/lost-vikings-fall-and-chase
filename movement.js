@@ -1,11 +1,12 @@
 import {onPlunger} from './plunger.js?v=arc46';
 import {damage} from './health.js?v=arc46';
-import {SHIELD} from './hero-geometry.js?v=arc46';
+import {SHIELD} from './hero-geometry.js?v=vikings70';
 // World units / second. Fast acceleration, short stopping distances, distinct weight.
 export const motionProfiles=[{speed:230,accel:1650,brake:2600,air:1250},{speed:175,accel:1150,brake:2300,air:950},{speed:150,accel:900,brake:2100,air:750}];
 const approach=(value,target,amount)=>value<target?Math.min(target,value+amount):Math.max(target,value-amount);
 export function prepareMotion(s,input,dt){
  for(const h of s.heroes){
+  if(h.climbing)h.climbPhase=(h.climbPhase||0)+(h.y-(h.climbLastY??h.y))/13;h.climbLastY=h.y;
   const active=h.id===s.active,p=motionProfiles[h.id],dir=active?Number(!!input.right)-Number(!!input.left):0;
   h.prevX=h.x;h.prevY=h.y;h.animTime=(h.animTime||0)+dt;h.land=Math.max(0,(h.land||0)-dt);h.bow=Math.max(0,(h.bow||0)-dt);h.bash=Math.max(0,(h.bash||0)-dt);h.coyote=h.ground?.085:Math.max(0,(h.coyote||0)-dt);h.jumpBuffer=Math.max(0,(h.jumpBuffer||0)-dt);
   h.shieldPose=approach(h.shieldPose||0,h.shieldUp?1:h.shield?.4:0,dt*8);

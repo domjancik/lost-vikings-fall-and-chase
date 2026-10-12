@@ -1,4 +1,4 @@
-import {verticalWind} from './vertical-campaign.js?v=support57';
+import {verticalWind} from './vertical-campaign.js?v=vikings70';
 import {snapPixel,animationTime,snapAngle} from './pixel-grid.js?v=arc46';
 import {drawPortal} from './portal-effects.js?v=arc46';
 const image=new Image(),cells=[];image.src='assets/pixel/vertical-props.png?v=pipeline44';image.onload=()=>{const c=document.createElement('canvas');c.width=image.width;c.height=image.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(image,0,0);const d=g.getImageData(0,0,c.width,c.height).data,w=c.width/4,h=c.height/2;for(let n=0;n<8;n++){const ox=n%4*w,oy=Math.floor(n/4)*h;let l=w,t=h,r=0,b=0;for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(d[((oy+y)*c.width+ox+x)*4+3]>128){l=Math.min(l,x);t=Math.min(t,y);r=Math.max(r,x);b=Math.max(b,y);}cells[n]={x:ox+l,y:oy+t,w:r-l+1,h:b-t+1};}};

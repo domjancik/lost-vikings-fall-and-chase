@@ -1,6 +1,6 @@
 import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {refractionArt} from './refraction-art-layout.js?v=refraction62';
-import {refractionBeam} from './refraction-campaign.js?v=refraction62';
+import {refractionBeam} from './refraction-campaign.js?v=vikings70';
 import {refractionConnections} from './refraction-connections.js?v=refraction62';
 import {createAtlas} from './sprite-atlas.js?v=ground59';
 import {drawTerrain} from './terrain-render.js?v=terrain48';

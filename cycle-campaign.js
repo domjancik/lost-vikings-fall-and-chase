@@ -1,10 +1,10 @@
-import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from './clockwork-campaign.js?v=clockwork69';
-import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from './momentum-campaign.js?v=momentum68';
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from './clockwork-campaign.js?v=vikings70';
+import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from './momentum-campaign.js?v=vikings70';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {damage} from './health.js?v=arc46';
 import {ladderAtHero} from './ladder-context.js?v=look58';
-import {refractionLevel,setupRefraction,refractionObjects,refractionStep} from './refraction-campaign.js?v=refraction62';
+import {refractionLevel,setupRefraction,refractionObjects,refractionStep} from './refraction-campaign.js?v=vikings70';
 const floor=(x,y,w)=>({x,y,w});
 export const cycleLevels=[{
  name:'THE CYCLE OF DEPTHS',subtitle:'Change the circulation. Bring everyone back together.',

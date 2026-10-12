@@ -1,11 +1,12 @@
-import {heroCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=vikings63';
-import {shieldTransform} from './hero-geometry.js?v=vikings63';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=vikings70';
+import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 
-const sheets=[];let shield;
+const sheets=[],locomotion=[];let shield;
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
+ for(const name of ['erik','baleog','olaf'])locomotion.push(load(`assets/vikings70/${name}.png`));
  shield=load('assets/vikings63/shield.png');
 }
 function load(src){
@@ -13,8 +14,8 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-export const heroesReady=()=>sheets.length===3&&[...sheets,shield].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,shield].map(a=>a.promise));};
+export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,shield].every(a=>a.image.complete&&a.image.naturalWidth);
+export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,shield].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -39,13 +40,15 @@ function drawShield(ctx,h,pose,frame){
 export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
  ensureLoaded();
  if(!heroesReady())return;
- const cell=heroCell(h.id,pose,frame);
+ const {cell,cols,sheet}=heroAnimationCell(h,pose,frame);
  ctx.save();ctx.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);
  ctx.scale((h.face||1)*scale,scale);ctx.imageSmoothingEnabled=false;
- const image=h.brass?bronze(sheets[h.id].image):sheets[h.id].image;
- ctx.drawImage(image,cell%8*HERO_CELL,Math.floor(cell/8)*HERO_CELL,HERO_CELL,HERO_CELL,
+ const source=sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
+ const image=h.brass?bronze(source):source;
+ if(h.id===2&&!h.shieldUp&&pose!=='climb')drawShield(ctx,h,pose,frame);
+ ctx.drawImage(image,cell%cols*HERO_CELL,Math.floor(cell/cols)*HERO_CELL,HERO_CELL,HERO_CELL,
   -HERO_ORIGIN.x*2,-HERO_ORIGIN.y*2,HERO_CELL*2,HERO_CELL*2);
- if(h.id===2)drawShield(ctx,h,pose,frame);
+ if(h.id===2&&(h.shieldUp||pose==='climb'))drawShield(ctx,h,pose,frame);
  ctx.restore();
 }
 

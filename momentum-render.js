@@ -1,4 +1,4 @@
-import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './momentum-campaign.js?v=momentum68';
+import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './momentum-campaign.js?v=vikings70';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';

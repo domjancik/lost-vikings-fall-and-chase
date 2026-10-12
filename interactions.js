@@ -1,7 +1,7 @@
-import {cycleObjects} from './cycle-campaign.js?v=clockwork69';
-import {storyObjects} from './story-campaign.js?v=support57';
-import {verticalObjects} from './vertical-campaign.js?v=support57';
-import {inventoryObjects} from './inventory-campaign.js?v=support57';
+import {cycleObjects} from './cycle-campaign.js?v=vikings70';
+import {storyObjects} from './story-campaign.js?v=vikings70';
+import {verticalObjects} from './vertical-campaign.js?v=vikings70';
+import {inventoryObjects} from './inventory-campaign.js?v=vikings70';
 export function interactionObjects(s){
  if(s.campaign==='cycle')return cycleObjects(s);if(s.campaign==='story')return storyObjects(s);if(s.round>=9)return verticalObjects(s);if(s.round>=6)return inventoryObjects(s);
  const common={kind:'lever',radius:76};

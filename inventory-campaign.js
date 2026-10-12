@@ -1,4 +1,4 @@
-import {prepareMotion,integrateMotion} from './movement.js?v=support57';
+import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {shieldHit,segmentHit} from './projectile-collision.js?v=arc46';
 import {startBash} from './bash.js?v=arc46';
 import {damage} from './health.js?v=arc46';
@@ -10,8 +10,8 @@ export function setupInventoryLevel(s){if(s.round<6)return;const g=s.machine;Obj
 }
 const near=(h,x,y=566)=>Math.abs(h.x-x)<76&&Math.abs(h.y-y)<62;
 export function inventoryObjects(s){const g=s.machine,base={kind:'machine',radius:70,ready:true,done:false};
- if(s.round===6)return [{...base,id:'bowl',x:620,y:566,title:'MIX · FLOUR + SPICE',run:()=>g.ingredients.length===2?'Dough prepared. Load it into the oven with BAG / Q.':'Select FLOUR or SPICE in BAG, then USE ITEM / Q beside this bowl.'}, {...base,id:'oven',x:1000,y:566,title:'OVEN · '+['OFF','WARM','HOT'][g.ovenMode],run:()=>{if(g.baked){if(!giveItem(s.heroes[s.active],'ticket'))return 'Bag full. Make room for the ticket.';g.baked=false;g.ticket=true;g.ovenDoorAt=s.time;return 'Bronze ticket collected. Use it at the turnstile.';}g.ovenMode=(g.ovenMode+1)%3;return 'Oven '+['OFF','WARM','HOT'][g.ovenMode]+'. Dough needs WARM heat for three seconds.';}},{...base,id:'turnstile',x:1200,y:566,title:s.power?'TICKET ACCEPTED':'BRONZE TICKET SLOT',run:()=> 'Select the bronze ticket and USE ITEM / Q here.'}];
- if(s.round===7)return [{...base,id:'projector',x:630,y:566,title:'PROJECTOR · '+(g.lens||'NO LENS').toUpperCase()+' / '+(g.angle?'HIGH':'LOW'),run:()=>{g.angle=1-g.angle;return 'Beam aimed '+(g.angle?'HIGH':'LOW')+'. Sunset above; ocean below.';}}];
+ if(s.round===6)return [{...base,id:'bowl',x:620,y:566,title:'MIX Â· FLOUR + SPICE',run:()=>g.ingredients.length===2?'Dough prepared. Load it into the oven with BAG / Q.':'Select FLOUR or SPICE in BAG, then USE ITEM / Q beside this bowl.'}, {...base,id:'oven',x:1000,y:566,title:'OVEN Â· '+['OFF','WARM','HOT'][g.ovenMode],run:()=>{if(g.baked){if(!giveItem(s.heroes[s.active],'ticket'))return 'Bag full. Make room for the ticket.';g.baked=false;g.ticket=true;g.ovenDoorAt=s.time;return 'Bronze ticket collected. Use it at the turnstile.';}g.ovenMode=(g.ovenMode+1)%3;return 'Oven '+['OFF','WARM','HOT'][g.ovenMode]+'. Dough needs WARM heat for three seconds.';}},{...base,id:'turnstile',x:1200,y:566,title:s.power?'TICKET ACCEPTED':'BRONZE TICKET SLOT',run:()=> 'Select the bronze ticket and USE ITEM / Q here.'}];
+ if(s.round===7)return [{...base,id:'projector',x:630,y:566,title:'PROJECTOR Â· '+(g.lens||'NO LENS').toUpperCase()+' / '+(g.angle?'HIGH':'LOW'),run:()=>{g.angle=1-g.angle;return 'Beam aimed '+(g.angle?'HIGH':'LOW')+'. Sunset above; ocean below.';}}];
  return [{...base,id:'dispenser',x:520,y:566,title:'BOMB DISPENSER',run:()=>giveItem(s.heroes[s.active],'bomb')?'Bomb issued. Use BAG / Q to place it. Retreat before the two-second fuse ends.':'Bag full. Give or drop an item.'},{...base,id:'keylock',x:1260,y:566,title:s.power?'VAULT UNLOCKED':'NEON KEY SLOT',run:()=> 'Select the neon key and USE ITEM / Q here.'}];
 }
 function useQuestItem(s,type,h,slot){const g=s.machine,consume=()=>h.inventory[slot]=null;

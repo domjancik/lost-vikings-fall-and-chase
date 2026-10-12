@@ -86,6 +86,24 @@ Keep before/after captures at the same camera and zoom; also capture one
 intermediate frame. Review the interacted object's own pixels. If the object
 cannot be located or its change is ambiguous without a label, reject it.
 
+## Character motion stability
+
+Inspect each hero moving away from the parked group: overlapping bodies cannot
+establish a gait verdict. Capture planted contact, compression, passing and
+swing at 1x/2x. Count meaningful phase families rather than near-duplicate cells.
+Check the native head/core root across the entire cycle; a five-pixel excursion
+is a failed walk, even when every boot touches the floor. Idle head, silhouette
+and feet must stay registered. A detected helmet landmark must exclude collars,
+trousers and disconnected color noise; inspect the actual neutral head component.
+
+Climbing faces the ladder, advances with actual vertical travel, freezes at the
+last reached grip and reverses without resetting. Do not register from the lowest
+moving boot. Inspect alternating left/right reaches, stopped poses and equipment
+in both shield states. A raised shield must retain its physical rider plane.
+Inspect floating rise, glide and braking separately; register supporting palms
+to the unchanged shield underside rather than aligning dangling feet. Include
+mobile evidence and passenger soles when a pose can carry another Viking.
+
 ## Acceptance
 
 Run focused pixel/support/state regressions, all normal-control simulation

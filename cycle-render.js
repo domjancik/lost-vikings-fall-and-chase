@@ -1,3 +1,4 @@
+import {drawWaterWorld} from './water-render.js?v=water83';
 import {drawClockworkWorld} from './clockwork-render.js?v=clockwork71';
 import {drawMomentumWorld} from './momentum-render.js?v=momentum72';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
@@ -14,6 +15,7 @@ const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
+ if(s.level.mechanic==='water')return drawWaterWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='clockwork')return drawClockworkWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='momentum')return drawMomentumWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='refraction')return drawRefractionWorld(ctx,s,camera,viewport);

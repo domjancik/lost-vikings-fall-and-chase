@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const root='output/release-water83';
+fs.cpSync('output/release-trial82',root,{recursive:true});
+const files=['audio-events.js','water-campaign.js','water-render.js','cycle-campaign.js','cycle-render.js','ground-shadow.js','view-camera.js','game.js','index.html','hero-art.js','hero-frames.js','hero-skins.js','imagegen81-registration.js','sprite-render.js'];
+for(const f of files)fs.copyFileSync(f,root+'/dist/'+f);
+fs.cpSync('assets/water83',root+'/dist/assets/water83',{recursive:true});
+for(const f of fs.readdirSync(root+'/dist'))if(f.endsWith('.js')||f==='index.html')fs.writeFileSync(root+'/dist/'+f,fs.readFileSync(root+'/dist/'+f,'utf8').replace(/\?v=[a-zA-Z0-9_-]+/g,'?v=water83'));
+let p=fs.readFileSync(root+'/publish-update.mjs','utf8');
+p=p.replace("'hero-skins.js'", "'hero-skins.js',"+JSON.stringify(['water-campaign.js','water-render.js','cycle-campaign.js','cycle-render.js','ground-shadow.js','view-camera.js','assets/water83/nozzle-native.png','assets/water83/machines-native.png','assets/water83/motion-native.png','assets/water83/scene-raw.png']).slice(1,-1));
+fs.writeFileSync(root+'/publish-update.mjs',p.replace('files.map(', '[...new Set(files)].map('));
+console.log('Water83 preview built over verified82; cache identities unified.');

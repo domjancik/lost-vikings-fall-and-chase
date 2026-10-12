@@ -1,16 +1,18 @@
-import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=skins73';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=trial82';
+import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
-import {normalizeSkin} from './hero-skins.js?v=skins76';
+import {normalizeSkin} from './hero-skins.js?v=trial82';
 
-const sheets=[],locomotion=[];let shield;
+const sheets=[],locomotion=[],trial=[];let shield;
 let selectedSkin='current';
 export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);}
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
  for(const name of ['erik','baleog','olaf'])locomotion.push(load(`assets/vikings70/${name}.png`));
+ for(const art of imagegen81)trial.push(load(art.path));
  shield=load('assets/vikings63/shield.png');
 }
 function load(src){
@@ -18,8 +20,8 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,shield].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,shield].map(a=>a.promise));};
+export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,shield].every(a=>a.image.complete&&a.image.naturalWidth);
+export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,...trial,shield].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -48,6 +50,12 @@ export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
  const {cell,cols,sheet}=heroAnimationCell({...h,skin:h.skin||selectedSkin},pose,frame);
  ctx.save();ctx.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);
  ctx.scale((h.face||1)*scale,scale);ctx.imageSmoothingEnabled=false;
+ if(sheet==='imagegen81'){
+  const r=imagegen81[h.id].cells[cell],source=trial[h.id].image;
+  ctx.drawImage(h.brass?bronze(source):source,r.sx,r.sy,r.sw,r.sh,r.dx,r.dy,r.dw,r.dh);
+  // Olaf's generated front shield is already part of this frame.
+  ctx.restore();return;
+ }
  const source=sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
  const image=h.brass?bronze(source):source;
  ctx.drawImage(image,cell%cols*HERO_CELL,Math.floor(cell/cols)*HERO_CELL,HERO_CELL,HERO_CELL,

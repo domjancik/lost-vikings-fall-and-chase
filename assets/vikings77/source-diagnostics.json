@@ -1,0 +1,41 @@
+[
+  {
+    "name": "erik-guide-native.png",
+    "sourceSize": [
+      512,
+      256
+    ],
+    "firstCellOpaqueBounds": [
+      20,
+      26,
+      46,
+      62
+    ]
+  },
+  {
+    "name": "erik-source.png",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "firstCellOpaqueBounds": [
+      59,
+      59,
+      168,
+      217
+    ]
+  },
+  {
+    "name": "erik-source-density-correction.png",
+    "sourceSize": [
+      1774,
+      887
+    ],
+    "firstCellOpaqueBounds": [
+      57,
+      64,
+      173,
+      221
+    ]
+  }
+]

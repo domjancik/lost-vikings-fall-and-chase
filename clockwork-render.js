@@ -4,7 +4,7 @@ import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawCycleGateField} from './cycle-gate.js?v=gate61';
-import {drawSprite} from './sprite-render.js?v=vikings70';
+import {drawSprite} from './sprite-render.js?v=skins76';
 const parts=createAtlas('assets/clockwork69/parts.png',4,2),machine=createAtlas('assets/clockwork69/machine.png',4,2),dock=createAtlas('assets/clockwork69/dock.png',4,1),pin=createAtlas('assets/clockwork69/pin.png',4,1),gate=createAtlas('assets/gate61/gate.png',1,1);
 const tower=createAtlas('assets/clockwork71/tower.png',2,2);
 const load=src=>{const i=new Image();i.src=src;return i;};

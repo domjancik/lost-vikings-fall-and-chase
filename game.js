@@ -1,7 +1,7 @@
-import {readSkin,saveSkin,skinOptions} from './hero-skins.js?v=skins73';
-import {setHeroSkin} from './hero-art.js?v=skins73';
+import {readSkin,saveSkin,skinOptions} from './hero-skins.js?v=skins76';
+import {setHeroSkin} from './hero-art.js?v=skins76';
 import {clockworkView} from './clockwork-view.js?v=momentum72';
-import {drawClockworkInset} from './clockwork-render.js?v=momentum72';
+import {drawClockworkInset} from './clockwork-render.js?v=skins76';
 import {cycleLevels} from './cycle-campaign.js?v=momentum72';
 import {drawCycleWorld} from './cycle-render.js?v=momentum72';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
@@ -26,7 +26,7 @@ import {drawProjectile,projectilePose,environmentPose} from './environment-anima
 import {drawBackground,viewportSize} from './background-render.js?v=arc46';
 import {createControls,keyAction} from './controls.js?v=cycle52';
 import {groundShadow} from './ground-shadow.js?v=cycle52';
-import {drawSprite,animationFor,heroesReady,whenHeroesReady} from './sprite-render.js?v=skins73';
+import {drawSprite,animationFor,heroesReady,whenHeroesReady} from './sprite-render.js?v=skins76';
 import {heroDrawOrder} from './hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from './levels.js?v=arc46';
 import {drawWorld} from './world-render.js?v=terrain48';

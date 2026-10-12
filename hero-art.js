@@ -1,10 +1,12 @@
 import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=skins73';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from './pixel-grid.js?v=arc46';
+import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
+import {normalizeSkin} from './hero-skins.js?v=skins76';
 
 const sheets=[],locomotion=[];let shield;
 let selectedSkin='current';
-export function setHeroSkin(skin){selectedSkin=skin==='previous'?'previous':'current';}
+export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);}
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
@@ -40,6 +42,7 @@ function drawShield(ctx,h,pose,frame){
  }
 }
 export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
+ if((h.skin||selectedSkin)==='procedural'){drawProceduralHeroArt(ctx,h,x,y,pose,frame,scale);return;}
  ensureLoaded();
  if(!heroesReady())return;
  const {cell,cols,sheet}=heroAnimationCell({...h,skin:h.skin||selectedSkin},pose,frame);

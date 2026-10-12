@@ -31,3 +31,16 @@ publisher/Vikings55/submodule work is preserved. Accepted build and publisher
 blobs are staged directly into Git's index without overwriting those working
 copies. Raw generation sources and evidence are excluded from the public upload
 manifest. Live verification is recorded after publishing below.
+
+## Live release — 2026-10-12
+
+Implementation commit: f6596bd. Published to the existing here.now site:
+https://united-marsh-6ppd.here.now/?campaign=cycle&puzzle=momentum&release=68
+
+The live entry, eight runtime modules and seven native art files match the
+reviewed isolated release byte-for-byte by SHA256. Live Playwright smoke opens
+Puzzle Lab round2 on1440x900 desktop and390x844 mobile, with generated art ready,
+all three characters healthy and zero JavaScript errors. Retained captures:
+output/playwright/momentum68-live-desktop.png and momentum68-live-mobile.png.
+Full route and recovery verification above was performed on the identical
+reviewed local runtime; the live check confirms deployment and initial layout.

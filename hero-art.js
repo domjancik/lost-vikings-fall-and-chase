@@ -5,9 +5,10 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
 import {normalizeSkin} from './hero-skins.js?v=trial82';
 
-const sheets=[],locomotion=[],trial=[],native85=[];let shield;
+const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[];let shield;
 let selectedSkin='current';
-export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);}
+export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);if(selectedSkin==='imagegen88')ensureImagegen88();}
+function ensureImagegen88(){if(imagegen88.length)return;for(const name of ['erik','baleog','olaf'])imagegen88.push(load(`assets/vikings88/${name}-native.png`));}
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
@@ -21,8 +22,8 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();return Promise.all([...sheets,...locomotion,...trial,...native85,shield].map(a=>a.promise));};
+export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield,...(selectedSkin==='imagegen88'?imagegen88:[])].every(a=>a.image.complete&&a.image.naturalWidth);
+export const whenHeroesReady=()=>{ensureLoaded();if(selectedSkin==='imagegen88')ensureImagegen88();return Promise.all([...sheets,...locomotion,...trial,...native85,shield,...(selectedSkin==='imagegen88'?imagegen88:[])].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -47,6 +48,7 @@ function drawShield(ctx,h,pose,frame){
 export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
  if((h.skin||selectedSkin)==='procedural'){drawProceduralHeroArt(ctx,h,x,y,pose,frame,scale);return;}
  ensureLoaded();
+ if((h.skin||selectedSkin)==='imagegen88'){ensureImagegen88();if(!imagegen88.every(a=>a.image.complete&&a.image.naturalWidth))return;}
  if(!heroesReady())return;
  const {cell,cols,sheet}=heroAnimationCell({...h,skin:h.skin||selectedSkin},pose,frame);
  ctx.save();ctx.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);
@@ -57,12 +59,13 @@ export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
   // Olaf's generated front shield is already part of this frame.
   ctx.restore();return;
  }
- const source=sheet==='native85'?native85[h.id].image:sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
+ const source=sheet==='imagegen88'?imagegen88[h.id].image:sheet==='native85'?native85[h.id].image:sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
  const image=h.brass?bronze(source):source;
- ctx.drawImage(image,cell%cols*HERO_CELL,Math.floor(cell/cols)*HERO_CELL,HERO_CELL,HERO_CELL,
-  -HERO_ORIGIN.x*2,-HERO_ORIGIN.y*2,HERO_CELL*2,HERO_CELL*2);
+ const size=sheet==='imagegen88'?80:HERO_CELL,origin=sheet==='imagegen88'?{x:40,y:48}:HERO_ORIGIN;
+ ctx.drawImage(image,cell%cols*size,Math.floor(cell/cols)*size,size,size,
+  -origin.x*2,-origin.y*2,size*2,size*2);
  // The opaque shield face covers the gripping palm in front as well as overhead.
- if(h.id===2&&sheet!=='native85')drawShield(ctx,h,pose,frame);
+ if(h.id===2&&!['native85','imagegen88'].includes(sheet))drawShield(ctx,h,pose,frame);
  ctx.restore();
 }
 

@@ -2,7 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';
 import {heroAnimationCell,heroCell} from './hero-frames.js';
 import {readSkin,saveSkin,skinOptions} from './hero-skins.js';
 test('original procedural Vikings are selectable and persist independently of image skins',()=>{
- assert.deepEqual(skinOptions.map(s=>s.id),['current','native85','imagegen81','previous','procedural']);
+ assert.deepEqual(skinOptions.map(s=>s.id),['current','imagegen88','native85','imagegen81','previous','procedural']);
  const data=new Map(),storage={getItem:k=>data.get(k),setItem:(k,v)=>data.set(k,v)};
  assert.equal(saveSkin(storage,'procedural'),'procedural');assert.equal(readSkin(storage),'procedural');
 });

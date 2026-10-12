@@ -25,7 +25,7 @@ export function shieldHit(o,p,px,py){
  // Match the shield art: front spans the torso, overhead spans both shoulders.
  const previousX=o.prevX??o.x,previousY=o.prevY??o.y;
  const dx=(p.x-px)-(o.x-previousX),dy=(p.y-py)-(o.y-previousY);
- if(o.skin==='native85'&&o.shieldArtPose){
+ if(['native85','imagegen88'].includes(o.skin)&&o.shieldArtPose){
   const shape=o.shieldArtPose;
   if(shape.mode==='back'||(shape.mode==='overhead'?dy<=0:dx*o.face>=0))return null;
   const hit=segmentEllipseHit(px-previousX,py-previousY,p.x-o.x,p.y-o.y,shape);

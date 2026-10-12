@@ -1,0 +1,1935 @@
+{
+  "source": "olaf-full-raw-v3.png",
+  "originalSize": [
+    1254,
+    1254
+  ],
+  "cell": [
+    80,
+    80
+  ],
+  "paddingNative": 8,
+  "cols": 8,
+  "origin": [
+    40,
+    48
+  ],
+  "standingHeightIncludesHorns": 36,
+  "originalPixelsPerNativePixel": 3.0277777777777777,
+  "xAnchorMethod": "shared idle silhouette center; nongrounded overrides are recorded per frame",
+  "yAnchorMethod": "grounded: whole actor boot baseline to guide floor plus8padding; rear climb14..17: steel dome landmark excluding collar/pauldrons; Olaf52..59: painted disc/palm midpoint40,30; uniform scale throughout",
+  "records": [
+    {
+      "cell": 0,
+      "components": [
+        1
+      ],
+      "originalBounds": [
+        38,
+        57,
+        144,
+        166
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        -45.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 1,
+      "components": [
+        2
+      ],
+      "originalBounds": [
+        192,
+        57,
+        296,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 2,
+      "components": [
+        3
+      ],
+      "originalBounds": [
+        349,
+        57,
+        450,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        61,
+        70
+      ]
+    },
+    {
+      "cell": 3,
+      "components": [
+        4
+      ],
+      "originalBounds": [
+        504,
+        57,
+        608,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        27,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 4,
+      "components": [
+        5
+      ],
+      "originalBounds": [
+        660,
+        57,
+        767,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        27,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 5,
+      "components": [
+        6
+      ],
+      "originalBounds": [
+        820,
+        57,
+        925,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 6,
+      "components": [
+        8
+      ],
+      "originalBounds": [
+        977,
+        58,
+        1077,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        891.6111111111112,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        61,
+        70
+      ]
+    },
+    {
+      "cell": 7,
+      "components": [
+        7
+      ],
+      "originalBounds": [
+        1133,
+        57,
+        1239,
+        167
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1048.361111111111,
+        0,
+        3.0277777777777777,
+        -44.94444444444445
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 8,
+      "components": [
+        9
+      ],
+      "originalBounds": [
+        36,
+        215,
+        143,
+        324
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        112.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 9,
+      "components": [
+        10
+      ],
+      "originalBounds": [
+        193,
+        215,
+        297,
+        324
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        112.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 10,
+      "components": [
+        11
+      ],
+      "originalBounds": [
+        349,
+        215,
+        455,
+        325
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        113.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 11,
+      "components": [
+        12
+      ],
+      "originalBounds": [
+        506,
+        215,
+        613,
+        324
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        112.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 12,
+      "components": [
+        13
+      ],
+      "originalBounds": [
+        663,
+        215,
+        771,
+        325
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        113.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 13,
+      "components": [
+        14
+      ],
+      "originalBounds": [
+        820,
+        215,
+        930,
+        325
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        113.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 14,
+      "components": [
+        15
+      ],
+      "originalBounds": [
+        981,
+        215,
+        1068,
+        328
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        901.875,
+        0,
+        3.0277777777777777,
+        114.38888888888889
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          1024.5,
+          235.5
+        ],
+        "sourceLandmarkBounds": [
+          1010,
+          225,
+          1039,
+          246
+        ],
+        "guideAnchor": [
+          32.5,
+          32.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          29,
+          38,
+          35
+        ],
+        "targetAnchor": [
+          40.5,
+          40.0
+        ]
+      },
+      "nativeBounds": [
+        26,
+        33,
+        55,
+        71
+      ]
+    },
+    {
+      "cell": 15,
+      "components": [
+        16
+      ],
+      "originalBounds": [
+        1135,
+        215,
+        1219,
+        320
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1051.861111111111,
+        0,
+        3.0277777777777777,
+        114.38888888888889
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          1176.0,
+          235.5
+        ],
+        "sourceLandmarkBounds": [
+          1161,
+          225,
+          1191,
+          246
+        ],
+        "guideAnchor": [
+          33.0,
+          32.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          29,
+          39,
+          35
+        ],
+        "targetAnchor": [
+          41.0,
+          40.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        33,
+        55,
+        68
+      ]
+    },
+    {
+      "cell": 16,
+      "components": [
+        17
+      ],
+      "originalBounds": [
+        36,
+        371,
+        118,
+        479
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -45.625,
+        0,
+        3.0277777777777777,
+        271.3888888888889
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          77.0,
+          392.5
+        ],
+        "sourceLandmarkBounds": [
+          63,
+          381,
+          91,
+          404
+        ],
+        "guideAnchor": [
+          32.5,
+          32.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          29,
+          38,
+          35
+        ],
+        "targetAnchor": [
+          40.5,
+          40.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        33,
+        54,
+        69
+      ]
+    },
+    {
+      "cell": 17,
+      "components": [
+        18
+      ],
+      "originalBounds": [
+        196,
+        371,
+        280,
+        478
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        113.86111111111111,
+        0,
+        3.0277777777777777,
+        270.8888888888889
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          238.0,
+          392.0
+        ],
+        "sourceLandmarkBounds": [
+          224,
+          381,
+          252,
+          403
+        ],
+        "guideAnchor": [
+          33.0,
+          32.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          29,
+          39,
+          35
+        ],
+        "targetAnchor": [
+          41.0,
+          40.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        33,
+        55,
+        68
+      ]
+    },
+    {
+      "cell": 18,
+      "components": [
+        21
+      ],
+      "originalBounds": [
+        348,
+        372,
+        455,
+        477
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        274.13888888888886
+      ],
+      "guideFloorAnchor": 59,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        32,
+        63,
+        67
+      ]
+    },
+    {
+      "cell": 19,
+      "components": [
+        19
+      ],
+      "originalBounds": [
+        506,
+        371,
+        613,
+        474
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        274.1666666666667
+      ],
+      "guideFloorAnchor": 58,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        32,
+        63,
+        66
+      ]
+    },
+    {
+      "cell": 20,
+      "components": [
+        20
+      ],
+      "originalBounds": [
+        663,
+        371,
+        771,
+        480
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        274.11111111111114
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        32,
+        64,
+        68
+      ]
+    },
+    {
+      "cell": 21,
+      "components": [
+        22
+      ],
+      "originalBounds": [
+        820,
+        373,
+        929,
+        481
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        269.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 22,
+      "components": [
+        24
+      ],
+      "originalBounds": [
+        979,
+        374,
+        1085,
+        481
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        891.6111111111112,
+        0,
+        3.0277777777777777,
+        269.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        35,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 23,
+      "components": [
+        23
+      ],
+      "originalBounds": [
+        1134,
+        373,
+        1240,
+        481
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1048.361111111111,
+        0,
+        3.0277777777777777,
+        269.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 24,
+      "components": [
+        31
+      ],
+      "originalBounds": [
+        39,
+        527,
+        146,
+        634
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        422.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        35,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 25,
+      "components": [
+        32
+      ],
+      "originalBounds": [
+        192,
+        527,
+        300,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 26,
+      "components": [
+        26
+      ],
+      "originalBounds": [
+        358,
+        504,
+        433,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 27,
+      "components": [
+        27
+      ],
+      "originalBounds": [
+        514,
+        504,
+        591,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 28,
+      "components": [
+        25
+      ],
+      "originalBounds": [
+        668,
+        503,
+        745,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        26,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 29,
+      "components": [
+        28
+      ],
+      "originalBounds": [
+        825,
+        504,
+        902,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 30,
+      "components": [
+        29
+      ],
+      "originalBounds": [
+        984,
+        504,
+        1060,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        891.6111111111112,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 31,
+      "components": [
+        30
+      ],
+      "originalBounds": [
+        1142,
+        504,
+        1216,
+        635
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1048.361111111111,
+        0,
+        3.0277777777777777,
+        423.05555555555554
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 32,
+      "components": [
+        33
+      ],
+      "originalBounds": [
+        44,
+        660,
+        119,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 33,
+      "components": [
+        34
+      ],
+      "originalBounds": [
+        199,
+        660,
+        276,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 34,
+      "components": [
+        35
+      ],
+      "originalBounds": [
+        356,
+        660,
+        433,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 35,
+      "components": [
+        36
+      ],
+      "originalBounds": [
+        511,
+        660,
+        590,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        27,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 36,
+      "components": [
+        37
+      ],
+      "originalBounds": [
+        668,
+        660,
+        745,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 37,
+      "components": [
+        38
+      ],
+      "originalBounds": [
+        824,
+        660,
+        901,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 38,
+      "components": [
+        39
+      ],
+      "originalBounds": [
+        977,
+        681,
+        1085,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        891.6111111111112,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 39,
+      "components": [
+        40
+      ],
+      "originalBounds": [
+        1133,
+        683,
+        1239,
+        791
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1048.361111111111,
+        0,
+        3.0277777777777777,
+        579.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 40,
+      "components": [
+        48
+      ],
+      "originalBounds": [
+        37,
+        840,
+        135,
+        947
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        735.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        35,
+        61,
+        70
+      ]
+    },
+    {
+      "cell": 41,
+      "components": [
+        47
+      ],
+      "originalBounds": [
+        192,
+        837,
+        287,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        33,
+        59,
+        70
+      ]
+    },
+    {
+      "cell": 42,
+      "components": [
+        46
+      ],
+      "originalBounds": [
+        354,
+        828,
+        437,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        30,
+        57,
+        70
+      ]
+    },
+    {
+      "cell": 43,
+      "components": [
+        45
+      ],
+      "originalBounds": [
+        508,
+        826,
+        590,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        30,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 44,
+      "components": [
+        41
+      ],
+      "originalBounds": [
+        667,
+        819,
+        745,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        578.1111111111112,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 45,
+      "components": [
+        42
+      ],
+      "originalBounds": [
+        824,
+        819,
+        902,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        734.8611111111112,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        27,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 46,
+      "components": [
+        43
+      ],
+      "originalBounds": [
+        979,
+        820,
+        1059,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        891.6111111111112,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        28,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 47,
+      "components": [
+        44
+      ],
+      "originalBounds": [
+        1131,
+        822,
+        1215,
+        948
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1048.361111111111,
+        0,
+        3.0277777777777777,
+        736.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        27,
+        28,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 48,
+      "components": [
+        53
+      ],
+      "originalBounds": [
+        37,
+        993,
+        135,
+        1104
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -48.88888888888888,
+        0,
+        3.0277777777777777,
+        892.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        33,
+        61,
+        70
+      ]
+    },
+    {
+      "cell": 49,
+      "components": [
+        55
+      ],
+      "originalBounds": [
+        192,
+        996,
+        291,
+        1104
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        107.86111111111111,
+        0,
+        3.0277777777777777,
+        892.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        60,
+        70
+      ]
+    },
+    {
+      "cell": 50,
+      "components": [
+        54
+      ],
+      "originalBounds": [
+        349,
+        995,
+        456,
+        1104
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        264.61111111111114,
+        0,
+        3.0277777777777777,
+        892.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        63,
+        70
+      ]
+    },
+    {
+      "cell": 51,
+      "components": [
+        56
+      ],
+      "originalBounds": [
+        505,
+        996,
+        615,
+        1104
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        421.36111111111114,
+        0,
+        3.0277777777777777,
+        892.0555555555557
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 52,
+      "components": [
+        49
+      ],
+      "originalBounds": [
+        669,
+        970,
+        745,
+        1106
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        583.3888888888889,
+        0,
+        3.0277777777777777,
+        891.2777777777777
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          704.5,
+          982.1111111111111
+        ],
+        "sourceLandmarkBounds": [
+          669,
+          970,
+          740,
+          995
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        53,
+        71
+      ]
+    },
+    {
+      "cell": 53,
+      "components": [
+        50
+      ],
+      "originalBounds": [
+        825,
+        970,
+        901,
+        1105
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        738.8888888888889,
+        0,
+        3.0277777777777777,
+        891.2777777777777
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          860.0,
+          982.1111111111111
+        ],
+        "sourceLandmarkBounds": [
+          825,
+          970,
+          895,
+          995
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        71
+      ]
+    },
+    {
+      "cell": 54,
+      "components": [
+        51
+      ],
+      "originalBounds": [
+        983,
+        970,
+        1059,
+        1106
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        896.8888888888889,
+        0,
+        3.0277777777777777,
+        891.2777777777777
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          1018.0,
+          982.1111111111111
+        ],
+        "sourceLandmarkBounds": [
+          983,
+          970,
+          1053,
+          995
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        71
+      ]
+    },
+    {
+      "cell": 55,
+      "components": [
+        52
+      ],
+      "originalBounds": [
+        1141,
+        971,
+        1215,
+        1101
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        1054.888888888889,
+        0,
+        3.0277777777777777,
+        892.2777777777777
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          1176.0,
+          983.1111111111111
+        ],
+        "sourceLandmarkBounds": [
+          1141,
+          971,
+          1211,
+          996
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        53,
+        69
+      ]
+    },
+    {
+      "cell": 56,
+      "components": [
+        57
+      ],
+      "originalBounds": [
+        44,
+        1130,
+        120,
+        1253
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        -41.611111111111114,
+        0,
+        3.0277777777777777,
+        1051.2777777777778
+      ],
+      "guideFloorAnchor": 59,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          79.5,
+          1142.111111111111
+        ],
+        "sourceLandmarkBounds": [
+          44,
+          1130,
+          115,
+          1155
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        53,
+        67
+      ]
+    },
+    {
+      "cell": 57,
+      "components": [
+        58
+      ],
+      "originalBounds": [
+        200,
+        1130,
+        277,
+        1253
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        114.38888888888889,
+        0,
+        3.0277777777777777,
+        1051.2777777777778
+      ],
+      "guideFloorAnchor": 59,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          235.5,
+          1142.111111111111
+        ],
+        "sourceLandmarkBounds": [
+          200,
+          1130,
+          271,
+          1155
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        67
+      ]
+    },
+    {
+      "cell": 58,
+      "components": [
+        59
+      ],
+      "originalBounds": [
+        357,
+        1130,
+        433,
+        1253
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        271.3888888888889,
+        0,
+        3.0277777777777777,
+        1051.2777777777778
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          392.5,
+          1142.111111111111
+        ],
+        "sourceLandmarkBounds": [
+          357,
+          1130,
+          428,
+          1155
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        53,
+        67
+      ]
+    },
+    {
+      "cell": 59,
+      "components": [
+        60
+      ],
+      "originalBounds": [
+        514,
+        1130,
+        591,
+        1253
+      ],
+      "sourceAffine": [
+        3.0277777777777777,
+        0,
+        427.8888888888889,
+        0,
+        3.0277777777777777,
+        1051.2777777777778
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "painted raised disc/palm support for nongrounded actor",
+        "sourceAnchor": [
+          549.0,
+          1142.111111111111
+        ],
+        "sourceLandmarkBounds": [
+          514,
+          1130,
+          584,
+          1155
+        ],
+        "targetAnchor": [
+          40,
+          30
+        ]
+      },
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        67
+      ]
+    }
+  ]
+}

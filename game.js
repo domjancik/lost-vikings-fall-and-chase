@@ -1,4 +1,5 @@
 import {native85ShieldPose} from './native85-registration.js?v=native85';
+import {imagegen88ShieldPose} from './imagegen88-registration.js?v=imagegen88';
 import {drawWaterOverlay} from './water-render.js?v=water83';
 import {readSkin,saveSkin,skinOptions} from './hero-skins.js?v=skins76';
 import {setHeroSkin} from './hero-art.js?v=skins76';
@@ -47,7 +48,7 @@ let selectedSkin=readSkin(localStorage);
 const requestedSkin=new URLSearchParams(location.search).get('skin');
 if(skinOptions.some(option=>option.id===requestedSkin))selectedSkin=saveSkin(localStorage,requestedSkin);
 setHeroSkin(selectedSkin);
-function syncHeroArt(){for(const h of s.heroes){h.skin=selectedSkin;if(h.id===2&&selectedSkin==='native85'){const a=animationFor(h);h.shieldArtPose=native85ShieldPose(h,a.pose,a.frame);}else delete h.shieldArtPose;}}
+function syncHeroArt(){for(const h of s.heroes){h.skin=selectedSkin;if(h.id===2&&['native85','imagegen88'].includes(selectedSkin)){const a=animationFor(h);h.shieldArtPose=(selectedSkin==='imagegen88'?imagegen88ShieldPose:native85ShieldPose)(h,a.pose,a.frame);}else delete h.shieldArtPose;}}
 syncHeroArt();
 function hero(g,h,x,y,scale=1){drawSprite(g,{...h,skin:selectedSkin},x,y,scale);}
 for(const card of document.querySelectorAll('.hero-card')){const info=card.querySelector('div');info.classList.add('hero-info');const bag=document.createElement('span');bag.className='hud-bag';bag.setAttribute('role','group');bag.setAttribute('aria-label','Carried items');for(let slot=0;slot<4;slot++){const icon=document.createElement('canvas');icon.width=16;icon.height=16;icon.dataset.slot=String(slot);icon.setAttribute('role','img');bag.append(icon);}info.append(bag);}

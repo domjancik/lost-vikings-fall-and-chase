@@ -1,0 +1,1191 @@
+{
+  "source": "baleog-full-raw-v1.png",
+  "originalSize": [
+    1586,
+    992
+  ],
+  "cell": [
+    80,
+    80
+  ],
+  "paddingNative": 8,
+  "cols": 8,
+  "origin": [
+    40,
+    48
+  ],
+  "standingHeightIncludesHorns": 38,
+  "originalPixelsPerNativePixel": 4.2894736842105265,
+  "xAnchorMethod": "shared idle silhouette center; nongrounded overrides are recorded per frame",
+  "yAnchorMethod": "grounded: whole actor boot baseline to guide floor plus8padding; rear climb14..17: steel dome landmark excluding collar/pauldrons; Olaf52..59: painted disc/palm midpoint40,30; uniform scale throughout",
+  "records": [
+    {
+      "cell": 0,
+      "components": [
+        3
+      ],
+      "originalBounds": [
+        49,
+        34,
+        150,
+        194
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        -76.01315789473685,
+        0,
+        4.2894736842105265,
+        -106.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        33,
+        53,
+        70
+      ]
+    },
+    {
+      "cell": 1,
+      "components": [
+        4
+      ],
+      "originalBounds": [
+        253,
+        34,
+        360,
+        196
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        122.23684210526315,
+        0,
+        4.2894736842105265,
+        -104.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        32,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 2,
+      "components": [
+        1
+      ],
+      "originalBounds": [
+        455,
+        33,
+        571,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        320.4868421052632,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        32,
+        58,
+        70
+      ]
+    },
+    {
+      "cell": 3,
+      "components": [
+        5
+      ],
+      "originalBounds": [
+        656,
+        34,
+        784,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        518.7368421052632,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        32,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 4,
+      "components": [
+        6
+      ],
+      "originalBounds": [
+        854,
+        34,
+        981,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        716.9868421052632,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        32,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 5,
+      "components": [
+        8
+      ],
+      "originalBounds": [
+        1051,
+        36,
+        1171,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        915.2368421052632,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        32,
+        60,
+        70
+      ]
+    },
+    {
+      "cell": 6,
+      "components": [
+        7
+      ],
+      "originalBounds": [
+        1255,
+        34,
+        1363,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1113.4868421052631,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        33,
+        32,
+        58,
+        70
+      ]
+    },
+    {
+      "cell": 7,
+      "components": [
+        2
+      ],
+      "originalBounds": [
+        1452,
+        33,
+        1569,
+        197
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1311.7368421052631,
+        0,
+        4.2894736842105265,
+        -103.26315789473688
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        33,
+        32,
+        60,
+        70
+      ]
+    },
+    {
+      "cell": 8,
+      "components": [
+        11
+      ],
+      "originalBounds": [
+        42,
+        237,
+        160,
+        400
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        -76.01315789473685,
+        0,
+        4.2894736842105265,
+        99.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        32,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 9,
+      "components": [
+        12
+      ],
+      "originalBounds": [
+        244,
+        237,
+        354,
+        401
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        122.23684210526315,
+        0,
+        4.2894736842105265,
+        100.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        32,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 10,
+      "components": [
+        14
+      ],
+      "originalBounds": [
+        446,
+        239,
+        553,
+        402
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        320.4868421052632,
+        0,
+        4.2894736842105265,
+        101.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        32,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 11,
+      "components": [
+        15
+      ],
+      "originalBounds": [
+        647,
+        239,
+        758,
+        402
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        518.7368421052632,
+        0,
+        4.2894736842105265,
+        101.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        32,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 12,
+      "components": [
+        13
+      ],
+      "originalBounds": [
+        850,
+        237,
+        967,
+        402
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        716.9868421052632,
+        0,
+        4.2894736842105265,
+        101.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        32,
+        58,
+        70
+      ]
+    },
+    {
+      "cell": 13,
+      "components": [
+        16
+      ],
+      "originalBounds": [
+        1047,
+        239,
+        1158,
+        402
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        915.2368421052632,
+        0,
+        4.2894736842105265,
+        101.73684210526312
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        32,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 14,
+      "components": [
+        10
+      ],
+      "originalBounds": [
+        1245,
+        235,
+        1360,
+        402
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1132.2763157894738,
+        0,
+        4.2894736842105265,
+        108.5
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          1306.0,
+          271.5
+        ],
+        "sourceLandmarkBounds": [
+          1278,
+          251,
+          1334,
+          292
+        ],
+        "guideAnchor": [
+          32.5,
+          30.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          27,
+          38,
+          33
+        ],
+        "targetAnchor": [
+          40.5,
+          38.0
+        ]
+      },
+      "nativeBounds": [
+        26,
+        29,
+        53,
+        68
+      ]
+    },
+    {
+      "cell": 15,
+      "components": [
+        9
+      ],
+      "originalBounds": [
+        1443,
+        232,
+        1555,
+        400
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1327.2763157894738,
+        0,
+        4.2894736842105265,
+        106.0
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          1501.0,
+          269.0
+        ],
+        "sourceLandmarkBounds": [
+          1475,
+          248,
+          1527,
+          290
+        ],
+        "guideAnchor": [
+          32.5,
+          30.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          27,
+          38,
+          33
+        ],
+        "targetAnchor": [
+          40.5,
+          38.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        29,
+        53,
+        69
+      ]
+    },
+    {
+      "cell": 16,
+      "components": [
+        17
+      ],
+      "originalBounds": [
+        41,
+        435,
+        150,
+        599
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        -74.22368421052633,
+        0,
+        4.2894736842105265,
+        307.5
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          99.5,
+          470.5
+        ],
+        "sourceLandmarkBounds": [
+          72,
+          450,
+          127,
+          491
+        ],
+        "guideAnchor": [
+          32.5,
+          30.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          27,
+          38,
+          33
+        ],
+        "targetAnchor": [
+          40.5,
+          38.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        30,
+        52,
+        68
+      ]
+    },
+    {
+      "cell": 17,
+      "components": [
+        18
+      ],
+      "originalBounds": [
+        240,
+        435,
+        352,
+        599
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        125.27631578947367,
+        0,
+        4.2894736842105265,
+        307.5
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": {
+        "kind": "stable rear steel helmet/core, not moving boot",
+        "sourceAnchor": [
+          299.0,
+          470.5
+        ],
+        "sourceLandmarkBounds": [
+          271,
+          450,
+          327,
+          491
+        ],
+        "guideAnchor": [
+          32.5,
+          30.0
+        ],
+        "guideLandmarkBounds": [
+          27,
+          27,
+          38,
+          33
+        ],
+        "targetAnchor": [
+          40.5,
+          38.0
+        ]
+      },
+      "nativeBounds": [
+        27,
+        30,
+        53,
+        68
+      ]
+    },
+    {
+      "cell": 18,
+      "components": [
+        19
+      ],
+      "originalBounds": [
+        443,
+        445,
+        557,
+        599
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        320.4868421052632,
+        0,
+        4.2894736842105265,
+        311.60526315789474
+      ],
+      "guideFloorAnchor": 59,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        31,
+        55,
+        67
+      ]
+    },
+    {
+      "cell": 19,
+      "components": [
+        20
+      ],
+      "originalBounds": [
+        643,
+        445,
+        762,
+        596
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        518.7368421052632,
+        0,
+        4.2894736842105265,
+        312.89473684210526
+      ],
+      "guideFloorAnchor": 58,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        31,
+        57,
+        66
+      ]
+    },
+    {
+      "cell": 20,
+      "components": [
+        23
+      ],
+      "originalBounds": [
+        849,
+        446,
+        979,
+        600
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        716.9868421052632,
+        0,
+        4.2894736842105265,
+        308.31578947368416
+      ],
+      "guideFloorAnchor": 60,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        32,
+        61,
+        68
+      ]
+    },
+    {
+      "cell": 21,
+      "components": [
+        21
+      ],
+      "originalBounds": [
+        1052,
+        445,
+        1183,
+        598
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        915.2368421052632,
+        0,
+        4.2894736842105265,
+        297.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 22,
+      "components": [
+        24
+      ],
+      "originalBounds": [
+        1250,
+        450,
+        1395,
+        601
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1113.4868421052631,
+        0,
+        4.2894736842105265,
+        300.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        35,
+        66,
+        70
+      ]
+    },
+    {
+      "cell": 23,
+      "components": [
+        22
+      ],
+      "originalBounds": [
+        1442,
+        445,
+        1569,
+        601
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1311.7368421052631,
+        0,
+        4.2894736842105265,
+        300.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        30,
+        34,
+        60,
+        70
+      ]
+    },
+    {
+      "cell": 24,
+      "components": [
+        31
+      ],
+      "originalBounds": [
+        46,
+        640,
+        158,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        -76.01315789473685,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 25,
+      "components": [
+        32
+      ],
+      "originalBounds": [
+        245,
+        641,
+        345,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        122.23684210526315,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        29,
+        34,
+        52,
+        70
+      ]
+    },
+    {
+      "cell": 26,
+      "components": [
+        25
+      ],
+      "originalBounds": [
+        432,
+        637,
+        537,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        320.4868421052632,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        26,
+        33,
+        50,
+        70
+      ]
+    },
+    {
+      "cell": 27,
+      "components": [
+        26
+      ],
+      "originalBounds": [
+        639,
+        637,
+        744,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        518.7368421052632,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        33,
+        53,
+        70
+      ]
+    },
+    {
+      "cell": 28,
+      "components": [
+        28
+      ],
+      "originalBounds": [
+        848,
+        638,
+        1003,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        716.9868421052632,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        33,
+        67,
+        70
+      ]
+    },
+    {
+      "cell": 29,
+      "components": [
+        27
+      ],
+      "originalBounds": [
+        1050,
+        637,
+        1237,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        915.2368421052632,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        33,
+        75,
+        70
+      ]
+    },
+    {
+      "cell": 30,
+      "components": [
+        30
+      ],
+      "originalBounds": [
+        1250,
+        639,
+        1412,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1113.4868421052631,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        32,
+        34,
+        70,
+        70
+      ]
+    },
+    {
+      "cell": 31,
+      "components": [
+        29
+      ],
+      "originalBounds": [
+        1442,
+        638,
+        1568,
+        795
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        1311.7368421052631,
+        0,
+        4.2894736842105265,
+        494.73684210526307
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        31,
+        33,
+        60,
+        70
+      ]
+    },
+    {
+      "cell": 32,
+      "components": [
+        34
+      ],
+      "originalBounds": [
+        36,
+        829,
+        205,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        -76.01315789473685,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        26,
+        35,
+        66,
+        70
+      ]
+    },
+    {
+      "cell": 33,
+      "components": [
+        37
+      ],
+      "originalBounds": [
+        234,
+        830,
+        398,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        122.23684210526315,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        26,
+        35,
+        64,
+        70
+      ]
+    },
+    {
+      "cell": 34,
+      "components": [
+        35
+      ],
+      "originalBounds": [
+        432,
+        829,
+        602,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        320.4868421052632,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        26,
+        35,
+        65,
+        70
+      ]
+    },
+    {
+      "cell": 35,
+      "components": [
+        38
+      ],
+      "originalBounds": [
+        634,
+        830,
+        802,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        518.7368421052632,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        27,
+        35,
+        66,
+        70
+      ]
+    },
+    {
+      "cell": 36,
+      "components": [
+        33
+      ],
+      "originalBounds": [
+        836,
+        827,
+        984,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        716.9868421052632,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        34,
+        62,
+        70
+      ]
+    },
+    {
+      "cell": 37,
+      "components": [
+        36
+      ],
+      "originalBounds": [
+        1034,
+        829,
+        1182,
+        980
+      ],
+      "sourceAffine": [
+        4.2894736842105265,
+        0,
+        915.2368421052632,
+        0,
+        4.2894736842105265,
+        679.7368421052631
+      ],
+      "guideFloorAnchor": 62,
+      "registrationLandmark": null,
+      "nativeBounds": [
+        28,
+        35,
+        62,
+        70
+      ]
+    }
+  ]
+}

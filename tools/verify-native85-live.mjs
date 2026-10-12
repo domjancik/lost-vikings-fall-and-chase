@@ -1,0 +1,6 @@
+import fs from 'node:fs/promises';import {createHash} from 'node:crypto';
+const root='output/release-native85/dist',base='https://united-marsh-6ppd.here.now/';
+const files=['index.html','game.js','cycle-campaign.js','cycle-render.js','water-campaign.js','water-render.js','ground-shadow.js','view-camera.js','audio-events.js','hero-skins.js','projectile-collision.js','native85-registration.js','assets/vikings85-native/erik-native.png','assets/vikings85-native/baleog-native.png','assets/vikings85-native/olaf-native.png','hero-art.js','hero-frames.js','imagegen81-registration.js','sprite-render.js','assets/water83/nozzle-native.png','assets/water83/machines-native.png','assets/water83/motion-native.png','assets/water83/scene-raw.png'];
+const hash=b=>createHash('sha256').update(b).digest('hex');
+for(const file of files){const r=await fetch(base+file+'?release=85');if(!r.ok)throw Error(file+' HTTP'+r.status);let bytes=Buffer.from(await r.arrayBuffer());if(file==='index.html')bytes=Buffer.from(bytes.toString().replace(/<meta (?:property="og:[^"]+"|name="twitter:[^"]+")[^>]*\/>\n?/g,''));if(hash(bytes)!==hash(await fs.readFile(root+'/'+file)))throw Error(file+' differs from tested build');}
+console.log('23 deployed water/sprite files match the reviewed native85 build.');

@@ -59,3 +59,34 @@ ordinary selector/persistence checks with zero page errors. The reviewer inspect
 actual captures/code and did not run a separate browser route. Both74generated
 Erik candidates and the incomplete74rework remain REJECTED/UNACCEPTED and must
 not be published under this verdict. No unrelated runtime/art is accepted.
+
+### Actual rider and inset supplement
+
+Inspected skins73-route-shield-board, second-glide-mobile, release-inset,
+release-inset-landscape and released-1x. Baleog's boots remain visibly on the
+raised plate in boarding and floating transport; Olaf's palms meet its underside,
+with the plate retaining its fixed dimensions. The remote inset depicts Erik in
+the released cup while Baleog remains selected, including the landscape view.
+The1xreleased scene retains readable Erik/body/cup and grounded machine feet.
+These own-pixel checks reveal no changed-scope rider or inset regression.
+
+The implementer's full ordinary-controls73Clockwork route reports won=true,
+HP3for all three,90.2083simulation seconds, Enter clearing won to continue and
+zero page errors. This supplements the selector/persistence checks; this
+reviewer inspected its evidence rather than running a separate playthrough.
+The stylesheet query was bumped to73for the selector style. **Limited73runtime
+acceptance remains final**, with74excluded and its source rejections unchanged.
+
+### Publication verification (2026-10-12)
+
+Approved selector/shield runtime committed as67a0cc5 and published from the
+isolated73build to https://united-marsh-6ppd.here.now/. The74archive commit is
+excluded from that build. verify-skins73-live confirms all seven reviewed live
+runtime files match (hosting metadata alone normalized for HTML).
+
+Actual live browser verification passes selector changes, changed portrait
+pixels, saved previous-skin preference after reload, and zero page errors.
+Mobile menu and gameplay captures are skins73-live-menu-mobile.png and
+skins73-live-front-mobile.png. The preference was restored to current after
+verification. This completes publication verification for the limited73approval;
+it does not approve the rejected74character art.

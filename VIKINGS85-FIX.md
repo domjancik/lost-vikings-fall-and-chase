@@ -62,3 +62,8 @@ Distribution overlay:hero-art.js,hero-frames.js,hero-skins.js,
 native85-registration.js, plus assets/vikings85-native/{erik,baleog,olaf}-native.png.
 Parent-owned game.js/projectile-collision.js supply skin/collision binding.
 All existing skin assets and accepted84 sprite-render cadence must remain.
+
+Final independent verdict: both the native full-source gate and the optional
+actual-game runtime gate are ACCEPTED. This approves native85 as a selectable
+alternative; it does not approve the retained failed imagegen85 originals or
+replace the existing default skin without a separate art-direction decision.

@@ -1,4 +1,4 @@
-import {setupCycle,cycleStep} from './cycle-campaign.js?v=momentum68';
+import {setupCycle,cycleStep} from './cycle-campaign.js?v=clockwork69';
 import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=support57';
 import {setupVerticalLevel,verticalStep} from './vertical-campaign.js?v=support57';
 import {startBash,bashImpact} from './bash.js?v=arc46';

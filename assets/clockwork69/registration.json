@@ -1,0 +1,51 @@
+{
+  "worldPixel": 2,
+  "partsCell": [
+    96,
+    96
+  ],
+  "wheelCenter": [
+    48,
+    48
+  ],
+  "wheelRadius": 80,
+  "upperBottom": 53,
+  "lowerInsideFoot": 76,
+  "springBase": 96,
+  "springCompressedRim": 54,
+  "dockCell": [
+    160,
+    224
+  ],
+  "dockMouth": [
+    80,
+    112
+  ],
+  "dockBase": 193,
+  "pinCell": [
+    32,
+    56
+  ],
+  "pinBase": 56,
+  "catchCell": [
+    48,
+    80
+  ],
+  "catchBase": 80,
+  "catchHookRow": 16,
+  "catchStroke": 25,
+  "catchComponentFrame": 2,
+  "catchReleasedHeadFrame": 3,
+  "sources": [
+    "source-parts.png",
+    "source-machine.png",
+    "source-dock.png",
+    "source-pin.png",
+    "source-catch.png",
+    "source-scene.png"
+  ],
+  "scene": [
+    768,
+    512
+  ]
+}

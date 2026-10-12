@@ -18,4 +18,9 @@ Actual browser selector check passed changed portraits, persistence of procedura
 after reload and zero page errors. Full ordinary-controls Clockwork route with
 procedural selected completed at89.8417simulation seconds, all three HP3, Enter
 continuation and zero page errors. Captures are output/playwright/skins76-* and
-skins76-route-*. Publication/live checks are recorded after deployment.
+skins76-route-*. Published from the isolated76build to the existing here.now
+site. Nine live files match the reviewed build; live selector, immediate portrait
+change and procedural preference after reload pass with zero page errors.
+Mobile live captures are skins76-live-menu-mobile.png and
+skins76-live-front-mobile.png. Verification leaves procedural selected.
+Runtime/restoration commit ea583a3 excludes the77experimental archive.

@@ -48,4 +48,17 @@ kit within the disclosed user-approved material direction. The detailed contact
 review closed the prior shield offsets and boot-driven climb registration
 failures. No current material visual/contact blocker remains.
 
-Publication evidence will be recorded after live verification completes.
+Published2026-10-13 to https://united-marsh-6ppd.here.now/ from commit e50dff6.
+tools/verify-imagegen88-live.mjs confirmed all27 deployed runtime, gallery,
+original/guide, registration and native atlas files match the reviewed frozen
+build by SHA256 (excluding only host-injected social metadata in HTML).
+The gallery's live browser test passed all controls,9 comparisons and mobile
+views with browser errors=[]; output/imagegen88/gallery-test.json records the
+production URLs, with the local record preserved as gallery-local-test.json.
+
+The live normal-controls water route passed: won=true, HP3/3/3,
+simulation time112.875seconds and browser errors=[]. The selected skin and
+Olaf shield pose binding were asserted before play; exit and Enter continuation
+were exercised. Evidence: output/imagegen88/live-water-route.json and the
+latest output/playwright/imagegen88-water-*.png captures. No deployment mismatch
+or remaining character contact blocker was found.

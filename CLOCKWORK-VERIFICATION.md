@@ -42,3 +42,16 @@ uses an isolated accepted27235fc snapshot plus owned
 runtime changes, with tools/build-clockwork69.mjs. Unrelated build/publisher,
 Vikings55 and pixel-fixer submodule working changes remain untouched. Generated
 sources/review images are retained in Git but excluded from the public manifest.
+
+## Live release — 2026-10-12
+
+Implementation commit:ed9f10c. Published with the existing here.now CLI/API flow:
+https://united-marsh-6ppd.here.now/?campaign=cycle&puzzle=clockwork&release=69
+
+The live entry, ten runtime modules and six native art images match the reviewed
+isolated release by SHA256. Production Playwright live smoke opens room3 on
+1440x900desktop and390x844mobile with all art ready, verifies Erik moves over
+100worldunits using the normal Right key, and records zero JavaScript errors.
+Live screenshots:output/playwright/clockwork69-live-desktop.png and
+clockwork69-live-mobile.png. Full standard/retry playthroughs above ran against
+the identical reviewed local runtime; live hashes verify deployment integrity.

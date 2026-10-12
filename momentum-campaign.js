@@ -78,7 +78,6 @@ function advanceShots(s,dt){const g=s.machine;
    const shield=shieldHit(s.heroes[2],p,px,py),body=s.heroes.map(h=>({h,hit:segmentHit(px,py,p.x,p.y,{x:h.x-24,y:h.y-14,w:48,h:72})})).filter(x=>x.hit).sort((a,b)=>a.hit.t-b.hit.t)[0];
    if(shield&&(!body||shield.t<=body.hit.t)){p.dead=true;continue;}if(body){damage(s,body.h,1);p.dead=true;continue;}
    if(p.v<0&&px>=2026&&p.x<=2026){p.x=2026+(2026-p.x);p.v=220;g.bumperAt=s.time;}
-   if(g.safety)p.dead=true;
   }
  }s.shots=s.shots.filter(p=>!p.dead&&p.x>0&&p.x<3400&&p.age<12);
 }
@@ -102,14 +101,15 @@ export function momentumStep(s,input,dt){
  const b=g.ball;
  for(const h of s.heroes){if(h.climbing)continue;const crown=sphereCrown(b,h.x),oldCrown=sphereCrown({...b,...oldBall},h.prevX);
   if(crown!==null&&Math.abs(h.x-b.x)<BALL_RADIUS-8&&h.vy>=0&&((riders.has(h)&&h.y+44>=crown-4)||(oldCrown!==null&&h.prevY+44<=oldCrown+4&&h.y+44>=crown))){h.y=crown-44;h.vy=0;h.ground=true;h.support='momentum-ball';}
-  else if(Math.abs(h.x-b.x)<BALL_RADIUS+16&&h.y+44>b.y-10&&h.y<b.y+BALL_RADIUS-4){const side=h.x<b.x?-1:1;h.x=b.x+side*(BALL_RADIUS+(h.id===2&&!h.shieldUp&&h.face===1&&side<0?42:16));h.vx=0;}
+  else {const side=h.x<b.x?-1:1,reach=h.id===2&&!h.shieldUp&&h.face===1&&side<0?42:16;
+   if(Math.abs(h.x-b.x)<BALL_RADIUS+reach&&h.y+44>b.y-10&&h.y<b.y+BALL_RADIUS-4){h.x=b.x+side*(BALL_RADIUS+reach);h.vx=0;}}
  }
  for(const h of liftRiders)if(h.ground&&Math.abs(h.y+44-g.carrier.y)<2&&h.x>g.carrier.x-14&&h.x<g.carrier.x+g.carrier.w+14)h.support=g.carrier.support;
  for(const {h,l,y}of climbers){h.x=l.x;h.y=y;h.vy=0;h.ground=true;h.support='ladder';h.climbMoving=h===a&&(input.up||input.down);}
  if(!g.highReached&&s.heroes.some(h=>h.ground&&h.x>=1780&&h.x<=2020&&Math.abs(h.y+44-508)<4))g.highReached=true;
  if(g.highReached){g.recovery=approach(g.recovery,1,dt/2);const l={x:1900,top:508,bottom:508+612*g.recovery};s.level.ladders=[...momentumLevel.ladders,l];}
  for(const t of g.tiles){
-  if(g.safety||t.restoring){t.drop=approach(t.drop,0,300*dt);t.vy=0;if(t.drop===0){t.t=approach(t.t,0,dt*6);if(t.t===0)t.restoring=false;}}
+  if(t.restoring){t.drop=approach(t.drop,0,300*dt);t.vy=0;if(t.drop===0){t.t=approach(t.t,0,dt*6);if(t.t===0)t.restoring=false;}}
   else if(t.t>0||s.heroes.some(h=>h.ground&&h.x>t.x-14&&h.x<t.x+t.w+14&&Math.abs(h.y+44-t.y)<5)){
    if(t.t===0)g.tileEvent++;t.t+=dt;if(t.t>=.9){t.vy+=900*dt;t.drop=Math.min(612,t.drop+t.vy*dt);}if(t.t>=4)t.restoring=true;
   }

@@ -1,5 +1,5 @@
 import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from './clockwork-campaign.js?v=clockwork71';
-import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from './momentum-campaign.js?v=vikings70';
+import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from './momentum-campaign.js?v=momentum72';
 import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {segmentHit} from './projectile-collision.js?v=arc46';
 import {damage} from './health.js?v=arc46';

@@ -1,4 +1,4 @@
-import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './momentum-campaign.js?v=vikings70';
+import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './momentum-campaign.js?v=momentum72';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawConnection,drawConnectionTile,connectionsReady} from './connection-render.js?v=connections53';
@@ -6,6 +6,7 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {drawCycleGateField} from './cycle-gate.js?v=gate61';
 const relay=createAtlas('assets/momentum68/relay.png',4,4),hazards=createAtlas('assets/momentum68/hazards.png',4,4),gate=createAtlas('assets/gate61/gate.png',1,1);
+const rollingBall=createAtlas('assets/momentum72/ball.png',8,8);
 const furnace=createAtlas('assets/momentum68/furnace.png',4,1),bumper=createAtlas('assets/momentum68/bumper.png',4,1);
 const load=src=>{const i=new Image();i.src=src;return i;};
 const scene=load('assets/momentum68/scene.png'),tiles=load('assets/momentum68/tiles.png'),arm=load('assets/momentum68/arm.png'),ladder=load('assets/platform56/ladder.png'),lift=load('assets/refraction62/lift.png');
@@ -38,7 +39,7 @@ export function drawMomentumWorld(ctx,s,camera,viewport){
  drawConnection(ctx,[[1030,932],[1070,932],[1070,970],[1000,970]],'cable',{time:s.time});
  drawConnectionTile(ctx,g.guide>.55?31:30,1000,970);
  for(const [x,y,on]of [[330,720,b.mode==='return'||g.returnPending],[1350,1120,b.mode==='return'||g.returnPending],[2580,508,g.safety]])relay.draw(ctx,on?15:14,x-64,y-128,128,128);
- relay.draw(ctx,Math.floor(b.angle/(Math.PI/4))%8,snapPixel(b.x)-64,snapPixel(b.y)-64,128,128);
+ rollingBall.draw(ctx,((Math.round(b.angle/(Math.PI*2)*64)%64)+64)%64,snapPixel(b.x)-64,snapPixel(b.y)-64,128,128);
  contacts.push({name:'sphere',radius:BALL_RADIUS,center:[b.x,b.y],rail:[b.p,railPoint(b.p,b.branch).y],mode:b.mode,riders:s.heroes.filter(h=>h.support==='momentum-ball').map(h=>({id:h.id,x:h.x,feet:h.y+44}))});
  const phase=g.safety?'safe':g.highReached?laserPhase(g.clock):'off',emitterFrame=phase==='safe'?11:phase==='live'?10:phase==='charge'?9:8;
  drawConnection(ctx,[[2100,176],[2240,176],[2240,1120]],'rail');hazards.draw(ctx,emitterFrame,2088,176,128,128);
@@ -55,5 +56,5 @@ export function drawMomentumWorld(ctx,s,camera,viewport){
  if(lift.complete&&lift.naturalWidth){const c=g.carrier,p=momentumLiftPlacement(c),y=snapPixel(p.y);for(const [sx,sw,dx,dw]of [[0,16,0,32],[16,32,32,64],[16,26,96,52],[48,16,148,32]])ctx.drawImage(lift,sx,0,sw,64,c.x+dx,y,dw,128);}
  drawConnection(ctx,[[2940,1120],[2940,220],[3060,220],[3060,1120]],'rail');
  const portal={x:3196,y:380,w:128,h:128,active:g.safety,glow:g.safety?.8:0,frame:Math.floor(s.time*12),aperture:{x:3260,y:454,w:40,h:80}};drawCycleGateField(ctx,portal);gate.drawGrounded(ctx,0,portal,surfaces);
- return {ready:connectionsReady()&&[relay.image,hazards.image,furnace.image,bumper.image,gate.image,scene,tiles,arm,ladder,lift].every(i=>i.complete&&i.naturalWidth),background,contacts,guide:g.guide,laser:phase,ball:{...b},lift:{x:g.carrier.x,y:g.carrier.y}};
+ return {ready:connectionsReady()&&[rollingBall.image,relay.image,hazards.image,furnace.image,bumper.image,gate.image,scene,tiles,arm,ladder,lift].every(i=>i.complete&&i.naturalWidth),background,contacts,guide:g.guide,laser:phase,ball:{...b},fireballs:s.shots.filter(p=>p.kind==='fire').map(p=>({x:p.x,y:p.y,age:p.age})),lift:{x:g.carrier.x,y:g.carrier.y}};
 }

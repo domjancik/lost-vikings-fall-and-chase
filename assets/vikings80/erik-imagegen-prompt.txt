@@ -1,0 +1,40 @@
+Use case: sketch-to-render. Asset type: native-density full game animation sprite atlas for erik.
+Input is an exact native procedural pose and occlusion authority, enlarged 2x, not a rough composition suggestion. Apply a coherent Viking costume/material pass to EVERY occupied cell. Preserve every cell location and action, joint/hand/foot endpoints, adult body silhouette, root (32,40) and planted foot exclusive sole62. Native cells are64x64; atlas is512x256 native pixels,8columns. Body height is36 native pixels, representing72world units. Never fit each character to its frame. Empty trailing cells stay fully transparent.
+Lean agile Erik: rusty red tunic, slate blue trousers, long-ish red beard, small steel helmet with two curved horns. Athletic adult silhouette.
+Style: first-generation SNES pixel sprite craftsmanship at EXACT native density, 16-color indexed palette appearance, chunky deliberate clusters and hard stair-step outlines. Only three flat tones for each material (shadow, base, highlight), with no gradients or fine texture. Face is a few readable native pixels; no eyelashes, strands, mail pattern, wood grain, speckles or elaborate reflections. Each logical pixel is one whole native grid square. An enlarged output must show uniform squares, never smaller edge pixels. Do not produce a detailed painting intended for later reduction. Use broad light/shadow clusters rather than fine shaded rendering. Palette is warm skin, beard, costume colors, cool dark outline and limited silver/wood accents.
+Add horns3-4native pixels and beard5-6native pixels within spare cell space, WITHOUT enlarging the head, shrinking body height, shortening legs or changing the authored action. Exactly two arms, two hands, two legs, two feet. Preserve near/far depth and leg identities as they exchange in the eight-phase walk. Rear climb faces the ladder and alternates hands/feet. Head/neck look poses must point up/down. Never invent duplicate limbs. Equipment occludes the gripping hand; wrists still meet the grip. Do not copy a static torso over different legs.
+For Olaf, round shield face diameter24 native pixels remains invariant. Held shield follows body-driven bob and stays clear of floor. Overhead it projects as the guide's24x6 edge-on disc centered on rider plane22; this is the same round shield, not a second resized plate. Preserve transitions, floating postures and the one supporting hand/opposite climbing hand. Do not restore a rectangular shield.
+Transparent RGBA background, binary clean edges, no shadow, no floor, no backdrop or checkerboard, no lettering, no labels, no cell borders, no extra props. Render the supplied atlas faithfully rather than rearranging it. Retain distinct authored poses; do not fill with standing duplicates.
+Authored occupied cell order (zero-based):
+cell 0 (row 0, column 0): walk phase 0
+cell 1 (row 0, column 1): walk phase 1
+cell 2 (row 0, column 2): walk phase 2
+cell 3 (row 0, column 3): walk phase 3
+cell 4 (row 0, column 4): walk phase 4
+cell 5 (row 0, column 5): walk phase 5
+cell 6 (row 0, column 6): walk phase 6
+cell 7 (row 0, column 7): walk phase 7
+cell 8 (row 1, column 0): idle phase 0
+cell 9 (row 1, column 1): idle phase 1
+cell 10 (row 1, column 2): idle phase 2
+cell 11 (row 1, column 3): idle phase 3
+cell 12 (row 1, column 4): look-up phase 0
+cell 13 (row 1, column 5): look-down phase 0
+cell 14 (row 1, column 6): climb phase 0
+cell 15 (row 1, column 7): climb phase 1
+cell 16 (row 2, column 0): climb phase 2
+cell 17 (row 2, column 1): climb phase 3
+cell 18 (row 2, column 2): rise phase 0
+cell 19 (row 2, column 3): rise phase 1
+cell 20 (row 2, column 4): fall phase 0
+cell 21 (row 2, column 5): fall phase 1
+cell 22 (row 2, column 6): land phase 0
+cell 23 (row 2, column 7): land phase 1
+cell 24 (row 3, column 0): land phase 2
+cell 25 (row 3, column 1): hurt phase 0
+cell 26 (row 3, column 2): bash phase 0
+cell 27 (row 3, column 3): bash phase 1
+cell 28 (row 3, column 4): bash phase 2
+cell 29 (row 3, column 5): bash phase 3
+cell 30 (row 3, column 6): bash phase 4
+cell 31 (row 3, column 7): bash phase 5

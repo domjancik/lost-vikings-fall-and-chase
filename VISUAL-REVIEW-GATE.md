@@ -88,6 +88,31 @@ cannot be located or its change is ambiguous without a label, reject it.
 
 ## Character motion stability
 
+### Guide anatomy before image generation
+
+Review a procedural guide before using it as an image-generation reference.
+Inspect its joint overlay, opaque silhouette and looping motion separately at
+native size and nearest-neighbor enlargement. A plausible still pose, correct
+cell size or fixed feet cannot approve an awkward guide cycle.
+
+Record separate near/far shoulders and hips, elbow/wrist and knee/ankle chains,
+nominal segment lengths and authored support contacts. Limb lengths must remain
+consistent within native-grid rounding; do not choose a common knee row or move
+elbows independently to approximate a swing. Check bend direction and readable
+flexion throughout the cycle, including passing and rear reaches. Reject sharp
+arbitrary zigzags, collapsing limb volume and abrupt joint-direction flips even
+when a numerical length check passes. Pelvis, chest, shoulders and neck must
+form a coherent adult body with connected limbs.
+
+Show contact, compression, passing and swing; retain limb identities as their
+depth order changes. Review torso/head response with planted feet, neck-led
+look direction, ladder-facing alternating grips and equipment contact. Correct
+the guide itself when these fail. Do not ask image generation to invent anatomy
+over a faulty skeleton. Guide acceptance approves animation constraints only;
+it does not waive raw rendered-art or actual-game review gates.
+
+### Actual character motion
+
 Inspect each hero moving away from the parked group: overlapping bodies cannot
 establish a gait verdict. Capture planted contact, compression, passing and
 swing at 1x/2x. Count meaningful phase families rather than near-duplicate cells.

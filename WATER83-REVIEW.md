@@ -243,3 +243,27 @@ Generated machine study remains rejected and unused. This accepts the water
 room's causal mechanics, visual states, grounding, adult scale and recovery
 route; it does not approve the separate Viking85sprite candidates or claim
 an exhaustive timing audit of every possible player trajectory.
+
+### Added portrait-mobile context —2x readability correction pending
+
+Subsequently inspected390×844water83-mobile-portrait-1x.png and
+water83-mobile-portrait-2x.png. Portrait1x keeps the full standing heroes,
+floor and controls readable. The supplied2x capture places Erik beneath the
+touch controls at the bottom and clips boots/floor beyond the viewport.
+This newly supplied context fails framing/readability/contact evidence,
+despite the accepted desktop/landscape route. Correct portrait2x camera
+framing or select the readable1x view for that narrow viewport, then recapture.
+Prior source and desktop/landscape verdicts remain accepted; portrait2x is
+an explicitly pending scoped blocker, not silently covered by those verdicts.
+
+### Portrait framing blocker CLOSED
+
+Read the corrected game.js toggleZoom(): it computes the new viewport and
+immediately centers the current camera target rather than carrying the old
+zoom's world-camera position into the new viewport. Inspected the refreshed
+390×844portrait2x capture taken50msafter the1x→2x toggle. Erik's complete
+head/body/boots and supporting floor are now visible above the touch controls;
+feet lie near530screen pixels, with controls below670. The existing portrait1x
+view remains readable. The camera change does not modify water source art or
+mechanics. This resolves the added portrait2x evidence/readability blocker;
+final water source and desktop/landscape/portrait runtime gates are ACCEPTED.

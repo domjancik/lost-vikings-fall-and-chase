@@ -1,5 +1,5 @@
-import {drawHeroArt} from './hero-art.js?v=vikings70';
-export {heroesReady,whenHeroesReady} from './hero-art.js?v=vikings70';
+import {drawHeroArt} from './hero-art.js?v=skins73';
+export {heroesReady,whenHeroesReady} from './hero-art.js?v=skins73';
 
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export function animationFor(h){

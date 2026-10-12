@@ -3,6 +3,7 @@ import {snapPixel} from './pixel-grid.js?v=arc46';
 export const HERO_CELL=64;
 export const HERO_ORIGIN={x:32,y:40,sole:62};
 export function heroAnimationCell(h,pose,frame=0){const f=Math.max(0,Math.floor(frame));
+ if(h.skin==='previous')return{sheet:'legacy',cell:heroCell(h.id,pose,f),cols:8};
  if(['run','turn','idle','climb','overhead','float'].includes(pose)){
   const id=h.id,stride=Math.floor(f/2)%4;let cell;
   if(pose==='run'||pose==='turn')cell=(id===2&&h.shieldUp?8:0)+stride;

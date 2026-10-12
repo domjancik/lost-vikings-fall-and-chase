@@ -1,3 +1,5 @@
+import {readSkin,saveSkin,skinOptions} from './hero-skins.js?v=skins73';
+import {setHeroSkin} from './hero-art.js?v=skins73';
 import {clockworkView} from './clockwork-view.js?v=momentum72';
 import {drawClockworkInset} from './clockwork-render.js?v=momentum72';
 import {cycleLevels} from './cycle-campaign.js?v=momentum72';
@@ -24,7 +26,7 @@ import {drawProjectile,projectilePose,environmentPose} from './environment-anima
 import {drawBackground,viewportSize} from './background-render.js?v=arc46';
 import {createControls,keyAction} from './controls.js?v=cycle52';
 import {groundShadow} from './ground-shadow.js?v=cycle52';
-import {drawSprite,animationFor,heroesReady,whenHeroesReady} from './sprite-render.js?v=vikings70';
+import {drawSprite,animationFor,heroesReady,whenHeroesReady} from './sprite-render.js?v=skins73';
 import {heroDrawOrder} from './hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from './levels.js?v=arc46';
 import {drawWorld} from './world-render.js?v=terrain48';
@@ -39,7 +41,9 @@ function box(c,x,y,w,h){ctx.fillStyle=c;ctx.fillRect(snapPixel(x),snapPixel(y),s
 function text(t,x,y,c='#eee2b8',size=12){labelQueue.push({t,x,y,c,size});}
 let hintsVisible=false;try{hintsVisible=hintPreference(localStorage.getItem('last-call-hints'));}catch{}
 const worldText=worldLabels(text,()=>hintsVisible);
-function hero(g,h,x,y,scale=1){drawSprite(g,h,x,y,scale);}
+let selectedSkin=readSkin(localStorage);
+setHeroSkin(selectedSkin);
+function hero(g,h,x,y,scale=1){drawSprite(g,{...h,skin:selectedSkin},x,y,scale);}
 for(const card of document.querySelectorAll('.hero-card')){const info=card.querySelector('div');info.classList.add('hero-info');const bag=document.createElement('span');bag.className='hud-bag';bag.setAttribute('role','group');bag.setAttribute('aria-label','Carried items');for(let slot=0;slot<4;slot++){const icon=document.createElement('canvas');icon.width=16;icon.height=16;icon.dataset.slot=String(slot);icon.setAttribute('role','img');bag.append(icon);}info.append(bag);}
 function updateHudBag(h,card){const icons=card.querySelectorAll('.hud-bag canvas');icons.forEach((icon,slot)=>{const type=h.inventory[slot],selected=slot===h.itemSlot,label=(type?itemTypes[type].name:'Empty')+(selected?' · selected':'');icon.dataset.item=type||'';icon.classList.toggle('selected',selected);icon.setAttribute('aria-label','Slot '+(slot+1)+': '+label);icon.title=label;const key=campaign+':'+(type||'empty');if(icon.dataset.painted!==key){const g=icon.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,16,16);if(!type||(campaign==='story'?drawStoryItem(g,type,8,14,12,12):drawItemSprite(g,itemTypes[type].icon,8,14,12,12)))icon.dataset.painted=key;}});}
 function paintPortraits(){for(let i=0;i<3;i++){const g=document.querySelector('#portrait'+i).getContext('2d');g.clearRect(0,0,64,64);g.imageSmoothingEnabled=false;hero(g,{id:i,face:1,shield:i===2,shieldUp:false,ground:true},32,25,.7);}}
@@ -85,6 +89,11 @@ document.querySelector('#pause').onclick=()=>{if(started)paused=!paused;};
 document.querySelector('#sound').onclick=()=>{sound=!sound;audio.setEnabled(sound);updateSoundButton();try{localStorage.setItem('last-call-sound',sound?'on':'off');}catch{}if(sound)audio.unlock().then(()=>audio.play('click'));};
 document.querySelectorAll('[data-hero]').forEach(el=>el.onclick=()=>select(Number(el.dataset.hero)));
 const dialog=document.querySelector('#help-dialog');document.querySelector('#help').onclick=()=>{paused=true;dialog.showModal();};document.querySelector('#close-help').onclick=()=>dialog.close();dialog.addEventListener('close',()=>paused=false);
+const skinLabel=document.createElement('label');skinLabel.textContent='Viking skin ';
+const skinSelect=document.createElement('select');skinSelect.id='hero-skin';
+for(const option of skinOptions){const el=document.createElement('option');el.value=option.id;el.textContent=option.label;skinSelect.append(el);}
+skinSelect.value=selectedSkin;skinSelect.onchange=()=>{selectedSkin=saveSkin(localStorage,skinSelect.value);setHeroSkin(selectedSkin);if(heroesReady())paintPortraits();};
+skinLabel.append(skinSelect);dialog.querySelector('h2').after(skinLabel);
 const hintDialog=document.querySelector('#hint-dialog');document.querySelector('#clue').onclick=()=>{paused=true;controls.clear();document.querySelector('#hint-objective').textContent=objective(s);document.querySelector('#clue').classList.remove('new-clue');hintDialog.showModal();};document.querySelector('#close-hint').onclick=()=>hintDialog.close();document.querySelector('#resume-hint').onclick=()=>hintDialog.close();hintDialog.addEventListener('close',()=>{paused=false;canvas.focus({preventScroll:true});});
 const inventoryDialog=document.querySelector('#inventory-dialog');
 function renderBag(){const h=s.heroes[s.active];document.querySelector('#inventory-title').textContent=['Erik','Baleog','Olaf'][s.active]+' · '+h.hp+'/3 health';const root=document.querySelector('#inventory-slots');root.replaceChildren();h.inventory.forEach((type,i)=>{const b=document.createElement('button');b.classList.toggle('selected',i===h.itemSlot);b.dataset.slot=i;const icon=document.createElement('canvas');icon.width=48;icon.height=48;b.append(icon);if(type){const g=icon.getContext('2d');g.imageSmoothingEnabled=false;if(campaign==='story')drawStoryItem(g,type,24,46,40,40);else drawItemSprite(g,itemTypes[type].icon,24,46,40,40);}const name=document.createElement('span');name.textContent=type?itemTypes[type].name:'Empty';b.append(name);b.onclick=()=>{h.itemSlot=i;renderBag();};root.append(b);});const type=h.inventory[h.itemSlot];document.querySelector('#inventory-description').textContent=type?itemDescription(type,hintsVisible):'Select an item slot.';document.querySelector('#use-item').disabled=!type||s.failed;document.querySelector('#drop-item').disabled=!type||s.failed;document.querySelector('#give-item').disabled=!type||s.failed;document.querySelector('#give-target').value=(s.active+1)%3;}

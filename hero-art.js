@@ -1,8 +1,10 @@
-import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=vikings70';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=skins73';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 
 const sheets=[],locomotion=[];let shield;
+let selectedSkin='current';
+export function setHeroSkin(skin){selectedSkin=skin==='previous'?'previous':'current';}
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));
@@ -40,15 +42,15 @@ function drawShield(ctx,h,pose,frame){
 export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
  ensureLoaded();
  if(!heroesReady())return;
- const {cell,cols,sheet}=heroAnimationCell(h,pose,frame);
+ const {cell,cols,sheet}=heroAnimationCell({...h,skin:h.skin||selectedSkin},pose,frame);
  ctx.save();ctx.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);
  ctx.scale((h.face||1)*scale,scale);ctx.imageSmoothingEnabled=false;
  const source=sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
  const image=h.brass?bronze(source):source;
- if(h.id===2&&!h.shieldUp&&pose!=='climb')drawShield(ctx,h,pose,frame);
  ctx.drawImage(image,cell%cols*HERO_CELL,Math.floor(cell/cols)*HERO_CELL,HERO_CELL,HERO_CELL,
   -HERO_ORIGIN.x*2,-HERO_ORIGIN.y*2,HERO_CELL*2,HERO_CELL*2);
- if(h.id===2&&(h.shieldUp||pose==='climb'))drawShield(ctx,h,pose,frame);
+ // The opaque shield face covers the gripping palm in front as well as overhead.
+ if(h.id===2)drawShield(ctx,h,pose,frame);
  ctx.restore();
 }
 

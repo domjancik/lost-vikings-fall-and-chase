@@ -28,6 +28,17 @@ cannot substitute for visual acceptance.
 
 ## Ground contact
 
+For ceiling-mounted machinery, locate the actual opaque mounting flange rather
+than the atlas cell's top edge. Remove neighboring-cell extraction spill before
+measuring it. The flange must visibly join a ceiling or a service arch with a
+traceable footing. Derive lens/pipe/shaft terminals after registration. A sprite
+can have a correct bounding box while its main housing still floats.
+
+For reused carrier art, read its registered walking rim, not the rear railing
+or an assumed row from another carrier. Include an actual rider-at-dock capture
+and an anchor regression test. Recovery captures must frame the moving or docked
+object itself; a successful flag or an offscreen object does not establish contact.
+
 Review visible opaque pixels, not canvas bounds or a single stray alpha pixel.
 Locate each scene's broad structural foundation strip. Its visible underside
 must meet or slightly enter the foreground support plane at both zooms. Check

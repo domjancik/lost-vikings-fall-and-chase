@@ -1,1 +1,1 @@
-{"name":"last-call-vikings","version":"1.0.0","type":"module","scripts":{"test":"node --test","dev":"node server.mjs","build":"node build.mjs"},"private":true}
+{"name":"last-call-vikings","version":"1.0.0","type":"module","scripts":{"test":"node --test *.test.js","dev":"node server.mjs","build":"node build.mjs"},"private":true}

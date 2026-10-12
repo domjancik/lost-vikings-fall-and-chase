@@ -1,0 +1,47 @@
+{
+  "nativeCell": 64,
+  "worldCell": 128,
+  "sourceAFactor": 4,
+  "sourceBFactor": 5,
+  "sceneNative": [
+    768,
+    512
+  ],
+  "sceneWorld": [
+    1536,
+    1024
+  ],
+  "sphereRadius": 56,
+  "springPivot": [
+    32,
+    13
+  ],
+  "armPivot": [
+    80,
+    26
+  ],
+  "laserLens": [
+    36,
+    31
+  ],
+  "laserOutlet": [
+    36,
+    35
+  ],
+  "bumperRestFace": [
+    46,
+    47
+  ],
+  "fireballCore": [
+    22,
+    35
+  ],
+  "furnaceCell": 72,
+  "furnaceWorld": 144,
+  "furnaceBase": 72,
+  "furnaceMouth": [
+    18,
+    45
+  ],
+  "furnaceSourceFactor": 8
+}

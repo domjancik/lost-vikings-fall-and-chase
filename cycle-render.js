@@ -1,3 +1,4 @@
+import {drawMomentumWorld} from './momentum-render.js?v=momentum68';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
 import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {cycleGatePose,drawCycleGateField} from './cycle-gate.js?v=gate61';
@@ -12,6 +13,7 @@ const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
+ if(s.level.mechanic==='momentum')return drawMomentumWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='refraction')return drawRefractionWorld(ctx,s,camera,viewport);
  const g=s.machine,c=g.carrier,box=(color,x,y,w,h)=>{ctx.fillStyle=color;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
  box('#172f3a',camera.x,camera.y,viewport.width,viewport.height);

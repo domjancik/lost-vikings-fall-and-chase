@@ -1,9 +1,9 @@
-import {setupCycle,cycleStep} from './cycle-campaign.js?v=refraction62';
+import {setupCycle,cycleStep} from './cycle-campaign.js?v=momentum68';
 import {storyLevels,setupStory,storyStep} from './story-campaign.js?v=support57';
 import {setupVerticalLevel,verticalStep} from './vertical-campaign.js?v=support57';
 import {startBash,bashImpact} from './bash.js?v=arc46';
 import {shieldControls,shieldHit,segmentHit} from './projectile-collision.js?v=arc46';
-import {useInteraction} from './interactions.js?v=refraction62';
+import {useInteraction} from './interactions.js?v=momentum68';
 import {prepareMotion,integrateMotion} from './movement.js?v=support57';
 import {levels} from './levels.js?v=arc46';
 import {campaignStep} from './campaign.js?v=support57';
@@ -47,5 +47,3 @@ export function step(s,input,dt){
  s.shots=s.shots.filter(p=>!p.dead&&p.x>0&&p.x<W&&p.y<655);
  s.won=!s.failed&&s.power&&!s.turret&&s.heroes.every(h=>h.x>1290&&h.y>490&&h.y<610);
 }
-
-

@@ -105,6 +105,22 @@ the stated evidence boundaries. Additional direct push captures may strengthen
 the record but do not change the accepted native art, safety semantics or
 unchanged recovery mechanics.
 
+## Release completion verification
+
+Exact isolated72release excludes later73skin selector and74character experiments.
+Fresh full suite:330passed,0failed. Snapshot initially lacked ignored Python venv
+and pixel-art-fixer submodule code; tests were rerun after supplying these existing
+validator dependencies, without changing production code. Native64rotation
+validator and21focused tests pass. Fresh ordinary browser route clears with
+HP3for all three,126.8167simulationseconds, losses[], pageerrors[], and Enter
+continuation. Direct push roots387.781→402.017→413.747 advance with wheel
+486.25→501.507→513.351 while shield-front and grounded, supporting no-recoil
+regression. Implementation committed78a6fa2.
+Live verification completed:8deployed runtime/art files match the reviewed
+release byte-for-byte after normalizing only hosting social-preview tags.
+Live production browser loaded new ball atlas and rendered desktop/mobile with
+pageerrors[]. Captures output/playwright/momentum72-live{,-mobile}.png.
+
 ### Direct push supplement
 
 Independently inspected momentum72-push-486/500/512 and500-mobile. The front

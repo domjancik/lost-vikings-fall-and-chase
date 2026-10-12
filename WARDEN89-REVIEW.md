@@ -282,3 +282,21 @@ actualnormalcontrol completion and focused recovery/hazard/contact coverage are
 now accepted. No remaining Warden blocker was found in this review. Root still
 must verify frozen/live deployment bytes and final livebrowser success before
 claiming publication complete; this critique does not attest an unseen livebuild.
+
+## Publication verification — 2026-10-13 (root)
+
+Implemented and committed in99c3176. Root test suite:379passed,0failed.
+The frozen Imagegen88-based release preserves unchanged baseline modules;
+its normal and recovery routes at60/120Hz finish withHP3/3/3.
+
+Published through the existing here.now CLI/API publisher. Twelve deployment
+files verified against the frozen release: JavaScript, PNGs and registration
+JSON match byte-for-byte. The complete HTML matches after removing only the
+five observed here.now-injected sharing metadata tags; no game content is
+excluded from comparison. Evidence:output/warden89/live-hashes.json.
+
+Actual live Chrome playthrough using keyboard controls completed won=true,
+HP3/3/3,time70.94166666666919,errors[]. Restart and Enter continuation both
+passed. Actual desktop1x/2x and mobile1x/2x captures are preserved under
+output/warden89/live-*.png; route evidence:live-browser-route.json.
+Play:https://united-marsh-6ppd.here.now/?skin=imagegen88&campaign=cycle&puzzle=warden&release=89

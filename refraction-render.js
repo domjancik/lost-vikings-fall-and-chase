@@ -1,3 +1,4 @@
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from './depth-render94.js?v=depth94';
 import {backdropY} from './vertical-parallax.js?v=vertical65';
 import {refractionArt} from './refraction-art-layout.js?v=refraction62';
 import {refractionBeam} from './refraction-campaign.js?v=vikings70';
@@ -27,6 +28,7 @@ export function drawRefractionWorld(ctx,s,camera,viewport){
  ctx.fillStyle='#151b38';ctx.fillRect(camera.x,camera.y,viewport.width,viewport.height);
  const background={x:snapPixel(camera.x*.12),y:backdropY(camera.y,900-refractionArt.sceneFloor*2),verticalSpeed:.22,width:2800,height:refractionArt.sceneSize[1]*2};
  if(scene.complete&&scene.naturalWidth){ctx.save();ctx.filter='brightness(.72)';ctx.drawImage(scene,background.x,background.y,background.width,background.height);ctx.restore();}
+ const decor=drawDepthMidground(ctx,s);
  // Structural sprites extend from each complete deck to an actual lower surface.
  for(const p of s.level.platforms)for(const x of [p.x+16,p.x+p.w-32]){
   const floor=surfaces.filter(f=>f.y>p.y&&x>=f.x&&x<=f.x+f.w).sort((a,b)=>a.y-b.y)[0];
@@ -36,6 +38,7 @@ export function drawRefractionWorld(ctx,s,camera,viewport){
  for(const c of refractionConnections)drawConnection(ctx,c.points,c.style,{time:s.time});
  for(const p of s.level.floors)drawTerrain(ctx,{round:2,campaign:'story'},p.x,p.y,p.w,120);
  for(const p of s.level.platforms)drawTerrain(ctx,{round:2,campaign:'story'},p.x,p.y,p.w,24);
+ drawDepthWallFaces(ctx,s);
  const add=(name,atlas,n,rect)=>{const contact=atlas.drawGrounded(ctx,n,rect,surfaces);if(contact)contacts.push({name,bottom:contact.visibleBottom,surface:contact.surface.y,gap:contact.surface.y-contact.visibleBottom});};
  add('emitter',emitter,0,{x:192,y:772,w:128,h:128});
  add('fan',machines,g.draft?Math.floor(s.time*10)%4:0,{x:664,y:772,w:128,h:128});
@@ -63,5 +66,5 @@ export function drawRefractionWorld(ctx,s,camera,viewport){
  }
  const portal={x:2536,y:332,w:128,h:128,active:s.power,glow:s.power?.75+.15*Math.sin(Math.floor(s.time*12)*.3):0,frame:Math.floor(s.time*12),aperture:{x:2600,y:406,w:40,h:80}};
  drawCycleGateField(ctx,portal);add('gate',gate,0,portal);
- return{ready:connectionsReady()&&[scene,plate,base,lift,machines.image,emitter.image,gate.image].every(i=>i.complete&&i.naturalWidth),background,contacts,beams,poses:g.poses,charge:g.charge,lift:{x:snapPixel(g.carrier.x),y:snapPixel(g.carrier.y),rim:snapPixel(g.carrier.y)},draft:g.draft};
+ return{decor,ready:depthReady()&&connectionsReady()&&[scene,plate,base,lift,machines.image,emitter.image,gate.image].every(i=>i.complete&&i.naturalWidth),background,contacts,beams,poses:g.poses,charge:g.charge,lift:{x:snapPixel(g.carrier.x),y:snapPixel(g.carrier.y),rim:snapPixel(g.carrier.y)},draft:g.draft};
 }

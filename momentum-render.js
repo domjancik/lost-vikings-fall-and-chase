@@ -1,3 +1,4 @@
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from './depth-render94.js?v=depth94';
 import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './momentum-campaign.js?v=momentum72';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
@@ -24,6 +25,7 @@ export function drawMomentumWorld(ctx,s,camera,viewport){
  ctx.fillStyle='#142a31';ctx.fillRect(camera.x,camera.y,viewport.width,viewport.height);
  const background={x:snapPixel(camera.x*.78),y:backdropY(camera.y,0),width:1536,height:1024,verticalSpeed:.22};
  if(scene.complete&&scene.naturalWidth){ctx.save();ctx.filter='brightness(.62)';for(let x=background.x-1536;x<camera.x+viewport.width;x+=1536)ctx.drawImage(scene,x,background.y,1536,1024);ctx.restore();}
+ const decor=drawDepthMidground(ctx,s);
  // Piers always connect deck undersides to a real lower footing.
  for(const p of s.level.platforms)for(const x of [p.x+18,p.x+p.w-26]){const f=surfaces.filter(f=>f.y>p.y&&x>=f.x&&x<=f.x+f.w).sort((a,b)=>a.y-b.y)[0];if(f)drawConnection(ctx,[[x,p.y+22],[x,f.y]],'rail');}
  for(const branch of ['upper','lower']){const rail=curvedRail(branch);if(rail){ctx.save();ctx.filter=branch===b.branch&&b.mode!=='cradle'?'brightness(1.4)':'brightness(.7)';ctx.drawImage(rail,0,0,3400,1280);ctx.restore();}}
@@ -31,6 +33,7 @@ export function drawMomentumWorld(ctx,s,camera,viewport){
  drawConnection(ctx,[[680,1120],[680,664],[480,664]],'rail');drawConnection(ctx,[[520,1100],[1520,1100]],'rail');
  for(const p of s.level.floors)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,160);
  for(const p of s.level.platforms)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,24);
+ drawDepthWallFaces(ctx,s);
  if(ladder.complete&&ladder.naturalWidth)for(const l of s.level.ladders)for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);ctx.drawImage(ladder,0,0,24,h/2,snapPixel(l.x-24),snapPixel(y),48,snapPixel(h));}
  if(tiles.complete&&tiles.naturalWidth)for(const t of g.tiles){const n=t.t===0?0:t.t<.45?1:t.t<.9?2:3;ctx.drawImage(tiles,n*40,0,40,32,t.x,snapPixel(t.y+(t.t<.9?Math.min(2,t.t*2):t.drop)),80,64);}
  // The striker's spring pedestal rests on a connected service post.
@@ -56,5 +59,5 @@ export function drawMomentumWorld(ctx,s,camera,viewport){
  if(lift.complete&&lift.naturalWidth){const c=g.carrier,p=momentumLiftPlacement(c),y=snapPixel(p.y);for(const [sx,sw,dx,dw]of [[0,16,0,32],[16,32,32,64],[16,26,96,52],[48,16,148,32]])ctx.drawImage(lift,sx,0,sw,64,c.x+dx,y,dw,128);}
  drawConnection(ctx,[[2940,1120],[2940,220],[3060,220],[3060,1120]],'rail');
  const portal={x:3196,y:380,w:128,h:128,active:g.safety,glow:g.safety?.8:0,frame:Math.floor(s.time*12),aperture:{x:3260,y:454,w:40,h:80}};drawCycleGateField(ctx,portal);gate.drawGrounded(ctx,0,portal,surfaces);
- return {ready:connectionsReady()&&[rollingBall.image,relay.image,hazards.image,furnace.image,bumper.image,gate.image,scene,tiles,arm,ladder,lift].every(i=>i.complete&&i.naturalWidth),background,contacts,guide:g.guide,laser:phase,ball:{...b},fireballs:s.shots.filter(p=>p.kind==='fire').map(p=>({x:p.x,y:p.y,age:p.age})),lift:{x:g.carrier.x,y:g.carrier.y}};
+ return {decor,ready:depthReady()&&connectionsReady()&&[rollingBall.image,relay.image,hazards.image,furnace.image,bumper.image,gate.image,scene,tiles,arm,ladder,lift].every(i=>i.complete&&i.naturalWidth),background,contacts,guide:g.guide,laser:phase,ball:{...b},fireballs:s.shots.filter(p=>p.kind==='fire').map(p=>({x:p.x,y:p.y,age:p.age})),lift:{x:g.carrier.x,y:g.carrier.y}};
 }

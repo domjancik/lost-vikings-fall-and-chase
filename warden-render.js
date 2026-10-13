@@ -1,3 +1,4 @@
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from './depth-render94.js?v=depth94';
 import {laserTrace} from './warden-combat.js?v=warden91';
 import {wardenGeometry,WARDEN_TRACK} from './warden-campaign.js?v=warden89';
 import {WARDEN_ART as A} from './warden-art89.js?v=warden89';
@@ -44,6 +45,7 @@ function cargo(c,s,p){
 export function drawWardenWorld(c,s,camera,viewport){
  const g=s.machine,p=wardenGeometry(s);c.fillStyle='#0b1925';c.fillRect(camera.x,camera.y,viewport.width,viewport.height);c.save();c.filter='saturate(.62) brightness(.88)';
  if(scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,x=q(camera.x*.72+Math.max(0,(viewport.width-w)/2));c.drawImage(scene,x,q(1200-h+camera.y*.15),w,h);}
+ const decor=drawDepthMidground(c,s);
  const floors=[...s.level.floors,...s.level.platforms];
  // Every steel pier runs from its platform to a real lower foundation.
  for(const platform of s.level.platforms)for(const x of [platform.x+20,platform.x+platform.w-24]){const base=s.level.floors.find(f=>f.y>platform.y&&x>=f.x&&x<=f.x+f.w);if(base)drawConnection(c,[[x,platform.y+20],[x,base.y]],'rail');}
@@ -52,6 +54,7 @@ export function drawWardenWorld(c,s,camera,viewport){
  drawConnection(c,WARDEN_TRACK.map(([x,y])=>[x+150,y+58]),'rail');
  for(const x of [2060,2120])drawConnection(c,[[x,558],[x,1120]],'rail');
  for(const f of s.level.platforms)drawTerrain(c,{round:5,campaign:'story'},f.x,f.y,f.w,20);
+ drawDepthWallFaces(c,s);
  ladders(c,s);
  for(const l of p.legs){c.fillStyle='#081017';c.fillRect(q(l.foot.x-42),938,84,4);if(l.far)limb(c,l);}
  sprite(c,'body',p.body.x,p.body.y,p.body.angle,[0,14]);
@@ -82,5 +85,5 @@ export function drawWardenWorld(c,s,camera,viewport){
 
  const slamAge=s.time-(g.slamAt??-10);if(slamAge<.45)for(let n=0;n<10;n++){const x=g.footX+(n-5)*12*slamAge*4,y=938-Math.sin(n*2.1)*slamAge*45+slamAge*slamAge*130;c.fillStyle=n%2?'#a48b65':'#63746e';c.fillRect(q(x),q(Math.min(938,y)),4,4);}
  const age=s.time-g.disabledAt;if(g.disabled&&age<1.2)for(let n=0;n<14;n++){const t=age+n*.03,x=1724+Math.cos(n*2.4)*t*95,y=p.eye.y+Math.sin(n*2.4)*t*80+120*t*t;c.fillStyle=n%2?'#d6ae58':'#80dad8';c.fillRect(q(x),q(y),4,4);}
- return {ready:!!(emitter.naturalWidth&&plunger.naturalWidth&&parts.naturalWidth&&scene.naturalWidth&&brokenLens.naturalWidth&&ladder.naturalWidth&&tower.image.naturalWidth&&gate.image.naturalWidth&&connectionsReady()),legs:p.legs,spine:p.spine,eye:p.eye,emitter:p.emitter,plunger:p.plunger,cargo:p.cargo,shutter:g.shutter,capFrame,sourceDensity:'512native component atlas and960native-width archive; one native pixel=2world units',contacts:p.legs.map(l=>({id:l.id,sole:l.foot.y,surface:l.id===g.activeLeg&&g.braced?860:940}))};
+ return {decor,ready:depthReady()&&!!(emitter.naturalWidth&&plunger.naturalWidth&&parts.naturalWidth&&scene.naturalWidth&&brokenLens.naturalWidth&&ladder.naturalWidth&&tower.image.naturalWidth&&gate.image.naturalWidth&&connectionsReady()),legs:p.legs,spine:p.spine,eye:p.eye,emitter:p.emitter,plunger:p.plunger,cargo:p.cargo,shutter:g.shutter,capFrame,sourceDensity:'512native component atlas and960native-width archive; one native pixel=2world units',contacts:p.legs.map(l=>({id:l.id,sole:l.foot.y,surface:l.id===g.activeLeg&&g.braced?860:940}))};
 }

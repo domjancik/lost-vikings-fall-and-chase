@@ -1,0 +1,362 @@
+{
+  "raw": "a-raw-v1.png",
+  "nativeSize": [
+    256,
+    192
+  ],
+  "cell": [
+    64,
+    64
+  ],
+  "pixelWorld": 2,
+  "records": [
+    {
+      "row": 0,
+      "column": 0,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        113,
+        46,
+        273,
+        342
+      ],
+      "sourceComponent": 2,
+      "nativeBounds": [
+        18,
+        10,
+        46,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        12.0,
+        0,
+        5.65625,
+        -8.6875
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 0,
+      "column": 1,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        407,
+        238,
+        680,
+        342
+      ],
+      "sourceComponent": 4,
+      "nativeBounds": [
+        8,
+        44,
+        56,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        362.5,
+        0,
+        5.65625,
+        -8.6875
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 0,
+      "column": 2,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        786,
+        106,
+        1013,
+        334
+      ],
+      "sourceComponent": 3,
+      "nativeBounds": [
+        12,
+        22,
+        52,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        718.5,
+        0,
+        5.65625,
+        -16.6875
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 0,
+      "column": 3,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        1097,
+        29,
+        1416,
+        342
+      ],
+      "sourceComponent": 1,
+      "nativeBounds": [
+        4,
+        7,
+        60,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        1075.5,
+        0,
+        5.65625,
+        -8.6875
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 1,
+      "column": 0,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        113,
+        398,
+        273,
+        696
+      ],
+      "sourceComponent": 6,
+      "nativeBounds": [
+        18,
+        9,
+        46,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        12.0,
+        0,
+        5.65625,
+        345.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 1,
+      "column": 1,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        406,
+        591,
+        680,
+        696
+      ],
+      "sourceComponent": 8,
+      "nativeBounds": [
+        8,
+        43,
+        56,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        362.0,
+        0,
+        5.65625,
+        345.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        786,
+        459,
+        1013,
+        688
+      ],
+      "sourceComponent": 7,
+      "nativeBounds": [
+        12,
+        22,
+        52,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        718.5,
+        0,
+        5.65625,
+        337.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        1097,
+        385,
+        1416,
+        696
+      ],
+      "sourceComponent": 5,
+      "nativeBounds": [
+        4,
+        7,
+        60,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        1075.5,
+        0,
+        5.65625,
+        345.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 2,
+      "column": 0,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        113,
+        746,
+        273,
+        1038
+      ],
+      "sourceComponent": 10,
+      "nativeBounds": [
+        18,
+        10,
+        46,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        12.0,
+        0,
+        5.65625,
+        687.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        406,
+        926,
+        680,
+        1032
+      ],
+      "sourceComponent": 12,
+      "nativeBounds": [
+        8,
+        43,
+        56,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        362.0,
+        0,
+        5.65625,
+        681.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        786,
+        796,
+        1013,
+        1026
+      ],
+      "sourceComponent": 11,
+      "nativeBounds": [
+        12,
+        21,
+        52,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        718.5,
+        0,
+        5.65625,
+        675.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "raw": "a-raw-v1.png",
+      "sourceBounds": [
+        1097,
+        733,
+        1416,
+        1039
+      ],
+      "sourceComponent": 9,
+      "nativeBounds": [
+        4,
+        8,
+        60,
+        62
+      ],
+      "uniformSourcePixelsPerNative": 5.65625,
+      "transform": [
+        5.65625,
+        0,
+        1075.5,
+        0,
+        5.65625,
+        688.3125
+      ],
+      "originalExteriorMattePixelsRemoved": 0,
+      "baselineExclusive": 62
+    }
+  ]
+}

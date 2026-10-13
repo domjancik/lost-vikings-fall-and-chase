@@ -1,0 +1,25 @@
+{
+  "review": "DEPTH94-REVIEW.md",
+  "reviewer": "independent critique agent",
+  "nativePixelWorldUnits": 2,
+  "scope": "Decorative midground sprites and wall tile variation in the latest six machine/cycle campaign levels; looks only.",
+  "targets": { "atlasA": { "native": [256, 192], "cell": [64, 64], "rows": ["Cycle", "Refraction", "Momentum"] }, "atlasB": { "native": [256, 192], "cell": [64, 64], "rows": ["Clockwork", "Water", "Warden"] }, "pipeWorldHeight": 108, "rackWorldHeight": 40, "grilleWorldHeight": 80, "wallTileNativeCrop": [54, 52], "wallTileWorld": [108, 104], "groundBaseNative": 62 },
+  "sourceGate": {
+    "verdict": "accept",
+    "evidence": ["assets/depth94/guide-native.png", "assets/depth94/a-raw-v1.png", "assets/depth94/a-native-proof-v1.png", "assets/depth94/b-raw-v1.png", "assets/depth94/b-native-proof-v1.png", "assets/depth94/b-raw-v2.png", "assets/depth94/b-native-proof-v2.png"],
+    "assets": { "atlasAv1": { "verdict": "accept", "reason": "Broad flat deliberate clusters and readable structures survive native size; processing/runtime still pending." }, "atlasBv1": { "verdict": "fail", "reason": "Dense mottled checker/rust/moss texture collapses into scattered flecks at 64px, especially on pipes and quiet wall tiles. Regenerate broad flat planes; do not quantize-rescue." }, "atlasBv2": { "verdict": "accept", "reason": "Broad flat iron planes, contiguous corrosion shapes and clear courses/slats/spares preserve deliberate native density." } },
+    "reason": "Selected A v1 and B v2 accepted; rejected B v1 retained but excluded."
+  },
+  "runtimeGate": {
+    "verdict": "accept",
+    "evidence": ["assets/depth94/a-native.png", "assets/depth94/a-native-4x.png", "assets/depth94/b-native.png", "assets/depth94/b-native-4x.png", "assets/depth94/a-registration.json", "assets/depth94/b-registration.json", "output/depth94/cycle-contacts.png", "output/depth94/refraction-contacts.png", "output/depth94/momentum-contacts.png", "output/depth94/clockwork-contacts.png", "output/depth94/water-contacts.png", "output/depth94/warden-contacts.png", "output/depth94/evidence.json"],
+    "normalCapturePattern": "output/playwright/depth94-{cycle,refraction,momentum,clockwork,water,warden}-normal-{1440,390}-{1,2}x.png",
+    "normalCapturesReviewed": 24,
+    "diagnosticScope": "Unscaled crops of every authored static decoration/wall patch from paused production renderer with camera-only pans, 2x; no entity or state edits.",
+    "reason": "Processed/native silhouettes and alpha preserve accepted art. All six levels show opaque contact, adult scale, quiet materials, preserved interactive readability and intact wall faces at desktop/mobile 1x/2x."
+  },
+  "verification": { "manifest": "output/depth94/evidence.json", "captures": 97, "rooms": 6, "browserErrors": [], "initialErrors": "Both initial 404s exclusively local unused favicon.ico; server corrected to 204 and full survey repeated clean." },
+  "retainedEvidenceDirectory": "assets/depth94/review/",
+  "publicationAllowed": true,
+  "publicationScope": "Selected A v1 and B v2 decorative-only atlas/placements; verify live asset identity and gameplay after publication."
+}

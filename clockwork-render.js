@@ -1,3 +1,4 @@
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from './depth-render94.js?v=depth94';
 import {CLOCK_RADIUS,clockRail,clockLiftPlacement,clockCatchPose,clockGearCenters,clockGearPath,steamPhase} from './clockwork-campaign.js?v=clockwork71';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
@@ -29,6 +30,7 @@ function ramp(){if(tracks.has(0))return tracks.get(0);if(!connection.complete)re
 export function drawClockworkWorld(ctx,s,camera,viewport){const g=s.machine,b=g.wheel,h=g.half;
  ctx.fillStyle='#14292f';ctx.fillRect(camera.x,camera.y,viewport.width,viewport.height);
  if(scene.complete&&scene.naturalWidth){ctx.save();ctx.filter='brightness(.5)';const x=snapPixel(camera.x*.8),y=snapPixel(camera.y*.6);for(let n=x-1536;n<camera.x+viewport.width;n+=1536)ctx.drawImage(scene,n,y,1536,1024);ctx.restore();}
+ const decor=drawDepthMidground(ctx,s);
  const floors=[...s.level.floors,...s.level.platforms];
  for(const p of s.level.platforms)for(const x of [p.x+18,p.x+p.w-24]){const base=floors.filter(f=>f.y>p.y&&x>=f.x&&x<=f.x+f.w).sort((a,b)=>a.y-b.y)[0];if(base)drawConnection(ctx,[[x,p.y+24],[x,base.y]],'rail');}
  for(const p of s.level.floors)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,140);
@@ -49,6 +51,7 @@ export function drawClockworkWorld(ctx,s,camera,viewport){const g=s.machine,b=g.
  const dockFrame=g.pinBroken?(g.collapse<.33?2:g.collapse<.66?1:g.collapse<.9?0:3):b.mode==='docked'?2:b.mode==='docking'?Math.min(2,Math.floor(b.dockT*4)):0;
  dock.draw(ctx,dockFrame,2300,616,320,448);
  for(const p of s.level.platforms)drawTerrain(ctx,{round:5,campaign:'story'},p.x,p.y,p.w,24);
+ drawDepthWallFaces(ctx,s);
  tower.drawGrounded(ctx,Math.min(3,Math.floor(g.windPose*4)),{x:366,y:188,w:128,h:192},floors);
  if(ladder.complete&&ladder.naturalWidth)for(const l of s.level.ladders)for(let y=l.top;y<l.bottom;y+=26){const ht=Math.min(26,l.bottom-y);ctx.drawImage(ladder,0,0,24,ht/2,l.x-24,snapPixel(y),48,snapPixel(ht));}
  // An arched support and its ceiling flange hold the hanging chain.
@@ -71,7 +74,7 @@ export function drawClockworkWorld(ctx,s,camera,viewport){const g=s.machine,b=g.
  // Remote retaining stem belongs to the same mechanically connected ratchet.
  drawConnection(ctx,[[2830,510],[2780,510]],'cable');const pinFrame=g.pinBroken?Math.min(3,1+Math.floor(g.collapse*3)):0;pin.draw(ctx,pinFrame,2798,418,64,112);
  const pose={x:3026,y:402,w:128,h:128,active:g.exitLatched,frame:Math.floor(s.time*12),glow:.65+.2*Math.sin(s.time*4),aperture:{x:3090,y:476,w:40,h:80}};drawCycleGateField(ctx,pose);gate.drawGrounded(ctx,0,pose,floors);
- return{ready:connectionsReady()&&[tower.image,parts.image,machine.image,dock.image,pin.image,gate.image,scene,catchArt,ladder,lift].every(i=>i.complete&&i.naturalWidth),half:{...h},wheel:{...b},dockFrame,pinFrame,catch:catchPose,drive:g.drive,split:b.occupied&&b.mode==='docked'&&s.active===0&&!g.pinBroken,steam:steam?phase:'off',contacts:[{name:'wheel',radius:CLOCK_RADIUS,center:[b.x,b.y]},{name:'carriage',rim:g.carrier.y},{name:'spring',rim:920,base:1004},{name:'housing',base:1002},{name:'pin',base:530}]};
+ return{decor,ready:depthReady()&&connectionsReady()&&[tower.image,parts.image,machine.image,dock.image,pin.image,gate.image,scene,catchArt,ladder,lift].every(i=>i.complete&&i.naturalWidth),half:{...h},wheel:{...b},dockFrame,pinFrame,catch:catchPose,drive:g.drive,split:b.occupied&&b.mode==='docked'&&s.active===0&&!g.pinBroken,steam:steam?phase:'off',contacts:[{name:'wheel',radius:CLOCK_RADIUS,center:[b.x,b.y]},{name:'carriage',rim:g.carrier.y},{name:'spring',rim:920,base:1004},{name:'housing',base:1002},{name:'pin',base:530}]};
 }
 const inset=document.createElement('canvas');inset.width=120;inset.height=110;
 export function drawClockworkInset(ctx,s,view){if(!view.split)return;const g=inset.getContext('2d');g.imageSmoothingEnabled=false;g.setTransform(.5,0,0,.5,-view.runner.x*.5,-view.runner.y*.5);drawClockworkWorld(g,s,{x:view.runner.x,y:view.runner.y},view.runner);const e=s.heroes[0];drawSprite(g,e,e.x,e.y);

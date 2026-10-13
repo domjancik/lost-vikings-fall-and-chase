@@ -23,6 +23,13 @@ test('laser warning locks before firing and a platform occludes the beam',()=>{
  const eye=wardenGeometry(s).eye;s.level={...s.level,platforms:[{x:1400,y:800,w:300}]};
  const trace=laserTrace(s,eye,{x:1600,y:930});assert.equal(trace.kind,'terrain');assert.ok(trace.y<=820);
 });
+test('the visible height of a shockwave reaches the angled native shield before the body',()=>{
+ const s=createState(5,'cycle'),o=s.heroes[2];
+ Object.assign(o,{x:872.4375,y:896,face:1,shield:true,shieldUp:false,skin:'imagegen88',shieldArtPose:{x:28.675,y:7.6475,rx:16.970562748477143,ry:24,roll:-Math.PI/22.5,mode:'front'}});
+ s.machine.waves=[{x:910,dir:-1,age:0}];
+ for(let i=0;i<25;i++)stepWardenCombat(s,1/60);
+ assert.equal(o.hp,3);assert.equal(s.machine.waves.length,0);
+});
 test('firing damages an exposed intruder but an overhead shield intercepts a descending beam',()=>{
  const s=createState(5,'cycle');const h=s.heroes[0];Object.assign(h,{x:1500,y:896});
  Object.assign(s.machine,{engaged:true,laser:{phase:'fire',age:0,target:{x:1500,y:918}}});

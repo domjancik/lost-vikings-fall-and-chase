@@ -54,3 +54,23 @@ gait captures, eight moving-rider phases, reversed and desktop/mobile1x/2x
 views. Evidence sheets: `output/v90-independent-overhead-contacts.png` and
 `output/v90-independent-rider-contacts.png`. It inspected actual pixels and
 made no code, art or gate-log changes.
+
+## Published verification
+
+Published the complete reviewed skin to the existing here.now site.
+All79selected Viking90 and retained Warden91 files matched the frozen build
+(`output/vikings90-live-hashes.json`; only the documented bounded here.now HTML
+metadata normalization applies).
+
+Live gallery: all three heroes/action bindings pass, no browser errors, and
+mobile native/display widths remain340/340
+(`output/viking-gallery90-live/evidence.json`).
+
+Live Warden with `skin=imagegen90`: won, HP3/3/3, simulation time99.0000;
+restart and Enter continuation pass, no browser errors. Actual desktop/mobile
+1x/2x brace, machine and carrier captures are retained alongside
+`output/vikings90-warden-live/live-browser-route.json`.
+
+Play: https://united-marsh-6ppd.here.now/?skin=imagegen90&release=90
+
+Full set: https://united-marsh-6ppd.here.now/viking-gallery90.html?release=90

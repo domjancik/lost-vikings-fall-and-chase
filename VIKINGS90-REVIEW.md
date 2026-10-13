@@ -1,5 +1,11 @@
 # Vikings90 independent movement review
 
+Final status,14October: the selected whole-pose Imagegen implementation passed
+separate source/native and processed/gameplay gates for all three heroes.
+See [the final cycle verdicts](VIKINGS90-CYCLE-REVIEW.md) and
+[verification evidence](VIKINGS90-VERIFICATION.md). The rejected deformation
+experiments below remain as historical records; they are not the published skin.
+
 Reviewer scope: guide anatomy/motion before image generation, then retained raw
 render, processed native output and actual gameplay. Implementation and asset
 authoring belong to the lead. Applied skills/native-sprite-art/SKILL.md and

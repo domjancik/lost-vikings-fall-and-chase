@@ -13,8 +13,13 @@ Right-facing front-three-quarter: camera-near attachments project to the left,
 far attachments right. Preserve distinct limb identities through contact,
 compression, passing, rear push-off, fold and forward recovery. Each anatomical
 leg must complete its front/back sweep; there must be no7→0 root snap. Register
-whole actors by a reviewed helmet/core landmark, never their changing alpha
-silhouette or moving boot. Retain guide bob rather than flattening the cycle.
+whole actors by reviewed anatomical landmarks, never their changing alpha
+silhouette. Grounded ordinary Olaf uses helmet X and explicitly authored
+near/far planted-sole Y; raised poses retain the fixed shield support plane.
+Preserve the source's native core movement while keeping contacts grounded.
+Guides constrain anatomical routes; their head bob must not be imposed as a
+whole-image Y offset that also lifts the source's planted boot. Review the
+resulting modest head excursion and loop seam in actual gameplay.
 
 Climbing faces the ladder. Clothes, armor and skin keep their material assignment
 on each limb across all grips, including Olaf's overhead climb. Near/far shading

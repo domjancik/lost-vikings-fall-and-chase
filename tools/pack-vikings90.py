@@ -47,10 +47,20 @@ def main():
   raw=Image.open(path).convert('RGBA');native=raw.resize((64,64),Image.Resampling.NEAREST)
   anchor=shield_support if f['action'].startswith('overhead')else helmet
   sourceAnchor,sourceBounds=anchor(native);g=guide.crop((i%8*64,i//8*64,i%8*64+64,i//8*64+64));targetAnchor,targetBounds=anchor(g)
-  shift=[round(t-s)for t,s in zip(targetAnchor,sourceAnchor)];clean=np.array(native);clean[:,:,3]=np.where(clean[:,:,3]>=128,255,0);clean[clean[:,:,3]==0,:3]=0;nativeClean=Image.fromarray(clean)
+  shift=[round(t-s)for t,s in zip(targetAnchor,sourceAnchor)];contact=None
+  if hero=='olaf' and f['action']=='walk':
+   contacts=json.loads((OUT/'olaf-ground-contacts.json').read_text());contact=contacts['phases'][f['phase']]
+   # The generated whole pose already has its own articulated core movement.
+   # Applying the guide's head bob to every pixel also lifts its planted boot.
+   # Register the reviewed anatomical support sole, not an alpha-box boundary.
+   shift[1]=contacts['nativeGroundSoleExclusive']-contact['sourceSoleExclusive']
+  clean=np.array(native);clean[:,:,3]=np.where(clean[:,:,3]>=128,255,0);clean[clean[:,:,3]==0,:3]=0;nativeClean=Image.fromarray(clean)
   cell=Image.new('RGBA',(80,80));cell.alpha_composite(nativeClean,(8+shift[0],8+shift[1]));processed.append(cell);sources.append(native)
   atlas.paste(cell,(f['cell']%8*80,f['cell']//8*80))
   records.append({'cell':f['cell'],'action':f['action'],'phase':f['phase'],'source':path.name,'sourceSize':list(raw.size),'nativeCell':[64,64],'scale':[raw.width/64,raw.height/64],'registration':'wholeactor integer raised-disc support-plane translation'if anchor==shield_support else'wholeactor integer steel-dome/core translation, not alpha/boot fitting','sourceAnchor':sourceAnchor,'sourceAnchorBounds':sourceBounds,'targetAnchor':targetAnchor,'targetAnchorBounds':targetBounds,'translation':shift,'nativeBounds':cell.getbbox()})
+  if contact:
+   records[-1]['registration']='wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting'
+   records[-1]['authoredContact']=contact
  cols=8;rows=math.ceil(len(processed)/8);sheet=Image.new('RGBA',(cols*80,rows*80),'#263746');comparison=Image.new('RGBA',(cols*80,rows*160),'#263746')
  for i,(source,cell)in enumerate(zip(sources,processed)):
   sheet.alpha_composite(cell,(i%8*80,i//8*80));comparison.alpha_composite(source,(i%8*80+8,i//8*160+8));comparison.alpha_composite(cell,(i%8*80,i//8*160+80))

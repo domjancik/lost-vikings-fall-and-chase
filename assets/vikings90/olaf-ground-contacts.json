@@ -1,0 +1,14 @@
+{
+  "policy": "Authored planted-sole registration of complete ordinary walk sources; no alpha-box fitting or rescaling",
+  "nativeGroundSoleExclusive": 62,
+  "phases": [
+    {"phase":0,"sourceSoleExclusive":63,"plantedPixel":[30,62],"limb":"nearLeg","contact":"heel"},
+    {"phase":1,"sourceSoleExclusive":63,"plantedPixel":[30,62],"limb":"nearLeg","contact":"compression"},
+    {"phase":2,"sourceSoleExclusive":63,"plantedPixel":[31,62],"limb":"nearLeg","contact":"passing support"},
+    {"phase":3,"sourceSoleExclusive":63,"plantedPixel":[30,62],"limb":"nearLeg","contact":"rear push-off"},
+    {"phase":4,"sourceSoleExclusive":62,"plantedPixel":[39,61],"limb":"farLeg","contact":"heel"},
+    {"phase":5,"sourceSoleExclusive":62,"plantedPixel":[36,61],"limb":"farLeg","contact":"compression"},
+    {"phase":6,"sourceSoleExclusive":63,"plantedPixel":[33,62],"limb":"farLeg","contact":"passing support"},
+    {"phase":7,"sourceSoleExclusive":63,"plantedPixel":[39,62],"limb":"farLeg","contact":"rear push-off"}
+  ]
+}

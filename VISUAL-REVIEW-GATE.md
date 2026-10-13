@@ -125,6 +125,11 @@ Climbing faces the ladder, advances with actual vertical travel, freezes at the
 last reached grip and reverses without resetting. Do not register from the lowest
 moving boot. Inspect alternating left/right reaches, stopped poses and equipment
 in both shield states. A raised shield must retain its physical rider plane.
+Track each limb's cloth, armor, skin and trouser palette through every grip:
+lifting/crossing a limb must not exchange its material with the other limb.
+Keep near/far shading attached to anatomical identity, including rear views;
+inspect adjacent frames and complete loops for color pops. Brown trousers need
+brown highlights, rather than slate patches that imply a costume change.
 Inspect floating rise, glide and braking separately; register supporting palms
 to the unchanged shield underside rather than aligning dangling feet. Include
 mobile evidence and passenger soles when a pose can carry another Viking.

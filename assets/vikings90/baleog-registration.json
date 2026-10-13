@@ -1,0 +1,595 @@
+{
+  "originalWholePoseSource": "assets/vikings88/baleog-native.png (unchanged cells)",
+  "replacementRecords": [
+    {
+      "cell": 0,
+      "action": "walk",
+      "phase": 0,
+      "source": "baleog-walk-0-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        27,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        1
+      ],
+      "nativeBounds": [
+        28,
+        33,
+        54,
+        71
+      ]
+    },
+    {
+      "cell": 1,
+      "action": "walk",
+      "phase": 1,
+      "source": "baleog-walk-1-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        33.0
+      ],
+      "sourceHelmetBounds": [
+        30,
+        31,
+        38,
+        35
+      ],
+      "targetHelmet": [
+        32.5,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        27,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        -2
+      ],
+      "nativeBounds": [
+        31,
+        34,
+        49,
+        64
+      ]
+    },
+    {
+      "cell": 2,
+      "action": "walk",
+      "phase": 2,
+      "source": "baleog-walk-2-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        30.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        25,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "nativeBounds": [
+        29,
+        32,
+        49,
+        70
+      ]
+    },
+    {
+      "cell": 3,
+      "action": "walk",
+      "phase": 3,
+      "source": "baleog-walk-3-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        31.0
+      ],
+      "targetHelmetBounds": [
+        22,
+        26,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "nativeBounds": [
+        29,
+        32,
+        49,
+        70
+      ]
+    },
+    {
+      "cell": 4,
+      "action": "walk",
+      "phase": 4,
+      "source": "baleog-walk-4-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        33.0,
+        28.5
+      ],
+      "sourceHelmetBounds": [
+        28,
+        26,
+        38,
+        31
+      ],
+      "targetHelmet": [
+        32.5,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        27,
+        43,
+        36
+      ],
+      "translation": [
+        0,
+        3
+      ],
+      "nativeBounds": [
+        31,
+        34,
+        50,
+        70
+      ]
+    },
+    {
+      "cell": 5,
+      "action": "walk",
+      "phase": 5,
+      "source": "baleog-walk-5-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        27,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        1
+      ],
+      "nativeBounds": [
+        29,
+        33,
+        49,
+        71
+      ]
+    },
+    {
+      "cell": 6,
+      "action": "walk",
+      "phase": 6,
+      "source": "baleog-walk-6-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        30.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        25,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "nativeBounds": [
+        29,
+        32,
+        49,
+        69
+      ]
+    },
+    {
+      "cell": 7,
+      "action": "walk",
+      "phase": 7,
+      "source": "baleog-walk-7-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        34
+      ],
+      "targetHelmet": [
+        32.5,
+        31.0
+      ],
+      "targetHelmetBounds": [
+        22,
+        26,
+        43,
+        36
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "nativeBounds": [
+        29,
+        32,
+        53,
+        70
+      ]
+    },
+    {
+      "cell": 14,
+      "action": "climb",
+      "phase": 0,
+      "source": "baleog-climb-0-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        34.0,
+        30.0
+      ],
+      "sourceHelmetBounds": [
+        29,
+        27,
+        39,
+        33
+      ],
+      "targetHelmet": [
+        32.0,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        22,
+        27,
+        42,
+        36
+      ],
+      "translation": [
+        -2,
+        2
+      ],
+      "nativeBounds": [
+        28,
+        34,
+        52,
+        72
+      ]
+    },
+    {
+      "cell": 15,
+      "action": "climb",
+      "phase": 1,
+      "source": "baleog-climb-1-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        33.5,
+        29.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        26,
+        38,
+        33
+      ],
+      "targetHelmet": [
+        32.5,
+        31.0
+      ],
+      "targetHelmetBounds": [
+        23,
+        26,
+        42,
+        36
+      ],
+      "translation": [
+        -1,
+        2
+      ],
+      "nativeBounds": [
+        29,
+        34,
+        51,
+        67
+      ]
+    },
+    {
+      "cell": 16,
+      "action": "climb",
+      "phase": 2,
+      "source": "baleog-climb-2-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        32.5,
+        31.5
+      ],
+      "sourceHelmetBounds": [
+        26,
+        27,
+        39,
+        36
+      ],
+      "targetHelmet": [
+        33.0,
+        31.5
+      ],
+      "targetHelmetBounds": [
+        23,
+        27,
+        43,
+        36
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        30,
+        32,
+        52,
+        68
+      ]
+    },
+    {
+      "cell": 17,
+      "action": "climb",
+      "phase": 3,
+      "source": "baleog-climb-3-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        32.5,
+        29.0
+      ],
+      "sourceHelmetBounds": [
+        29,
+        26,
+        36,
+        32
+      ],
+      "targetHelmet": [
+        32.5,
+        31.0
+      ],
+      "targetHelmetBounds": [
+        23,
+        26,
+        42,
+        36
+      ],
+      "translation": [
+        0,
+        2
+      ],
+      "nativeBounds": [
+        30,
+        34,
+        51,
+        66
+      ]
+    }
+  ],
+  "sourceGate": "pending fullcycle review",
+  "runtimeGate": "pending"
+}

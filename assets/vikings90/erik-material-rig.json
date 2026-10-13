@@ -1,0 +1,4425 @@
+{
+  "source": "whole-actor anatomical UV/material rig",
+  "frames": [
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 0,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.37383449591516,
+        0.0
+      ],
+      "chest": [
+        35.1,
+        40.57383449591516,
+        0.0
+      ],
+      "neck": [
+        35.6,
+        34.473834495915156,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.4,
+          36.17383449591516,
+          0.0
+        ],
+        "far": [
+          40.800000000000004,
+          36.17383449591516,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          46.37383449591516,
+          0.0
+        ],
+        "far": [
+          32.8,
+          46.37383449591516,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.1,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            37.2,
+            59.574213278359245,
+            0.0
+          ],
+          "polygon": [
+            [
+              35.77421327835925,
+              58.19322369679358
+            ],
+            [
+              38.06546108397026,
+              57.99276548847397
+            ],
+            [
+              38.8848154124812,
+              59.32642904587905
+            ],
+            [
+              40.72590152755756,
+              59.717455792883726
+            ],
+            [
+              40.79998390889307,
+              60.56422128626171
+            ],
+            [
+              35.81901041843434,
+              61.0
+            ]
+          ],
+          "rollDegrees": -5,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "contact"
+        },
+        "far": {
+          "ankle": [
+            28.4,
+            51.627584815195654,
+            0.6
+          ],
+          "polygon": [
+            [
+              28.195466996950877,
+              49.65320738150581
+            ],
+            [
+              30.07951669881556,
+              50.97243318511321
+            ],
+            [
+              29.84991611892639,
+              52.52074955256353
+            ],
+            [
+              31.008922758653497,
+              54.00372076235436
+            ],
+            [
+              30.521382787755112,
+              54.7
+            ],
+            [
+              26.42562256631015,
+              51.832117818244775
+            ]
+          ],
+          "rollDegrees": 35,
+          "contact": "airborne",
+          "soleExclusive": 55.7,
+          "airbornePixels": 6.3,
+          "phaseFamily": "recovery-fold"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            46.37383449591516,
+            0.0
+          ],
+          "joint": [
+            35.03881907012395,
+            52.75865776260412,
+            0.0
+          ],
+          "end": [
+            37.2,
+            59.574213278359245,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 13.422441484252573,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            46.37383449591516,
+            0.6
+          ],
+          "joint": [
+            35.33181234031974,
+            53.38043326232135,
+            0.6
+          ],
+          "end": [
+            28.4,
+            51.627584815195654,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 124.05807470273047,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.4,
+            36.17383449591516,
+            0.0
+          ],
+          "joint": [
+            25.440202025355333,
+            40.133632470559824,
+            0.0
+          ],
+          "end": [
+            28.163397200430467,
+            44.32698531028694,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 78.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            40.800000000000004,
+            36.17383449591516,
+            0.6
+          ],
+          "joint": [
+            44.75979797464467,
+            40.133632470559824,
+            0.6
+          ],
+          "end": [
+            48.95315081437179,
+            37.41043729548469,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 78.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "contact",
+        "flight": false,
+        "nearFootFamily": "contact",
+        "farFootFamily": "recovery-fold",
+        "bodyCompressionNative": 0.2,
+        "forwardLeanNative": 3.1,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0.17383449591515898,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          35.6,
+          34.573834495915165,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.373834495915162,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                33.79313027281906,
+                27.848121017852257,
+                0.0
+              ],
+              [
+                31.46361822929986,
+                26.095017016630706,
+                0.0
+              ],
+              [
+                32.07556018771331,
+                23.142809869506188,
+                0.0
+              ]
+            ],
+            [
+              [
+                38.76573974966043,
+                28.37076333419052,
+                0.0
+              ],
+              [
+                41.408837182982595,
+                27.140301649307247,
+                0.0
+              ],
+              [
+                41.424066004175074,
+                24.12537742422213,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              35.909109713802366,
+              36.416238139211885,
+              0.0
+            ],
+            [
+              34.188380404749225,
+              38.87369427207886,
+              0.0
+            ],
+            [
+              31.29060292588202,
+              39.650151407386424,
+              0.0
+            ],
+            [
+              28.29243044482473,
+              39.754849897493926,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 0,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        24,
+        26,
+        50,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        24,
+        26,
+        50,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.33,
+          36.63079690872152
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.54579690872153
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 1,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.8,
+        0.0
+      ],
+      "chest": [
+        35.5,
+        40.99999999999999,
+        0.0
+      ],
+      "neck": [
+        36.0,
+        34.89999999999999,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.799999999999997,
+          36.98890872965259,
+          0.0
+        ],
+        "far": [
+          41.2,
+          36.211091270347396,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          46.8,
+          0.0
+        ],
+        "far": [
+          32.8,
+          46.8,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            33.8,
+            59.7,
+            0.0
+          ],
+          "polygon": [
+            [
+              32.5,
+              58.2
+            ],
+            [
+              34.8,
+              58.2
+            ],
+            [
+              35.5,
+              59.6
+            ],
+            [
+              37.3,
+              60.150000000000006
+            ],
+            [
+              37.3,
+              61.0
+            ],
+            [
+              32.3,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "compression"
+        },
+        "far": {
+          "ankle": [
+            31.5,
+            53.61198129924988,
+            0.6
+          ],
+          "polygon": [
+            [
+              30.480222187584527,
+              51.909027038764556
+            ],
+            [
+              32.745280019512606,
+              52.308417847398495
+            ],
+            [
+              33.19153799788745,
+              53.80870242598244
+            ],
+            [
+              34.86868545559261,
+              54.66291340993963
+            ],
+            [
+              34.721084504575714,
+              55.5
+            ],
+            [
+              29.79704573951468,
+              54.63175911166535
+            ]
+          ],
+          "rollDegrees": 10,
+          "contact": "airborne",
+          "soleExclusive": 56.5,
+          "airbornePixels": 5.5,
+          "phaseFamily": "passing"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            46.8,
+            0.0
+          ],
+          "joint": [
+            35.631628581184955,
+            52.78858648751311,
+            0.0
+          ],
+          "end": [
+            33.8,
+            59.7,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 51.34493483288867,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            46.8,
+            0.6
+          ],
+          "joint": [
+            38.39493552594524,
+            51.719267878507516,
+            0.6
+          ],
+          "end": [
+            31.5,
+            53.61198129924988,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 123.32687832056112,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.799999999999997,
+            36.98890872965259,
+            0.0
+          ],
+          "joint": [
+            26.847402563219127,
+            41.747287484681976,
+            0.0
+          ],
+          "end": [
+            30.77868561060381,
+            44.83678802705866,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 83.65685424949238,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            41.2,
+            36.211091270347396,
+            0.6
+          ],
+          "joint": [
+            44.15259743678087,
+            40.96947002537678,
+            0.6
+          ],
+          "end": [
+            49.00061628681367,
+            39.74606770817825,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 72.34314575050762,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "compression",
+        "flight": false,
+        "nearFootFamily": "compression",
+        "farFootFamily": "passing",
+        "bodyCompressionNative": 0.8,
+        "forwardLeanNative": 3.5,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          36.0,
+          35.0,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.799999999999997,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                34.19313027281906,
+                28.274286521937093,
+                0.0
+              ],
+              [
+                31.86361822929986,
+                26.52118252071554,
+                0.0
+              ],
+              [
+                32.475560187713306,
+                23.568975373591023,
+                0.0
+              ]
+            ],
+            [
+              [
+                39.16573974966043,
+                28.796928838275356,
+                0.0
+              ],
+              [
+                41.8088371829826,
+                27.566467153392082,
+                0.0
+              ],
+              [
+                41.82406600417507,
+                24.551542928306965,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.309109713802364,
+              36.84240364329672,
+              0.0
+            ],
+            [
+              34.512038918255605,
+              39.24459775614292,
+              0.0
+            ],
+            [
+              31.554050807044092,
+              39.74490399629123,
+              0.0
+            ],
+            [
+              28.576412352120126,
+              39.37929596607579,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 1,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        26,
+        50,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        26,
+        50,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.7,
+          37.025
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.94
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 2,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "toe",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        45.6,
+        0.0
+      ],
+      "chest": [
+        35.7,
+        39.8,
+        0.0
+      ],
+      "neck": [
+        36.2,
+        33.699999999999996,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          30.0,
+          35.949999999999996,
+          0.0
+        ],
+        "far": [
+          41.400000000000006,
+          34.85,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          45.6,
+          0.0
+        ],
+        "far": [
+          32.8,
+          45.6,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.7,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            27.8,
+            58.388812654299315,
+            0.0
+          ],
+          "polygon": [
+            [
+              27.22249586967832,
+              56.48973683183687
+            ],
+            [
+              29.323650422256303,
+              57.42523111091121
+            ],
+            [
+              29.3937009423,
+              58.98891040176392
+            ],
+            [
+              30.814377612364996,
+              60.223486361003786
+            ],
+            [
+              30.468651465750565,
+              61.0
+            ],
+            [
+              25.900924177537558,
+              58.96631678462099
+            ]
+          ],
+          "rollDegrees": 24,
+          "contact": "toe",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "toe-off-drive"
+        },
+        "far": {
+          "ankle": [
+            38.3,
+            54.95606785817043,
+            0.6
+          ],
+          "polygon": [
+            [
+              36.656067858170424,
+              53.843643877370106
+            ],
+            [
+              38.87769725863529,
+              53.2483600736343
+            ],
+            [
+              39.91619200018116,
+              54.41948289886724
+            ],
+            [
+              41.79720896230787,
+              54.48486782214169
+            ],
+            [
+              42.01720515064501,
+              55.305904774487395
+            ],
+            [
+              37.187576019199675,
+              56.6
+            ]
+          ],
+          "rollDegrees": -15,
+          "contact": "airborne",
+          "soleExclusive": 57.6,
+          "airbornePixels": 4.4,
+          "phaseFamily": "knee-drive"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            45.6,
+            0.0
+          ],
+          "joint": [
+            32.437261439730655,
+            52.94654232477808,
+            0.0
+          ],
+          "end": [
+            27.8,
+            58.388812654299315,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 49.993434612764986,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            45.6,
+            0.6
+          ],
+          "joint": [
+            39.86016279101651,
+            47.978361066858,
+            0.6
+          ],
+          "end": [
+            38.3,
+            54.95606785817043,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 83.98644482146143,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            30.0,
+            35.949999999999996,
+            0.0
+          ],
+          "joint": [
+            30.0,
+            41.55,
+            0.0
+          ],
+          "end": [
+            34.98782025129912,
+            41.898782368720624,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 86.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            41.400000000000006,
+            34.85,
+            0.6
+          ],
+          "joint": [
+            41.400000000000006,
+            40.45,
+            0.6
+          ],
+          "end": [
+            46.09846310392955,
+            42.16010071662835,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 70.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "toe-off-drive",
+        "flight": false,
+        "nearFootFamily": "toe-off-drive",
+        "farFootFamily": "knee-drive",
+        "bodyCompressionNative": -0.4,
+        "forwardLeanNative": 3.7,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          36.2,
+          33.8,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.6,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                34.393130272819064,
+                27.07428652193709,
+                0.0
+              ],
+              [
+                32.06361822929986,
+                25.32118252071554,
+                0.0
+              ],
+              [
+                32.67556018771331,
+                22.36897537359102,
+                0.0
+              ]
+            ],
+            [
+              [
+                39.365739749660435,
+                27.596928838275353,
+                0.0
+              ],
+              [
+                42.0088371829826,
+                26.36646715339208,
+                0.0
+              ],
+              [
+                42.024066004175076,
+                23.351542928306962,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.50910971380237,
+              35.64240364329672,
+              0.0
+            ],
+            [
+              34.64566637296743,
+              37.993484015274234,
+              0.0
+            ],
+            [
+              31.65618779521892,
+              38.24451754527118,
+              0.0
+            ],
+            [
+              28.758410316351714,
+              37.46806040996362,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 2,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        26,
+        25,
+        47,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        26,
+        25,
+        47,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.885000000000005,
+          35.91499999999999
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.83
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 3,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        44.81603783591354,
+        0.0
+      ],
+      "chest": [
+        35.3,
+        39.01603783591354,
+        0.0
+      ],
+      "neck": [
+        35.8,
+        32.916037835913535,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.599999999999994,
+          35.00494656556614,
+          0.0
+        ],
+        "far": [
+          40.99999999999999,
+          34.22712910626094,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          44.81603783591354,
+          0.0
+        ],
+        "far": [
+          32.8,
+          44.81603783591354,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.3,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            28.0,
+            53.32758481519565,
+            0.0
+          ],
+          "polygon": [
+            [
+              27.79546699695088,
+              51.353207381505804
+            ],
+            [
+              29.67951669881556,
+              52.672433185113206
+            ],
+            [
+              29.449916118926392,
+              54.220749552563525
+            ],
+            [
+              30.6089227586535,
+              55.70372076235436
+            ],
+            [
+              30.12138278775511,
+              56.4
+            ],
+            [
+              26.02562256631015,
+              53.53211781824477
+            ]
+          ],
+          "rollDegrees": 35,
+          "contact": "airborne",
+          "soleExclusive": 57.4,
+          "airbornePixels": 4.6,
+          "phaseFamily": "flight-fold"
+        },
+        "far": {
+          "ankle": [
+            39.4,
+            57.726885987758564,
+            0.6
+          ],
+          "polygon": [
+            [
+              37.92688598775856,
+              56.39649690672327
+            ],
+            [
+              40.2097421365336,
+              56.11619741689143
+            ],
+            [
+              41.07514152344973,
+              57.420453488805684
+            ],
+            [
+              42.928752735276944,
+              57.746989054079144
+            ],
+            [
+              43.03234167717132,
+              58.590653282974266
+            ],
+            [
+              38.069610918964706,
+              59.2
+            ]
+          ],
+          "rollDegrees": -7,
+          "contact": "airborne",
+          "soleExclusive": 60.2,
+          "airbornePixels": 1.8,
+          "phaseFamily": "flight-extension"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            44.81603783591354,
+            0.0
+          ],
+          "joint": [
+            34.85825827187676,
+            51.30600289100015,
+            0.0
+          ],
+          "end": [
+            28.0,
+            53.32758481519565,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 102.98532244830093,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            44.81603783591354,
+            0.6
+          ],
+          "joint": [
+            36.928041306124896,
+            51.017793633663615,
+            0.6
+          ],
+          "end": [
+            39.4,
+            57.726885987758564,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 13.42244148425246,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.599999999999994,
+            35.00494656556614,
+            0.0
+          ],
+          "joint": [
+            32.552597436780864,
+            39.76332532059552,
+            0.0
+          ],
+          "end": [
+            37.06640037115122,
+            37.61260844716248,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 83.65685424949238,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            40.99999999999999,
+            34.22712910626094,
+            0.6
+          ],
+          "joint": [
+            38.04740256321912,
+            38.98550786129032,
+            0.6
+          ],
+          "end": [
+            41.29619136930037,
+            42.786214544721865,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 72.34314575050762,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "flight-fold",
+        "flight": true,
+        "nearFootFamily": "flight-fold",
+        "farFootFamily": "flight-extension",
+        "bodyCompressionNative": -1.2,
+        "forwardLeanNative": 3.3,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0.016037835913543574,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          35.8,
+          33.01603783591354,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 24.81603783591354,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                33.99313027281906,
+                26.29032435785063,
+                0.0
+              ],
+              [
+                31.663618229299857,
+                24.537220356629078,
+                0.0
+              ],
+              [
+                32.2755601877133,
+                21.58501320950456,
+                0.0
+              ]
+            ],
+            [
+              [
+                38.96573974966043,
+                26.812966674188893,
+                0.0
+              ],
+              [
+                41.6088371829826,
+                25.58250498930562,
+                0.0
+              ],
+              [
+                41.62406600417507,
+                22.5675807642205,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.10910971380236,
+              34.858441479210256,
+              0.0
+            ],
+            [
+              34.30366464434621,
+              37.254348009352135,
+              0.0
+            ],
+            [
+              31.340599622560802,
+              37.723651404472825,
+              0.0
+            ],
+            [
+              28.369795416336093,
+              37.30613210159263,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 3,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        26,
+        24,
+        44,
+        60
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        26,
+        24,
+        44,
+        60
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.515,
+          35.18983499822002
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.10483499822003
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 4,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.2,
+        0.0
+      ],
+      "chest": [
+        35.1,
+        40.4,
+        0.0
+      ],
+      "neck": [
+        35.6,
+        34.3,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.4,
+          36.0,
+          0.0
+        ],
+        "far": [
+          40.800000000000004,
+          36.0,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          46.2,
+          0.0
+        ],
+        "far": [
+          32.8,
+          46.2,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.1,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            28.4,
+            51.627584815195654,
+            0.0
+          ],
+          "polygon": [
+            [
+              28.195466996950877,
+              49.65320738150581
+            ],
+            [
+              30.07951669881556,
+              50.97243318511321
+            ],
+            [
+              29.84991611892639,
+              52.52074955256353
+            ],
+            [
+              31.0089227586535,
+              54.00372076235436
+            ],
+            [
+              30.52138278775511,
+              54.7
+            ],
+            [
+              26.42562256631015,
+              51.832117818244775
+            ]
+          ],
+          "rollDegrees": 35,
+          "contact": "airborne",
+          "soleExclusive": 55.7,
+          "airbornePixels": 6.3,
+          "phaseFamily": "recovery-fold"
+        },
+        "far": {
+          "ankle": [
+            37.2,
+            59.574213278359245,
+            0.6
+          ],
+          "polygon": [
+            [
+              35.77421327835925,
+              58.19322369679358
+            ],
+            [
+              38.06546108397026,
+              57.99276548847397
+            ],
+            [
+              38.8848154124812,
+              59.32642904587905
+            ],
+            [
+              40.72590152755756,
+              59.717455792883726
+            ],
+            [
+              40.79998390889307,
+              60.56422128626171
+            ],
+            [
+              35.81901041843434,
+              61.0
+            ]
+          ],
+          "rollDegrees": -5,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "contact"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            46.2,
+            0.0
+          ],
+          "joint": [
+            35.521193798892405,
+            52.26875474479022,
+            0.0
+          ],
+          "end": [
+            28.4,
+            51.627584815195654,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 130.5972318032023,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            46.2,
+            0.6
+          ],
+          "joint": [
+            36.88342160597353,
+            52.431225239699536,
+            0.6
+          ],
+          "end": [
+            37.2,
+            59.574213278359245,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 30.699769238395646,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.4,
+            36.0,
+            0.0
+          ],
+          "joint": [
+            33.359797974644664,
+            39.959797974644665,
+            0.0
+          ],
+          "end": [
+            37.55315081437178,
+            37.23660279956953,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 78.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            40.800000000000004,
+            36.0,
+            0.6
+          ],
+          "joint": [
+            36.84020202535534,
+            39.959797974644665,
+            0.6
+          ],
+          "end": [
+            39.56339720043047,
+            44.153150814371784,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 78.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "recovery-fold",
+        "flight": false,
+        "nearFootFamily": "recovery-fold",
+        "farFootFamily": "contact",
+        "bodyCompressionNative": 0.2,
+        "forwardLeanNative": 3.1,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          35.6,
+          34.400000000000006,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.200000000000003,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                33.79313027281906,
+                27.6742865219371,
+                0.0
+              ],
+              [
+                31.46361822929986,
+                25.921182520715547,
+                0.0
+              ],
+              [
+                32.07556018771331,
+                22.96897537359103,
+                0.0
+              ]
+            ],
+            [
+              [
+                38.76573974966043,
+                28.196928838275362,
+                0.0
+              ],
+              [
+                41.408837182982595,
+                26.966467153392088,
+                0.0
+              ],
+              [
+                41.424066004175074,
+                23.95154292830697,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              35.909109713802366,
+              36.242403643296726,
+              0.0
+            ],
+            [
+              34.20557847864306,
+              38.71181274890005,
+              0.0
+            ],
+            [
+              31.324697421612232,
+              39.54878606701774,
+              0.0
+            ],
+            [
+              28.33200527083276,
+              39.758055488250115,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 4,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        27,
+        26,
+        44,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        27,
+        26,
+        44,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.33,
+          36.47
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.385000000000005
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 5,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "flat",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.8,
+        0.0
+      ],
+      "chest": [
+        35.5,
+        40.99999999999999,
+        0.0
+      ],
+      "neck": [
+        36.0,
+        34.89999999999999,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.799999999999997,
+          36.211091270347396,
+          0.0
+        ],
+        "far": [
+          41.2,
+          36.98890872965259,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          46.8,
+          0.0
+        ],
+        "far": [
+          32.8,
+          46.8,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.5,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            31.5,
+            53.61198129924988,
+            0.0
+          ],
+          "polygon": [
+            [
+              30.48022218758452,
+              51.909027038764556
+            ],
+            [
+              32.745280019512606,
+              52.308417847398495
+            ],
+            [
+              33.191537997887444,
+              53.80870242598244
+            ],
+            [
+              34.86868545559261,
+              54.66291340993963
+            ],
+            [
+              34.72108450457572,
+              55.5
+            ],
+            [
+              29.797045739514676,
+              54.63175911166535
+            ]
+          ],
+          "rollDegrees": 10,
+          "contact": "airborne",
+          "soleExclusive": 56.5,
+          "airbornePixels": 5.5,
+          "phaseFamily": "passing"
+        },
+        "far": {
+          "ankle": [
+            33.8,
+            59.7,
+            0.6
+          ],
+          "polygon": [
+            [
+              32.49999999999999,
+              58.2
+            ],
+            [
+              34.8,
+              58.2
+            ],
+            [
+              35.49999999999999,
+              59.6
+            ],
+            [
+              37.29999999999999,
+              60.150000000000006
+            ],
+            [
+              37.29999999999999,
+              61.0
+            ],
+            [
+              32.3,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "flat",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "compression"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            46.8,
+            0.0
+          ],
+          "joint": [
+            37.806612742435924,
+            50.24313346698662,
+            0.0
+          ],
+          "end": [
+            31.5,
+            53.61198129924988,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 124.36295387056751,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            46.8,
+            0.6
+          ],
+          "joint": [
+            36.68399660748775,
+            53.15744212345056,
+            0.6
+          ],
+          "end": [
+            33.8,
+            59.7,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 55.21045884672361,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.799999999999997,
+            36.211091270347396,
+            0.0
+          ],
+          "joint": [
+            32.75259743678087,
+            40.96947002537678,
+            0.0
+          ],
+          "end": [
+            37.60061628681366,
+            39.74606770817825,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 72.34314575050762,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            41.2,
+            36.98890872965259,
+            0.6
+          ],
+          "joint": [
+            38.24740256321913,
+            41.747287484681976,
+            0.6
+          ],
+          "end": [
+            42.178685610603814,
+            44.83678802705866,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 83.65685424949238,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "passing",
+        "flight": false,
+        "nearFootFamily": "passing",
+        "farFootFamily": "compression",
+        "bodyCompressionNative": 0.8,
+        "forwardLeanNative": 3.5,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          36.0,
+          35.0,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 26.799999999999997,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                34.19313027281906,
+                28.274286521937093,
+                0.0
+              ],
+              [
+                31.86361822929986,
+                26.52118252071554,
+                0.0
+              ],
+              [
+                32.475560187713306,
+                23.568975373591023,
+                0.0
+              ]
+            ],
+            [
+              [
+                39.16573974966043,
+                28.796928838275356,
+                0.0
+              ],
+              [
+                41.8088371829826,
+                27.566467153392082,
+                0.0
+              ],
+              [
+                41.82406600417507,
+                24.551542928306965,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.309109713802364,
+              36.84240364329672,
+              0.0
+            ],
+            [
+              34.683985082954145,
+              39.36410345378377,
+              0.0
+            ],
+            [
+              31.89465562528939,
+              40.46847711183781,
+              0.0
+            ],
+            [
+              28.971545430933684,
+              41.1433302748694,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 5,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        28,
+        26,
+        45,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        28,
+        26,
+        45,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.7,
+          37.025
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.94
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 6,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "farLeg",
+          "kind": "toe",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        45.6,
+        0.0
+      ],
+      "chest": [
+        35.7,
+        39.8,
+        0.0
+      ],
+      "neck": [
+        36.2,
+        33.699999999999996,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          30.0,
+          34.85,
+          0.0
+        ],
+        "far": [
+          41.400000000000006,
+          35.949999999999996,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          45.6,
+          0.0
+        ],
+        "far": [
+          32.8,
+          45.6,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.7,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            38.3,
+            54.95606785817043,
+            0.0
+          ],
+          "polygon": [
+            [
+              36.656067858170424,
+              53.843643877370106
+            ],
+            [
+              38.87769725863529,
+              53.2483600736343
+            ],
+            [
+              39.91619200018116,
+              54.41948289886724
+            ],
+            [
+              41.79720896230787,
+              54.48486782214169
+            ],
+            [
+              42.01720515064501,
+              55.305904774487395
+            ],
+            [
+              37.187576019199675,
+              56.6
+            ]
+          ],
+          "rollDegrees": -15,
+          "contact": "airborne",
+          "soleExclusive": 57.6,
+          "airbornePixels": 4.4,
+          "phaseFamily": "knee-drive"
+        },
+        "far": {
+          "ankle": [
+            27.8,
+            58.388812654299315,
+            0.6
+          ],
+          "polygon": [
+            [
+              27.22249586967832,
+              56.48973683183687
+            ],
+            [
+              29.323650422256303,
+              57.42523111091121
+            ],
+            [
+              29.3937009423,
+              58.98891040176392
+            ],
+            [
+              30.814377612364993,
+              60.223486361003786
+            ],
+            [
+              30.468651465750565,
+              61.0
+            ],
+            [
+              25.900924177537558,
+              58.96631678462099
+            ]
+          ],
+          "rollDegrees": 24,
+          "contact": "toe",
+          "soleExclusive": 62,
+          "airbornePixels": 0,
+          "phaseFamily": "toe-off-drive"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            45.6,
+            0.0
+          ],
+          "joint": [
+            38.31587569037255,
+            47.80608548319528,
+            0.0
+          ],
+          "end": [
+            38.3,
+            54.95606785817043,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 72.90257724482649,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            45.6,
+            0.6
+          ],
+          "joint": [
+            32.55134089878364,
+            53.04584908867903,
+            0.6
+          ],
+          "end": [
+            27.8,
+            58.388812654299315,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 39.73303723887557,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            30.0,
+            34.85,
+            0.0
+          ],
+          "joint": [
+            30.0,
+            40.45,
+            0.0
+          ],
+          "end": [
+            34.69846310392954,
+            42.16010071662835,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 70.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            41.400000000000006,
+            35.949999999999996,
+            0.6
+          ],
+          "joint": [
+            41.400000000000006,
+            41.55,
+            0.6
+          ],
+          "end": [
+            46.387820251299125,
+            41.898782368720624,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 86.0,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "knee-drive",
+        "flight": false,
+        "nearFootFamily": "knee-drive",
+        "farFootFamily": "toe-off-drive",
+        "bodyCompressionNative": -0.4,
+        "forwardLeanNative": 3.7,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          36.2,
+          33.8,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.6,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                34.393130272819064,
+                27.07428652193709,
+                0.0
+              ],
+              [
+                32.06361822929986,
+                25.32118252071554,
+                0.0
+              ],
+              [
+                32.67556018771331,
+                22.36897537359102,
+                0.0
+              ]
+            ],
+            [
+              [
+                39.365739749660435,
+                27.596928838275353,
+                0.0
+              ],
+              [
+                42.0088371829826,
+                26.36646715339208,
+                0.0
+              ],
+              [
+                42.024066004175076,
+                23.351542928306962,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.50910971380237,
+              35.64240364329672,
+              0.0
+            ],
+            [
+              34.93715199589213,
+              38.19758444572586,
+              0.0
+            ],
+            [
+              32.22267083849407,
+              39.47492232042108,
+              0.0
+            ],
+            [
+              29.386115111696117,
+              40.45162678379255,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 6,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        26,
+        25,
+        47,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        26,
+        25,
+        47,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.885000000000005,
+          35.91499999999999
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.83
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "walk",
+      "phase": 7,
+      "view": "side-right",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [],
+      "notes": [
+        "True run with double-airborne flight phases3/7, knee drive, folded recovery and strong counter-swing; not a sped-up walk."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        45.76820713096171,
+        0.0
+      ],
+      "chest": [
+        35.3,
+        39.96820713096171,
+        0.0
+      ],
+      "neck": [
+        35.8,
+        33.86820713096171,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          29.599999999999994,
+          35.17929840130911,
+          0.0
+        ],
+        "far": [
+          40.99999999999999,
+          35.95711586061431,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          31.2,
+          45.76820713096171,
+          0.0
+        ],
+        "far": [
+          32.8,
+          45.76820713096171,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 6.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 3.3,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            39.4,
+            57.726885987758564,
+            0.0
+          ],
+          "polygon": [
+            [
+              37.92688598775856,
+              56.39649690672327
+            ],
+            [
+              40.2097421365336,
+              56.11619741689143
+            ],
+            [
+              41.07514152344973,
+              57.420453488805684
+            ],
+            [
+              42.928752735276944,
+              57.746989054079144
+            ],
+            [
+              43.03234167717132,
+              58.590653282974266
+            ],
+            [
+              38.069610918964706,
+              59.2
+            ]
+          ],
+          "rollDegrees": -7,
+          "contact": "airborne",
+          "soleExclusive": 60.2,
+          "airbornePixels": 1.8,
+          "phaseFamily": "flight-extension"
+        },
+        "far": {
+          "ankle": [
+            28.0,
+            53.32758481519565,
+            0.6
+          ],
+          "polygon": [
+            [
+              27.79546699695088,
+              51.353207381505804
+            ],
+            [
+              29.67951669881556,
+              52.672433185113206
+            ],
+            [
+              29.449916118926392,
+              54.220749552563525
+            ],
+            [
+              30.608922758653502,
+              55.70372076235436
+            ],
+            [
+              30.121382787755113,
+              56.4
+            ],
+            [
+              26.02562256631015,
+              53.53211781824477
+            ]
+          ],
+          "rollDegrees": 35,
+          "contact": "airborne",
+          "soleExclusive": 57.4,
+          "airbornePixels": 4.6,
+          "phaseFamily": "flight-fold"
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            31.2,
+            45.76820713096171,
+            0.0
+          ],
+          "joint": [
+            36.088709543623985,
+            51.389863381398925,
+            0.0
+          ],
+          "end": [
+            39.4,
+            57.726885987758564,
+            0.0
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 13.42244148425246,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            32.8,
+            45.76820713096171,
+            0.6
+          ],
+          "joint": [
+            35.13358015251473,
+            52.843297495882105,
+            0.6
+          ],
+          "end": [
+            28.0,
+            53.32758481519565,
+            0.6
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 104.37036899702782,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            0.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            29.599999999999994,
+            35.17929840130911,
+            0.0
+          ],
+          "joint": [
+            26.647402563219124,
+            39.937677156338495,
+            0.0
+          ],
+          "end": [
+            29.896191369300368,
+            43.73838383977004,
+            0.0
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 72.34314575050762,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        },
+        "farArm": {
+          "start": [
+            40.99999999999999,
+            35.95711586061431,
+            0.6
+          ],
+          "joint": [
+            43.95259743678086,
+            40.71549461564369,
+            0.6
+          ],
+          "end": [
+            48.46640037115122,
+            38.56477774221065,
+            0.6
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 83.65685424949238,
+          "bendPlaneHint": [
+            -1,
+            0,
+            0
+          ]
+        }
+      },
+      "motionClass": "run",
+      "dynamicRun": {
+        "phaseFamily": "flight-extension",
+        "flight": true,
+        "nearFootFamily": "flight-extension",
+        "farFootFamily": "flight-fold",
+        "bodyCompressionNative": -1.2,
+        "forwardLeanNative": 3.3,
+        "mappingNote": "Action key remains walk for the existing atlas map; motion is an authored run."
+      },
+      "viewArt": "front-three-quarter-right",
+      "rootCompression": 0.9682071309617157,
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          35.8,
+          33.968207130961716,
+          0.0
+        ],
+        "angleDegrees": 6.0,
+        "view": "side-right",
+        "helmetTopNominal": 25.768207130961713,
+        "eyeDirection": [
+          0.9945218953682733,
+          0.10452846326765347
+        ]
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                33.99313027281906,
+                27.24249365289881,
+                0.0
+              ],
+              [
+                31.663618229299857,
+                25.489389651677257,
+                0.0
+              ],
+              [
+                32.2755601877133,
+                22.53718250455274,
+                0.0
+              ]
+            ],
+            [
+              [
+                38.96573974966043,
+                27.765135969237072,
+                0.0
+              ],
+              [
+                41.6088371829826,
+                26.534674284353798,
+                0.0
+              ],
+              [
+                41.62406600417507,
+                23.51975005926868,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "points": [
+            [
+              36.10910971380236,
+              35.810610774258436,
+              0.0
+            ],
+            [
+              34.457667493547376,
+              38.31515436404865,
+              0.0
+            ],
+            [
+              31.6350251866847,
+              39.331368124784525,
+              0.0
+            ],
+            [
+              28.680601927648077,
+              39.85231265778532,
+              0.0
+            ]
+          ],
+          "segmentLengthsNative": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "lengthNative": 9.0,
+          "mode": "run-trailing",
+          "phase": 7,
+          "attachment": "jaw",
+          "drivenBy": "authored run phase and relative motion"
+        }
+      },
+      "opaqueBounds": [
+        25,
+        25,
+        49,
+        60
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        25,
+        25,
+        49,
+        60
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          35.515,
+          36.070591596139586
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.985591596139585
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "climb",
+      "phase": 0,
+      "view": "rear-facing-ladder",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "rung",
+          "soleExclusive": 62
+        },
+        {
+          "limb": "farLeg",
+          "kind": "rung",
+          "soleExclusive": 58.0
+        }
+      ],
+      "notes": [
+        "Knees flex toward ladder depth (+z); projected lengths are intentionally shorter than 3-D segment lengths."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.0,
+        0.0
+      ],
+      "chest": [
+        32.0,
+        40.199999999999996,
+        0.0
+      ],
+      "neck": [
+        32.5,
+        34.099999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.608,
+          35.449999999999996,
+          0.0
+        ],
+        "far": [
+          28.392,
+          36.15,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          34.4,
+          46.0,
+          0.0
+        ],
+        "far": [
+          29.6,
+          46.0,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.0,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            35.7,
+            59.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              34.2,
+              58.2
+            ],
+            [
+              37.2,
+              58.2
+            ],
+            [
+              37.5,
+              61.0
+            ],
+            [
+              33.900000000000006,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung",
+          "soleExclusive": 62,
+          "airbornePixels": 0
+        },
+        "far": {
+          "ankle": [
+            28.3,
+            55.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              26.8,
+              54.2
+            ],
+            [
+              29.8,
+              54.2
+            ],
+            [
+              30.1,
+              57.0
+            ],
+            [
+              26.5,
+              57.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung",
+          "soleExclusive": 58.0,
+          "airbornePixels": 4.0
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            34.4,
+            46.0,
+            0.0
+          ],
+          "joint": [
+            35.45066656809164,
+            52.6082094159574,
+            3.27569352619359
+          ],
+          "end": [
+            35.7,
+            59.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 33.813465209541505,
+          "bendPlaneHint": [
+            0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            29.6,
+            46.0,
+            0.6
+          ],
+          "joint": [
+            27.996453053804235,
+            49.98551470986315,
+            6.686609046818328
+          ],
+          "end": [
+            28.3,
+            55.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 94.09354038440286,
+          "bendPlaneHint": [
+            -0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.608,
+            35.449999999999996,
+            0.0
+          ],
+          "joint": [
+            40.92355929013021,
+            33.82434774021652,
+            -0.6797677275153018
+          ],
+          "end": [
+            38.4,
+            30.8,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 112.22558652236792,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            -0.35
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.392,
+            36.15,
+            0.6
+          ],
+          "joint": [
+            25.009929940415038,
+            31.689876758562445,
+            0.7700081858250868
+          ],
+          "end": [
+            25.6,
+            27.0,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 46.711335381385766,
+          "bendPlaneHint": [
+            -1.0,
+            0.0,
+            -0.35
+          ]
+        }
+      },
+      "viewArt": "rear-facing-ladder",
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          32.5,
+          34.2,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "rear-facing-ladder",
+        "helmetTopNominal": 26.0,
+        "eyeDirection": "rear"
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.0,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                27.5,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                27.8,
+                23.200000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.0,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                37.5,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                37.2,
+                23.200000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "visibility": "occluded by rear-facing head/torso",
+          "points": [],
+          "lengthNative": 9
+        }
+      },
+      "opaqueBounds": [
+        24,
+        26,
+        43,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        24,
+        26,
+        43,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          32.4625,
+          36.285
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.2
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "climb",
+      "phase": 1,
+      "view": "rear-facing-ladder",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "rung-transfer",
+          "soleExclusive": 60.0
+        },
+        {
+          "limb": "farLeg",
+          "kind": "rung-transfer",
+          "soleExclusive": 60.0
+        }
+      ],
+      "notes": [
+        "Knees flex toward ladder depth (+z); projected lengths are intentionally shorter than 3-D segment lengths."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        45.6,
+        0.0
+      ],
+      "chest": [
+        32.0,
+        39.8,
+        0.0
+      ],
+      "neck": [
+        32.5,
+        33.699999999999996,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.608,
+          35.4,
+          0.0
+        ],
+        "far": [
+          28.392,
+          35.4,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          34.4,
+          45.6,
+          0.0
+        ],
+        "far": [
+          29.6,
+          45.6,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.0,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            35.7,
+            57.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              34.2,
+              56.2
+            ],
+            [
+              37.2,
+              56.2
+            ],
+            [
+              37.5,
+              59.0
+            ],
+            [
+              33.900000000000006,
+              59.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung-transfer",
+          "soleExclusive": 60.0,
+          "airbornePixels": 2.0
+        },
+        "far": {
+          "ankle": [
+            28.3,
+            57.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              26.8,
+              56.2
+            ],
+            [
+              29.8,
+              56.2
+            ],
+            [
+              30.1,
+              59.0
+            ],
+            [
+              26.5,
+              59.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung-transfer",
+          "soleExclusive": 60.0,
+          "airbornePixels": 2.0
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            34.4,
+            45.6,
+            0.0
+          ],
+          "joint": [
+            35.75388773088253,
+            51.01459213201344,
+            4.934742146870892
+          ],
+          "end": [
+            35.7,
+            57.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 63.68055485205278,
+          "bendPlaneHint": [
+            0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            29.6,
+            45.6,
+            0.6
+          ],
+          "joint": [
+            28.218955751033157,
+            51.181634325851846,
+            5.337148407519868
+          ],
+          "end": [
+            28.3,
+            57.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 65.18301190541693,
+          "bendPlaneHint": [
+            -0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.608,
+            35.4,
+            0.0
+          ],
+          "joint": [
+            40.49182431610899,
+            32.67326116586487,
+            -0.2704725121004681
+          ],
+          "end": [
+            38.4,
+            29.0,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 91.8877627232066,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            -0.35
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.392,
+            35.4,
+            0.6
+          ],
+          "joint": [
+            23.56046971696924,
+            32.62044745694867,
+            0.06110967296343772
+          ],
+          "end": [
+            25.6,
+            28.7,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 90.44479978929375,
+          "bendPlaneHint": [
+            -1.0,
+            0.0,
+            -0.35
+          ]
+        }
+      },
+      "viewArt": "rear-facing-ladder",
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          32.5,
+          33.8,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "rear-facing-ladder",
+        "helmetTopNominal": 25.6,
+        "eyeDirection": "rear"
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.0,
+                27.299999999999997,
+                0.0
+              ],
+              [
+                27.5,
+                25.799999999999997,
+                0.0
+              ],
+              [
+                27.8,
+                22.799999999999997,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.0,
+                27.299999999999997,
+                0.0
+              ],
+              [
+                37.5,
+                25.799999999999997,
+                0.0
+              ],
+              [
+                37.2,
+                22.799999999999997,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "visibility": "occluded by rear-facing head/torso",
+          "points": [],
+          "lengthNative": 9
+        }
+      },
+      "opaqueBounds": [
+        22,
+        25,
+        43,
+        60
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        22,
+        25,
+        43,
+        60
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          32.4625,
+          35.91499999999999
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.83
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "climb",
+      "phase": 2,
+      "view": "rear-facing-ladder",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "rung",
+          "soleExclusive": 58.0
+        },
+        {
+          "limb": "farLeg",
+          "kind": "rung",
+          "soleExclusive": 62
+        }
+      ],
+      "notes": [
+        "Knees flex toward ladder depth (+z); projected lengths are intentionally shorter than 3-D segment lengths."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        46.0,
+        0.0
+      ],
+      "chest": [
+        32.0,
+        40.199999999999996,
+        0.0
+      ],
+      "neck": [
+        32.5,
+        34.099999999999994,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.608,
+          36.15,
+          0.0
+        ],
+        "far": [
+          28.392,
+          35.449999999999996,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          34.4,
+          46.0,
+          0.0
+        ],
+        "far": [
+          29.6,
+          46.0,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.0,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            35.7,
+            55.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              34.2,
+              54.2
+            ],
+            [
+              37.2,
+              54.2
+            ],
+            [
+              37.5,
+              57.0
+            ],
+            [
+              33.900000000000006,
+              57.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung",
+          "soleExclusive": 58.0,
+          "airbornePixels": 4.0
+        },
+        "far": {
+          "ankle": [
+            28.3,
+            59.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              26.8,
+              58.2
+            ],
+            [
+              29.8,
+              58.2
+            ],
+            [
+              30.1,
+              61.0
+            ],
+            [
+              26.5,
+              61.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung",
+          "soleExclusive": 62,
+          "airbornePixels": 0
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            34.4,
+            46.0,
+            0.0
+          ],
+          "joint": [
+            35.96755543068781,
+            49.69711185622511,
+            6.275080389467598
+          ],
+          "end": [
+            35.7,
+            55.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 92.73581244670957,
+          "bendPlaneHint": [
+            0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            29.6,
+            46.0,
+            0.6
+          ],
+          "joint": [
+            28.51735000732908,
+            52.67676873031416,
+            3.7226796690132535
+          ],
+          "end": [
+            28.3,
+            59.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 36.17678835202949,
+          "bendPlaneHint": [
+            -0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.608,
+            36.15,
+            0.0
+          ],
+          "joint": [
+            38.85310377670527,
+            31.617791764485407,
+            0.5370195418668021
+          ],
+          "end": [
+            38.4,
+            27.0,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 43.05704238192925,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            -0.35
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.392,
+            35.449999999999996,
+            0.6
+          ],
+          "joint": [
+            23.067597131851947,
+            34.05306377089584,
+            -0.4292245962242789
+          ],
+          "end": [
+            25.6,
+            30.8,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 115.0402108020436,
+          "bendPlaneHint": [
+            -1.0,
+            0.0,
+            -0.35
+          ]
+        }
+      },
+      "viewArt": "rear-facing-ladder",
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          32.5,
+          34.2,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "rear-facing-ladder",
+        "helmetTopNominal": 26.0,
+        "eyeDirection": "rear"
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.0,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                27.5,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                27.8,
+                23.200000000000003,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.0,
+                27.700000000000003,
+                0.0
+              ],
+              [
+                37.5,
+                26.200000000000003,
+                0.0
+              ],
+              [
+                37.2,
+                23.200000000000003,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "visibility": "occluded by rear-facing head/torso",
+          "points": [],
+          "lengthNative": 9
+        }
+      },
+      "opaqueBounds": [
+        22,
+        26,
+        41,
+        62
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        22,
+        26,
+        41,
+        62
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          32.4625,
+          36.285
+        ],
+        "pelvisRoot": [
+          32.0,
+          47.2
+        ]
+      }
+    },
+    {
+      "hero": "erik",
+      "action": "climb",
+      "phase": 3,
+      "view": "rear-facing-ladder",
+      "registration": {
+        "origin": [
+          32,
+          40
+        ],
+        "groundSoleExclusive": 62
+      },
+      "contacts": [
+        {
+          "limb": "nearLeg",
+          "kind": "rung-transfer",
+          "soleExclusive": 60.0
+        },
+        {
+          "limb": "farLeg",
+          "kind": "rung-transfer",
+          "soleExclusive": 60.0
+        }
+      ],
+      "notes": [
+        "Knees flex toward ladder depth (+z); projected lengths are intentionally shorter than 3-D segment lengths."
+      ],
+      "equipment": [],
+      "pelvis": [
+        32.0,
+        45.6,
+        0.0
+      ],
+      "chest": [
+        32.0,
+        39.8,
+        0.0
+      ],
+      "neck": [
+        32.5,
+        33.699999999999996,
+        0.0
+      ],
+      "shoulders": {
+        "near": [
+          35.608,
+          35.4,
+          0.0
+        ],
+        "far": [
+          28.392,
+          35.4,
+          0.6
+        ]
+      },
+      "hips": {
+        "near": [
+          34.4,
+          45.6,
+          0.0
+        ],
+        "far": [
+          29.6,
+          45.6,
+          0.6
+        ]
+      },
+      "headAngleDegrees": 0.0,
+      "torsoExpansion": 0.0,
+      "bodyLean": 0.0,
+      "headDuck": 0.0,
+      "feet": {
+        "near": {
+          "ankle": [
+            35.7,
+            57.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              34.2,
+              56.2
+            ],
+            [
+              37.2,
+              56.2
+            ],
+            [
+              37.5,
+              59.0
+            ],
+            [
+              33.900000000000006,
+              59.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung-transfer",
+          "soleExclusive": 60.0,
+          "airbornePixels": 2.0
+        },
+        "far": {
+          "ankle": [
+            28.3,
+            57.7,
+            2.4
+          ],
+          "polygon": [
+            [
+              26.8,
+              56.2
+            ],
+            [
+              29.8,
+              56.2
+            ],
+            [
+              30.1,
+              59.0
+            ],
+            [
+              26.5,
+              59.0
+            ]
+          ],
+          "rollDegrees": 0,
+          "contact": "rung-transfer",
+          "soleExclusive": 60.0,
+          "airbornePixels": 2.0
+        }
+      },
+      "limbs": {
+        "nearLeg": {
+          "start": [
+            34.4,
+            45.6,
+            0.0
+          ],
+          "joint": [
+            35.75388773088253,
+            51.01459213201344,
+            4.934742146870892
+          ],
+          "end": [
+            35.7,
+            57.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 63.68055485205278,
+          "bendPlaneHint": [
+            0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "farLeg": {
+          "start": [
+            29.6,
+            45.6,
+            0.6
+          ],
+          "joint": [
+            28.218955751033157,
+            51.181634325851846,
+            5.337148407519868
+          ],
+          "end": [
+            28.3,
+            57.7,
+            2.4
+          ],
+          "lengths": [
+            7.45,
+            7.15
+          ],
+          "flexionDegrees": 65.18301190541693,
+          "bendPlaneHint": [
+            -0.2,
+            0.0,
+            1.0
+          ]
+        },
+        "nearArm": {
+          "start": [
+            35.608,
+            35.4,
+            0.0
+          ],
+          "joint": [
+            40.38343778663254,
+            32.48195618833781,
+            -0.2005349326728012
+          ],
+          "end": [
+            38.4,
+            28.7,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 87.86599188608045,
+          "bendPlaneHint": [
+            1.0,
+            0.0,
+            -0.35
+          ]
+        },
+        "farArm": {
+          "start": [
+            28.392,
+            35.4,
+            0.6
+          ],
+          "joint": [
+            23.457857839237946,
+            32.82239366273807,
+            -0.00842970629111961
+          ],
+          "end": [
+            25.6,
+            29.0,
+            2.4
+          ],
+          "lengths": [
+            5.6,
+            5.0
+          ],
+          "flexionDegrees": 94.47026516844576,
+          "bendPlaneHint": [
+            -1.0,
+            0.0,
+            -0.35
+          ]
+        }
+      },
+      "viewArt": "rear-facing-ladder",
+      "limbIdentity": {
+        "near": "camera-near, light material, left attachment in front view",
+        "far": "camera-far, same material shaded, right attachment in front view"
+      },
+      "head": {
+        "neckPivot": [
+          32.5,
+          33.8,
+          0.0
+        ],
+        "angleDegrees": 0.0,
+        "view": "rear-facing-ladder",
+        "helmetTopNominal": 25.6,
+        "eyeDirection": "rear"
+      },
+      "costume": {
+        "horns": {
+          "chains": [
+            [
+              [
+                30.0,
+                27.299999999999997,
+                0.0
+              ],
+              [
+                27.5,
+                25.799999999999997,
+                0.0
+              ],
+              [
+                27.8,
+                22.799999999999997,
+                0.0
+              ]
+            ],
+            [
+              [
+                35.0,
+                27.299999999999997,
+                0.0
+              ],
+              [
+                37.5,
+                25.799999999999997,
+                0.0
+              ],
+              [
+                37.2,
+                22.799999999999997,
+                0.0
+              ]
+            ]
+          ],
+          "aboveBodyPixels": 3,
+          "bodyScaleExcludesHorns": true
+        }
+      },
+      "secondaryMotion": {
+        "beard": {
+          "visibility": "occluded by rear-facing head/torso",
+          "points": [],
+          "lengthNative": 9
+        }
+      },
+      "opaqueBounds": [
+        22,
+        25,
+        43,
+        60
+      ],
+      "bodyOpaqueBoundsWithoutEquipmentOrCostume": [
+        22,
+        25,
+        43,
+        60
+      ],
+      "bodyHeightTargetExcludesCostume": 36,
+      "materialBinding": {
+        "source": "erik-walk-4-raw-v4.png",
+        "allBodyPartsRebound": true,
+        "headRoot": [
+          32.4625,
+          35.91499999999999
+        ],
+        "pelvisRoot": [
+          32.0,
+          46.83
+        ]
+      }
+    }
+  ]
+}

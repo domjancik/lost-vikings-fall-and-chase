@@ -1,0 +1,595 @@
+{
+  "originalWholePoseSource": "assets/vikings88/erik-native.png (unchanged cells)",
+  "replacementRecords": [
+    {
+      "cell": 0,
+      "action": "walk",
+      "phase": 0,
+      "source": "erik-walk-0-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.5,
+        33.5
+      ],
+      "sourceHelmetBounds": [
+        31,
+        29,
+        44,
+        38
+      ],
+      "targetHelmet": [
+        36.0,
+        33.0
+      ],
+      "targetHelmetBounds": [
+        29,
+        28,
+        43,
+        38
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "nativeBounds": [
+        31,
+        34,
+        57,
+        71
+      ]
+    },
+    {
+      "cell": 1,
+      "action": "walk",
+      "phase": 1,
+      "source": "erik-walk-1-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.0,
+        34.0
+      ],
+      "sourceHelmetBounds": [
+        31,
+        30,
+        43,
+        38
+      ],
+      "targetHelmet": [
+        36.0,
+        33.5
+      ],
+      "targetHelmetBounds": [
+        30,
+        29,
+        42,
+        38
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "nativeBounds": [
+        33,
+        36,
+        58,
+        71
+      ]
+    },
+    {
+      "cell": 2,
+      "action": "walk",
+      "phase": 2,
+      "source": "erik-walk-2-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.5,
+        32.0
+      ],
+      "sourceHelmetBounds": [
+        32,
+        28,
+        43,
+        36
+      ],
+      "targetHelmet": [
+        37.0,
+        32.0
+      ],
+      "targetHelmetBounds": [
+        30,
+        28,
+        44,
+        36
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        35,
+        33,
+        56,
+        70
+      ]
+    },
+    {
+      "cell": 3,
+      "action": "walk",
+      "phase": 3,
+      "source": "erik-walk-3-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.0,
+        32.0
+      ],
+      "sourceHelmetBounds": [
+        31,
+        28,
+        43,
+        36
+      ],
+      "targetHelmet": [
+        36.0,
+        32.0
+      ],
+      "targetHelmetBounds": [
+        30,
+        28,
+        42,
+        36
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "nativeBounds": [
+        34,
+        32,
+        52,
+        69
+      ]
+    },
+    {
+      "cell": 4,
+      "action": "walk",
+      "phase": 4,
+      "source": "erik-walk-4-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        36.5,
+        33.0
+      ],
+      "sourceHelmetBounds": [
+        31,
+        29,
+        42,
+        37
+      ],
+      "targetHelmet": [
+        35.5,
+        33.0
+      ],
+      "targetHelmetBounds": [
+        29,
+        29,
+        42,
+        37
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "nativeBounds": [
+        35,
+        35,
+        52,
+        71
+      ]
+    },
+    {
+      "cell": 5,
+      "action": "walk",
+      "phase": 5,
+      "source": "erik-walk-5-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.0,
+        33.5
+      ],
+      "sourceHelmetBounds": [
+        31,
+        29,
+        43,
+        38
+      ],
+      "targetHelmet": [
+        36.0,
+        33.5
+      ],
+      "targetHelmetBounds": [
+        30,
+        29,
+        42,
+        38
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "nativeBounds": [
+        36,
+        34,
+        53,
+        70
+      ]
+    },
+    {
+      "cell": 6,
+      "action": "walk",
+      "phase": 6,
+      "source": "erik-walk-6-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.0,
+        32.5
+      ],
+      "sourceHelmetBounds": [
+        31,
+        28,
+        43,
+        37
+      ],
+      "targetHelmet": [
+        37.0,
+        32.5
+      ],
+      "targetHelmetBounds": [
+        30,
+        28,
+        44,
+        37
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        34,
+        33,
+        55,
+        69
+      ]
+    },
+    {
+      "cell": 7,
+      "action": "walk",
+      "phase": 7,
+      "source": "erik-walk-7-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        37.5,
+        31.5
+      ],
+      "sourceHelmetBounds": [
+        32,
+        28,
+        43,
+        35
+      ],
+      "targetHelmet": [
+        36.0,
+        32.5
+      ],
+      "targetHelmetBounds": [
+        30,
+        28,
+        42,
+        37
+      ],
+      "translation": [
+        -2,
+        1
+      ],
+      "nativeBounds": [
+        32,
+        34,
+        56,
+        69
+      ]
+    },
+    {
+      "cell": 14,
+      "action": "climb",
+      "phase": 0,
+      "source": "erik-climb-0-raw-v4.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        33.5,
+        33.0
+      ],
+      "sourceHelmetBounds": [
+        29,
+        29,
+        38,
+        37
+      ],
+      "targetHelmet": [
+        33.0,
+        33.5
+      ],
+      "targetHelmetBounds": [
+        28,
+        29,
+        38,
+        38
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        33,
+        34,
+        51,
+        70
+      ]
+    },
+    {
+      "cell": 15,
+      "action": "climb",
+      "phase": 1,
+      "source": "erik-climb-1-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        33.5,
+        32.5
+      ],
+      "sourceHelmetBounds": [
+        29,
+        28,
+        38,
+        37
+      ],
+      "targetHelmet": [
+        32.5,
+        32.5
+      ],
+      "targetHelmetBounds": [
+        27,
+        28,
+        38,
+        37
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "nativeBounds": [
+        30,
+        33,
+        50,
+        68
+      ]
+    },
+    {
+      "cell": 16,
+      "action": "climb",
+      "phase": 2,
+      "source": "erik-climb-2-raw-v6.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        32.0,
+        33.0
+      ],
+      "sourceHelmetBounds": [
+        27,
+        29,
+        37,
+        37
+      ],
+      "targetHelmet": [
+        32.0,
+        33.5
+      ],
+      "targetHelmetBounds": [
+        27,
+        29,
+        37,
+        38
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        31,
+        34,
+        49,
+        70
+      ]
+    },
+    {
+      "cell": 17,
+      "action": "climb",
+      "phase": 3,
+      "source": "erik-climb-3-raw-v5.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
+      "sourceHelmet": [
+        32.5,
+        32.0
+      ],
+      "sourceHelmetBounds": [
+        28,
+        28,
+        37,
+        36
+      ],
+      "targetHelmet": [
+        32.5,
+        32.5
+      ],
+      "targetHelmetBounds": [
+        27,
+        28,
+        38,
+        37
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "nativeBounds": [
+        31,
+        34,
+        50,
+        65
+      ]
+    }
+  ],
+  "sourceGate": "pending fullcycle review",
+  "runtimeGate": "pending"
+}

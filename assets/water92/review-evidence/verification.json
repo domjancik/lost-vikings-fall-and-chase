@@ -1,0 +1,37 @@
+{
+  "unitTests": {
+    "count": 394,
+    "failed": 0,
+    "evidence": "output/water92/unit-tests.txt"
+  },
+  "artTests": {
+    "count": 6,
+    "failed": 0,
+    "script": "tools/test-water92-art.py"
+  },
+  "simulationRoutes": {
+    "hz": [
+      60,
+      120
+    ],
+    "ordinaryControls": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "evidence": "output/water92/unit-tests.txt; water-route.test.js"
+  },
+  "browser": {
+    "won": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "errors": [],
+    "time": 117.13333333337262,
+    "evidence": "output/water92/water-route.json"
+  },
+  "contacts": "output/water92/contact-proof.json"
+}

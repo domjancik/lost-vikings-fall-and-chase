@@ -1,0 +1,18 @@
+{
+  "raw": "scene-raw-v2.png",
+  "rawSize": [
+    1536,
+    1024
+  ],
+  "nativeSize": [
+    960,
+    640
+  ],
+  "worldSize": [
+    1920,
+    1280
+  ],
+  "normalization": "once from raw, nearest neighbor, uniform1.6sourcepixels pernativepixel",
+  "pixelWorld": 2,
+  "nativeScaleNeverVariesWithCamera": true
+}

@@ -1,0 +1,25 @@
+{
+  "raw": "nozzle-raw-v3.png",
+  "nativeCell": [
+    96,
+    96
+  ],
+  "uniformSourcePixelsPerNative": 13.0625,
+  "sourceTransform": [
+    13.0625,
+    0,
+    0.5,
+    0,
+    13.0625,
+    -27.75
+  ],
+  "nativeBounds": [
+    18,
+    24,
+    78,
+    92
+  ],
+  "baselineExclusive": 92,
+  "sourceGate": "accepted WATER92-REVIEW.md",
+  "mouth": "opaque dark recessed pipe, matching pressure nozzle construction"
+}

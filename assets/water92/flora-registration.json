@@ -1,0 +1,182 @@
+{
+  "raw": "flora-raw-v2.png",
+  "uniformSourcePixelsPerNative": 11.3125,
+  "records": [
+    {
+      "cell": 0,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 4,
+      "sourceTransform": [
+        11.3125,
+        0,
+        4.126998629511206,
+        0,
+        11.3125,
+        3.3125
+      ],
+      "nativeBounds": [
+        8,
+        13,
+        23,
+        47
+      ]
+    },
+    {
+      "cell": 1,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 2,
+      "sourceTransform": [
+        11.3125,
+        0,
+        366.5233560090703,
+        0,
+        11.3125,
+        3.3125
+      ],
+      "nativeBounds": [
+        5,
+        7,
+        23,
+        47
+      ]
+    },
+    {
+      "cell": 2,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 3,
+      "sourceTransform": [
+        11.3125,
+        0,
+        728.5749656121045,
+        0,
+        11.3125,
+        3.3125
+      ],
+      "nativeBounds": [
+        5,
+        9,
+        23,
+        47
+      ]
+    },
+    {
+      "cell": 3,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 1,
+      "sourceTransform": [
+        11.3125,
+        0,
+        1090.3747714808044,
+        0,
+        11.3125,
+        3.3125
+      ],
+      "nativeBounds": [
+        8,
+        6,
+        23,
+        47
+      ]
+    },
+    {
+      "cell": 4,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 8,
+      "sourceTransform": [
+        11.3125,
+        0,
+        4.414220183486236,
+        0,
+        11.3125,
+        537.3125
+      ],
+      "nativeBounds": [
+        9,
+        12,
+        24,
+        47
+      ]
+    },
+    {
+      "cell": 5,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 6,
+      "sourceTransform": [
+        11.3125,
+        0,
+        366.54090909090905,
+        0,
+        11.3125,
+        537.3125
+      ],
+      "nativeBounds": [
+        9,
+        5,
+        25,
+        47
+      ]
+    },
+    {
+      "cell": 6,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 7,
+      "sourceTransform": [
+        11.3125,
+        0,
+        728.617579383341,
+        0,
+        11.3125,
+        537.3125
+      ],
+      "nativeBounds": [
+        8,
+        8,
+        25,
+        47
+      ]
+    },
+    {
+      "cell": 7,
+      "root": [
+        16,
+        46
+      ],
+      "sourceComponent": 5,
+      "sourceTransform": [
+        11.3125,
+        0,
+        1090.9001831501832,
+        0,
+        11.3125,
+        537.3125
+      ],
+      "nativeBounds": [
+        10,
+        4,
+        24,
+        47
+      ]
+    }
+  ]
+}

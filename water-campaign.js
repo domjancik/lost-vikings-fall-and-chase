@@ -2,7 +2,7 @@ import {prepareMotion,integrateMotion} from './movement.js?v=vikings70';
 import {segmentHit} from './projectile-collision.js?v=vikings70';
 import {damage} from './health.js?v=arc46';
 import {ladderAtHero} from './ladder-context.js?v=look58';
-import {waterBellPocket} from './water-bell-geometry.js?v=water87';
+import {waterBellPocket} from './water-bell-geometry92.js?v=water87';
 import {waterPontoonDeck,WATER_CARRIER_HALF,WATER_CRADLE_SEAT,WATER_CRADLE_WIDTH} from './water-pontoon-geometry.js?v=water87';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const floor=(x,y,w)=>({x,y,w});
@@ -18,11 +18,18 @@ export const WATER_AIR=12;
 export function setupWater(s){
  s.level=waterLevel;s.crate=false;s.turret=false;s.enemies=[];
  for(const h of s.heroes)Object.assign(h,{y:496,ground:true,air:WATER_AIR,airDamage:0});
- s.machine={waterY:540,valveClosed:false,valvePose:0,chainCut:false,chainAt:-1,wound:0,drainPose:0,operator:null,
+ s.machine={waterY:540,valveClosed:false,valvePose:0,chainCut:false,chainAt:-1,wound:0,drainPose:0,operator:null,shelter:0,
   float:{x:1020,y:528,w:180,vx:0,support:'water-pontoon'},pushContact:false,drainStarted:false};
 }
-export const waterJet=s=>({x:682,y:s.machine.waterY,w:56,h:1000-s.machine.waterY,strength:1-s.machine.valvePose});
-export function waterSheltered(s){const o=s.heroes[2];return o.shieldUp&&!o.dead&&Math.abs(o.x-710)<=22&&Math.abs(o.y-(s.machine.waterY-24))<12;}
+export const waterJet=s=>({x:682,y:s.machine.waterY,w:56,h:1000-s.machine.waterY,strength:1-s.machine.valvePose,shelter:s.machine.shelter||0,shieldY:s.heroes[2].y-36});
+export function waterShelterTarget(s){
+ const o=s.heroes[2],plane=o.y-36;
+ if(!o.shieldUp||o.dead||plane<444||plane>=1000)return 0;
+ // Real projected shield/stream overlap replaces a privileged location box.
+ const overlap=Math.max(0,Math.min(1,1-Math.abs(o.x-710)/48));
+ return overlap*overlap*(3-2*overlap);
+}
+export function waterSheltered(s){return waterShelterTarget(s)>.95;}
 export function waterAirPockets(s){return[waterBellPocket(940,900),waterBellPocket(s.machine.float.x,1000,true)];}
 export function waterSurfaces(s){return [...s.level.floors,...s.level.platforms,{x:s.machine.float.x-WATER_CRADLE_WIDTH/2,y:WATER_CRADLE_SEAT,w:WATER_CRADLE_WIDTH,support:'water-cradle'},{...s.machine.float,x:s.machine.float.x-s.machine.float.w/2}];}
 const feedback=(s,message)=>{s.feedback={message,sequence:(s.feedback?.sequence||0)+1};};
@@ -66,6 +73,9 @@ export function waterStep(s,input,dt){
   h.breach=Math.max(0,(h.breach||0)-dt);h.swimming=h.id===0&&h.x>320&&h.x<2100&&h.y+44>g.waterY+4&&h.breach===0;
  }
  prepareMotion(s,input,dt);
+ // The flow retains a short physical response when the shield enters/leaves.
+ // Both downstream rendering and force consume this same continuous amount.
+ g.shelter+=(waterShelterTarget(s)-g.shelter)*(1-Math.exp(-6*dt));
  if(input.interact){const object=waterObjects(s).find(o=>Math.abs(a.x-o.x)<o.radius&&Math.abs(a.y-o.y)<65);if(object)object.run();}
  if(input.sword&&a.id===1&&s.cooldown===0){a.swing=.24;s.cooldown=.3;if(!g.chainCut&&Math.abs(a.x-1660)<82&&Math.abs(a.y-956)<65&&(1660-a.x)*a.face>=-12){g.chainCut=true;g.chainAt=s.time;feedback(s,'Retaining chain cut. The drain wheel is free.');}}
  if(input.action&&a.id===1&&s.cooldown===0){a.bow=.28;s.cooldown=.35;s.shots.push({kind:'arrow',x:a.x+a.face*25,y:a.y+20,v:a.face*580});}
@@ -90,7 +100,10 @@ export function waterStep(s,input,dt){
     if(active&&input.down&&h.support==='water-pontoon')h.y+=8;
    }
   }else if(wet&&h.id===1){if(!winding){h.vx=Math.max(-110,Math.min(110,h.vx));h.moveX=h.vx*dt;}h.vy=Math.min(h.vy,190-1250*dt);}
-  const jet=waterJet(s);if(wet&&h.id!==2&&!waterSheltered(s)&&jet.strength>.02&&h.x>jet.x-18&&h.x<jet.x+jet.w+18)h.moveX-=380*jet.strength*dt;
+  const jet=waterJet(s);if(wet&&h.id!==2&&jet.strength>.02&&h.x>jet.x-18&&h.x<jet.x+jet.w+18){
+   const intercepted=h.y+20>jet.shieldY?g.shelter:0;
+   h.moveX-=380*jet.strength*(1-intercepted)*dt;
+  }
  }
  pushPontoon(s,input,dt);
  const walls=[...waterBanks(),{x:752,w:44,top:0,bottom:850-400*g.valvePose,on:g.valvePose<.999}];

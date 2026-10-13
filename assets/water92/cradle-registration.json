@@ -1,0 +1,25 @@
+{
+  "raw": "cradle-raw-v3.png",
+  "nativeCell": [
+    128,
+    128
+  ],
+  "uniformSourcePixelsPerNative": 9.796875,
+  "sourceTransform": [
+    9.796875,
+    0,
+    0.0,
+    0,
+    9.796875,
+    5.75
+  ],
+  "nativeBounds": [
+    2,
+    6,
+    126,
+    112
+  ],
+  "baselineExclusive": 112,
+  "sourceGate": "accepted WATER92-REVIEW.md",
+  "mouth": null
+}

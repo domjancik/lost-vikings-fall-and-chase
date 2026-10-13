@@ -1,0 +1,65 @@
+[
+  {
+    "capture": "drained",
+    "camera": {
+      "x": 1342,
+      "y": 724,
+      "width": 632,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "screenCrop": [
+      469,
+      54,
+      997,
+      268
+    ],
+    "physicalSeat": 800,
+    "visibleBuoySole": 800,
+    "opaqueUnderOutline": 808,
+    "deck": 752
+  },
+  {
+    "capture": "drained-contact-1x",
+    "camera": {
+      "x": 1026,
+      "y": 330,
+      "width": 1264,
+      "height": 790,
+      "zoom": 1,
+      "look": 0
+    },
+    "screenCrop": [
+      594,
+      476,
+      858,
+      583
+    ],
+    "physicalSeat": 800,
+    "visibleBuoySole": 800,
+    "opaqueUnderOutline": 808,
+    "deck": 752
+  },
+  {
+    "capture": "drained-contact-mobile",
+    "camera": {
+      "x": 1232,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "screenCrop": [
+      311,
+      23,
+      540,
+      116
+    ],
+    "physicalSeat": 800,
+    "visibleBuoySole": 800,
+    "opaqueUnderOutline": 808,
+    "deck": 752
+  }
+]

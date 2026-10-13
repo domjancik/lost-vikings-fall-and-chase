@@ -1,0 +1,390 @@
+{
+  "source": "machines-raw-v2.png",
+  "sourceGate": "accepted WATER92-REVIEW.md",
+  "runtimeGate": "see visual-gates.json",
+  "scaleUniform": 3.7708333333333335,
+  "pixelWorld": 2,
+  "records": [
+    {
+      "cell": 0,
+      "name": "pontoon",
+      "sourceComponents": [
+        3
+      ],
+      "sourceBounds": [
+        14,
+        84,
+        350,
+        348
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        1.0,
+        0,
+        3.7708333333333335,
+        1.0833333333333144
+      ],
+      "nativeBounds": [
+        3,
+        22,
+        93,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 1,
+      "name": "mobile-bell",
+      "sourceComponents": [
+        1
+      ],
+      "sourceBounds": [
+        398,
+        14,
+        688,
+        348
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        362.0,
+        0,
+        3.7708333333333335,
+        1.0833333333333144
+      ],
+      "nativeBounds": [
+        10,
+        3,
+        86,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 2,
+      "name": "fixed-bell",
+      "sourceComponents": [
+        2
+      ],
+      "sourceBounds": [
+        754,
+        14,
+        1056,
+        348
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        724.0,
+        0,
+        3.7708333333333335,
+        1.0833333333333144
+      ],
+      "nativeBounds": [
+        8,
+        3,
+        88,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 3,
+      "name": "crank-housing",
+      "sourceComponents": [
+        4
+      ],
+      "sourceBounds": [
+        1118,
+        104,
+        1418,
+        348
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        1087.0,
+        0,
+        3.7708333333333335,
+        1.0833333333333144
+      ],
+      "nativeBounds": [
+        8,
+        27,
+        88,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 4,
+      "name": "crank-wheel",
+      "sourceComponents": [
+        7
+      ],
+      "sourceBounds": [
+        31,
+        468,
+        332,
+        709
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        0.5,
+        0,
+        3.7708333333333335,
+        362.0833333333333
+      ],
+      "nativeBounds": [
+        8,
+        28,
+        88,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 5,
+      "name": "threaded-rod",
+      "sourceComponents": [
+        5
+      ],
+      "sourceBounds": [
+        491,
+        403,
+        594,
+        709
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        361.5,
+        0,
+        3.7708333333333335,
+        362.0833333333333
+      ],
+      "nativeBounds": [
+        34,
+        11,
+        62,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 6,
+      "name": "valve-housing",
+      "sourceComponents": [
+        6
+      ],
+      "sourceBounds": [
+        768,
+        416,
+        1039,
+        709
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        722.5,
+        0,
+        3.7708333333333335,
+        362.0833333333333
+      ],
+      "nativeBounds": [
+        12,
+        14,
+        84,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 7,
+      "name": "valve-wheel",
+      "sourceComponents": [
+        8
+      ],
+      "sourceBounds": [
+        1145,
+        511,
+        1389,
+        709
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        1086.0,
+        0,
+        3.7708333333333335,
+        362.0833333333333
+      ],
+      "nativeBounds": [
+        16,
+        39,
+        80,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 8,
+      "name": "sluice-rim",
+      "sourceComponents": [
+        12
+      ],
+      "sourceBounds": [
+        8,
+        918,
+        357,
+        1038
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        1.5,
+        0,
+        3.7708333333333335,
+        691.0833333333333
+      ],
+      "nativeBounds": [
+        2,
+        60,
+        94,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 9,
+      "name": "sluice-cover",
+      "sourceComponents": [
+        13
+      ],
+      "sourceBounds": [
+        411,
+        944,
+        677,
+        1038
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        363.0,
+        0,
+        3.7708333333333335,
+        691.0833333333333
+      ],
+      "nativeBounds": [
+        13,
+        67,
+        83,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 10,
+      "name": "service-gate",
+      "sourceComponents": [
+        9
+      ],
+      "sourceBounds": [
+        822,
+        798,
+        987,
+        1038
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        723.5,
+        0,
+        3.7708333333333335,
+        691.0833333333333
+      ],
+      "nativeBounds": [
+        26,
+        28,
+        70,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    },
+    {
+      "cell": 11,
+      "name": "retaining-chain",
+      "sourceComponents": [
+        10,
+        11
+      ],
+      "sourceBounds": [
+        1125,
+        803,
+        1409,
+        1038
+      ],
+      "sourceTransform": [
+        3.7708333333333335,
+        0,
+        1086.0,
+        0,
+        3.7708333333333335,
+        691.0833333333333
+      ],
+      "nativeBounds": [
+        10,
+        30,
+        86,
+        92
+      ],
+      "nativeCell": [
+        96,
+        96
+      ]
+    }
+  ],
+  "pontoonContact": {
+    "nativeVisibleSoleExclusive": 88,
+    "nativeOpaqueUndersideExclusive": 92,
+    "deckNative": 64,
+    "cradleSeatWorld": 800,
+    "dockedDeckWorld": 752,
+    "reason": "Broad visible buoy feet meet seat; four narrowing dark under-outline rows overlap beam"
+  }
+}

@@ -76,6 +76,6 @@ test('descending compressor berths above the machine, carrying its rider on the 
  Object.assign(e,{x:g.float.x,y:g.float.y-44,ground:true,support:'water-pontoon'});
  let previous=g.float.y;
  for(let k=0;k<800;k++){tick(s);assert.ok(g.float.y-previous<=40/60+.001);assert.ok(g.float.y<=WATER_DOCK_DECK);assert.ok(Math.abs(e.y+44-g.float.y)<.001);previous=g.float.y;}
- assert.equal(g.float.y,WATER_DOCK_DECK);assert.equal(g.float.y+56,WATER_CRADLE_SEAT);assert.ok(WATER_CRADLE_SEAT<816);
+ assert.equal(g.float.y,WATER_DOCK_DECK);assert.equal(g.float.y+48,WATER_CRADLE_SEAT);assert.ok(WATER_CRADLE_SEAT<816);
  assert.equal(e.hp,3);
 });

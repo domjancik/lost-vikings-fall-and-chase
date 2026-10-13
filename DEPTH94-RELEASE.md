@@ -22,4 +22,10 @@ Release is frozen from verified Clockwork93; only decorative modules, six
 renderer hooks and reviewed assets are overlaid. Gameplay modules are identical
 apart from cache query strings. Unrelated working-tree changes are excluded.
 
-Live publication and byte verification: pending.
+Published to https://united-marsh-6ppd.here.now/?release=depth94.
+All16checked live files match the reviewed frozen candidate byte-for-byte,
+including the new atlases/renderers and retained controls/mobile Clockwork view.
+Post-publication browser checks cover24desktop/mobile 1x/2x captures across all
+six rooms: decoration and room art ready, browser errors empty. Verification
+hashes and compact live evidence are retained in assets/depth94/review/.
+Implementation/source/evidence commit: c6704f8.

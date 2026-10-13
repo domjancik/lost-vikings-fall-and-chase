@@ -1,0 +1,726 @@
+{
+  "captures": 24,
+  "errors": [],
+  "views": [
+    {
+      "label": "cycle-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "cycle-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "cycle-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "cycle-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 692,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "refraction-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 230,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "refraction-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 624,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "refraction-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 230,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "refraction-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 624,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "momentum-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 248,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "momentum-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 472,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "momentum-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 248,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "momentum-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 472,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "clockwork-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 328,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "clockwork-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 552,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "clockwork-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 328,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "clockwork-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 552,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "water-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 120,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "water-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 292,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "water-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 120,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "water-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 292,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "warden-normal-1440-1x",
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "warden-normal-1440-2x",
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "warden-normal-390-1x",
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 365,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    },
+    {
+      "label": "warden-normal-390-2x",
+      "camera": {
+        "x": 8,
+        "y": 692,
+        "width": 183,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "artReady": true,
+      "decorReady": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "dead": false
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "dead": false
+        }
+      ]
+    }
+  ]
+}

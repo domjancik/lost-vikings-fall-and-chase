@@ -20,6 +20,7 @@ for(const name of ['erik','baleog','olaf']){
  }
 }
 fs.copyFileSync('viking-gallery90.html',path.join(dist,'viking-gallery90.html'));files.push('viking-gallery90.html');
+fs.copyFileSync('assets/vikings90/visual-gates.json',path.join(dist,'assets/vikings90/visual-gates.json'));files.push('assets/vikings90/visual-gates.json');
 for(const name of fs.readdirSync(dist))if(/\.(js|html)$/.test(name)){const p=path.join(dist,name);fs.writeFileSync(p,fs.readFileSync(p,'utf8').replaceAll(/\?v=[a-zA-Z0-9-]+/g,'?v=vikings90'));}
 fs.writeFileSync(folder+'/candidate.json',JSON.stringify({draft,base:'verified Warden91',files,publishAllowed:false},null,2));
 console.log(draft?'Local review candidate; missing heroes use unchanged88 art. Publication blocked.':'Complete local candidate; actual runtime gate still required.');

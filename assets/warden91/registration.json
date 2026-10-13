@@ -1,0 +1,74 @@
+{
+  "nativeCell": [
+    80,
+    64
+  ],
+  "worldPixel": 2,
+  "sourceScale": 8,
+  "base": [
+    76,
+    50
+  ],
+  "frames": [
+    {
+      "cell": 0,
+      "baseRight": 56,
+      "baseBottom": 62,
+      "translation": [
+        20,
+        -12
+      ]
+    },
+    {
+      "cell": 1,
+      "baseRight": 56,
+      "baseBottom": 62,
+      "translation": [
+        20,
+        -12
+      ]
+    },
+    {
+      "cell": 2,
+      "baseRight": 56,
+      "baseBottom": 62,
+      "translation": [
+        20,
+        -12
+      ]
+    },
+    {
+      "cell": 3,
+      "baseRight": 55,
+      "baseBottom": 62,
+      "translation": [
+        21,
+        -12
+      ]
+    }
+  ],
+  "sourceGate": "accepted by independent Warden91 review",
+  "runtimeGate": "accepted: WARDEN91-REVIEW.md actual1x2x/mobile",
+  "emitter": {
+    "source": "emitter-raw-v2.png",
+    "nativeCell": [
+      32,
+      32
+    ],
+    "worldSize": [
+      64,
+      64
+    ],
+    "anchor": [
+      17,
+      29
+    ],
+    "pupil": [
+      17,
+      16
+    ],
+    "normalization": "original once to32 square nearest neighbor; wholecell +1y; binaryalpha",
+    "sourceGate": "accepted by independent review",
+    "runtimeGate": "accepted: WARDEN91-REVIEW.md actual1x2x/mobile"
+  }
+}

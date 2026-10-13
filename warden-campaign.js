@@ -2,6 +2,7 @@ import {prepareMotion,integrateMotion} from './movement.js?v=warden89';
 import {startBash,bashImpact} from './bash.js?v=warden89';
 import {segmentHit} from './projectile-collision.js?v=warden89';
 import {ladderAtHero} from './ladder-context.js?v=warden89';
+import {stepWardenCombat} from './warden-combat.js?v=warden91';
 import {damage} from './health.js?v=warden89';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const smooth=t=>{const p=Math.max(0,Math.min(1,t));return p*p*(3-2*p);};
@@ -12,13 +13,14 @@ export const wardenLevel={name:'THE FOURFOLD WARDEN',subtitle:'A shield under a 
  floors:[{x:0,y:940,w:2200},{x:0,y:1120,w:3000}],
  platforms:[{x:500,y:760,w:400},{x:1880,y:700,w:130},{x:2200,y:500,w:800}],
  ladders:[{x:650,top:760,bottom:940},{x:1940,top:700,bottom:940},{x:400,top:940,bottom:1120},{x:2180,top:940,bottom:1120}],exit:{x:2800,y:500,w:160}};
+export const WARDEN_PERIOD=6.5;
 export const WARDEN_TRACK=[[1740,870],[2040,870],[2040,500],[2080,500]];
 const knots=[0,300,670,710];
 export function wardenCargoPose(distance){const d=Math.max(0,Math.min(710,distance));return d<=300?{x:1740+d,y:870}:d<=670?{x:2040,y:870-(d-300)}:{x:2040+d-670,y:500};}
 export function setupWarden(s){
  s.level=wardenLevel;s.crate=false;s.turret=false;s.enemies=[];
  for(const h of s.heroes)Object.assign(h,{y:896,ground:true});
- s.machine={cycle:0,footY:940,footX:1490,kneel:0,braced:false,disabled:false,shutdown:0,release:0,
+ s.machine={cycle:0,activeLeg:3,braceAge:0,fatigue:0,waves:[],laser:{phase:'cooldown',age:4,target:null},footY:940,footX:1490,kneel:0,braced:false,disabled:false,shutdown:0,release:0,
   exposure:0,shutter:0,stroke:0,capTimer:0,stampAt:-10,impactAt:-10,disabledAt:-10,
   cargo:{x:1740,y:830,w:300,support:'warden-lift',distance:0,target:0,speed:0,pause:0},lastShot:'',lensHit:0};
 }
@@ -29,11 +31,12 @@ export function wardenLegJoint(hip,ankle,bend=1){
 }
 export function wardenGeometry(s){
  const g=s.machine,hips=[1028,1136,1488,1520],feet=[{x:980,y:940},{x:1120,y:940},{x:1660,y:940},{x:g.footX,y:g.footY}];
+ for(let i=0;i<feet.length;i++)feet[i]={x:[980,1120,1660,1490][i],y:940};feet[g.activeLeg??3]={x:g.footX,y:g.footY};
  const legs=hips.map((x,i)=>{const hip={x,y:wardenSpineY(s,x)+112},foot=feet[i],ankle={x:foot.x,y:foot.y-48};return{id:i,far:i%2===0,hip,knee:wardenLegJoint(hip,ankle,i===2?1:-1),ankle,foot};});
  const spine=Array.from({length:8},(_,i)=>{const x=950+i*70;return{x,y:wardenSpineY(s,x),w:72,support:'warden-spine'};});
  return{legs,spine,body:{x:920,y:wardenSpineY(s,920),angle:Math.atan2(20*g.kneel,640)},
-  eye:{x:1724,y:wardenSpineY(s,1560)-4},plunger:{x:1380+g.stroke*22,y:wardenSpineY(s,1380)-24},
-  cargo:{...g.cargo},telegraph:!g.disabled&&!g.braced&&g.cycle%5<1.2};
+  eye:{x:1724,y:wardenSpineY(s,1560)-4},emitter:{x:1648,y:wardenSpineY(s,1560)-118},plunger:{x:1398+g.stroke*16,y:wardenSpineY(s,1380)-24},
+  cargo:{...g.cargo},telegraph:!g.disabled&&!g.braced&&g.cycle%WARDEN_PERIOD<1.2};
 }
 export function wardenSurfaces(s){return[...s.level.floors,...s.level.platforms,...wardenGeometry(s).spine,...(s.machine.release===1?[s.machine.cargo]:[])];}
 const feedback=(s,message)=>{s.feedback={message,sequence:(s.feedback?.sequence||0)+1};};
@@ -53,18 +56,20 @@ function liftStep(s,dt){const c=s.machine.cargo;if(s.machine.release!==1)return;
  Object.assign(c,wardenCargoPose(c.distance));
 }
 export function advanceWarden(s,dt){
- const g=s.machine,o=s.heroes[2],oldFoot=g.footY;
+ const g=s.machine,o=s.heroes[2],oldFoot=g.footY;g.fatigue=Math.max(0,(g.fatigue||0)-dt);
  if(g.disabled){g.braced=false;g.shutdown=Math.min(1,g.shutdown+dt/1.5);g.release=Math.min(1,g.release+dt/1.25);
-  g.footX=1490+64*smooth(g.shutdown*2);g.footY=860+80*smooth((g.shutdown-.35)/.65);
+  g.releaseFootY??=g.footY;g.footX=[980,1120,1660,1490][g.activeLeg??3]+64*smooth(g.shutdown*2);g.footY=g.releaseFootY+(940-g.releaseFootY)*smooth((g.shutdown-.35)/.65);
  }else{
   const holding=o.shieldUp&&o.shield&&!o.dead&&o.ground&&Math.abs(o.x-g.footX)<=24&&Math.abs(o.y+44-940)<3;
-  if(g.braced&&!holding){g.braced=false;g.cycle=1.8;}
-  if(!g.braced){g.cycle+=dt;const p=g.cycle%5;
-   const lift=p<1.2?0:p<2.2?smooth((p-1.2)/1):p<2.9?1:p<3.4?1-smooth((p-2.9)/.5):0;
-   g.footY=approach(g.footY,940-180*lift,600*dt);
+  if(g.braced)g.braceAge+=dt;
+  if(g.braced&&(!holding||g.braceAge>=14)){g.braced=false;g.cycle=Math.floor(g.cycle/WARDEN_PERIOD)*WARDEN_PERIOD+4.5;g.fatigue=2;g.unload=.45;feedback(s,'Olaf cannot hold the load. Clear the foot!');}
+  if(!g.braced){g.cycle+=dt;const p=g.cycle%WARDEN_PERIOD;g.activeLeg=[3,1,2,0][Math.floor(g.cycle/WARDEN_PERIOD)%4];g.footX=[980,1120,1660,1490][g.activeLeg];
+   const lift=p<1.2?0:p<2.2?smooth((p-1.2)/1):p<4.5?1:p<5.2?1-smooth((p-4.5)/.7):0;
+   g.unload=Math.max(0,(g.unload||0)-dt);if(g.unload===0)g.footY=approach(g.footY,940-180*lift,600*dt);
    const plane=o.y-36;
-   if(holding&&g.footY>oldFoot&&oldFoot<=plane+2&&g.footY>=plane-2){g.footY=plane;g.braced=true;feedback(s,'The fork caught the shield. The knee is yielding.');}
+   if(holding&&g.fatigue===0&&g.footY>oldFoot&&oldFoot<=plane+2&&g.footY>=plane-2){g.footY=plane;g.braced=true;g.braceAge=0;feedback(s,'The fork caught the shield. The knee is yielding.');}
    else if(g.footY>oldFoot)for(const h of s.heroes)if(!h.dead&&Math.abs(h.x-g.footX)<42&&Math.abs(h.y+44-940)<5&&oldFoot<h.y+28&&g.footY>=h.y+28){damage(s,h,1);g.stampAt=s.time;}
+   if(oldFoot<939&&g.footY>=939){g.slamAt=s.time;g.waves.push({x:g.footX,dir:-1,age:0},{x:g.footX,dir:1,age:0});}
   }
  }
  g.kneel=approach(g.kneel,g.disabled||g.braced?1:0,dt/(g.disabled||g.braced?1:1.4));
@@ -109,5 +114,6 @@ export function wardenStep(s,input,dt){
  // The pitched walking rim is authoritative; preserve smooth carried contact.
  for(const {h}of oldSpine)if(!h.climbing&&h.vy>=0&&h.x>950&&h.x<1510&&Math.abs(h.y+44-wardenSpineY(s,h.x))<7){h.y=wardenSpineY(s,h.x)-44;h.ground=true;h.vy=0;h.support='warden-spine';}
  for(const h of passengers)if(h.ground&&!h.climbing&&h.x+14>g.cargo.x&&h.x-14<g.cargo.x+300&&Math.abs(h.y+44-g.cargo.y)<3)h.support='warden-lift';
+ stepWardenCombat(s,dt);
  s.power=g.disabled;s.won=!s.failed&&g.disabled&&s.heroes.every(h=>Math.abs(h.x-2800)<80&&Math.abs(h.y+44-500)<4);
 }

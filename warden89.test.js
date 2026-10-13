@@ -11,9 +11,9 @@ test('warden lowers the spine into the original jump envelope and has exactly fo
  assert.equal(after.legs.filter(l=>l.foot.y===940).length,3);
 });
 test('shield bracing requires descending fork contact, not a remotely raised shield',()=>{
- const s=state(),o=s.heroes[2];o.shieldUp=true;o.shield=true;o.x=300;s.machine.cycle=3.2;
+ const s=state(),o=s.heroes[2];o.shieldUp=true;o.shield=true;o.x=300;s.machine.cycle=4.6;
  advanceWarden(s,1/60);assert.equal(s.machine.braced,false);
- o.x=1490;o.y=896;o.ground=true;s.machine.cycle=3;
+ o.x=1490;o.y=896;o.ground=true;s.machine.cycle=4.6;
  for(let n=0;n<60&&!s.machine.braced;n++)advanceWarden(s,1/60);
  assert.equal(s.machine.braced,true);s.active=1;
  for(let n=0;n<90;n++)advanceWarden(s,1/60);assert.equal(s.machine.kneel,1);
@@ -47,8 +47,8 @@ test('unshielded stomp causes real damage and eventual death; remote shield cann
 });
 test('four rigid load paths remain connected through brace and shutdown without crossing the floor',()=>{
  const s=createState(5,'cycle');Object.assign(s.heroes[2],{x:1490,shieldUp:true});
- for(let n=0;n<720;n++){
-  if(n===420)s.machine.disabled=true;advanceWarden(s,1/60);
+ for(let n=0;n<2600;n++){
+  if(n===2000)s.machine.disabled=true;advanceWarden(s,1/60);
   for(const leg of wardenGeometry(s).legs){assert.ok(Math.abs(Math.hypot(leg.hip.x-leg.knee.x,leg.hip.y-leg.knee.y)-148)<.01);assert.ok(Math.abs(Math.hypot(leg.knee.x-leg.ankle.x,leg.knee.y-leg.ankle.y)-148)<.01);assert.ok(leg.knee.y+22<=940,`Joint buries below floor: ${leg.id} ${leg.knee.y}`);}
  }
 });

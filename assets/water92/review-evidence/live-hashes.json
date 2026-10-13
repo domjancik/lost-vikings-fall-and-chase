@@ -1,0 +1,566 @@
+[
+  {
+    "file": "water-campaign.js",
+    "sha256": "d3b568fed1de44904df848d104f16a55bb20e831743d634e923efb2d00743125",
+    "sourceSha256": "d3b568fed1de44904df848d104f16a55bb20e831743d634e923efb2d00743125",
+    "bytes": 10308
+  },
+  {
+    "file": "water-pontoon-geometry.js",
+    "sha256": "313ede31ce33594ba6330d15e4a5aa8f3cdcc71915e39ff02e629bf9a5ce241c",
+    "sourceSha256": "313ede31ce33594ba6330d15e4a5aa8f3cdcc71915e39ff02e629bf9a5ce241c",
+    "bytes": 479
+  },
+  {
+    "file": "water-bell-geometry92.js",
+    "sha256": "47ef1fc25c9b31ca10e34afccc291e5dc06800a4a07d79e595f5a893bf9e83ca",
+    "sourceSha256": "47ef1fc25c9b31ca10e34afccc291e5dc06800a4a07d79e595f5a893bf9e83ca",
+    "bytes": 208
+  },
+  {
+    "file": "water-render.js",
+    "sha256": "872b8033a2f18b75cc797943017227011b57409592446370e6e8506aa10fa908",
+    "sourceSha256": "872b8033a2f18b75cc797943017227011b57409592446370e6e8506aa10fa908",
+    "bytes": 5179
+  },
+  {
+    "file": "water-art92.js",
+    "sha256": "89a49f63dc7ad5114fb08ac48259111fe8f220bea1e16c8c82d19e4ba752c2c1",
+    "sourceSha256": "89a49f63dc7ad5114fb08ac48259111fe8f220bea1e16c8c82d19e4ba752c2c1",
+    "bytes": 7328
+  },
+  {
+    "file": "water-terrain92.js",
+    "sha256": "c89d99841b060d1a73812f97bde18bd5da9702e1cd3b952400479c1c82b9b02c",
+    "sourceSha256": "c89d99841b060d1a73812f97bde18bd5da9702e1cd3b952400479c1c82b9b02c",
+    "bytes": 659
+  },
+  {
+    "file": "water-effects92.js",
+    "sha256": "13ef6c5c633f49a4ea89d52b2ca7ff4a81161a490038e3543ed97f44aedb99c3",
+    "sourceSha256": "13ef6c5c633f49a4ea89d52b2ca7ff4a81161a490038e3543ed97f44aedb99c3",
+    "bytes": 7297
+  },
+  {
+    "file": "assets/water92/machines-native.png",
+    "sha256": "0a80a43b7217819632749f3f85d5aeda073017d885572f03ea7357100418e059",
+    "sourceSha256": "0a80a43b7217819632749f3f85d5aeda073017d885572f03ea7357100418e059",
+    "bytes": 85278
+  },
+  {
+    "file": "assets/water92/nozzle-native.png",
+    "sha256": "c71f2795fe56e560a6733bfa282a80825ac0ba1dd35e0b5c48bb638d5b45a5e5",
+    "sourceSha256": "c71f2795fe56e560a6733bfa282a80825ac0ba1dd35e0b5c48bb638d5b45a5e5",
+    "bytes": 6193
+  },
+  {
+    "file": "assets/water92/cradle-native.png",
+    "sha256": "1b4a5de1b16d5e26e5994c2133fe54fc9772b9763e9552f25be96c749df14388",
+    "sourceSha256": "1b4a5de1b16d5e26e5994c2133fe54fc9772b9763e9552f25be96c749df14388",
+    "bytes": 12171
+  },
+  {
+    "file": "assets/water92/scene-native.png",
+    "sha256": "444d3ad789846ddc8f8c32958e502a5c675625c744a33dc66e557ff690bb4f96",
+    "sourceSha256": "444d3ad789846ddc8f8c32958e502a5c675625c744a33dc66e557ff690bb4f96",
+    "bytes": 868468
+  },
+  {
+    "file": "assets/water92/terrain-native.png",
+    "sha256": "c8f382aaf62501e46c8baf83433e4b878c2ad01572dfeff42e1e21cdbd08f95f",
+    "sourceSha256": "c8f382aaf62501e46c8baf83433e4b878c2ad01572dfeff42e1e21cdbd08f95f",
+    "bytes": 137757
+  },
+  {
+    "file": "assets/water92/flora-native.png",
+    "sha256": "64973a920586bfa0f99ec27df5eda981a81a312a3d5917d4fc1001967b18a620",
+    "sourceSha256": "64973a920586bfa0f99ec27df5eda981a81a312a3d5917d4fc1001967b18a620",
+    "bytes": 9997
+  },
+  {
+    "file": "assets/water92/registration.json",
+    "sha256": "ce276490212b8c6887eea827952ab7ac52b676686bc41eaa0f403d89b15efa82",
+    "sourceSha256": "ce276490212b8c6887eea827952ab7ac52b676686bc41eaa0f403d89b15efa82",
+    "bytes": 6637
+  },
+  {
+    "file": "assets/water92/visual-gates.json",
+    "sha256": "1be432d8e0d96e6ba6300539fd1d4e9d62d33955945eda3b178353baa63ef32d",
+    "sourceSha256": "1be432d8e0d96e6ba6300539fd1d4e9d62d33955945eda3b178353baa63ef32d",
+    "bytes": 6897
+  },
+  {
+    "file": "hero-art.js",
+    "sha256": "822a3ce5495ed7e42c430e5005238b1a6db495d8f84c6d1c24b3f625d12c4892",
+    "sourceSha256": "822a3ce5495ed7e42c430e5005238b1a6db495d8f84c6d1c24b3f625d12c4892",
+    "bytes": 5300
+  },
+  {
+    "file": "hero-frames.js",
+    "sha256": "692b6ec09ce8b912bfbd549b34f6aa6c1495ecccaa7d609a03bf1559372f6f65",
+    "sourceSha256": "692b6ec09ce8b912bfbd549b34f6aa6c1495ecccaa7d609a03bf1559372f6f65",
+    "bytes": 2748
+  },
+  {
+    "file": "hero-skins.js",
+    "sha256": "02e8d3692d194d62c61ced888a30330863129f11f7d239e1919dd13ff7a48de4",
+    "sourceSha256": "02e8d3692d194d62c61ced888a30330863129f11f7d239e1919dd13ff7a48de4",
+    "bytes": 742
+  },
+  {
+    "file": "projectile-collision.js",
+    "sha256": "a31aa4eba0470b32b3231fed89e8d879693f1456dc0974ffad5b8975b71df6cb",
+    "sourceSha256": "a31aa4eba0470b32b3231fed89e8d879693f1456dc0974ffad5b8975b71df6cb",
+    "bytes": 2306
+  },
+  {
+    "file": "hero-shield-registration.js",
+    "sha256": "110b000841c42cd9e928bb4dd65ccb299752286525af53198bfecbd97011bd34",
+    "sourceSha256": "110b000841c42cd9e928bb4dd65ccb299752286525af53198bfecbd97011bd34",
+    "bytes": 467
+  },
+  {
+    "file": "game.js",
+    "sha256": "08a6050ad540bcec4609f7a4f88aed5d3b53518daad16bb3d34d6fa256970cc0",
+    "sourceSha256": "08a6050ad540bcec4609f7a4f88aed5d3b53518daad16bb3d34d6fa256970cc0",
+    "bytes": 34600
+  },
+  {
+    "file": "assets/vikings90/erik-native.png",
+    "sha256": "8c60fc0926be920baadf518f77d79a482d304a80ca89775334616462120718fc",
+    "sourceSha256": "8c60fc0926be920baadf518f77d79a482d304a80ca89775334616462120718fc",
+    "bytes": 58677
+  },
+  {
+    "file": "assets/vikings90/erik-registration.json",
+    "sha256": "d4d6a62ac40a40e0089333fc783ed36a0a1088da5cd5c6b49e747190eb04ec5f",
+    "sourceSha256": "d4d6a62ac40a40e0089333fc783ed36a0a1088da5cd5c6b49e747190eb04ec5f",
+    "bytes": 10677
+  },
+  {
+    "file": "assets/vikings90/erik-guide.json",
+    "sha256": "b95ef768020137368a72944f4a46d1ff3d099162f17d88ab9121312e44f25a2c",
+    "sourceSha256": "b95ef768020137368a72944f4a46d1ff3d099162f17d88ab9121312e44f25a2c",
+    "bytes": 304064
+  },
+  {
+    "file": "assets/vikings90/erik-guide-native.png",
+    "sha256": "291a9ab3dd5637f42c2cf3400897b2f742943fe64af2b279d839a1e7f038e05d",
+    "sourceSha256": "291a9ab3dd5637f42c2cf3400897b2f742943fe64af2b279d839a1e7f038e05d",
+    "bytes": 6271
+  },
+  {
+    "file": "assets/vikings90/erik-walk-0-raw-v4.png",
+    "sha256": "14d70c51163acd4e6dcca0d7a7b3eef0ee7b978813a31d9660495e3a197e90e4",
+    "sourceSha256": "14d70c51163acd4e6dcca0d7a7b3eef0ee7b978813a31d9660495e3a197e90e4",
+    "bytes": 275644
+  },
+  {
+    "file": "assets/vikings90/erik-walk-1-raw-v4.png",
+    "sha256": "6022f15c4b86932cddec1675c3808bd3f116e4e25596dca3996e747813185d1a",
+    "sourceSha256": "6022f15c4b86932cddec1675c3808bd3f116e4e25596dca3996e747813185d1a",
+    "bytes": 271679
+  },
+  {
+    "file": "assets/vikings90/erik-walk-2-raw-v4.png",
+    "sha256": "ff86aa14c36fc804527d1c1850614dce00f4300855287e2c79646043d891dc1c",
+    "sourceSha256": "ff86aa14c36fc804527d1c1850614dce00f4300855287e2c79646043d891dc1c",
+    "bytes": 268845
+  },
+  {
+    "file": "assets/vikings90/erik-walk-3-raw-v5.png",
+    "sha256": "06fe706bc57acaf171127e4754001b6c180474645a33bc0f5090fe1d53917cbe",
+    "sourceSha256": "06fe706bc57acaf171127e4754001b6c180474645a33bc0f5090fe1d53917cbe",
+    "bytes": 259693
+  },
+  {
+    "file": "assets/vikings90/erik-walk-4-raw-v6.png",
+    "sha256": "aa209502d39985b260c94cb5bab2cf4e3f95c0590ca172d6b4db1a68a68aa745",
+    "sourceSha256": "aa209502d39985b260c94cb5bab2cf4e3f95c0590ca172d6b4db1a68a68aa745",
+    "bytes": 235275
+  },
+  {
+    "file": "assets/vikings90/erik-walk-5-raw-v5.png",
+    "sha256": "43e8fe992ecf64b662d8f71e6eea03f75f9b2f485270edb440769d3929e6646d",
+    "sourceSha256": "43e8fe992ecf64b662d8f71e6eea03f75f9b2f485270edb440769d3929e6646d",
+    "bytes": 244353
+  },
+  {
+    "file": "assets/vikings90/erik-walk-6-raw-v5.png",
+    "sha256": "bbc44470a23d337483dd99c67d9924a115745281363a9cee37667bd953ea0fca",
+    "sourceSha256": "bbc44470a23d337483dd99c67d9924a115745281363a9cee37667bd953ea0fca",
+    "bytes": 265283
+  },
+  {
+    "file": "assets/vikings90/erik-walk-7-raw-v4.png",
+    "sha256": "aa01991e2e99336182a6ee2e2068c7a564cf4e0cbad383c12a8285ff84804284",
+    "sourceSha256": "aa01991e2e99336182a6ee2e2068c7a564cf4e0cbad383c12a8285ff84804284",
+    "bytes": 262393
+  },
+  {
+    "file": "assets/vikings90/erik-climb-0-raw-v4.png",
+    "sha256": "b8f6e250751d9de2afa831b2090bddcbcbf29d38bf92eabebbf38364b0196039",
+    "sourceSha256": "b8f6e250751d9de2afa831b2090bddcbcbf29d38bf92eabebbf38364b0196039",
+    "bytes": 248408
+  },
+  {
+    "file": "assets/vikings90/erik-climb-1-raw-v5.png",
+    "sha256": "495e584a9b9263eec89c6f90a9a516d7ddb45b926974e403674a20c14e236cdf",
+    "sourceSha256": "495e584a9b9263eec89c6f90a9a516d7ddb45b926974e403674a20c14e236cdf",
+    "bytes": 251236
+  },
+  {
+    "file": "assets/vikings90/erik-climb-2-raw-v6.png",
+    "sha256": "a59ea148204585b92008734f5ca9b83da1d9cd5205051b09c86380351ebdd4b8",
+    "sourceSha256": "a59ea148204585b92008734f5ca9b83da1d9cd5205051b09c86380351ebdd4b8",
+    "bytes": 258555
+  },
+  {
+    "file": "assets/vikings90/erik-climb-3-raw-v5.png",
+    "sha256": "c27f668c83b5574f8c861ba7c852c1214c37a935386653adf299fb33b947163d",
+    "sourceSha256": "c27f668c83b5574f8c861ba7c852c1214c37a935386653adf299fb33b947163d",
+    "bytes": 229771
+  },
+  {
+    "file": "assets/vikings90/baleog-native.png",
+    "sha256": "b9c2fc16f7576f3920d803b60d3d94a2763903f862def11bfbbc20b992cb9dca",
+    "sourceSha256": "b9c2fc16f7576f3920d803b60d3d94a2763903f862def11bfbbc20b992cb9dca",
+    "bytes": 87415
+  },
+  {
+    "file": "assets/vikings90/baleog-registration.json",
+    "sha256": "07c9d771b9949f0e1f0c9308a1528f2e4f72ec738c8e3054e01daba290cf30b0",
+    "sourceSha256": "07c9d771b9949f0e1f0c9308a1528f2e4f72ec738c8e3054e01daba290cf30b0",
+    "bytes": 10651
+  },
+  {
+    "file": "assets/vikings90/baleog-guide.json",
+    "sha256": "e90fc3a213d6dda8df0f88967393acbbc1cf3a40f82550b4bf65e7fda9d40ccb",
+    "sourceSha256": "e90fc3a213d6dda8df0f88967393acbbc1cf3a40f82550b4bf65e7fda9d40ccb",
+    "bytes": 335796
+  },
+  {
+    "file": "assets/vikings90/baleog-guide-native.png",
+    "sha256": "a74913b56d3fde8a615e528ac2ec73284f235a121805304630eebd5cc9b74299",
+    "sourceSha256": "a74913b56d3fde8a615e528ac2ec73284f235a121805304630eebd5cc9b74299",
+    "bytes": 6380
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-0-raw-v4.png",
+    "sha256": "aed77c63087c22e171b03bba7632efad1adc980b852249f116ac0a7924d09711",
+    "sourceSha256": "aed77c63087c22e171b03bba7632efad1adc980b852249f116ac0a7924d09711",
+    "bytes": 313443
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-1-raw-v6.png",
+    "sha256": "d24826d1fddd9c9bc50ac90cc00f0eeac5aa94649064c5d50cd8902e7e904bd0",
+    "sourceSha256": "d24826d1fddd9c9bc50ac90cc00f0eeac5aa94649064c5d50cd8902e7e904bd0",
+    "bytes": 308393
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-2-raw-v5.png",
+    "sha256": "198033e7b01368e1d7f6f56d4bc839505d3f06b1e9b6ba71c9f5f5c71618e191",
+    "sourceSha256": "198033e7b01368e1d7f6f56d4bc839505d3f06b1e9b6ba71c9f5f5c71618e191",
+    "bytes": 295697
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-3-raw-v5.png",
+    "sha256": "399590ad3a791fb12e5ea6dbd658779a0a03a3614333527414276db460424235",
+    "sourceSha256": "399590ad3a791fb12e5ea6dbd658779a0a03a3614333527414276db460424235",
+    "bytes": 285587
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-4-raw-v4.png",
+    "sha256": "4682a5ab236313aac709d93c3bebb4053a4be3b055fa9695cd17eb8edbadc929",
+    "sourceSha256": "4682a5ab236313aac709d93c3bebb4053a4be3b055fa9695cd17eb8edbadc929",
+    "bytes": 276465
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-5-raw-v5.png",
+    "sha256": "28bd71cde5f77168400681e053e1ae56add69981445a3037c4f191f8223e8843",
+    "sourceSha256": "28bd71cde5f77168400681e053e1ae56add69981445a3037c4f191f8223e8843",
+    "bytes": 291624
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-6-raw-v5.png",
+    "sha256": "d1e05806be9d9a7ca71ea5d19ce04189de9129ca65c4c2160bdc9d2ba32a5d6b",
+    "sourceSha256": "d1e05806be9d9a7ca71ea5d19ce04189de9129ca65c4c2160bdc9d2ba32a5d6b",
+    "bytes": 266091
+  },
+  {
+    "file": "assets/vikings90/baleog-walk-7-raw-v5.png",
+    "sha256": "c2f5991bd4548c7b3adee610b5911482774784da5a7f321590ae009188cb4230",
+    "sourceSha256": "c2f5991bd4548c7b3adee610b5911482774784da5a7f321590ae009188cb4230",
+    "bytes": 312093
+  },
+  {
+    "file": "assets/vikings90/baleog-climb-0-raw-v5.png",
+    "sha256": "0f8f9ac4c9e63ffe4dff180c8ee4e0b453274861d9f0fb2d079b22a595c9d891",
+    "sourceSha256": "0f8f9ac4c9e63ffe4dff180c8ee4e0b453274861d9f0fb2d079b22a595c9d891",
+    "bytes": 312788
+  },
+  {
+    "file": "assets/vikings90/baleog-climb-1-raw-v5.png",
+    "sha256": "c6680b606bf0c0b3b5c9f46a5e20615c311ee3f4a830c873994eeba33cb64b31",
+    "sourceSha256": "c6680b606bf0c0b3b5c9f46a5e20615c311ee3f4a830c873994eeba33cb64b31",
+    "bytes": 270110
+  },
+  {
+    "file": "assets/vikings90/baleog-climb-2-raw-v7.png",
+    "sha256": "b3f6cc6539c2dd6e33faca129b6e579ceb1f3eaaf4cc028b8e42d2228e6b3ced",
+    "sourceSha256": "b3f6cc6539c2dd6e33faca129b6e579ceb1f3eaaf4cc028b8e42d2228e6b3ced",
+    "bytes": 322027
+  },
+  {
+    "file": "assets/vikings90/baleog-climb-3-raw-v5.png",
+    "sha256": "b34cf80cc34908009cb1c3e310271ae62f129c21569806be65c926a471e58453",
+    "sourceSha256": "b34cf80cc34908009cb1c3e310271ae62f129c21569806be65c926a471e58453",
+    "bytes": 257861
+  },
+  {
+    "file": "assets/vikings90/olaf-native.png",
+    "sha256": "7501066441a0950d2d7136a3deb8c7f0421c0197cc2b0f6ad8f9081eef716405",
+    "sourceSha256": "7501066441a0950d2d7136a3deb8c7f0421c0197cc2b0f6ad8f9081eef716405",
+    "bytes": 162865
+  },
+  {
+    "file": "assets/vikings90/olaf-registration.json",
+    "sha256": "c163d7673d03099848a885a795a08d0c4c66ae3154f0c1e4f78b9b0ad8151063",
+    "sourceSha256": "c163d7673d03099848a885a795a08d0c4c66ae3154f0c1e4f78b9b0ad8151063",
+    "bytes": 23319
+  },
+  {
+    "file": "assets/vikings90/olaf-guide.json",
+    "sha256": "315d88280126fcfb9941a96772bdf6108981af2df1bd50d05d3f99fa75beac6d",
+    "sourceSha256": "315d88280126fcfb9941a96772bdf6108981af2df1bd50d05d3f99fa75beac6d",
+    "bytes": 724906
+  },
+  {
+    "file": "assets/vikings90/olaf-guide-native.png",
+    "sha256": "71d4951829961fc07fd58596c3e2e24bbce325f63da028542a612f683fa7c5bb",
+    "sourceSha256": "71d4951829961fc07fd58596c3e2e24bbce325f63da028542a612f683fa7c5bb",
+    "bytes": 12787
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-0-raw-v5.png",
+    "sha256": "ec8c9d966c69be94d25fdd5b01a05031f19ec41d913792a25c8e126534b5668e",
+    "sourceSha256": "ec8c9d966c69be94d25fdd5b01a05031f19ec41d913792a25c8e126534b5668e",
+    "bytes": 408896
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-1-raw-v5.png",
+    "sha256": "be08bee4ed0a63d9aa1a649854b43667860825afd3589e92e96d56ac3c07fb08",
+    "sourceSha256": "be08bee4ed0a63d9aa1a649854b43667860825afd3589e92e96d56ac3c07fb08",
+    "bytes": 414649
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-2-raw-v5.png",
+    "sha256": "c128009fd27ba7b29e0be17e82050a43ffd52aa30989e96418cd33c7adbc44df",
+    "sourceSha256": "c128009fd27ba7b29e0be17e82050a43ffd52aa30989e96418cd33c7adbc44df",
+    "bytes": 413486
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-3-raw-v5.png",
+    "sha256": "892d1b0f7f98859737ac1897397bc00a634418a5bea9001ac2526f4ddc65789f",
+    "sourceSha256": "892d1b0f7f98859737ac1897397bc00a634418a5bea9001ac2526f4ddc65789f",
+    "bytes": 414846
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-4-raw-v6.png",
+    "sha256": "868bd221b6955921454c086829761f67ed5855cd52d55846a256b07d1d7a1c8f",
+    "sourceSha256": "868bd221b6955921454c086829761f67ed5855cd52d55846a256b07d1d7a1c8f",
+    "bytes": 433301
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-5-raw-v5.png",
+    "sha256": "40113ad4b32dc9bdad3aba64bffd5ed523361801311bd333279622c0551aec3b",
+    "sourceSha256": "40113ad4b32dc9bdad3aba64bffd5ed523361801311bd333279622c0551aec3b",
+    "bytes": 392188
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-6-raw-v5.png",
+    "sha256": "015453364ce65eb8d70cb8c1e376b7f80d5c89d66586f6f23b3cfa59ba35de8c",
+    "sourceSha256": "015453364ce65eb8d70cb8c1e376b7f80d5c89d66586f6f23b3cfa59ba35de8c",
+    "bytes": 396462
+  },
+  {
+    "file": "assets/vikings90/olaf-walk-7-raw-v5.png",
+    "sha256": "8d41ff9ef4346f9567fcb79cd18dde14eac01e0179d92e3d6c94e1ab594867c7",
+    "sourceSha256": "8d41ff9ef4346f9567fcb79cd18dde14eac01e0179d92e3d6c94e1ab594867c7",
+    "bytes": 415373
+  },
+  {
+    "file": "assets/vikings90/olaf-climb-0-raw-v6.png",
+    "sha256": "4923bdd6245dea150277a8c089afb94c65d4df9d374a741d45081f896339769e",
+    "sourceSha256": "4923bdd6245dea150277a8c089afb94c65d4df9d374a741d45081f896339769e",
+    "bytes": 338719
+  },
+  {
+    "file": "assets/vikings90/olaf-climb-1-raw-v5.png",
+    "sha256": "f07f96bdee8282d8b6ecb19715337b8a5c8a1e043f48d445dbb5a352110b7e61",
+    "sourceSha256": "f07f96bdee8282d8b6ecb19715337b8a5c8a1e043f48d445dbb5a352110b7e61",
+    "bytes": 341566
+  },
+  {
+    "file": "assets/vikings90/olaf-climb-2-raw-v10.png",
+    "sha256": "59dbd60d475d64e9eb0dc2abf0bc4f77797bcef5ea42f506f325c0418f87ea4f",
+    "sourceSha256": "59dbd60d475d64e9eb0dc2abf0bc4f77797bcef5ea42f506f325c0418f87ea4f",
+    "bytes": 325215
+  },
+  {
+    "file": "assets/vikings90/olaf-climb-3-raw-v5.png",
+    "sha256": "a27d34f53ef09e097e535677669760acacfba91f951316dc0ce232007c47cdfa",
+    "sourceSha256": "a27d34f53ef09e097e535677669760acacfba91f951316dc0ce232007c47cdfa",
+    "bytes": 319402
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-0-raw-v16.png",
+    "sha256": "f54f6dc23a73f585293a465040b5b7cdb9dabec1328702a57bf67dc0392a6fdb",
+    "sourceSha256": "f54f6dc23a73f585293a465040b5b7cdb9dabec1328702a57bf67dc0392a6fdb",
+    "bytes": 432439
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-1-raw-v16.png",
+    "sha256": "e155c4486b7c3efad39536f00fbd6a4e08be7f3be61ad00d45de2839891c9bfe",
+    "sourceSha256": "e155c4486b7c3efad39536f00fbd6a4e08be7f3be61ad00d45de2839891c9bfe",
+    "bytes": 432401
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-2-raw-v13.png",
+    "sha256": "74c26ed02e384314dff6b7dd0e3704ee076d4d9d58736aadebf120f26f4bc216",
+    "sourceSha256": "74c26ed02e384314dff6b7dd0e3704ee076d4d9d58736aadebf120f26f4bc216",
+    "bytes": 415204
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-3-raw-v15.png",
+    "sha256": "61d75a60049c1afe5ebd33a032bbfaa36ece2fff251f0a9a0f72dbfdd5a35fec",
+    "sourceSha256": "61d75a60049c1afe5ebd33a032bbfaa36ece2fff251f0a9a0f72dbfdd5a35fec",
+    "bytes": 439316
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-4-raw-v9.png",
+    "sha256": "b7ee2ce1910a2cb0087321f7738c47f29c497c4a9ce5e64df961fb5bdd19e3b4",
+    "sourceSha256": "b7ee2ce1910a2cb0087321f7738c47f29c497c4a9ce5e64df961fb5bdd19e3b4",
+    "bytes": 437900
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-5-raw-v12.png",
+    "sha256": "2e64f5d1137bbf6d01421ca9b52ed75ce73fb047ce319618b1d454b743158c1d",
+    "sourceSha256": "2e64f5d1137bbf6d01421ca9b52ed75ce73fb047ce319618b1d454b743158c1d",
+    "bytes": 429716
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-6-raw-v14.png",
+    "sha256": "f68b1a4b02beccb8ab7d6d3b7ebc4809a30fea87a909b256990bf842bc175d78",
+    "sourceSha256": "f68b1a4b02beccb8ab7d6d3b7ebc4809a30fea87a909b256990bf842bc175d78",
+    "bytes": 415894
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-walk-7-raw-v15.png",
+    "sha256": "ea18ecd90eb2ade2c4fb3a4012f824f48412b79ced5c03017780102055044e83",
+    "sourceSha256": "ea18ecd90eb2ade2c4fb3a4012f824f48412b79ced5c03017780102055044e83",
+    "bytes": 419834
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-climb-0-raw-v11.png",
+    "sha256": "1505be2a01a7a1d1bd7503a2efdc1d9cb828e0f40b638ceb7de6ab22f2ff71d8",
+    "sourceSha256": "1505be2a01a7a1d1bd7503a2efdc1d9cb828e0f40b638ceb7de6ab22f2ff71d8",
+    "bytes": 370711
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-climb-1-raw-v12.png",
+    "sha256": "59bd9e8dcfaf48f6ed190486a8a4853e57eff65af51880bff25d7d8bf979bd34",
+    "sourceSha256": "59bd9e8dcfaf48f6ed190486a8a4853e57eff65af51880bff25d7d8bf979bd34",
+    "bytes": 364990
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-climb-2-raw-v10.png",
+    "sha256": "2b30dae3435ae83b156950e8b7af8914c2cc4f5456e33b41a796cee3068cdd5b",
+    "sourceSha256": "2b30dae3435ae83b156950e8b7af8914c2cc4f5456e33b41a796cee3068cdd5b",
+    "bytes": 354787
+  },
+  {
+    "file": "assets/vikings90/olaf-overhead-climb-3-raw-v12.png",
+    "sha256": "7e54e78e9db6de957a9b10cb789e2d10d286ac484b51c5690f3f0b5981cdc236",
+    "sourceSha256": "7e54e78e9db6de957a9b10cb789e2d10d286ac484b51c5690f3f0b5981cdc236",
+    "bytes": 330076
+  },
+  {
+    "file": "viking-gallery90.html",
+    "sha256": "e6dd010cdf9aee286031031db2eeb05e117564608b7c1cf48bcabb583b61cdaf",
+    "sourceSha256": "67768c2be3ef150659c7fbb9caff47544af67cfc1c7867ff0c70fc061ed5e244",
+    "bytes": 5159
+  },
+  {
+    "file": "assets/vikings90/olaf-ground-contacts.json",
+    "sha256": "475ae5ddb2430129727c665d9d369821b93c1566b0a335ae250a348aa958d8e4",
+    "sourceSha256": "475ae5ddb2430129727c665d9d369821b93c1566b0a335ae250a348aa958d8e4",
+    "bytes": 1295
+  },
+  {
+    "file": "assets/vikings90/visual-gates.json",
+    "sha256": "8332587f75128294f57e55aa8fcb74c5058bbb2976d1d9789bcec80ca5753666",
+    "sourceSha256": "8332587f75128294f57e55aa8fcb74c5058bbb2976d1d9789bcec80ca5753666",
+    "bytes": 2049
+  },
+  {
+    "file": "warden-campaign.js",
+    "sha256": "5aa5448813fa1b42a67c3b2e69519535cff883d64c5272fda344f0556f868cb7",
+    "sourceSha256": "5aa5448813fa1b42a67c3b2e69519535cff883d64c5272fda344f0556f868cb7",
+    "bytes": 11034
+  },
+  {
+    "file": "warden-combat.js",
+    "sha256": "6586f6469daa7bac2e84bb0e2ec8ac3db60b2ea8ec4cdb6529438b46e116e5c8",
+    "sourceSha256": "6586f6469daa7bac2e84bb0e2ec8ac3db60b2ea8ec4cdb6529438b46e116e5c8",
+    "bytes": 2910
+  },
+  {
+    "file": "warden-render.js",
+    "sha256": "fb217727f59870c0e253fddb2259a5c9d1c87acf169691743d60c1b54948045b",
+    "sourceSha256": "fb217727f59870c0e253fddb2259a5c9d1c87acf169691743d60c1b54948045b",
+    "bytes": 8474
+  },
+  {
+    "file": "warden-audio.js",
+    "sha256": "13de47edbf9fa0ba2c5a8152ec43cbf5ae33bcdffe5633fd5ef41d9c1bb3345d",
+    "sourceSha256": "13de47edbf9fa0ba2c5a8152ec43cbf5ae33bcdffe5633fd5ef41d9c1bb3345d",
+    "bytes": 1486
+  },
+  {
+    "file": "assets/warden91/plunger-native.png",
+    "sha256": "2991c52c183047fd095836278f94b4a59c34678baa48da5f3673fe552b85a782",
+    "sourceSha256": "2991c52c183047fd095836278f94b4a59c34678baa48da5f3673fe552b85a782",
+    "bytes": 12072
+  },
+  {
+    "file": "assets/warden91/registration.json",
+    "sha256": "11f716e3d35f97f2702bc3dc46fb669920f99e7994ad80ee49e66535f2614b27",
+    "sourceSha256": "11f716e3d35f97f2702bc3dc46fb669920f99e7994ad80ee49e66535f2614b27",
+    "bytes": 1301
+  },
+  {
+    "file": "assets/warden91/emitter-native.png",
+    "sha256": "8581dcc1e783dfccf875a12b941133f91f1dfd4cc0c0fe58b11746f42c817a07",
+    "sourceSha256": "8581dcc1e783dfccf875a12b941133f91f1dfd4cc0c0fe58b11746f42c817a07",
+    "bytes": 1660
+  },
+  {
+    "file": "index.html",
+    "sha256": "f255c4d027b0a26c49efa1c0f9919fda0b1c4b8e29366f3bea34b1e7b07e69d2",
+    "sourceSha256": "7f78dcbd62f634e01b3147996d1ba99c4d37cb44e5fc91239b092c244edffb9b",
+    "bytes": 11235
+  },
+  {
+    "file": "cycle-campaign.js",
+    "sha256": "b64d71ed0d2d5b65a797c541f57b741877efeced751d0237f725e5fa9c4404e4",
+    "sourceSha256": "b64d71ed0d2d5b65a797c541f57b741877efeced751d0237f725e5fa9c4404e4",
+    "bytes": 7545
+  },
+  {
+    "file": "cycle-render.js",
+    "sha256": "5d64952dd71f1c781d1297958c96e4052b9750de4c2200a828d5df67a272eed5",
+    "sourceSha256": "5d64952dd71f1c781d1297958c96e4052b9750de4c2200a828d5df67a272eed5",
+    "bytes": 6697
+  }
+]

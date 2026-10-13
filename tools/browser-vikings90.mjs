@@ -41,8 +41,8 @@ try{
    const before=(await state())[id];await page.keyboard.down('ArrowRight');
    for(let step=0;step<24;step++){
     const n=step%8,loop=Math.floor(step/8);
-    await page.waitForFunction(n=>document.querySelector('#game').dataset.pose==='run'&&Number(document.querySelector('#game').dataset.frame)===n,n);
-    await page.locator('#pause').click();await page.waitForTimeout(160);
+    await page.waitForFunction(n=>{const game=document.querySelector('#game');if(game.dataset.pose!=='run'||Number(game.dataset.frame)!==n)return false;document.querySelector('#pause').click();return true;},n);
+    await page.waitForTimeout(160);
     const label=`${skin}-${id}-phase${n}${loop?'-loop'+(loop+1):''}`;
     const actual=await page.locator('#game').getAttribute('data-frame');
     if(Number(actual)!==n)throw Error(`${label}: captured phase ${actual} instead of ${n}`);

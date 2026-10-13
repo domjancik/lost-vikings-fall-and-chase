@@ -1,12 +1,12 @@
 import {createRequire} from 'node:module';import fs from 'node:fs';import http from 'node:http';import path from 'node:path';
 if(process.argv.includes('--live'))process.env.WARDEN91_LIVE='1';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');const {chromium}=require('playwright');
-const root=path.resolve('output/release-warden91/dist'),out='output/warden91';fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(process.env.WARDEN_BROWSER_ROOT||'output/release-warden91/dist'),out=process.env.WARDEN_BROWSER_OUT||'output/warden91',skin=process.env.WARDEN_BROWSER_SKIN||'imagegen88';fs.mkdirSync(out,{recursive:true});
 const mime={'.html':'text/html','.js':'text/javascript','.png':'image/png','.css':'text/css','.json':'application/json'};
 const server=process.env.WARDEN91_LIVE?null:http.createServer((req,res)=>{const f=path.resolve(root,'.'+(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!f.startsWith(root+path.sep)){res.writeHead(403);res.end();return;}fs.readFile(f,(err,b)=>{res.writeHead(err?404:200,{'Content-Type':mime[path.extname(f)]||'application/octet-stream'});res.end(err?'Missing':b);});}).listen(3058,'127.0.0.1');
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];page.on('pageerror',e=>errors.push(String(e)));
 try{
- await page.goto((process.env.WARDEN91_LIVE?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3058/')+'?skin=imagegen88&campaign=cycle&puzzle=warden&release=91',{waitUntil:'domcontentloaded',timeout:120000});await page.locator('#play-warden').click({timeout:120000});
+ await page.goto((process.env.WARDEN91_LIVE?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3058/')+`?skin=${encodeURIComponent(skin)}&campaign=cycle&puzzle=warden&release=91`,{waitUntil:'domcontentloaded',timeout:120000});await page.locator('#play-warden').click({timeout:120000});
  await page.waitForFunction(()=>{const a=JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}');return a.ready&&a.sourceDensity?.startsWith('512native');},null,{timeout:120000});
  const state=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,won:c.dataset.won==='true',failed:c.dataset.failed==='true',art:JSON.parse(c.dataset.cycleArt),time:+c.dataset.simTime,camera:JSON.parse(c.dataset.camera),canvasRect:{x:c.getBoundingClientRect().x,y:c.getBoundingClientRect().y,width:c.getBoundingClientRect().width,height:c.getBoundingClientRect().height}}));
  const held=new Set(),evidence={};

@@ -1,0 +1,16 @@
+{
+  "contract": {"nativeCell": [64,64], "runtimeCell": [80,80], "worldUnitsPerPixel": 2},
+  "reviewRecord": "VIKINGS90-CYCLE-REVIEW.md",
+  "erik": {
+    "sourceGate": "accepted: selected twelve whole poses, including hand corrections 3V5/4V6/5V5/6V5",
+    "processedRuntimeGate": "accepted: actual three walk loops, 1x/2x, mobile, mirrored; unchanged ladder stopped/reversed",
+    "evidence": "output/vikings90-review/erik-corrected-hands-actual-three-loops.png"
+  },
+  "baleog": {
+    "sourceGate": "accepted: selected twelve whole poses",
+    "processedRuntimeGate": "accepted: actual three walk loops, 1x/2x, mobile, mirrored, stopped/reversed ladder",
+    "evidence": "output/playwright/vikings90"
+  },
+  "olaf": {"sourceGate": "pending full corrected cycle", "processedRuntimeGate": "pending"},
+  "publicationAllowed": false
+}

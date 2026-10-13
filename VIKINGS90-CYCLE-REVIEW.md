@@ -364,3 +364,505 @@ disc size/position rather than fitting each whole actor or stretching a
 processed equipment fragment. Review the resulting source/native pilot at
 the common scale before expanding the remaining overhead frames. All
 processed/runtime Olaf shield/rider gates remain PENDING.
+
+## Corrected Baleog full twelve-key source/native re-review
+
+Re-read the current selection manifest and registration, same-size original/native
+comparison and replacement4x sheet. Specifically inspected the retained full
+originals `baleog-walk-1-raw-v6.png` and `baleog-climb-2-raw-v7.png` against the
+exact climb2 guide. Walk1 now has common-scale registered bounds
+`[29,33,53,71]`:38native high, with the71sole plane shared by0/5. The previous
+independent shrink is corrected in the source. Rear2V7 restores the lower
+screen-left hand and higher screen-right grip, raised right knee and connected
+backplate with two shoulder caps. Dark-left/light-right rear leg ownership is
+preserved. The rear is properly read as the back of the same armored person.
+
+All eight walk/four rear keys retain deliberate target-density clusters,
+readable anatomical leg exchange and stable clothing materials at the common
+sampling scale. Registration uses whole-source translation; the same-size
+comparison preserves outlines and anatomy. Decoded registered evidence contains
+24walk and12climb frames, with three identical complete phase sequences.
+
+**Baleog selected12 native-density/source gate: ACCEPTED.**
+**Baleog processed/native sheet subgate: ACCEPTED.**
+**Baleog actual production1x/2x/mobile runtime gate: PENDING.**
+These verdicts authorize preparation of runtime evidence, not publication.
+Actual full-cycle contacts, mirrored motion and stopped/reversed ladder motion
+must be inspected on the integrated skin before the runtime gate can pass.
+
+## Olaf ordinary full-cycle re-review — walk accepted, rear2 held
+
+Inspected the ordinary eight walk/four rear selection, common-size source/native
+comparison, replacement4x and registration. Whole originals for walk3V5,
+rear0V6 and rear2V5 were also inspected against exact rear0/2 guides. Ordinary
+walking keeps the corrected tan exposed belly, green outer tunic, gold beard and
+brown trousers; the light/dark legs exchange front/rear roles. The hand remains
+behind the front shield. Native source clusters and processed silhouettes remain
+readable without the earlier grey trouser paint or belly/tunic material switch.
+Registered evidence contains three complete eight-phase walks and four-phase
+climbs, rather than skipping phase0 at loop boundaries.
+
+**Olaf ordinary eight-walk source/native subgate: ACCEPTED.**
+**Olaf full ordinary twelve-key source/native gate: FAILED pending rear2.**
+
+Rear2V5 does not reproduce the authored opposite grip. The exact rear2 guide
+has the screen-right hand above the left; the generated source keeps both
+hands near the helmet sides at almost the same height. Relative to rear0,
+the right hand has not completed its distinct high reach. Restore that high
+right reach and lower left reach in the whole original, with stable anatomical
+arm materials. The rear2 disc also visibly narrows: its source contour is
+approximately21native wide at the shared64cell scale against approximately24
+for corrected rear0. This is visible in both same-size source and processed
+rows. Retain the same physical round24disc through the rear cycle; do not
+independently stretch the processed shield or fit the actor to an alpha box.
+
+Actual Olaf ordinary/runtime/shield/rider gates remain PENDING. No full Olaf
+publication approval follows from the walking subset acceptance.
+
+## Olaf raised V6 four-pilot re-review — fixed diameter still failed
+
+Inspected original overhead-walk0/4V6 and overhead-climb0/2V6. The revised
+total-height instruction improves the intent, but the sources still contain an
+undersized disc at their common64logical-cell scale. The shield spans roughly
+400..425source pixels on a1254square source, or about20..22native pixels,
+instead of24. Walk4 remains slightly narrower than walk0. This cannot be
+approved as the unchanged physical24disc required by the ordinary/raised
+equipment contract. The detector's inconsistent-axis/ARBITRATED result does
+not prove an alternative original pixel grid, so it does not authorize a
+different scale or a rescue sampling interpretation.
+
+**Raised V6 pilot native-density/anatomy/material subgate: ACCEPTED.**
+**Raised V6 fixed-shield source gate: FAILED. Expansion remains blocked.**
+The rear pilots maintain one supporting arm and the opposite ladder arm;
+ordinary pilots maintain palms underneath the disc, stable green/tan/brown
+materials and coherent native shading. Preserve those strengths while
+authoring the full24native diameter at the same scene sampling scale, with
+unchanged shield center/contact. Re-review the four corrected originals and
+same-size native evidence before expanding the remaining raised keys.
+
+Erik's earlier accepted selected12 source and actual runtime verdicts stand;
+they do not extend to these other heroes or a later release integration.
+
+## Reopened finish review — retained raised V7 pilot identity failure
+
+The user-reported Erik grey hand stubs reopen the affected-pose/runtime check;
+the earlier motion acceptance does not establish that the reported artifact is
+absent in every other pose. Implementation agent `vikings90_finish` has been
+contacted for exact affected originals, selected fixes and production captures.
+No new Erik fix verdict is issued before that evidence is provided.
+
+Inspected the currently retained four Olaf overhead V7 pilot originals and
+created diagnostic `output/vikings90-review/olaf-raised-v7-v6-native4x.png`:
+top rowV7, bottom rowV6, each original sampled once onto the same64square cell
+and enlarged nearest-neighbor4x. V7 enlarges the disc contour to approximately
+24..25native width, correcting the earlier undersized projection. However,
+the source pair changes more than equipment size. Finer highlight clusters
+and a more detailed curved helmet/beard produce a different shading density
+from the accepted ordinary sources, and become uneven shading at native size.
+Walk0 gains a tied beard tip while walk4 retains the pointed untied beard;
+both reveal eyes beneath the helmet. Rear0/2 add exposed lower-back skin
+through a lifted tunic absent from the prior covered-back identity, with
+different skin coverage between these phases.
+
+**Retained V7 raised four-pilot source/native identity gate: FAILED.**
+The equipment contour improvement is useful, but does not approve expansion
+from these four whole originals. Preserve the accepted ordinary Olaf helmet,
+beard identity and clothing coverage, author the physical24disc at the same
+deliberate native shading density, and provide a consistent four-pilot pair.
+This is a verdict on these exact retainedV7 files, not future revised sources.
+
+## Finish pass — current Baleog runtime accepted
+
+Inspected fresh production `imagegen90-1-phase{0..7}[-loop2/-loop3]-2x`
+captures, actual1x, mirrored running, mobile running2x and mobile ladder1x.
+Native-sized screenshot crops of all24walk phases and six ladder states are
+retained in `output/vikings90-review/baleog-actual-three-loops.png` and
+`baleog-actual-ladder-six.png`. They preserve the frame order, whole-core
+registration and leg exchange through all three loops. No accumulated7-to0
+horizontal correction, extra limb or new halo is visible. Mobile and1x keep
+the armor/skin/trouser separation readable. Boot/support and actual ladder
+contacts remain coherent. Four rear poses visibly alternate reach/knee roles;
+stopped and reversed captures preserve the last grip rather than resetting0.
+These screenshots show the selected corrected walk1V6 and rear2V7 anatomy.
+
+**Baleog selected12 source/native gate: ACCEPTED (unchanged).**
+**Baleog current integrated production1x/2x/mobile movement gate: ACCEPTED.**
+This accepts the inspected current skin binding; subsequent source replacements
+or release changes affecting rendering require their own evidence.
+
+## Finish pass — Erik walking hand readability correction required
+
+Reinspected all eight selected walking originals and their native strip,
+including explicit raw2/3/5/6/7 inspection, plus all eight fresh actual2x
+walking states. `output/vikings90-review/erik-fresh-hand-audit-eight.png`
+preserves screenshot crops without actor resizing. No literal steel/grey hand
+material appears in the selected walking originals. Nevertheless the
+camera-far/right hand in phases3/4/5 reduces to a tiny one-to-two-native-pixel
+skin block next to the dark cuff/beard. At gameplay scale the cuff dominates
+and reads as a stub. Phase6 has an especially brown-shadowed palm with weak
+separation from the cuff. This supports the user's walking readability report;
+it is not evidence of a palette-processing error.
+
+**Erik selected walking hand-readability gate: REOPENED / CORRECTION REQUIRED.**
+Preserve accepted body/root and leg motion. Clarify each affected whole-source
+hand silhouette and flesh highlight against its cuff, without adding a third
+hand, repainting trousers, splicing an equipment fragment or shifting the root.
+Reinspect corrected originals/native cells and the same actual movement
+contexts before restoring full affected-pose runtime approval.
+
+## Finish pass — Olaf targeted pilots
+
+Whole-source upwalk0V8 preservesV6 identity but remains too narrow: the common
+64cell diagnostic's opaque disc rows22/23 span x21..42, or22native pixels.
+Ordinary rear2V7 restores right-above-left reach; its left tan fist and brown
+bent forearm are anatomically readable at native size, not a definite third
+hand. Its disc remains approximately21native against rear0's24. Both are
+held for fixed-disc correction. Diagnostic:
+`output/vikings90-review/olaf-up0v8-rear2v7-native4x.png`.
+
+Upwalk0V9 is a stronger complete-source pilot. The original and same64cell
+native8x diagnostic preserve the ordinary identity, covered eyes, untied
+gold beard, green outercloth/tan belly/brown legs and readable deliberate
+native clusters. Its shield now presents the required24native projection
+with palms underneath and helmet/horn clearance.
+
+**Olaf upwalk0V9 pilot native-density/identity/anatomy/diameter gate: ACCEPTED.**
+This approves it as the expansion constraint, not the remaining cycle. The
+provided diagnostic also shows a green pixel by the disc and cyan between
+boots; determine whether these are diagnostic landmarks. If source artifacts,
+the processed alpha/noise gate must demonstrate removal before integration.
+Full raised cycle and actual shield/rider runtime remain PENDING.
+
+## Targeted hand3/5/6V5 and raised rear0V9 source review
+
+Inspected whole `erik-walk-{3,5,6}-raw-v5.png` originals and common64cell
+native views. The clarified camera-far palms project beyond their dark cuffs
+with visible skin highlights, exactly two anatomical hands, preserved core
+and original leg phases. Density remains deliberate and consistent with the
+selected cycle. **These three targeted source/native hand keys are ACCEPTED.**
+Walk4V5 was rejected by implementation for adding an upper fist while retaining
+the original lower hand; no approval extends to it. Correct phase4 and repeat
+the repacked full source/native cycle and actual movement evidence before
+restoring the affected full Erik runtime gate.
+
+`olaf-overhead-climb-0-raw-v9.png` restores the covered green back and appropriate
+native shading density with one supporting hand/one ladder arm. However its
+disc remains22native pixels wide at the common64cell: opaque rows16/17 span
+x21..42 inclusive, versus the approved broader24 projection in upwalk0V9.
+**Rear0V9 density/identity/anatomy subgate: ACCEPTED.**
+**Rear0V9 fixed-disc source gate: FAILED pending width correction.**
+Diagnostic `output/vikings90-review/erik-hand3-5-6-v5-olaf-uprear0v9-native4x.png`
+uses common once sampling and alpha128 cleanup, with no geometry changes.
+
+The upwalk0V9 neon markers were confirmed to have alpha1 rather than opaque
+source paint. Existing binary alpha128 extraction removes them and zeros
+transparent RGB, so they are not a silhouette-edit requirement. The processed
+final evidence must still show their absence.
+
+## Erik hand4V6 and complete selected twelve-key re-review
+
+Inspected `erik-walk-4-raw-v6.png`, updated `erik-source-selection.json`,
+complete same-size source/native comparison and replacement4x strip. Phase4
+now clarifies the original low camera-far palm without leaving an additional
+upper fist. It retains exactly two hands, original core/leg silhouette and
+target-density material clusters. Paired with already reviewed hand3V5/5V5/6V5,
+the complete walking row retains the accepted anatomical leg exchange and
+climbing row retains stable skin/leather/trouser ownership.
+
+**Erik current selected12 native-density/source gate: ACCEPTED.**
+**Erik current selected12 processed/native sheet subgate: ACCEPTED.**
+**Corrected Erik actual hand-readability/runtime gate: PENDING fresh integration.**
+The accepted selection uses walk3V5, walk4V6, walk5V5, walk6V5; other walk
+keys and all four reviewed climb keys remain unchanged. Final packing and fresh
+three-loop/1x/2x/mobile/mirrored actual evidence are still required before the
+reopened hand-readability runtime verdict can be restored.
+
+## Corrected Erik final gameplay hand review — accepted
+
+Inspected fresh final-base91 production24walk captures across three complete
+0..7loops, actual running1x, mobile running1x/2x and mirrored running. Screenshot
+crops retained in
+`output/vikings90-review/erik-corrected-hands-actual-three-loops.png` show all
+24phases without actor resizing. The clarified low/far palm in3/4/5 and the
+lightened palm in6 retain distinct flesh beyond the dark cuff at actual2x.
+Both hands remain readable in the mirrored/mobile contexts without becoming
+steel-grey blocks or multiplying. Complete phases preserve the reviewed leg
+exchange and core registration through all three joins; no new horizontal
+cycle snap or halo is visible. Actual1x/mobile maintains coherent character
+silhouette/materials. Fresh evidence manifest reports24walk captures/errors[].
+Previously accepted ladder sources/binding are unchanged by the hand-only edits.
+
+**Erik corrected selected12 native-density/source gate: ACCEPTED.**
+**Erik corrected processed/native and actual1x/2x/mobile/mirrored movement gate:
+ACCEPTED.** This restores the affected hand-readability approval for the
+inspected final selected walking keys and unchanged reviewed climb keys.
+It does not accept pending Olaf source or shield/rider runtime evidence.
+
+## Olaf overhead rear0V11 fixed-disc pilot — accepted
+
+Inspected the exact `olaf-overhead-climb-0-raw-v11.png` whole source against
+retainedV9 and the exact overhead rear0 guide, plus common64cell alpha128 native
+views. The new contour spans x20..43 on opaque disc rows16/17:24native pixels,
+with six rows y14..19 in the projected disc. This corrects the22wideV9 without
+the oversizedV10 result. Closed green back, stable trousers/skin/helmet,
+one right supporting hand beneath the disc and opposite left ladder reach
+remain the same readable pose. Body/leg/core geometry and deliberate native
+shading density are preserved.
+
+**Olaf overhead rear0V11 pilot source/native density, identity, anatomy and
+fixed24×6disc gate: ACCEPTED.** Diagnostic:
+`output/vikings90-review/olaf-uprear0-v11-v9-upwalk0-native4x.png`.
+This approves rear0V11 as an expansion constraint alongside upwalk0V9; other
+raised phases, the complete selected cycle and actual shield/rider1x/2x/mobile
+runtime still require separate review. No selection was edited by the critic.
+
+## Explicit raised walking anatomical-leg recheck — pilot0 correction
+
+Root identified a phase-specific ownership problem and requested reinspection
+against exact guides and joint evidence. Upwalk0V9's lighter anatomical leg/boot
+is on the left (approximately27native ankle), and darker leg/boot on the right
+(approximately37). Exact guide0 instead puts the lighter near leg forward/right
+and darker far leg back/left; guide4 exchanges those roles. The source therefore
+has phase4 ownership despite being labelled0. My earlier pilot diameter/identity
+acceptance missed this phase-specific error. **Upwalk0V9 guide-motion/anatomical
+phase acceptance is REVOKED; phase0 correction is REQUIRED before expansion.**
+Its24disc, arms/support and shading remain useful constraints, but cannot
+substitute for the exact leg phase. Regenerate the whole phase0 following
+guide0's named anatomical leg chains and positions, without merely renaming
+palette shades or splicing legs.
+
+Upwalk4V9 repeats nearly the same geometry, but that geometry has the lighter
+left/darker right ownership required by exact guide4. **Upwalk4V9 is ACCEPTED
+as a limited phase4 source/native leg-ownership candidate**, alongside its
+appropriate fixed disc/style; common registration and the complete eight-phase
+route still require review. Similarity to an incorrectly labelled0 does not
+itself make correctly labelled4 wrong. Do not use the two together as opposite
+walking phases. Future full-cycle review must trace named anatomical chains
+through front/back travel, not infer it from boots alone.
+
+## Corrected phase0V10, overhead rear2V10 and ordinary rear2V9 pilots
+
+Inspected the three exact retained whole originals, named anatomical chains in
+their guides, and common64cell alpha128 native views retained in
+`output/vikings90-review/olaf-pilots-up0v10-uprear2v10-rear2v9-up4v9-native4x.png`.
+
+Upwalk0V10 corrects phase0: lighter near leg/boot now reaches forward/right,
+darker far leg/boot stays back/left, opposite the accepted phase4V9 candidate.
+Both palms remain under the unchanged raised disc; helmet/beard/cloth/materials
+and native density match the intended identity. Its disc has approximately
+24..25pixel raster extent consistent with the approved front projection.
+**Upwalk0V10 pilot source/native density, identity, anatomy and phase ownership:
+ACCEPTED**, replacing the incorrect phase0V9 constraint.
+
+Uprear2V10 swaps support to the dark left arm with lighter right hand reaching
+the ladder, and raises the right knee while the left boot drops. This follows
+the exact opposite-reach guide and preserves the covered green back/skin/trouser
+ownership. Disc rows16/17 span x20..43:24native, consistent with rear0V11.
+**Uprear2V10 pilot source/native density, identity, anatomy, phase ownership and
+fixed diameter: ACCEPTED.** Combined with rear0V11 and front0V10/front4V9,
+these are reviewed expansion constraints, not the unreviewed complete cycle.
+
+Ordinary rear2V9 restores the required low-left/high-right hand relationship,
+raised right knee and stable materials. **Pose/anatomy/density subgate:
+ACCEPTED. Fixed-disc source gate: still FAILED.** Its common64cell disc spans
+x21..42 on rows41..47:22native pixels. The previously accepted rear0V6 reaches
+23native on common center sampling, so the gap is smaller than earlier21width,
+but the current source still undershoots the intended24physical disc. Author
+one further logical column at each end in the whole source, retaining its
+center/grip/body. Full ordinary Olaf gate and all actual Olaf gates remain held.
+
+## Olaf climb completion and articulated raised-walk phase matrix
+
+Applied the strengthened `VISUAL-REVIEW-GATE.md` anatomical chain/weight/swing
+paragraph, re-read exact guide JSON contacts/ankles and inspected whole sources,
+native previews and support-plane registered strip. Ordinary rear2V10 preserves
+low-left/high-right grip, raised right knee and disc center while bringing its
+common native contour to23width, matching accepted rear0V6's23center-sampled
+extent. The remaining one raster-edge difference from the24physical source
+target is shared by the ordinary reference, rather than a changing equipment
+size. **Ordinary rear2V10 source/native identity, pose and physical-disc
+consistency: ACCEPTED.** Earlier rear2V9 failure is superseded by this source.
+
+Raised climb0V11/1V12/2V10/3V12 retain matching disc/closed green back/material
+ownership.0/1 use the right supporting palm with left ladder arm;2/3 use left
+support and right ladder arm.0 raises left knee/drops right boot;2 raises right
+knee/drops left boot.1/3 bring boots to similar heights as transitional grips,
+without changing trouser/skin ownership. **All four raised-climb source/native
+pose keys: ACCEPTED**, pending their full processed support-plane strip and
+actual travel/stopped/reversed/rider evidence. Diagnostic:
+`output/vikings90-review/olaf-uprear-four-v12-rear2v10-native4x.png`.
+
+Raised walk V12 initially failed1scale (26disc/taller body) and2/6passing
+(separated boots repeating compression rather than crossing). Revised1V13
+restores body/disc scale;2V13 plants lighter near leg centrally with darker far
+recovery;6V13 restores the opposite centered passing but its support-registered
+sole72 extends two pixels beyond the intended70floor. Whole-source6V14 shortens
+the planted chain through knee compression while retaining pose/disc/body,
+bringing sole71 to the same one raster-edge variation as accepted4. This
+correction passes the source/contact preview; actual floor contact cannot be
+waived by that measurement alone.
+
+| Phase / selected source | Anatomical support and swing inspected |
+| --- | --- |
+|0V10|LIGHT near leg forward/right heel; DARK far back/left toe.|
+|1V13|LIGHT near bears weight/compresses; DARK far lifts behind/left.|
+|2V13|LIGHT near planted centrally; DARK far folds into centered recovery.|
+|3V12|LIGHT near behind/left bears weight; DARK far swings forward/right.|
+|4V9|Opposite contact: LIGHT near back/left toe; DARK far forward/right heel.|
+|5V12|DARK far bears weight; LIGHT near folds into recovery from left.|
+|6V14|DARK far planted centrally; LIGHT near passes raised across center.|
+|7V12|DARK far behind/left bears weight; LIGHT near swings forward/right.|
+
+The eight exact sources preserve deliberate density, green/tan/brown material
+identity, covered eyes and two supporting palms. Disc raster extents are24..25
+across accepted fronts; rejected1's26width/longer body is not selected. This
+is anatomical phase acceptance, separate from equipment-only pilot approval.
+Inspected source previews:
+`olaf-upwalk-full-v13b-native6x.png`, `olaf-upwalk-v13b-registered6x.png`,
+`olaf-upwalk6-v14-native8x.png` in `output/vikings90-review`.
+
+**Olaf complete selected24 native-density/source gate: ACCEPTED.**
+Selection comprises the reviewed ordinary walk8/rear4 plus these raised8/rear4.
+**Full processed atlas/common registration and actual1x/2x/mobile/shield/rider
+runtime gates: PENDING.** In particular inspect actual visible floor rim
+against boot soles across the69..71registered variation, stable native head,
+fixed shield support plane and actual passenger feet. Do not accept a shadow,
+atlas box or successful state flag as visible contact.
+
+## Packed twenty-four Olaf keys and actual contact review — runtime held
+
+Inspected the final manifest, full source/native comparison, replacement4x and
+decoded ordinary/raised walk/climb registered GIFs. Each walk has24frames,
+each climb12, containing three identical complete sequences. Source/native
+comparison retains reviewed anatomy, deliberate density, contours and palette.
+**Full processed atlas/common-scale art subgate: ACCEPTED.**
+
+Inspected ordinary and raised three actual walk loops, actual1x/mobile/mirror
+contexts, all four ordinary/raised ladder grips, stopped/reversed and mobile
+ladder. Manifests report ordinary72walk/34ladder and raised24walk/10ladder,
+errors[]. The anatomical exchange, head/core loop consistency, palms beneath
+the disc and rear material ownership remain coherent. No accumulated7-to0
+horizontal reset, guide-marker noise or extra hand appears. Ladder grip travel,
+freeze and reversal match the selected poses. **Ordinary/raised ladder movement
+subgate: ACCEPTED**, with passenger contact separate and pending.
+
+**Ordinary and raised walking visible-ground-contact runtime gate: FAILED.**
+Ordinary2/6 leave about8screen pixels at2x between visible boot sole and
+platform top rim (approximately2native);3/7 have related gaps. Direct full
+captures `output/playwright/vikings90/imagegen90-2-phase2-2x.png` and
+`imagegen90-2-phase6-2x.png` establish the defect independently of metadata.
+Root traced ordinary registration's synthetic guideY bob moving generated
+whole actors upward. A whole-pose translation using its authored anatomical
+planted contact, rather than changing-alpha bounds, is legitimate; inspect
+actual head excursion/loop and floor again after this correction.
+
+Raised0/1/3/7 and the mirrored capture also leave visible planted-sole gaps;
+the source69..71sole range cannot waive actual contact. Raised6 now does meet
+the visible rim. `output/playwright/vikings90-overhead/imagegen90-2-reverse.png`
+shows both visible soles above the rim, and the complete raised loops show
+related affected phases. A shield-plane registration must not be moved merely
+to hide a foot gap while separating passenger support. Correct authored chains
+or use one coherent reviewed whole-pose/equipment support arrangement, then
+repeat contact, head/core, palms and passenger evidence. Shadows and physical
+ground=true flags do not substitute for visible planted contact.
+
+Evidence boards in `output/vikings90-review`:
+`olaf-normal-actual-three-loops.png`, `olaf-raised-actual-three-loops.png`,
+`olaf-normal-ladder-six.png`, `olaf-raised-ladder-six.png`.
+**Olaf raw/native-density gate remains ACCEPTED. Full processed/runtime gate
+is FAILED pending walking-contact correction and final rider evidence.**
+`assets/vikings90/visual-gates.json` records the split verdicts and publication
+remains false. A final boss route timeout is not accepted passenger evidence.
+
+## Corrected ordinary registration and physical surface re-review — accepted
+
+Root replaced synthetic guideY bob for grounded ordinary walking with explicit
+`olaf-ground-contacts.json`: named anatomical planted pixels/soles, unchanged
+common sampling and whole-pose translation, preserving helmetX. This is
+authored contact registration, not fitting a changing alpha box or splicing
+body/legs. Repacked ordinary poses now use70exclusive soles. Reviewed updated
+native/actual2/6, all24fresh phases/three loops, mirrored and mobile contexts.
+Head/core movement remains modest, complete anatomical leg exchange retained,
+and7-to0 does not introduce a corrective jump.
+
+Physical surface check distinguishes the opaque dark first terrain row from
+the brighter second row. At the actual395world-height/198native canvas raster
+and900screen pixels, the bright second row is approximately4.5screen pixels
+below the physical surface. My earlier gap estimates measured toward the
+bright stripe and overstated the gap. The previous69sole did leave one true
+native air row; corrected70soles meet the opaque physical row with no air.
+Retained70idle therefore does not require a source regeneration merely because
+the bright stripe is below its boots. Screen/physics checks must use the
+identified opaque physical surface and actual raster dimensions.
+
+**Olaf ordinary processed/native and actual1x/2x/mobile/mirrored movement gate:
+ACCEPTED after authored-contact registration.** Diagnostics:
+`output/vikings90-review/olaf-corrected-normal-sole-detail4x.png` and
+`olaf-grounded-normal-actual-three-loops.png`. Raised69contact correction and
+final rider evidence remain pending; full skin publication is still held.
+
+## Raised3/7V15 contact sources and healthy boss context
+
+Inspected whole raised walk3/7V15 originals and
+`output/vikings90-review/olaf-upground-v15-registered8x.png`. Whole-source
+planted-chain extension retains3's LIGHT near weight/DARK far swing and7's
+DARK far weight/LIGHT near swing, with fixed disc/palms/core and deliberate
+native shading. Their support-registered soles now meet70physical target.
+**Raised3/7V15 corrected source/native contact subgate: ACCEPTED.**
+Raised0/1still require their pending corrected originals; actual final walking
+and moving Olaf shield-rider evidence must follow final integration.
+
+Inspected healthy final boss brace desktop/mobile2x, boarded desktop/mobile2x,
+lift-middle, upper-dock and spine captures. Brace retains palms under shield
+against visible foot impact, proper70idle terrain contact and readable materials.
+The route record now reports won, HP3/3/3, time102.608 and errors[], superseding
+the earlier timed-out route. These stationary/lift contexts are useful separate
+contact evidence; they do not establish the pending moving-on-Olaf rider gate.
+The first dedicated rider capture set was explicitly discarded by root due
+incorrect CSS MIME/unstyled viewport. Do not accept or cite it for publication.
+
+## Final exact selected skin — source and runtime gates accepted
+
+Inspected final whole raised0/1V16 originals against prior poses. They preserve
+correct phase0 opposite contact and phase1 near-weight/far-recovery, body/core,
+native density, fixed disc and palms while extending authored planted chains.
+**Both source/contact edits: ACCEPTED.** The broad-row shield heuristic shifts
+from19to18.5 due an upper shading row in0V16. The original central boss/interior
+rim/palm construction remains the reviewed source-plane19; explicitly authoring
+that exact-source anchor is legitimate, rather than redefining physical support
+from the width of shading. Final pack uses whole-source0translationY3, sole70,
+with no rescaling or component paste.1V16/3V15/7V15 also meet70 after unchanged
+shield-plane registration. These supersede the previously held69contact keys.
+
+Final ordinary and raised24-phase/three-loop production evidence, actual
+1x/2x/mobile/mirrored views and unchanged reviewed ladder grips show boots seated
+on the opaque physical terrain row. There is no true air gap, new head/core
+excursion or7-to0 correction. Anatomical contact/passing/recovery roles remain
+distinct; source/native contours/materials remain coherent and palms connect
+to the same shield underside. Registered source/native dimensions remain
+64cell→80padded runtime cell, one native pixel=2world units. Complete source
+selection uses reviewed24whole replacements with retained untouched88actions.
+
+Inspected FINAL styled moving-rider evidence in `output/vikings90-rider`: all
+eight2xwalk captures, reversed,1x and mobile1x/2x. Rider soles sit on the central
+disc interior plane while supporting palms stay beneath; no third limb, visible
+contact gap, sliding relative position or shield-width change occurs through
+the gait/mirror. Final evidence records12captures/errors[], proper fullscreen
+dimensions, support2 and exact rider soleY=OlafY−36. This is the refreshed set
+after final manual19packing, not the discarded unstyled captures. Healthy boss
+brace/spine/carrier context previously inspected remains complementary evidence.
+
+Final diagnostic boards in `output/vikings90-review`:
+`olaf-grounded-normal-actual-three-loops.png`,
+`olaf-final-raised-grounded-three-loops.png`,
+`olaf-final-rider-eight-actual.png`.
+
+**FINAL Olaf selected24 native-density/source gate: ACCEPTED.**
+**FINAL Olaf processed/native and actual1x/2x/mobile/mirrored movement,
+ordinary/raised ladder and moving shield-rider runtime gate: ACCEPTED.**
+Erik's corrected hands and Baleog's reviewed full cycles retain their separately
+accepted source/runtime verdicts. No concrete sprite/contact blocker remains
+in this inspected frozen candidate. `assets/vikings90/visual-gates.json` now
+records those exact final split verdicts and `publicationAllowed:true`.
+This visual approval does not claim any uninspected future source/renderer
+change or replace the parent task's final deployment verification.

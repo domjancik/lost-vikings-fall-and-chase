@@ -6,6 +6,12 @@ spec=importlib.util.spec_from_file_location('pack90',Path(__file__).with_name('p
 P=importlib.util.module_from_spec(spec);spec.loader.exec_module(P)
 
 class ShieldSupportTests(unittest.TestCase):
+ def test_reviewed_disc_plane_does_not_follow_a_broad_shading_row(self):
+  folder=Path(__file__).resolve().parents[1]/'assets/vikings90'
+  record=next(r for r in json.loads((folder/'olaf-registration.json').read_text())['replacementRecords'] if r['source']=='olaf-overhead-walk-0-raw-v16.png')
+  self.assertEqual(record['sourceAnchor'][1],19)
+  self.assertEqual(record['translation'][1],3)
+  self.assertEqual(8+record['sourceAnchor'][1]+record['translation'][1],30)
  def test_ordinary_planted_boot_contacts_survive_whole_pose_registration(self):
   folder=Path(__file__).resolve().parents[1]/'assets/vikings90'
   authored=json.loads((folder/'olaf-ground-contacts.json').read_text())

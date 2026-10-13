@@ -46,6 +46,15 @@ left, middle and right portions while the camera moves; no exposed sky strip
 may separate the foundation from its floor. Preserve pixel-grid dimensions.
 Hanging structures must visibly join their ceiling beam instead.
 
+Identify the first opaque terrain row at the physical surface, rather than
+using a lower bright highlight as the floor. Compare actual screenshot pixels
+with the snapped camera and native raster dimensions (including rounded raster
+height). A dark structural top strip can be valid contact; an exposed background
+row between planted sole and that strip is an actual gap. For generated gait
+poses, never add guide head bob as a whole-image translation that lifts an
+already authored planted foot. Register reviewed anatomical contacts and
+recheck the modest head/core excursion and loop seam in gameplay.
+
 For character-supported platforms, inspect visible rider soles against the
 declared walking plane, including center-plane contact on Olaf's raised shield.
 Check paint order: the supporting sprite must not hide the rider's soles and
@@ -116,6 +125,15 @@ it does not waive raw rendered-art or actual-game review gates.
 Inspect each hero moving away from the parked group: overlapping bodies cannot
 establish a gait verdict. Capture planted contact, compression, passing and
 swing at 1x/2x. Count meaningful phase families rather than near-duplicate cells.
+For every generated gait key, compare the actual near/far hip-to-knee-to-boot
+chains against that exact guide phase. Record which anatomical leg is forward,
+which supports weight and which swings; correct colors on two plausible boots
+do not prove their ownership. Check the opposite-contact keys explicitly before
+expanding a pilot. A pilot accepted for shading or equipment dimensions has no
+motion approval until these chains are checked.
+Inspect palms at gameplay size throughout the loop, especially when a far hand
+crosses a beard or cuff. One or two skin pixels overwhelmed by a dark cuff can
+read as a missing hand even when the raw source technically contains flesh.
 Check the native head/core root across the entire cycle; a five-pixel excursion
 is a failed walk, even when every boot touches the floor. Idle head, silhouette
 and feet must stay registered. A detected helmet landmark must exclude collars,

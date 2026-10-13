@@ -1,0 +1,153 @@
+{
+  "tool": "builtin imagegen",
+  "nativeCell": [
+    64,
+    64
+  ],
+  "fullRaisedHeightNative": 43,
+  "shieldProjectionNative": [
+    24,
+    6
+  ],
+  "records": [
+    {
+      "output": "olaf-overhead-walk-1-raw-v12.png",
+      "prompt": "olaf-overhead-walk-1-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v10.png",
+        "olaf-overhead-walk-1-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-2-raw-v12.png",
+      "prompt": "olaf-overhead-walk-2-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v10.png",
+        "olaf-overhead-walk-2-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-3-raw-v12.png",
+      "prompt": "olaf-overhead-walk-3-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v10.png",
+        "olaf-overhead-walk-3-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-5-raw-v12.png",
+      "prompt": "olaf-overhead-walk-5-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-4-raw-v9.png",
+        "olaf-overhead-walk-5-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-6-raw-v12.png",
+      "prompt": "olaf-overhead-walk-6-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-4-raw-v9.png",
+        "olaf-overhead-walk-6-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-7-raw-v12.png",
+      "prompt": "olaf-overhead-walk-7-prompt-v12.txt",
+      "references": [
+        "olaf-overhead-walk-4-raw-v9.png",
+        "olaf-overhead-walk-7-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-1-raw-v13.png",
+      "prompt": "olaf-overhead-walk-1-prompt-v13.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v10.png",
+        "olaf-overhead-walk-1-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-2-raw-v13.png",
+      "prompt": "olaf-overhead-walk-2-prompt-v13.txt",
+      "references": [
+        "olaf-overhead-walk-2-raw-v12.png",
+        "olaf-overhead-walk-2-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-6-raw-v13.png",
+      "prompt": "olaf-overhead-walk-6-prompt-v13.txt",
+      "references": [
+        "olaf-overhead-walk-6-raw-v12.png",
+        "olaf-overhead-walk-6-guide.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-6-raw-v14.png",
+      "prompt": "olaf-overhead-walk-6-prompt-v14.txt",
+      "references": [
+        "olaf-overhead-walk-6-raw-v13.png"
+      ]
+    },
+    {
+      "output": "olaf-overhead-walk-0-raw-v15.png",
+      "prompt": "olaf-overhead-walk-0-prompt-v15.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v10.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    },
+    {
+      "output": "olaf-overhead-walk-1-raw-v15.png",
+      "prompt": "olaf-overhead-walk-1-prompt-v15.txt",
+      "references": [
+        "olaf-overhead-walk-1-raw-v13.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    },
+    {
+      "output": "olaf-overhead-walk-3-raw-v15.png",
+      "prompt": "olaf-overhead-walk-3-prompt-v15.txt",
+      "references": [
+        "olaf-overhead-walk-3-raw-v12.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    },
+    {
+      "output": "olaf-overhead-walk-7-raw-v15.png",
+      "prompt": "olaf-overhead-walk-7-prompt-v15.txt",
+      "references": [
+        "olaf-overhead-walk-7-raw-v12.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    },
+    {
+      "output": "olaf-overhead-walk-0-raw-v16.png",
+      "prompt": "olaf-overhead-walk-0-prompt-v16.txt",
+      "references": [
+        "olaf-overhead-walk-0-raw-v15.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    },
+    {
+      "output": "olaf-overhead-walk-1-raw-v16.png",
+      "prompt": "olaf-overhead-walk-1-prompt-v16.txt",
+      "references": [
+        "olaf-overhead-walk-1-raw-v15.png"
+      ],
+      "purpose": "Whole-source planted-chain contact correction; fixed body/disc/palm pose"
+    }
+  ],
+  "selected": {
+    "0": 16,
+    "1": 16,
+    "2": 13,
+    "3": 15,
+    "4": 9,
+    "5": 12,
+    "6": 14,
+    "7": 15
+  },
+  "independentSourceGate": "accepted in VIKINGS90-CYCLE-REVIEW.md",
+  "runtimeGate": "accepted: final selected twenty-four poses; ordinary and raised actual three loops, 1x/2x/mobile/mirror, ladder stopped/reversed and final moving rider"
+}

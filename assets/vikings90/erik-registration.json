@@ -590,6 +590,7 @@
       ]
     }
   ],
-  "sourceGate": "pending fullcycle review",
-  "runtimeGate": "pending"
+  "sourceGate": "accepted: selected twelve whole poses, including hand corrections 3V5/4V6/5V5/6V5",
+  "runtimeGate": "accepted: actual three walk loops, 1x/2x, mobile, mirrored; unchanged ladder stopped/reversed",
+  "reviewRecord": "VIKINGS90-CYCLE-REVIEW.md"
 }

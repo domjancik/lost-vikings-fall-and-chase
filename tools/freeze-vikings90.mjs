@@ -20,7 +20,11 @@ for(const name of ['erik','baleog','olaf']){
  }
 }
 fs.copyFileSync('viking-gallery90.html',path.join(dist,'viking-gallery90.html'));files.push('viking-gallery90.html');
+const contactRecord='assets/vikings90/olaf-ground-contacts.json';
+fs.copyFileSync(contactRecord,path.join(dist,contactRecord));files.push(contactRecord);
 fs.copyFileSync('assets/vikings90/visual-gates.json',path.join(dist,'assets/vikings90/visual-gates.json'));files.push('assets/vikings90/visual-gates.json');
 for(const name of fs.readdirSync(dist))if(/\.(js|html)$/.test(name)){const p=path.join(dist,name);fs.writeFileSync(p,fs.readFileSync(p,'utf8').replaceAll(/\?v=[a-zA-Z0-9-]+/g,'?v=vikings90'));}
-fs.writeFileSync(folder+'/candidate.json',JSON.stringify({draft,base:'verified Warden91',files,publishAllowed:false},null,2));
-console.log(draft?'Local review candidate; missing heroes use unchanged88 art. Publication blocked.':'Complete local candidate; actual runtime gate still required.');
+const gates=JSON.parse(fs.readFileSync('assets/vikings90/visual-gates.json','utf8'));
+const publishAllowed=!draft&&gates.publicationAllowed&&['erik','baleog','olaf'].every(hero=>['sourceGate','processedRuntimeGate'].every(gate=>gates[hero][gate].startsWith('accepted')));
+fs.writeFileSync(folder+'/candidate.json',JSON.stringify({draft,base:'verified Warden91',files,publishAllowed},null,2));
+console.log(publishAllowed?'Complete reviewed candidate ready for selective publication.':'Local review candidate; publication remains blocked.');

@@ -18,22 +18,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.5,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         30,
         30,
         39,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.5,
         33.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         40,
@@ -41,14 +41,24 @@
       ],
       "translation": [
         -1,
-        0
+        -1
       ],
       "nativeBounds": [
         29,
-        35,
+        34,
         63,
-        71
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 0,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          30,
+          62
+        ],
+        "limb": "nearLeg",
+        "contact": "heel"
+      }
     },
     {
       "cell": 1,
@@ -67,22 +77,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         30,
         30,
         38,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         33.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         29,
         39,
@@ -90,14 +100,24 @@
       ],
       "translation": [
         -1,
-        0
+        -1
       ],
       "nativeBounds": [
         29,
-        35,
+        34,
         63,
-        71
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 1,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          30,
+          62
+        ],
+        "limb": "nearLeg",
+        "contact": "compression"
+      }
     },
     {
       "cell": 2,
@@ -116,22 +136,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         30,
         30,
         38,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         32.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         39,
@@ -139,14 +159,24 @@
       ],
       "translation": [
         -1,
-        -2
+        -1
       ],
       "nativeBounds": [
         29,
-        33,
+        34,
         63,
-        69
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 2,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          31,
+          62
+        ],
+        "limb": "nearLeg",
+        "contact": "passing support"
+      }
     },
     {
       "cell": 3,
@@ -165,22 +195,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.5,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         30,
         30,
         39,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         32.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         39,
@@ -188,14 +218,24 @@
       ],
       "translation": [
         -2,
-        -2
+        -1
       ],
       "nativeBounds": [
         28,
-        33,
+        34,
         62,
-        69
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 3,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          30,
+          62
+        ],
+        "limb": "nearLeg",
+        "contact": "rear push-off"
+      }
     },
     {
       "cell": 4,
@@ -214,22 +254,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         33.0
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         28,
         29,
         40,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.5,
         33.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         40,
@@ -244,7 +284,17 @@
         34,
         64,
         70
-      ]
+      ],
+      "authoredContact": {
+        "phase": 4,
+        "sourceSoleExclusive": 62,
+        "plantedPixel": [
+          39,
+          61
+        ],
+        "limb": "farLeg",
+        "contact": "heel"
+      }
     },
     {
       "cell": 5,
@@ -263,22 +313,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         29,
         30,
         39,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         33.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         29,
         39,
@@ -293,7 +343,17 @@
         35,
         62,
         70
-      ]
+      ],
+      "authoredContact": {
+        "phase": 5,
+        "sourceSoleExclusive": 62,
+        "plantedPixel": [
+          36,
+          61
+        ],
+        "limb": "farLeg",
+        "contact": "compression"
+      }
     },
     {
       "cell": 6,
@@ -312,22 +372,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         33.5
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         29,
         30,
         39,
         37
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         32.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         39,
@@ -335,14 +395,24 @@
       ],
       "translation": [
         -1,
-        -2
+        -1
       ],
       "nativeBounds": [
         29,
-        33,
+        34,
         63,
-        69
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 6,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          33,
+          62
+        ],
+        "limb": "farLeg",
+        "contact": "passing support"
+      }
     },
     {
       "cell": 7,
@@ -361,22 +431,22 @@
         19.59375,
         19.59375
       ],
-      "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "registration": "wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting",
+      "sourceAnchor": [
         34.0,
         34.0
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         29,
         30,
         39,
         38
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         33.0,
         32.0
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         28,
         39,
@@ -384,14 +454,24 @@
       ],
       "translation": [
         -1,
-        -2
+        -1
       ],
       "nativeBounds": [
         29,
-        33,
+        34,
         63,
-        69
-      ]
+        70
+      ],
+      "authoredContact": {
+        "phase": 7,
+        "sourceSoleExclusive": 63,
+        "plantedPixel": [
+          39,
+          62
+        ],
+        "limb": "farLeg",
+        "contact": "rear push-off"
+      }
     },
     {
       "cell": 14,
@@ -411,21 +491,21 @@
         19.59375
       ],
       "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "sourceAnchor": [
         33.0,
         31.0
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         28,
         28,
         38,
         34
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         32.5,
         32.5
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         29,
         38,
@@ -460,21 +540,21 @@
         19.59375
       ],
       "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "sourceAnchor": [
         33.0,
         31.0
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         28,
         28,
         38,
         34
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         32.5,
         31.5
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         26,
         28,
         39,
@@ -495,7 +575,7 @@
       "cell": 16,
       "action": "climb",
       "phase": 2,
-      "source": "olaf-climb-2-raw-v5.png",
+      "source": "olaf-climb-2-raw-v10.png",
       "sourceSize": [
         1254,
         1254
@@ -509,21 +589,21 @@
         19.59375
       ],
       "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
-        32.5,
-        31.0
+      "sourceAnchor": [
+        33.0,
+        30.5
       ],
-      "sourceHelmetBounds": [
-        27,
+      "sourceAnchorBounds": [
+        28,
         28,
         38,
-        34
+        33
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         32.5,
         32.5
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         27,
         29,
         38,
@@ -534,10 +614,10 @@
         2
       ],
       "nativeBounds": [
-        29,
-        36,
-        52,
-        69
+        27,
+        35,
+        53,
+        70
       ]
     },
     {
@@ -558,21 +638,21 @@
         19.59375
       ],
       "registration": "wholeactor integer steel-dome/core translation, not alpha/boot fitting",
-      "sourceHelmet": [
+      "sourceAnchor": [
         33.0,
         30.0
       ],
-      "sourceHelmetBounds": [
+      "sourceAnchorBounds": [
         28,
         27,
         38,
         33
       ],
-      "targetHelmet": [
+      "targetAnchor": [
         32.5,
         31.5
       ],
-      "targetHelmetBounds": [
+      "targetAnchorBounds": [
         26,
         28,
         39,
@@ -588,8 +668,605 @@
         54,
         68
       ]
+    },
+    {
+      "cell": 26,
+      "action": "overhead-walk",
+      "phase": 0,
+      "source": "olaf-overhead-walk-0-raw-v16.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        19
+      ],
+      "sourceAnchorBounds": [
+        20,
+        16,
+        45,
+        21
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        3
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        70
+      ],
+      "authoredSupportPlane": {
+        "anchor": [
+          32.5,
+          19
+        ],
+        "reference": "Reviewed disc interior/boss and palm plane; broad upper shading is not the physical support center",
+        "reviewRecord": "VIKINGS90-CYCLE-REVIEW.md"
+      }
+    },
+    {
+      "cell": 27,
+      "action": "overhead-walk",
+      "phase": 1,
+      "source": "olaf-overhead-walk-1-raw-v16.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        19.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        17,
+        45,
+        21
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        3
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        55,
+        70
+      ]
+    },
+    {
+      "cell": 28,
+      "action": "overhead-walk",
+      "phase": 2,
+      "source": "olaf-overhead-walk-2-raw-v13.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        19.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        17,
+        45,
+        21
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        3
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 29,
+      "action": "overhead-walk",
+      "phase": 3,
+      "source": "olaf-overhead-walk-3-raw-v15.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        19.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        17,
+        45,
+        21
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        3
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 30,
+      "action": "overhead-walk",
+      "phase": 4,
+      "source": "olaf-overhead-walk-4-raw-v9.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        17.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        14,
+        45,
+        20
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        5
+      ],
+      "nativeBounds": [
+        28,
+        27,
+        54,
+        71
+      ]
+    },
+    {
+      "cell": 31,
+      "action": "overhead-walk",
+      "phase": 5,
+      "source": "olaf-overhead-walk-5-raw-v12.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.5,
+        17.5
+      ],
+      "sourceAnchorBounds": [
+        20,
+        15,
+        45,
+        20
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        4
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 32,
+      "action": "overhead-walk",
+      "phase": 6,
+      "source": "olaf-overhead-walk-6-raw-v14.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        17.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        14,
+        44,
+        20
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        5
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        71
+      ]
+    },
+    {
+      "cell": 33,
+      "action": "overhead-walk",
+      "phase": 7,
+      "source": "olaf-overhead-walk-7-raw-v15.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        17.5
+      ],
+      "sourceAnchorBounds": [
+        20,
+        15,
+        44,
+        20
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        4
+      ],
+      "nativeBounds": [
+        28,
+        26,
+        54,
+        70
+      ]
+    },
+    {
+      "cell": 52,
+      "action": "overhead-climb",
+      "phase": 0,
+      "source": "olaf-overhead-climb-0-raw-v11.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        17.0
+      ],
+      "sourceAnchorBounds": [
+        20,
+        15,
+        44,
+        19
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        5
+      ],
+      "nativeBounds": [
+        28,
+        27,
+        53,
+        70
+      ]
+    },
+    {
+      "cell": 53,
+      "action": "overhead-climb",
+      "phase": 1,
+      "source": "olaf-overhead-climb-1-raw-v12.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        16.5
+      ],
+      "sourceAnchorBounds": [
+        20,
+        14,
+        44,
+        19
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        6
+      ],
+      "nativeBounds": [
+        28,
+        27,
+        53,
+        67
+      ]
+    },
+    {
+      "cell": 54,
+      "action": "overhead-climb",
+      "phase": 2,
+      "source": "olaf-overhead-climb-2-raw-v10.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        16.5
+      ],
+      "sourceAnchorBounds": [
+        20,
+        15,
+        44,
+        18
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        6
+      ],
+      "nativeBounds": [
+        28,
+        27,
+        52,
+        71
+      ]
+    },
+    {
+      "cell": 55,
+      "action": "overhead-climb",
+      "phase": 3,
+      "source": "olaf-overhead-climb-3-raw-v12.png",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "nativeCell": [
+        64,
+        64
+      ],
+      "scale": [
+        19.59375,
+        19.59375
+      ],
+      "registration": "wholeactor integer raised-disc support-plane translation",
+      "sourceAnchor": [
+        32.0,
+        18.5
+      ],
+      "sourceAnchorBounds": [
+        20,
+        16,
+        44,
+        21
+      ],
+      "targetAnchor": [
+        32.0,
+        22.0
+      ],
+      "targetAnchorBounds": [
+        20,
+        20,
+        44,
+        24
+      ],
+      "translation": [
+        0,
+        4
+      ],
+      "nativeBounds": [
+        28,
+        27,
+        52,
+        66
+      ]
     }
   ],
-  "sourceGate": "pending fullcycle review",
-  "runtimeGate": "pending"
+  "sourceGate": "accepted: selected twenty-four whole poses and explicit anatomical phase matrix",
+  "runtimeGate": "accepted: final selected twenty-four poses; ordinary and raised actual three loops, 1x/2x/mobile/mirror, ladder stopped/reversed and final moving rider",
+  "reviewRecord": "VIKINGS90-CYCLE-REVIEW.md"
 }

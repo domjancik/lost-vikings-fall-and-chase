@@ -1,6 +1,13 @@
 {
   "policy": "Authored planted-sole registration of complete ordinary walk sources; no alpha-box fitting or rescaling",
   "nativeGroundSoleExclusive": 62,
+  "raisedSupportPlanes": {
+    "olaf-overhead-walk-0-raw-v16.png": {
+      "anchor": [32.5,19],
+      "reference": "Reviewed disc interior/boss and palm plane; broad upper shading is not the physical support center",
+      "reviewRecord": "VIKINGS90-CYCLE-REVIEW.md"
+    }
+  },
   "phases": [
     {"phase":0,"sourceSoleExclusive":63,"plantedPixel":[30,62],"limb":"nearLeg","contact":"heel"},
     {"phase":1,"sourceSoleExclusive":63,"plantedPixel":[30,62],"limb":"nearLeg","contact":"compression"},

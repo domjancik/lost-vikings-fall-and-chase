@@ -1,6 +1,7 @@
 import{createRequire}from'node:module';import fs from'node:fs';import http from'node:http';import path from'node:path';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
-const{chromium}=require('playwright'),out='output/playwright/vikings90';fs.mkdirSync(out,{recursive:true});
+const overhead=process.argv.includes('--overhead');
+const{chromium}=require('playwright'),out=overhead?'output/playwright/vikings90-overhead':'output/playwright/vikings90';fs.mkdirSync(out,{recursive:true});
 const webRoot=path.resolve('output/release-vikings90/dist');
 const server=http.createServer((req,res)=>{const p=path.resolve(webRoot,'.'+(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));if(!p.startsWith(webRoot+path.sep)){res.writeHead(403);res.end();return;}fs.readFile(p,(e,d)=>{res.writeHead(e?404:200,{'Content-Type':p.endsWith('.js')?'text/javascript':p.endsWith('.png')?'image/png':p.endsWith('.css')?'text/css':'text/html'});res.end(e?'Not found':d);});}).listen(3056,'127.0.0.1');
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[],evidence=[];
@@ -14,11 +15,11 @@ const toX=async(id,x)=>{await page.waitForTimeout(120);await page.evaluate(()=>d
 const enterCycle=async()=>{await page.goto('http://127.0.0.1:3056/?skin=imagegen90');await page.locator('#play-cycle').click();await page.waitForTimeout(400);await page.keyboard.press('F2');await page.locator('#debug-level').selectOption('0');await page.locator('#debug-go').click();await page.waitForTimeout(300);};
 try{
  await enterCycle();
- for(const id of (process.argv.includes("--all")?[0,1,2]:[0])){
-  await page.locator('#restart').click();await toX(id,640);
+ for(const id of (overhead?[2]:process.argv.includes("--all")?[0,1,2]:[0])){
+  await page.locator('#restart').click();await toX(id,640);if(overhead){await page.keyboard.press('Space');await page.waitForTimeout(400);}
   for(let phase=0;phase<4;phase++){
-   await page.keyboard.down('ArrowUp');await page.waitForFunction(phase=>document.querySelector('#game').dataset.pose==='climb'&&Number(document.querySelector('#game').dataset.frame)===phase,phase);
-   await page.keyboard.press('Escape');await page.keyboard.up('ArrowUp');await page.waitForTimeout(70);await capture(`imagegen90-${id}-actual-ladder-phase-${phase}`);
+   await page.keyboard.down('ArrowUp');await page.waitForFunction(phase=>{const g=document.querySelector('#game');if(g.dataset.pose!=='climb'||Number(g.dataset.frame)!==phase)return false;document.querySelector('#pause').click();return true;},phase);
+   await page.keyboard.up('ArrowUp');await page.waitForTimeout(70);const exact=await state();if(Number(exact.frame)!==phase)throw Error('Climb capture phase drift');await capture(`imagegen90-${id}-actual-ladder-phase-${phase}`);
    if(phase===2)await captureSizes(`imagegen90-${id}-actual-ladder-material`);
    await page.keyboard.press('Escape');
   }

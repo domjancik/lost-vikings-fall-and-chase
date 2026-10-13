@@ -4,7 +4,8 @@ import http from 'node:http';
 import path from 'node:path';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright');
-const root=path.resolve('output/release-vikings90/dist'),out='output/viking-gallery90';
+const live=process.argv.includes('--live');
+const root=path.resolve('output/release-vikings90/dist'),out=live?'output/viking-gallery90-live':'output/viking-gallery90';
 fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{
  const target=path.resolve(root,'.'+req.url.split('?')[0]);
@@ -15,7 +16,7 @@ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Fi
 const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
 page.on('pageerror',e=>errors.push(String(e)));
 try{
- await page.goto('http://127.0.0.1:3060/viking-gallery90.html');
+ await page.goto(live?'https://united-marsh-6ppd.here.now/viking-gallery90.html?release=90':'http://127.0.0.1:3060/viking-gallery90.html',{waitUntil:'domcontentloaded',timeout:120000});
  await page.waitForFunction(()=>document.querySelector('#status').textContent.startsWith('erik'));
  await page.locator('#pause').click();
  for(const hero of process.argv.includes('--all')?['erik','baleog','olaf']:['erik','baleog']){

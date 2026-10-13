@@ -25,7 +25,20 @@ try{
  await shot('initial-1x');await page.locator('#zoom').click();await shot('initial-2x');
  await climb(1,400,1120);await move(1,2180);await climb(1,2180,940);await climb(1,1940,760);await tap('ArrowUp');await shot('marksman-cover');
  await climb(0,650,760);await move(0,880);
- await move(2,870);await tap('ArrowRight');await until(s=>s.machine.activeLeg===0&&s.machine.cycle%6.5>=5.3&&s.machine.cycle%6.5<5.5,()=>[],30000);await move(2,1410);await tap('d');await until(s=>s.machine.activeLeg===3&&s.machine.cycle%6.5>=2&&s.machine.cycle%6.5<4.5,()=>[],8000);await tap('Space');await move(2,1490);await until(s=>s.machine.kneel===1,()=>[],8000);await variants('brace');
+ await move(2,870);await tap('ArrowRight');await until(s=>s.machine.activeLeg===0&&s.machine.cycle%6.5>=5.3&&s.machine.cycle%6.5<5.5,()=>[],30000);
+ evidence['brace-departure']=await state();
+ // Keep the approach continuous. Stopping at1410 can consume the entire
+ // raised-foot window, then leave a back-facing shield waiting another cycle.
+ // The controls remain ordinary movement and the overhead action; no state
+ // flags, health or encounter timing are changed by this driver.
+ await until(s=>Math.abs(s.heroes[2].x-1490)<5&&Math.abs(s.heroes[2].vx)<16,s=>{
+  const h=s.heroes[2],d=1490-h.x-h.vx*Math.abs(h.vx)/3000;
+  const input=Math.abs(d)<3?[]:[d>0?'ArrowRight':'ArrowLeft'];
+  if(h.x>=1380&&!h.shieldUp)input.push('Space');
+  return input;
+ },10000);
+ evidence['brace-arrival']=await state();
+ await until(s=>s.machine.kneel===1,()=>[],8000);await variants('brace');
  await tap('1');await keys(['ArrowRight']);await page.keyboard.press('Space');await until(s=>s.heroes[0].support==='warden-spine',()=>['ArrowRight'],3000);await shot('spine');
  await until(s=>s.machine.laser.phase==='cooldown'&&s.machine.laser.age<.12,s=>s.machine.laser.phase==='lock'&&s.machine.laser.age>.35?['Space']:[],7000);
  await move(0,1280);await page.locator('#zoom').click();await page.waitForTimeout(300);await variants('cap-before');await until(s=>s.machine.exposure>0,s=>['lock','fire'].includes(s.machine.laser.phase)?['Space']:['ArrowRight','d'],6500);await variants('cap-start');await page.waitForTimeout(100);await variants('cap-middle');await page.waitForTimeout(140);await variants('cap-full');await until(s=>s.machine.shutter===1,()=>[],1000);await climb(1,1940,700);await tap('ArrowLeft');await shot('lens-open');await tap('d');await until(s=>s.machine.disabled,()=>[],3000);await shot('shutdown-start');await page.waitForTimeout(650);await shot('shutdown-middle');await until(s=>s.machine.release===1,()=>[],2500);await shot('shutdown-complete');await page.locator('#zoom').click();
@@ -38,4 +51,7 @@ try{
  await page.waitForFunction(()=>!document.querySelector('#win').hidden);await tap('Enter');await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='0'&&document.querySelector('#game').dataset.won==='false');await shot('continued');
  fs.writeFileSync(out+'/'+(process.env.WARDEN91_LIVE?'live-':'')+'browser-route.json',JSON.stringify({won:result.won,hp:result.heroes.map(h=>h.hp),time:result.time,restart:true,continue:true,evidence,errors},null,2));
  if(!result.won||errors.length||result.heroes.some(h=>h.hp!==3))throw Error('Failed '+JSON.stringify({errors,result}));console.log(JSON.stringify({won:result.won,hp:result.heroes.map(h=>h.hp),time:result.time,errors}));
+}catch(error){
+ const failure=await page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,time:+c.dataset.simTime}));
+ fs.writeFileSync(out+'/browser-failure.json',JSON.stringify({error:String(error),failure},null,2));throw error;
 }finally{fs.writeFileSync(out+'/browser-errors.json',JSON.stringify(errors));await browser.close();server?.close();}

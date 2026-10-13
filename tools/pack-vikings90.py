@@ -46,7 +46,11 @@ def main():
   if not path.exists():raise FileNotFoundError(path)
   raw=Image.open(path).convert('RGBA');native=raw.resize((64,64),Image.Resampling.NEAREST)
   anchor=shield_support if f['action'].startswith('overhead')else helmet
-  sourceAnchor,sourceBounds=anchor(native);g=guide.crop((i%8*64,i//8*64,i%8*64+64,i//8*64+64));targetAnchor,targetBounds=anchor(g)
+  sourceAnchor,sourceBounds=anchor(native);supportPlane=None
+  if hero=='olaf' and f['action'].startswith('overhead'):
+   supportPlane=json.loads((OUT/'olaf-ground-contacts.json').read_text()).get('raisedSupportPlanes',{}).get(path.name)
+   if supportPlane:sourceAnchor=supportPlane['anchor']
+  g=guide.crop((i%8*64,i//8*64,i%8*64+64,i//8*64+64));targetAnchor,targetBounds=anchor(g)
   shift=[round(t-s)for t,s in zip(targetAnchor,sourceAnchor)];contact=None
   if hero=='olaf' and f['action']=='walk':
    contacts=json.loads((OUT/'olaf-ground-contacts.json').read_text());contact=contacts['phases'][f['phase']]
@@ -61,6 +65,7 @@ def main():
   if contact:
    records[-1]['registration']='wholeactor integer helmet-X and authored planted-sole-Y translation; no alpha-box fitting'
    records[-1]['authoredContact']=contact
+  if supportPlane:records[-1]['authoredSupportPlane']=supportPlane
  cols=8;rows=math.ceil(len(processed)/8);sheet=Image.new('RGBA',(cols*80,rows*80),'#263746');comparison=Image.new('RGBA',(cols*80,rows*160),'#263746')
  for i,(source,cell)in enumerate(zip(sources,processed)):
   sheet.alpha_composite(cell,(i%8*80,i//8*80));comparison.alpha_composite(source,(i%8*80+8,i//8*160+8));comparison.alpha_composite(cell,(i%8*80,i//8*160+80))

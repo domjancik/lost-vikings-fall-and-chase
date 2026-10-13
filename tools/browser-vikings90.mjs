@@ -4,6 +4,8 @@ import http from 'node:http';
 import path from 'node:path';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright');
+const overhead=process.argv.includes('--overhead');
+const out=overhead?'output/playwright/vikings90-overhead':'output/playwright/vikings90';
 const mime={'.html':'text/html','.js':'text/javascript','.png':'image/png','.css':'text/css'};
 const webRoot=path.resolve('output/release-vikings90/dist');
 const server=http.createServer((req,res)=>{
@@ -11,30 +13,30 @@ const server=http.createServer((req,res)=>{
  if(!p.startsWith(webRoot+path.sep)){res.writeHead(403);res.end();return;}
  fs.readFile(p,(error,data)=>{res.writeHead(error?404:200,{'Content-Type':mime[path.extname(p)]||'application/octet-stream'});res.end(error?'Not found':data);});
 }).listen(3050,'127.0.0.1');
-fs.mkdirSync('output/playwright/vikings90',{recursive:true});
+fs.mkdirSync(out,{recursive:true});
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
 page.on('pageerror',e=>errors.push(String(e)));
 try{
  await page.goto('http://127.0.0.1:3050/');await page.locator('#play-cycle').click();await page.waitForTimeout(500);await page.keyboard.press('F2');await page.locator('#debug-level').selectOption('0');await page.locator('#debug-go').click();await page.waitForTimeout(300);
- const diagnostic=await page.evaluate(async(all)=>{
+ const diagnostic=await page.evaluate(async(mode)=>{
   const {drawHeroArt,whenHeroesReady,setHeroSkin}=await import('./hero-art.js?v=imagegen90');setHeroSkin('imagegen90');await whenHeroesReady();
   const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=192;const g=canvas.getContext('2d');g.imageSmoothingEnabled=false;g.scale(.5,.5);
   g.fillStyle='#202531';g.fillRect(0,0,2048,384);
-  for(const id of (all?[0,1,2]:[0]))for(const [k,skin]of ['current','imagegen90'].entries())for(let f=0;f<8;f++){
-   const x=(k*8+f)*128+64,y=id*128+80;g.fillStyle='#b6c5d1';g.fillRect(x-60,y+44,120,2);drawHeroArt(g,{id,face:1,skin},x,y,'run',f);
+  for(const id of (mode.overhead?[2]:mode.all?[0,1,2]:[0]))for(const [k,skin]of ['current','imagegen90'].entries())for(let f=0;f<8;f++){
+   const x=(k*8+f)*128+64,y=id*128+80;g.fillStyle='#b6c5d1';g.fillRect(x-60,y+44,120,2);drawHeroArt(g,{id,face:1,skin,shield:true,shieldUp:mode.overhead},x,y,'run',f);
   }
   return canvas.toDataURL('image/png').split(',')[1];
- },process.argv.includes('--all'));
- fs.writeFileSync('output/playwright/vikings90/same-size-native-gaits.png',Buffer.from(diagnostic,'base64'));
+ },{all:process.argv.includes('--all'),overhead});
+ fs.writeFileSync(out+'/same-size-native-gaits.png',Buffer.from(diagnostic,'base64'));
  const selectSkin=async skin=>{await page.locator('#help').click();await page.locator('#hero-skin').selectOption(skin);await page.locator('#close-help').click();};
  const state=()=>page.evaluate(()=>JSON.parse(document.querySelector('#game').dataset.heroes));
  const result={errors,cadence:[],evidence:[]};
  for(const skin of ['imagegen90']){
   await selectSkin(skin);await page.locator('#restart').click();await page.waitForTimeout(250);
-  for(const id of (process.argv.includes("--all")?[0,1,2]:[0])){
+  for(const id of (overhead?[2]:process.argv.includes("--all")?[0,1,2]:[0])){
    await page.locator('#restart').click();await page.waitForTimeout(100);
-   await page.keyboard.press(String(id+1));await page.keyboard.down('ArrowRight');
+   await page.keyboard.press(String(id+1));if(overhead)await page.keyboard.press('Space');await page.keyboard.down('ArrowRight');
    await page.waitForFunction(id=>JSON.parse(document.querySelector('#game').dataset.heroes)[id].x>=335,id);
    await page.keyboard.up('ArrowRight');await page.waitForTimeout(180);
    await page.waitForFunction(id=>JSON.parse(document.querySelector('#game').dataset.heroes)[id].ground,id);
@@ -46,20 +48,20 @@ try{
     const label=`${skin}-${id}-phase${n}${loop?'-loop'+(loop+1):''}`;
     const actual=await page.locator('#game').getAttribute('data-frame');
     if(Number(actual)!==n)throw Error(`${label}: captured phase ${actual} instead of ${n}`);
-    await page.screenshot({path:`output/playwright/vikings90/${label}-2x.png`});result.evidence.push({label,actual,heroes:await state()});
+    await page.screenshot({path:`${out}/${label}-2x.png`});result.evidence.push({label,actual,heroes:await state()});
     if(step===7){
-     await page.locator('#zoom').click();await page.waitForTimeout(180);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-running-1x.png`});
-     await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-running-mobile-1x.png`});
-     await page.locator('#zoom').click();await page.waitForTimeout(200);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-running-mobile-2x.png`});
+     await page.locator('#zoom').click();await page.waitForTimeout(180);await page.screenshot({path:`${out}/${skin}-${id}-running-1x.png`});
+     await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);await page.screenshot({path:`${out}/${skin}-${id}-running-mobile-1x.png`});
+     await page.locator('#zoom').click();await page.waitForTimeout(200);await page.screenshot({path:`${out}/${skin}-${id}-running-mobile-2x.png`});
      await page.setViewportSize({width:1440,height:900});await page.waitForTimeout(180);
     }
     await page.locator('#pause').click();await page.keyboard.up('ArrowRight');await page.keyboard.down('ArrowRight');
    }
    const after=(await state())[id];result.cadence.push({skin,id,before,after});await page.keyboard.up('ArrowRight');await page.waitForTimeout(160);
-   await page.locator('#pause').click();await page.locator('#zoom').click();await page.waitForTimeout(160);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-1x.png`});await page.locator('#zoom').click();await page.locator('#pause').click();
-   await page.keyboard.down('ArrowLeft');await page.waitForTimeout(110);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-reverse.png`});await page.keyboard.up('ArrowLeft');await page.waitForTimeout(200);await page.screenshot({path:`output/playwright/vikings90/${skin}-${id}-idle.png`});
+   await page.locator('#pause').click();await page.locator('#zoom').click();await page.waitForTimeout(160);await page.screenshot({path:`${out}/${skin}-${id}-1x.png`});await page.locator('#zoom').click();await page.locator('#pause').click();
+   await page.keyboard.down('ArrowLeft');await page.waitForTimeout(110);await page.screenshot({path:`${out}/${skin}-${id}-reverse.png`});await page.keyboard.up('ArrowLeft');await page.waitForTimeout(200);await page.screenshot({path:`${out}/${skin}-${id}-idle.png`});
   }
  }
- await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);await page.screenshot({path:'output/playwright/vikings90/trial-mobile-2x.png'});await page.locator('#zoom').click();await page.waitForTimeout(200);await page.screenshot({path:'output/playwright/vikings90/trial-mobile-1x.png'});
- if(errors.length)throw Error(errors.join(';'));fs.writeFileSync('output/playwright/vikings90/evidence.json',JSON.stringify(result,null,2));console.log(JSON.stringify({errors,captures:result.evidence.length}));
+ await page.setViewportSize({width:390,height:844});await page.waitForTimeout(200);await page.screenshot({path:out+'/trial-mobile-2x.png'});await page.locator('#zoom').click();await page.waitForTimeout(200);await page.screenshot({path:out+'/trial-mobile-1x.png'});
+ if(errors.length)throw Error(errors.join(';'));fs.writeFileSync(out+'/evidence.json',JSON.stringify(result,null,2));console.log(JSON.stringify({errors,captures:result.evidence.length}));
 }finally{await browser.close();server.close();}

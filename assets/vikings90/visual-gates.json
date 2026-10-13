@@ -11,6 +11,15 @@
     "processedRuntimeGate": "accepted: actual three walk loops, 1x/2x, mobile, mirrored, stopped/reversed ladder",
     "evidence": "output/playwright/vikings90"
   },
-  "olaf": {"sourceGate": "pending full corrected cycle", "processedRuntimeGate": "pending"},
-  "publicationAllowed": false
+  "olaf": {
+    "sourceGate": "accepted: selected twenty-four whole poses and explicit anatomical phase matrix",
+    "processedAtlasGate": "accepted: common-scale source/native comparison and complete registered GIF phase sequences",
+    "processedRuntimeGate": "accepted: final selected twenty-four poses; ordinary and raised actual three loops, 1x/2x/mobile/mirror, ladder stopped/reversed and final moving rider",
+    "ordinaryMovementGate": "accepted: authored planted-contact whole-pose registration, actual three loops, 1x/2x/mobile/mirror; boots contact opaque physical terrain row",
+    "raisedMovementGate": "accepted: whole-source contact edits 0/1V16 and 3/7V15, authored source0 disc plane19, actual physical floor contact across final loops",
+    "ladderMovementSubgate": "accepted: ordinary and raised four grips, stopped/reversed, 1x/2x/mobile",
+    "passengerGate": "accepted: final styled twelve captures, all eight moving phases plus mirror/1x/mobile; central shield sole contact, stable relative position and supporting palms",
+    "evidence": ["output/vikings90-review/olaf-grounded-normal-actual-three-loops.png", "output/vikings90-review/olaf-final-raised-grounded-three-loops.png", "output/vikings90-review/olaf-final-rider-eight-actual.png", "output/vikings90-rider/evidence.json"]
+  },
+  "publicationAllowed": true
 }

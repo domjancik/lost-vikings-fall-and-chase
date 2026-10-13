@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 const folder='output/release-vikings90',candidate=JSON.parse(fs.readFileSync(folder+'/candidate.json'));
 const gates=JSON.parse(fs.readFileSync(folder+'/dist/assets/vikings90/visual-gates.json'));
-if(candidate.draft||!gates.publicationAllowed)throw Error('Incomplete native-art review: publication remains blocked');
+if(candidate.draft||!candidate.publishAllowed||!gates.publicationAllowed)throw Error('Incomplete native-art review: publication remains blocked');
 for(const hero of ['erik','baleog','olaf'])for(const gate of ['sourceGate','processedRuntimeGate'])
  if(!gates[hero][gate].startsWith('accepted'))throw Error(`${hero} ${gate} must have an independent accepted verdict`);
 const publisher=fs.readFileSync('output/release-warden91/publish-update.mjs','utf8')

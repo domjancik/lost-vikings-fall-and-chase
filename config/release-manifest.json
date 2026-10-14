@@ -447,6 +447,14 @@
     {
       "source": "src/render/world-render.js",
       "output": "world-render.js"
+    },
+    {
+      "source": "src/app/hero-resources.js",
+      "output": "hero-resources.js"
+    },
+    {
+      "source": "src/levels/warden/strain-effects.js",
+      "output": "warden-strain-effects.js"
     }
   ],
   "files": [
@@ -725,6 +733,7 @@
     "assets/warden102/parts-native.png",
     "assets/warden102/broken-lens-native.png",
     "assets/warden102/visual-gates.json",
-    "assets/warden103/visual-gates.json"
+    "assets/warden103/visual-gates.json",
+    "assets/warden104/visual-gates.json"
   ]
 }

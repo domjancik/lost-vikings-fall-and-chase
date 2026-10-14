@@ -1,13 +1,14 @@
+import {drawBraceSweat} from './strain-effects.js?v=warden104';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
-import {laserTrace} from './combat.js?v=warden91';
-import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden103';
-import {WARDEN_ART as A} from './art.js?v=warden103';
+import {wardenWaveOpacity,laserTrace} from './combat.js?v=warden104';
+import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden104';
+import {WARDEN_ART as A} from './art.js?v=warden104';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=arc46';
-import {drawCombatRefraction} from './combat-refraction.js?v=warden102';
+import {drawCombatRefraction} from './combat-refraction.js?v=warden104';
 import {rotationBounds,createRenderCache,visibleChunks,partitionLadders} from './render-cache.js?v=warden102';
 const load=p=>{const i=new Image();i.src=p;return i;};
 const parts=load('assets/warden102/parts-native.png'),scene=load('assets/warden89/scene-native.png'),brokenLens=load('assets/warden102/broken-lens-native.png'),ladder=load('assets/platform56/ladder.png');
@@ -107,8 +108,7 @@ export function drawWardenWorld(c,s,camera,viewport){
  if(place){drawCycleGateField(c,{...place,active:g.disabled,frame:Math.floor(s.time*12),glow:.8,aperture:{x:2800,y:446,w:40,h:80}});c.drawImage(grade(gate.image),place.x,place.y,place.w,place.h);}
  c.restore();
  if(p.telegraph||g.braced){c.fillStyle=g.braced?'#95e9de':'#d59f4c';for(let n=0;n<3;n++)c.fillRect(q(g.footX-34+n*24),934,18,4);}
- if(g.braced){const left=Math.max(0,1-g.braceAge/14);c.fillStyle='#172326';c.fillRect(q(g.footX-28),q(g.footY-18),56,6);c.fillStyle=left<.3?'#d69060':'#8bafa2';c.fillRect(q(g.footX-28),q(g.footY-18),q(56*left),6);}
- for(const wave of g.waves||[]){c.save();c.globalAlpha=Math.min(1,(2.8-wave.age)*3);for(let n=0;n<7;n++){c.fillStyle=n%2?'#b98154':'#e2bd88';const dx=-wave.dir*n*6;c.fillRect(q(wave.x+dx),q(936-(6-n)*3),4,q((7-n)*3));}c.restore();}
+ for(const wave of g.waves||[]){c.save();c.globalAlpha=wardenWaveOpacity(wave.age);for(let n=0;n<7;n++){c.fillStyle=n%2?'#b98154':'#e2bd88';const dx=-wave.dir*n*6;c.fillRect(q(wave.x+dx),q(936-(6-n)*3),4,q((7-n)*3));}c.restore();}
  const blockAge=s.time-(g.blockAt??-10);if(blockAge<.25){c.fillStyle='#e4bb7c';const o=s.heroes[2];for(let n=0;n<4;n++)c.fillRect(q(o.x+o.face*(32+n*blockAge*50)),q(918-n*6-blockAge*20),2,2);}
 
  const slamAge=s.time-(g.slamAt??-10);if(slamAge<.45)for(let n=0;n<10;n++){const x=g.footX+(n-5)*12*slamAge*4,y=938-Math.sin(n*2.1)*slamAge*45+slamAge*slamAge*130;c.fillStyle=n%2?'#a48b65':'#63746e';c.fillRect(q(x),q(Math.min(938,y)),4,4);}
@@ -130,5 +130,5 @@ function drawWardenLaser(c,s,p){const g=s.machine;
 export function drawWardenOverlay(c,s){
  if(s.level.mechanic!=='warden')return null;
  const p=wardenGeometry(s),laser=s.machine.laser,beam=laser?.target?{from:p.emitter,to:laserTrace(s,p.emitter,laser.target)}:null;
- const optics=drawCombatRefraction(c,s,beam);drawWardenLaser(c,s,p);return optics;
+ const optics=drawCombatRefraction(c,s,beam);drawWardenLaser(c,s,p);return {...optics,sweatDrops:drawBraceSweat(c,s)};
 }

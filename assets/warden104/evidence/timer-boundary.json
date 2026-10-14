@@ -1,0 +1,35 @@
+{
+  "results": [
+    {
+      "kind": "strength",
+      "remaining": 1.01,
+      "text": "2s"
+    },
+    {
+      "kind": "strength",
+      "remaining": 0.99,
+      "text": "1s"
+    },
+    {
+      "kind": "recover",
+      "remaining": 1.01,
+      "text": "2s"
+    },
+    {
+      "kind": "recover",
+      "remaining": 0.99,
+      "text": "1s"
+    },
+    {
+      "kind": "air",
+      "remaining": 1.01,
+      "text": "2s"
+    },
+    {
+      "kind": "air",
+      "remaining": 0.99,
+      "text": "1s"
+    }
+  ],
+  "passed": true
+}

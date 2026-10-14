@@ -2,7 +2,7 @@ import {prepareMotion,integrateMotion} from '../../core/movement.js?v=warden89';
 import {startBash,bashImpact} from '../../core/bash.js?v=warden89';
 import {segmentHit} from '../../core/projectile-collision.js?v=warden89';
 import {ladderAtHero} from '../../core/ladder-context.js?v=warden89';
-import {stepWardenCombat} from './combat.js?v=warden91';
+import {stepWardenCombat} from './combat.js?v=warden104';
 import {damage} from '../../core/health.js?v=warden89';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const smooth=t=>{const p=Math.max(0,Math.min(1,t));return p*p*(3-2*p);};
@@ -14,6 +14,7 @@ export const wardenLevel={name:'THE FOURFOLD WARDEN',subtitle:'A shield under a 
  platforms:[{x:500,y:760,w:400},{x:1880,y:700,w:130},{x:2200,y:500,w:800}],
  ladders:[{x:650,top:760,bottom:940},{x:1940,top:700,bottom:940},{x:400,top:940,bottom:1120},{x:2180,top:940,bottom:1120}],exit:{x:2800,y:500,w:160}};
 export const WARDEN_PERIOD=6.5;
+export const WARDEN_BRACE_LIMIT=14;
 export const WARDEN_TRACK=[[1740,870],[2040,870],[2040,500],[2080,500]];
 const knots=[0,300,670,710];
 export function wardenCargoPose(distance){const d=Math.max(0,Math.min(710,distance));return d<=300?{x:1740+d,y:870}:d<=670?{x:2040,y:870-(d-300)}:{x:2040+d-670,y:500};}
@@ -62,7 +63,7 @@ export function advanceWarden(s,dt){
  }else{
   const holding=o.shieldUp&&o.shield&&!o.dead&&o.ground&&Math.abs(o.x-g.footX)<=24&&Math.abs(o.y+44-940)<3;
   if(g.braced)g.braceAge+=dt;
-  if(g.braced&&(!holding||g.braceAge>=14)){g.braced=false;g.cycle=Math.floor(g.cycle/WARDEN_PERIOD)*WARDEN_PERIOD+4.5;g.fatigue=2;g.unload=.45;feedback(s,'Olaf cannot hold the load. Clear the foot!');}
+  if(g.braced&&(!holding||g.braceAge>=WARDEN_BRACE_LIMIT)){g.braced=false;g.cycle=Math.floor(g.cycle/WARDEN_PERIOD)*WARDEN_PERIOD+4.5;g.fatigue=2;g.unload=.45;feedback(s,'Olaf cannot hold the load. Clear the foot!');}
   if(!g.braced){g.cycle+=dt;const p=g.cycle%WARDEN_PERIOD;g.activeLeg=[3,1,2,0][Math.floor(g.cycle/WARDEN_PERIOD)%4];g.footX=[980,1120,1660,1490][g.activeLeg];
    const lift=p<1.2?0:p<2.2?smooth((p-1.2)/1):p<4.5?1:p<5.2?1-smooth((p-4.5)/.7):0;
    g.unload=Math.max(0,(g.unload||0)-dt);if(g.unload===0)g.footY=approach(g.footY,940-180*lift,600*dt);

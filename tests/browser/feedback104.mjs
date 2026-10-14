@@ -1,0 +1,35 @@
+import fs from 'node:fs';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {createDevServer} from '../../tools/dev/server.mjs';
+const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
+const {chromium}=require('playwright'),out='output/warden104';fs.mkdirSync(out,{recursive:true});
+const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),errors=[],evidence=[];
+try{
+ let page=await browser.newPage({viewport:{width:844,height:390},deviceScaleFactor:2,isMobile:true,hasTouch:true});page.on('pageerror',e=>errors.push(String(e)));
+ await page.route('**/game.js*',async r=>{const response=await r.fetch();let body=(await response.text()).replace('const target=cameraTarget(','const target=globalThis.__feedbackCamera??cameraTarget(');body=body.replace('function draw(){','function draw(){const feedbackDrawStart=performance.now();');body=body.replace('drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);','drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);if(globalThis.__feedbackFrames)globalThis.__feedbackFrames.push(performance.now()-feedbackDrawStart);');await r.fulfill({response,body});});
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
+ const start=async round=>{await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');await page.locator(`#start-picker .level-card[data-round="${round}"]`).click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);};
+ const hud=()=>page.locator('.crew').evaluate(crew=>[...crew.querySelectorAll('.hero-card')].map(card=>{
+  const r=card.getBoundingClientRect(),meter=card.querySelector('.hero-resource'),m=meter.getBoundingClientRect(),bag=card.querySelector('.hud-bag').getBoundingClientRect();
+  return{visible:!meter.hidden,kind:meter.dataset.kind,text:meter.textContent,value:+meter.getAttribute('aria-valuenow'),max:+meter.getAttribute('aria-valuemax'),selected:card.classList.contains('active'),rect:{x:r.x,y:r.y,w:r.width,h:r.height},meter:{x:m.x,y:m.y,w:m.width,h:m.height},bagBottom:bag.bottom};
+ }));
+ const capture=async name=>{const cards=await hud();for(const card of cards.filter(c=>c.visible)){assert.ok(card.meter.x>=card.rect.x&&card.meter.x+card.meter.w<=card.rect.x+card.rect.w,'Meter outside card');assert.ok(card.meter.y>=card.bagBottom,'Inventory overlaps timer');assert.ok(card.meter.y+card.meter.h<=card.rect.y+card.rect.h,'Timer below picker');}await page.screenshot({path:`${out}/${name}.png`});const state=await page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,art:JSON.parse(c.dataset.cycleArt),optics:JSON.parse(c.dataset.wardenOptics||'null'),camera:JSON.parse(c.dataset.camera),time:+c.dataset.simTime}));evidence.push({name,cards,...state});};
+ await start(4);await page.keyboard.down('ArrowRight');await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].x>470);await page.keyboard.up('ArrowRight');await page.keyboard.down('ArrowDown');await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].underwater);await page.keyboard.up('ArrowDown');
+ await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].air<9.5);await page.keyboard.press('2');await page.waitForTimeout(700);await page.keyboard.press('Escape');
+ for(const [size,label]of [[{width:844,height:390},'mobile'],[{width:390,height:844},'portrait'],[{width:1440,height:900},'desktop']]){
+  await page.setViewportSize(size);await page.waitForTimeout(250);await capture('air-'+label);const cards=await hud();assert.equal(cards.filter(c=>c.kind==='air'&&c.visible).length,3);assert.ok(cards[0].value<9.5&&!cards[0].selected);assert.equal(cards[1].value,12);
+ }
+ await page.setViewportSize({width:844,height:390});await page.keyboard.press('Escape');await page.keyboard.press('1');const oldAir=(await hud())[0].value;await page.keyboard.down('ArrowUp');await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].air>=11.9);await page.keyboard.up('ArrowUp');assert.ok((await hud())[0].value>oldAir);await page.keyboard.press('Escape');await capture('air-refilled');
+ await start(5);
+ const wave=()=>page.locator('#game').evaluate(c=>JSON.parse(c.dataset.puzzle).machine.waves.find(w=>w.dir===1&&Math.abs(w.x-w.age*260-1120)<2));
+ for(const target of [.25,1.95,2.5,2.72]){
+  await page.waitForFunction(age=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.waves.some(w=>w.dir===1&&Math.abs(w.x-w.age*260-1120)<2&&w.age>=age&&w.age<age+.15),target,{timeout:25000});await page.keyboard.press('Escape');const w=await wave();assert.ok(w);
+  for(const zoom of [1,2]){if(await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.camera).zoom)!==zoom)await page.locator('#zoom').click();await page.evaluate(({w,zoom})=>{globalThis.__feedbackCamera={x:w.x-260,y:zoom===1?350:680};},{w,zoom});await page.waitForTimeout(300);await capture(`wave-${target}-${zoom}x`);const last=evidence.at(-1);assert.ok(last.optics.regions.some(r=>r.kind==='wave'&&Math.abs(r.centerX-w.x)<1));assert.ok(last.optics.strips>0,'Traveling refraction must still draw near expiration');if(target===.25){const cdp=await page.context().newCDPSession(page);await cdp.send('Emulation.setCPUThrottlingRate',{rate:6});await page.evaluate(()=>globalThis.__feedbackFrames=[]);await page.waitForTimeout(1600);const frames=await page.evaluate(()=>{const f=globalThis.__feedbackFrames;globalThis.__feedbackFrames=null;return f.sort((a,b)=>a-b);});await cdp.send('Emulation.setCPUThrottlingRate',{rate:1});last.performance={method:'844x390 DPR2 Chrome CPU6, paused active pressure wave; desktop proxy',frames:frames.length,medianDrawMs:frames[Math.floor(frames.length*.5)],p95DrawMs:frames[Math.floor(frames.length*.95)]};}}
+  await page.keyboard.press('Escape');
+ }
+ await page.waitForTimeout(250);assert.ok(!await wave(),'Wave should expire at authoritative lifetime');
+ page=await browser.newPage({viewport:{width:1440,height:900}});page.on('pageerror',e=>errors.push(String(e)));await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await start(4);await page.keyboard.press('Escape');await capture('air-desktop-mouse');await start(5);await page.keyboard.press('Escape');await capture('strength-desktop-mouse');
+ fs.writeFileSync(`${out}/feedback-browser.json`,JSON.stringify({evidence,errors},null,2));assert.deepEqual(errors,[]);console.log(JSON.stringify({captures:evidence.length,airInactive:true,airRefilled:true,waveLateRefraction:true,errors}));
+}finally{await browser.close();await new Promise(r=>server.close(r));}

@@ -163,6 +163,23 @@ mobile evidence and passenger soles when a pose can carry another Viking.
 
 ## Acceptance
 
+### Gameplay feedback and crew resources
+
+Review traveling effects early, midway, near expiry and after removal. Refraction
+and the visible crest must follow the same world position and life envelope;
+keep sampling/displacement on the native grid while opacity dissipates. Verify
+that quantized displacement does not round away the effect prematurely. Retain
+viewport-limited copies and a mobile-sized performance check.
+
+Attach sweat and similar body feedback to the actual rendered head/body landmark,
+not an assumed collision-box top. Inspect early and sustained strain, stopped
+simulation and release. Crew resource meters must show inactive heroes too and
+follow authoritative strength/air/recovery values. Check depletion, replenishment,
+integer-second boundaries and death/reset. Verify names, health and inventory
+remain readable without overlaps or shrinking the gameplay canvas. Use actual
+mouse-desktop and coarse/mobile browser contexts: changing viewport dimensions
+alone does not change pointer media queries.
+
 ### Full movement envelopes and fluid transitions
 
 Inspect the whole swept range of moving machinery, including its resting state

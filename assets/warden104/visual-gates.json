@@ -1,0 +1,50 @@
+{
+  "review": "docs/history/WARDEN104-REVIEW.md",
+  "worldUnitsPerNativePixel": 2,
+  "effectNativeFootprints": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent warden critique agent",
+    "reason": "Existing reviewed bitmap art unchanged; sweat uses deliberate1x1/1x2native-pixel drops and quantized world positions. No artwork resampling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Normal-input 1x/2x/mobile early/late wave and brace captures: traveling refraction dissipates, sweat emerges from temples, inactive hero resources remain readable with inventory/health. Actual mouse-desktop/coarse-mobile bounds checked. Integer countdown cache issue corrected and built DOM check passed."
+  },
+  "performance": {
+    "method": "844x390 DPR2 headless Chrome CPU6 active wave; bounded desktop proxy, not real-phone certification",
+    "medianDrawMs": {
+      "1x": 9.6,
+      "2x": 7.7
+    },
+    "p95DrawMs": {
+      "1x": 11.8,
+      "2x": 10.1
+    }
+  },
+  "verification": {
+    "tests": 453,
+    "ordinaryInputRoute": "evidence/boss-route.json",
+    "won": true,
+    "heroHP": [
+      3,
+      3,
+      3
+    ],
+    "browserErrors": [],
+    "feedback": "evidence/feedback-browser.json",
+    "feedbackCaptures": 14,
+    "timerBoundary": "evidence/timer-boundary.json",
+    "timerBoundaryCases": 6
+  },
+  "publicationAllowed": true
+}

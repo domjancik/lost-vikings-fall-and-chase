@@ -2,6 +2,13 @@ import {segmentHit,shieldHit} from '../../core/projectile-collision.js?v=warden9
 import {damage} from '../../core/health.js?v=warden91';
 import {wardenGeometry} from './campaign.js?v=warden91';
 
+export const WARDEN_WAVE_LIFETIME=2.8;
+export function wardenWaveOpacity(age){
+ if(age<0||age>=WARDEN_WAVE_LIFETIME)return 0;
+ const remaining=Math.min(1,(WARDEN_WAVE_LIFETIME-age)/.9);
+ return remaining*remaining*(3-2*remaining);
+}
+
 // Both beams and low shockwaves stop at their first physical contact.
 export function laserTrace(s,origin,target){
  const dx=target.x-origin.x,dy=target.y-origin.y,length=Math.hypot(dx,dy)||1;
@@ -23,7 +30,7 @@ export function stepWardenCombat(s,dt){
   for(const h of s.heroes)if(!h.dead&&h.y+44>926&&h.y<940){const hit=segmentHit(old,924,wave.x,924,{x:h.x-15,y:h.y,w:30,h:44});if(hit)contacts.push({...hit,h});}
   contacts.sort((a,b)=>a.t-b.t);for(const hit of contacts){if(hit.shield){wave.dead=true;if(hit.h)g.blockAt=s.time;break;}damage(s,hit.h);}
  }
- g.waves=g.waves.filter(w=>!w.dead&&w.age<2.8);
+ g.waves=g.waves.filter(w=>!w.dead&&w.age<WARDEN_WAVE_LIFETIME);
  const laser=g.laser;if(g.disabled){laser.phase='cooldown';laser.age=0;return;}
  const a=s.heroes[s.active];if(a.x>=900&&!a.dead)g.engaged=true;
  if(!g.engaged)return;

@@ -136,5 +136,4 @@ export function drawWaterEffects(c,s){
   rect(c,'#bfd5bfaa',p.x+p.w-2,top,2,height-4);rect(c,'#427c89aa',p.x+p.w,top,2,height);
  }
  surface(c,s,y);drawBubbles(c,s);flow(c,s);
- for(const h of s.heroes){if(!h.underwater&&!h.inAirPocket)continue;const air=Math.ceil(h.air/2);for(let n=0;n<6;n++)rect(c,n<air?'#a6ecdf':'#40545c',h.x-18+n*6,h.y-46,4,4);}
 }

@@ -16,3 +16,9 @@ Use version control. Preserve original sources and prompts. Do not overwrite
 unrelated uncommitted work. Keep the existing review requirements for puzzle
 causality, smoothly animated progression, consistent visual mechanics, grounded
 objects/supports/enemies, and adult-human scale for the Vikings.
+
+For environment layers and camera-relative scenery, apply
+[grounded-parallax](skills/grounded-parallax/SKILL.md).
+For level concepts, story/worldbuilding and cooperative puzzle work, apply
+[cooperative-world-design](skills/cooperative-world-design/SKILL.md).
+The existing native-sprite-art skill also defines the preferred pixel-art quality.

@@ -14,7 +14,7 @@ figure reduced from hundreds of pixels.
 Generate the subject at that **native detail density**. A larger output file
 may show a nearest-neighbor enlargement of those pixels; it must not introduce
 extra hair strands, shading, mail textures or subpixel outlines. State native
-dimensions, a limited palette and flat readable pixel clusters in the prompt.
+dimensions, a limited palette and solid readable pixel clusters in the prompt.
 Generated output dimensions do not prove native density; inspect the artwork.
 
 Never rely on pixel-grid detection, quantization or downsampling to rescue
@@ -63,3 +63,26 @@ splice seams and frozen torso/shoulder holds. Do not repair them by pasting fixe
 body rows onto separately generated gait legs. Idle should allow subtle whole
 torso/head breathing with planted feet; look poses need head/neck orientation.
 Shield face must occlude its gripping palm, with unchanged physical dimensions.
+
+## The pixel-art quality the user prefers
+
+Use Inside the Clockwork as the material/volume benchmark for this game:
+dimensional worn iron, restrained bronze, coherent light, exposed working parts,
+and characters with weight and personality. Deliberate clusters should describe
+planes, bevels and silhouette, rather than mottled noise or painted blur. Richness
+comes from purposeful structure, not tiny isolated highlights on every surface.
+Reject both flat cartoon simplification and high-resolution painterly texture.
+
+Define native canvas, occupied subject size, palette roles, light direction and
+anchor before generation. At actual gameplay size, check recognizable materials,
+clean outline ownership, contrast hierarchy and readable negative space. Source
+alpha is genuinely transparent around objects; keep opaque materials opaque.
+Keep art scale consistent with adult humans and neighboring sprites.
+
+For animation, motion guides establish anatomy and causal geometry; imagegen
+supplies final character/material art. Frame registration cannot repair invented
+limbs, missed poses or mismatched density. Use complete authored state/frame sets
+for machines, with steady equipment size and continuous mechanical transfer.
+
+For layer placement, apply [grounded-parallax](../grounded-parallax/SKILL.md).
+For new rooms, apply [cooperative-world-design](../cooperative-world-design/SKILL.md).

@@ -1,4 +1,4 @@
-import {cycleObjects} from '../campaigns/machines/cycle-campaign.js?v=vikings70';
+import {cycleObjects} from '../campaigns/machines/cycle-campaign.js?v=water108';
 import {storyObjects} from '../campaigns/story/story-campaign.js?v=vikings70';
 import {verticalObjects} from '../campaigns/arcade/vertical-campaign.js?v=vikings70';
 import {inventoryObjects} from '../campaigns/arcade/inventory-campaign.js?v=vikings70';

@@ -1,0 +1,25 @@
+{
+  "review": "docs/history/WATER108-REVIEW.md",
+  "source": "src/levels/water/campaign.js",
+  "rasterChanges": false,
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent water critique agent",
+    "reason": "Force-only correction removes front-shield Olaf's buoyancy-branch current exemption. Existing reviewed artwork, native scale, contacts and ports unchanged."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Actual ordinary controls show front Olaf resisted at x679.19, raised shield at x714.08 intercepting intake, continuous valve opening and healthy complete route.1x/2x and responsive844x390 captures checked; touch context not exercised."
+  },
+  "verification": {
+    "tests": 462,
+    "regressions": "tests/unit/water108.test.js",
+    "simulationRates": [60, 120],
+    "ordinaryInputRoute": "evidence/route.json",
+    "won": true,
+    "heroHP": [3, 3, 3],
+    "time": 117.625,
+    "browserErrors": []
+  },
+  "publicationAllowed": true
+}

@@ -88,6 +88,14 @@ export function waterStep(s,input,dt){
   if(active){const ladder=ladderAtHero(s.level,h);if((input.up||input.down)&&ladder)h.climbing=true;if(input.left||input.right||input.jump)h.climbing=false;}
   if(h.climbing){const ladder=ladderAtHero(s.level,h);if(ladder){const dir=active?Number(!!input.down)-Number(!!input.up):0;climbs.push({h,x:ladder.x,y:Math.max(ladder.top-44,Math.min(ladder.bottom-44,h.y+dir*135*dt))});h.moveX=0;h.vy=-1250*dt;continue;}h.climbing=false;}
   if(h.waterFloat){
+   // A front shield cannot shelter a downward intake. Olaf previously skipped
+   // current force here entirely; only the raised disc protects his approach.
+   const jet=waterJet(s);
+   if(!h.shieldUp&&jet.strength>.02){
+    const overlap=Math.max(0,Math.min(1,(Math.min(h.x+16,jet.x+jet.w)-Math.max(h.x-16,jet.x))/32));
+    const drag=overlap*overlap*(3-2*overlap);
+    h.moveX-=380*jet.strength*drag*dt;
+   }
    // Damped buoyancy changes velocity, never position. Entering from depth
    // takes time to rise; the feed-forward term follows a receding surface.
    const acceleration=Math.max(-800,Math.min(800,16*(g.waterY-24-h.y)-8*(h.vy-surfaceVelocity)));

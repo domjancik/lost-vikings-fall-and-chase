@@ -1,0 +1,31 @@
+{
+  "review": "docs/history/WARDEN103-REVIEW.md",
+  "nativeSize": [
+    512,
+    512
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "selectedSource": "assets/warden102/parts-raw-v3.png",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent warden critique agent",
+    "reason": "Unchanged native-density V3 and inherited complete feet; no art rescaling or clipping."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Measured broad opaque bottoms43/42 registered at exclusive material bottom, connected ankle pivots56/54world units; actual normal-control braced and settled contact reviewed at1x/2x/mobile."
+  },
+  "verification": {
+    "alphaRegression": "tests/unit/warden-contact103.py",
+    "measurements": "evidence/contact-measurements.json",
+    "ordinaryInputRoute": "evidence/browser-route.json",
+    "won": true,
+    "heroHP": [
+      3,
+      3,
+      3
+    ],
+    "browserErrors": []
+  },
+  "publicationAllowed": true
+}

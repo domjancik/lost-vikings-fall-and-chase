@@ -140,7 +140,6 @@
       20,
       15
     ],
-    "footSole": 39,
     "headEye": [
       86,
       58
@@ -149,7 +148,11 @@
       9,
       60,
       159
-    ]
+    ],
+    "footSoles": {
+      "foot-near": 43,
+      "foot-far": 42
+    }
   },
   "inheritedComponents": [
     "foot-near",

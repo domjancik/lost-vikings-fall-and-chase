@@ -28,6 +28,15 @@ cannot substitute for visual acceptance.
 
 ## Ground contact
 
+For articulated feet, measure each near/far sprite independently from its actual
+opaque material rows. Register the **exclusive** bottom (`last material row+1`),
+not an interior sole stripe or the atlas cell edge. Verify that no material pixel
+extends below the physical plane at1x/2x; shadows are separate. Moving a foot
+requires reconnecting its ankle mounting pivot while preserving rigid links.
+Record measured source rows and pixel/contact regression results alongside
+actual grounded, raised, braced and shutdown captures. A previous visual approval
+does not waive this measurement (Warden103 corrects a missed8/6-world-unit overrun).
+
 For ceiling-mounted machinery, locate the actual opaque mounting flange rather
 than the atlas cell's top edge. Remove neighboring-cell extraction spill before
 measuring it. The flange must visibly join a ceiling or a service arch with a

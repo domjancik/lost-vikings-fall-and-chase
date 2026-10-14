@@ -1,5 +1,5 @@
 import {campaignChoices} from './campaign-picker.js?v=menu95';
-import {levelPreview} from './level-preview.js?v=warden102';
+import {levelPreview} from './level-preview.js?v=warden103';
 export function campaignMenu(host,{campaign,onLevel}){
  const nav=document.createElement('nav'),grid=document.createElement('div');
  nav.className='campaign-choices';nav.setAttribute('aria-label','Campaigns');grid.className='level-grid';

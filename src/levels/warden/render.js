@@ -1,7 +1,7 @@
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {laserTrace} from './combat.js?v=warden91';
-import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden89';
-import {WARDEN_ART as A} from './art.js?v=warden102';
+import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden103';
+import {WARDEN_ART as A} from './art.js?v=warden103';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
@@ -14,6 +14,7 @@ const parts=load('assets/warden102/parts-native.png'),scene=load('assets/warden8
 const plunger=load('assets/warden97/plunger-native.png'),emitter=load('assets/warden97/emitter-native.png');
 const gate=createAtlas('assets/gate61/gate.png',1,1),tower=createAtlas('assets/clockwork71/tower.png',2,2),cache=createRenderCache(96),fixed=createRenderCache(24),grades=new WeakMap();
 let renderView=null;
+const footOffsets={near:(A.anchors.footSoles['foot-near']-A.anchors.footPivot[1])*A.worldPixel,far:(A.anchors.footSoles['foot-far']-A.anchors.footPivot[1])*A.worldPixel};
 function grade(image,filter='saturate(.62) brightness(.88)'){
  if(!image.naturalWidth)return image;
  let map=grades.get(image);if(!map){map=new Map();grades.set(image,map);}if(map.has(filter))return map.get(filter);
@@ -32,7 +33,8 @@ function limb(c,leg){const idx=leg.far?2:0;for(const [i,p,n] of [[idx,leg.hip,le
  // Separate registered caps meet the real articulated joints. The piston
  // housings overlap them; illustration padding cannot move a physical pivot.
  for(const p of [leg.hip,leg.knee,leg.ankle])sprite(c,leg.far?'joint-far':'joint-near',p.x,p.y,0,[16,16]);
- sprite(c,leg.far?'foot-far':'foot-near',leg.foot.x,leg.foot.y,0,[20,39]);
+ const foot=leg.far?'foot-far':'foot-near';
+ sprite(c,foot,leg.foot.x,leg.foot.y,0,[A.anchors.footPivot[0],A.anchors.footSoles[foot]]);
 }
 function ladders(c,collection){if(!ladder.naturalWidth)return;for(const l of collection)for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,q(l.x-24),q(y),48,q(h));}}
 function head(c,s,p){
@@ -84,7 +86,7 @@ function fixedChunks(c,s,view){
  return{decor,ready,draws};
 }
 export function drawWardenWorld(c,s,camera,viewport){
- const g=s.machine,p=wardenGeometry(s),view={...camera,width:viewport.width,height:viewport.height};renderView=view;
+ const g=s.machine,p=wardenGeometry(s,footOffsets),view={...camera,width:viewport.width,height:viewport.height};renderView=view;
  c.fillStyle='#0b1925';c.fillRect(camera.x,camera.y,viewport.width,viewport.height);c.save();
  if(scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,x=q(camera.x*.72+Math.max(0,(viewport.width-w)/2));c.drawImage(grade(scene),x,q(1200-h+camera.y*.15),w,h);}
  const scenery=fixedChunks(c,s,view),decor=scenery.decor,floors=[...s.level.floors,...s.level.platforms];

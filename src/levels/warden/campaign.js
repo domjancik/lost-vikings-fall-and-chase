@@ -29,10 +29,10 @@ export function wardenLegJoint(hip,ankle,bend=1){
  const dx=ankle.x-hip.x,dy=ankle.y-hip.y,d=Math.max(.01,Math.hypot(dx,dy)),half=Math.min(147.99,d/2),off=Math.sqrt(148*148-half*half)*bend;
  return{x:(hip.x+ankle.x)/2+dy/d*off,y:(hip.y+ankle.y)/2-dx/d*off};
 }
-export function wardenGeometry(s){
+export function wardenGeometry(s,footOffsets={near:48,far:48}){
  const g=s.machine,hips=[1028,1136,1488,1520],feet=[{x:980,y:940},{x:1120,y:940},{x:1660,y:940},{x:g.footX,y:g.footY}];
  for(let i=0;i<feet.length;i++)feet[i]={x:[980,1120,1660,1490][i],y:940};feet[g.activeLeg??3]={x:g.footX,y:g.footY};
- const legs=hips.map((x,i)=>{const hip={x,y:wardenSpineY(s,x)+112},foot=feet[i],ankle={x:foot.x,y:foot.y-48};return{id:i,far:i%2===0,hip,knee:wardenLegJoint(hip,ankle,i===2?1:-1),ankle,foot};});
+ const legs=hips.map((x,i)=>{const hip={x,y:wardenSpineY(s,x)+112},foot=feet[i],ankle={x:foot.x,y:foot.y-footOffsets[i%2===0?'far':'near']};return{id:i,far:i%2===0,hip,knee:wardenLegJoint(hip,ankle,i===2?1:-1),ankle,foot};});
  const spine=Array.from({length:8},(_,i)=>{const x=950+i*70;return{x,y:wardenSpineY(s,x),w:72,support:'warden-spine'};});
  return{legs,spine,body:{x:920,y:wardenSpineY(s,920),angle:Math.atan2(20*g.kneel,640)},
   eye:{x:1724,y:wardenSpineY(s,1560)-4},emitter:{x:1648,y:wardenSpineY(s,1560)-118},plunger:{x:1398+g.stroke*16,y:wardenSpineY(s,1380)-24},

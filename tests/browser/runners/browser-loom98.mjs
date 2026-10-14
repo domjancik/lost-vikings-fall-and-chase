@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
 import assert from 'node:assert/strict';
+import {cycleLevels} from '../../../src/campaigns/machines/cycle-campaign.js';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright'),live=!!process.env.LOOM98_LIVE,root=path.resolve(process.env.LOOM_BROWSER_ROOT||'dist'),port=process.argv.includes('--miss')?3056:3054;
 const out=process.env.LOOM_BROWSER_OUT||'output/loom98',shotsOut=out+'/captures',revealReview=!!process.env.LOOM_REVIEW_REVEAL;
@@ -31,8 +32,8 @@ try{
  await page.goto((live?'https://united-marsh-6ppd.here.now/':`http://127.0.0.1:${port}/`)+'?release=loom98');
  await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.locator('#start-picker [data-campaign-option="cycle"]').click();
- await page.waitForFunction(()=>{const cs=[...document.querySelectorAll('#start-picker canvas')];return cs.length===7&&cs.every(c=>c.dataset.ready==='true');});
- assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(cs=>cs.map(c=>c.toDataURL()))).size,7);
+ await page.waitForFunction(count=>{const cs=[...document.querySelectorAll('#start-picker canvas')];return cs.length===count&&cs.every(c=>c.dataset.ready==='true');},cycleLevels.length);
+ assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(cs=>cs.map(c=>c.toDataURL()))).size,cycleLevels.length);
  await page.locator('#start-picker .level-card[data-round="6"]').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='6');
  await page.waitForTimeout(1000);await page.locator('#restart').click();await page.waitForFunction(()=>+document.querySelector('#game').dataset.simTime<.2);
  let source=fs.readFileSync('tests/routes/loom-route96.js','utf8');source=source.slice(source.indexOf('export function')).replace('export function simulateLoomRoute()','async function playLoom()');

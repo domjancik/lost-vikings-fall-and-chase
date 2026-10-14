@@ -17,3 +17,7 @@ Desktop1x/2x and landscape/portrait captures retained in assets/warden97/evidenc
 Portrait lens is offscreen; lens acceptance uses landscape mobile captures.
 408 repository tests passed before adding the focused cargo-anchor regression.
 Candidate freezes over verified Loom96 and excludes unrelated working changes.
+
+Published and checked: all10changed native assets/modules match frozen SHA256.
+Live normal-controls route won, HP3/3/3, time99.950, no page errors;
+restart and Enter continue confirmed. Receipts: assets/warden97/live.

@@ -1,0 +1,52 @@
+[
+  {
+    "file": "warden-render.js",
+    "sha256": "ff334755af265f60dc78027c68be017b944eda9de5912eacb5560360488fb6d2",
+    "size": 8965
+  },
+  {
+    "file": "warden-art97.js",
+    "sha256": "e8807f15b3ac7abc59539200be8cffbf32e278896f81daf28667505fdfc2cd7a",
+    "size": 1015
+  },
+  {
+    "file": "depth-layout94.js",
+    "sha256": "22a6cad67c35d615f3353f45ffc37d9e9c18d16dd078a3c454b16b0ce86e3e16",
+    "size": 1902
+  },
+  {
+    "file": "depth-render94.js",
+    "sha256": "d150730d7cc883e777e6c4c0885ca02603f98585c89d04544e78f80e1e452350",
+    "size": 1737
+  },
+  {
+    "file": "assets/warden97/parts-native.png",
+    "sha256": "b46ae181bd461813aff8cf07aa6248f3685e272eef3add5019e5b86065841c58",
+    "size": 264002
+  },
+  {
+    "file": "assets/warden97/broken-lens-native.png",
+    "sha256": "bb20a2623e31c6038eba5aa4891b3d22854199a6b3fcc5d930410d826d288a51",
+    "size": 4013
+  },
+  {
+    "file": "assets/warden97/plunger-native.png",
+    "sha256": "e8a698d493b39a259a577f2fc84ad3029cdbed8993049f41724cb47b5746338b",
+    "size": 11517
+  },
+  {
+    "file": "assets/warden97/emitter-native.png",
+    "sha256": "4515e57de75714b11b4dfb93f829f749a23b509561d8cf35f3d4b3d69aab5a8e",
+    "size": 1633
+  },
+  {
+    "file": "assets/warden97/registration.json",
+    "sha256": "da2fa4be0a21a9db2696d2daeead1f807fc03bbf0a070e85dc1e0e3e80e66dba",
+    "size": 1997
+  },
+  {
+    "file": "assets/warden97/visual-gates.json",
+    "sha256": "da9fa28eef97d160786efdd00ed148f396df26cb88181c855dbe340bffdc8225",
+    "size": 3322
+  }
+]

@@ -6,7 +6,7 @@ Design authority: `assets/warden86/concept-raw.png`. Rules applied: `skills/nati
 
 One native pixel occupies two world units. Atlas: 512×512 native; body cell 320×104, heads 104×112, links 40×104, feet 48×48. Mechanical pivots, eye aperture, walking deck, collider geometry and cargo contacts must remain registered. Cell dimensions alone do not establish these visible anchors.
 
-Inspected the original concept, `assets/warden89/parts-native.png`, `assets/warden97/parts-raw-v1.png` (1280×1280) and `assets/warden97/parts-native-v1.png` (512×512), including the raw art and its proposed native-size result.
+Inspected the original concept, `assets/warden89/parts-native.png`, `assets/warden97/parts-raw-v1.png` (1254×1254) and `assets/warden97/parts-native-v1.png` (512×512), including the raw art and its proposed native-size result.
 
 ## V1 source gate: FAIL
 
@@ -26,9 +26,9 @@ Publication is blocked. Source and runtime gates must both be repeated after cor
 
 ## V2 source gate: FAIL; structural direction improved
 
-Inspected `assets/warden97/parts-raw-v2.png` (1280×1280) and `assets/warden97/parts-native-v2.png` (512×512). Layered curved plates, exposed gear negative space, thicker piston/joint casings and heavier hanging cables substantially recover the original mechanical language. This is a useful structural revision.
+Inspected `assets/warden97/parts-raw-v2.png` (1254×1254) and `assets/warden97/parts-native-v2.png` (512×512). Layered curved plates, exposed gear negative space, thicker piston/joint casings and heavier hanging cables substantially recover the original mechanical language. This is a useful structural revision.
 
-Density remains unaccepted. The raw curved armor faces contain irregular fine stipple and chips smaller than the 2.5-source-pixel width corresponding to one native pixel. Curved outlines also include fine antialias fragments. In the native result, this wear becomes granular sparkle instead of deliberately connected rust patches. Native one-pixel accents can be valid when authored as solid grid cells with clear purpose; the raw sub-grid irregular microtexture here is not that.
+Density remains unaccepted. The raw curved armor faces contain irregular fine stipple and chips smaller than the approximately 2.45-source-pixel width corresponding to one native pixel. Curved outlines also include fine antialias fragments. In the native result, this wear becomes granular sparkle instead of deliberately connected rust patches. Native one-pixel accents can be valid when authored as solid grid cells with clear purpose; the raw sub-grid irregular microtexture here is not that.
 
 Next prompt constraint: render a uniform 512×512 logical grid, enlarged with nearest-neighbor blocks only. Each native pixel must be a single solid color with no subpixel marks or antialiasing. Rust should occupy contiguous 3–8-native-pixel patches. Use 3–4 connected armor shading bands and no stipple or microtexture. Cable links and gear teeth must use deliberate native clusters. Preserve V2's structural revision.
 
@@ -36,7 +36,7 @@ V2 processed/runtime gate remains FAIL / gameplay PENDING. Colored fringe is sti
 
 ## V3 source gate: ACCEPTED
 
-Inspected retained `assets/warden97/parts-raw-v3.png` (1280×1280) beside `assets/warden97/parts-native-v3.png` (512×512 draft). Large deliberate connected shading and rust clusters replace the sub-grid stipple. Stepped silhouettes, readable gear/cable negative space and consistent mechanical detail now survive at intended native size. Curved layered plates and thick piston casings preserve V2's improved construction. Slate iron and oxidized patches give the bronze a coherent worn-metal context. This is sufficient source-density and design-direction acceptance; it is not anchor or runtime approval.
+Inspected retained `assets/warden97/parts-raw-v3.png` (1254×1254) beside `assets/warden97/parts-native-v3.png` (512×512 draft). Large deliberate connected shading and rust clusters replace the sub-grid stipple. Stepped silhouettes, readable gear/cable negative space and consistent mechanical detail now survive at intended native size. Curved layered plates and thick piston casings preserve V2's improved construction. Slate iron and oxidized patches give the bronze a coherent worn-metal context. This is sufficient source-density and design-direction acceptance; it is not anchor or runtime approval.
 
 V3 processed/runtime gate: PENDING. The draft has not received final alpha cleanup or component translation registration, and colored edge contamination is still visible. Inspect the cleaned registered candidate before integration approval. Preserve scale during translation. A visible joint cap can seat on the physical hip mount, but adjacent rings must read as attachment eyes rather than disconnected pivots. Require actual joint/port pixels, sole/deck contacts, all required states and final production 1x/2x/mobile evidence. Publication remains blocked.
 

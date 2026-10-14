@@ -5,9 +5,10 @@ import path from 'node:path';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright');
 const overhead=process.argv.includes('--overhead');
-const out=overhead?'output/playwright/vikings90-overhead':'output/playwright/vikings90';
+const skin=process.env.VIKING_BROWSER_SKIN||'imagegen90',heroOnly=process.env.VIKING_BROWSER_HERO;
+const out=process.env.VIKING_BROWSER_OUT||(overhead?'output/playwright/vikings90-overhead':'output/playwright/vikings90');
 const mime={'.html':'text/html','.js':'text/javascript','.png':'image/png','.css':'text/css'};
-const webRoot=path.resolve('output/release-vikings90/dist');
+const webRoot=path.resolve(process.env.VIKING_BROWSER_ROOT||'dist');
 const server=http.createServer((req,res)=>{
  const p=path.resolve(webRoot,'.'+decodeURIComponent(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));
  if(!p.startsWith(webRoot+path.sep)){res.writeHead(403);res.end();return;}
@@ -18,23 +19,25 @@ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Fi
 const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
 page.on('pageerror',e=>errors.push(String(e)));
 try{
- await page.goto('http://127.0.0.1:3050/');await page.locator('#play-cycle').click();await page.waitForTimeout(500);await page.keyboard.press('F2');await page.locator('#debug-level').selectOption('0');await page.locator('#debug-go').click();await page.waitForTimeout(300);
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
+ await page.goto('http://127.0.0.1:3050/?campaign=cycle&skin='+skin);await page.locator('#start-picker .level-card[data-round="0"]').click();await page.waitForTimeout(500);
  const diagnostic=await page.evaluate(async(mode)=>{
   const {drawHeroArt,whenHeroesReady,setHeroSkin}=await import('./hero-art.js?v=imagegen90');setHeroSkin('imagegen90');await whenHeroesReady();
   const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=192;const g=canvas.getContext('2d');g.imageSmoothingEnabled=false;g.scale(.5,.5);
   g.fillStyle='#202531';g.fillRect(0,0,2048,384);
-  for(const id of (mode.overhead?[2]:mode.all?[0,1,2]:[0]))for(const [k,skin]of ['current','imagegen90'].entries())for(let f=0;f<8;f++){
+  for(const id of (mode.heroOnly!==undefined?[mode.heroOnly]:mode.overhead?[2]:mode.all?[0,1,2]:[0]))for(const [k,skin]of ['reworked70',mode.skin].entries())for(let f=0;f<8;f++){
    const x=(k*8+f)*128+64,y=id*128+80;g.fillStyle='#b6c5d1';g.fillRect(x-60,y+44,120,2);drawHeroArt(g,{id,face:1,skin,shield:true,shieldUp:mode.overhead},x,y,'run',f);
   }
   return canvas.toDataURL('image/png').split(',')[1];
- },{all:process.argv.includes('--all'),overhead});
+ },{all:process.argv.includes('--all'),overhead,heroOnly:heroOnly===undefined?undefined:Number(heroOnly),skin});
  fs.writeFileSync(out+'/same-size-native-gaits.png',Buffer.from(diagnostic,'base64'));
  const selectSkin=async skin=>{await page.locator('#help').click();await page.locator('#hero-skin').selectOption(skin);await page.locator('#close-help').click();};
  const state=()=>page.evaluate(()=>JSON.parse(document.querySelector('#game').dataset.heroes));
  const result={errors,cadence:[],evidence:[]};
- for(const skin of ['imagegen90']){
+ for(const selected of [skin]){
+  const skin=selected;
   await selectSkin(skin);await page.locator('#restart').click();await page.waitForTimeout(250);
-  for(const id of (overhead?[2]:process.argv.includes("--all")?[0,1,2]:[0])){
+  for(const id of (heroOnly?[Number(heroOnly)]:overhead?[2]:process.argv.includes("--all")?[0,1,2]:[0])){
    await page.locator('#restart').click();await page.waitForTimeout(100);
    await page.keyboard.press(String(id+1));if(overhead)await page.keyboard.press('Space');await page.keyboard.down('ArrowRight');
    await page.waitForFunction(id=>JSON.parse(document.querySelector('#game').dataset.heroes)[id].x>=335,id);

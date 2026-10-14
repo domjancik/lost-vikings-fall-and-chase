@@ -4,7 +4,7 @@ import http from 'node:http';
 import path from 'node:path';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright');
-const root=path.resolve('output/release-vikings90/dist'),out='output/vikings90-rider';
+const root=path.resolve(process.env.VIKING_BROWSER_ROOT||'dist'),out=process.env.VIKING_BROWSER_OUT||'output/vikings90-rider',skin=process.env.VIKING_BROWSER_SKIN||'imagegen90';
 fs.mkdirSync(out,{recursive:true});
 const server=http.createServer((req,res)=>{
  const target=path.resolve(root,'.'+(req.url.split('?')[0]==='/'?'/index.html':req.url.split('?')[0]));
@@ -18,7 +18,8 @@ page.on('pageerror',e=>errors.push(String(e)));
 const state=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),pose:c.dataset.pose,frame:+c.dataset.frame,camera:JSON.parse(c.dataset.camera),canvas:{width:c.width,height:c.height,displayWidth:c.getBoundingClientRect().width,displayHeight:c.getBoundingClientRect().height}}));
 const shot=async name=>{await page.screenshot({path:`${out}/${name}.png`});captures.push({name,...await state()});};
 try{
- await page.goto('http://127.0.0.1:3062/?skin=imagegen90');await page.locator('#play-cycle').click();
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
+ await page.goto('http://127.0.0.1:3062/?campaign=cycle&skin='+skin);await page.locator('#start-picker .level-card[data-round="0"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroArt||'{}').ready);
  const viewport=await page.locator('#game').boundingBox();
  if(viewport.width!==1440||viewport.height!==900)throw Error('Production fullscreen styles did not load '+JSON.stringify(viewport));

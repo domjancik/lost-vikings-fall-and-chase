@@ -5,7 +5,10 @@ test('front shield face occludes the gripping hand instead of being painted behi
  globalThis.document={createElement:()=>({getContext:()=>({drawImage(){},getImageData:()=>({data:new Uint8ClampedArray(14*24*4).fill(255)})})})};
  try{const {whenHeroesReady,drawHeroArt}=await import('../../src/heroes/hero-art.js');await whenHeroesReady();const paint=[];
  const ctx={save(){},restore(){},translate(){},scale(){},drawImage(){paint.push('body');},fillRect(){paint.push('shield');}};
- drawHeroArt(ctx,{id:2,face:1,shieldUp:false,shield:true},0,0,'idle',0);
+ drawHeroArt(ctx,{id:2,skin:'reworked70',face:1,shieldUp:false,shield:true},0,0,'idle',0);
  assert.ok(paint.includes('body')&&paint.includes('shield'));assert.equal(paint[0],'body');assert.equal(paint.at(-1),'shield');
+ paint.length=0;
+ drawHeroArt(ctx,{id:2,skin:'current',face:1,shieldUp:false,shield:true},0,0,'idle',0);
+ assert.deepEqual(paint,['body'],'integrated default shield must not get a second equipment overlay');
  }finally{globalThis.Image=oldImage;globalThis.document=oldDocument;}
 });

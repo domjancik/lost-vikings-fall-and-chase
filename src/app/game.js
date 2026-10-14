@@ -1,11 +1,11 @@
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=warden105';
-import {campaignMenu} from './campaign-menu.js?v=loom106';
-import {drawScene} from '../render/scene-render95.js?v=loom106';
-import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=vikings90';
+import {campaignMenu} from './campaign-menu.js?v=olaf107';
+import {drawScene} from '../render/scene-render95.js?v=olaf107';
+import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=olaf107';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=warden105';
-import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=skins76';
-import {setHeroSkin} from '../heroes/hero-art.js?v=skins76';
+import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=olaf107';
+import {setHeroSkin} from '../heroes/hero-art.js?v=olaf107';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=skins76';
 import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=momentum72';
@@ -31,7 +31,7 @@ import {drawProjectile,projectilePose,environmentPose} from '../render/environme
 import {viewportSize} from '../render/background-render.js?v=menu95';
 import {createControls,keyAction} from './controls.js?v=cycle52';
 import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
-import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=skins76';
+import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=olaf107';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
 import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=clockwork69';

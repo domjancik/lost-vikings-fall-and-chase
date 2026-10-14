@@ -1,0 +1,1995 @@
+{
+  "errors": [],
+  "cadence": [
+    {
+      "skin": "current",
+      "id": 2,
+      "before": {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.295000000000002,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 9
+        },
+        "x": 340.375,
+        "y": 896,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      },
+      "after": {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.860000000000003,
+          "y": 7.924999999999997,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 7
+        },
+        "x": 719.3958333333335,
+        "y": 896,
+        "vx": 150,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "label": "current-2-phase0",
+      "actual": "0",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 0
+          },
+          "x": 419.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase1",
+      "actual": "1",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 1
+          },
+          "x": 431.625,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase2",
+      "actual": "2",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 2
+          },
+          "x": 444.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase3",
+      "actual": "3",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 3
+          },
+          "x": 457.875,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase4",
+      "actual": "4",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 4
+          },
+          "x": 470.375,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase5",
+      "actual": "5",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 5
+          },
+          "x": 484.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase6",
+      "actual": "6",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 6
+          },
+          "x": 496.625,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase7",
+      "actual": "7",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 7
+          },
+          "x": 509.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase0-loop2",
+      "actual": "0",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 0
+          },
+          "x": 524.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase1-loop2",
+      "actual": "1",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 1
+          },
+          "x": 536.625,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase2-loop2",
+      "actual": "2",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 2
+          },
+          "x": 550.375,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase3-loop2",
+      "actual": "3",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 3
+          },
+          "x": 562.875,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase4-loop2",
+      "actual": "4",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 4
+          },
+          "x": 574.125,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase5-loop2",
+      "actual": "5",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 5
+          },
+          "x": 587.875,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase6-loop2",
+      "actual": "6",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 6
+          },
+          "x": 601.625,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase7-loop2",
+      "actual": "7",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 7
+          },
+          "x": 617.1250000000001,
+          "y": 896,
+          "vx": 130,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase0-loop3",
+      "actual": "0",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 0
+          },
+          "x": 626.8958333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase1-loop3",
+      "actual": "1",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 1
+          },
+          "x": 640.6458333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase2-loop3",
+      "actual": "2",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 2
+          },
+          "x": 653.1458333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase3-loop3",
+      "actual": "3",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 3
+          },
+          "x": 668.1458333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase4-loop3",
+      "actual": "4",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 4
+          },
+          "x": 679.3958333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase5-loop3",
+      "actual": "5",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 9.682500000000005,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 5
+          },
+          "x": 691.8958333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase6-loop3",
+      "actual": "6",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.202499999999986,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 6
+          },
+          "x": 704.3958333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    },
+    {
+      "label": "current-2-phase7-loop3",
+      "actual": "7",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 7.924999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 7
+          },
+          "x": 719.3958333333335,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ]
+    }
+  ]
+}

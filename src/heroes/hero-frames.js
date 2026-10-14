@@ -1,8 +1,10 @@
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
+import {heroSkin} from './hero-skins.js?v=olaf107';
 
 export const HERO_CELL=64;
 export const HERO_ORIGIN={x:32,y:40,sole:62};
 export function heroAnimationCell(h,pose,frame=0){const f=Math.max(0,Math.floor(frame));
+ const skin=heroSkin(h.skin,h.id);if(skin!==h.skin)h={...h,skin};
  if(['native85','imagegen88','imagegen90'].includes(h.skin))return{sheet:h.skin,cell:native85Cell(h,pose,f),cols:8};
  if(h.skin==='imagegen81'&&['run','turn'].includes(pose)&&!(h.id===2&&h.shieldUp))return{sheet:'imagegen81',cell:f%8,cols:h.id===1?8:4};
  if(h.skin==='previous')return{sheet:'legacy',cell:heroCell(h.id,pose,f),cols:8};

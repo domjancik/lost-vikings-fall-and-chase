@@ -1,0 +1,41 @@
+{
+  "review": "docs/history/OLAF107-REVIEW.md",
+  "source": "assets/vikings90/olaf-native.png",
+  "originalSelection": "assets/vikings90/olaf-source-selection.json",
+  "sourceNativeCell": [
+    64,
+    64
+  ],
+  "runtimePaddedCell": [
+    80,
+    80
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "rasterChanges": false,
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent Olaf critique agent",
+    "reason": "Re-inspected exact retained raw front/raised keys and native atlas. Whole actors retain matching native detail, palette, integrated grip and anatomical contact. No bitmap edit, static torso graft or resampling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Fresh default-current isolated front/raised eight-phase three-loop gait, idle, mirror,1x/2x/mobile and all eight moving passenger phases: coherent darker mass, articulated grip, alternating leg ownership, grounded soles and fixed central shield plane."
+  },
+  "verification": {
+    "tests": 459,
+    "front": "evidence/walk/evidence.json",
+    "raised": "evidence/raised/evidence.json",
+    "passenger": "evidence/rider/evidence.json",
+    "gaitCaptures": 48,
+    "passengerCaptures": 12,
+    "browserErrors": [],
+    "ordinaryInputRoute": "evidence/boss-route.json",
+    "won": true,
+    "heroHP": [
+      3,
+      3,
+      3
+    ]
+  },
+  "publicationAllowed": true
+}

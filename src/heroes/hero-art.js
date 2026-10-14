@@ -1,9 +1,9 @@
-import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=trial82';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=olaf107';
 import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
 import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
-import {normalizeSkin} from './hero-skins.js?v=trial82';
+import {normalizeSkin,heroSkin} from './hero-skins.js?v=olaf107';
 
 const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];let shield;
 let selectedSkin='current';
@@ -23,9 +23,9 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-const selectedGenerated=()=>selectedSkin==='imagegen90'?imagegen90:selectedSkin==='imagegen88'?imagegen88:[];
+const selectedGenerated=()=>['current','imagegen90'].includes(selectedSkin)?imagegen90:selectedSkin==='imagegen88'?imagegen88:[];
 export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();if(selectedSkin==='imagegen88')ensureImagegen88();if(selectedSkin==='imagegen90')ensureImagegen90();return Promise.all([...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].map(a=>a.promise));};
+export const whenHeroesReady=()=>{ensureLoaded();if(selectedSkin==='imagegen88')ensureImagegen88();if(['current','imagegen90'].includes(selectedSkin))ensureImagegen90();return Promise.all([...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -48,6 +48,7 @@ function drawShield(ctx,h,pose,frame){
  }
 }
 export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
+ h={...h,skin:heroSkin(h.skin||selectedSkin,h.id)};
  if((h.skin||selectedSkin)==='procedural'){drawProceduralHeroArt(ctx,h,x,y,pose,frame,scale);return;}
  ensureLoaded();
  if((h.skin||selectedSkin)==='imagegen88'){ensureImagegen88();if(!imagegen88.every(a=>a.image.complete&&a.image.naturalWidth))return;}

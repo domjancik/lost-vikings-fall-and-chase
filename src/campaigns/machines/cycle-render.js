@@ -2,7 +2,7 @@ import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/dep
 import {drawLoomWorld} from '../../levels/loom/render.js?v=loom106';
 import {drawWardenWorld} from '../../levels/warden/render.js?v=warden105';
 import {drawWaterWorld} from '../../levels/water/render.js?v=warden105';
-import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=walls101';
+import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=olaf107';
 import {drawMomentumWorld} from '../../levels/momentum/render.js?v=walls101';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
 import {backdropY} from '../../render/vertical-parallax.js?v=vertical65';

@@ -1,0 +1,3995 @@
+{
+  "errors": [],
+  "evidence": {
+    "holding-desktop-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 856,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "holding-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "holding-mobile-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 634,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "holding-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1060,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "holding-portrait-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1270,
+        "y": 410,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "holding-portrait-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 1.0166666666666655,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "lock",
+          "age": 0,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1000.5215336134454,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 31.033333333332212,
+        "laserFireAt": 26.674999999999127
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 12.983333333333334,
+          "max": 14,
+          "ratio": 0.9273809523809524,
+          "critical": false,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1380,
+        "y": 692,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.891666666665497,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 13,
+          "label": "STR13s"
+        }
+      ]
+    },
+    "critical-desktop-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 856,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "critical-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "critical-mobile-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 634,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "critical-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1060,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "critical-portrait-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1270,
+        "y": 410,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "critical-portrait-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 1,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 10.033333333333404,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 2.0499999999999954,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 36.949999999998546,
+        "laserFireAt": 38.50833333333179
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 3.9666666666665957,
+          "max": 14,
+          "ratio": 0.2833333333333283,
+          "critical": true,
+          "x": 1488,
+          "y": 810,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 1380,
+        "y": 692,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 40.908333333331655,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 4,
+          "label": "STR4s"
+        }
+      ]
+    },
+    "death-desktop-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 856,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "death-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "death-mobile-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 634,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "death-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 1060,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "death-portrait-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 1270,
+        "y": 410,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "death-portrait-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 1488.25,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 0,
+          "dead": true,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": false,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 30.874999999998888,
+        "activeLeg": 3,
+        "braceAge": 13.558333333333204,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "fire",
+          "age": 0.008333333333333333,
+          "target": {
+            "x": 1488.25,
+            "y": 918
+          },
+          "hit": {
+            "x": 1498.122191011236,
+            "y": 896,
+            "kind": "hero"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 24.67499999999924,
+        "blockAt": 24.924999999999226,
+        "engaged": true,
+        "laserWarnAt": 42.86666666666488,
+        "laserFireAt": 44.42499999999812
+      },
+      "resources": [
+        null,
+        null,
+        null
+      ],
+      "camera": {
+        "x": 1380,
+        "y": 692,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 44.433333333331454,
+      "failed": true,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0.5,
+          "label": "STR1s"
+        }
+      ]
+    },
+    "reset-desktop-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    },
+    "reset-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    },
+    "reset-mobile-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    },
+    "reset-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    },
+    "reset-portrait-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    },
+    "reset-portrait-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 0.33333333333333354,
+        "activeLeg": 3,
+        "braceAge": 0,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 4,
+          "target": null
+        },
+        "footY": 940,
+        "footX": 1490,
+        "kneel": 0,
+        "braced": false,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0
+      },
+      "resources": [
+        null,
+        null,
+        {
+          "kind": "strength",
+          "label": "STR",
+          "remaining": 14,
+          "max": 14,
+          "ratio": 1,
+          "critical": false,
+          "x": 210,
+          "y": 830,
+          "width": 40
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.33333333333333354,
+      "failed": false,
+      "hud": [
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": true,
+          "value": 0,
+          "label": ""
+        },
+        {
+          "hidden": false,
+          "value": 14,
+          "label": "STR14s"
+        }
+      ]
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import {WATER_AIR} from '../levels/water/campaign.js?v=water83';
+import {WATER_AIR} from '../levels/water/campaign.js?v=water114';
 import {WARDEN_BRACE_LIMIT} from '../levels/warden/campaign.js?v=warden104';
 const clamp=(n,max)=>Math.max(0,Math.min(max,n));
 export function heroResource(s,id){

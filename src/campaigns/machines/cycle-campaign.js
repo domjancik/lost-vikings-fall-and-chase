@@ -3,7 +3,7 @@ import {loomLevel,setupLoom,loomStep,loomObjects,loomSurfaces} from '../../level
 import {freightLevel,setupFreight,freightStep,freightObjects,freightSurfaces} from '../../levels/freight/campaign.js?v=orbit113';
 import {wardenLevel,setupWarden,wardenStep,wardenObjects,wardenSurfaces} from '../../levels/warden/campaign.js?v=warden89';
 import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from '../../levels/clockwork/campaign.js?v=clockwork71';
-import {waterLevel,setupWater,waterStep,waterObjects,waterSurfaces} from '../../levels/water/campaign.js?v=water108';
+import {waterLevel,setupWater,waterStep,waterObjects,waterSurfaces} from '../../levels/water/campaign.js?v=water114';
 import {momentumLevel,setupMomentum,momentumStep,momentumObjects,momentumSurfaces} from '../../levels/momentum/campaign.js?v=momentum72';
 import {prepareMotion,integrateMotion} from '../../core/movement.js?v=vikings70';
 import {segmentHit} from '../../core/projectile-collision.js?v=arc46';

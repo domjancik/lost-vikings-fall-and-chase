@@ -1,14 +1,15 @@
-import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=olaf107';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=water114';
 import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
-import {drawProceduralHeroArt} from './hero-procedural.js?v=skins76';
+import {drawProceduralHeroArt} from './hero-procedural.js?v=water114';
 import {normalizeSkin,heroSkin} from './hero-skins.js?v=olaf107';
 
-const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];let shield;
+const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];let shield,erikSwim;
 let selectedSkin='current';
-export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);if(selectedSkin==='imagegen88')ensureImagegen88();if(selectedSkin==='imagegen90')ensureImagegen90();}
+export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);if(selectedSkin==='imagegen88')ensureImagegen88();if(selectedSkin==='imagegen90'){ensureImagegen90();ensureErikSwim();}}
 function ensureImagegen88(){if(imagegen88.length)return;for(const name of ['erik','baleog','olaf'])imagegen88.push(load(`assets/vikings88/${name}-native.png`));}
+function ensureErikSwim(){erikSwim??=load('assets/water114/erik-swim-native.png');}
 function ensureImagegen90(){if(imagegen90.length)return;for(const name of ['erik','baleog','olaf'])imagegen90.push(load(name==='olaf'?'assets/olaf111/olaf-native.png':`assets/vikings90/${name}-native.png`));}
 function ensureLoaded(){
  if(sheets.length)return;
@@ -23,9 +24,9 @@ function load(src){
  const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
  image.src=src;return {image,promise};
 }
-const selectedGenerated=()=>['current','imagegen90'].includes(selectedSkin)?imagegen90:selectedSkin==='imagegen88'?imagegen88:[];
+const selectedGenerated=()=>['current','imagegen90'].includes(selectedSkin)?[...imagegen90,...(selectedSkin==='imagegen90'&&erikSwim?[erikSwim]:[])]:selectedSkin==='imagegen88'?imagegen88:[];
 export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].every(a=>a.image.complete&&a.image.naturalWidth);
-export const whenHeroesReady=()=>{ensureLoaded();if(selectedSkin==='imagegen88')ensureImagegen88();if(['current','imagegen90'].includes(selectedSkin))ensureImagegen90();return Promise.all([...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].map(a=>a.promise));};
+export const whenHeroesReady=()=>{ensureLoaded();if(selectedSkin==='imagegen88')ensureImagegen88();if(['current','imagegen90'].includes(selectedSkin))ensureImagegen90();if(selectedSkin==='imagegen90')ensureErikSwim();return Promise.all([...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].map(a=>a.promise));};
 const brass=new Map();let shieldData;
 function bronze(image){
  if(brass.has(image))return brass.get(image);
@@ -53,6 +54,7 @@ export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
  ensureLoaded();
  if((h.skin||selectedSkin)==='imagegen88'){ensureImagegen88();if(!imagegen88.every(a=>a.image.complete&&a.image.naturalWidth))return;}
  if((h.skin||selectedSkin)==='imagegen90'){ensureImagegen90();if(!imagegen90.every(a=>a.image.complete&&a.image.naturalWidth))return;}
+ if(h.id===0&&pose==='swim'&&h.skin==='imagegen90'){ensureErikSwim();if(!erikSwim.image.complete||!erikSwim.image.naturalWidth)return;}
  if(!heroesReady())return;
  const {cell,cols,sheet}=heroAnimationCell({...h,skin:h.skin||selectedSkin},pose,frame);
  ctx.save();ctx.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);
@@ -63,9 +65,9 @@ export function drawHeroArt(ctx,h,x,y,pose,frame,scale=1){
   // Olaf's generated front shield is already part of this frame.
   ctx.restore();return;
  }
- const source=sheet==='imagegen90'?imagegen90[h.id].image:sheet==='imagegen88'?imagegen88[h.id].image:sheet==='native85'?native85[h.id].image:sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
+ const source=sheet==='erik-swim114'?erikSwim.image:sheet==='imagegen90'?imagegen90[h.id].image:sheet==='imagegen88'?imagegen88[h.id].image:sheet==='native85'?native85[h.id].image:sheet==='locomotion'?locomotion[h.id].image:sheets[h.id].image;
  const image=h.brass?bronze(source):source;
- const generated=['imagegen88','imagegen90'].includes(sheet),size=generated?80:HERO_CELL,origin=generated?{x:40,y:48}:HERO_ORIGIN;
+ const generated=['imagegen88','imagegen90','erik-swim114'].includes(sheet),size=generated?80:HERO_CELL,origin=generated?{x:40,y:48}:HERO_ORIGIN;
  ctx.drawImage(image,cell%cols*size,Math.floor(cell/cols)*size,size,size,
   -origin.x*2,-origin.y*2,size*2,size*2);
  // The opaque shield face covers the gripping palm in front as well as overhead.

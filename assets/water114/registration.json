@@ -1,0 +1,281 @@
+{
+  "nativeCell": [
+    80,
+    80
+  ],
+  "columns": 4,
+  "worldPixel": 2,
+  "origin": [
+    40,
+    48
+  ],
+  "physicalFootNative": 70,
+  "records": [
+    {
+      "frame": 0,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 0,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        53.0,
+        45.5
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        2,
+        0
+      ],
+      "bounds": [
+        19,
+        38,
+        71,
+        68
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 1,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 1,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        52.5,
+        45.5
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        2,
+        0
+      ],
+      "bounds": [
+        19,
+        38,
+        67,
+        69
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 2,
+      "source": "erik-swim-raw-v3.png",
+      "sourceCell": 2,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        53.0,
+        46.0
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        2,
+        -1
+      ],
+      "bounds": [
+        17,
+        34,
+        65,
+        69
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 3,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 3,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        54.0,
+        46.0
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        1,
+        -1
+      ],
+      "bounds": [
+        16,
+        37,
+        69,
+        68
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 4,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 4,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        53.5,
+        45.5
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        2,
+        0
+      ],
+      "bounds": [
+        18,
+        38,
+        70,
+        68
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 5,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 5,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        54.0,
+        46.0
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        1,
+        -1
+      ],
+      "bounds": [
+        18,
+        36,
+        66,
+        67
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 6,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 6,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        53.0,
+        46.0
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        2,
+        -1
+      ],
+      "bounds": [
+        17,
+        34,
+        65,
+        67
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    },
+    {
+      "frame": 7,
+      "source": "erik-swim-raw-v2.png",
+      "sourceCell": 7,
+      "rawSize": [
+        1774,
+        887
+      ],
+      "nativeSheet": [
+        320,
+        160
+      ],
+      "helmetAnchor": [
+        54.5,
+        46.0
+      ],
+      "targetHelmet": [
+        55,
+        45
+      ],
+      "translation": [
+        0,
+        -1
+      ],
+      "bounds": [
+        15,
+        37,
+        68,
+        67
+      ],
+      "removedIsolatedAlphaPixels": 0,
+      "method": "whole pose integer translation; uniform sheet normalization"
+    }
+  ],
+  "sourceGate": "accepted",
+  "runtimeGate": "pending"
+}

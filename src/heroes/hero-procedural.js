@@ -1,6 +1,7 @@
 // Original procedural artwork restored from d2c551a; current pose and shield geometry retained.
 import {SHIELD,shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
+import {drawProceduralSwim} from './swim-procedural.js?v=water114';
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 const palettes=[
  {cloth:'#ca512d',light:'#f78342',dark:'#803425',hair:'#b44421',gold:'#efd293',skin:'#f2b77e',shadow:'#b87751'},
@@ -90,6 +91,7 @@ function raster(h,pose,frame){
  return canvas;
 }
 export function drawProceduralHeroArt(g,h,x,y,pose,frame,scale=1){
+ if(h.id===0&&pose==='swim'){drawProceduralSwim(g,h,x,y,frame,scale);return;}
  const shield=!!h.shield,up=!!h.shieldUp;const key=`${h.id}:${pose}:${frame}:${shield}:${up}:${!!h.brass}:${shieldTransform(h,pose,frame).angle}`;let sprite=cache.get(key);if(!sprite){sprite=raster(h,pose,frame);cache.set(key,sprite);}
  g.save();g.translate(scale===1?snapPixel(x):x,scale===1?snapPixel(y):y);g.scale((h.face||1)*scale,scale);g.imageSmoothingEnabled=false;g.drawImage(sprite,-46,-59);g.restore();
 }

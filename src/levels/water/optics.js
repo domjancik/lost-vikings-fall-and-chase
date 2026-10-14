@@ -1,4 +1,4 @@
-import {WATER_BASIN} from './campaign.js';
+import {WATER_BASIN} from './campaign.js?v=water114';
 const grid = v => Math.ceil(v / 2) * 2;
 export const waterFlowPhase = (y,time) => ((Math.floor(y/4-time*24)%7)+7)%7;
 

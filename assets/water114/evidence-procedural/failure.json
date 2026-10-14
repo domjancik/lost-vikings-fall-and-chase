@@ -1,0 +1,148 @@
+{
+  "error": "Error: Drowned {\"heroes\":[{\"id\":0,\"skin\":\"procedural\",\"x\":944.5052613228453,\"y\":856,\"vx\":0,\"vy\":0,\"ground\":true,\"hp\":3,\"dead\":false,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"face\":-1,\"support\":null,\"climbing\":false,\"air\":12,\"underwater\":false,\"inAirPocket\":true,\"swimming\":false,\"waterFloat\":false},{\"id\":1,\"skin\":\"procedural\",\"x\":1656.8750000000493,\"y\":956,\"vx\":0,\"vy\":0,\"ground\":true,\"hp\":0,\"dead\":true,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"shield\":false,\"face\":1,\"support\":null,\"climbing\":false,\"air\":0,\"underwater\":true,\"inAirPocket\":false,\"swimming\":false,\"waterFloat\":false},{\"id\":2,\"skin\":\"procedural\",\"x\":1519.2916666667181,\"y\":516.0000000000016,\"vx\":0,\"vy\":-3.1956659540810506e-12,\"ground\":false,\"hp\":3,\"dead\":false,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"shieldUp\":false,\"shield\":true,\"face\":-1,\"support\":\"water\",\"climbing\":false,\"air\":12,\"underwater\":false,\"inAirPocket\":false,\"swimming\":false,\"waterFloat\":true}],\"machine\":{\"waterY\":540,\"valveClosed\":true,\"valvePose\":1,\"chainCut\":true,\"chainAt\":61.799999999997134,\"wound\":0.6008333333333404,\"drainPose\":0,\"operator\":1,\"shelter\":6.525799999575021e-139,\"float\":{\"x\":1672.9270833333867,\"y\":528,\"w\":180,\"vx\":0,\"support\":\"water-pontoon\"},\"pushContact\":false,\"drainStarted\":false},\"won\":false,\"failed\":true,\"art\":{\"decor\":{\"theme\":4,\"props\":[{\"x\":220,\"floorY\":540,\"kind\":1,\"support\":{\"x\":0,\"y\":540,\"w\":320}},{\"x\":460,\"floorY\":1000,\"kind\":1,\"support\":{\"x\":0,\"y\":1000,\"w\":2400}},{\"x\":1210,\"floorY\":1000,\"kind\":0,\"support\":{\"x\":0,\"y\":1000,\"w\":2400}},{\"x\":1450,\"floorY\":1000,\"kind\":1,\"support\":{\"x\":0,\"y\":1000,\"w\":2400}},{\"x\":2050,\"floorY\":1000,\"kind\":2,\"support\":{\"x\":0,\"y\":1000,\"w\":2400}},{\"x\":2180,\"floorY\":540,\"kind\":1,\"support\":{\"x\":2056,\"y\":540,\"w\":344}}],\"walls\":[],\"rooms\":[],\"roomBorders\":[],\"wallBackings\":[{\"room\":{\"x\":1996,\"y\":896,\"w\":108,\"h\":104,\"floorY\":1000},\"edges\":[{\"side\":\"top\",\"start\":1996,\"end\":2104},{\"side\":\"left\",\"start\":896,\"end\":1000},{\"side\":\"right\",\"start\":896,\"end\":1000}],\"corners\":[{\"kind\":\"top-left\",\"x\":1996,\"y\":896},{\"kind\":\"top-right\",\"x\":2104,\"y\":896}]}],\"ready\":true},\"ready\":true,\"waterY\":540,\"jet\":{\"x\":682,\"y\":540,\"w\":56,\"h\":460,\"strength\":0,\"shelter\":6.525799999575021e-139,\"shieldY\":480.0000000000016},\"sheltered\":false,\"placements\":[{\"x\":1544,\"y\":776,\"seatY\":800,\"beamBottom\":824,\"visibleBottom\":1000,\"left\":1548,\"right\":1796,\"carrierHalf\":124},{\"x\":844,\"y\":716,\"floor\":900,\"cell\":2,\"visibleBottom\":900,\"crown\":{\"x\":940,\"y\":724},\"pocket\":{\"x\":916,\"y\":804,\"w\":52,\"h\":72}},{\"x\":1576,\"y\":820,\"floor\":1000,\"cell\":1,\"visibleBottom\":1000,\"opaqueBottom\":1004,\"crown\":{\"x\":1670,\"y\":828},\"pocket\":{\"x\":1650.9270833333867,\"y\":908,\"w\":44,\"h\":72}},{\"x\":1576,\"y\":400,\"deckY\":528,\"outlet\":{\"x\":1758,\"y\":486},\"tow\":{\"x\":1584,\"y\":540},\"visibleBottom\":576,\"opaqueBottom\":584},{\"x\":1004,\"y\":716,\"floor\":900,\"cell\":6,\"visibleBottom\":900,\"wheel\":{\"x\":1098,\"y\":846},\"inlet\":{\"x\":1098,\"y\":746},\"phase\":12},{\"x\":1564,\"y\":816,\"floor\":1000,\"cell\":3,\"visibleBottom\":1000,\"wheel\":{\"x\":1648,\"y\":936},\"collar\":{\"x\":1718,\"y\":900},\"phase\":0,\"rodLift\":32,\"rodHead\":{\"x\":1718,\"y\":856},\"chainCut\":true,\"cutAge\":7.658333333337545,\"chainApex\":{\"x\":1660,\"y\":876}},{\"x\":1804,\"y\":816,\"floor\":1000,\"cell\":8,\"visibleBottom\":1000,\"coverShift\":0,\"aperture\":{\"x\":1862,\"y\":958,\"w\":80,\"h\":16}},{\"cell\":\"portal\",\"x\":2300,\"visibleBottom\":540,\"floorY\":540}],\"cradle\":{\"x\":1544,\"y\":776,\"seatY\":800,\"beamBottom\":824,\"visibleBottom\":1000,\"left\":1548,\"right\":1796,\"carrierHalf\":124},\"crank\":{\"x\":1564,\"y\":816,\"floor\":1000,\"cell\":3,\"visibleBottom\":1000,\"wheel\":{\"x\":1648,\"y\":936},\"collar\":{\"x\":1718,\"y\":900},\"phase\":0,\"rodLift\":32,\"rodHead\":{\"x\":1718,\"y\":856},\"chainCut\":true,\"cutAge\":7.658333333337545,\"chainApex\":{\"x\":1660,\"y\":876}},\"sluice\":{\"x\":1804,\"y\":816,\"floor\":1000,\"cell\":8,\"visibleBottom\":1000,\"coverShift\":0,\"aperture\":{\"x\":1862,\"y\":958,\"w\":80,\"h\":16}},\"valve\":{\"x\":1004,\"y\":716,\"floor\":900,\"cell\":6,\"visibleBottom\":900,\"wheel\":{\"x\":1098,\"y\":846},\"inlet\":{\"x\":1098,\"y\":746},\"phase\":12},\"pontoon\":{\"x\":1576,\"y\":400,\"deckY\":528,\"outlet\":{\"x\":1758,\"y\":486},\"tow\":{\"x\":1584,\"y\":540},\"visibleBottom\":576,\"opaqueBottom\":584},\"nozzle\":{\"x\":614,\"y\":274,\"mouth\":{\"x\":710,\"y\":444},\"inlet\":{\"x\":710,\"y\":322},\"mouthWidth\":56},\"airPockets\":[{\"x\":916,\"y\":804,\"w\":52,\"h\":72},{\"x\":1650.9270833333867,\"y\":908,\"w\":44,\"h\":72}],\"floatDeck\":528,\"gateBottom\":450,\"sourceDensity\":\"generated96px native devices and128px cradle; two world units per source pixel\"},\"time\":69.45833333333468}",
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "procedural",
+        "x": 944.5052613228453,
+        "y": 856,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": true,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "procedural",
+        "x": 1656.8750000000493,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 0,
+        "dead": true,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shield": false,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 0,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "procedural",
+        "x": 1519.2916666667181,
+        "y": 516.0000000000016,
+        "vx": 0,
+        "vy": -3.1956659540810506e-12,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": "water",
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": true
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "idle",
+        "frame": 3
+      },
+      {
+        "id": 1,
+        "pose": "hurt",
+        "frame": 1
+      },
+      {
+        "id": 2,
+        "pose": "rise",
+        "frame": 0
+      }
+    ],
+    "camera": {
+      "x": 1340,
+      "y": 724,
+      "width": 632,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "active": 1,
+    "worldResources": [
+      {
+        "kind": "air",
+        "label": "AIR",
+        "remaining": 12,
+        "max": 12,
+        "ratio": 1,
+        "critical": false,
+        "heroId": 0,
+        "x": 944,
+        "y": 790,
+        "width": 40,
+        "anchorX": 944,
+        "anchorY": 790,
+        "tag": ""
+      },
+      null,
+      {
+        "kind": "air",
+        "label": "AIR",
+        "remaining": 12,
+        "max": 12,
+        "ratio": 1,
+        "critical": false,
+        "heroId": 2,
+        "x": 1520,
+        "y": 450,
+        "width": 40,
+        "anchorX": 1520,
+        "anchorY": 450,
+        "tag": ""
+      }
+    ],
+    "time": 69.45833333333468
+  }
+}

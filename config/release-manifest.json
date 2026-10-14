@@ -531,6 +531,18 @@
     {
       "source": "src/levels/orbit/hero-indicator.js",
       "output": "orbit-hero-indicator.js"
+    },
+    {
+      "source": "src/app/world-resources.js",
+      "output": "world-resources.js"
+    },
+    {
+      "source": "src/heroes/swim-motion.js",
+      "output": "swim-motion.js"
+    },
+    {
+      "source": "src/heroes/swim-procedural.js",
+      "output": "swim-procedural.js"
     }
   ],
   "files": [
@@ -836,6 +848,9 @@
     "assets/orbit113/plate-native.png",
     "assets/orbit113/parts-native.png",
     "assets/orbit113/gear-native.png",
-    "assets/orbit113/visual-gates.json"
+    "assets/orbit113/visual-gates.json",
+    "assets/water114/erik-swim-native.png",
+    "assets/water114/registration.json",
+    "assets/water114/visual-gates.json"
   ]
 }

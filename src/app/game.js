@@ -1,18 +1,19 @@
+import {drawWorldResources,worldResources} from "./world-resources.js?v=water114";
 import {orbitHeroIndicator} from "../levels/orbit/hero-indicator.js?v=orbit113";
 import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit113";
 import {orbitCameraFocus} from "../levels/orbit/view.js?v=orbit113";
-import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit113";
-import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=warden105';
-import {campaignMenu} from './campaign-menu.js?v=orbit113';
-import {drawScene} from '../render/scene-render95.js?v=orbit113';
-import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=olaf107';
+import {drawMagneticHero} from "../heroes/magnetic-render.js?v=water114";
+import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=water114';
+import {campaignMenu} from './campaign-menu.js?v=water114';
+import {drawScene} from '../render/scene-render95.js?v=water114';
+import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=water114';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
-import {drawWaterOverlay} from '../levels/water/render.js?v=warden105';
+import {drawWaterOverlay} from '../levels/water/render.js?v=water114';
 import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=olaf107';
-import {setHeroSkin} from '../heroes/hero-art.js?v=orbit113';
+import {setHeroSkin} from '../heroes/hero-art.js?v=water114';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
-import {drawClockworkInset} from '../levels/clockwork/render.js?v=orbit113';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=orbit113';
+import {drawClockworkInset} from '../levels/clockwork/render.js?v=water114';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=water114';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from '../campaigns/story/story-custody.js?v=arc46';
@@ -35,11 +36,11 @@ import {drawProjectile,projectilePose,environmentPose} from '../render/environme
 import {viewportSize} from '../render/background-render.js?v=menu95';
 import {createControls,keyAction} from './controls.js?v=cycle52';
 import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
-import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit113';
+import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=water114';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=orbit113';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=orbit113';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=water114';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=water114';
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
 let campaign=['story','cycle'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'arcade',levels=campaignLevels(campaign);let round=0;try{round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(campaign)))||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),continueKeys=new Set();
@@ -72,6 +73,7 @@ function draw(){
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
  for(const h of heroDrawOrder(s.heroes)){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();const badge=orbitHeroIndicator(h);if(h.id===s.active){text('▼',badge?.x??h.x,badge?.y??h.y-(h.shieldUp?58:46),colors[h.id],13,badge?.angle??0);}for(let n=0;n<3;n++)box(n<h.hp?colors[h.id]:'#514953',(badge?.healthX??h.x)-10+n*8,badge?.healthY??h.y-38,5,3);}
  drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);const wardenOptics=drawWardenOverlay(ctx,s);if(wardenOptics)canvas.dataset.wardenOptics=JSON.stringify(wardenOptics);else delete canvas.dataset.wardenOptics;
+ drawWorldResources(ctx,s,text,viewport.uiScale);canvas.dataset.worldResources=JSON.stringify(worldResources(s,viewport.uiScale));
  if(paused&&started&&!s.won){const split=clockworkView(s,viewport).split,badgeWidth=Math.min(viewWidth-20,split?72:220),badgeY=vertical+(split&&viewport.mobile?clockworkView(s,viewport).inset.y+clockworkView(s,viewport).inset.h+8:split?42:60),badgeX=split?camera+8:camera+(viewWidth-badgeWidth)/2;box('#0e181bee',badgeX,badgeY,badgeWidth,split?18:40);text(split?'PAUSED':'PAUSED · ESC / Ⅱ',badgeX+badgeWidth/2,badgeY+(split?12:25),'#d5ef83',split?8:12);}
  ctx.restore();const clockView=clockworkView(s,viewport);canvas.dataset.clockView=JSON.stringify(clockView);drawClockworkInset(ctx,s,clockView);screen.clearRect(0,0,canvas.width,canvas.height);screen.drawImage(surface,0,0,surface.width*WORLD_PIXEL,surface.height*WORLD_PIXEL);drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);
 }

@@ -1,0 +1,16 @@
+{
+  "review": "docs/history/WATER114-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "evidence": [
+      "assets/water114/source-gate.json"
+    ]
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independent actual1x/2x/coarse-mobile review accepted generated/procedural stroke keys, mirror, wet-floor swimming, upright dry-pocket behavior, native anchors/palms, packed E/B/O world air callouts and strength holding/critical/death/reset values matching picker.",
+    "evidence": ["assets/water114/evidence-imagegen90/route.json","assets/water114/evidence-procedural/route.json","assets/water114/touch-evidence/evidence.json","assets/water114/touch-evidence-procedural/evidence.json","assets/water114/strength-evidence/evidence.json"]
+  },
+  "publicationAllowed": true,
+  "releaseConditions": ["Final package/build/release checks"]
+}

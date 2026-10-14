@@ -31,6 +31,7 @@ export function waterShelterTarget(s){
 }
 export function waterSheltered(s){return waterShelterTarget(s)>.95;}
 export function waterAirPockets(s){return[waterBellPocket(940,900),waterBellPocket(s.machine.float.x,1000,true)];}
+export function waterInAirPocket(s,h){const headY=h.y-20;return waterAirPockets(s).some(p=>h.x>p.x+10&&h.x<p.x+p.w-10&&headY>p.y&&headY<p.y+p.h);}
 export function waterSurfaces(s){return [...s.level.floors,...s.level.platforms,{x:s.machine.float.x-WATER_CRADLE_WIDTH/2,y:WATER_CRADLE_SEAT,w:WATER_CRADLE_WIDTH,support:'water-cradle'},{...s.machine.float,x:s.machine.float.x-s.machine.float.w/2}];}
 const feedback=(s,message)=>{s.feedback={message,sequence:(s.feedback?.sequence||0)+1};};
 export function waterObjects(s){const g=s.machine;return[
@@ -53,9 +54,10 @@ function pushPontoon(s,input,dt){
  for(const h of s.heroes)if(!h.climbing){if(h.support==='water-pontoon'){h.x+=f.x-oldX;h.y+=f.y-oldY;}else if(h.support==='water-cradle')h.x+=f.x-oldX;}
 }
 function breathing(s,dt){
- const pockets=waterAirPockets(s);
- for(const h of s.heroes){const headY=h.y-20,under=h.x>=320&&h.x<=2100&&headY>s.machine.waterY+2;
-  const refuge=pockets.some(p=>h.x>p.x+10&&h.x<p.x+p.w-10&&headY>p.y&&headY<p.y+p.h);
+ for(const h of s.heroes){const refuge=waterInAirPocket(s,h);
+  // Swimming turns Erik's head down to the horizontal body plane. Pocket
+  // entry uses the standing head because he turns upright in its air cavity.
+  const headY=h.y+(h.swimming&&!refuge?4:-20),under=h.x>=320&&h.x<=2100&&headY>s.machine.waterY+2;
   h.underwater=under&&!refuge;h.inAirPocket=under&&refuge;
   if(h.underwater){h.air=Math.max(0,h.air-dt);if(h.air===0){h.airDamage+=dt;if(h.airDamage>=1){h.airDamage-=1;damage(s,h,1);if(s.failed)s.failure=['Erik','Baleog','Olaf'][h.id]+' ran out of air. Reach the surface or an open-bottom bell.';}}}
   else{h.air=Math.min(WATER_AIR,h.air+dt*8);h.airDamage=0;}
@@ -70,7 +72,8 @@ export function waterStep(s,input,dt){
  if(g.drainPose>0){g.waterY=Math.min(950,g.waterY+40*g.drainPose*dt);g.drainStarted=true;}
  const surfaceVelocity=(g.waterY-oldWaterY)/dt;
  for(const h of s.heroes){h.waterFloat=h.id===2&&h.x>320&&h.x<2100&&h.y+44>=g.waterY-8;
-  h.breach=Math.max(0,(h.breach||0)-dt);h.swimming=h.id===0&&h.x>320&&h.x<2100&&h.y+44>g.waterY+4&&h.breach===0;
+  h.breach=Math.max(0,(h.breach||0)-dt);h.swimming=h.id===0&&h.x>320&&h.x<2100&&h.y+44>g.waterY+4&&h.breach===0&&!waterInAirPocket(s,h)&&!h.climbing;
+  if(h.swimming){h.ground=false;h.coyote=0;h.land=0;}
  }
  prepareMotion(s,input,dt);
  // The flow retains a short physical response when the shield enters/leaves.
@@ -101,7 +104,7 @@ export function waterStep(s,input,dt){
    const acceleration=Math.max(-800,Math.min(800,16*(g.waterY-24-h.y)-8*(h.vy-surfaceVelocity)));
    h.vy=Math.max(-180,Math.min(180,h.vy+acceleration*dt))-1250*dt;h.ground=false;continue;
   }
-  if(wet&&h.id===0&&h.breach===0){
+  if(h.swimming&&h.id===0&&h.breach===0){
    if(active&&input.jump&&h.y+44<g.waterY+65){h.breach=.65;h.vy=-570;h.swimming=false;h.ground=false;}
    else{const dir=active?Number(!!input.right)-Number(!!input.left):0,vertical=active?Number(!!input.down)-Number(!!input.up):0;
     h.vx=approach(h.vx,dir*175,650*dt);h.moveX=h.vx*dt;h.swimVy=approach(h.swimVy||0,vertical*160,600*dt);h.vy=h.swimVy-1250*dt;h.ground=false;
@@ -120,7 +123,10 @@ export function waterStep(s,input,dt){
  const o=s.heroes[2];if(o.waterFloat&&!o.climbing&&!o.ground){o.support='water';o.walk=(o.walk||0)+Math.abs(o.x-o.prevX)/9;}
  for(const {h,x,y}of climbs){h.x=x;h.y=y;h.vy=0;h.ground=true;h.support='ladder';h.climbMoving=h.id===s.active&&(input.up||input.down);}
  for(const h of s.heroes)if(h.id!==2&&h.support===2&&o.waterFloat)h.y=o.y-36-44;
- breathing(s,dt);s.power=g.waterY>=900;
+ breathing(s,dt);
+ const erik=s.heroes[0];erik.swimming=erik.x>320&&erik.x<2100&&erik.y+44>g.waterY+4&&!waterInAirPocket(s,erik)&&erik.breach===0&&!erik.climbing;
+ if(erik.swimming){erik.ground=false;erik.coyote=0;erik.land=0;}
+ s.power=g.waterY>=900;
  s.won=!s.failed&&s.power&&s.heroes.every(h=>Math.abs(h.x-2300)<80&&Math.abs(h.y+44-540)<4);
 }
 

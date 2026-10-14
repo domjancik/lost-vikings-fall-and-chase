@@ -1,5 +1,5 @@
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
-import {drawLoomWorld} from '../../levels/loom/render.js?v=loom96';
+import {drawLoomWorld} from '../../levels/loom/render.js?v=loom106';
 import {drawWardenWorld} from '../../levels/warden/render.js?v=warden105';
 import {drawWaterWorld} from '../../levels/water/render.js?v=warden105';
 import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=walls101';

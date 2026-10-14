@@ -3,10 +3,12 @@ import {snapPixel as q} from '../../render/pixel-grid.js?v=loom96';
 import {loomGuides,loomTargetPose,loomBeater} from './campaign.js?v=loom96';
 import {LOOM_ART} from './art-layout.js?v=loom96';
 import {LOOM_GUIDE} from './guide.js?v=loom98';
+import {weaveReveal,THREAD} from './weave.js?v=loom106';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=loom96';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=loom96';
 const load=name=>{const i=new Image();i.src='assets/level96/'+name+'-native.png?v=loom96';return i;};
-const parts=createAtlas('assets/level96/parts-native.png?v=loom96',5,3),terrain=load('terrain'),far=load('far'),middle=load('middle'),bobbin=load('bobbin'),cloth=load('cloth');
+const parts=createAtlas('assets/level96/parts-native.png?v=loom96',5,3),terrain=load('terrain'),far=load('far'),middle=load('middle'),bobbin=load('bobbin');
+const cloth=new Image();cloth.src='assets/loom106/cloth-native.png?v=loom106';
 const ladder=new Image();ladder.src='assets/platform56/ladder.png?v=loom96';
 const portal=createAtlas('assets/gate61/gate.png?v=loom96',1,1);
 const guideImage=new Image();guideImage.src='assets/loom98/guide-native.png?v=loom98';
@@ -51,7 +53,7 @@ function yarn(ctx,points,phase){
  for(let n=1;n<points.length;n++){
   const a=points[n-1],b=points[n],length=Math.hypot(b.x-a.x,b.y-a.y),steps=Math.ceil(length/2);
   for(let i=0;i<=steps;i++){const t=i/steps,x=q(a.x+(b.x-a.x)*t),y=q(a.y+(b.y-a.y)*t+Math.sin(t*Math.PI)*Math.min(18,length*.02));
-   ctx.fillStyle='#173743';ctx.fillRect(x,y+2,4,4);ctx.fillStyle=((i+Math.floor(phase*16))%13<3)?'#b2e4d8':'#5caaa9';ctx.fillRect(x,y,4,2);}
+   ctx.fillStyle=THREAD.shadow;ctx.fillRect(x,y+2,4,4);ctx.fillStyle=((i-Math.floor(phase*16)+13000)%13<3)?THREAD.light:THREAD.base;ctx.fillRect(x,y,4,2);}
  }
 }
 export function drawLoomWorld(ctx,s,camera,view){
@@ -114,10 +116,16 @@ export function drawLoomWorld(ctx,s,camera,view){
  // A real sky pattern grows from the take-up axle into its supported textile frame.
  for(const x of [2414,2486]){shaft(ctx,x,444,628);yarn(ctx,[{x,y:650},{x,y:794}],g.phase);}
  crop(ctx,10,5,4,48,12,2402,628);
- if(g.docked&&cloth.complete&&cloth.naturalWidth){const reveal=q(160*g.weave);ctx.save();ctx.beginPath();ctx.rect(2402,794-reveal,96,reveal);ctx.clip();ctx.drawImage(cloth,2402,634,96,160);ctx.restore();
-  if(g.weave<1){const y=q(794-reveal);crop(ctx,13,40,36,16,4,2434,y);}
+ const weave=weaveReveal(g.weave);
+ if(g.docked&&cloth.complete&&cloth.naturalWidth){
+  if(weave.completeRows){const y=80-weave.completeRows;ctx.drawImage(cloth,0,y,48,weave.completeRows,2402,634+y*2,96,weave.completeRows*2);}
+  if(weave.width)ctx.drawImage(cloth,weave.x,weave.y,weave.width,4,2402+weave.x*2,634+weave.y*2,weave.width*2,8);
+  if(g.weave<1){const x=2402+weave.needleX*2,y=634+weave.needleY*2;
+   yarn(ctx,[g.bobbin,{x,y}],s.time*4);
+   crop(ctx,13,40,36,16,4,x-16,y-4);
+  }
  }
- contacts.push({kind:'cloth',top:650,bottom:794,axle:794,mount:628,reveal:q(160*g.weave)});
+ contacts.push({kind:'cloth',top:650,bottom:794,axle:794,mount:628,reveal:q(160*g.weave),weave,threadColor:THREAD.base});
  const portalRect={x:2986,y:992,w:128,h:128},p=portal.placement(0,portalRect,s.level.floors);
  if(p){drawCycleGateField(ctx,{...p,active:s.power,glow:.8,frame:Math.floor(s.time*12),aperture:{x:p.x+64,y:p.y+74,w:40,h:80}});portal.drawGrounded(ctx,0,portalRect,s.level.floors);contacts.push({kind:'portal',bottom:p.visibleBottom,surface:p.surface.y});}
  return{ready:[far,middle,terrain,ladder,bobbin,cloth,guideImage,parts.image,portal.image].every(i=>i.complete&&i.naturalWidth)&&connectionsReady(),native:{far:[960,640],middle:[384,256],parts:[480,288],bobbin:[20,20],cloth:[48,80]},parallax:{far:{x:farX,y:farY,factorX:.78,factorY:.62},middle:{x:middleX,y:middleY,factorX:.35,factorY:.04,foundation:middleY+middleFoot}},contacts,feed:feed.anchors,camFeed:camFeed.anchors,driveShaft:driveShaft.anchors,exitCable:exitCable.anchors,releaseCable:releaseCable.anchors,pawl:g.latchPose,pressure:g.pressure,clutch:g.clutchPose,thread:g.guides,exit:g.exitPose};

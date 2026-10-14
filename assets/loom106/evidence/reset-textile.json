@@ -1,0 +1,222 @@
+{
+  "method": "Real restart control; diagnostic changes only camera target to inspect reset textile, no simulation/progression overrides",
+  "shots": [
+    {
+      "file": "assets/loom106/evidence/reset-textile-1x.png",
+      "paused": "true",
+      "camera": {
+        "x": 1760,
+        "y": 400,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "pressure": 0,
+        "blocked": 0,
+        "jetEnd": 900,
+        "drive": 0,
+        "phase": 0,
+        "released": false,
+        "latchPose": 0,
+        "clutchUntil": -1,
+        "clutchPose": 0,
+        "lift": {
+          "x": 1040,
+          "y": 1120,
+          "w": 170,
+          "v": 0,
+          "support": "loom-lift"
+        },
+        "shuttle": {
+          "x": 1260,
+          "y": 880,
+          "w": 162,
+          "support": "loom-shuttle"
+        },
+        "shuttle2": {
+          "x": 2013.076325864246,
+          "y": 874.3471218179905,
+          "w": 162,
+          "support": "loom-shuttle2"
+        },
+        "owner": null,
+        "bobbin": {
+          "x": 1190,
+          "y": 824
+        },
+        "guides": 0,
+        "docked": false,
+        "weave": 0,
+        "exitLatched": false,
+        "exitPose": 0,
+        "ladderPose": 0
+      },
+      "cloth": {
+        "kind": "cloth",
+        "top": 650,
+        "bottom": 794,
+        "axle": 794,
+        "mount": 628,
+        "reveal": 0,
+        "weave": {
+          "completeRows": 0,
+          "bandHeight": 4,
+          "x": 6,
+          "y": 76,
+          "width": 0,
+          "direction": 1,
+          "needleX": 6,
+          "needleY": 80
+        },
+        "threadColor": "#b49b62"
+      }
+    },
+    {
+      "file": "assets/loom106/evidence/reset-textile-2x.png",
+      "paused": "true",
+      "camera": {
+        "x": 2090,
+        "y": 500,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "pressure": 0,
+        "blocked": 0,
+        "jetEnd": 900,
+        "drive": 0,
+        "phase": 0,
+        "released": false,
+        "latchPose": 0,
+        "clutchUntil": -1,
+        "clutchPose": 0,
+        "lift": {
+          "x": 1040,
+          "y": 1120,
+          "w": 170,
+          "v": 0,
+          "support": "loom-lift"
+        },
+        "shuttle": {
+          "x": 1260,
+          "y": 880,
+          "w": 162,
+          "support": "loom-shuttle"
+        },
+        "shuttle2": {
+          "x": 2013.076325864246,
+          "y": 874.3471218179905,
+          "w": 162,
+          "support": "loom-shuttle2"
+        },
+        "owner": null,
+        "bobbin": {
+          "x": 1190,
+          "y": 824
+        },
+        "guides": 0,
+        "docked": false,
+        "weave": 0,
+        "exitLatched": false,
+        "exitPose": 0,
+        "ladderPose": 0
+      },
+      "cloth": {
+        "kind": "cloth",
+        "top": 650,
+        "bottom": 794,
+        "axle": 794,
+        "mount": 628,
+        "reveal": 0,
+        "weave": {
+          "completeRows": 0,
+          "bandHeight": 4,
+          "x": 6,
+          "y": 76,
+          "width": 0,
+          "direction": 1,
+          "needleX": 6,
+          "needleY": 80
+        },
+        "threadColor": "#b49b62"
+      }
+    },
+    {
+      "file": "assets/loom106/evidence/reset-textile-landscape.png",
+      "paused": "true",
+      "camera": {
+        "x": 2240,
+        "y": 600,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "pressure": 0,
+        "blocked": 0,
+        "jetEnd": 900,
+        "drive": 0,
+        "phase": 0,
+        "released": false,
+        "latchPose": 0,
+        "clutchUntil": -1,
+        "clutchPose": 0,
+        "lift": {
+          "x": 1040,
+          "y": 1120,
+          "w": 170,
+          "v": 0,
+          "support": "loom-lift"
+        },
+        "shuttle": {
+          "x": 1260,
+          "y": 880,
+          "w": 162,
+          "support": "loom-shuttle"
+        },
+        "shuttle2": {
+          "x": 2013.076325864246,
+          "y": 874.3471218179905,
+          "w": 162,
+          "support": "loom-shuttle2"
+        },
+        "owner": null,
+        "bobbin": {
+          "x": 1190,
+          "y": 824
+        },
+        "guides": 0,
+        "docked": false,
+        "weave": 0,
+        "exitLatched": false,
+        "exitPose": 0,
+        "ladderPose": 0
+      },
+      "cloth": {
+        "kind": "cloth",
+        "top": 650,
+        "bottom": 794,
+        "axle": 794,
+        "mount": 628,
+        "reveal": 0,
+        "weave": {
+          "completeRows": 0,
+          "bandHeight": 4,
+          "x": 6,
+          "y": 76,
+          "width": 0,
+          "direction": 1,
+          "needleX": 6,
+          "needleY": 80
+        },
+        "threadColor": "#b49b62"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,94 @@
+{
+  "source": "assets/level96/cloth-native.png",
+  "author": "tools/art/loom/prepare-loom106.py",
+  "nativeSize": [
+    48,
+    80
+  ],
+  "worldSize": [
+    96,
+    160
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "opaqueBounds": [
+    6,
+    8,
+    42,
+    80
+  ],
+  "processing": "none: directly authored native RGBA pixels",
+  "paletteRoles": {
+    "sky": [
+      [
+        31,
+        53,
+        73
+      ],
+      [
+        42,
+        69,
+        87
+      ],
+      [
+        27,
+        47,
+        66
+      ],
+      [
+        48,
+        76,
+        94
+      ]
+    ],
+    "cloud": [
+      [
+        93,
+        120,
+        128
+      ],
+      [
+        116,
+        143,
+        143
+      ],
+      [
+        81,
+        107,
+        119
+      ],
+      [
+        124,
+        149,
+        145
+      ]
+    ],
+    "linen": [
+      [
+        180,
+        155,
+        98
+      ],
+      [
+        234,
+        215,
+        160
+      ],
+      [
+        131,
+        108,
+        65
+      ],
+      [
+        209,
+        186,
+        127
+      ]
+    ]
+  },
+  "thread": {
+    "shadow": "#66513e",
+    "base": "#b49b62",
+    "light": "#ead7a0"
+  },
+  "reveal": "18 alternating crosswise passes,4native rows each; bottom-up"
+}

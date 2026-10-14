@@ -217,6 +217,10 @@
       "output": "loom-render96.js"
     },
     {
+      "source": "src/levels/loom/weave.js",
+      "output": "loom-weave106.js"
+    },
+    {
       "source": "src/render/machine-animation.js",
       "output": "machine-animation.js"
     },
@@ -740,6 +744,8 @@
     "assets/warden103/visual-gates.json",
     "assets/warden104/visual-gates.json",
     "assets/warden105/cart-native.png",
-    "assets/warden105/visual-gates.json"
+    "assets/warden105/visual-gates.json",
+    "assets/loom106/cloth-native.png",
+    "assets/loom106/visual-gates.json"
   ]
 }

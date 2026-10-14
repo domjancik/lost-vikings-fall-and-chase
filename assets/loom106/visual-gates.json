@@ -1,0 +1,25 @@
+{
+  "review": "docs/history/LOOM106-REVIEW.md",
+  "nativeSize": [48, 80],
+  "worldUnitsPerNativePixel": 2,
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent loom critique agent",
+    "reason": "Direct native stitch authoring preserves original storm motif with deliberate woven clusters and restrained sky/cloud/linen palette. No resampling or grid detector. Original source and reproducible art script preserved."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Actual ordinary-input 1x/2x/mobile stages show gold feed, opposite partial row bands, continuous shuttle progression and readable complete selvage. Actual restart and camera-only empty-frame diagnostic confirm visible reset without progression overrides."
+  },
+  "verification": {
+    "tests": 456,
+    "ordinaryInputRoute": "evidence/route.json",
+    "won": true,
+    "heroHP": [3, 3, 3],
+    "browserErrors": [],
+    "captures": 28,
+    "resetDiagnostic": "evidence/reset-textile.json",
+    "resetCaptures": 3
+  },
+  "publicationAllowed": true
+}

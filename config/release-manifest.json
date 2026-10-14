@@ -417,6 +417,10 @@
       "output": "water-effects92.js"
     },
     {
+      "source": "src/levels/water/optics.js",
+      "output": "water-optics100.js"
+    },
+    {
       "source": "src/levels/water/pontoon-geometry.js",
       "output": "water-pontoon-geometry.js"
     },

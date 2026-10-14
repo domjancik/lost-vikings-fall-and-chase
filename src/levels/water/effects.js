@@ -1,8 +1,10 @@
 import {snapPixel as q} from '../../render/pixel-grid.js?v=arc46';
 import {waterAirPockets,waterJet} from './campaign.js?v=water92';
+import {waterRefractionBands,waterFlowPhase} from './optics.js?v=water100';
 const flora=new Image();flora.src='assets/water92/flora-native.png';
 const plants=[[376,1000,0],[462,1000,2],[588,1000,1],[830,1000,3],[1260,1000,0],[1410,1000,2],[1788,1000,1],[1994,1000,3],[887,900,2],[1140,900,0]];
 const fronds=new Map(),lightFrames=new Map(),worlds=new WeakMap();
+const refractedScenes=new WeakMap();
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const rect=(c,color,x,y,w,h)=>{if(w<=0||h<=0)return;c.fillStyle=color;c.fillRect(q(x),q(y),Math.max(2,q(w)),Math.max(2,q(h)));};
 export const waterDecorReady=()=>flora.naturalWidth>0;
@@ -78,9 +80,9 @@ function flow(c,s){
  const split=clamp(jet.shieldY,444,1000),bands=[[444,split,jet.strength],[split,1000,jet.strength*(1-jet.shelter)]];
  for(const [top,bottom,force]of bands){if(force<.003||bottom<=top)continue;c.save();c.globalAlpha=force;
   for(let y=top;y<bottom;y+=4){const lean=y>s.machine.waterY?-Math.min(18,(y-s.machine.waterY)*.04):0;
-   const drift=q(Math.sin(y*.055-s.time*8)*3),x=710+lean+drift,width=22+q(Math.sin(y*.04+s.time*3)*3);
+   const drift=q(Math.sin(y*.055-s.time*8)*3),x=710+lean+drift,width=22+q(Math.sin(y*.04-s.time*3)*3);
    rect(c,'#478b9860',x-width/2,y,width,4);
-   if(Math.floor(y/4+s.time*24)%7<3){rect(c,'#9ecdcbaa',x-8,y,4,4);rect(c,'#79b9c478',x+6,y+2,2,4);}
+   if(waterFlowPhase(y,s.time)<3){rect(c,'#9ecdcbaa',x-8,y,4,4);rect(c,'#79b9c478',x+6,y+2,2,4);}
   }
   c.restore();
  }
@@ -92,23 +94,46 @@ function flow(c,s){
 export function drawWaterEffects(c,s){
  if(s.level.mechanic!=='water')return;
  const y=q(s.machine.waterY),pockets=waterAirPockets(s).filter(p=>p.y+p.h>y);
- c.save();c.beginPath();c.rect(320,y,1780,Math.max(0,1000-y));for(const p of pockets)c.rect(q(p.x),q(p.y),q(p.w),q(p.h));c.clip('evenodd');
+ // Snapshot the actual world and actors before tinting; displace native strips
+ // rather than stretching art or averaging contrasting colors.
+ const t=c.getTransform(),view={x:-t.e/t.a,y:-t.f/t.d,width:c.canvas.width/t.a,height:c.canvas.height/t.d};
+ let copy=refractedScenes.get(c.canvas);if(!copy){copy=document.createElement('canvas');refractedScenes.set(c.canvas,copy);}
+ if(copy.width!==c.canvas.width||copy.height!==c.canvas.height){copy.width=c.canvas.width;copy.height=c.canvas.height;}
+ const cc=copy.getContext('2d');cc.imageSmoothingEnabled=false;cc.clearRect(0,0,copy.width,copy.height);cc.drawImage(c.canvas,0,0);
+ c.imageSmoothingEnabled=false;
+ for(const b of waterRefractionBands(y,pockets,s.time,view)){
+  c.drawImage(copy,(b.sourceX-view.x)*t.a,(b.y-view.y)*t.d,b.w*t.a,b.h*t.d,b.x,b.y,b.w,b.h);
+ }
+ c.save();c.beginPath();c.rect(320,y,1780,Math.max(0,1000-y));for(const p of pockets){const top=Math.max(y,q(p.y));c.rect(q(p.x),top,q(p.w),q(p.y+p.h)-top);}c.clip('evenodd');
  const depth=Math.max(1,1000-y);for(let yy=y;yy<1000;yy+=16){const a=.08+.13*(yy-y)/depth;rect(c,`rgba(20,79,89,${a})`,320,yy,1780,Math.min(16,1000-yy));}
  const phase=Math.floor(s.time*4)%12,tile=caustic(phase);c.imageSmoothingEnabled=false;c.globalAlpha=.4;
  for(let yy=y;yy<1000;yy+=256)for(let x=320;x<2100;x+=256)c.drawImage(tile,x,yy,256,256);
  c.globalAlpha=1;
  for(let k=0;k<4;k++){rect(c,`rgba(6,24,31,${.22-k*.05})`,320+k*2,y,2,1000-y);rect(c,`rgba(6,24,31,${.22-k*.05})`,2098-k*2,y,2,1000-y);}
  for(let k=0;k<4;k++)rect(c,`rgba(5,22,28,${.2-k*.045})`,320,998-k*2,1780,2);
+ // A narrow cool rim is attached to the retaining stone, with broken reflected
+ // glints beside it. It never displaces the physical bank/floor silhouette.
+ rect(c,'#588f9470',322,y+4,2,992-y);rect(c,'#588f9470',2096,y+4,2,992-y);
+ for(let yy=y+10;yy<992;yy+=18){const shine=Math.sin(yy*.045-s.time*1.7);
+  if(shine>.25){rect(c,'#8cbdb875',324,yy,2,6);rect(c,'#8cbdb875',2094,yy+4,2,6);}
+ }
+ rect(c,'#47777f70',328,996,1764,2);
  c.restore();
  // Clear warm air over dark water; a concave animated meniscus marks the mouth.
  for(const p of pockets){const top=Math.max(y,p.y),height=p.h-(top-p.y);
-  rect(c,'#b3ba8123',p.x+2,top+2,p.w-4,height-4);
+  rect(c,'#e3d5a143',p.x+2,top+2,p.w-4,height-4);
   for(let k=0;k<3;k++){const shade=`rgba(14,42,43,${.2-k*.055})`;rect(c,shade,p.x+k*2,top,2,height);rect(c,shade,p.x+p.w-2-k*2,top,2,height);}
   for(let x=p.x;x<p.x+p.w;x+=2){const t=(x-p.x)/p.w,bow=q(Math.pow(Math.abs(t-.5)*2,2)*6),yy=p.y+p.h-bow+q(Math.sin(s.time*2+t*5));
    rect(c,'#235b6470',x,yy+2,2,6);
    const shine=t>.15&&t<.85&&Math.sin(t*10-s.time*1.6)>.1;
-   rect(c,shine?'#a6cbc195':'#568f9560',x,yy,2,2);
+   rect(c,'#0b303dcc',x,yy+2,2,4);
+   rect(c,shine?'#e0eed4':'#93c7bd',x,yy,2,2);
+   if(shine)rect(c,'#79bac0aa',x,yy+6,2,2);
   }
+  // Warm dry interior, cool water outside and a continuous dark/light rim make
+  // the open-bottom breathing boundary readable without revealing puzzle text.
+  rect(c,'#bfd5bfaa',p.x,top,2,height-4);rect(c,'#427c89aa',p.x-2,top,2,height);
+  rect(c,'#bfd5bfaa',p.x+p.w-2,top,2,height-4);rect(c,'#427c89aa',p.x+p.w,top,2,height);
  }
  surface(c,s,y);drawBubbles(c,s);flow(c,s);
  for(const h of s.heroes){if(!h.underwater&&!h.inAirPocket)continue;const air=Math.ceil(h.air/2);for(let n=0;n<6;n++)rect(c,n<air?'#a6ecdf':'#40545c',h.x-18+n*6,h.y-46,4,4);}

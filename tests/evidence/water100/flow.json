@@ -1,0 +1,38 @@
+{
+  "state": {
+    "machine": {
+      "waterY": 540,
+      "valveClosed": false,
+      "valvePose": 0,
+      "chainCut": false,
+      "chainAt": -1,
+      "wound": 0,
+      "drainPose": 0,
+      "operator": null,
+      "shelter": 0,
+      "float": {
+        "x": 1020,
+        "y": 528,
+        "w": 180,
+        "vx": 0,
+        "support": "water-pontoon"
+      },
+      "pushContact": false,
+      "drainStarted": false
+    },
+    "camera": {
+      "x": 0,
+      "y": 120,
+      "width": 1264,
+      "height": 790,
+      "zoom": 1,
+      "look": 0
+    }
+  },
+  "perf": {
+    "medianFrameMs": 5.900000035762787,
+    "p95FrameMs": 7.199999988079071,
+    "samples": 90
+  },
+  "errors": []
+}

@@ -28,4 +28,9 @@ Release is frozen from verified Depth94. Only menu modules, shared scene extract
 game UI wiring, HTML and CSS are overlaid. All other JavaScript matches the previous
 publication except cache query strings; unrelated working-tree changes are excluded.
 
-Live publication and verification: pending.
+Published at https://united-marsh-6ppd.here.now/?release=menu95.
+All six checked menu/script/style files match the approved build byte-for-byte;
+live HTML contains both new pickers and removes the individual machine buttons.
+The live browser repeats all25preview/selection checks, state/pause preservation,
+native touch and Enter activation successfully, with no browser errors.
+Live verification JSON is retained in assets/menu95. Implementation commit42411e1.

@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "file": "game.js",
+      "sha256": "5f6af0372e56ba7fe203b11e9552dd688aab6d646922995ab07fb9d12b7342b5"
+    },
+    {
+      "file": "style.css",
+      "sha256": "47e4e12cceef4c3ae70a8a99315e4a162a230e94dd66ce8ac43844ea11167f2a"
+    },
+    {
+      "file": "campaign-picker95.js",
+      "sha256": "4233bdc2974fca48455987b432821f5f942ef902906f16b6d2a533fd8fe716cd"
+    },
+    {
+      "file": "campaign-menu95.js",
+      "sha256": "6993a46fca1cd107f6a56d60ee6edcedf8376e018955c1b9cae33bf4b2b1891c"
+    },
+    {
+      "file": "level-preview95.js",
+      "sha256": "8688b41d418cda350d9277259c7259ef6e5f41063b09c5cc02f666aa361c6590"
+    },
+    {
+      "file": "scene-render95.js",
+      "sha256": "21e0e79b57a484d05e8e7e7c12c6ea7c022b3ea87d755c795f892664af8fee53"
+    }
+  ],
+  "htmlPickerVerified": true
+}

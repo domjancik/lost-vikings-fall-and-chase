@@ -7,6 +7,13 @@ function cell(c,theme,kind,x,y){const {image,row}=atlas(theme);if(!image.natural
 function wallTile(c,theme,x,y){const {image,row}=atlas(theme);if(!image.naturalWidth)return;c.imageSmoothingEnabled=false;c.drawImage(image,197,row*64+10,54,52,q(x),q(y),108,104);}
 export function drawDepthMidground(c,s){
  const plan=depthPlan(s);if(plan.theme<0)return plan;
+ // Non-contact enclosure planes render behind mechanisms and actors. Their
+ // visible bottom meets the authored room floor, independently of parallax.
+ for(const room of plan.rooms||[]){c.save();c.beginPath();c.rect(room.x,room.y,room.w,room.h);c.clip();
+  for(let y=room.floorY-104;y>room.y-104;y-=104)
+   for(let x=room.x;x<room.x+room.w;x+=108)wallTile(c,plan.theme,x,y);
+  c.restore();
+ }
  for(const p of plan.props){
   if(p.kind===2){wallTile(c,plan.theme,p.x-54,p.floorY-104);cell(c,plan.theme,2,p.x-64,p.floorY-144);}
   else cell(c,plan.theme,p.kind,p.x-64,p.floorY-124);

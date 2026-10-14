@@ -39,6 +39,12 @@ strong detail for edges and key features; infill repetition should recede. Avoid
 garish identical motifs, detached platform posts and wall patches resembling
 unannounced passages. Keep static scenery subordinate to active puzzle targets.
 
+Decorative wall tiles establish connected room enclosures behind actors at
+foreground world coordinates; they add no collision. Do not substitute arbitrary
+brick patches in platform infill for room walls. Use intentional openings,
+visible structural boundaries and coherent materials; preserve readable hazards,
+targets and support contacts. Review the complete room rather than tile variety.
+
 Review complete layers, then actual gameplay 1x/2x and mobile with x/y camera
 travel, upper routes, left/right edges and every support. Reject gaps, distorted
 scale, doubled transparent planes, edge halos and native-grid drift. Record

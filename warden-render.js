@@ -1,15 +1,15 @@
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from './depth-render94.js?v=depth94';
 import {laserTrace} from './warden-combat.js?v=warden91';
 import {wardenGeometry,WARDEN_TRACK} from './warden-campaign.js?v=warden89';
-import {WARDEN_ART as A} from './warden-art89.js?v=warden89';
+import {WARDEN_ART as A} from './warden-art97.js?v=warden97';
 import {drawTerrain} from './terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from './connection-render.js?v=connections53';
 import {createAtlas} from './sprite-atlas.js?v=fan66';
 import {drawCycleGateField} from './cycle-gate.js?v=gate61';
 import {snapPixel as q} from './pixel-grid.js?v=arc46';
 const load=p=>{const i=new Image();i.src=p;return i;};
-const parts=load('assets/warden89/parts-native.png'),scene=load('assets/warden89/scene-native.png'),brokenLens=load('assets/warden89/broken-lens-native.png'),ladder=load('assets/platform56/ladder.png');
-const plunger=load('assets/warden91/plunger-native.png'),emitter=load('assets/warden91/emitter-native.png');
+const parts=load('assets/warden97/parts-native.png'),scene=load('assets/warden89/scene-native.png'),brokenLens=load('assets/warden97/broken-lens-native.png'),ladder=load('assets/platform56/ladder.png');
+const plunger=load('assets/warden97/plunger-native.png'),emitter=load('assets/warden97/emitter-native.png');
 const gate=createAtlas('assets/gate61/gate.png',1,1),tower=createAtlas('assets/clockwork71/tower.png',2,2),cache=new Map();
 function sprite(c,name,x,y,angle=0,anchor=[0,0]){
  if(!parts.naturalWidth)return;
@@ -19,26 +19,29 @@ function sprite(c,name,x,y,angle=0,anchor=[0,0]){
 }
 function limb(c,leg){const idx=leg.far?2:0;for(const [i,p,n] of [[idx,leg.hip,leg.knee],[idx+1,leg.knee,leg.ankle]]){
  const name=['upper-near','lower-near','upper-far','lower-far'][i];sprite(c,name,p.x,p.y,-Math.atan2(n.x-p.x,n.y-p.y),A.anchors.linkPivots[i]);}
+ // Separate registered caps meet the real articulated joints. The piston
+ // housings overlap them; illustration padding cannot move a physical pivot.
+ for(const p of [leg.hip,leg.knee,leg.ankle])sprite(c,leg.far?'joint-far':'joint-near',p.x,p.y,0,[16,16]);
  sprite(c,leg.far?'foot-far':'foot-near',leg.foot.x,leg.foot.y,0,[20,39]);
 }
 function ladders(c,s){if(!ladder.naturalWidth)return;for(const l of s.level.ladders)for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,q(l.x-24),q(y),48,q(h));}}
 function head(c,s,p){
- sprite(c,'head-closed',1552,p.y,0,[0,62]);
+ sprite(c,'head-closed',1552,p.y,0,[0,58]);
  if(!parts.naturalWidth)return;
  // Authored metal shutters slide within the lens housing on the native grid.
  // Keep the closed housing fixed: its registered 27x45 aperture is narrower
  // than the separately authored open head. Only its glass and shutters move.
  c.save();c.beginPath();c.rect(1696,q(p.y-52),54,90);c.clip();
- c.drawImage(parts,280,180,27,45,1696,q(p.y-52),54,90);
+ c.drawImage(parts,280,192,27,45,1696,q(p.y-52),54,90);
  const rise=q(s.machine.shutter*54);
- c.drawImage(parts,72,180,27,25,1696,q(p.y-52-rise),54,50);
- c.drawImage(parts,72,205,27,20,1696,q(p.y-2+rise),54,40);
+ c.drawImage(parts,72,192,27,25,1696,q(p.y-52-rise),54,50);
+ c.drawImage(parts,72,217,27,20,1696,q(p.y-2+rise),54,40);
  c.restore();
- if(s.machine.disabled&&brokenLens.naturalWidth){c.save();c.filter='brightness(.7)';c.drawImage(brokenLens,1552,q(p.y-124),208,224);c.restore();}
+ if(s.machine.disabled&&brokenLens.naturalWidth){c.save();c.filter='brightness(.7)';c.drawImage(brokenLens,1552,q(p.y-116),208,232);c.restore();}
 }
 function cargo(c,s,p){
  // One registered carriage stays rigid; real authored hinge links release its clamps.
- sprite(c,'cargo-free',p.x,p.y,0,[9,62]);
+ sprite(c,'cargo-free',p.x,p.y,0,[9,A.anchors.cargoRim[1]]);
  for(let n=0;n<4;n++)sprite(c,'spoke',p.x+158,p.y-18,n*Math.PI/2+s.machine.cargo.distance/45,[0,2]);
  const phase=s.machine.release;for(const [x,flip] of [[p.x+2,-1],[p.x+p.w-4,1]])sprite(c,'clamp',x,p.y-90,flip*(.12+phase*.8),[7,0]);
 }
@@ -57,8 +60,8 @@ export function drawWardenWorld(c,s,camera,viewport){
  drawDepthWallFaces(c,s);
  ladders(c,s);
  for(const l of p.legs){c.fillStyle='#081017';c.fillRect(q(l.foot.x-42),938,84,4);if(l.far)limb(c,l);}
- sprite(c,'body',p.body.x,p.body.y,p.body.angle,[0,14]);
- for(const leg of p.legs)if(leg.far)sprite(c,'hub-far',leg.hip.x,leg.hip.y,0,[12,12]);
+ sprite(c,'body',p.body.x,p.body.y,p.body.angle,[0,A.anchors.bodyDeck]);
+ for(const leg of p.legs)if(leg.far)sprite(c,'joint-far',leg.hip.x,leg.hip.y,0,[16,16]);
  drawConnection(c,[[1544,q(p.body.y+80)],[1584,q(p.body.y+80)],[1584,q(p.eye.y)]],'pipe');
  head(c,s,p.eye);if(emitter.naturalWidth)c.drawImage(emitter,q(p.emitter.x-34),q(p.eye.y-146),64,64);
  for(const l of p.legs)if(!l.far)limb(c,l);

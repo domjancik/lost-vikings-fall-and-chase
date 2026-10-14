@@ -1,0 +1,90 @@
+{
+  "asset": "warden97",
+  "designAuthority": "assets/warden86/concept-raw.png",
+  "nativeAtlas": [
+    512,
+    512
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "cells": {
+    "body": [
+      320,
+      124
+    ],
+    "head": [
+      104,
+      116
+    ],
+    "link": [
+      40,
+      93
+    ],
+    "foot": [
+      48,
+      48
+    ]
+  },
+  "reviewLog": "WARDEN97-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "iteration": "v3",
+    "evidence": [
+      "assets/warden86/concept-raw.png",
+      "assets/warden89/parts-native.png",
+      "assets/warden97/parts-raw-v1.png",
+      "assets/warden97/parts-native-v1.png",
+      "assets/warden97/parts-raw-v2.png",
+      "assets/warden97/parts-native-v2.png",
+      "assets/warden97/parts-raw-v3.png",
+      "assets/warden97/parts-native-v3.png"
+    ],
+    "reason": "V3 raw source uses deliberate connected shading/rust clusters, stepped silhouettes and readable gear/cable negative space at intended native density. Curved layered armor and piston volume recover the concept mechanical language."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "processedArtVerdict": "accepted",
+    "gameplayVerdict": "accepted",
+    "evidence": [
+      "assets/warden97/parts-native-v1.png",
+      "assets/warden97/parts-native-v2.png",
+      "assets/warden97/parts-native-v3.png",
+      "assets/warden97/parts-native.png",
+      "assets/warden97/parts-native-2x.png",
+      "assets/warden97/registration.json",
+      "assets/warden97/evidence/brace-desktop-2x.png",
+      "assets/warden97/evidence/brace-mobile-2x.png",
+      "assets/warden97/evidence/brace-portrait-2x.png",
+      "assets/warden97/evidence/spine.png",
+      "assets/warden97/evidence/cap-full-desktop-2x.png",
+      "assets/warden97/evidence/shutdown-complete.png",
+      "assets/warden97/evidence/boarded-2x.png",
+      "assets/warden97/evidence/upper-dock.png",
+      "assets/warden97/evidence/boarded-1x.png",
+      "assets/warden97/evidence/boarded-mobile-1x.png",
+      "assets/warden97/evidence/boarded-mobile-2x.png",
+      "assets/warden97/evidence/disabled-lens-desktop-1x.png",
+      "assets/warden97/evidence/disabled-lens-desktop-2x.png",
+      "assets/warden97/evidence/disabled-lens-mobile-1x.png",
+      "assets/warden97/evidence/disabled-lens-mobile-2x.png",
+      "assets/warden97/evidence/exit.png",
+      "assets/warden97/evidence/browser-route.json"
+    ],
+    "reason": "Final cleaned native art accepted. Warden floor/shield/back contacts accepted. Cargo rim corrected 68 to60; refreshed boarded and upper-dock captures show soles on the visible walking strip and dock alignment. Desktop/mobile disabled lens is legible. Final normal-control route completes without errors.",
+    "requiredStates": [
+      "initial",
+      "foot-raised",
+      "foot-grounded",
+      "shield-brace",
+      "plunger-stroke",
+      "shutter-open",
+      "disabled",
+      "cargo-dock",
+      "exit"
+    ],
+    "normalControlRoute": "accepted: won true, HP 3/3/3, time 99.70833333335875, errors []",
+    "desktop1x": "accepted",
+    "desktop2x": "accepted",
+    "mobile": "accepted: landscape 1x/2x; portrait brace/plunger inspected, portrait lens offscreen and unverified"
+  },
+  "publicationAllowed": true
+}

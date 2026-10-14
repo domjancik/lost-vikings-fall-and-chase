@@ -16,12 +16,16 @@ export function depthPlan(s){
   if(!support)throw Error(`Decorative fixture lacks support: ${theme}/${x}/${floorY}`);
   return{x,floorY,kind,support};
  });
+ // Ground infill keeps one coherent material. Room walls belong behind actors,
+ // never as alternating patches on the physical platform faces.
  const walls=[];
- for(const floor of s.level.floors){const d=depth(theme,floor.y);if(d<48||floor.w<256)continue;
-  const count=Math.min(3,Math.ceil(floor.w/1000));
-  for(let n=0;n<count;n++){const w=Math.min(240,floor.w-32),x=Math.round((floor.x+(floor.w-w)*(n+.5)/count)/2)*2;
-   walls.push({x,y:floor.y+24,w,h:Math.min(64,d-32),support:{...floor,depth:d}});
-  }
- }
- return{theme,props,walls};
+ // Back walls enclose service rooms; the guardian bay remains an intentional
+ // open window into the archive. All planes follow the foreground camera.
+ const rooms=theme===5?[
+  {x:0,y:200,w:360,h:740,floorY:940},
+  {x:500,y:540,w:400,h:220,floorY:760},
+  {x:2200,y:200,w:800,h:300,floorY:500},
+  {x:0,y:1000,w:3000,h:120,floorY:1120}
+ ]:[];
+ return{theme,props,walls,rooms};
 }

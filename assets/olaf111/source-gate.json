@@ -1,0 +1,8 @@
+{
+  "verdict": "accepted",
+  "reviewer": "/root/freight109_review",
+  "reviewRecord": "docs/history/OLAF111-REVIEW.md",
+  "acceptedSources": ["idle-raw-v1.png", "idle-raw-v2.png", "raise-raw-v1.png", "raise-raw-v2.png", "action-raw-v2.png"],
+  "rejectedSources": ["action-raw-v1.png"],
+  "scope": "Raw native-density/source approval only; actual stop/start geometry, shields and runtime gate remain pending."
+}

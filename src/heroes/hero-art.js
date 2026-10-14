@@ -9,7 +9,7 @@ const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];l
 let selectedSkin='current';
 export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);if(selectedSkin==='imagegen88')ensureImagegen88();if(selectedSkin==='imagegen90')ensureImagegen90();}
 function ensureImagegen88(){if(imagegen88.length)return;for(const name of ['erik','baleog','olaf'])imagegen88.push(load(`assets/vikings88/${name}-native.png`));}
-function ensureImagegen90(){if(imagegen90.length)return;for(const name of ['erik','baleog','olaf'])imagegen90.push(load(`assets/vikings90/${name}-native.png`));}
+function ensureImagegen90(){if(imagegen90.length)return;for(const name of ['erik','baleog','olaf'])imagegen90.push(load(name==='olaf'?'assets/olaf111/olaf-native.png':`assets/vikings90/${name}-native.png`));}
 function ensureLoaded(){
  if(sheets.length)return;
  for(const name of ['erik','baleog','olaf'])sheets.push(load(`assets/vikings63/${name}.png`));

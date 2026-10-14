@@ -1,0 +1,226 @@
+[
+  {
+    "source": "output/orbit113-desktop/route.json",
+    "retained": "assets/orbit113/evidence/desktop-route.json"
+  },
+  {
+    "source": "output/orbit113-mobile/route.json",
+    "retained": "assets/orbit113/evidence/mobile-route.json"
+  },
+  {
+    "source": "output/orbit113-final-desktop/route.json",
+    "retained": "assets/orbit113/evidence/final-desktop.json"
+  },
+  {
+    "source": "output/orbit113-final-mobile/route.json",
+    "retained": "assets/orbit113/evidence/final-mobile.json"
+  },
+  {
+    "source": "output/orbit113-corners/route.json",
+    "retained": "assets/orbit113/evidence/ellipse-corners.json"
+  },
+  {
+    "source": "output/orbit113-danger-lift/route.json",
+    "retained": "assets/orbit113/evidence/danger-retry.json"
+  },
+  {
+    "source": "output/orbit113-touch-final/touch.json",
+    "retained": "assets/orbit113/evidence/touch.json"
+  },
+  {
+    "source": "output/orbit113-jaw/claw-intermediate.json",
+    "retained": "assets/orbit113/evidence/claw-intermediate.json"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-cover-live.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-cover-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-gripped-1x.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-gripped-1x.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-gripped-2x.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-gripped-2x.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-gripped-live.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-gripped-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-gripped-portrait.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-gripped-portrait.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-lifting-1x.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-lifting-1x.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-lifting-2x.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-lifting-2x.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-lifting-live.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-lifting-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/crane-lifting-portrait.png",
+    "retained": "assets/orbit113/evidence/desktop-crane-lifting-portrait.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/equip-service-shoes-live.png",
+    "retained": "assets/orbit113/evidence/desktop-equip-service-shoes-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/hook-camera-return-live.png",
+    "retained": "assets/orbit113/evidence/desktop-hook-camera-return-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/magnetic-ceiling-live.png",
+    "retained": "assets/orbit113/evidence/desktop-magnetic-ceiling-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/magnetic-corner-live.png",
+    "retained": "assets/orbit113/evidence/desktop-magnetic-corner-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/push-first-frame-live.png",
+    "retained": "assets/orbit113/evidence/desktop-push-first-frame-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/push-second-frame-live.png",
+    "retained": "assets/orbit113/evidence/desktop-push-second-frame-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/receiving-dock-live.png",
+    "retained": "assets/orbit113/evidence/desktop-receiving-dock-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/reset-live.png",
+    "retained": "assets/orbit113/evidence/desktop-reset-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/rotating-bow-restraint-live.png",
+    "retained": "assets/orbit113/evidence/desktop-rotating-bow-restraint-live.png"
+  },
+  {
+    "source": "output/orbit113-final-desktop/captures/turned-bow-firing-live.png",
+    "retained": "assets/orbit113/evidence/desktop-turned-bow-firing-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-cover-live.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-cover-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-gripped-1x.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-gripped-1x.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-gripped-2x.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-gripped-2x.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-gripped-live.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-gripped-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-gripped-portrait.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-gripped-portrait.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-lifting-1x.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-lifting-1x.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-lifting-2x.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-lifting-2x.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-lifting-live.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-lifting-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/crane-lifting-portrait.png",
+    "retained": "assets/orbit113/evidence/mobile-crane-lifting-portrait.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/equip-service-shoes-live.png",
+    "retained": "assets/orbit113/evidence/mobile-equip-service-shoes-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/hook-camera-return-live.png",
+    "retained": "assets/orbit113/evidence/mobile-hook-camera-return-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/magnetic-ceiling-live.png",
+    "retained": "assets/orbit113/evidence/mobile-magnetic-ceiling-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/magnetic-corner-live.png",
+    "retained": "assets/orbit113/evidence/mobile-magnetic-corner-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/push-first-frame-live.png",
+    "retained": "assets/orbit113/evidence/mobile-push-first-frame-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/push-second-frame-live.png",
+    "retained": "assets/orbit113/evidence/mobile-push-second-frame-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/receiving-dock-live.png",
+    "retained": "assets/orbit113/evidence/mobile-receiving-dock-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/reset-live.png",
+    "retained": "assets/orbit113/evidence/mobile-reset-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/rotating-bow-restraint-live.png",
+    "retained": "assets/orbit113/evidence/mobile-rotating-bow-restraint-live.png"
+  },
+  {
+    "source": "output/orbit113-final-mobile/captures/turned-bow-firing-live.png",
+    "retained": "assets/orbit113/evidence/mobile-turned-bow-firing-live.png"
+  },
+  {
+    "source": "output/orbit113-corners/captures/magnetic-corner-1x.png",
+    "retained": "assets/orbit113/evidence/ellipse-magnetic-corner-1x.png"
+  },
+  {
+    "source": "output/orbit113-corners/captures/magnetic-corner-2x.png",
+    "retained": "assets/orbit113/evidence/ellipse-magnetic-corner-2x.png"
+  },
+  {
+    "source": "output/orbit113-corners/captures/magnetic-corner-portrait.png",
+    "retained": "assets/orbit113/evidence/ellipse-magnetic-corner-portrait.png"
+  },
+  {
+    "source": "output/orbit113-desktop/captures/crew-departure-1x.png",
+    "retained": "assets/orbit113/evidence/crew-departure-1x.png"
+  },
+  {
+    "source": "output/orbit113-desktop/captures/crew-departure-2x.png",
+    "retained": "assets/orbit113/evidence/crew-departure-2x.png"
+  },
+  {
+    "source": "output/orbit113-danger-lift/captures/actual-debris-damage.png",
+    "retained": "assets/orbit113/evidence/actual-debris-damage.png"
+  },
+  {
+    "source": "output/orbit113-jaw/captures/crane-claw-intermediate-native.png",
+    "retained": "assets/orbit113/evidence/crane-claw-intermediate-native.png"
+  },
+  {
+    "source": "output/orbit113-touch-final/captures/coarse-touch.png",
+    "retained": "assets/orbit113/evidence/coarse-touch.png"
+  },
+  {
+    "source": "output/freight112-integrated/route.json",
+    "retained": "assets/freight112/evidence/integrated-route.json"
+  },
+  {
+    "source": "output/orbit113/final-unit.txt",
+    "retained": "assets/orbit113/evidence/final-unit.txt"
+  }
+]

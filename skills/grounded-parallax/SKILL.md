@@ -5,6 +5,10 @@ description: Author layered pixel-art environments with horizontal and vertical 
 
 # Layered environments that stay physically coherent
 
+User-approved reference: Ember Freight's climb above the depot reveals an expansive
+sky and city. Compose upper routes to earn comparable changes of view, with
+substantial connected architecture below and quieter distant depth above.
+
 Before artwork, assign each plane its native size, fixed world footprint,
 perspective depth, camera response on both axes, and physical attachment. Apply
 [native-sprite-art](../native-sprite-art/SKILL.md) to source density and quality.

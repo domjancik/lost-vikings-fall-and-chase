@@ -1,9 +1,10 @@
+import {drawOrbitWorld} from "../../levels/orbit/render.js?v=orbit113";
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {drawLoomWorld} from '../../levels/loom/render.js?v=loom106';
-import {drawFreightWorld} from '../../levels/freight/render.js?v=freight109';
+import {drawFreightWorld} from '../../levels/freight/render.js?v=orbit113';
 import {drawWardenWorld} from '../../levels/warden/render.js?v=warden105';
 import {drawWaterWorld} from '../../levels/water/render.js?v=warden105';
-import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=olaf107';
+import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=orbit113';
 import {drawMomentumWorld} from '../../levels/momentum/render.js?v=walls101';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';
 import {backdropY} from '../../render/vertical-parallax.js?v=vertical65';
@@ -19,6 +20,7 @@ const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
+ if(s.level.mechanic==="orbit")return drawOrbitWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='freight')return drawFreightWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='loom')return drawLoomWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='warden')return drawWardenWorld(ctx,s,camera,viewport);

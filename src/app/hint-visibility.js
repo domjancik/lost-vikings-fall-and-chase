@@ -1,4 +1,4 @@
-import {itemTypes} from '../core/inventory.js?v=freight109';
+import {itemTypes} from '../core/inventory.js?v=orbit113';
 export function hintPreference(value){return value==='on';}
 export function worldLabels(draw,getHints){const labels=(...args)=>{if(getHints())draw(...args);};labels.status=draw;labels.clue=draw;Object.defineProperty(labels,'enabled',{get:getHints});return labels;}
 const neutral={flour:'Bag of flour.',spice:'Jar of dragon spice.',dough:'Prepared dough.',ticket:'Bronze ticket.',lamp:'UV lamp.',red:'Red optical lens.',blue:'Blue optical lens.',key:'Neon key.'};

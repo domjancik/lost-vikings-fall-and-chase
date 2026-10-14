@@ -1,0 +1,8430 @@
+{
+  "errors": [],
+  "captures": [
+    {
+      "name": "desktop-look-up-2x",
+      "pose": "look-up",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.1249999999999984,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 12
+          },
+          "x": 259.125,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 532,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": -1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1399.375,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.1249999999999984,
+            "walk": 50.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2079.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.1249999999999984,
+            "walk": 50.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-look-up-1x",
+      "pose": "look-up",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.416666666666664,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 12
+          },
+          "x": 259.125,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 292,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": -1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1386.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.416666666666664,
+            "walk": 63.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2066.25,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.416666666666664,
+            "walk": 63.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-look-down-2x",
+      "pose": "look-down",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.8333333333333293,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 13
+          },
+          "x": 259.125,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 734,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1372.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 1.8333333333333293,
+            "walk": 82.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2072.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 1.8333333333333293,
+            "walk": 82.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-look-down-1x",
+      "pose": "look-down",
+      "frame": 0,
+      "paused": "false",
+      "time": 2.1583333333333283,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 13
+          },
+          "x": 259.125,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1386.875,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 2.1583333333333283,
+            "walk": 96.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2087,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 2.1583333333333283,
+            "walk": 97,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-ascending-draft-2x",
+      "pose": "float",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.11666666666676,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 56
+          },
+          "x": 490.375,
+          "y": 755.0833333333294,
+          "vx": 0,
+          "vy": -145,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 554,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 903.0125000000006,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1565,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.11666666666676,
+            "walk": 275,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2255.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.11666666666676,
+            "walk": 274.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-ascending-draft-1x",
+      "pose": "float",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.11666666666676,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 56
+          },
+          "x": 490.375,
+          "y": 755.0833333333294,
+          "vx": 0,
+          "vy": -145,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 326,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 903.0125000000006,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1565,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.11666666666676,
+            "walk": 275,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2255.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.11666666666676,
+            "walk": 274.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-rise-2x",
+      "pose": "rise",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.18333333333343,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.11,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 18
+          },
+          "x": 490.375,
+          "y": 748.5416666666628,
+          "vx": 0,
+          "vy": -61.66666666666665,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 546,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 911.6791666666676,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1568,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.18333333333343,
+            "walk": 278,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2252.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.18333333333343,
+            "walk": 277.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-rise-1x",
+      "pose": "rise",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.18333333333343,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.11,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 18
+          },
+          "x": 490.375,
+          "y": 748.5416666666628,
+          "vx": 0,
+          "vy": -61.66666666666665,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 320,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 911.6791666666676,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1568,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.18333333333343,
+            "walk": 278,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2252.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.18333333333343,
+            "walk": 277.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-fall0-2x",
+      "pose": "fall",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.233333333333433,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.896999999999995,
+            "y": 8.47999999999999,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 20
+          },
+          "x": 490.375,
+          "y": 747.2812499999961,
+          "vx": 0,
+          "vy": 0.8333333333333393,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 544,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 918.1791666666678,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1570.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.233333333333433,
+            "walk": 280.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.233333333333433,
+            "walk": 280.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-fall0-1x",
+      "pose": "fall",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.233333333333433,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.896999999999995,
+            "y": 8.47999999999999,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 20
+          },
+          "x": 490.375,
+          "y": 747.2812499999961,
+          "vx": 0,
+          "vy": 0.8333333333333393,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 318,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 918.1791666666678,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1570.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.233333333333433,
+            "walk": 280.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.233333333333433,
+            "walk": 280.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-fall1-2x",
+      "pose": "fall",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.458333333333444,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.822999999999997,
+            "y": 9.960000000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 21
+          },
+          "x": 490.375,
+          "y": 780.2812499999961,
+          "vx": 0,
+          "vy": 282.0833333333333,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 574,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 947.4291666666688,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1579.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.458333333333444,
+            "walk": 290.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2239.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.458333333333444,
+            "walk": 290.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-front-fall1-1x",
+      "pose": "fall",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.458333333333444,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.822999999999997,
+            "y": 9.960000000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 21
+          },
+          "x": 490.375,
+          "y": 780.2812499999961,
+          "vx": 0,
+          "vy": 282.0833333333333,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 947.4291666666688,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1579.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.458333333333444,
+            "walk": 290.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2239.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.458333333333444,
+            "walk": 290.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing0-2x",
+      "pose": "land",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.71666666666679,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 29.119000000000003,
+            "y": 13.659999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 22
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 686,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 981.0125000000033,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1568,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.71666666666679,
+            "walk": 302,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2228.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.71666666666679,
+            "walk": 301.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing0-1x",
+      "pose": "land",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.71666666666679,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 29.119000000000003,
+            "y": 13.659999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 22
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 981.0125000000033,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1568,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.71666666666679,
+            "walk": 302,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2228.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.71666666666679,
+            "walk": 301.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing1-2x",
+      "pose": "land",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.758333333333459,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 11.254999999999995,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 23
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 986.4291666666702,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1566.125,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.758333333333459,
+            "walk": 303.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2226.25,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.758333333333459,
+            "walk": 303.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing1-1x",
+      "pose": "land",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.758333333333459,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 11.254999999999995,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 23
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 986.4291666666702,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1566.125,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.758333333333459,
+            "walk": 303.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2226.25,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.758333333333459,
+            "walk": 303.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing2-2x",
+      "pose": "land",
+      "frame": 2,
+      "paused": "true",
+      "time": 6.800000000000128,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 24
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 174,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 991.845833333337,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1564.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.800000000000128,
+            "walk": 305.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2224.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.800000000000128,
+            "walk": 305.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-landing2-1x",
+      "pose": "land",
+      "frame": 2,
+      "paused": "true",
+      "time": 6.800000000000128,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 24
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 991.845833333337,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1564.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.800000000000128,
+            "walk": 305.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2224.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.800000000000128,
+            "walk": 305.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-glide1-2x",
+      "pose": "float",
+      "frame": 1,
+      "paused": "true",
+      "time": 10.500000000000044,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 57
+          },
+          "x": 572.875,
+          "y": 517.0601323772361,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 272,
+        "y": 312,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.7666666666666693,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1397.75,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.500000000000044,
+            "walk": 472.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2061.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.500000000000044,
+            "walk": 471.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-glide1-1x",
+      "pose": "float",
+      "frame": 1,
+      "paused": "true",
+      "time": 10.500000000000044,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 57
+          },
+          "x": 572.875,
+          "y": 517.0601323772361,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 88,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.7666666666666693,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1397.75,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.500000000000044,
+            "walk": 472.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2061.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.500000000000044,
+            "walk": 471.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-glide2-2x",
+      "pose": "float",
+      "frame": 2,
+      "paused": "true",
+      "time": 10.75000000000003,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 58
+          },
+          "x": 610.375,
+          "y": 542.0601323772372,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 310,
+        "y": 338,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.5166666666666702,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1386.5,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.75000000000003,
+            "walk": 483.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2073.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.75000000000003,
+            "walk": 483.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-glide2-1x",
+      "pose": "float",
+      "frame": 2,
+      "paused": "true",
+      "time": 10.75000000000003,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 58
+          },
+          "x": 610.375,
+          "y": 542.0601323772372,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 114,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.5166666666666702,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1386.5,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.75000000000003,
+            "walk": 483.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2073.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.75000000000003,
+            "walk": 483.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-braking-fall-2x",
+      "pose": "float",
+      "frame": 3,
+      "paused": "true",
+      "time": 10.858333333333357,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 59
+          },
+          "x": 620.0234375,
+          "y": 552.893465710571,
+          "vx": 28.125,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 308,
+        "y": 350,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.4083333333333366,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1381.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.858333333333357,
+            "walk": 488.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2078,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.858333333333357,
+            "walk": 488,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-floating-braking-fall-1x",
+      "pose": "float",
+      "frame": 3,
+      "paused": "true",
+      "time": 10.858333333333357,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 59
+          },
+          "x": 620.0234375,
+          "y": 552.893465710571,
+          "vx": 28.125,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 124,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.4083333333333366,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1381.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.858333333333357,
+            "walk": 488.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2078,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 10.858333333333357,
+            "walk": 488,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-inspector-real-damage-2x",
+      "pose": "hurt",
+      "frame": 0,
+      "paused": "true",
+      "time": 16.008333333333066,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 826.8458333333149,
+          "y": 594.3854166666667,
+          "vx": 0,
+          "vy": -17.91666666666668,
+          "ground": false,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 510,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.2583333333333342,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1394.75,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.008333333333066,
+            "walk": 670.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2210.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.008333333333066,
+            "walk": 719.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-inspector-real-damage-1x",
+      "pose": "hurt",
+      "frame": 0,
+      "paused": "true",
+      "time": 16.008333333333066,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 826.8458333333149,
+          "y": 594.3854166666667,
+          "vx": 0,
+          "vy": -17.91666666666668,
+          "ground": false,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 194,
+        "y": 166,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.2583333333333342,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1394.75,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.008333333333066,
+            "walk": 670.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2210.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.008333333333066,
+            "walk": 719.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "desktop-hurt-paused-final",
+      "pose": "hurt",
+      "frame": 2,
+      "paused": "true",
+      "time": 16.024999999999732,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 826.8458333333149,
+          "y": 594.3472222222223,
+          "vx": 0,
+          "vy": 2.9166666666666536,
+          "ground": false,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 510,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.2416666666666676,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1394,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.024999999999732,
+            "walk": 671,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2209.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 16.024999999999732,
+            "walk": 720.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-look-up-2x",
+      "pose": "look-up",
+      "frame": 0,
+      "paused": "false",
+      "time": 0.9583333333333324,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 12
+          },
+          "x": 255.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 534,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": -1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1406.875,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 0.9583333333333324,
+            "walk": 43.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2086.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 0.9583333333333324,
+            "walk": 43.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-look-up-1x",
+      "pose": "look-up",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.166666666666665,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 12
+          },
+          "x": 255.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 296,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": -1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1397.5,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.166666666666665,
+            "walk": 52.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2077.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.166666666666665,
+            "walk": 52.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-look-down-2x",
+      "pose": "look-down",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.5166666666666637,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 13
+          },
+          "x": 255.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 726,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1381.75,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.5166666666666637,
+            "walk": 68.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2061.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.5166666666666637,
+            "walk": 68.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-look-down-1x",
+      "pose": "look-down",
+      "frame": 0,
+      "paused": "false",
+      "time": 1.7249999999999963,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 13
+          },
+          "x": 255.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 1
+      },
+      "machine": {
+        "ventOpen": false,
+        "ventPose": 0,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 840,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": 1,
+          "pause": 1.5,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1372.375,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 1.7249999999999963,
+            "walk": 77.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2067.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 1.7249999999999963,
+            "walk": 77.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-ascending-draft-2x",
+      "pose": "float",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.641666666666737,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 56
+          },
+          "x": 490.375,
+          "y": 755.0833333333294,
+          "vx": 0,
+          "vy": -145,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 554,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 901.9291666666672,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1543.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.641666666666737,
+            "walk": 253.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2243.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.641666666666737,
+            "walk": 253.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-ascending-draft-1x",
+      "pose": "float",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.641666666666737,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 56
+          },
+          "x": 490.375,
+          "y": 755.0833333333294,
+          "vx": 0,
+          "vy": -145,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 326,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 901.9291666666672,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1543.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.641666666666737,
+            "walk": 253.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2243.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.641666666666737,
+            "walk": 253.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-rise-2x",
+      "pose": "rise",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.708333333333407,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.11,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 18
+          },
+          "x": 490.375,
+          "y": 748.5416666666628,
+          "vx": 0,
+          "vy": -61.66666666666665,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 546,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 910.5958333333342,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1546.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.708333333333407,
+            "walk": 256.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2246.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.708333333333407,
+            "walk": 256.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-rise-1x",
+      "pose": "rise",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.708333333333407,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 8.11,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 18
+          },
+          "x": 490.375,
+          "y": 748.5416666666628,
+          "vx": 0,
+          "vy": -61.66666666666665,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 320,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 910.5958333333342,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1546.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.708333333333407,
+            "walk": 256.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2246.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.708333333333407,
+            "walk": 256.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-fall0-2x",
+      "pose": "fall",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.758333333333409,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.896999999999995,
+            "y": 8.47999999999999,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 20
+          },
+          "x": 490.375,
+          "y": 747.2812499999961,
+          "vx": 0,
+          "vy": 0.8333333333333393,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 544,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 917.0958333333344,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1548.875,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.758333333333409,
+            "walk": 258.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.758333333333409,
+            "walk": 259,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-fall0-1x",
+      "pose": "fall",
+      "frame": 0,
+      "paused": "true",
+      "time": 5.758333333333409,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.896999999999995,
+            "y": 8.47999999999999,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 20
+          },
+          "x": 490.375,
+          "y": 747.2812499999961,
+          "vx": 0,
+          "vy": 0.8333333333333393,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 318,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 917.0958333333344,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1548.875,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.758333333333409,
+            "walk": 258.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.758333333333409,
+            "walk": 259,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-fall1-2x",
+      "pose": "fall",
+      "frame": 1,
+      "paused": "true",
+      "time": 5.98333333333342,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.822999999999997,
+            "y": 9.960000000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 21
+          },
+          "x": 490.375,
+          "y": 780.2812499999961,
+          "vx": 0,
+          "vy": 282.0833333333333,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 574,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 946.3458333333355,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1559,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.98333333333342,
+            "walk": 269,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2259.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.98333333333342,
+            "walk": 269.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-front-fall1-1x",
+      "pose": "fall",
+      "frame": 1,
+      "paused": "true",
+      "time": 5.98333333333342,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.822999999999997,
+            "y": 9.960000000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 21
+          },
+          "x": 490.375,
+          "y": 780.2812499999961,
+          "vx": 0,
+          "vy": 282.0833333333333,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 946.3458333333355,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1559,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.98333333333342,
+            "walk": 269,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2259.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": 1,
+            "hp": 3,
+            "age": 5.98333333333342,
+            "walk": 269.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing0-2x",
+      "pose": "land",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.241666666666767,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 29.119000000000003,
+            "y": 13.659999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 22
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 684,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 979.92916666667,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1570.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.241666666666767,
+            "walk": 280.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.241666666666767,
+            "walk": 280.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing0-1x",
+      "pose": "land",
+      "frame": 0,
+      "paused": "true",
+      "time": 6.241666666666767,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 29.119000000000003,
+            "y": 13.659999999999997,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 22
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 979.92916666667,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1570.625,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.241666666666767,
+            "walk": 280.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2249.5,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.241666666666767,
+            "walk": 280.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing1-2x",
+      "pose": "land",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.283333333333435,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 11.254999999999995,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 23
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 985.3458333333368,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1572.5,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.283333333333435,
+            "walk": 282.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2247.625,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.283333333333435,
+            "walk": 282.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing1-1x",
+      "pose": "land",
+      "frame": 1,
+      "paused": "true",
+      "time": 6.283333333333435,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.860000000000003,
+            "y": 11.254999999999995,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 23
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 985.3458333333368,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1572.5,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.283333333333435,
+            "walk": 282.5,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2247.625,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.283333333333435,
+            "walk": 282.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing2-2x",
+      "pose": "land",
+      "frame": 2,
+      "paused": "true",
+      "time": 6.325000000000104,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 24
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 62,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 990.7625000000037,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1574.375,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.325000000000104,
+            "walk": 284.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2245.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.325000000000104,
+            "walk": 284.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-landing2-1x",
+      "pose": "land",
+      "frame": 2,
+      "paused": "true",
+      "time": 6.325000000000104,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 24
+          },
+          "x": 490.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 350,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 990.7625000000037,
+          "y": 640,
+          "w": 256,
+          "v": 130,
+          "direction": 1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1574.375,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": 1,
+            "hp": 3,
+            "age": 6.325000000000104,
+            "walk": 284.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2245.75,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 6.325000000000104,
+            "walk": 284.25,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-glide1-2x",
+      "pose": "float",
+      "frame": 1,
+      "paused": "true",
+      "time": 10.000000000000073,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 57
+          },
+          "x": 570.375,
+          "y": 515.3934657105693,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 158,
+        "y": 312,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.8000000000000025,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1420.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.000000000000073,
+            "walk": 449.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2080.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.000000000000073,
+            "walk": 449.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-glide1-1x",
+      "pose": "float",
+      "frame": 1,
+      "paused": "true",
+      "time": 10.000000000000073,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 57
+          },
+          "x": 570.375,
+          "y": 515.3934657105693,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 88,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.8000000000000025,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1420.25,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.000000000000073,
+            "walk": 449.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2080.375,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.000000000000073,
+            "walk": 449.625,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-glide2-2x",
+      "pose": "float",
+      "frame": 2,
+      "paused": "true",
+      "time": 10.250000000000059,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 58
+          },
+          "x": 607.875,
+          "y": 540.3934657105705,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 196,
+        "y": 336,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.5500000000000034,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1409,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.250000000000059,
+            "walk": 461,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2069.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.250000000000059,
+            "walk": 460.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-glide2-1x",
+      "pose": "float",
+      "frame": 2,
+      "paused": "true",
+      "time": 10.250000000000059,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 58
+          },
+          "x": 607.875,
+          "y": 540.3934657105705,
+          "vx": 150,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 112,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.5500000000000034,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1409,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.250000000000059,
+            "walk": 461,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2069.125,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.250000000000059,
+            "walk": 460.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-braking-fall-2x",
+      "pose": "float",
+      "frame": 3,
+      "paused": "true",
+      "time": 10.358333333333386,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 59
+          },
+          "x": 617.5234375,
+          "y": 551.2267990439043,
+          "vx": 28.125,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 194,
+        "y": 346,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.44166666666667004,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1404.125,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.358333333333386,
+            "walk": 465.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2064.25,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.358333333333386,
+            "walk": 465.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-floating-braking-fall-1x",
+      "pose": "float",
+      "frame": 3,
+      "paused": "true",
+      "time": 10.358333333333386,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 59
+          },
+          "x": 617.5234375,
+          "y": 551.2267990439043,
+          "vx": 28.125,
+          "vy": 100,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 122,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 1340,
+          "y": 640,
+          "w": 256,
+          "v": 0,
+          "direction": -1,
+          "pause": 0.44166666666667004,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1404.125,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.358333333333386,
+            "walk": 465.875,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          },
+          {
+            "id": 1,
+            "x": 2064.25,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 10.358333333333386,
+            "walk": 465.75,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-inspector-real-damage-2x",
+      "pose": "hurt",
+      "frame": 1,
+      "paused": "true",
+      "time": 15.183333333333112,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 829.6729383070831,
+          "y": 596,
+          "vx": 0,
+          "vy": -70,
+          "ground": true,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "freight-cart",
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 402,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 842.8271049737682,
+          "y": 640,
+          "w": 256,
+          "v": -35.5515460817372,
+          "direction": -1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1379,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.183333333333112,
+            "walk": 626,
+            "phase": "aim",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0.1583333333333275,
+            "hadTarget": true
+          },
+          {
+            "id": 1,
+            "x": 2247.625,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.183333333333112,
+            "walk": 682.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-inspector-real-damage-1x",
+      "pose": "hurt",
+      "frame": 1,
+      "paused": "true",
+      "time": 15.183333333333112,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 829.6729383070831,
+          "y": 596,
+          "vx": 0,
+          "vy": -70,
+          "ground": true,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "freight-cart",
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 168,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 842.8271049737682,
+          "y": 640,
+          "w": 256,
+          "v": -35.5515460817372,
+          "direction": -1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1379,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.183333333333112,
+            "walk": 626,
+            "phase": "aim",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0.1583333333333275,
+            "hadTarget": true
+          },
+          {
+            "id": 1,
+            "x": 2247.625,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.183333333333112,
+            "walk": 682.375,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-hurt-paused-final",
+      "pose": "hurt",
+      "frame": 0,
+      "paused": "true",
+      "time": 15.199999999999777,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 418.95833333333434,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 27.935000000000002,
+            "y": 10.699999999999989,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 25
+          },
+          "x": 829.3891754230687,
+          "y": 595.09375,
+          "vx": 0,
+          "vy": -49.16666666666667,
+          "ground": false,
+          "hp": 2,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 402,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "machine": {
+        "ventOpen": true,
+        "ventPose": 1,
+        "exhaustOpen": false,
+        "exhaustPose": 0,
+        "cellInstalled": false,
+        "insertion": null,
+        "secondDraft": 0,
+        "purge": 0,
+        "shutter": 0,
+        "rescue": [
+          false,
+          false
+        ],
+        "rescuePose": [
+          0,
+          0
+        ],
+        "blocks": 0,
+        "heatClock": 0,
+        "safety": false,
+        "cart": {
+          "x": 842.2720792057393,
+          "y": 640,
+          "w": 256,
+          "v": -32.5515460817372,
+          "direction": -1,
+          "pause": 0,
+          "support": "freight-cart"
+        },
+        "inspectors": [
+          {
+            "id": 0,
+            "x": 1379,
+            "floor": 640,
+            "left": 1370,
+            "right": 1580,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.199999999999777,
+            "walk": 626,
+            "phase": "aim",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0.17499999999999416,
+            "hadTarget": true
+          },
+          {
+            "id": 1,
+            "x": 2246.875,
+            "floor": 360,
+            "left": 2060,
+            "right": 2260,
+            "direction": -1,
+            "hp": 3,
+            "age": 15.199999999999777,
+            "walk": 683.125,
+            "phase": "walk",
+            "hit": 0,
+            "deathAge": 0,
+            "combatClock": 0,
+            "hadTarget": false
+          }
+        ]
+      }
+    }
+  ],
+  "controls": "Normal keyboard controls, UI pause/zoom only; no state overrides."
+}

@@ -18,8 +18,14 @@ export function simulateFreightRoute(hz=120){
  const cell=s.items.find(i=>i.type==='pressureCell');move(1,cell.x);tick(1,{interact:true});until(1,s=>s.heroes[1].inventory.includes('pressureCell'),{},1);move(1,1580);tick(1,{interact:true});until(1,s=>s.machine.secondDraft===1,{},2);move(1,1620);
  mark('second-riser-powered');ferry(0,1440);mark('crew-receiving');
  // Second watch-step: Baleog mounts the raised shield before entering the draft.
- move(2,1600);tick(2,{overhead:true});move(1,1640);until(1,s=>s.heroes[1].y+44<=560,{up:true},2);move(1,1600);until(1,s=>s.heroes[1].support===2,{},2);
- mark('upper-draft');move(2,1660);until(2,s=>s.heroes[2].y+44<310,{},7);move(2,1900);tick(2,{action:true});until(2,s=>s.heroes[1].ground&&s.heroes[2].ground,{},3);
+ move(2,1720);tick(2,{overhead:true});move(1,1760);until(1,s=>s.heroes[1].y+44<=560,{up:true},2);move(1,1720);until(1,s=>s.heroes[1].support===2,{},2);
+ // The rising passenger crosses the horizontal furnace lane. Wait on the safe
+ // loading bay until its last travelling volley has passed the draft shaft.
+ until(2,s=>s.machine.heatClock%5.8>4.4&&s.machine.heatClock%5.8<4.8,{},6);
+ mark('upper-draft');move(2,1660);until(2,s=>s.heroes[2].y+44<310,{},7);
+ // Land on the near gallery edge before the next volley. Front shielding then
+ // protects both heroes while Baleog steps off the floating shield.
+ move(2,1775);tick(2,{right:true,action:true});until(2,s=>s.heroes[1].ground&&s.heroes[2].ground,{},3);move(2,1900);
  mark('upper-return');move(1,1840);tick(1,{sword:true});until(1,s=>s.machine.rescuePose[1]===1,{},2);
  // The return ladder also brings Erik up without asking for an impossible non-jump.
  move(0,1880);until(0,s=>s.heroes[0].y+44<=360,{up:true},6);tick(0,{right:true});move(0,1840);

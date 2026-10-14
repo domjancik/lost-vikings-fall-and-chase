@@ -66,6 +66,13 @@ Shield face must occlude its gripping palm, with unchanged physical dimensions.
 
 ## The pixel-art quality the user prefers
 
+Ember Freight is an additional explicit user-approved benchmark: dimensional robot
+sprites, palpable heat and readable danger, beautiful layered city backgrounds,
+and the reveal of sky above the buildings. Preserve this quality in new levels.
+Machinery must maintain the same material richness and native density as its
+surroundings; rough cropped pipes or wobbling housings fail the scene even when
+the larger backdrop succeeds.
+
 Use Inside the Clockwork as the material/volume benchmark for this game:
 dimensional worn iron, restrained bronze, coherent light, exposed working parts,
 and characters with weight and personality. Deliberate clusters should describe

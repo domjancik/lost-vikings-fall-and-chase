@@ -1,0 +1,1985 @@
+{
+  "errors": [],
+  "captures": [
+    {
+      "name": "desktop-shield-raise-middle-2x",
+      "pose": "shield-raise",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.09308422677303092,
+            "mode": "front",
+            "cell": 40
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 40,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-shield-raise-middle-1x",
+      "pose": "shield-raise",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.09308422677303092,
+            "mode": "front",
+            "cell": 40
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-shield-raise-end-2x",
+      "pose": "overhead",
+      "frame": 3,
+      "paused": "false",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 40,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-shield-lower-middle-2x",
+      "pose": "shield-lower",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 14.3375,
+            "y": -12.973749999999995,
+            "rx": 22.17310878027088,
+            "ry": 18.72792206135786,
+            "roll": -0.06981317007977318,
+            "mode": "front",
+            "cell": 48
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 40,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-shield-lower-middle-1x",
+      "pose": "shield-lower",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 14.3375,
+            "y": -12.973749999999995,
+            "rx": 22.17310878027088,
+            "ry": 18.72792206135786,
+            "roll": -0.06981317007977318,
+            "mode": "front",
+            "cell": 48
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-shield-lower-end-2x",
+      "pose": "idle",
+      "frame": 0,
+      "paused": "false",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 40,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-rider-standing-2x",
+      "pose": "overhead",
+      "frame": 1,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 518.5868055555572,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 505.75,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 194,
+        "y": 660,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-rider-standing-1x",
+      "pose": "overhead",
+      "frame": 1,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 518.5868055555572,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 505.75,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-rider-walking-2x",
+      "pose": "run",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 574.8368055555572,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 29
+          },
+          "x": 562,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 262,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-rider-walking-1x",
+      "pose": "run",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 574.8368055555572,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 29
+          },
+          "x": 562,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "desktop-rider-stopped",
+      "pose": "overhead",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 580.2118055555572,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 567.375,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 252,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-raise-middle-2x",
+      "pose": "shield-raise",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.09308422677303092,
+            "mode": "front",
+            "cell": 40
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-raise-middle-1x",
+      "pose": "shield-raise",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.09308422677303092,
+            "mode": "front",
+            "cell": 40
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-raise-end-2x",
+      "pose": "overhead",
+      "frame": 3,
+      "paused": "false",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-lower-middle-2x",
+      "pose": "shield-lower",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.0930842267730309,
+            "mode": "front",
+            "cell": 49
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-lower-middle-1x",
+      "pose": "shield-lower",
+      "frame": 2,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 19.11666666666667,
+            "y": -5.565555555555562,
+            "rx": 20.784609690826528,
+            "ry": 21.588457268119896,
+            "roll": -0.0930842267730309,
+            "mode": "front",
+            "cell": 49
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-shield-lower-end-2x",
+      "pose": "idle",
+      "frame": 0,
+      "paused": "false",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 356.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-rider-standing-2x",
+      "pose": "overhead",
+      "frame": 1,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 522.4201388888907,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 507,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 82,
+        "y": 678,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-rider-standing-1x",
+      "pose": "overhead",
+      "frame": 1,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 522.4201388888907,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 507,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-rider-walking-2x",
+      "pose": "run",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 578.6701388888907,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 29
+          },
+          "x": 563.25,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 154,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-rider-walking-1x",
+      "pose": "run",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 578.6701388888907,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 29
+          },
+          "x": 563.25,
+          "y": 896,
+          "vx": 150,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      }
+    },
+    {
+      "name": "mobile-rider-stopped",
+      "pose": "overhead",
+      "frame": 3,
+      "paused": "true",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 584.0451388888907,
+          "y": 816,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": 2,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 155,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 568.625,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "camera": {
+        "x": 142,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      }
+    }
+  ]
+}

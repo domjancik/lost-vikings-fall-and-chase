@@ -5,6 +5,12 @@ description: Design and validate thoughtful Lost Vikings worlds with novel physi
 
 # Worlds whose machines explain the puzzles
 
+Ember Freight is the user's explicit quality bar: palpable heat and danger,
+well-made active robots, beautiful layered city scenery, and a rewarding sky
+reveal after climbing above the buildings. Keep that atmosphere and pacing when
+introducing new mechanisms; novelty must retain clear threats, readable materials
+and earned changes of view.
+
 Start with why this place exists, what its mechanism processes, why it obstructs
 the crew and what changes when they leave. The preferred arc moves from an arcade
 pub into the machines, deeper systems/cyberspace, then a meaningful higher reality;

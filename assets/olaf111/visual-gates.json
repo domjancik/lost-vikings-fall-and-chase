@@ -1,0 +1,7 @@
+{
+ "review":"docs/history/OLAF111-REVIEW.md",
+ "sourceGate":{"verdict":"accepted","sources":["idle-raw-v2.png","raise-raw-v2.png","action-raw-v2.png"],"nativeCell":[80,80],"worldPixel":2,"reason":"Whole actor native clusters match approved chubby gait; rejected oversized/action and raised geometry sources retained separately."},
+ "runtimeGate":{"verdict":"accepted","evidence":["assets/olaf111/evidence/evidence.json","assets/olaf111/equipment-evidence/evidence.json","assets/olaf111/actions-evidence/evidence.json","assets/olaf111/early-look-evidence/evidence.json"],"reason":"Actual 1x/2x/coarse mobile idle/gait/stop/mirror/raise/lower/rider/look/float/fall/land/damage proof inspected with errors empty; physical soles and center shield plane maintained."},
+ "publicationAllowed":true,
+ "releaseConditions":["Final integrated application smoke","Final build and release checks"]
+}

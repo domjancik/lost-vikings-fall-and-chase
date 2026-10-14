@@ -1,0 +1,190 @@
+{
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "current",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "boots": true,
+        "x": 302.1180555555554,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      },
+      {
+        "id": 1,
+        "skin": "current",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "boots": false,
+        "x": 155,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 19.11666666666667,
+          "y": -5.565555555555562,
+          "rx": 20.784609690826528,
+          "ry": 21.588457268119896,
+          "roll": -0.09308422677303092,
+          "mode": "front",
+          "cell": 40
+        },
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "boots": false,
+        "x": 210,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": true,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      }
+    ],
+    "camera": {
+      "x": 128,
+      "y": 752,
+      "width": 218,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "machine": {
+      "plates": [
+        {
+          "id": 0,
+          "x": 780,
+          "y": 1024,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "ground",
+          "charge": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "id": 1,
+          "x": 2150,
+          "y": 674,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "ground",
+          "charge": 0,
+          "vx": 0,
+          "vy": 0
+        }
+      ],
+      "ropeCut": [
+        false,
+        false
+      ],
+      "ropePose": [
+        0,
+        0
+      ],
+      "ropeAperture": [
+        0,
+        0
+      ],
+      "panelOpen": false,
+      "panelPose": 0,
+      "operator": null,
+      "hook": {
+        "x": 2540,
+        "y": 380,
+        "vx": 0,
+        "vy": 0,
+        "plateId": null,
+        "offset": null
+      },
+      "hookDocked": false,
+      "exitPose": 0,
+      "ladderPose": 0,
+      "blocks": 0,
+      "safety": false,
+      "debris": [
+        {
+          "id": 0,
+          "cx": 1380,
+          "cy": 890,
+          "rx": 130,
+          "ry": 100,
+          "clock": 1.2333333333333314,
+          "phase": "active",
+          "x": 1509.9998323350783,
+          "y": 890.1606069323086,
+          "angle": 0.0016060700135519846,
+          "vx": -0.013733976556977723,
+          "vy": 8.415026958728049
+        },
+        {
+          "id": 1,
+          "cx": 2690,
+          "cy": 620,
+          "rx": 110,
+          "ry": 85,
+          "clock": 3.233333333333329,
+          "phase": "active",
+          "x": 2599.6779208778776,
+          "y": 571.484528652722,
+          "angle": 3.7490362643676205,
+          "vx": 159.1966794106338,
+          "vy": -181.0861647571801
+        }
+      ]
+    }
+  },
+  "coarse": true,
+  "errors": []
+}

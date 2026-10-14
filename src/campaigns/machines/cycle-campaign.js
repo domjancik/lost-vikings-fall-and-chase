@@ -1,5 +1,6 @@
+import {orbitLevel,setupOrbit,orbitStep,orbitObjects,orbitSurfaces} from "../../levels/orbit/campaign.js?v=orbit113";
 import {loomLevel,setupLoom,loomStep,loomObjects,loomSurfaces} from '../../levels/loom/campaign.js?v=loom96';
-import {freightLevel,setupFreight,freightStep,freightObjects,freightSurfaces} from '../../levels/freight/campaign.js?v=freight109';
+import {freightLevel,setupFreight,freightStep,freightObjects,freightSurfaces} from '../../levels/freight/campaign.js?v=orbit113';
 import {wardenLevel,setupWarden,wardenStep,wardenObjects,wardenSurfaces} from '../../levels/warden/campaign.js?v=warden89';
 import {clockworkLevel,setupClockwork,clockworkStep,clockObjects,clockSurfaces} from '../../levels/clockwork/campaign.js?v=clockwork71';
 import {waterLevel,setupWater,waterStep,waterObjects,waterSurfaces} from '../../levels/water/campaign.js?v=water108';
@@ -18,8 +19,9 @@ export const cycleLevels=[{
  floors:[floor(0,940,850),floor(1280,940,160),floor(1700,940,350),floor(2210,940,590),floor(0,1120,2800)],
  platforms:[floor(500,500,350),floor(1000,390,180),floor(1460,260,220),floor(2210,260,590)],
  ladders:[{x:650,top:500,bottom:1120}],exit:{x:2600,y:260,w:170}
-},refractionLevel,momentumLevel,clockworkLevel,waterLevel,wardenLevel,loomLevel,freightLevel];
+},refractionLevel,momentumLevel,clockworkLevel,waterLevel,wardenLevel,loomLevel,freightLevel,orbitLevel];
 export function setupCycle(s){
+ if(s.round===8){setupOrbit(s);return;}
  if(s.round===7){setupFreight(s);return;}
  if(s.round===6){setupLoom(s);return;}
  if(s.round===5){setupWarden(s);return;}
@@ -32,8 +34,8 @@ export function setupCycle(s){
  s.machine={released:false,cutAt:-1,brake:false,brakePose:0,damper:0,damperReleased:false,selector:false,selectorPose:0,
   carrier:{x:850,y:940,w:160,segment:0,high:500,v:0,pause:1.5,laps:0,support:'cycle-carrier'},highArrival:false};
 }
-export function cycleSurfaces(s){if(s.level.mechanic==='freight')return freightSurfaces(s);if(s.level.mechanic==='loom')return loomSurfaces(s);if(s.level.mechanic==='warden')return wardenSurfaces(s);if(s.level.mechanic==='water')return waterSurfaces(s);if(s.level.mechanic==='clockwork')return clockSurfaces(s);if(s.level.mechanic==='momentum')return momentumSurfaces(s);return [s.machine.carrier,...s.level.floors,...s.level.platforms];}
-export function cycleObjects(s){if(s.level.mechanic==='freight')return freightObjects(s);if(s.level.mechanic==='loom')return loomObjects(s);if(s.level.mechanic==='warden')return wardenObjects(s);if(s.level.mechanic==='water')return waterObjects(s);if(s.level.mechanic==='clockwork')return clockObjects(s);if(s.level.mechanic==='momentum')return momentumObjects(s);if(s.level.mechanic==='refraction')return refractionObjects(s);return [
+export function cycleSurfaces(s){if(s.level.mechanic==="orbit")return orbitSurfaces(s);if(s.level.mechanic==='freight')return freightSurfaces(s);if(s.level.mechanic==='loom')return loomSurfaces(s);if(s.level.mechanic==='warden')return wardenSurfaces(s);if(s.level.mechanic==='water')return waterSurfaces(s);if(s.level.mechanic==='clockwork')return clockSurfaces(s);if(s.level.mechanic==='momentum')return momentumSurfaces(s);return [s.machine.carrier,...s.level.floors,...s.level.platforms];}
+export function cycleObjects(s){if(s.level.mechanic==="orbit")return orbitObjects(s);if(s.level.mechanic==='freight')return freightObjects(s);if(s.level.mechanic==='loom')return loomObjects(s);if(s.level.mechanic==='warden')return wardenObjects(s);if(s.level.mechanic==='water')return waterObjects(s);if(s.level.mechanic==='clockwork')return clockObjects(s);if(s.level.mechanic==='momentum')return momentumObjects(s);if(s.level.mechanic==='refraction')return refractionObjects(s);return [
  {id:'wind-brake',x:1070,y:346,radius:65,title:'WIND BRAKE',ready:true,done:s.machine.brake,run:()=>{s.machine.brake=true;return 'Brake pin withdrawn.';}},
  {id:'routing',x:1600,y:216,radius:65,title:'RAIL SELECTOR',ready:true,done:s.machine.selector,run:()=>{s.machine.selector=!s.machine.selector;return 'Route queued for the bottom dock.';}}
 ];}
@@ -53,6 +55,7 @@ export function advanceCycleCarrier(s,dt){
  }
 }
 export function cycleStep(s,input,dt){
+ if(s.level.mechanic==="orbit"){orbitStep(s,input,dt);return;}
  if(s.level.mechanic==='freight'){freightStep(s,input,dt);return;}
  if(s.level.mechanic==='loom'){loomStep(s,input,dt);return;}
  if(s.level.mechanic==='warden'){wardenStep(s,input,dt);return;}

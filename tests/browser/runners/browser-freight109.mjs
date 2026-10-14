@@ -21,8 +21,9 @@ try{
  await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=freight109');
  await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.locator('#start-picker [data-campaign-option="cycle"]').click();
- await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===8&&c.every(i=>i.dataset.ready==='true');});
- assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,8);
+ await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length>=8&&c.every(i=>i.dataset.ready==='true');});
+ const pictures=await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()));
+ assert.equal(new Set(pictures).size,pictures.length);
  await page.locator('#start-picker .level-card[data-round="7"]').click();
  await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='7'&&JSON.parse(document.querySelector('#game').dataset.cycleArt).ready);
  await page.locator('#restart').click();await page.waitForFunction(()=>+document.querySelector('#game').dataset.simTime<.2);

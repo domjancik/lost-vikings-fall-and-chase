@@ -479,6 +479,58 @@
     {
       "source": "src/levels/freight/audio.js",
       "output": "freight-audio.js"
+    },
+    {
+      "source": "src/levels/freight/hardware-layout.js",
+      "output": "freight-hardware-layout.js"
+    },
+    {
+      "source": "src/levels/freight/hardware-render.js",
+      "output": "freight-hardware-render.js"
+    },
+    {
+      "source": "src/levels/freight/rotor.js",
+      "output": "freight-rotor.js"
+    },
+    {
+      "source": "src/levels/freight/wind-refraction.js",
+      "output": "freight-wind-refraction.js"
+    },
+    {
+      "source": "src/heroes/magnetic-render.js",
+      "output": "magnetic-render.js"
+    },
+    {
+      "source": "src/levels/orbit/campaign.js",
+      "output": "orbit-campaign.js"
+    },
+    {
+      "source": "src/levels/orbit/magnetic.js",
+      "output": "orbit-magnetic.js"
+    },
+    {
+      "source": "src/levels/orbit/render.js",
+      "output": "orbit-render.js"
+    },
+    {
+      "source": "src/levels/orbit/raster.js",
+      "output": "orbit-raster.js"
+    },
+    {
+      "source": "src/levels/orbit/view.js",
+      "output": "orbit-view.js"
+    },
+    {
+      "source": "src/levels/orbit/audio.js",
+      "output": "orbit-audio.js"
+    },
+    {
+      "source": "src/levels/orbit/art-layout.js",
+      "output": "orbit-art-layout.js"
+    },
+    {
+      "source": "src/levels/orbit/hero-indicator.js",
+      "output": "orbit-hero-indicator.js"
     }
   ],
   "files": [
@@ -771,6 +823,19 @@
     "assets/freight109/far-native.png",
     "assets/freight109/middle-native.png",
     "assets/freight109/cell-native.png",
-    "assets/freight109/visual-gates.json"
+    "assets/freight109/visual-gates.json",
+    "assets/olaf111/olaf-native.png",
+    "assets/olaf111/visual-gates.json",
+    "assets/freight112/fan-housing-native.png",
+    "assets/freight112/fan-rotor-native.png",
+    "assets/freight112/burner-body-native.png",
+    "assets/freight112/burner-mouth-native.png",
+    "assets/freight112/visual-gates.json",
+    "assets/orbit113/far-native.png",
+    "assets/orbit113/middle-native.png",
+    "assets/orbit113/plate-native.png",
+    "assets/orbit113/parts-native.png",
+    "assets/orbit113/gear-native.png",
+    "assets/orbit113/visual-gates.json"
   ]
 }

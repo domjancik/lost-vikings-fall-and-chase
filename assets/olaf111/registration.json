@@ -1,0 +1,1407 @@
+{
+  "nativeCell": [
+    80,
+    80
+  ],
+  "worldPixelSize": 2,
+  "actorHeightNative": 36,
+  "origin": [
+    40,
+    48
+  ],
+  "groundSoleExclusive": 70,
+  "unchangedAtlas": "assets/vikings90/olaf-native.png",
+  "records": [
+    {
+      "cell": 8,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 0,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        63,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        33,
+        63,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.0,
+        40.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 9,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 1,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        2,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        63,
+        70
+      ],
+      "registeredBounds": [
+        30,
+        33,
+        65,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.0,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 10,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 2,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        1,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        63,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        33,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 11,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 3,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        1,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        63,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        33,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 34,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 4,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        29.5
+      ],
+      "discBounds": [
+        28,
+        24,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 35,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 5,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        29.5
+      ],
+      "discBounds": [
+        29,
+        24,
+        52,
+        35
+      ]
+    },
+    {
+      "cell": 36,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 6,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        29.5
+      ],
+      "discBounds": [
+        28,
+        24,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 37,
+      "source": "idle-raw-v2.png",
+      "sourceCell": 7,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        70
+      ],
+      "registeredBounds": [
+        27,
+        24,
+        53,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.0,
+        29.5
+      ],
+      "discBounds": [
+        29,
+        24,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 38,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 0,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        27,
+        34,
+        63,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.5,
+        41.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 45,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 0,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        27,
+        34,
+        63,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.5,
+        41.0
+      ],
+      "discBounds": null,
+      "reverseOf": 38
+    },
+    {
+      "cell": 39,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 1,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.0,
+        41.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 46,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 1,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        34,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.0,
+        41.0
+      ],
+      "discBounds": null,
+      "reverseOf": 39
+    },
+    {
+      "cell": 40,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 2,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        61,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        34,
+        59,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        41.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 47,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 2,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        34,
+        61,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        34,
+        59,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        41.5
+      ],
+      "discBounds": null,
+      "reverseOf": 40
+    },
+    {
+      "cell": 41,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 3,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        59,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        33,
+        57,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        42.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 48,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 3,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        33,
+        59,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        33,
+        57,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        42.0
+      ],
+      "discBounds": null,
+      "reverseOf": 41
+    },
+    {
+      "cell": 42,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 4,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -4,
+        0
+      ],
+      "sourceBounds": [
+        30,
+        30,
+        57,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        30,
+        53,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        45.0,
+        39.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 49,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 4,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -4,
+        0
+      ],
+      "sourceBounds": [
+        30,
+        30,
+        57,
+        70
+      ],
+      "registeredBounds": [
+        26,
+        30,
+        53,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        45.0,
+        39.5
+      ],
+      "discBounds": null,
+      "reverseOf": 42
+    },
+    {
+      "cell": 43,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 5,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        30,
+        29,
+        56,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        29,
+        54,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        39.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 50,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 5,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        -2,
+        0
+      ],
+      "sourceBounds": [
+        30,
+        29,
+        56,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        29,
+        54,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        44.0,
+        39.0
+      ],
+      "discBounds": null,
+      "reverseOf": 43
+    },
+    {
+      "cell": 44,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 6,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        26,
+        55,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        26,
+        55,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        30.5
+      ],
+      "discBounds": [
+        28,
+        26,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 51,
+      "source": "raise-raw-v2.png",
+      "sourceCell": 6,
+      "sourceSize": [
+        1774,
+        887
+      ],
+      "atlasNativeSize": [
+        320,
+        160
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        26,
+        55,
+        70
+      ],
+      "registeredBounds": [
+        28,
+        26,
+        55,
+        70
+      ],
+      "grounded": true,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        30.5
+      ],
+      "discBounds": [
+        28,
+        26,
+        53,
+        35
+      ],
+      "reverseOf": 44
+    },
+    {
+      "cell": 12,
+      "source": "action-raw-v2.png",
+      "sourceCell": 0,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 13,
+      "source": "action-raw-v2.png",
+      "sourceCell": 1,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 18,
+      "source": "action-raw-v2.png",
+      "sourceCell": 2,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        2
+      ],
+      "sourceBounds": [
+        29,
+        32,
+        64,
+        67
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        69
+      ],
+      "grounded": false,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.0,
+        39.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 19,
+      "source": "action-raw-v2.png",
+      "sourceCell": 3,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        33,
+        64,
+        69
+      ],
+      "registeredBounds": [
+        29,
+        33,
+        64,
+        69
+      ],
+      "grounded": false,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        40.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 20,
+      "source": "action-raw-v2.png",
+      "sourceCell": 4,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        1
+      ],
+      "sourceBounds": [
+        29,
+        33,
+        64,
+        69
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "grounded": false,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        39.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 21,
+      "source": "action-raw-v2.png",
+      "sourceCell": 5,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "grounded": false,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.0,
+        41.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 22,
+      "source": "action-raw-v2.png",
+      "sourceCell": 6,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        35,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        35,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        41.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 23,
+      "source": "action-raw-v2.png",
+      "sourceCell": 7,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        65,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        65,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        42.0,
+        41.0
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 24,
+      "source": "action-raw-v2.png",
+      "sourceCell": 8,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "grounded": true,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        40.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 25,
+      "source": "action-raw-v2.png",
+      "sourceCell": 9,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        1
+      ],
+      "sourceBounds": [
+        29,
+        34,
+        64,
+        70
+      ],
+      "registeredBounds": [
+        29,
+        35,
+        64,
+        71
+      ],
+      "grounded": false,
+      "raised": false,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.5,
+        39.5
+      ],
+      "discBounds": null
+    },
+    {
+      "cell": 56,
+      "source": "action-raw-v2.png",
+      "sourceCell": 10,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        26,
+        54,
+        68
+      ],
+      "registeredBounds": [
+        28,
+        26,
+        53,
+        68
+      ],
+      "grounded": false,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.0,
+        30.5
+      ],
+      "discBounds": [
+        29,
+        26,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 57,
+      "source": "action-raw-v2.png",
+      "sourceCell": 11,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        -1,
+        0
+      ],
+      "sourceBounds": [
+        29,
+        26,
+        55,
+        68
+      ],
+      "registeredBounds": [
+        28,
+        26,
+        54,
+        68
+      ],
+      "grounded": false,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        41.0,
+        30.5
+      ],
+      "discBounds": [
+        29,
+        26,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 58,
+      "source": "action-raw-v2.png",
+      "sourceCell": 12,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        68
+      ],
+      "registeredBounds": [
+        28,
+        24,
+        54,
+        68
+      ],
+      "grounded": false,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        29.5
+      ],
+      "discBounds": [
+        28,
+        24,
+        53,
+        35
+      ]
+    },
+    {
+      "cell": 59,
+      "source": "action-raw-v2.png",
+      "sourceCell": 13,
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "atlasNativeSize": [
+        320,
+        320
+      ],
+      "translation": [
+        0,
+        0
+      ],
+      "sourceBounds": [
+        28,
+        24,
+        54,
+        68
+      ],
+      "registeredBounds": [
+        28,
+        24,
+        54,
+        68
+      ],
+      "grounded": false,
+      "raised": true,
+      "registration": "wholeactor integer translation; anatomical sole and helmet/disc",
+      "sourceAnchor": [
+        40.5,
+        29.5
+      ],
+      "discBounds": [
+        28,
+        24,
+        53,
+        35
+      ]
+    }
+  ],
+  "sourceGate": "accepted",
+  "runtimeGate": "pending"
+}

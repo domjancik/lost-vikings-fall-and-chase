@@ -1,0 +1,28 @@
+import {createState,step} from '../../src/core/engine.js';
+import {orbitRope} from '../../src/levels/orbit/campaign.js';
+export function simulateOrbitRoute(hz=120,options={}){
+ const s=createState(8,'cycle'),commands=[],milestones=[];let stage='start';
+ function tick(id,input={}){s.active=id;step(s,input,1/hz);commands.push({id,...input});if(s.failed)throw Error('Crew lost '+stage+' '+s.time+' '+JSON.stringify(s.heroes));}
+ function until(id,predicate,input={},seconds=25){const end=s.time+seconds;while(!predicate(s)){if(s.won)return;if(s.time>end)throw Error('Timeout '+stage+' '+JSON.stringify({heroes:s.heroes,plates:s.machine.plates,hook:s.machine.hook,operator:s.machine.operator,time:s.time}));tick(id,typeof input==='function'?input(s):input);}}
+ function move(id,x){until(id,s=>Math.abs(s.heroes[id].x-x)<3&&Math.abs(s.heroes[id].vx)<16,()=>{const h=s.heroes[id],error=x-h.x,stop=h.vx*h.vx/(2*(h.ground?[2600,2300,2100][id]:1875));return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};});}
+ function railMove(id,u){until(id,s=>{const h=s.heroes[id];return h.magnet&&Math.abs(h.magnet.u-u)<3&&Math.abs(h.magV)<16;},()=>{const h=s.heroes[id],error=u-(h.magnet?.u??0),v=h.magV||0,stop=v*v/(2*[2600,2300,2100][id]);return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};},15);}
+ function hookMove(x,y){until(0,s=>s.machine.hookDocked||Math.abs(s.machine.hook.x-x)<3&&Math.abs(s.machine.hook.y-y)<3&&Math.abs(s.machine.hook.vx)<12&&Math.abs(s.machine.hook.vy)<12,()=>{const h=s.machine.hook,input={};for(const [position,v,negative,positive,target]of [['x','vx','left','right',x],['y','vy','up','down',y]]){const error=target-h[position],stop=h[v]*h[v]/1000;if(Math.abs(error)>stop+1)input[error>0?positive:negative]=true;}return input;},8);}
+ function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes.map(h=>({x:h.x,y:h.y,hp:h.hp,magnet:h.magnet?{...h.magnet}:null})),machine:JSON.parse(JSON.stringify(s.machine))});if(globalThis.process?.env.ORBIT_TRACE)console.log(name,s.time,s.heroes.map(h=>[Math.round(h.x),Math.round(h.y+44),h.magnet?.u]),s.machine.plates.map(p=>[p.phase,Math.round(p.x),Math.round(p.y),p.angle.toFixed(2)]));}
+ mark('equip-service-shoes');for(const id of [0,1,2]){move(id,120+id*55);tick(id,{interact:true});until(id,s=>s.heroes[id].inventory.includes('magneticShoes'),{},1);}
+ for(const id of [0,1]){tick(id,{item:true});move(id,700+id*100);until(id,s=>!!s.heroes[id].magnet,{},1);railMove(id,100+id*130);}
+ mark('push-first-frame');move(2,600);until(2,s=>s.machine.plates[0].phase!=='ground',{right:true},5);tick(2,{item:true});until(2,s=>!!s.heroes[2].magnet,{right:true},2);railMove(2,140);
+ mark('teach-ceiling-walk');railMove(0,420);railMove(0,100);
+ mark('rotating-bow-restraint');railMove(1,240);until(1,s=>s.machine.ropeCut[0],()=>s.cooldown===0&&orbitRope(s,0).open?{action:true}:{},40);until(1,s=>s.machine.plates[0].phase==='parked',{},25);
+ mark('receiving-dock');for(const id of [0,1,2]){railMove(id,245);tick(id,{item:true});move(id,1800+id*80);}
+ mark('crane-cover');move(0,1630);until(0,s=>s.heroes[0].x>1660,{right:true},2);tick(0,{right:true,action:true});until(0,s=>s.machine.panelOpen,{right:true},1);move(0,1730);
+ for(const id of [1]){move(id,2100);tick(id,{item:true});until(id,s=>!!s.heroes[id].magnet,{},1);railMove(id,240);}
+ mark('push-second-frame');const pushPhase=options.danger?(options.dangerPhase??.75):.2;until(2,s=>s.machine.debris[1].clock%7.8>pushPhase&&s.machine.debris[1].clock%7.8<pushPhase+.05,{},9);move(2,1970);until(2,s=>s.machine.plates[1].phase!=='ground',{right:true},5);tick(2,{item:true});until(2,s=>!!s.heroes[2].magnet,{right:true},2);railMove(2,100);until(0,s=>s.machine.plates[1].phase==='float',{},7);
+ if(options.danger){mark('danger-proven');return{damaged:s.heroes.some(h=>h.hp<3),hp:s.heroes.map(h=>h.hp),time:s.time,milestones};}
+ mark('crane-hook');tick(0,{interact:true});hookMove(2540,420);tick(0,{action:true});until(0,s=>s.machine.hook.plateId===1,{},1);
+ hookMove(2720,324-s.machine.hook.offset.y);hookMove(2900-s.machine.hook.offset.x,324-s.machine.hook.offset.y);until(0,s=>s.machine.hookDocked,{},2);tick(0,{interact:true});until(0,s=>s.machine.plates[1].phase==='parked',{},2);
+ mark('departure-bow-restraint');railMove(1,240);until(1,s=>s.machine.ropeCut[1],()=>s.cooldown===0&&orbitRope(s,1).open?{action:true}:{},12);until(1,s=>s.machine.ladderPose===1,{},2);
+ mark('crew-reunion');for(const id of [1,2]){railMove(id,245);tick(id,{item:true});move(id,3400+id*20);}
+ move(0,2980);until(0,s=>s.heroes[0].y+44<=300,{up:true},8);tick(0,{right:true});move(0,3440);until(0,s=>s.won,{},2);mark('won');
+ const compact=[];for(const c of commands){const key=JSON.stringify(c),last=compact.at(-1);if(last?.key===key)last.frames++;else compact.push({key,frames:1});}
+ return{won:s.won,hp:s.heroes.map(h=>h.hp),time:s.time,milestones,commands:compact.map(c=>({...JSON.parse(c.key),frames:c.frames}))};
+}

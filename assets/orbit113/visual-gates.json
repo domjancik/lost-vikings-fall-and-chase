@@ -1,0 +1,8 @@
+{
+  "review": "docs/history/ORBIT113-REVIEW.md",
+  "sourceGate": {"verdict":"accepted","reason":"Independent native-density review accepted farV1/middleV1/plateV3/partsV2/gearV2. Rejected painterly sources retained and excluded."},
+  "runtimeGate": {"verdict":"accepted","reason":"Independent actual1x/2x/coarse-mobile review accepted final opaque gear depth, continuous magnetic sole/ellipse/ceiling contacts, authored states and intermediate jaws, oriented markers, grounded supports, camera restoration and hazard/reset proof.","evidence":"assets/orbit113/evidence"},
+  "cooperationGate": {"verdict":"accepted","reason":"Full ordinary desktop and coarse-mobile routes won allHP3/errors empty; safe commissioning evolves into rotated shooting, cracked cover, remote crane ferrying and exposed final restraint/reunion with actual damage and retry."},
+  "publicationAllowed": true,
+  "releaseConditions": ["Final package/build/release checks"]
+}

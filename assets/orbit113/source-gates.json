@@ -1,0 +1,10 @@
+{
+ "review":"docs/history/ORBIT113-REVIEW.md",
+ "verdict":"accepted-selected-sources",
+ "acceptedSources":["far-raw-v1.png","middle-raw-v1.png","plate-raw-v3.png","parts-raw-v2.png","gear-raw-v2.png"],
+ "rejectedSources":["parts-raw-v1.png","plate-raw-v1.png","plate-raw-v2.png","gear-raw-v1.png"],
+ "worldPixel":2,
+ "normalization":"One uniform presentation normalization from retained accepted source only; ordinary exterior alpha cleanup permitted, no per-cell stretch, grid rescue or material repaint.",
+ "runtimeGate":"pending",
+ "publicationAllowed":false
+}

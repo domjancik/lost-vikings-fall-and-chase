@@ -1,0 +1,27 @@
+# Scrap Orbit implementation contract
+
+The furnace's discarded iron enters a suspended scrap sorter. Human service galleries, bolted rail cradles and exposed machinery explain its enormous scale. The camera/world remain upright; only actual carriers and magnetized bodies rotate.
+
+## Geometry and authoritative contacts
+
+World width3560, top80, bottom1240; recovery floor1180 and deathY1320. Depot floor1000 x0..980; receiving gallery650 x1690..2440; departure gallery300 x2860..3560. Permanent recovery ladders at x260 (depot) and x1780 (receiving) preserve retries. The final ladder at x2980 extends continuously after the departure restraint is cut.
+
+Approved carrier source V3 has a192x96native canvas, pivot96,48 and opaque body10,36..182,60. Its unscaled2world/native body is344x48world. Flat walking rail18..174native gives312world units; rounded ends are ellipses rx16/ry24world. A cached128-segment Simpson-integrated arc table maps continuous perimeter distance to ellipse angle; geometry is not stretched to a circle. Plate1 begins center780,1024 and Olaf pushes it into capture center1120. Coil charging takes2seconds, then a smooth120-world-unit/second lift moves it to center1120,674. It turns at pi/8rad/s. Its exposed rope clevis is at1360,626, periodically visible when the rotational shutter's opening passes upright. Cutting the actual rope arrests rotation continuously, then the plate moves to center1610,674 and parks. Its top650 overlaps the receiving gallery.
+
+Plate2 begins center2150,674 and Olaf pushes it to2540,674. Charging then lifts it to2540,444 with a small slow angle oscillation. The hook operator stands at the service panel1730,650 after Erik bashes its visibly cracked ceramic cover. Hook arrows command actual x/y velocities; ACTION clamps within12world units of the carrier's rotated top mounting eye, ALT releases, USE leaves the panel. The rope length/attachment offset is retained at clamp, with no carrier snap. Deliver the plate to center2900,324; its top300 overlaps the departure gallery. A rope clevis at3180,248 is exposed for1.5seconds of each5.4second cycle. Its reviewed opaque frame base is52world below that center, meeting floor300 rather than protruding beneath it; the normal bow ray276 lies within the actual rope span212..284. Cutting it releases the final ladder and exit shutter smoothly. All three exit at3440,300.
+
+## Magnetic equipment and movement
+
+Three physical, transferable magnetic-shoe pairs are in the depot rack. Item use toggles wearing the held pair; losing/transferring/dropping the inventory item removes adhesion. Any Viking can wear them. A booted sole attaches only within6world units of the actual continuous carrier perimeter. The curve's arc length defines contact and tangent. Local left/right accelerate along the rail; opposite corners and ceilings rotate the body continuously around the same sole. Ordinary falling resumes after detachment, while the body rotates back upright continuously. No proximity gravity or surface-height assignments. Erik's jump detaches along the outward normal with inherited carrier motion.
+
+Runtime contract: carrier{id,x,y,angle,w,h,capRx,phase}; hero.magnet={plateId,u,attaching}; hero.rotation radians; hero.magnetSole{x,y}; hero.magnetNormal{x,y}. Hero x/y retain the engine's center-x/top-y convention, but magnetic bodies are placed from sole minus outward body normal. Bow muzzle/direction and shield/body hit regions use this same basis. Renderer must rotate at the actual sole, not sprite cell center. Carrier art's physical rail must match the344x48 elliptical-ended perimeter; no mismatched bounding-box scaling.
+
+## Pacing, cooperation and recovery
+
+Safe depot commissioning teaches pushing, pickup/equipment and ceiling walking before damage. Olaf's mass moves the same roller frame; no role-colored switches. Baleog's arrows cut ordinary exposed rope; his sword cuts that same material when its actual rotated blade segment can reach it. Rotating covers are real blockers for both weapons and misses permit another cycle. Erik's established running bash opens a cracked service cover, exposing the crane controls. Other heroes wait on protected galleries while the hook camera is active. Permanent receiving recovery means the crane operator can reunite with passengers even after a missed mount.
+
+Floating scrap follows bounded visibly rotating orbits in two service gaps, warning amber before its dangerous sweep and resting clear of parking recesses. It deals actual damage on body contact and a front shield can intercept its approach. The second carrier lift crosses its orbit: watch the warning/recovery rhythm and commission the push so its charge completes during the quiet interval. Recovery floors avoid fatal falls but do not silently disable hazards. Crane camera restoration must occur on USE/release of operation, leaving the panel, switching active hero, operator damage/death, reset or completion.
+
+## Required validation
+
+Normal-input healthy route at60/120Hz; magnetic tangent/sole continuity across all corners; inactive riders carried continuously; local-angle arrows hit exposed rope and are blocked by closed shutter; boots transfer/removal; hook clamp/move/release continuity; camera transition evidence; debris damage and retry; all-three exit. Source and runtime art gates are independent, and actual1x/2x/mobile contact/state captures remain mandatory before publication.

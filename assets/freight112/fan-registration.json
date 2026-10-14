@@ -1,0 +1,29 @@
+{
+  "source": "assets/freight112/fan-raw-v2.png",
+  "sourceSize": [
+    1774,
+    887
+  ],
+  "worldPixel": 2,
+  "fan": {
+    "nativeCell": [
+      64,
+      64
+    ],
+    "baseExclusive": 60,
+    "seat": [
+      32,
+      31
+    ],
+    "rotorHubSource": [
+      32,
+      31
+    ],
+    "registrationTranslation": [
+      0,
+      0
+    ],
+    "apertureRadius": 19
+  },
+  "sourceGate": "ACCEPT by freight109_review for fanV2 2026-10-15"
+}

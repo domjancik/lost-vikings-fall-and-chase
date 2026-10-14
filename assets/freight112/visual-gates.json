@@ -1,0 +1,7 @@
+{
+  "review": "docs/history/FREIGHT112-REVIEW.md",
+  "sourceGate": {"verdict":"accepted","sources":["fan-raw-v2.png","burner-raw-v4.png"],"worldPixel":2,"reason":"Deliberate matching native clusters; rejected high-resolution V1 sources retained but not processed."},
+  "runtimeGate": {"verdict":"accepted","evidence":"assets/freight112/evidence/route.json","reason":"Actual 1x/2x/mobile fan/passenger/support and burner warning/fire/quench contacts inspected; ordinary complete route won all three at HP3 with zero page errors.","scope":"Exact production Freight graph and final assets; root integrated application smoke still required."},
+  "publicationAllowed":true,
+  "releaseConditions":["Root integrated application smoke after Orbit dependency closure","Final build and release checks"]
+}

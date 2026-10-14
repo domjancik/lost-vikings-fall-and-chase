@@ -3,16 +3,16 @@ import {segmentHit,shieldHit} from '../../core/projectile-collision.js?v=freight
 import {damage} from '../../core/health.js?v=freight109';
 import {ladderAtHero} from '../../core/ladder-context.js?v=freight109';
 import {startBash,bashImpact} from '../../core/bash.js?v=freight109';
-import {pickupItem,useItem,message} from '../../core/inventory.js?v=freight109';
+import {pickupItem,useItem,message} from '../../core/inventory.js?v=orbit113';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const floor=(x,y,w)=>({x,y,w});
 export const freightLevel={name:'THE EMBER FREIGHT',subtitle:'Carry the pressure. Quiet the furnace.',
  story:['The weather loom sends rejected storms to a furnace freight depot. Its inspectors still defend the delivery route.','A service cell can wake the second riser. Above it, a cracked exhaust has sealed the furnace shut.'],
  hint:'Running bashes clear cracked refractory masonry. The watchtower reaches Olaf’s shield. Cut tied return ladders from the galleries. Protect the freight trolley; fit the inspector’s cell into its receiver. Reach the high exhaust ledge from Olaf and clear its blockage.',
  mechanic:'freight',worldWidth:3240,worldTop:80,worldBottom:1140,deathY:1180,
- floors:[floor(0,1080,3240),floor(0,940,550),floor(550,640,490),floor(1340,640,320),floor(1740,360,1500)],
- platforms:[floor(300,860,126),floor(620,840,100),floor(760,740,104),floor(1640,560,100),floor(1800,460,100),floor(2060,200,320)],
- ladders:[{x:340,top:860,bottom:1080},{x:1640,top:560,bottom:640}],exit:{x:3120,y:360,w:160}};
+ floors:[floor(0,1080,3240),floor(0,940,550),floor(550,640,490),floor(1340,640,460),floor(1740,360,1500)],
+ platforms:[floor(300,860,126),floor(620,840,100),floor(760,740,104),floor(1740,560,100),floor(1800,460,100),floor(2060,200,320)],
+ ladders:[{x:340,top:860,bottom:1080},{x:1760,top:560,bottom:640}],exit:{x:3120,y:360,w:160}};
 export function setupFreight(s){
  s.campaign='cycle';s.round=7;s.level=freightLevel;s.crate=false;s.turret=false;s.items=[];s.shots=[];
  for(const h of s.heroes)Object.assign(h,{x:100+h.id*55,y:896,vx:0,vy:0,ground:true,support:null});

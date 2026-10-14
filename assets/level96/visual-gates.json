@@ -1,0 +1,109 @@
+{
+  "level": 96,
+  "reviewer": "independent critique subagent",
+  "publicationAllowed": true,
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Current selected source set independently inspected; middle v3 replaces rejected v1/v2 with deliberate native clusters and true alpha0 openings. Original-component parts isolation fixes spill without per-object stretching. Runtime gate still pending.",
+    "dimensions": [
+      "parts480x288 native, 15 cells96x96",
+      "terrain96x96 native",
+      "far960x640 native",
+      "middle384x256 native",
+      "one native pixel equals two world units",
+      "bobbin20x20 native canvas,12x12 opaque body,24x24world",
+      "cloth48x80 native canvas,36x72 occupied,72x144world"
+    ],
+    "sources": [
+      "assets/level96/parts-raw-v1.png",
+      "assets/level96/terrain-raw-v1.png",
+      "assets/level96/far-raw-v2.png",
+      "assets/level96/middle-raw-v3.png",
+      "assets/level96/bobbin-raw-v2.png",
+      "assets/level96/cloth-raw-v2.png"
+    ],
+    "evidence": [
+      "assets/level96/parts-native-proof-v1.png",
+      "assets/level96/parts-proof-2x-v1.png",
+      "assets/level96/terrain-native-proof-v1.png",
+      "assets/level96/terrain-proof-2x-v1.png",
+      "assets/level96/far-native-proof-v1.png",
+      "assets/level96/far-proof-2x-v1.png",
+      "assets/level96/middle-native-proof-v1.png",
+      "assets/level96/middle-proof-2x-v1.png",
+      "assets/level96/far-raw-v2.png",
+      "assets/level96/far-native-proof-v2.png",
+      "assets/level96/middle-raw-v3.png",
+      "assets/level96/middle-native.png",
+      "assets/level96/middle-native-2x.png",
+      "assets/level96/parts-native-3x.png",
+      "assets/level96/parts-registration.json"
+    ]
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Final actual1x/2x/mobile evidence resolves supports, drive transmissions, hand bobbin, cloth sky pattern and portrait object framing. Final retained shutter, reunion and reset inspected",
+    "evidence": [
+      "assets/level96/parts-native-3x.png",
+      "assets/level96/parts-registration.json",
+      "assets/level96/middle-native.png",
+      "assets/level96/middle-native-2x.png",
+      "assets/level96/far-native-proof-v2.png",
+      "output/playwright/loom96-lift-high-1x.png",
+      "output/playwright/loom96-shield-step-2x.png",
+      "output/playwright/loom96-first-thread-seated-1x.png",
+      "output/playwright/loom96-safe-clutch-dock-2x.png",
+      "output/playwright/loom96-second-thread-seated-2x.png",
+      "output/playwright/loom96-sky-repaired-1x.png",
+      "output/playwright/loom96-cam-rest-1x.png",
+      "output/playwright/loom96-cam-descending-2x.png",
+      "output/playwright/loom96-cam-impact-1x.png",
+      "output/playwright/loom96-cam-recovery-landscape.png",
+      "output/playwright/loom96-retained-shutter-1x.png",
+      "output/playwright/loom96-retained-shutter-2x.png",
+      "output/playwright/loom96-retained-shutter-portrait.png",
+      "output/playwright/loom96-all-crew-reunion-1x.png",
+      "output/playwright/loom96-reset-portrait.png",
+      "assets/level96/evidence/loom96-cam-rest-portrait.png",
+      "assets/level96/evidence/loom96-cam-descending-portrait.png",
+      "assets/level96/evidence/loom96-cam-impact-portrait.png",
+      "assets/level96/evidence/loom96-cam-recovery-portrait.png",
+      "assets/level96/evidence/loom96-open-shutter-inspection-portrait.png",
+      "assets/level96/evidence/loom96-sky-repaired-1x.png",
+      "assets/level96/evidence/loom96-retained-shutter-2x.png",
+      "assets/level96/evidence/loom96-all-crew-reunion-1x.png",
+      "assets/level96/evidence/loom96-reset-1x.png"
+    ]
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Final ordinary production route111.1583seconds wontrue HP3/3/3 errorsnone; independent9focusedtests pass; concurrent meaningful hero roles and visible causal progression/reunion accepted",
+    "evidence": [
+      "output/loom96/route.json",
+      "loom-campaign96.js",
+      "loom-render96.js",
+      "assets/level96/evidence/route.json",
+      "loom96.test.js"
+    ]
+  },
+  "reviewLog": "LEVEL96-REVIEW.md",
+  "replacementBobbinGate": {
+    "verdict": "accepted",
+    "reason": "v2 source density, small actual hand body, winding readability and actual guide clearance inspected",
+    "evidence": [
+      "assets/level96/bobbin-raw-v2.png",
+      "assets/level96/bobbin-native-proof-v2.png",
+      "assets/level96/bobbin-proof-8x-v2.png"
+    ]
+  },
+  "clothSourceGate": {
+    "verdict": "accepted",
+    "reason": "v2 source density and final supported cloth reveal accepted",
+    "evidence": [
+      "assets/level96/cloth-raw-v2.png",
+      "assets/level96/cloth-native-proof-v2.png",
+      "assets/level96/cloth-proof-4x-v2.png"
+    ]
+  },
+  "reviewLimit": "Independent source/code/image/log/test review of implementer browser evidence, not an additional reviewer browser playthrough. Failure/recovery tests are simulation evidence; production normal completion/reset captures are actual controls."
+}

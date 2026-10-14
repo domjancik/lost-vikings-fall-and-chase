@@ -1,6 +1,7 @@
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {ladderAtHero} from './ladder-context.js?v=look58';
-export function cameraLookDirection(s,input){
+export function cameraLookDirection(s,input,paused=false,previousLook=0){
+ if(paused)return Math.sign(previousLook);
  const h=s.heroes[s.active];
  if(h.swimming||h.climbing||h.dead||ladderAtHero(s.level,h))return 0;
  return Number(!!input.down)-Number(!!input.up);

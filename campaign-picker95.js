@@ -6,7 +6,7 @@ export const campaignChoices=[
  {id:'cycle',name:'Machine Rooms',levels:cycleLevels},
  {id:'arcade',name:'Arcade Collection',levels}
 ];
-const machineViews=[[540,780],[1030,690],[800,920],[1000,800],[1300,780],[1380,650]];
+const machineViews=[[540,780],[1030,690],[800,920],[1000,800],[1300,780],[1380,650],[1820,830]];
 export function previewFrame(s){
  const [width,height]=s.campaign==='cycle'&&s.round===5?[1120,630]:s.campaign==='cycle'&&s.round===3?[1080,608]:[720,404];
  const top=s.level.worldTop||0,bottom=s.level.worldBottom||790;

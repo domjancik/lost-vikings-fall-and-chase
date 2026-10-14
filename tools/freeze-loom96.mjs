@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+const folder='output/release-loom96',dist=folder+'/dist',base='output/release-menu95/dist';
+const draft=process.argv.includes('--draft'),gates=JSON.parse(fs.readFileSync('assets/level96/visual-gates.json','utf8'));
+if(!draft&&(!gates.publicationAllowed||['sourceGate','runtimeGate','cooperationGate'].some(k=>gates[k]?.verdict!=='accepted')))throw Error('Loom visual/cooperation gates incomplete');
+const files=['loom-campaign96.js','loom-art-layout96.js','loom-render96.js','cycle-campaign.js','cycle-render.js','campaign-picker95.js','game.js','view-camera.js'];
+fs.mkdirSync(folder,{recursive:true});fs.cpSync(base,dist,{recursive:true});
+for(const file of files)fs.copyFileSync(file,dist+'/'+file);
+fs.cpSync('assets/level96',dist+'/assets/level96',{recursive:true});
+for(const file of fs.readdirSync(dist))if(/\.(js|html)$/.test(file))fs.writeFileSync(dist+'/'+file,fs.readFileSync(dist+'/'+file,'utf8').replace(/\?v=[a-zA-Z0-9-]+/g,'?v=loom96'));
+const normalize=s=>s.replace(/\?v=[a-zA-Z0-9-]+/g,'').replace(/\r/g,'');
+for(const file of fs.readdirSync(base).filter(f=>f.endsWith('.js')&&!files.includes(f)))if(normalize(fs.readFileSync(base+'/'+file,'utf8'))!==normalize(fs.readFileSync(dist+'/'+file,'utf8')))throw Error('Unrelated change '+file);
+const assets=['parts-native.png','parts-registration.json','terrain-native.png','far-native.png','middle-native.png','bobbin-native.png','cloth-native.png','cloth-registration.json','visual-gates.json'].map(f=>'assets/level96/'+f);
+const publisher=fs.readFileSync('output/release-menu95/publish-update.mjs','utf8').replace('const files=[',`const loomGates=JSON.parse(await fs.readFile('dist/assets/level96/visual-gates.json','utf8'));if(!loomGates.publicationAllowed||['sourceGate','runtimeGate','cooperationGate'].some(k=>loomGates[k]?.verdict!=='accepted'))throw Error('Loom review incomplete');\nconst files=[${[...files,...assets].map(f=>JSON.stringify(f)).join(',')},`);
+fs.writeFileSync(folder+'/publish-update.mjs',publisher);
+fs.writeFileSync(folder+'/candidate.json',JSON.stringify({base,files,assets,draft,publishAllowed:!draft&&gates.publicationAllowed},null,2));
+console.log('Loom96 frozen over verified Menu95; unrelated work excluded.');

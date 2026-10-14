@@ -1,0 +1,273 @@
+{
+  "source": "parts-raw-v1.png",
+  "native": [
+    480,
+    288
+  ],
+  "pixelWorld": 2,
+  "fringePixelsRemoved": 0,
+  "records": [
+    {
+      "n": 0,
+      "source": "parts-raw-v1.png",
+      "component": 2,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        7
+      ],
+      "bounds": [
+        5,
+        24,
+        90,
+        94
+      ]
+    },
+    {
+      "n": 1,
+      "source": "parts-raw-v1.png",
+      "component": 1,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        0
+      ],
+      "bounds": [
+        10,
+        11,
+        86,
+        85
+      ]
+    },
+    {
+      "n": 2,
+      "source": "parts-raw-v1.png",
+      "component": 4,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -4,
+        0
+      ],
+      "bounds": [
+        5,
+        24,
+        91,
+        72
+      ]
+    },
+    {
+      "n": 3,
+      "source": "parts-raw-v1.png",
+      "component": 3,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        0,
+        0
+      ],
+      "bounds": [
+        19,
+        18,
+        78,
+        78
+      ]
+    },
+    {
+      "n": 4,
+      "source": "parts-raw-v1.png",
+      "component": 5,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        2,
+        2
+      ],
+      "bounds": [
+        1,
+        40,
+        95,
+        74
+      ],
+      "deck": {
+        "left": 9,
+        "right": 90,
+        "top": 40
+      }
+    },
+    {
+      "n": 5,
+      "source": "parts-raw-v1.png",
+      "component": 10,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        7
+      ],
+      "bounds": [
+        2,
+        40,
+        93,
+        73
+      ],
+      "deck": {
+        "left": 5,
+        "right": 90,
+        "top": 40
+      }
+    },
+    {
+      "n": 6,
+      "source": "parts-raw-v1.png",
+      "component": 7,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        7
+      ],
+      "bounds": [
+        26,
+        13,
+        69,
+        84
+      ],
+      "aperture": {
+        "cx": 48.0,
+        "cy": 32.0,
+        "width": 18,
+        "height": 18
+      }
+    },
+    {
+      "n": 7,
+      "source": "parts-raw-v1.png",
+      "component": 9,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -6,
+        0
+      ],
+      "bounds": [
+        30,
+        29,
+        66,
+        60
+      ]
+    },
+    {
+      "n": 8,
+      "source": "parts-raw-v1.png",
+      "component": 8,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -4,
+        0
+      ],
+      "bounds": [
+        19,
+        14,
+        76,
+        69
+      ]
+    },
+    {
+      "n": 9,
+      "source": "parts-raw-v1.png",
+      "component": 6,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -3,
+        0
+      ],
+      "bounds": [
+        13,
+        1,
+        83,
+        81
+      ]
+    },
+    {
+      "n": 10,
+      "source": "parts-raw-v1.png",
+      "component": 13,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        5
+      ],
+      "bounds": [
+        2,
+        1,
+        93,
+        87
+      ]
+    },
+    {
+      "n": 11,
+      "source": "parts-raw-v1.png",
+      "component": 14,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -4,
+        12
+      ],
+      "bounds": [
+        8,
+        18,
+        87,
+        94
+      ]
+    },
+    {
+      "n": 12,
+      "source": "parts-raw-v1.png",
+      "component": 11,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -8,
+        13
+      ],
+      "bounds": [
+        12,
+        1,
+        84,
+        75
+      ],
+      "head": {
+        "top": 24,
+        "bottom": 75,
+        "left": 16,
+        "right": 80
+      }
+    },
+    {
+      "n": 13,
+      "source": "parts-raw-v1.png",
+      "component": 12,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        -2,
+        13
+      ],
+      "bounds": [
+        38,
+        1,
+        58,
+        95
+      ]
+    },
+    {
+      "n": 14,
+      "source": "parts-raw-v1.png",
+      "component": 15,
+      "uniformScale": 3.372916666666667,
+      "translation": [
+        2,
+        12
+      ],
+      "bounds": [
+        8,
+        58,
+        88,
+        94
+      ]
+    }
+  ]
+}

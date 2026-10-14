@@ -21,3 +21,8 @@ Independent source/runtime review is LOOM98-REVIEW.md.
 
 Freeze over reviewed Warden97; unchanged modules compared with that release.
 The rusty guardian and coherent service-room walls remain included.
+
+Published verification: all11checked Loom/Warden files match frozen SHA256.
+Live off-center normal-controls route wins in79.992simulation seconds with
+HP3/3/3, no errors,52desktop/mobile captures and clean R retry.
+Portable live evidence and hashes: assets/loom98/live.

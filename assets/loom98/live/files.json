@@ -1,0 +1,57 @@
+[
+  {
+    "file": "loom-campaign96.js",
+    "sha256": "3a6e07fbfb805047622efd5194b1a5e45f14bfda68aca5c4b1d08c676ef26c6d",
+    "size": 9170
+  },
+  {
+    "file": "loom-render96.js",
+    "sha256": "aec444661ab2f54f016105cf84e7dcdd44de47f7a8308966d218ca6dee4c0915",
+    "size": 10563
+  },
+  {
+    "file": "loom-guide98.js",
+    "sha256": "e7a00b46323d9276d9d292b8edf53a62e5455f0d47de50617a5918660a55ada9",
+    "size": 302
+  },
+  {
+    "file": "assets/loom98/guide-native.png",
+    "sha256": "c6c5430643ee737d6e19e1064c633d7a4dca046f1cac794bb7229572e9ad91b5",
+    "size": 7625
+  },
+  {
+    "file": "assets/loom98/registration.json",
+    "sha256": "881dde57a80704ef845c149bc7fd22441dddc13de4ff37dd3b85221975fb65e6",
+    "size": 365
+  },
+  {
+    "file": "assets/loom98/visual-gates.json",
+    "sha256": "721716617bb32827e32b1b0ae502c3223e295e205f08e92683484517f7371de5",
+    "size": 2323
+  },
+  {
+    "file": "warden-render.js",
+    "sha256": "b8419a40ea9ced76fbd352225be1fbbed843df03650894f2a7f9108e014d6b2a",
+    "size": 8947
+  },
+  {
+    "file": "warden-art97.js",
+    "sha256": "e8807f15b3ac7abc59539200be8cffbf32e278896f81daf28667505fdfc2cd7a",
+    "size": 1015
+  },
+  {
+    "file": "depth-layout94.js",
+    "sha256": "22a6cad67c35d615f3353f45ffc37d9e9c18d16dd078a3c454b16b0ce86e3e16",
+    "size": 1902
+  },
+  {
+    "file": "depth-render94.js",
+    "sha256": "9b09a6ac9ba216333d0e4bae03fcf4e861bc6c69f129d9a73e70788189cdd4e0",
+    "size": 1733
+  },
+  {
+    "file": "assets/warden97/parts-native.png",
+    "sha256": "b46ae181bd461813aff8cf07aa6248f3685e272eef3add5019e5b86065841c58",
+    "size": 264002
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "evidence": [
+    {
+      "campaign": "story",
+      "count": 8,
+      "distinct": 8
+    },
+    {
+      "campaign": "cycle",
+      "count": 6,
+      "distinct": 6
+    },
+    {
+      "campaign": "arcade",
+      "count": 11,
+      "distinct": 11
+    },
+    {
+      "launched": 25,
+      "errors": [],
+      "pausedReturn": true
+    }
+  ],
+  "errors": []
+}

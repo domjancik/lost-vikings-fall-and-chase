@@ -73,3 +73,30 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
  .below{bottom:calc(var(--touch-bottom) + var(--action-height) + 10px)}
 }
 @media(max-width:360px){.below{right:8px}.mobile-controls{right:8px}}
+
+/* One campaign row, then real static scene pictures. */
+.at-title .game-top,.at-title .below,.at-title .mobile-controls,.at-title .game-bottom{display:none}
+.start-overlay{padding:max(16px,var(--safe-top)) 16px max(16px,var(--safe-bottom));align-items:flex-start;touch-action:pan-y;background:#10121be8}
+.campaign-ticket{width:min(1080px,100%);max-width:none;margin:auto;padding:22px;text-align:left}
+.picker-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.picker-title h1{font-size:36px;line-height:1;margin:0;letter-spacing:3px;white-space:nowrap;text-shadow:2px 2px #603a35}
+.campaign-picker .campaign-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:0 0 16px}
+.campaign-picker .campaign-choices button{padding:12px 8px;min-height:48px;font-size:13px;letter-spacing:0;background:#292734;color:#c4bbac}
+.campaign-picker .campaign-choices button.selected{background:#554332;color:#ffe4a9;box-shadow:inset 2px 2px #d1a56c,inset -2px -2px #211b22;border-color:#d1a56c}
+.level-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.campaign-picker .level-card{display:block;min-width:0;width:100%;padding:0;margin:0;background:#1b2028;box-shadow:none;border:2px solid #5f5851;text-align:left;color:#e9dec6;letter-spacing:0}
+.level-card canvas{display:block;width:100%;height:auto;aspect-ratio:360/202;image-rendering:pixelated;background:#151c25}
+.campaign-picker .level-card>span{display:flex;align-items:center;gap:8px;min-height:44px;padding:8px 10px;background:#292632;font-size:11px;line-height:1.4}
+.campaign-picker .level-card b{margin:0;color:#bb9161;font-size:12px;flex:none}
+.campaign-picker .level-card span span{margin:0}
+.campaign-picker .level-card:hover,.campaign-picker .level-card:focus-visible{border-color:#efd199;color:#fff0ce}
+.campaign-picker .level-card:hover>span{background:#494033}
+#round-dialog{width:min(1080px,calc(100vw - 24px));padding:20px}
+#round-menu-title{font-size:22px;margin:0 0 18px}
+@media(max-width:640px){
+ .start-overlay{padding:12px}.campaign-ticket{padding:14px}.picker-title{display:block;margin-bottom:16px}.picker-title .eyebrow{font-size:9px;letter-spacing:1px}.picker-title h1{font-size:28px;margin-top:10px}
+ .campaign-picker .campaign-choices{gap:5px;margin-bottom:12px}.campaign-picker .campaign-choices button{font-size:11px;padding:8px 4px;min-height:54px}
+ .level-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.campaign-picker .level-card>span{padding:6px;font-size:10px;min-height:48px;gap:6px}.campaign-picker .level-card b{font-size:10px}
+ #round-dialog{padding:14px}
+}
+@media(max-height:500px){.campaign-ticket{margin:0 auto;padding:14px}.picker-title{margin-bottom:12px}.picker-title h1{font-size:26px}.campaign-picker .campaign-choices button{min-height:44px}.start-overlay{padding:12px}}

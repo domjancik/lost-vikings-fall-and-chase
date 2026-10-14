@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const folder='output/release-menu95',dist=folder+'/dist',base='output/release-depth94/dist';
+fs.mkdirSync(folder,{recursive:true});fs.cpSync(base,dist,{recursive:true});
+const files=['game.js','index.html','style.css','campaign-picker95.js','campaign-menu95.js','level-preview95.js','scene-render95.js'];
+for(const file of files)fs.copyFileSync(file,dist+'/'+file);
+for(const file of fs.readdirSync(dist))if(/\.(js|html)$/.test(file))fs.writeFileSync(dist+'/'+file,fs.readFileSync(dist+'/'+file,'utf8').replace(/\?v=[a-zA-Z0-9-]+/g,'?v=menu95'));
+const normalize=s=>s.replace(/\?v=[a-zA-Z0-9-]+/g,'').replace(/\r/g,'');
+for(const file of fs.readdirSync(base).filter(f=>f.endsWith('.js')&&!files.includes(f)))if(normalize(fs.readFileSync(base+'/'+file,'utf8'))!==normalize(fs.readFileSync(dist+'/'+file,'utf8')))throw Error('Unexpected non-menu change '+file);
+const publisher=fs.readFileSync('output/release-depth94/publish-update.mjs','utf8').replace('const files=[',`const files=[${files.map(f=>JSON.stringify(f)).join(',')},`);
+fs.writeFileSync(folder+'/publish-update.mjs',publisher);fs.writeFileSync(folder+'/candidate.json',JSON.stringify({base,files,unchangedGameplay:true},null,2));
+console.log('Menu candidate frozen; all other game modules match published Depth94.');

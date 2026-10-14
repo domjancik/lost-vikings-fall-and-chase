@@ -1,0 +1,100 @@
+{
+  "siteUrl": "https://united-marsh-6ppd.here.now/",
+  "versionId": "01M4W3C1BS1P6WT0W1AQYHNFM8",
+  "won": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "time": 111.23333333336792,
+  "views": 64,
+  "errors": [],
+  "files": [
+    {
+      "file": "loom-campaign96.js",
+      "sha256": "ebf01009801ddbe0be8b1c83fe77882e43847db5db56a26a146ebe11550d9922",
+      "size": 8951
+    },
+    {
+      "file": "loom-art-layout96.js",
+      "sha256": "4c8293a7383a74d5fe5ca78a2c1fca638a1bc7568140707b8489777640681621",
+      "size": 470
+    },
+    {
+      "file": "loom-render96.js",
+      "sha256": "9032c542e98fa843a78184ec2838fcc992620146c5385a15e419629aa14cda07",
+      "size": 9777
+    },
+    {
+      "file": "cycle-campaign.js",
+      "sha256": "317ad0e77034d623dbce1cb04af79e4bb5d60260040fef1456fac6faeff9d20e",
+      "size": 7755
+    },
+    {
+      "file": "cycle-render.js",
+      "sha256": "5761050f65fdb0dcb473791915586ebbd1c384a84ac7b6ecd9458f75368a4e63",
+      "size": 7006
+    },
+    {
+      "file": "campaign-picker95.js",
+      "sha256": "15500051fe60f3fa728392a183891b2fc958b7564aa97aa573ddacefe23a9a6a",
+      "size": 989
+    },
+    {
+      "file": "game.js",
+      "sha256": "29b617f1e08fa9feeec37ecc897feb1883488474c8bd272f034563161340d1cb",
+      "size": 31765
+    },
+    {
+      "file": "view-camera.js",
+      "sha256": "1a84381ab9e4df5f7d0f92417a8c9cda2a4f1d6ea463b413de9cfec9e980e941",
+      "size": 911
+    },
+    {
+      "file": "assets/level96/parts-native.png",
+      "sha256": "a5a0747347b987534e12764f5420d1d26a0ab7ddd3fe11e2d23b3484b6ee835d",
+      "size": 113102
+    },
+    {
+      "file": "assets/level96/parts-registration.json",
+      "sha256": "724534f4574c193876791a231ea0b6df667f3fac38aa25a26d44f9f01b68f61b",
+      "size": 4587
+    },
+    {
+      "file": "assets/level96/terrain-native.png",
+      "sha256": "109d6ae0e0c5979e6cbda5621fb245149a7bc385f719e09d7df937828ee77fcb",
+      "size": 16520
+    },
+    {
+      "file": "assets/level96/far-native.png",
+      "sha256": "c6d9f42ba65739e769bfe3f06c597bcad6be1ebe4e40d3429cd9186d5d289c95",
+      "size": 764123
+    },
+    {
+      "file": "assets/level96/middle-native.png",
+      "sha256": "8385698c0d6a9b7d4c70a52e5602f40336388827ec3a39c6332cee8228d78dbc",
+      "size": 77218
+    },
+    {
+      "file": "assets/level96/bobbin-native.png",
+      "sha256": "f87f267e21d40dc5b2bace2b40f6c98db7834f8f25058fe93695689767532354",
+      "size": 507
+    },
+    {
+      "file": "assets/level96/cloth-native.png",
+      "sha256": "1b2522cc6a482cd3af2b57366b74fa81d872c0b96884eaefb23253e75f03f3d4",
+      "size": 3701
+    },
+    {
+      "file": "assets/level96/cloth-registration.json",
+      "sha256": "98f59cad66a141875c10ffaf9e711c8b4400676171dab48bc1568081c145e3d8",
+      "size": 365
+    },
+    {
+      "file": "assets/level96/visual-gates.json",
+      "sha256": "57043f01ec6ce423ef8f1e1692af232d58475574dda63b2aa31bc5f406aae02d",
+      "size": 5138
+    }
+  ]
+}

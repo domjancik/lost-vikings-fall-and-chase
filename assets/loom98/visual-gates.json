@@ -1,0 +1,49 @@
+{
+  "asset": "loom98-guide",
+  "nativeCell": [
+    96,
+    96
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "reviewLog": "LOOM98-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "iteration": "v1",
+    "evidence": [
+      "assets/loom98/guide-raw-v1.png",
+      "assets/loom98/guide-native-draft.png",
+      "assets/level96/parts-native.png"
+    ],
+    "reason": "Consistent deliberate native-scale blocks, readable bronze bevel bands and slate support, tall transparent aperture. Wear is on the native grid and subordinate to volume."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "processedArtVerdict": "accepted",
+    "gameplayVerdict": "accepted",
+    "evidence": [
+      "assets/loom98/guide-native.png",
+      "assets/loom98/guide-native-8x.png",
+      "assets/loom98/registration.json",
+      "assets/loom98/evidence/loom98-offset-first-aperture-1x.png",
+      "assets/loom98/evidence/loom98-offset-first-aperture-2x.png",
+      "assets/loom98/evidence/loom98-offset-first-aperture-landscape.png",
+      "assets/loom98/evidence/loom98-offset-first-thread-seated-1x.png",
+      "assets/loom98/evidence/loom98-offset-first-thread-seated-2x.png",
+      "assets/loom98/evidence/loom98-offset-first-thread-seated-landscape.png",
+      "assets/loom98/evidence/loom98-offset-second-thread-seated-2x.png",
+      "assets/loom98/evidence/loom98-miss-miss-1x.png",
+      "assets/loom98/evidence/loom98-miss-miss-2x.png",
+      "assets/loom98/evidence/loom98-miss-miss-landscape.png",
+      "assets/loom98/evidence/loom98-miss-miss-portrait.png",
+      "assets/loom98/evidence/route.json",
+      "assets/loom98/evidence/offset-route.json",
+      "assets/loom98/evidence/miss-route.json"
+    ],
+    "reason": "Cleaned native art preserves aperture and broad base. Actual desktop1x2x/mobile target, seated yarn/junction and amber empty miss states reviewed unobstructed; final normal and offset routes win healthy without errors. Source separately accepted.",
+    "normalControlRoute": "accepted: normal and offset win, HP3/3/3, errors[]",
+    "nearEdgeSuccess": "accepted: actual offsets8.702 and13.279; focusedtests±24",
+    "metalRimRejection": "accepted: focusedtests±25",
+    "wrongOrderRejection": "accepted: focusedtests"
+  },
+  "publicationAllowed": true
+}

@@ -2,12 +2,14 @@ import {createAtlas} from './sprite-atlas.js?v=loom96';
 import {snapPixel as q} from './pixel-grid.js?v=loom96';
 import {loomGuides,loomTargetPose,loomBeater} from './loom-campaign96.js?v=loom96';
 import {LOOM_ART} from './loom-art-layout96.js?v=loom96';
+import {LOOM_GUIDE} from './loom-guide98.js?v=loom98';
 import {drawConnection,connectionsReady} from './connection-render.js?v=loom96';
 import {drawCycleGateField} from './cycle-gate.js?v=loom96';
 const load=name=>{const i=new Image();i.src='assets/level96/'+name+'-native.png?v=loom96';return i;};
 const parts=createAtlas('assets/level96/parts-native.png?v=loom96',5,3),terrain=load('terrain'),far=load('far'),middle=load('middle'),bobbin=load('bobbin'),cloth=load('cloth');
 const ladder=new Image();ladder.src='assets/platform56/ladder.png?v=loom96';
 const portal=createAtlas('assets/gate61/gate.png?v=loom96',1,1);
+const guideImage=new Image();guideImage.src='assets/loom98/guide-native.png?v=loom98';
 const rasters=new Map();
 // Rotations happen on the native raster. No interpolated outlines or fractional pixels.
 function rotor(n,angle,faceOnly=false){
@@ -79,7 +81,19 @@ export function drawLoomWorld(ctx,s,camera,view){
   else drawConnection(ctx,[[p.x+80,480],[p.x+80,p.y+20]],'cable',{time:s.time,phase:n});
   cell(ctx,n,p.x-a.left*2,p.y-a.top*2);contacts.push({kind:p.support,x:p.x,y:p.y,w:p.w,artRim:p.y});
  }
- for(const p of loomGuides){cell(ctx,6,p.x-96,p.y-64);shaft(ctx,p.x,p.y+104,1120);contacts.push({kind:'guide',x:p.x,y:p.y,foot:1120});}
+ for(const [n,p]of loomGuides.entries()){
+  const seated=n<g.guides,next=g.owner!==null&&!g.docked&&n===g.guides;
+  const missed=g.threadAttempt?.guide===n&&!g.threadAttempt.accepted&&s.time-g.threadAttempt.time<1;
+  ctx.save();
+  if(missed)ctx.filter='sepia(.5) brightness(1.4)';
+  else if(seated)ctx.filter='brightness(1.18)';
+  else if(next)ctx.filter=`brightness(${1.05+Math.floor((Math.sin(s.time*3)+1)*3)/20})`;
+  if(guideImage.complete&&guideImage.naturalWidth)ctx.drawImage(guideImage,q(p.x-96),q(p.y-64),192,192);
+  ctx.restore();
+  shaft(ctx,p.x,p.y-64+LOOM_GUIDE.base*2,1120);
+  if(seated)yarn(ctx,[{x:p.x-30,y:p.y},{x:p.x+30,y:p.y}],g.phase);
+  contacts.push({kind:'guide',x:p.x,y:p.y,foot:1120,clearance:LOOM_GUIDE.threadTolerance,seated,next,missed});
+ }
  // A short spindle cradle is assembled from native cap/body/foot, without scaling.
  crop(ctx,14,8,58,80,8,1110,836);crop(ctx,14,8,72,80,6,1110,852);crop(ctx,14,8,86,80,8,1110,864);cell(ctx,11,2354,692);
  for(let n=0;n<2;n++){const p=loomTargetPose(s,n);drawConnection(ctx,[[p.x,480],[p.x,p.y]],'cable');cell(ctx,8,p.x-96,p.y-84);}
@@ -106,5 +120,5 @@ export function drawLoomWorld(ctx,s,camera,view){
  contacts.push({kind:'cloth',top:650,bottom:794,axle:794,mount:628,reveal:q(160*g.weave)});
  const portalRect={x:2986,y:992,w:128,h:128},p=portal.placement(0,portalRect,s.level.floors);
  if(p){drawCycleGateField(ctx,{...p,active:s.power,glow:.8,frame:Math.floor(s.time*12),aperture:{x:p.x+64,y:p.y+74,w:40,h:80}});portal.drawGrounded(ctx,0,portalRect,s.level.floors);contacts.push({kind:'portal',bottom:p.visibleBottom,surface:p.surface.y});}
- return{ready:[far,middle,terrain,ladder,bobbin,cloth,parts.image,portal.image].every(i=>i.complete&&i.naturalWidth)&&connectionsReady(),native:{far:[960,640],middle:[384,256],parts:[480,288],bobbin:[20,20],cloth:[48,80]},parallax:{far:{x:farX,y:farY,factorX:.78,factorY:.62},middle:{x:middleX,y:middleY,factorX:.35,factorY:.04,foundation:middleY+middleFoot}},contacts,feed:feed.anchors,camFeed:camFeed.anchors,driveShaft:driveShaft.anchors,exitCable:exitCable.anchors,releaseCable:releaseCable.anchors,pawl:g.latchPose,pressure:g.pressure,clutch:g.clutchPose,thread:g.guides,exit:g.exitPose};
+ return{ready:[far,middle,terrain,ladder,bobbin,cloth,guideImage,parts.image,portal.image].every(i=>i.complete&&i.naturalWidth)&&connectionsReady(),native:{far:[960,640],middle:[384,256],parts:[480,288],bobbin:[20,20],cloth:[48,80]},parallax:{far:{x:farX,y:farY,factorX:.78,factorY:.62},middle:{x:middleX,y:middleY,factorX:.35,factorY:.04,foundation:middleY+middleFoot}},contacts,feed:feed.anchors,camFeed:camFeed.anchors,driveShaft:driveShaft.anchors,exitCable:exitCable.anchors,releaseCable:releaseCable.anchors,pawl:g.latchPose,pressure:g.pressure,clutch:g.clutchPose,thread:g.guides,exit:g.exitPose};
 }

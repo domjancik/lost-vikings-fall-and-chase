@@ -1,0 +1,1 @@
+export const LOOM_GUIDE={"native": [96, 96], "worldPixel": 2, "source": "guide-raw-v1.png", "normalization": "uniform nearest sampling once, conservative alpha matte threshold, translation only", "translation": [0, -2], "center": [48, 32], "safeCenterY": [20, 45], "threadTolerance": 24, "base": 91};

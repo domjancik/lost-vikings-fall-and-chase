@@ -13,7 +13,7 @@ test('thread must sweep through a real aperture, proximity and wrong order do no
  assert.ok(loom);const s=state();s.machine.owner=0;
  loom.threadSweep(s,{x:1610,y:800},{x:1670,y:800});assert.equal(s.machine.guides,0);
  loom.threadSweep(s,{x:2180,y:722},{x:2240,y:722});assert.equal(s.machine.guides,0);
- loom.threadSweep(s,{x:1610,y:727},{x:1670,y:727});assert.equal(s.machine.guides,0,'Bobbin body would overlap the aperture rim');
+ loom.threadSweep(s,{x:1610,y:745},{x:1670,y:745});assert.equal(s.machine.guides,0,'Bobbin body would overlap the taller aperture rim');
  loom.threadSweep(s,{x:1610,y:720},{x:1670,y:720});assert.equal(s.machine.guides,1);
  loom.threadSweep(s,{x:2180,y:722},{x:2240,y:722});assert.equal(s.machine.guides,2);
 });

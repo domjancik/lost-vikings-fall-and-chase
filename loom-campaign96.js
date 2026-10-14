@@ -3,6 +3,7 @@ import {shieldHit,segmentHit} from './projectile-collision.js?v=loom96';
 import {ladderAtHero} from './ladder-context.js?v=loom96';
 import {damage} from './health.js?v=loom96';
 import {LOOM_ART} from './loom-art-layout96.js?v=loom96';
+import {LOOM_GUIDE} from './loom-guide98.js?v=loom98';
 import {startBash} from './bash.js?v=loom96';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 export const loomGuides=[{x:1640,y:720},{x:2210,y:722}];
@@ -34,9 +35,12 @@ export const bobbinHand=h=>({x:h.x+h.face*22,y:h.y+12});
 export function threadSweep(s,from,to){
  const g=s.machine,p=loomGuides[g.guides];if(!p||g.owner===null||g.docked||to.x<=from.x)return;
  if(from.x<=p.x&&to.x>=p.x){const t=(p.x-from.x)/(to.x-from.x),y=from.y+(to.y-from.y)*t;
-  g.threadAttempt={guide:g.guides,x:p.x,y,error:y-p.y,time:s.time};
-  // The complete 24-world-unit bobbin must fit through the 36-unit aperture.
-  if(Math.abs(y-p.y)<=LOOM_ART.aperture.height-(LOOM_ART.bobbin?.halfHeight??12)){g.guides++;feedback(s,g.guides===1?'The first thread is seated.':'The pattern has reached the winding drum.');}
+  const accepted=Math.abs(y-p.y)<=LOOM_GUIDE.threadTolerance;
+  g.threadAttempt={guide:g.guides,x:p.x,y,error:y-p.y,time:s.time,accepted};
+  // Clearance is measured from the authored transparent opening eroded by
+  // the full bobbin envelope. Four times the old tolerance, no rim cheating.
+  if(accepted){g.guides++;feedback(s,g.guides===1?'The first thread is seated.':'The pattern has reached the winding drum.');}
+  else feedback(s,'Thread missed the eyelet. Pass the bobbin through its opening.');
  }
 }
 export function loomObjects(s){const g=s.machine;return[

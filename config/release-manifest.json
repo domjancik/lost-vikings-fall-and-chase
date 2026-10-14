@@ -463,6 +463,22 @@
     {
       "source": "src/levels/warden/cart-art.js",
       "output": "warden-cart-art.js"
+    },
+    {
+      "source": "src/levels/freight/campaign.js",
+      "output": "freight-campaign.js"
+    },
+    {
+      "source": "src/levels/freight/render.js",
+      "output": "freight-render.js"
+    },
+    {
+      "source": "src/levels/freight/art-layout.js",
+      "output": "freight-art-layout.js"
+    },
+    {
+      "source": "src/levels/freight/audio.js",
+      "output": "freight-audio.js"
     }
   ],
   "files": [
@@ -748,6 +764,13 @@
     "assets/loom106/cloth-native.png",
     "assets/loom106/visual-gates.json",
     "assets/olaf107/visual-gates.json",
-    "assets/water108/visual-gates.json"
+    "assets/water108/visual-gates.json",
+    "assets/freight109/machines-native.png",
+    "assets/freight109/inspector-native.png",
+    "assets/freight109/cart-native.png",
+    "assets/freight109/far-native.png",
+    "assets/freight109/middle-native.png",
+    "assets/freight109/cell-native.png",
+    "assets/freight109/visual-gates.json"
   ]
 }

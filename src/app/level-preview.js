@@ -1,7 +1,7 @@
-import {createState} from '../core/engine.js?v=menu95';
-import {drawScene} from '../render/scene-render95.js?v=olaf107';
+import {createState} from '../core/engine.js?v=freight109';
+import {drawScene} from '../render/scene-render95.js?v=freight109';
 import {drawWaterOverlay} from '../levels/water/render.js?v=walls101';
-import {previewFrame} from './campaign-picker.js?v=menu95';
+import {previewFrame} from './campaign-picker.js?v=freight109';
 const cache=new Map();
 // These are the production scene atlases, shared by the browser's image cache.
 // Explicit readiness prevents a slow connection from freezing a partial shot.

@@ -1,0 +1,142 @@
+{
+  "worldPixel": 2,
+  "acceptedMachineCells": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    12,
+    13,
+    14
+  ],
+  "machineBounds": {
+    "3": [
+      15,
+      13,
+      50,
+      60
+    ],
+    "4": [
+      14,
+      13,
+      49,
+      61
+    ],
+    "5": [
+      23,
+      19,
+      41,
+      61
+    ],
+    "6": [
+      22,
+      19,
+      41,
+      61
+    ],
+    "7": [
+      18,
+      50,
+      48,
+      61
+    ],
+    "12": [
+      7,
+      0,
+      57,
+      53
+    ],
+    "13": [
+      16,
+      3,
+      48,
+      53
+    ],
+    "14": [
+      22,
+      0,
+      42,
+      53
+    ]
+  },
+  "inspector": {
+    "nativeSize": [
+      192,
+      128
+    ],
+    "cell": [
+      48,
+      64
+    ],
+    "soleExclusive": [
+      48,
+      48,
+      48,
+      48,
+      44,
+      44,
+      44,
+      46
+    ],
+    "pivotX": 24
+  },
+  "cart": {
+    "nativeSize": [
+      192,
+      128
+    ],
+    "deck": [
+      32,
+      56,
+      128
+    ],
+    "wheelSoleExclusive": 96,
+    "wheelCenters": [
+      [
+        47,
+        85
+      ],
+      [
+        145,
+        85
+      ]
+    ],
+    "wheelRadius": 10,
+    "hub": [
+      96,
+      72
+    ]
+  },
+  "normalization": "single nearest presentation normalization from accepted native-density source; alpha200 or magenta exterior key with adjacency-constrained violet fringe cleanup; no material RGB changed; no resampled rejected cells",
+  "backgrounds": {
+    "far": {
+      "native": [
+        768,
+        512
+      ],
+      "world": [
+        1536,
+        1024
+      ],
+      "factorX": 0.82,
+      "factorY": 0.62
+    },
+    "middle": {
+      "native": [
+        768,
+        512
+      ],
+      "world": [
+        1536,
+        1024
+      ],
+      "factorX": 0.35,
+      "factorY": 0.04,
+      "foundationTop": 374,
+      "foundationBottom": 512,
+      "serviceDoorHeight": 68,
+      "role": "human-scale complete depot wall; lowerfoundation buried behind recovery floor; no individual furniture enlargement"
+    }
+  }
+}

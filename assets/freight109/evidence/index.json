@@ -1,0 +1,100 @@
+{
+  "frames": [
+    {
+      "file": "clear-first-riser-1x.png",
+      "origin": "output\\freight109-final\\captures\\clear-first-riser-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "clear-first-riser-2x.png",
+      "origin": "output\\freight109-final\\captures\\clear-first-riser-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "draft-rising-2x.png",
+      "origin": "output\\freight109-final\\captures\\draft-rising-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "winch-unrolling-2x.png",
+      "origin": "output\\freight109-final\\captures\\winch-unrolling-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "trolley-crossing-2x.png",
+      "origin": "output\\freight109-final\\captures\\trolley-crossing-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "cell-carried-1x.png",
+      "origin": "output\\freight109-final\\captures\\cell-carried-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "second-riser-powered-2x.png",
+      "origin": "output\\freight109-final\\captures\\second-riser-powered-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "purging-1x.png",
+      "origin": "output\\freight109-final\\captures\\purging-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "shutter-retracting-1x.png",
+      "origin": "output\\freight109-final\\captures\\shutter-retracting-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "crew-departure-1x.png",
+      "origin": "output\\freight109-final\\captures\\crew-departure-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "crew-departure-landscape.png",
+      "origin": "output\\freight109-final\\captures\\crew-departure-landscape.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "inspector-charge-1x.png",
+      "origin": "output\\freight109-clean-upper2\\captures\\inspector-charge-1x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "inspector-charge-2x.png",
+      "origin": "output\\freight109-clean-upper2\\captures\\inspector-charge-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "inspector-firing-2x.png",
+      "origin": "output\\freight109-clean-upper2\\captures\\inspector-firing-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "inspector-firing-portrait.png",
+      "origin": "output\\freight109-clean-upper2\\captures\\inspector-firing-portrait.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "inspector-recovered-2x.png",
+      "origin": "output\\freight109-clean-upper2\\captures\\inspector-recovered-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "actual-death.png",
+      "origin": "output\\freight109-danger\\captures\\actual-death.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "reset-2x.png",
+      "origin": "output\\freight109-danger\\captures\\reset-2x.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    },
+    {
+      "file": "coarse-touch.png",
+      "origin": "output\\freight109-touch\\captures\\coarse-touch.png",
+      "kind": "actual production browser screenshot; ordinary controls; no staged simulation state"
+    }
+  ],
+  "note": "Complete baseline progression plus final targeted matte/warning correction views; full route remainedHP3/3/3. Raw source/native sheets retained in parent directory."
+}

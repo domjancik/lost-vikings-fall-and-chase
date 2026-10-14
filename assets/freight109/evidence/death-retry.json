@@ -1,0 +1,6486 @@
+{
+  "result": {
+    "failed": true,
+    "hp": [
+      3,
+      0,
+      3
+    ],
+    "time": 24.691666666665906,
+    "milestones": [
+      {
+        "name": "clear-first-riser",
+        "time": 0,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1450,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0,
+              "walk": 0,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0
+            },
+            {
+              "id": 1,
+              "x": 2130,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0,
+              "walk": 0,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0
+            }
+          ]
+        }
+      },
+      {
+        "name": "board-watchtower",
+        "time": 2.749999999999993,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": -13.333333333333346,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 0.30000000000000293,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1413.5,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": 1,
+              "hp": 3,
+              "age": 2.749999999999993,
+              "walk": 123.5,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2113.625,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": 1,
+              "hp": 3,
+              "age": 2.749999999999993,
+              "walk": 123.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "passenger-draft",
+        "time": 6.7750000000001265,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 448.54166666666555,
+            "y": 816,
+            "vx": 2.499999999999993,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": 2,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "x": 429.125,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1276.762499999987,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1565.375,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.7750000000001265,
+              "walk": 304.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2225.5,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.7750000000001265,
+              "walk": 304.5,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "unroll-return-ladder",
+        "time": 11.441666666666658,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 718.4270833333322,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 699.0416666666667,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1076.5708333333484,
+            "y": 640,
+            "w": 256,
+            "v": -130,
+            "direction": -1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1384.625,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": 1,
+              "hp": 3,
+              "age": 11.441666666666658,
+              "walk": 514.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2104.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": 1,
+              "hp": 3,
+              "age": 11.441666666666658,
+              "walk": 514.25,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "erik-service-stairs",
+        "time": 12.841666666666578,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 650.6076388888866,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "x": 699.0416666666667,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            true,
+            false
+          ],
+          "rescuePose": [
+            1,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 894.5708333333475,
+            "y": 640,
+            "w": 256,
+            "v": -130,
+            "direction": -1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1447.625,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": 1,
+              "hp": 3,
+              "age": 12.841666666666578,
+              "walk": 577.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2167.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": 1,
+              "hp": 3,
+              "age": 12.841666666666578,
+              "walk": 577.25,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "failure-proof",
+        "time": 16.124999999999726,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 780.3506944444423,
+            "y": 596,
+            "vx": -13.333333333333346,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 650.6076388888866,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "x": 699.0416666666667,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            true,
+            false
+          ],
+          "rescuePose": [
+            1,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 932.2625000000016,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1564.625,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 16.124999999999726,
+              "walk": 725.375,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2205.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 16.124999999999726,
+              "walk": 724.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "captures": [
+    {
+      "label": "clear-first-riser",
+      "name": "2x",
+      "file": "output/freight109-danger/captures/clear-first-riser-2x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 632,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "clear-first-riser",
+      "name": "1x",
+      "file": "output/freight109-danger/captures/clear-first-riser-1x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 274,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 70,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 818,
+              "foundationBottom": 1094
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 350,
+          "width": 1264,
+          "height": 790,
+          "zoom": 1,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "clear-first-riser",
+      "name": "portrait",
+      "file": "output/freight109-danger/captures/clear-first-riser-portrait.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 218,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "clear-first-riser",
+      "name": "landscape",
+      "file": "output/freight109-danger/captures/clear-first-riser-landscape.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 855,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "passenger-draft",
+      "name": "2x",
+      "file": "output/freight109-danger/captures/passenger-draft-2x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 448.55208333333223,
+            "y": 816,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": 2,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "x": 429.125,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1280.0124999999869,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1564.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2224.375,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 1280.0124999999869,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 3,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 3,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 108,
+              "y": 436,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 46,
+              "y": 80,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 828,
+              "foundationBottom": 1104
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 132,
+          "y": 612,
+          "width": 632,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "passenger-draft",
+      "name": "1x",
+      "file": "output/freight109-danger/captures/passenger-draft-1x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 448.55208333333223,
+            "y": 816,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": 2,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "x": 429.125,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1280.0124999999869,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1564.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2224.375,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 1280.0124999999869,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 3,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 3,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 274,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 70,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 818,
+              "foundationBottom": 1094
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 350,
+          "width": 1264,
+          "height": 790,
+          "zoom": 1,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "passenger-draft",
+      "name": "portrait",
+      "file": "output/freight109-danger/captures/passenger-draft-portrait.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 448.55208333333223,
+            "y": 816,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": 2,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "x": 429.125,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1280.0124999999869,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1564.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2224.375,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 1280.0124999999869,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 3,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 3,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 278,
+              "y": 436,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 118,
+              "y": 80,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 828,
+              "foundationBottom": 1104
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 338,
+          "y": 612,
+          "width": 218,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "passenger-draft",
+      "name": "landscape",
+      "file": "output/freight109-danger/captures/passenger-draft-landscape.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 370.97222222222223,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 448.55208333333223,
+            "y": 816,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": 2,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "x": 429.125,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": true,
+          "ventPose": 1,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 1280.0124999999869,
+            "y": 640,
+            "w": 256,
+            "v": 130,
+            "direction": 1,
+            "pause": 0,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1564.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2224.375,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 6.800000000000128,
+              "walk": 305.625,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 1280.0124999999869,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 3,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 3,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 18,
+              "y": 436,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 8,
+              "y": 80,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 828,
+              "foundationBottom": 1104
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 22,
+          "y": 612,
+          "width": 855,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "reset",
+      "name": "2x",
+      "file": "output/freight109-danger/captures/reset-2x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 632,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "reset",
+      "name": "1x",
+      "file": "output/freight109-danger/captures/reset-1x.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 274,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 70,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 818,
+              "foundationBottom": 1094
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 350,
+          "width": 1264,
+          "height": 790,
+          "zoom": 1,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "reset",
+      "name": "portrait",
+      "file": "output/freight109-danger/captures/reset-portrait.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 218,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    },
+    {
+      "label": "reset",
+      "name": "landscape",
+      "file": "output/freight109-danger/captures/reset-landscape.png",
+      "state": {
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "current",
+            "x": 100,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "current",
+            "x": 155,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "x": 210,
+            "y": 896,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "ventOpen": false,
+          "ventPose": 0,
+          "exhaustOpen": false,
+          "exhaustPose": 0,
+          "cellInstalled": false,
+          "insertion": null,
+          "secondDraft": 0,
+          "purge": 0,
+          "shutter": 0,
+          "rescue": [
+            false,
+            false
+          ],
+          "rescuePose": [
+            0,
+            0
+          ],
+          "blocks": 0,
+          "heatClock": 0,
+          "safety": false,
+          "cart": {
+            "x": 840,
+            "y": 640,
+            "w": 256,
+            "v": 0,
+            "direction": 1,
+            "pause": 1.5,
+            "support": "freight-cart"
+          },
+          "inspectors": [
+            {
+              "id": 0,
+              "x": 1449.25,
+              "floor": 640,
+              "left": 1370,
+              "right": 1580,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            },
+            {
+              "id": 1,
+              "x": 2129.25,
+              "floor": 360,
+              "left": 2060,
+              "right": 2260,
+              "direction": -1,
+              "hp": 3,
+              "age": 0.016666666666666666,
+              "walk": 0.75,
+              "phase": "walk",
+              "hit": 0,
+              "deathAge": 0,
+              "combatClock": 0,
+              "hadTarget": false
+            }
+          ]
+        },
+        "art": {
+          "ready": true,
+          "native": {
+            "far": [
+              768,
+              512
+            ],
+            "middle": [
+              768,
+              512
+            ],
+            "machines": [
+              256,
+              256
+            ],
+            "cart": [
+              192,
+              128
+            ],
+            "inspectors": [
+              192,
+              128
+            ]
+          },
+          "contacts": [
+            {
+              "kind": "pier",
+              "x": 320,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 406,
+              "top": 884,
+              "bottom": 940
+            },
+            {
+              "kind": "pier",
+              "x": 640,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 700,
+              "top": 864,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 780,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 844,
+              "top": 764,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1660,
+              "top": 584,
+              "bottom": 640
+            },
+            {
+              "kind": "pier",
+              "x": 1720,
+              "top": 584,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1820,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1880,
+              "top": 484,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 2080,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 2360,
+              "top": 224,
+              "bottom": 360
+            },
+            {
+              "kind": "pier",
+              "x": 20,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 530,
+              "top": 964,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 570,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1020,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1360,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1640,
+              "top": 664,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 1760,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "pier",
+              "x": 3220,
+              "top": 384,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 850,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1020,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1190,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1360,
+              "bottom": 1080
+            },
+            {
+              "kind": "rail-pier",
+              "x": 1530,
+              "bottom": 1080
+            },
+            {
+              "kind": "trolley",
+              "x": 840,
+              "deck": 640,
+              "width": 256,
+              "artDeck": 640,
+              "sole": 720,
+              "railTop": 720
+            },
+            {
+              "kind": "fan",
+              "x": 480,
+              "bottom": 940
+            },
+            {
+              "kind": "fan",
+              "x": 1660,
+              "bottom": 640
+            },
+            {
+              "kind": "winch",
+              "x": 620,
+              "bottom": 640,
+              "surface": 640,
+              "pose": 0
+            },
+            {
+              "kind": "winch",
+              "x": 1840,
+              "bottom": 360,
+              "surface": 360,
+              "pose": 0
+            },
+            {
+              "kind": "receiver",
+              "x": 1580,
+              "bottom": 640,
+              "state": 3,
+              "port": [
+                1580,
+                598
+              ]
+            },
+            {
+              "kind": "inspector",
+              "id": 0,
+              "frame": 0,
+              "sole": 640,
+              "surface": 640,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "inspector",
+              "id": 1,
+              "frame": 0,
+              "sole": 360,
+              "surface": 360,
+              "phase": "walk",
+              "hp": 3
+            },
+            {
+              "kind": "burner",
+              "x": 2440,
+              "port": [
+                2440,
+                336
+              ],
+              "mount": 2566,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "burner",
+              "x": 2530,
+              "port": [
+                2530,
+                336
+              ],
+              "mount": 2656,
+              "floor": 360,
+              "warning": false,
+              "firing": false
+            },
+            {
+              "kind": "shutter",
+              "bottom": 360,
+              "travel": 0,
+              "frameBottom": 360
+            },
+            {
+              "kind": "portal",
+              "bottom": 360,
+              "surface": 360
+            }
+          ],
+          "rail": [
+            [
+              832,
+              726
+            ],
+            [
+              1620,
+              726
+            ]
+          ],
+          "feed": [
+            [
+              1610,
+              600
+            ],
+            [
+              1660,
+              600
+            ],
+            [
+              1660,
+              640
+            ]
+          ],
+          "parallax": {
+            "far": {
+              "x": 0,
+              "y": 486,
+              "factorX": 0.82,
+              "factorY": 0.62
+            },
+            "middle": {
+              "x": 0,
+              "y": 84,
+              "factorX": 0.35,
+              "factorY": 0.04,
+              "foundationTop": 832,
+              "foundationBottom": 1108
+            }
+          },
+          "blocks": 0,
+          "purge": 0,
+          "shutter": 0
+        },
+        "camera": {
+          "x": 0,
+          "y": 692,
+          "width": 855,
+          "height": 395,
+          "zoom": 2,
+          "look": 0
+        }
+      }
+    }
+  ],
+  "errors": []
+}

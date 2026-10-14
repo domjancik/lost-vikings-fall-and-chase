@@ -1,6 +1,6 @@
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=warden105';
-import {campaignMenu} from './campaign-menu.js?v=olaf107';
-import {drawScene} from '../render/scene-render95.js?v=olaf107';
+import {campaignMenu} from './campaign-menu.js?v=freight109';
+import {drawScene} from '../render/scene-render95.js?v=freight109';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=olaf107';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=warden105';
@@ -8,7 +8,7 @@ import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=olaf107';
 import {setHeroSkin} from '../heroes/hero-art.js?v=olaf107';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=skins76';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=water108';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=freight109';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from '../campaigns/story/story-custody.js?v=arc46';
@@ -17,12 +17,12 @@ import {drawStoryItem} from '../campaigns/story/story-render.js?v=edge67';
 import {createSoundEvents} from '../audio/audio-events.js?v=clockwork69';
 import {createWardenSounds} from '../levels/warden/audio.js?v=warden102';
 import {createSoundLayer} from '../audio/sound-effects.js?v=warden102';
-import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';
+import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=freight109';
 import {plungerPose} from '../core/plunger.js?v=arc46';
 import {forgeMaterialPose} from '../core/forge-material.js?v=arc46';
 import {TRANSIT_DURATION,canContinue,drawTransit} from '../render/portal-effects.js?v=arc46';
-import {itemTypes,useItem,transferItem,dropItem} from '../core/inventory.js?v=arc46';
-import {drawItemSprite} from '../render/inventory-render.js?v=menu95';
+import {itemTypes,useItem,transferItem,dropItem} from '../core/inventory.js?v=freight109';
+import {drawItemSprite} from '../render/inventory-render.js?v=freight109';
 import {drawBashEffects} from '../core/bash.js?v=arc46';
 import {cameraTarget,cameraLookDirection} from '../render/view-camera.js?v=look58';
 import {drawLabels} from '../render/text-render.js?v=arc46';
@@ -34,8 +34,8 @@ import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=olaf107';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=water108';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=water108';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=freight109';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=freight109';
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
 let campaign=['story','cycle'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'arcade',levels=campaignLevels(campaign);let round=0;try{round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(campaign)))||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),continueKeys=new Set();
@@ -63,7 +63,7 @@ function draw(){
  labelQueue=[];
  const viewport=viewportSize(canvas.clientWidth,canvas.clientHeight,zoom),sceneHeight=viewport.height,viewWidth=viewport.width;viewport.mobile=mobileControlsMedia.matches;viewport.uiScale=canvas.clientHeight/sceneHeight;if(viewport.mobile)viewport.insetTop=(document.querySelector('.game-top').getBoundingClientRect().bottom-canvas.getBoundingClientRect().top+12)/viewport.uiScale;if(canvas.width!==Math.round(viewWidth)||canvas.height!==sceneHeight){canvas.width=Math.round(viewWidth);canvas.height=sceneHeight;screen.imageSmoothingEnabled=false;}const native=rasterSize(canvas.width,sceneHeight);if(surface.width!==native.width||surface.height!==native.height){surface.width=native.width;surface.height=native.height;}ctx.imageSmoothingEnabled=false;ctx.setTransform(1/WORLD_PIXEL,0,0,1/WORLD_PIXEL,0,0);canvas.dataset.pixelGrid=String(WORLD_PIXEL);const look=started&&!s.won&&!s.failed?cameraLookDirection(s,{up:controls.has('up'),down:controls.has('down')},paused,JSON.parse(canvas.dataset.camera||'{}').look||0):0;const target=cameraTarget(clockworkView(s,viewport).focus,viewport,s.level,look);const cameraDt=cameraTime?Math.min((performance.now()-cameraTime)/1000,.05):0;cameraTime=performance.now();const follow=1-Math.exp(-cameraDt*10);cameraX+=(target.x-cameraX)*follow;cameraY+=(target.y-cameraY)*follow;const worldWidth=s.level.worldWidth??W;cameraX=viewWidth>worldWidth?target.x:Math.max(0,Math.min(worldWidth-viewWidth,cameraX));cameraY=Math.max(s.level.worldTop??0,Math.min((s.level.worldBottom??790)-sceneHeight,cameraY));const camera=snapPixel(cameraX),vertical=Math.min(snapPixel(cameraY),Math.floor(((s.level.worldBottom??790)-sceneHeight)/WORLD_PIXEL)*WORLD_PIXEL);canvas.dataset.camera=JSON.stringify({x:camera,y:vertical,width:viewWidth,height:sceneHeight,zoom,look});ctx.clearRect(0,0,canvas.width,sceneHeight);ctx.save();ctx.translate(-camera,-vertical);canvas.dataset.heroArt=JSON.stringify({ready:!!heroesReady(),release:63});canvas.dataset.campaign=campaign;canvas.dataset.paused=String(paused);canvas.dataset.simTime=String(s.time);canvas.dataset.enemies=JSON.stringify(s.enemies||[]);canvas.dataset.activeHero=String(s.active);canvas.dataset.won=String(s.won);canvas.dataset.failed=String(s.failed);canvas.dataset.items=JSON.stringify(s.items);canvas.dataset.bombs=JSON.stringify(s.bombs);canvas.dataset.round=String(s.round);canvas.dataset.speed=String(Math.round(s.heroes[s.active].vx));canvas.dataset.pose=animationFor(s.heroes[s.active]).pose;canvas.dataset.frame=String(animationFor(s.heroes[s.active]).frame);canvas.dataset.heroes=JSON.stringify(s.heroes.map(h=>({id:h.id,skin:h.skin,shieldArtPose:h.shieldArtPose,x:h.x,y:h.y,vx:h.vx,vy:h.vy,ground:h.ground,hp:h.hp,dead:!!h.dead,inventory:h.inventory,itemSlot:h.itemSlot,shieldUp:h.shieldUp,shield:h.shield,face:h.face,support:h.support,climbing:!!h.climbing,air:h.air,underwater:h.underwater,inAirPocket:h.inAirPocket,swimming:h.swimming,waterFloat:h.waterFloat})));canvas.dataset.puzzle=JSON.stringify({crate:s.crate,fuse:s.fuse,key:s.key,power:s.power,latch:s.latch,bridge:s.bridge,relay:s.relay,runeA:s.runeA,runeB:s.runeB,altar:s.altar,turret:s.turret,machine:s.machine});
  const scene=drawScene(ctx,s,{x:camera,y:vertical},viewport,campaign==='cycle'?text:worldText);for(const key of ['cycleArt','storyBackground','parallax','backgroundEffects','background']){if(scene[key])canvas.dataset[key]=JSON.stringify(scene[key]);else delete canvas.dataset[key];}
- canvas.dataset.plunger=campaign==='arcade'&&s.round===2?JSON.stringify(plungerPose(s)):'';canvas.dataset.forgeMaterial=campaign==='arcade'&&s.round===5?JSON.stringify(forgeMaterialPose(s)):'';canvas.dataset.environment=JSON.stringify(environmentPose(s));canvas.dataset.animations=JSON.stringify(s.heroes.map(h=>({id:h.id,...animationFor(h)})));canvas.dataset.impact=JSON.stringify(s.impact||null);canvas.dataset.shots=JSON.stringify(s.shots.map(p=>({...projectilePose(p,renderAlpha),kind:p.kind})));for(const p of s.shots)if(s.level.mechanic!=='momentum'||p.kind!=='fire')drawProjectile(ctx,p,renderAlpha,s.time);
+ canvas.dataset.plunger=campaign==='arcade'&&s.round===2?JSON.stringify(plungerPose(s)):'';canvas.dataset.forgeMaterial=campaign==='arcade'&&s.round===5?JSON.stringify(forgeMaterialPose(s)):'';canvas.dataset.environment=JSON.stringify(environmentPose(s));canvas.dataset.animations=JSON.stringify(s.heroes.map(h=>({id:h.id,...animationFor(h)})));canvas.dataset.impact=JSON.stringify(s.impact||null);canvas.dataset.shots=JSON.stringify(s.shots.map(p=>({...projectilePose(p,renderAlpha),kind:p.kind,enemy:!!p.enemy})));for(const p of s.shots)if(s.level.mechanic!=='momentum'||p.kind!=='fire')drawProjectile(ctx,p,renderAlpha,s.time);
  const shadows=s.heroes.map(h=>groundShadow(s,{x:(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,y:(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha},platforms));canvas.dataset.shadows=JSON.stringify(shadows);
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
  for(const h of heroDrawOrder(s.heroes)){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();if(h.id===s.active){text('▼',h.x,h.y-(h.shieldUp?58:46),colors[h.id],13);}for(let n=0;n<3;n++)box(n<h.hp?colors[h.id]:'#514953',h.x-10+n*8,h.y-38,5,3);}
@@ -72,10 +72,11 @@ function draw(){
  ctx.restore();const clockView=clockworkView(s,viewport);canvas.dataset.clockView=JSON.stringify(clockView);drawClockworkInset(ctx,s,clockView);screen.clearRect(0,0,canvas.width,canvas.height);screen.drawImage(surface,0,0,surface.width*WORLD_PIXEL,surface.height*WORLD_PIXEL);drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);
 }
 function toast(t){document.querySelector('#toast').textContent=t;document.querySelector('#toast').classList.add('show');document.querySelector('#message-label').textContent='MESSAGE';if(hintsVisible)document.querySelector('#clue').classList.add('new-clue');toastUntil=performance.now()+5500;}
-const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
+import {createFreightSounds} from '../levels/freight/audio.js?v=freight109';
+const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds(),freightSounds=createFreightSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
 function updateSoundButton(){const button=document.querySelector('#sound');button.querySelector('span').textContent=sound?'SOUND ON':'SOUND OFF';button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',sound?'Mute sound effects':'Enable sound effects');button.title=sound?'Sound effects on':'Sound effects off';button.classList.toggle('muted',!sound);}
 updateSoundButton();
-function playWorldSounds(){const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?(e.name.startsWith('warden')?.7:.35):1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
+function playWorldSounds(){canvas.dataset.cooldown=String(s.cooldown);const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s),...freightSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?(e.name.startsWith('warden')?.7:.35):1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
 for(const event of ['pointerdown','keydown'])document.addEventListener(event,()=>{if(sound)audio.unlock();},{capture:true});
 document.addEventListener('click',e=>{if(!sound||!e.target.closest('button')||e.target.closest('#sound'))return;audio.unlock().then(()=>audio.play(e.target.closest('#play,#restart,#retry-death,#next-round')?'start':'click'));});
 document.addEventListener('visibilitychange',()=>{audio.setEnabled(sound&&!document.hidden);});
@@ -133,3 +134,4 @@ const startMenu=campaignMenu(document.querySelector('#start-picker'),{campaign,o
 const roundMenu=campaignMenu(document.querySelector('#round-picker'),{campaign,onLevel:loadLevel});
 document.querySelector('#start-picker [aria-pressed="true"]').focus({preventScroll:true});
 document.body.classList.toggle('has-ladders',campaign==='cycle');
+

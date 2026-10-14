@@ -1,0 +1,32 @@
+{
+  "review": "docs/history/FREIGHT109-REVIEW.md",
+  "source": "src/levels/freight/campaign.js",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent freight109 critique agent",
+    "reason": "V2 native-density inspector/cart and selected receiver/masonry/gate/pier cell bodies accepted. Far768 scene and revised768-native full depot wall accepted at1536-world footprint. V1 and rejected V2 nozzle/burner/winch cells do not ship; approved existing fan, cylinder, spool, rail and terrain retain native scale. Raw sources and exact prompts preserved."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independent review of actual1x/2x/mobile rising passenger contact, occupied trolley deck/wheel rail contact, winding/cut winch and extending ladder, carried/seated cell, inspector charge/fire/recovery, gradual purge/shutter and crew reunion. Targeted final upper views confirm clean matte, visible muzzle warning, grounded enemy poses and intact human scale. Coarse touch and actual death/reset passed."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Safe commissioning, guarded freight route with real inventory cell, supported draft passenger, earned recovery ladders and shield-assisted high running bash form a physically legible escalating chain. Ordinary control completion at60/120Hz and actual keyboard route retain full health for all three; no state teleport/progression override."
+  },
+  "verification": {
+    "tests": 476,
+    "regressions": "tests/unit/freight109.test.js",
+    "simulationRates": [60,120],
+    "ordinaryInputRoute": "tests/routes/freight-route109.js",
+    "browserRoute": "evidence/full-route.json",
+    "finalUpperReview": "evidence/final-upper-route.json",
+    "damageRetry": "evidence/death-retry.json",
+    "coarseTouch": "evidence/touch.json",
+    "won": true,
+    "heroHP": [3,3,3],
+    "time": 99.375,
+    "browserErrors": []
+  },
+  "publicationAllowed": true
+}

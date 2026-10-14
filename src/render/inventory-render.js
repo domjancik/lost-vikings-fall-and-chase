@@ -1,8 +1,9 @@
 import {drawMachine,drawSafeDoor} from './machine-render.js?v=arc46';
-import {itemTypes} from '../core/inventory.js?v=arc46';
+import {itemTypes} from '../core/inventory.js?v=freight109';
 import {snapPixel,animationTime} from './pixel-grid.js?v=arc46';
 const image=new Image(),cells=[];image.src='assets/pixel/inventory-sprites.png?v=pipeline44';image.onload=()=>{const c=document.createElement('canvas');c.width=image.width;c.height=image.height;const g=c.getContext('2d');g.drawImage(image,0,0);const data=g.getImageData(0,0,c.width,c.height).data;for(let n=0;n<16;n++){const x0=n%4*c.width/4,y0=Math.floor(n/4)*c.height/4;let l=x0+c.width/4,r=x0,t=y0+c.height/4,b=y0;for(let y=y0;y<y0+c.height/4;y++)for(let x=x0;x<x0+c.width/4;x++)if(data[(y*c.width+x)*4+3]>30){l=Math.min(l,x);r=Math.max(r,x);t=Math.min(t,y);b=Math.max(b,y);}cells[n]={x:l,y:t,w:r-l+1,h:b-t+1};}};
-export function drawItemSprite(ctx,n,x,y,w=32,h=32){const c=cells[n];if(!c)return false;ctx.drawImage(image,c.x,c.y,c.w,c.h,snapPixel(x-w/2),snapPixel(y-h),snapPixel(w),snapPixel(h));return true;}
+const pressureCell=new Image();pressureCell.src='assets/freight109/cell-native.png?v=freight109';
+export function drawItemSprite(ctx,n,x,y,w=32,h=32){if(n===15){if(!pressureCell.complete||!pressureCell.naturalWidth)return false;const scale=Math.max(1,Math.floor(Math.min(w/8,h/12))),ww=8*scale,hh=12*scale;ctx.drawImage(pressureCell,Math.round(x-ww/2),Math.round(y-hh),ww,hh);return true;}const c=cells[n];if(!c)return false;ctx.drawImage(image,c.x,c.y,c.w,c.h,snapPixel(x-w/2),snapPixel(y-h),snapPixel(w),snapPixel(h));return true;}
 export function drawInventoryWorld(ctx,s,text,box){const g=s.machine,c=s.level.accent,t=animationTime(s.time),status=text.status||text,clue=text.clue||text;
  for(const i of s.items){drawItemSprite(ctx,i.locked?14:itemTypes[i.type].icon,i.x,i.y+44,i.locked?44:30,i.locked?44:30);status(i.locked?'CONTAINER':itemTypes[i.type].name.toUpperCase(),i.x,i.y-10,c,10);}
  for(const b of s.bombs){drawItemSprite(ctx,10,b.x,b.y+12,26,26);status(b.fuse.toFixed(1)+'s',b.x,b.y-24,'#ffbc78',12);}

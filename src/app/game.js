@@ -1,6 +1,7 @@
-import {campaignMenu} from './campaign-menu.js?v=walls101';
-import {drawScene} from '../render/scene-render95.js?v=walls101';
+import {campaignMenu} from './campaign-menu.js?v=warden102';
+import {drawScene} from '../render/scene-render95.js?v=warden102';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=vikings90';
+import {drawWardenOverlay} from '../levels/warden/render.js?v=warden102';
 import {drawWaterOverlay} from '../levels/water/render.js?v=walls101';
 import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=skins76';
 import {setHeroSkin} from '../heroes/hero-art.js?v=skins76';
@@ -13,8 +14,8 @@ import {archiveCheckpoint,applyArchiveCheckpoint} from '../campaigns/story/story
 import {storyLevels} from '../campaigns/story/story-campaign.js?v=vikings70';
 import {drawStoryItem} from '../campaigns/story/story-render.js?v=edge67';
 import {createSoundEvents} from '../audio/audio-events.js?v=clockwork69';
-import {createWardenSounds} from '../levels/warden/audio.js?v=warden89';
-import {createSoundLayer} from '../audio/sound-effects.js?v=arc46';
+import {createWardenSounds} from '../levels/warden/audio.js?v=warden102';
+import {createSoundLayer} from '../audio/sound-effects.js?v=warden102';
 import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=arc46';
 import {plungerPose} from '../core/plunger.js?v=arc46';
 import {forgeMaterialPose} from '../core/forge-material.js?v=arc46';
@@ -65,7 +66,7 @@ function draw(){
  const shadows=s.heroes.map(h=>groundShadow(s,{x:(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,y:(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha},platforms));canvas.dataset.shadows=JSON.stringify(shadows);
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
  for(const h of heroDrawOrder(s.heroes)){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();if(h.id===s.active){text('▼',h.x,h.y-(h.shieldUp?58:46),colors[h.id],13);}for(let n=0;n<3;n++)box(n<h.hp?colors[h.id]:'#514953',h.x-10+n*8,h.y-38,5,3);}
- drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);
+ drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);const wardenOptics=drawWardenOverlay(ctx,s);if(wardenOptics)canvas.dataset.wardenOptics=JSON.stringify(wardenOptics);else delete canvas.dataset.wardenOptics;
  if(paused&&started&&!s.won){const split=clockworkView(s,viewport).split,badgeWidth=Math.min(viewWidth-20,split?72:220),badgeY=vertical+(split&&viewport.mobile?clockworkView(s,viewport).inset.y+clockworkView(s,viewport).inset.h+8:split?42:60),badgeX=split?camera+8:camera+(viewWidth-badgeWidth)/2;box('#0e181bee',badgeX,badgeY,badgeWidth,split?18:40);text(split?'PAUSED':'PAUSED · ESC / Ⅱ',badgeX+badgeWidth/2,badgeY+(split?12:25),'#d5ef83',split?8:12);}
  ctx.restore();const clockView=clockworkView(s,viewport);canvas.dataset.clockView=JSON.stringify(clockView);drawClockworkInset(ctx,s,clockView);screen.clearRect(0,0,canvas.width,canvas.height);screen.drawImage(surface,0,0,surface.width*WORLD_PIXEL,surface.height*WORLD_PIXEL);drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);
 }
@@ -73,7 +74,7 @@ function toast(t){document.querySelector('#toast').textContent=t;document.queryS
 const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
 function updateSoundButton(){const button=document.querySelector('#sound');button.querySelector('span').textContent=sound?'SOUND ON':'SOUND OFF';button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',sound?'Mute sound effects':'Enable sound effects');button.title=sound?'Sound effects on':'Sound effects off';button.classList.toggle('muted',!sound);}
 updateSoundButton();
-function playWorldSounds(){const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?.35:1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
+function playWorldSounds(){const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?(e.name.startsWith('warden')?.7:.35):1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
 for(const event of ['pointerdown','keydown'])document.addEventListener(event,()=>{if(sound)audio.unlock();},{capture:true});
 document.addEventListener('click',e=>{if(!sound||!e.target.closest('button')||e.target.closest('#sound'))return;audio.unlock().then(()=>audio.play(e.target.closest('#play,#restart,#retry-death,#next-round')?'start':'click'));});
 document.addEventListener('visibilitychange',()=>{audio.setEnabled(sound&&!document.hidden);});

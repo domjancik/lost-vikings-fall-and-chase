@@ -377,6 +377,14 @@
       "output": "warden-art97.js"
     },
     {
+      "source": "src/levels/warden/render-cache.js",
+      "output": "warden-render-cache102.js"
+    },
+    {
+      "source": "src/levels/warden/combat-refraction.js",
+      "output": "warden-refraction102.js"
+    },
+    {
       "source": "src/levels/warden/audio.js",
       "output": "warden-audio.js"
     },
@@ -713,6 +721,9 @@
     "assets/water92/registration.json",
     "assets/water92/scene-native.png",
     "assets/water92/terrain-native.png",
-    "assets/water92/visual-gates.json"
+    "assets/water92/visual-gates.json",
+    "assets/warden102/parts-native.png",
+    "assets/warden102/broken-lens-native.png",
+    "assets/warden102/visual-gates.json"
   ]
 }

@@ -1,0 +1,23 @@
+{
+  "nativeSize": [
+    512,
+    512
+  ],
+  "worldUnitsPerNativePixel": 2,
+  "bodyNative": [
+    320,
+    124
+  ],
+  "headNative": [
+    104,
+    116
+  ],
+  "limbNative": [
+    40,
+    93
+  ],
+  "source": "parts-raw-v3.png",
+  "generator": "built-in imagegen",
+  "invariants": "Retain component layout, scale, rigid pivots, body walking spine and foot soles. Native-density gate must accept raw source before one uniform normalization. Preserve original source and prompt; reject if finer painted grain or coarse outlines cannot survive native view.",
+  "publicationAllowed": true
+}

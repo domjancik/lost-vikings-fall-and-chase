@@ -1,0 +1,22 @@
+{
+  "device": "844x390, DPR2, Chrome headless, CPU throttle6; camera-only boss-bay diagnostic",
+  "results": [
+    {
+      "zoom": 1,
+      "frames": 198,
+      "medianDrawMs": 11.200000047683716,
+      "p95DrawMs": 16.200000047683716,
+      "meanDrawImageCalls": 81.05050505050505,
+      "meanFilteredCalls": 0
+    },
+    {
+      "zoom": 2,
+      "frames": 193,
+      "medianDrawMs": 10.599999904632568,
+      "p95DrawMs": 17.90000009536743,
+      "meanDrawImageCalls": 59.398963730569946,
+      "meanFilteredCalls": 0
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,10 @@
+{
+ "review":"docs/history/WARDEN102-REVIEW.md",
+ "nativeSize":[512,512],"worldUnitsPerNativePixel":2,
+ "selectedSource":"parts-raw-v3.png",
+ "sourceGate":{"verdict":"accepted","reviewer":"independent warden102 critique agent","reason":"V1 rejected for sub-native painted speckles; V2 density accepted but too pristine; selected V3 adds purposeful vents, thinner contour, iron planes and sparse seam/joint weathering at authored density."},
+ "runtimeGate":{"verdict":"accepted","reason":"Processed native/2x comparisons and actual boss 1x/2x/mobile captures: native contours/materials, grounded fork feet, Olaf shield load, spine/rider contacts, moving shutters/broken lens and dynamic boarding ladder preserved. Laser/pressure distortion stays local; authoritative beam core remains intact."},
+ "performance":{"method":"Chrome mobile-sized844x390 DPR2 CPU-throttle6; bounded desktop proxy, not real-phone certification","beforeMedianDrawMs":{"1x":46.9,"2x":25},"optimizedMedianDrawMs":{"1x":11.2,"2x":10.6},"filteredDrawsBefore":759,"filteredDrawsAfter":0,"activeLaserMedianMs":{"1x":12,"2x":10.3},"activeStompMedianMs":{"1x":11.9,"2x":9}},
+ "verification":{"ordinaryInputRoute":"evidence/browser-route.json","won":true,"heroHP":[3,3,3],"browserErrors":[],"audio":"evidence/audio.json","audioScope":"Transition/recipe review and OfflineAudioContext nonzero/unclipped renders; subjective listening not verified."},
+ "publicationAllowed":true
+}

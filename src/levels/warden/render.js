@@ -1,18 +1,20 @@
-import {drawBraceSweat} from './strain-effects.js?v=warden104';
+import {drawBraceSweat} from './strain-effects.js?v=warden105';
+import {CART_ART,cartPlacement,cartPort,cartWheelPlacement,createCartPieces} from './cart-art.js?v=warden105';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
-import {wardenWaveOpacity,laserTrace} from './combat.js?v=warden104';
-import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden104';
-import {WARDEN_ART as A} from './art.js?v=warden104';
+import {wardenWaveOpacity,laserTrace} from './combat.js?v=warden105';
+import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden105';
+import {WARDEN_ART as A} from './art.js?v=warden105';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=arc46';
-import {drawCombatRefraction} from './combat-refraction.js?v=warden104';
+import {drawCombatRefraction} from './combat-refraction.js?v=warden105';
 import {rotationBounds,createRenderCache,visibleChunks,partitionLadders} from './render-cache.js?v=warden102';
 const load=p=>{const i=new Image();i.src=p;return i;};
 const parts=load('assets/warden102/parts-native.png'),scene=load('assets/warden89/scene-native.png'),brokenLens=load('assets/warden102/broken-lens-native.png'),ladder=load('assets/platform56/ladder.png');
 const plunger=load('assets/warden97/plunger-native.png'),emitter=load('assets/warden97/emitter-native.png');
+const carriage=load('assets/warden105/cart-native.png');let carriagePieces;
 const gate=createAtlas('assets/gate61/gate.png',1,1),tower=createAtlas('assets/clockwork71/tower.png',2,2),cache=createRenderCache(96),fixed=createRenderCache(24),grades=new WeakMap();
 let renderView=null;
 const footOffsets={near:(A.anchors.footSoles['foot-near']-A.anchors.footPivot[1])*A.worldPixel,far:(A.anchors.footSoles['foot-far']-A.anchors.footPivot[1])*A.worldPixel};
@@ -21,10 +23,10 @@ function grade(image,filter='saturate(.62) brightness(.88)'){
  let map=grades.get(image);if(!map){map=new Map();grades.set(image,map);}if(map.has(filter))return map.get(filter);
  const b=document.createElement('canvas');b.width=image.naturalWidth;b.height=image.naturalHeight;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.filter=filter;c.drawImage(image,0,0);map.set(filter,b);return b;
 }
-function sprite(c,name,x,y,angle=0,anchor=[0,0]){
- if(!parts.naturalWidth)return;
- const r=A.parts[name],deg=Math.round(angle*180/Math.PI/2)*2,key=name+':'+deg+':'+anchor;
- let entry=cache.get(key);if(!entry){const bounds=rotationBounds(r,anchor,deg*Math.PI/180),b=document.createElement('canvas');b.width=bounds.w;b.height=bounds.h;const t=b.getContext('2d');t.imageSmoothingEnabled=false;t.translate(-bounds.x,-bounds.y);t.rotate(deg*Math.PI/180);t.drawImage(grade(parts),...r,-anchor[0],-anchor[1],r[2],r[3]);entry=cache.set(key,{image:b,...bounds});}
+function sprite(c,name,x,y,angle=0,anchor=[0,0],source=parts,r=A.parts[name]){
+ if(!(source.naturalWidth||source.width))return;
+ const deg=Math.round(angle*180/Math.PI/2)*2,key=name+':'+deg+':'+anchor;
+ let entry=cache.get(key);if(!entry){const bounds=rotationBounds(r,anchor,deg*Math.PI/180),b=document.createElement('canvas');b.width=bounds.w;b.height=bounds.h;const t=b.getContext('2d');t.imageSmoothingEnabled=false;t.translate(-bounds.x,-bounds.y);t.rotate(deg*Math.PI/180);t.drawImage(grade(source),...r,-anchor[0],-anchor[1],r[2],r[3]);entry=cache.set(key,{image:b,...bounds});}
  const dx=q(x+entry.x*2),dy=q(y+entry.y*2),w=entry.w*2,h=entry.h*2;
  if(renderView&&(dx+w<renderView.x||dx>renderView.x+renderView.width||dy+h<renderView.y||dy>renderView.y+renderView.height))return;
  c.drawImage(entry.image,dx,dy,w,h);
@@ -53,10 +55,16 @@ function head(c,s,p){
  if(s.machine.disabled&&brokenLens.naturalWidth)c.drawImage(grade(brokenLens,'saturate(.62) brightness(.616)'),1552,q(p.y-116),208,232);
 }
 function cargo(c,s,p){
- // One registered carriage stays rigid; real authored hinge links release its clamps.
- sprite(c,'cargo-free',p.x,p.y,0,[9,A.anchors.cargoRim[1]]);
- for(let n=0;n<4;n++)sprite(c,'spoke',p.x+158,p.y-18,n*Math.PI/2+s.machine.cargo.distance/45,[0,2]);
- const phase=s.machine.release;for(const [x,flip] of [[p.x+2,-1],[p.x+p.w-4,1]])sprite(c,'clamp',x,p.y-90,flip*(.12+phase*.8),[7,0]);
+ if(!carriage.naturalWidth)return;
+ carriagePieces??=createCartPieces(grade(carriage));
+ const r=cartPlacement(p),[sx,sy,sw,sh]=CART_ART.sourceBounds;
+ c.drawImage(carriagePieces.body,sx,sy,sw,sh,r.x+sx*2,r.y+sy*2,sw*2,sh*2);
+ // Complete native caster components retain their outlines; their measured
+ // soles register to the dock rather than inheriting the source cell padding.
+ for(const name of ['wheelNear','wheelFar']){const v=cartWheelPlacement(p,name),part=carriagePieces[name],radius=CART_ART.pieces[name].radius;sprite(c,'cart-'+name,v.x,v.y,0,[radius,radius],part,[0,0,part.width,part.height]);}
+ const wheel=cartPort(p,'wheel'),part=carriagePieces.wheel,radius=CART_ART.pieces.wheel.radius;
+ sprite(c,'cart-wheel',wheel.x,wheel.y,s.machine.cargo.distance/45,[radius,radius],part,[0,0,part.width,part.height]);
+ const phase=s.machine.release;for(const [name,flip]of [['clampLeft',-1],['clampRight',1]]){const mount=cartPort(p,name);sprite(c,'clamp',mount.x,mount.y,flip*(.12+phase*.8),[7,0]);}
 }
 function fixedWorld(c,s){
  const decor=drawDepthMidground(c,s);
@@ -114,7 +122,7 @@ export function drawWardenWorld(c,s,camera,viewport){
  const slamAge=s.time-(g.slamAt??-10);if(slamAge<.45)for(let n=0;n<10;n++){const x=g.footX+(n-5)*12*slamAge*4,y=938-Math.sin(n*2.1)*slamAge*45+slamAge*slamAge*130;c.fillStyle=n%2?'#a48b65':'#63746e';c.fillRect(q(x),q(Math.min(938,y)),4,4);}
  const age=s.time-g.disabledAt;if(g.disabled&&age<1.2)for(let n=0;n<14;n++){const t=age+n*.03,x=1724+Math.cos(n*2.4)*t*95,y=p.eye.y+Math.sin(n*2.4)*t*80+120*t*t;c.fillStyle=n%2?'#d6ae58':'#80dad8';c.fillRect(q(x),q(y),4,4);}
  renderView=null;
- return {decor,boardingLadders:ladderLayers.dynamic,renderCache:{chunks:fixed.size,draws:scenery.draws,rotations:cache.size},ready:scenery.ready&&depthReady()&&!!(emitter.naturalWidth&&plunger.naturalWidth&&parts.naturalWidth&&scene.naturalWidth&&brokenLens.naturalWidth&&ladder.naturalWidth&&tower.image.naturalWidth&&gate.image.naturalWidth&&connectionsReady()),legs:p.legs,spine:p.spine,eye:p.eye,emitter:p.emitter,plunger:p.plunger,cargo:p.cargo,shutter:g.shutter,capFrame,sourceDensity:'512native component atlas and960native-width archive; one native pixel=2world units',contacts:p.legs.map(l=>({id:l.id,sole:l.foot.y,surface:l.id===g.activeLeg&&g.braced?860:940}))};
+ return {decor,boardingLadders:ladderLayers.dynamic,renderCache:{chunks:fixed.size,draws:scenery.draws,rotations:cache.size},ready:scenery.ready&&depthReady()&&!!(carriage.naturalWidth&&emitter.naturalWidth&&plunger.naturalWidth&&parts.naturalWidth&&scene.naturalWidth&&brokenLens.naturalWidth&&ladder.naturalWidth&&tower.image.naturalWidth&&gate.image.naturalWidth&&connectionsReady()),legs:p.legs,spine:p.spine,eye:p.eye,emitter:p.emitter,plunger:p.plunger,cargo:p.cargo,carriage:{...cartPlacement(p.cargo),deck:q(p.cargo.y),nativeSize:CART_ART.nativeSize,worldPixel:2,wheels:['wheelNear','wheelFar'].map(name=>cartWheelPlacement(p.cargo,name)),ports:Object.fromEntries(Object.keys(CART_ART.ports).map(name=>[name,cartPort(p.cargo,name)]))},shutter:g.shutter,capFrame,sourceDensity:'512native component atlas,192native carriage and960native-width archive; one native pixel=2world units',contacts:p.legs.map(l=>({id:l.id,sole:l.foot.y,surface:l.id===g.activeLeg&&g.braced?860:940}))};
 }
 
 function drawWardenLaser(c,s,p){const g=s.machine;

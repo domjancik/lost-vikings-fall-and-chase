@@ -1,0 +1,20 @@
+{
+  "mismatches": 0,
+  "croppedMismatches": 0,
+  "nativeSize": [
+    192,
+    128
+  ],
+  "contacts": [
+    {
+      "name": "wheelNear",
+      "bottom": 31,
+      "visibleBottom": 940
+    },
+    {
+      "name": "wheelFar",
+      "bottom": 31,
+      "visibleBottom": 940
+    }
+  ]
+}

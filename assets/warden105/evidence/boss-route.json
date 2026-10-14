@@ -1,0 +1,7355 @@
+{
+  "won": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "time": 106.45833333336412,
+  "restart": true,
+  "continue": true,
+  "evidence": {
+    "sweat-current-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "current",
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.033333333333332,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.249999999999991,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.90833333333069,
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 13,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "sweat-current-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "current",
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.033333333333332,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.249999999999991,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.90833333333069,
+      "camera": {
+        "x": 1066,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 13,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "sweat-imagegen90-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.0499999999999987,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.2666666666666577,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.924999999997354,
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 13,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "sweat-imagegen90-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 35
+          },
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.0499999999999987,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.2666666666666577,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.924999999997354,
+      "camera": {
+        "x": 1068,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 13,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "sweat-procedural-desktop-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "procedural",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "procedural",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "procedural",
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.0666666666666653,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.2833333333333243,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.94166666666402,
+      "camera": {
+        "x": 1172,
+        "y": 692,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 12.9,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "sweat-procedural-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "procedural",
+          "x": 878.2534722222186,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "procedural",
+          "x": 1940,
+          "y": 716.5555555555555,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "ladder",
+          "climbing": true
+        },
+        {
+          "id": 2,
+          "skin": "procedural",
+          "x": 1487.7291666666667,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 1.0666666666666653,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 3.2833333333333243,
+          "target": {
+            "x": 1272.3541666666667,
+            "y": 918
+          },
+          "hit": {
+            "x": 1254.9923844537816,
+            "y": 940,
+            "kind": "terrain"
+          }
+        },
+        "footY": 860,
+        "footX": 1490,
+        "kneel": 1,
+        "braced": true,
+        "disabled": false,
+        "shutdown": 0,
+        "release": 0,
+        "exposure": 0,
+        "shutter": 0,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": -10,
+        "disabledAt": -10,
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "",
+        "lensHit": 0,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 52.74999999999765,
+        "laserFireAt": 54.30833333333089,
+        "blockAt": 50.91666666666442
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 15,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1445.5738493140989,
+              "y": 662.8252248621106
+            },
+            "ankle": {
+              "x": 1490,
+              "y": 804
+            },
+            "foot": {
+              "x": 1490,
+              "y": 860
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 830,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 688,
+          "w": 384,
+          "h": 256,
+          "deck": 830,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 870,
+              "visibleBottom": 900
+            },
+            {
+              "x": 2014,
+              "y": 870,
+              "visibleBottom": 900
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 812
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 740
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 740
+            }
+          }
+        },
+        "shutter": 0,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 860,
+            "surface": 860
+          }
+        ]
+      },
+      "time": 57.94166666666402,
+      "camera": {
+        "x": 1068,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 2
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": true,
+          "kind": "strength",
+          "value": 12.9,
+          "selected": true,
+          "text": "STR13s"
+        }
+      ]
+    },
+    "boarded-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1851.4722222222251,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1883.6319444444396,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1922.5624999999995,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 8.225000000000174,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 0,
+          "target": {
+            "x": 1938.9618055555557,
+            "y": 678
+          },
+          "hit": {
+            "x": -732.3536899139558,
+            "y": 868.4576820916958,
+            "kind": "air"
+          }
+        },
+        "footY": 940,
+        "footX": 1554,
+        "kneel": 1,
+        "braced": false,
+        "disabled": true,
+        "shutdown": 1,
+        "release": 1,
+        "exposure": 0,
+        "shutter": 1,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": 62.99166666666373,
+        "disabledAt": 65.09999999999788,
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "lens",
+        "lensHit": 65.09999999999788,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 64.5833333333308,
+        "laserFireAt": 60.22499999999722,
+        "blockAt": 50.91666666666442,
+        "releaseFootY": 860
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [
+          {
+            "x": 1760,
+            "top": 870,
+            "bottom": 940
+          }
+        ],
+        "renderCache": {
+          "chunks": 18,
+          "draws": 2,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1406.0043712254896,
+              "y": 885.1374812689904
+            },
+            "ankle": {
+              "x": 1554,
+              "y": 884
+            },
+            "foot": {
+              "x": 1554,
+              "y": 940
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 728,
+          "w": 384,
+          "h": 256,
+          "deck": 870,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 910,
+              "visibleBottom": 940
+            },
+            {
+              "x": 2014,
+              "y": 910,
+              "visibleBottom": 940
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 852
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 780
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 780
+            }
+          }
+        },
+        "shutter": 1,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 940,
+            "surface": 940
+          }
+        ]
+      },
+      "time": 86.7500000000151,
+      "camera": {
+        "x": 1606,
+        "y": 622,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 0
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 5.8,
+          "selected": true,
+          "text": "STR6s"
+        }
+      ]
+    },
+    "boarded-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1851.4722222222251,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1883.6319444444396,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 1922.5624999999995,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 8.225000000000174,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 0,
+          "target": {
+            "x": 1938.9618055555557,
+            "y": 678
+          },
+          "hit": {
+            "x": -732.3536899139558,
+            "y": 868.4576820916958,
+            "kind": "air"
+          }
+        },
+        "footY": 940,
+        "footX": 1554,
+        "kneel": 1,
+        "braced": false,
+        "disabled": true,
+        "shutdown": 1,
+        "release": 1,
+        "exposure": 0,
+        "shutter": 1,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": 62.99166666666373,
+        "disabledAt": 65.09999999999788,
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "lens",
+        "lensHit": 65.09999999999788,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 64.5833333333308,
+        "laserFireAt": 60.22499999999722,
+        "blockAt": 50.91666666666442,
+        "releaseFootY": 860
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [
+          {
+            "x": 1760,
+            "top": 870,
+            "bottom": 940
+          }
+        ],
+        "renderCache": {
+          "chunks": 18,
+          "draws": 9,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1406.0043712254896,
+              "y": 885.1374812689904
+            },
+            "ankle": {
+              "x": 1554,
+              "y": 884
+            },
+            "foot": {
+              "x": 1554,
+              "y": 940
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 728,
+          "w": 384,
+          "h": 256,
+          "deck": 870,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 910,
+              "visibleBottom": 940
+            },
+            {
+              "x": 2014,
+              "y": 910,
+              "visibleBottom": 940
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 852
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 780
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 780
+            }
+          }
+        },
+        "shutter": 1,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 940,
+            "surface": 940
+          }
+        ]
+      },
+      "time": 87.06666666668202,
+      "camera": {
+        "x": 1290,
+        "y": 398,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 0
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 5.8,
+          "selected": true,
+          "text": "STR6s"
+        }
+      ]
+    },
+    "boarded-mobile-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1851.4722222222251,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1883.6319444444396,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 34
+          },
+          "x": 1922.5624999999995,
+          "y": 826,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 8.225000000000174,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 0,
+          "target": {
+            "x": 1938.9618055555557,
+            "y": 678
+          },
+          "hit": {
+            "x": -732.3536899139558,
+            "y": 868.4576820916958,
+            "kind": "air"
+          }
+        },
+        "footY": 940,
+        "footX": 1554,
+        "kneel": 1,
+        "braced": false,
+        "disabled": true,
+        "shutdown": 1,
+        "release": 1,
+        "exposure": 0,
+        "shutter": 1,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": 62.99166666666373,
+        "disabledAt": 65.09999999999788,
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "lens",
+        "lensHit": 65.09999999999788,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 64.5833333333308,
+        "laserFireAt": 60.22499999999722,
+        "blockAt": 50.91666666666442,
+        "releaseFootY": 860
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [
+          {
+            "x": 1760,
+            "top": 870,
+            "bottom": 940
+          }
+        ],
+        "renderCache": {
+          "chunks": 18,
+          "draws": 2,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1406.0043712254896,
+              "y": 885.1374812689904
+            },
+            "ankle": {
+              "x": 1554,
+              "y": 884
+            },
+            "foot": {
+              "x": 1554,
+              "y": 940
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 1740,
+          "y": 870,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 0,
+          "target": 0,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 1702,
+          "y": 728,
+          "w": 384,
+          "h": 256,
+          "deck": 870,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 1774,
+              "y": 910,
+              "visibleBottom": 940
+            },
+            {
+              "x": 2014,
+              "y": 910,
+              "visibleBottom": 940
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 1898,
+              "y": 852
+            },
+            "clampLeft": {
+              "x": 1742,
+              "y": 780
+            },
+            "clampRight": {
+              "x": 2036,
+              "y": 780
+            }
+          }
+        },
+        "shutter": 1,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 940,
+            "surface": 940
+          }
+        ]
+      },
+      "time": 87.21666666668214,
+      "camera": {
+        "x": 1538,
+        "y": 622,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 0
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 5.8,
+          "selected": true,
+          "text": "STR6s"
+        }
+      ]
+    },
+    "lift-middle": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 2151.4722222222276,
+          "y": 749.0347222222229,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 2183.631944444443,
+          "y": 749.0347222222229,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 36
+          },
+          "x": 2222.562500000004,
+          "y": 749.0347222222229,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 8.225000000000174,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 0,
+          "target": {
+            "x": 1938.9618055555557,
+            "y": 678
+          },
+          "hit": {
+            "x": -732.3536899139558,
+            "y": 868.4576820916958,
+            "kind": "air"
+          }
+        },
+        "footY": 940,
+        "footX": 1554,
+        "kneel": 1,
+        "braced": false,
+        "disabled": true,
+        "shutdown": 1,
+        "release": 1,
+        "exposure": 0,
+        "shutter": 1,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": 62.99166666666373,
+        "disabledAt": 65.09999999999788,
+        "cargo": {
+          "x": 2040,
+          "y": 793.0347222222229,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 376.9652777777771,
+          "target": 710,
+          "speed": 130,
+          "pause": 0
+        },
+        "lastShot": "lens",
+        "lensHit": 65.09999999999788,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 64.5833333333308,
+        "laserFireAt": 60.22499999999722,
+        "blockAt": 50.91666666666442,
+        "releaseFootY": 860
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 18,
+          "draws": 2,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1406.0043712254896,
+              "y": 885.1374812689904
+            },
+            "ankle": {
+              "x": 1554,
+              "y": 884
+            },
+            "foot": {
+              "x": 1554,
+              "y": 940
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 2040,
+          "y": 793.0347222222229,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 376.9652777777771,
+          "target": 710,
+          "speed": 130,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 2002,
+          "y": 652,
+          "w": 384,
+          "h": 256,
+          "deck": 794,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 2074,
+              "y": 834,
+              "visibleBottom": 864
+            },
+            {
+              "x": 2314,
+              "y": 834,
+              "visibleBottom": 864
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 2198,
+              "y": 776
+            },
+            "clampLeft": {
+              "x": 2042,
+              "y": 704
+            },
+            "clampRight": {
+              "x": 2336,
+              "y": 704
+            }
+          }
+        },
+        "shutter": 1,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 940,
+            "surface": 940
+          }
+        ]
+      },
+      "time": 91.64166666668567,
+      "camera": {
+        "x": 1836,
+        "y": 558,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 0
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": true,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 5.8,
+          "selected": false,
+          "text": "STR6s"
+        }
+      ]
+    },
+    "upper-dock": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 2191.4722222222276,
+          "y": 456,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 2223.631944444443,
+          "y": 456,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 0,
+            "y": -36,
+            "rx": 24,
+            "ry": 6.000000000000001,
+            "roll": 0,
+            "mode": "overhead",
+            "cell": 37
+          },
+          "x": 2262.562500000004,
+          "y": 456,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": true,
+          "shield": true,
+          "face": 1,
+          "support": "warden-lift",
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "cycle": 56.874999999997414,
+        "activeLeg": 3,
+        "braceAge": 8.225000000000174,
+        "fatigue": 0,
+        "waves": [],
+        "laser": {
+          "phase": "cooldown",
+          "age": 0,
+          "target": {
+            "x": 1938.9618055555557,
+            "y": 678
+          },
+          "hit": {
+            "x": -732.3536899139558,
+            "y": 868.4576820916958,
+            "kind": "air"
+          }
+        },
+        "footY": 940,
+        "footX": 1554,
+        "kneel": 1,
+        "braced": false,
+        "disabled": true,
+        "shutdown": 1,
+        "release": 1,
+        "exposure": 0,
+        "shutter": 1,
+        "stroke": 0,
+        "capTimer": 0,
+        "stampAt": -10,
+        "impactAt": 62.99166666666373,
+        "disabledAt": 65.09999999999788,
+        "cargo": {
+          "x": 2080,
+          "y": 500,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 710,
+          "target": 710,
+          "speed": 0,
+          "pause": 0
+        },
+        "lastShot": "lens",
+        "lensHit": 65.09999999999788,
+        "unload": 0,
+        "slamAt": 50.674999999997766,
+        "engaged": true,
+        "laserWarnAt": 64.5833333333308,
+        "laserFireAt": 60.22499999999722,
+        "blockAt": 50.91666666666442,
+        "releaseFootY": 860
+      },
+      "won": false,
+      "failed": false,
+      "art": {
+        "decor": {
+          "theme": 5,
+          "props": [
+            {
+              "x": 200,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 760,
+              "kind": 2,
+              "support": {
+                "x": 500,
+                "y": 760,
+                "w": 400
+              }
+            },
+            {
+              "x": 980,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2070,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 2200
+              }
+            },
+            {
+              "x": 2420,
+              "floorY": 500,
+              "kind": 0,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 2620,
+              "floorY": 500,
+              "kind": 2,
+              "support": {
+                "x": 2200,
+                "y": 500,
+                "w": 800
+              }
+            },
+            {
+              "x": 460,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2320,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            },
+            {
+              "x": 2760,
+              "floorY": 1120,
+              "kind": 2,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 3000
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [
+            {
+              "x": 0,
+              "y": 200,
+              "w": 360,
+              "h": 740,
+              "floorY": 940
+            },
+            {
+              "x": 500,
+              "y": 540,
+              "w": 400,
+              "h": 220,
+              "floorY": 760
+            },
+            {
+              "x": 2200,
+              "y": 200,
+              "w": 800,
+              "h": 300,
+              "floorY": 500
+            },
+            {
+              "x": 0,
+              "y": 1000,
+              "w": 3000,
+              "h": 120,
+              "floorY": 1120
+            }
+          ],
+          "roomBorders": [
+            {
+              "room": {
+                "x": 0,
+                "y": 200,
+                "w": 360,
+                "h": 740,
+                "floorY": 940
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 360
+                },
+                {
+                  "side": "right",
+                  "start": 200,
+                  "end": 940
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-right",
+                  "x": 360,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 500,
+                "y": 540,
+                "w": 400,
+                "h": 220,
+                "floorY": 760
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 500,
+                  "end": 900
+                },
+                {
+                  "side": "left",
+                  "start": 540,
+                  "end": 760
+                },
+                {
+                  "side": "right",
+                  "start": 540,
+                  "end": 760
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 500,
+                  "y": 540
+                },
+                {
+                  "kind": "top-right",
+                  "x": 900,
+                  "y": 540
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 2200,
+                "y": 200,
+                "w": 800,
+                "h": 300,
+                "floorY": 500
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 2200,
+                  "end": 3000
+                },
+                {
+                  "side": "left",
+                  "start": 200,
+                  "end": 500
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 2200,
+                  "y": 200
+                }
+              ]
+            },
+            {
+              "room": {
+                "x": 0,
+                "y": 1000,
+                "w": 3000,
+                "h": 120,
+                "floorY": 1120
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 0,
+                  "end": 3000
+                }
+              ],
+              "corners": []
+            }
+          ],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 666,
+                "y": 656,
+                "w": 108,
+                "h": 104,
+                "floorY": 760
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2566,
+                "y": 396,
+                "w": 108,
+                "h": 104,
+                "floorY": 500
+              },
+              "edges": [],
+              "corners": []
+            },
+            {
+              "room": {
+                "x": 2706,
+                "y": 1016,
+                "w": 108,
+                "h": 104,
+                "floorY": 1120
+              },
+              "edges": [],
+              "corners": []
+            }
+          ],
+          "ready": true
+        },
+        "boardingLadders": [],
+        "renderCache": {
+          "chunks": 18,
+          "draws": 4,
+          "rotations": 96
+        },
+        "ready": true,
+        "legs": [
+          {
+            "id": 0,
+            "far": true,
+            "hip": {
+              "x": 1028,
+              "y": 775.375
+            },
+            "knee": {
+              "x": 880.0077283972671,
+              "y": 776.8874635079667
+            },
+            "ankle": {
+              "x": 980,
+              "y": 886
+            },
+            "foot": {
+              "x": 980,
+              "y": 940
+            }
+          },
+          {
+            "id": 1,
+            "far": false,
+            "hip": {
+              "x": 1136,
+              "y": 778.75
+            },
+            "knee": {
+              "x": 991.4721761928708,
+              "y": 810.6201764283699
+            },
+            "ankle": {
+              "x": 1120,
+              "y": 884
+            },
+            "foot": {
+              "x": 1120,
+              "y": 940
+            }
+          },
+          {
+            "id": 2,
+            "far": true,
+            "hip": {
+              "x": 1488,
+              "y": 789.75
+            },
+            "knee": {
+              "x": 1627.9204185885942,
+              "y": 741.5185117170058
+            },
+            "ankle": {
+              "x": 1660,
+              "y": 886
+            },
+            "foot": {
+              "x": 1660,
+              "y": 940
+            }
+          },
+          {
+            "id": 3,
+            "far": false,
+            "hip": {
+              "x": 1520,
+              "y": 790.75
+            },
+            "knee": {
+              "x": 1406.0043712254896,
+              "y": 885.1374812689904
+            },
+            "ankle": {
+              "x": 1554,
+              "y": 884
+            },
+            "foot": {
+              "x": 1554,
+              "y": 940
+            }
+          }
+        ],
+        "spine": [
+          {
+            "x": 950,
+            "y": 660.9375,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1020,
+            "y": 663.125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1090,
+            "y": 665.3125,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1160,
+            "y": 667.5,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1230,
+            "y": 669.6875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1300,
+            "y": 671.875,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1370,
+            "y": 674.0625,
+            "w": 72,
+            "support": "warden-spine"
+          },
+          {
+            "x": 1440,
+            "y": 676.25,
+            "w": 72,
+            "support": "warden-spine"
+          }
+        ],
+        "eye": {
+          "x": 1724,
+          "y": 676
+        },
+        "emitter": {
+          "x": 1648,
+          "y": 562
+        },
+        "plunger": {
+          "x": 1398,
+          "y": 650.375
+        },
+        "cargo": {
+          "x": 2080,
+          "y": 500,
+          "w": 300,
+          "support": "warden-lift",
+          "distance": 710,
+          "target": 710,
+          "speed": 0,
+          "pause": 0
+        },
+        "carriage": {
+          "x": 2042,
+          "y": 358,
+          "w": 384,
+          "h": 256,
+          "deck": 500,
+          "nativeSize": [
+            192,
+            128
+          ],
+          "worldPixel": 2,
+          "wheels": [
+            {
+              "x": 2114,
+              "y": 540,
+              "visibleBottom": 570
+            },
+            {
+              "x": 2354,
+              "y": 540,
+              "visibleBottom": 570
+            }
+          ],
+          "ports": {
+            "wheel": {
+              "x": 2238,
+              "y": 482
+            },
+            "clampLeft": {
+              "x": 2082,
+              "y": 410
+            },
+            "clampRight": {
+              "x": 2376,
+              "y": 410
+            }
+          }
+        },
+        "shutter": 1,
+        "capFrame": 0,
+        "sourceDensity": "512native component atlas,192native carriage and960native-width archive; one native pixel=2world units",
+        "contacts": [
+          {
+            "id": 0,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 1,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 2,
+            "sole": 940,
+            "surface": 940
+          },
+          {
+            "id": 3,
+            "sole": 940,
+            "surface": 940
+          }
+        ]
+      },
+      "time": 95.35833333335529,
+      "camera": {
+        "x": 1874,
+        "y": 252,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "optics": {
+        "regions": [],
+        "strips": 0,
+        "copiedPixels": 0,
+        "sweatDrops": 0
+      },
+      "resources": [
+        {
+          "visible": false,
+          "value": 0,
+          "selected": true,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 0,
+          "selected": false,
+          "text": ""
+        },
+        {
+          "visible": false,
+          "value": 5.8,
+          "selected": false,
+          "text": "STR6s"
+        }
+      ]
+    }
+  },
+  "errors": []
+}

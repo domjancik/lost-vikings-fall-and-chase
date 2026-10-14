@@ -6,7 +6,10 @@ export function braceSweat(s){
  const strain=Math.min(1,g.braceAge/WARDEN_BRACE_LIMIT),count=2+Math.floor(strain*5),result=[];
  for(let n=0;n<count;n++){
   const age=(g.braceAge+n*.173)%.8,side=n%2?1:-1;
-  result.push({x:q(o.x+side*(12+age*17)),y:q(o.y-30+age*12+age*age*36),alpha:Math.min(1,age/.08)*Math.max(0,1-age/.8),h:age<.15?2:4});
+  // Held sprites put the temples12world units above the body origin. The
+  // original procedural skin has a lower head root. Never emit at shieldY.
+  const templeY=o.y+(o.skin==='procedural'?8:-12);
+  result.push({x:q(o.x+side*(12+age*17)),y:q(templeY+age*12+age*age*36),alpha:Math.min(1,age/.08)*Math.max(0,1-age/.8),h:age<.15?2:4});
  }
  return result;
 }

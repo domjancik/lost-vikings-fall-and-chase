@@ -39,6 +39,13 @@ try{
  },10000);
  evidence['brace-arrival']=await state();
  await until(s=>s.machine.kneel===1,()=>[],8000);await variants('brace');
+ if(process.env.WARDEN_REVIEW_SKINS==='1'){
+  for(const option of ['current','imagegen90','procedural']){
+   await page.locator('#help').click();await page.locator('#hero-skin').selectOption(option);await page.waitForTimeout(150);await page.locator('#close-help').click();await page.keyboard.press('Escape');await page.waitForTimeout(200);await shot('sweat-'+option+'-desktop-2x');await page.setViewportSize({width:844,height:390});await page.waitForTimeout(200);await shot('sweat-'+option+'-mobile-2x');await page.setViewportSize({width:1440,height:900});await page.keyboard.press('Escape');
+  }
+  await page.locator('#help').click();await page.locator('#hero-skin').selectOption(skin);await page.waitForTimeout(150);await page.locator('#close-help').click();
+ }
+
  await tap('1');await keys(['ArrowRight']);await page.keyboard.press('Space');await until(s=>s.heroes[0].support==='warden-spine',()=>['ArrowRight'],3000);await shot('spine');
  await until(s=>s.machine.laser.phase==='cooldown'&&s.machine.laser.age<.12,s=>s.machine.laser.phase==='lock'&&s.machine.laser.age>.35?['Space']:[],7000);
  await move(0,1280);await page.locator('#zoom').click();await page.waitForTimeout(300);await variants('cap-before');await until(s=>s.machine.exposure>0,s=>['lock','fire'].includes(s.machine.laser.phase)?['Space']:['ArrowRight','d'],6500);await variants('cap-start');await page.waitForTimeout(100);await variants('cap-middle');await page.waitForTimeout(140);await variants('cap-full');await until(s=>s.machine.shutter===1,()=>[],1000);await climb(1,1940,700);await tap('ArrowLeft');await shot('lens-open');await tap('d');await until(s=>s.machine.disabled,()=>[],3000);await shot('shutdown-start');await page.waitForTimeout(650);await shot('shutdown-middle');await until(s=>s.machine.release===1,()=>[],2500);await shot('shutdown-complete');await until(s=>s.machine.shutdown===1&&s.machine.footY===940,()=>[],2000);await variants('shutdown-settled');await page.locator('#zoom').click();

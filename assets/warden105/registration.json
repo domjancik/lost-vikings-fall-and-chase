@@ -1,0 +1,31 @@
+{
+  "nativeSize": [
+    192,
+    128
+  ],
+  "worldPixel": 2,
+  "source": "cart-raw-v4.png",
+  "normalization": "one uniform nearest presentation normalization; alpha200 removes low-alpha generation matte; no quantizer, palette/grid detection, stretching or material painting",
+  "deck": [
+    19,
+    71,
+    150
+  ],
+  "wheelBottomExclusive": 107,
+  "wheelSupportWorldOffset": 70,
+  "wheelRegistration": "whole wheel parts translated up1nativepixel to dock their visible soles; axle housing overlap reviewed in gameplay",
+  "ports": {
+    "wheel": [
+      98,
+      62
+    ],
+    "clampLeft": [
+      20,
+      26
+    ],
+    "clampRight": [
+      167,
+      26
+    ]
+  }
+}

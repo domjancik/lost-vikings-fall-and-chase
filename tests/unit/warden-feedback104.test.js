@@ -48,7 +48,8 @@ test('brace sweat follows Olaf, grows under strain, freezes while paused and sto
  s.machine.braced=true;s.machine.braceAge=2;s.time=10;
  const early=sweat.braceSweat(s);assert.ok(early.length>0);assert.deepEqual(sweat.braceSweat(s),early);
  s.machine.braceAge=12;const late=sweat.braceSweat(s);assert.ok(late.length>early.length);
- assert.ok(late.some(p=>p.y<s.heroes[2].y-20),'Drops must emerge by the helmet/temples, not the belly');
+ assert.ok(late.every(p=>p.y>=s.heroes[2].y-12),'Sweat must stay below the overhead shield and come from the face');
+ assert.ok(late.some(p=>p.y<s.heroes[2].y),'Drops must emerge near the temples before falling down the body');
  for(const p of late){assert.equal(p.x%2,0);assert.equal(p.y%2,0);assert.ok(p.alpha>=0&&p.alpha<=1);}
  s.heroes[2].x+=100;const moved=sweat.braceSweat(s);assert.equal(moved[0].x-late[0].x,100);
  s.machine.braced=false;assert.deepEqual(sweat.braceSweat(s),[]);

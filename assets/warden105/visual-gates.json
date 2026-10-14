@@ -1,0 +1,33 @@
+{
+  "review": "docs/history/WARDEN105-REVIEW.md",
+  "nativeSize": [192, 128],
+  "worldUnitsPerNativePixel": 2,
+  "sourceGate": {
+    "verdict": "accepted",
+    "reviewer": "independent warden critique agent",
+    "reason": "Raw V4 and processed native art preserve thin steel contours, worn planes and matching native detail density. Original sources and exact generation receipts retained."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Reviewed 1x/2x/mobile boarded, traveling and docked carriage: continuous joins, grounded wheel soles, human scale and attached ports. Sweat originates at Olaf's temples across current, generated and procedural skins. Transparent-padding crop verified pixel-identical."
+  },
+  "verification": {
+    "tests": 454,
+    "ordinaryInputRoute": "evidence/boss-route.json",
+    "won": true,
+    "heroHP": [3, 3, 3],
+    "browserErrors": [],
+    "pixelProof": "evidence/art-pixels.json",
+    "pixelMismatches": 0,
+    "croppedPixelMismatches": 0,
+    "dockWheelBottoms": [940, 940]
+  },
+  "performance": {
+    "evidence": "evidence/profile.json",
+    "method": "844x390 DPR2 headless Chrome CPU6 boss-bay diagnostic; bounded desktop proxy, not real-phone certification",
+    "medianDrawMs": {"1x": 12.3, "2x": 15},
+    "p95DrawMs": {"1x": 20.2, "2x": 23.9},
+    "filteredDrawCalls": 0
+  },
+  "publicationAllowed": true
+}

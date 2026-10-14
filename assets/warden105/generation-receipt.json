@@ -1,0 +1,32 @@
+{
+  "tool": "image_gen.imagegen",
+  "transparentBackgroundRequested": true,
+  "nativeSize": [192,128],
+  "outputSize": [1536,1024],
+  "attempts": [
+    {
+      "source": "cart-raw-v1.png",
+      "references": ["cart-guide-v1-8x.png", "../clockwork71/tower.png"],
+      "verdict": "rejected: subnative texture, low-alpha haze and missing controller",
+      "promptUsed": "Create a finished transparent game-ready rusty industrial elevator carriage. Reference1 is EXACT geometry guide, reference2 material style. Exact logical native canvas192x128 pixels, presented as8x nearest-neighbor enlargement1536x1024. Each native pixel must be one8x8 output block, no subnative painterly detail. Visible carriage stays x12..179 y28..106 NATIVE coordinates. Walking deck straight steel opaque strip at y72 spanning x21..170 (150native pixels=300world units). Adults36native pixels tall. Upper gantry bar y28..32, slim posts x21 and167 down todeck72, transparent rider compartment. Two iron rail wheels centersx40,151 y92 radius14; wheelbottom row106 inclusive. Retain all guide contact positions, refine contours into thin1native pixel outlines and deliberate native1pixel clean stepped curves, avoiding coarse4pixel jaggies. Dimensional upper-left lighting, worn blue-grey iron planes, restrained aged-bronze trim, sparse rust seams, fine1pixel bevels and2-4pixel plane highlights. Detail chassis below deck with axle casings, structural ribs, modest readable ventilation slots, a few fasteners, oil-dark corners. Match reference2 clockwork material complexity, not a flat cartoon, not brightgold, no mottled painted speckles. No people, lettering, ground, floating additions, or external shadows. All materials opaque with true transparent negative space. Treat guide as exact layout only; improve flat guide material shading significantly without altering geometry. Preserve precise native grid, composition and contact coordinates. Full prompt retained at assets/warden105/cart-prompt-v1.txt."
+    },
+    {
+      "source": "cart-raw-v2.png",
+      "references": ["cart-guide-8x.png", "cart-raw-v1.png"],
+      "verdict": "native density accepted; material style too pristine",
+      "promptUsed": "TRUE LOW-RESOLUTION PIXEL ART elevator carriage. Reference1 EXACT native layout192x128 pixels at8x1536x1024. Reference2 design inspiration ONLY; reject its painted speckles/exteriorhaze. ALL final features use flat clean square8x8output blocks on one consistent8pixel grid: only192x128 deliberate pixels, zero1-7outputpixel details. Limited24color palette, NO gradients, antialiasing,dither,rustgrain,speckles,glow,matte,shadow. Materials fully opaque; outside and open center fully transparent. Dimensional worn bluegreyiron/agedbronze upperleft light via broad2-4nativepixel planar shading clusters, thin1nativepixel contours/highlights. Calm intricate structural ribs, a few2pixelbolts, 3pixelventslots and axle housings, broad rustseams. Exact NATIVE geometry: chassis x12..179, walkable deck y72 x21..170. Gantrybeam y28..32, postsx21/167. Two ironwheel centers40/151,y92 radius14 lastmaterialrow106/exclusivebottom107, deliberate thin1pixel steppedcurves. Small operator handwheel center100,63 outerradius8, thinbronze rim with transparent gaps and darkiron hub, stemto72; rimonly withfreecenterforruntime rotating spokes. Match guide exactly; don't enlarge/stretch any component. Three adultVikings36nativepixelstall. Finished gamepixel art NOT flatcartoon/guide, NOT highres paintedartdownsampled. No text,characters,ground,floatingshadows,externalhalo. Detailed fullprompt retained assets/warden105/cart-prompt-v2.txt."
+    },
+    {
+      "source": "cart-raw-v3.png",
+      "references": ["cart-raw-v2.png", "../clockwork71/tower.png"],
+      "verdict": "material improvement; rigid wheel/deck registration changed",
+      "promptUsed": "Edit reference1 accepted192x128native-densitycart, preserve exact silhouette, composition, all contact coordinates, wheel curves, handwheel and its8x8output pixel grid. Output1536x1024 =8xnative192x128. Add sparse BROAD3–6NATIVEpixel darkorange/brown rustclusters around fewcollars/beamends/axlebrackets; few purposeful1–2nativepixelsteel edgechips. NO tinygrain/speckles. Give posts/chassis coherent2–3nativepixel steelplane/bevel highlights,oil-darkseams andweight, matching reference2 worn clockwork iron. Bronze dullagedbrown, notbrightgold. Calm large materialplanes,24–32colours, thin1nativepixel contours, zero photographic/painterly tinytexture/gradients. REMOVE ALL exteriorhaze/glow/shadow/matte; everynegative-spacepixeltrulytransparent, everymaterialpixelfullyopaque. Nativesoliddeckrow71, wheelbottomexclusive106, handwheelcenter98,62 and17x17native ring/spoke/hubframe mustremainexactlyregistered (runtimeextracts/rotatesit). Preserveventslots,axles,rivets,ridercompartmentandsilhouette. Noaddedobjects/people/text/ground/cables. Refinement of detailed nativegamepixelart withplanes andvolume, not flattoy/diagram, nothirespainting. Exactfullprompt assets/warden105/cart-prompt-v3.txt."
+    },
+    {
+      "source": "cart-raw-v4.png",
+      "references": ["cart-candidate-v2-clean.png", "cart-raw-v3.png"],
+      "verdict": "selected after measured caster-part registration and separate source/runtime approval",
+      "promptUsed": "Reference1 is ACCEPTED192x128 NATIVEsprite; exact fixed geometry. Reference2 only desired wornsteel/rust material richness. Make8xnearest1536x1024 pixel-artversion ofreference1 with MINORcolour polish: FEW3–5nativepixel broadbrownrustpatches nearcollars/axlebrackets,subtle2pixelbevels. Do NOTalteranyopaque mask, silhouettes,curves,partpositions,sizeorcomposition. DoNOTzoomtofillcanvas: preserve nativecellpadding exactly. Hardphysicalcontract:firstcontinuousdeckrow71; wheelmaterialendsrow105inclusive/exclusivebottom106. Difference35nativepixelsrequiredforenginecontact. Controlwheelcenter98,62,upperbeamrow25. Bodyboundsx9..182,y25..105. Posts/braces/bolts/ventslots/wheels/handwheel preserveexistinggeometry; onlypixelcolourschange. Exactclean8x8output square pixelblocks,no detailssmaller1nativepixel,24–32palette,thin1nativepixelcontours. Genuinelytransparentexterior andnegativegaps, noglow,haze,shadow,matte,gradient,noise,speckles,photographicpaint. Materialsfullyopaque,wornbluegreyiron/agedbrownbronze. Noaddedparts,text,people,ground. Detailedfullprompt assets/warden105/cart-prompt-v4.txt."
+    }
+  ]
+}

@@ -455,6 +455,10 @@
     {
       "source": "src/levels/warden/strain-effects.js",
       "output": "warden-strain-effects.js"
+    },
+    {
+      "source": "src/levels/warden/cart-art.js",
+      "output": "warden-cart-art.js"
     }
   ],
   "files": [
@@ -734,6 +738,8 @@
     "assets/warden102/broken-lens-native.png",
     "assets/warden102/visual-gates.json",
     "assets/warden103/visual-gates.json",
-    "assets/warden104/visual-gates.json"
+    "assets/warden104/visual-gates.json",
+    "assets/warden105/cart-native.png",
+    "assets/warden105/visual-gates.json"
   ]
 }

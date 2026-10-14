@@ -1,0 +1,39 @@
+{
+  "nativeSize": [
+    192,
+    128
+  ],
+  "worldPixel": 2,
+  "visibleTargetWorld": [
+    336,
+    158
+  ],
+  "deck": {
+    "anchor": [
+      21,
+      72
+    ],
+    "width": 150,
+    "worldWidth": 300
+  },
+  "wheelBottomExclusive": 107,
+  "sourceRequirement": "192x128 deliberate native pixels, enlarge8x to1536x1024; no subnative painterly texture; one-pixel outlines",
+  "actualNativeBounds": [
+    5,
+    23,
+    182,
+    84
+  ],
+  "actualVisibleWorld": [
+    364,
+    168
+  ],
+  "registeredDeck": [
+    19,
+    71,
+    150
+  ],
+  "sourceWheelBottomExclusive": 107,
+  "assembledWheelSupportOffsetWorld": 70,
+  "wheelRegistration": "Native whole caster components translated up1pixel; no scaling, rim trimming or pixel repainting."
+}

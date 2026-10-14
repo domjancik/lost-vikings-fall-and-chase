@@ -1,4 +1,4 @@
-import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth94';
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {CLOCK_RADIUS,clockRail,clockLiftPlacement,clockCatchPose,clockGearCenters,clockGearPath,steamPhase} from './campaign.js?v=clockwork71';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';

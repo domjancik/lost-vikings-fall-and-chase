@@ -1,4 +1,4 @@
-import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth94';
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {laserTrace} from './combat.js?v=warden91';
 import {wardenGeometry,WARDEN_TRACK} from './campaign.js?v=warden89';
 import {WARDEN_ART as A} from './art.js?v=warden97';

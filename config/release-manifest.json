@@ -93,6 +93,10 @@
       "output": "depth-render94.js"
     },
     {
+      "source": "src/render/wall-boundaries.js",
+      "output": "wall-boundaries101.js"
+    },
+    {
       "source": "src/core/engine.js",
       "output": "engine.js"
     },

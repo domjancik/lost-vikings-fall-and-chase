@@ -1,6 +1,6 @@
 import {createState} from '../core/engine.js?v=menu95';
-import {drawScene} from '../render/scene-render95.js?v=menu95';
-import {drawWaterOverlay} from '../levels/water/render.js?v=water100';
+import {drawScene} from '../render/scene-render95.js?v=walls101';
+import {drawWaterOverlay} from '../levels/water/render.js?v=walls101';
 import {previewFrame} from './campaign-picker.js?v=menu95';
 const cache=new Map();
 // These are the production scene atlases, shared by the browser's image cache.

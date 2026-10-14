@@ -1,4 +1,4 @@
-import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth94';
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawWaterTerrain,waterTerrainReady} from './terrain.js?v=water92';

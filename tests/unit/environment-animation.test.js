@@ -1,0 +1,7 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {projectilePose,environmentPose} from '../../src/render/environment-animation.js';
+import {createState,step} from '../../src/core/engine.js';
+test('arrow artwork points along travel, including diagonal and reversed shots',()=>{assert.equal(projectilePose({x:0,y:0,v:580,vy:0}).angle,0);assert.equal(projectilePose({x:0,y:0,v:-580,vy:0}).angle,Math.PI);assert.ok(projectilePose({x:0,y:0,v:420,vy:-400}).angle<-.7);});
+test('mirror visibly changes angle and hit animation expires on simulation time',()=>{const s=createState(2);const a=environmentPose(s);s.machine.lane=2;assert.notEqual(environmentPose(s).mirrorAngle,a.mirrorAngle);s.machine.lastBankHit={time:0,lane:2,correct:true};assert.equal(environmentPose(s).hitStrength,1);s.time=1;assert.equal(environmentPose(s).hitStrength,0);assert.notEqual(environmentPose(s).phase,a.phase);});
+test('real reflection records bend and target impact for animated feedback',()=>{const s=createState(2),o=s.heroes[2];o.x=650;o.y=566;o.ground=true;o.face=-1;o.shield=true;s.machine.lane=1;s.shots.push({x:631,y:586,v:580,vy:0,kind:'arrow'});step(s,{},1/120);assert.equal(s.shots[0].kind,'bank');assert.ok(projectilePose(s.shots[0]).angle<0);assert.ok(s.machine.lastReflection);for(let i=0;i<90;i++)step(s,{},1/120);assert.equal(s.machine.score,1);assert.equal(s.machine.lastBankHit.correct,true);assert.equal(s.machine.lastBankHit.lane,1);});
+

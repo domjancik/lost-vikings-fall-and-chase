@@ -1,5 +1,0 @@
-import {test} from 'node:test';import assert from 'node:assert/strict';import {interactionObjects} from './interactions.js';import {createState,step} from './engine.js';
-test('cargo console explains a missing reactor charge',()=>{const s=createState(1);s.heroes[0].x=470;s.heroes[0].y=336;step(s,{interact:true},1/120);assert.ok(s.feedback.message.includes('sparks'));assert.equal(s.machine.liftOn,false);});
-test('cargo console starts the elevator only for Erik after charging',()=>{const s=createState(1);s.machine.charged=true;s.heroes[0].x=470;s.heroes[0].y=336;step(s,{interact:true},1/120);assert.equal(s.machine.liftOn,true);});
-test('no level includes a bridge latch interaction',()=>{for(let r=0;r<6;r++)assert.ok(!interactionObjects(createState(r)).some(o=>o.id==='latch'));});
-test('pinball dial cycles low middle high and explains its sequence',()=>{const s=createState(2);s.heroes[0].x=560;s.heroes[0].y=356;for(let i=0;i<3;i++){step(s,{interact:true},1/120);assert.equal(s.machine.lane,(i+1)%3);assert.ok(s.feedback.message.includes('MIDDLE'));}});

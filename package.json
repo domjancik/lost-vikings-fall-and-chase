@@ -1,1 +1,14 @@
-{"name":"last-call-vikings","version":"1.0.0","type":"module","scripts":{"test":"node --test *.test.js","dev":"node server.mjs","build":"node build.mjs"},"private":true}
+{
+  "name": "last-call-vikings",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js tests/unit/*.test.js tests/build/*.test.js",
+    "dev": "node tools/dev/server.mjs",
+    "build": "node tools/build/build.mjs",
+    "release:check": "node tools/release/check.mjs",
+    "test:browser": "node tests/browser/reorg-smoke.mjs",
+    "publish:here-now": "node tools/release/publish-here-now.mjs"
+  },
+  "private": true
+}

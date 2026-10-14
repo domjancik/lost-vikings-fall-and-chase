@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-14",
+  "branch": "codex/reorganize-source99",
+  "originalHead": "c7e9e71",
+  "commands": {
+    "npm test": {"passed": 431, "failed": 0},
+    "npm run build": {"emittedFiles": 359},
+    "npm run release:check": {"verifiedFiles": 359},
+    "npm run publish:here-now -- --dry-run": {
+      "files": 360, "credentialsRead": false, "networkRequests": false
+    },
+    "npm run test:browser": {"modes": ["source", "build"], "errors": 0}
+  },
+  "rootFilesAfter": 14,
+  "trackedMoves": 874,
+  "deploymentPerformed": false,
+  "notes": "Full suite includes three publication-gate regression tests. Browser and equivalence details are in adjacent receipts. Original local changes are intentionally not committed."
+}

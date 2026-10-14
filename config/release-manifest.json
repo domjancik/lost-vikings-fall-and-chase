@@ -1,0 +1,710 @@
+{
+  "version": 1,
+  "entrypoints": [
+    "index.html"
+  ],
+  "modules": [
+    {
+      "source": "src/audio/audio-events.js",
+      "output": "audio-events.js"
+    },
+    {
+      "source": "src/render/background-depth.js",
+      "output": "background-depth.js"
+    },
+    {
+      "source": "src/render/background-effects.js",
+      "output": "background-effects.js"
+    },
+    {
+      "source": "src/render/background-render.js",
+      "output": "background-render.js"
+    },
+    {
+      "source": "src/core/bash.js",
+      "output": "bash.js"
+    },
+    {
+      "source": "src/app/campaign-menu.js",
+      "output": "campaign-menu95.js"
+    },
+    {
+      "source": "src/app/campaign-picker.js",
+      "output": "campaign-picker95.js"
+    },
+    {
+      "source": "src/campaigns/arcade/campaign-render.js",
+      "output": "campaign-render.js"
+    },
+    {
+      "source": "src/campaigns/arcade/campaign.js",
+      "output": "campaign.js"
+    },
+    {
+      "source": "src/levels/clockwork/campaign.js",
+      "output": "clockwork-campaign.js"
+    },
+    {
+      "source": "src/levels/clockwork/render.js",
+      "output": "clockwork-render.js"
+    },
+    {
+      "source": "src/levels/clockwork/view.js",
+      "output": "clockwork-view.js"
+    },
+    {
+      "source": "src/render/connection-layout.js",
+      "output": "connection-layout.js"
+    },
+    {
+      "source": "src/render/connection-render.js",
+      "output": "connection-render.js"
+    },
+    {
+      "source": "src/app/controls.js",
+      "output": "controls.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-campaign.js",
+      "output": "cycle-campaign.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-fan-connections.js",
+      "output": "cycle-fan-connections.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-gate.js",
+      "output": "cycle-gate.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-rail.js",
+      "output": "cycle-rail.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-render.js",
+      "output": "cycle-render.js"
+    },
+    {
+      "source": "src/render/depth-layout94.js",
+      "output": "depth-layout94.js"
+    },
+    {
+      "source": "src/render/depth-render94.js",
+      "output": "depth-render94.js"
+    },
+    {
+      "source": "src/core/engine.js",
+      "output": "engine.js"
+    },
+    {
+      "source": "src/render/environment-animation.js",
+      "output": "environment-animation.js"
+    },
+    {
+      "source": "src/core/forge-material.js",
+      "output": "forge-material.js"
+    },
+    {
+      "source": "src/app/game.js",
+      "output": "game.js"
+    },
+    {
+      "source": "src/render/ghost-layout.js",
+      "output": "ghost-layout.js"
+    },
+    {
+      "source": "src/render/ground-shadow.js",
+      "output": "ground-shadow.js"
+    },
+    {
+      "source": "src/core/health.js",
+      "output": "health.js"
+    },
+    {
+      "source": "src/heroes/hero-art.js",
+      "output": "hero-art.js"
+    },
+    {
+      "source": "src/heroes/hero-frames.js",
+      "output": "hero-frames.js"
+    },
+    {
+      "source": "src/heroes/hero-geometry.js",
+      "output": "hero-geometry.js"
+    },
+    {
+      "source": "src/heroes/hero-procedural.js",
+      "output": "hero-procedural.js"
+    },
+    {
+      "source": "src/heroes/hero-render-order.js",
+      "output": "hero-render-order.js"
+    },
+    {
+      "source": "src/heroes/hero-shield-registration.js",
+      "output": "hero-shield-registration.js"
+    },
+    {
+      "source": "src/heroes/hero-skins.js",
+      "output": "hero-skins.js"
+    },
+    {
+      "source": "src/app/hint-visibility.js",
+      "output": "hint-visibility.js"
+    },
+    {
+      "source": "src/heroes/imagegen81-registration.js",
+      "output": "imagegen81-registration.js"
+    },
+    {
+      "source": "src/heroes/imagegen88-registration.js",
+      "output": "imagegen88-registration.js"
+    },
+    {
+      "source": "src/render/interaction-art.js",
+      "output": "interaction-art.js"
+    },
+    {
+      "source": "src/render/interaction-frames.js",
+      "output": "interaction-frames.js"
+    },
+    {
+      "source": "src/core/interactions.js",
+      "output": "interactions.js"
+    },
+    {
+      "source": "src/campaigns/arcade/inventory-campaign.js",
+      "output": "inventory-campaign.js"
+    },
+    {
+      "source": "src/render/inventory-render.js",
+      "output": "inventory-render.js"
+    },
+    {
+      "source": "src/core/inventory.js",
+      "output": "inventory.js"
+    },
+    {
+      "source": "src/core/ladder-context.js",
+      "output": "ladder-context.js"
+    },
+    {
+      "source": "src/app/level-preview.js",
+      "output": "level-preview95.js"
+    },
+    {
+      "source": "src/campaigns/arcade/levels.js",
+      "output": "levels.js"
+    },
+    {
+      "source": "src/levels/loom/art-layout.js",
+      "output": "loom-art-layout96.js"
+    },
+    {
+      "source": "src/levels/loom/campaign.js",
+      "output": "loom-campaign96.js"
+    },
+    {
+      "source": "src/levels/loom/guide.js",
+      "output": "loom-guide98.js"
+    },
+    {
+      "source": "src/levels/loom/render.js",
+      "output": "loom-render96.js"
+    },
+    {
+      "source": "src/render/machine-animation.js",
+      "output": "machine-animation.js"
+    },
+    {
+      "source": "src/render/machine-render.js",
+      "output": "machine-render.js"
+    },
+    {
+      "source": "src/render/midground-layout.js",
+      "output": "midground-layout.js"
+    },
+    {
+      "source": "src/render/midground-render.js",
+      "output": "midground-render.js"
+    },
+    {
+      "source": "src/levels/momentum/campaign.js",
+      "output": "momentum-campaign.js"
+    },
+    {
+      "source": "src/levels/momentum/render.js",
+      "output": "momentum-render.js"
+    },
+    {
+      "source": "src/core/movement.js",
+      "output": "movement.js"
+    },
+    {
+      "source": "src/heroes/native85-registration.js",
+      "output": "native85-registration.js"
+    },
+    {
+      "source": "src/render/parallax-render.js",
+      "output": "parallax-render.js"
+    },
+    {
+      "source": "src/render/pixel-grid.js",
+      "output": "pixel-grid.js"
+    },
+    {
+      "source": "src/core/plunger.js",
+      "output": "plunger.js"
+    },
+    {
+      "source": "src/render/portal-effects.js",
+      "output": "portal-effects.js"
+    },
+    {
+      "source": "src/core/projectile-collision.js",
+      "output": "projectile-collision.js"
+    },
+    {
+      "source": "src/levels/refraction/art-layout.js",
+      "output": "refraction-art-layout.js"
+    },
+    {
+      "source": "src/levels/refraction/campaign.js",
+      "output": "refraction-campaign.js"
+    },
+    {
+      "source": "src/levels/refraction/connections.js",
+      "output": "refraction-connections.js"
+    },
+    {
+      "source": "src/levels/refraction/render.js",
+      "output": "refraction-render.js"
+    },
+    {
+      "source": "src/render/scene-render95.js",
+      "output": "scene-render95.js"
+    },
+    {
+      "source": "src/render/scene-resolution.js",
+      "output": "scene-resolution.js"
+    },
+    {
+      "source": "src/audio/sound-effects.js",
+      "output": "sound-effects.js"
+    },
+    {
+      "source": "src/render/sprite-atlas.js",
+      "output": "sprite-atlas.js"
+    },
+    {
+      "source": "src/heroes/sprite-render.js",
+      "output": "sprite-render.js"
+    },
+    {
+      "source": "src/campaigns/story/story-audio.js",
+      "output": "story-audio.js"
+    },
+    {
+      "source": "src/campaigns/story/story-background.js",
+      "output": "story-background.js"
+    },
+    {
+      "source": "src/campaigns/story/story-campaign.js",
+      "output": "story-campaign.js"
+    },
+    {
+      "source": "src/campaigns/story/story-custody.js",
+      "output": "story-custody.js"
+    },
+    {
+      "source": "src/campaigns/story/story-enemies.js",
+      "output": "story-enemies.js"
+    },
+    {
+      "source": "src/campaigns/story/story-layout.js",
+      "output": "story-layout.js"
+    },
+    {
+      "source": "src/campaigns/story/story-mechanisms.js",
+      "output": "story-mechanisms.js"
+    },
+    {
+      "source": "src/campaigns/story/story-render.js",
+      "output": "story-render.js"
+    },
+    {
+      "source": "src/campaigns/story/story-visuals.js",
+      "output": "story-visuals.js"
+    },
+    {
+      "source": "src/render/terrain-layout.js",
+      "output": "terrain-layout.js"
+    },
+    {
+      "source": "src/render/terrain-render.js",
+      "output": "terrain-render.js"
+    },
+    {
+      "source": "src/render/text-render.js",
+      "output": "text-render.js"
+    },
+    {
+      "source": "src/campaigns/arcade/vertical-campaign.js",
+      "output": "vertical-campaign.js"
+    },
+    {
+      "source": "src/render/vertical-parallax.js",
+      "output": "vertical-parallax.js"
+    },
+    {
+      "source": "src/render/vertical-render.js",
+      "output": "vertical-render.js"
+    },
+    {
+      "source": "src/render/view-camera.js",
+      "output": "view-camera.js"
+    },
+    {
+      "source": "src/levels/warden/legacy-art89.js",
+      "output": "warden-art89.js"
+    },
+    {
+      "source": "src/levels/warden/art.js",
+      "output": "warden-art97.js"
+    },
+    {
+      "source": "src/levels/warden/audio.js",
+      "output": "warden-audio.js"
+    },
+    {
+      "source": "src/levels/warden/campaign.js",
+      "output": "warden-campaign.js"
+    },
+    {
+      "source": "src/levels/warden/combat.js",
+      "output": "warden-combat.js"
+    },
+    {
+      "source": "src/levels/warden/render.js",
+      "output": "warden-render.js"
+    },
+    {
+      "source": "src/levels/water/legacy-art87.js",
+      "output": "water-art87.js"
+    },
+    {
+      "source": "src/levels/water/art.js",
+      "output": "water-art92.js"
+    },
+    {
+      "source": "src/levels/water/legacy-bell-geometry.js",
+      "output": "water-bell-geometry.js"
+    },
+    {
+      "source": "src/levels/water/bell-geometry.js",
+      "output": "water-bell-geometry92.js"
+    },
+    {
+      "source": "src/levels/water/campaign.js",
+      "output": "water-campaign.js"
+    },
+    {
+      "source": "src/levels/water/connections.js",
+      "output": "water-connections.js"
+    },
+    {
+      "source": "src/levels/water/effects.js",
+      "output": "water-effects92.js"
+    },
+    {
+      "source": "src/levels/water/pontoon-geometry.js",
+      "output": "water-pontoon-geometry.js"
+    },
+    {
+      "source": "src/levels/water/render.js",
+      "output": "water-render.js"
+    },
+    {
+      "source": "src/levels/water/terrain.js",
+      "output": "water-terrain92.js"
+    },
+    {
+      "source": "src/render/world-render.js",
+      "output": "world-render.js"
+    }
+  ],
+  "files": [
+    {
+      "source": "index.html",
+      "output": "index.html"
+    },
+    {
+      "source": "style.css",
+      "output": "style.css"
+    },
+    {
+      "source": "hero-art-preview.html",
+      "output": "hero-art-preview.html"
+    },
+    {
+      "source": "connection-kit-preview.html",
+      "output": "connection-kit-preview.html"
+    },
+    {
+      "source": "viking-gallery88.html",
+      "output": "viking-gallery88.html"
+    },
+    {
+      "source": "viking-gallery90.html",
+      "output": "viking-gallery90.html"
+    }
+  ],
+  "assets": [
+    "assets/campaign46/machines.png",
+    "assets/campaign46/scene-0.png",
+    "assets/campaign46/scene-1.png",
+    "assets/campaign46/scene-2.png",
+    "assets/campaign46/scene-3.png",
+    "assets/campaign46/scene-4.png",
+    "assets/campaign46/scene-5.png",
+    "assets/campaign46/scene-6.png",
+    "assets/campaign46/scene-7.png",
+    "assets/clockwork69/catch.png",
+    "assets/clockwork69/dock.png",
+    "assets/clockwork69/machine.png",
+    "assets/clockwork69/parts.png",
+    "assets/clockwork69/pin.png",
+    "assets/clockwork69/scene.png",
+    "assets/clockwork71/tower.png",
+    "assets/connections53/connections.png",
+    "assets/cycle52/carrier.png",
+    "assets/cycle52/fan.png",
+    "assets/cycle52/ladder.png",
+    "assets/cycle52/machines.png",
+    "assets/cycle52/scene.png",
+    "assets/depth94/a-native.png",
+    "assets/depth94/a-registration.json",
+    "assets/depth94/b-native.png",
+    "assets/depth94/b-registration.json",
+    "assets/depth94/visual-gates.json",
+    "assets/gate61/gate.png",
+    "assets/ground51/interaction-frames.png",
+    "assets/level96/bobbin-native.png",
+    "assets/level96/cloth-native.png",
+    "assets/level96/cloth-registration.json",
+    "assets/level96/far-native.png",
+    "assets/level96/middle-native.png",
+    "assets/level96/parts-native.png",
+    "assets/level96/parts-registration.json",
+    "assets/level96/terrain-native.png",
+    "assets/level96/visual-gates.json",
+    "assets/loom98/guide-native.png",
+    "assets/loom98/registration.json",
+    "assets/loom98/visual-gates.json",
+    "assets/mid49/scene-0.png",
+    "assets/mid49/scene-1.png",
+    "assets/mid49/scene-2.png",
+    "assets/mid49/scene-3.png",
+    "assets/mid49/scene-4.png",
+    "assets/mid49/scene-5.png",
+    "assets/mid49/scene-6.png",
+    "assets/mid49/scene-7.png",
+    "assets/momentum68/arm.png",
+    "assets/momentum68/bumper.png",
+    "assets/momentum68/furnace.png",
+    "assets/momentum68/hazards.png",
+    "assets/momentum68/relay.png",
+    "assets/momentum68/scene.png",
+    "assets/momentum68/tiles.png",
+    "assets/momentum72/ball.png",
+    "assets/pixel/arcade-background-1.png",
+    "assets/pixel/arcade-background-2.png",
+    "assets/pixel/arcade-background-3.png",
+    "assets/pixel/arcade-background-4.png",
+    "assets/pixel/arcade-background-5.png",
+    "assets/pixel/arcade-pub.png",
+    "assets/pixel/background-fx.png",
+    "assets/pixel/depth-far-0.png",
+    "assets/pixel/depth-far-1.png",
+    "assets/pixel/depth-far-10.png",
+    "assets/pixel/depth-far-2.png",
+    "assets/pixel/depth-far-3.png",
+    "assets/pixel/depth-far-4.png",
+    "assets/pixel/depth-far-5.png",
+    "assets/pixel/depth-far-6.png",
+    "assets/pixel/depth-far-7.png",
+    "assets/pixel/depth-far-8.png",
+    "assets/pixel/depth-far-9.png",
+    "assets/pixel/depth-near-0.png",
+    "assets/pixel/depth-near-1.png",
+    "assets/pixel/depth-near-10.png",
+    "assets/pixel/depth-near-2.png",
+    "assets/pixel/depth-near-3.png",
+    "assets/pixel/depth-near-4.png",
+    "assets/pixel/depth-near-5.png",
+    "assets/pixel/depth-near-6.png",
+    "assets/pixel/depth-near-7.png",
+    "assets/pixel/depth-near-8.png",
+    "assets/pixel/depth-near-9.png",
+    "assets/pixel/foreground-tiles.png",
+    "assets/pixel/inventory-background-1.png",
+    "assets/pixel/inventory-background-2.png",
+    "assets/pixel/inventory-background-3.png",
+    "assets/pixel/inventory-sprites.png",
+    "assets/pixel/machine-states.png",
+    "assets/pixel/parallax-scenes.png",
+    "assets/pixel/puzzle-machines.png",
+    "assets/pixel/story-doors.png",
+    "assets/pixel/story-enemies.png",
+    "assets/pixel/story-far.png",
+    "assets/pixel/story-near.png",
+    "assets/pixel/vertical-props.png",
+    "assets/pixel/world-objects.png",
+    "assets/platform56/ladder.png",
+    "assets/refraction62/base.png",
+    "assets/refraction62/emitter.png",
+    "assets/refraction62/lift.png",
+    "assets/refraction62/machines.png",
+    "assets/refraction62/reflector.png",
+    "assets/refraction62/scene.png",
+    "assets/scale50/middle-0.png",
+    "assets/scale50/middle-1.png",
+    "assets/scale50/middle-2.png",
+    "assets/scale50/middle-3.png",
+    "assets/scale50/middle-4.png",
+    "assets/scale50/middle-5.png",
+    "assets/scale50/middle-6.png",
+    "assets/scale50/middle-7.png",
+    "assets/scale50/pub-far.png",
+    "assets/scale67/middle-0.png",
+    "assets/scale67/middle-1.png",
+    "assets/scale67/middle-2.png",
+    "assets/scale67/middle-3.png",
+    "assets/scale67/middle-4.png",
+    "assets/scale67/middle-5.png",
+    "assets/scale67/middle-6.png",
+    "assets/scale67/middle-7.png",
+    "assets/scale67/pub-far.png",
+    "assets/terrain48/terrain.png",
+    "assets/vikings63/baleog.png",
+    "assets/vikings63/erik.png",
+    "assets/vikings63/olaf.png",
+    "assets/vikings63/shield.png",
+    "assets/vikings70/baleog.png",
+    "assets/vikings70/erik.png",
+    "assets/vikings70/olaf.png",
+    "assets/vikings80/baleog-imagegen-raw.png",
+    "assets/vikings81/erik-beard-correction-raw.png",
+    "assets/vikings81/olaf-imagegen-raw.png",
+    "assets/vikings85-native/baleog-native.png",
+    "assets/vikings85-native/erik-native.png",
+    "assets/vikings85-native/olaf-native.png",
+    "assets/vikings88/baleog-full-raw-v1.png",
+    "assets/vikings88/baleog-native.png",
+    "assets/vikings88/baleog-registration.json",
+    "assets/vikings88/erik-full-raw-v1.png",
+    "assets/vikings88/erik-native.png",
+    "assets/vikings88/erik-registration.json",
+    "assets/vikings88/guides-baleog-frames.json",
+    "assets/vikings88/guides-baleog.png",
+    "assets/vikings88/guides-erik-frames.json",
+    "assets/vikings88/guides-erik.png",
+    "assets/vikings88/guides-olaf-frames.json",
+    "assets/vikings88/guides-olaf.png",
+    "assets/vikings88/olaf-full-raw-v3.png",
+    "assets/vikings88/olaf-native.png",
+    "assets/vikings88/olaf-registration.json",
+    "assets/vikings90/baleog-climb-0-raw-v5.png",
+    "assets/vikings90/baleog-climb-1-raw-v5.png",
+    "assets/vikings90/baleog-climb-2-raw-v7.png",
+    "assets/vikings90/baleog-climb-3-raw-v5.png",
+    "assets/vikings90/baleog-guide-native.png",
+    "assets/vikings90/baleog-guide.json",
+    "assets/vikings90/baleog-native.png",
+    "assets/vikings90/baleog-registration.json",
+    "assets/vikings90/baleog-walk-0-raw-v4.png",
+    "assets/vikings90/baleog-walk-1-raw-v6.png",
+    "assets/vikings90/baleog-walk-2-raw-v5.png",
+    "assets/vikings90/baleog-walk-3-raw-v5.png",
+    "assets/vikings90/baleog-walk-4-raw-v4.png",
+    "assets/vikings90/baleog-walk-5-raw-v5.png",
+    "assets/vikings90/baleog-walk-6-raw-v5.png",
+    "assets/vikings90/baleog-walk-7-raw-v5.png",
+    "assets/vikings90/erik-climb-0-raw-v4.png",
+    "assets/vikings90/erik-climb-1-raw-v5.png",
+    "assets/vikings90/erik-climb-2-raw-v6.png",
+    "assets/vikings90/erik-climb-3-raw-v5.png",
+    "assets/vikings90/erik-guide-native.png",
+    "assets/vikings90/erik-guide.json",
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/erik-registration.json",
+    "assets/vikings90/erik-walk-0-raw-v4.png",
+    "assets/vikings90/erik-walk-1-raw-v4.png",
+    "assets/vikings90/erik-walk-2-raw-v4.png",
+    "assets/vikings90/erik-walk-3-raw-v5.png",
+    "assets/vikings90/erik-walk-4-raw-v6.png",
+    "assets/vikings90/erik-walk-5-raw-v5.png",
+    "assets/vikings90/erik-walk-6-raw-v5.png",
+    "assets/vikings90/erik-walk-7-raw-v4.png",
+    "assets/vikings90/olaf-climb-0-raw-v6.png",
+    "assets/vikings90/olaf-climb-1-raw-v5.png",
+    "assets/vikings90/olaf-climb-2-raw-v10.png",
+    "assets/vikings90/olaf-climb-3-raw-v5.png",
+    "assets/vikings90/olaf-ground-contacts.json",
+    "assets/vikings90/olaf-guide-native.png",
+    "assets/vikings90/olaf-guide.json",
+    "assets/vikings90/olaf-native.png",
+    "assets/vikings90/olaf-overhead-climb-0-raw-v11.png",
+    "assets/vikings90/olaf-overhead-climb-1-raw-v12.png",
+    "assets/vikings90/olaf-overhead-climb-2-raw-v10.png",
+    "assets/vikings90/olaf-overhead-climb-3-raw-v12.png",
+    "assets/vikings90/olaf-overhead-walk-0-raw-v16.png",
+    "assets/vikings90/olaf-overhead-walk-1-raw-v16.png",
+    "assets/vikings90/olaf-overhead-walk-2-raw-v13.png",
+    "assets/vikings90/olaf-overhead-walk-3-raw-v15.png",
+    "assets/vikings90/olaf-overhead-walk-4-raw-v9.png",
+    "assets/vikings90/olaf-overhead-walk-5-raw-v12.png",
+    "assets/vikings90/olaf-overhead-walk-6-raw-v14.png",
+    "assets/vikings90/olaf-overhead-walk-7-raw-v15.png",
+    "assets/vikings90/olaf-registration.json",
+    "assets/vikings90/olaf-walk-0-raw-v5.png",
+    "assets/vikings90/olaf-walk-1-raw-v5.png",
+    "assets/vikings90/olaf-walk-2-raw-v5.png",
+    "assets/vikings90/olaf-walk-3-raw-v5.png",
+    "assets/vikings90/olaf-walk-4-raw-v6.png",
+    "assets/vikings90/olaf-walk-5-raw-v5.png",
+    "assets/vikings90/olaf-walk-6-raw-v5.png",
+    "assets/vikings90/olaf-walk-7-raw-v5.png",
+    "assets/vikings90/visual-gates.json",
+    "assets/warden89/broken-lens-native.png",
+    "assets/warden89/parts-native.png",
+    "assets/warden89/registration.json",
+    "assets/warden89/scene-native.png",
+    "assets/warden91/emitter-native.png",
+    "assets/warden91/plunger-native.png",
+    "assets/warden91/registration.json",
+    "assets/warden97/broken-lens-native.png",
+    "assets/warden97/emitter-native.png",
+    "assets/warden97/parts-native.png",
+    "assets/warden97/plunger-native.png",
+    "assets/warden97/registration.json",
+    "assets/warden97/visual-gates.json",
+    "assets/water83/machines-native.png",
+    "assets/water83/motion-native.png",
+    "assets/water83/nozzle-native.png",
+    "assets/water83/scene-raw.png",
+    "assets/water87/cradle-native.png",
+    "assets/water87/link-native.png",
+    "assets/water87/machines-native-v2.png",
+    "assets/water87/nozzle-native.png",
+    "assets/water87/registration-v2.json",
+    "assets/water92/cradle-native.png",
+    "assets/water92/flora-native.png",
+    "assets/water92/machines-native.png",
+    "assets/water92/nozzle-native.png",
+    "assets/water92/registration.json",
+    "assets/water92/scene-native.png",
+    "assets/water92/terrain-native.png",
+    "assets/water92/visual-gates.json"
+  ]
+}

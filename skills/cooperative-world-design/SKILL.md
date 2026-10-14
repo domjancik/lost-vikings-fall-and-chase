@@ -52,7 +52,7 @@ warning, active interval and recovery; examine simultaneous risks and switch tim
 
 Before publication, independently critique puzzle causality, active/completed
 state visibility, grounded machinery/enemies/posts, adult scale, connection ports
-and every movement envelope using [VISUAL-REVIEW-GATE](../../VISUAL-REVIEW-GATE.md).
+and every movement envelope using [VISUAL-REVIEW-GATE](../../docs/standards/VISUAL-REVIEW-GATE.md).
 Use normal controls for a complete route with all three alive, plus relevant
 failure/retry and state captures at 1x/2x/mobile. A successful flag, debug teleport
 or static spawn screenshot cannot establish clearability or visual quality.

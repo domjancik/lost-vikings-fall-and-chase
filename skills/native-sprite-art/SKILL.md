@@ -49,7 +49,7 @@ publishing. User approval is not required for this internal correction loop.
 
 Record the target dimensions, source paths, evidence paths and each gate's
 verdict in the relevant review log. Have the critique subagent apply
-[the repository visual review gate](../../VISUAL-REVIEW-GATE.md); leave a
+[the repository visual review gate](../../docs/standards/VISUAL-REVIEW-GATE.md); leave a
 failed or missing gate pending until corrected evidence is reviewed.
 
 ## Guided animation anatomy

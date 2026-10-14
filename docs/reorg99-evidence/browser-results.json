@@ -1,0 +1,29 @@
+{
+  "results": [
+    {
+      "mode": "source",
+      "campaigns": 3,
+      "previews": 26,
+      "movement": true,
+      "switch": true,
+      "inventory": true,
+      "zoom": true,
+      "pause": true,
+      "restart": true,
+      "mobile": true
+    },
+    {
+      "mode": "build",
+      "campaigns": 3,
+      "previews": 26,
+      "movement": true,
+      "switch": true,
+      "inventory": true,
+      "zoom": true,
+      "pause": true,
+      "restart": true,
+      "mobile": true
+    }
+  ],
+  "errors": []
+}

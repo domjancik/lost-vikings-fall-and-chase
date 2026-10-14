@@ -2,8 +2,8 @@
 <style>body{margin:0;background:#111a22;color:#e8dcc3;font:16px system-ui}main{max-width:1050px;margin:auto;padding:24px}h1{font-size:26px}p{line-height:1.5}canvas{width:100%;height:auto;image-rendering:pixelated;background:#1c2931;border:1px solid #596463}button{padding:10px 16px;background:#b99a5d;color:#14212a;border:0;cursor:pointer}a{color:#efcf8e}</style>
 <main><h1>Three Vikings. Three silhouettes.</h1><p>Erik: lean rust scout · Baleog: upright teal warrior · Olaf: broad ochre defender</p><button id="direction">FACE LEFT / RIGHT</button> <button id="gray">GRAYSCALE</button><p id="pose"></p><canvas width="960" height="530" id="preview"></canvas><p><a href="/?campaign=cycle&vikings=63">Play the circulation engine</a></p></main>
 <script type="module">
-import {drawSprite,whenHeroesReady} from './sprite-render.js?v=vikings63';
-import {drawHeroArt} from './hero-art.js?v=vikings63';
+import {drawSprite,whenHeroesReady} from './src/heroes/sprite-render.js?v=vikings63';
+import {drawHeroArt} from './src/heroes/hero-art.js?v=vikings63';
 const c=document.querySelector('canvas'),g=c.getContext('2d');let face=1,gray=false;
 document.querySelector('#direction').onclick=()=>face=-face;document.querySelector('#gray').onclick=()=>{gray=!gray;c.style.filter=gray?'grayscale(1)':'none';};
 await whenHeroesReady();window.heroPreviewReady=true;

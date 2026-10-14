@@ -1,0 +1,9 @@
+{
+  "preservedLocalChanges": [
+    "archive/scripts/build.mjs",
+    "archive/scripts/publish-update.mjs",
+    "tools/pixel-art-fixer"
+  ],
+  "trackedMoves": 874,
+  "unrelatedChangesStaged": false
+}

@@ -48,4 +48,4 @@ targets and support contacts. Review the complete room rather than tile variety.
 Review complete layers, then actual gameplay 1x/2x and mobile with x/y camera
 travel, upper routes, left/right edges and every support. Reject gaps, distorted
 scale, doubled transparent planes, edge halos and native-grid drift. Record
-specific evidence under the repo's [visual gate](../../VISUAL-REVIEW-GATE.md).
+specific evidence under the repo's [visual gate](../../docs/standards/VISUAL-REVIEW-GATE.md).

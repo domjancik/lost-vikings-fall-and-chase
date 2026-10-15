@@ -1,8 +1,8 @@
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {sewerLights,sewerOccluders,sewerLightAt} from './light.js?v=sewer125';
+import {sewerLights,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer129';
 import {visibilityPolygon} from './optics.js?v=sewer125';
 import {orbitRaster} from '../orbit/raster.js';
-import {sewerSurfaces,sewerSprayMount} from './campaign.js?v=sewer128';
+import {sewerSprayMount} from './campaign.js?v=sewer129';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
@@ -32,21 +32,21 @@ function flow(c,s){const g=s.machine,j=g.jet,o=s.heroes[2];
 export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[];c.imageSmoothingEnabled=false;c.fillStyle='#060707';c.fillRect(camera.x,camera.y,view.width,view.height);
  // Enclosed rear masonry, with quieter recessed service bays behind grilles.
  wall(c,0,300,3300,460);wall(c,2860,760,440,340);for(const x of [700,1320,1660,2470]){c.save();c.filter='brightness(.48)';cell(c,environment,15,x,632);c.restore();}
- // Camera-relative pipes stay attached to their own complete rear frame.
- const offset=q(camera.x*.08),vertical=q(camera.y*.025);for(let x=80+offset;x<3300;x+=620){pipe(c,x,440+vertical,768+vertical);c.save();c.filter='brightness(.6)';cell(c,environment,10,x+80,640+vertical);c.restore();}
+ // Pipes and sealed rear grilles are mounted on this masonry, in world space.
+ for(let x=80;x<3300;x+=620){pipe(c,x,440,760);c.save();c.filter='brightness(.6)';cell(c,environment,10,x+80,640);c.restore();contacts.push({kind:'rear-fixture',pipeX:x,top:440,base:760,grilleX:x+80,grilleY:640,attachment:'rear-masonry',collision:false});}
  for(const roof of s.level.layout.solids){wall(c,roof.x,300,roof.w,roof.y+roof.h-300);c.save();c.beginPath();c.rect(roof.x,roof.y+roof.h-30,roof.w,30);c.clip();for(let xx=roof.x;xx<roof.x+roof.w;xx+=120)crop(c,environment,194,2,60,15,xx,roof.y+roof.h-30);c.restore();contacts.push({kind:'ceiling',...roof,bottom:roof.y+roof.h});}
  // Broken tavern edges retain the actual opening100..380; warm source above.
  cell(c,environment,8,-28,438);cell(c,environment,9,380,438);item(c,0,230,390);flame(c,230,378,s.time,g.introTime<2.8);contacts.push({kind:'entry',opening:[100,380],top:390,land:760,fall:s.heroes.map(h=>({id:h.id,y:h.y,ground:h.ground}))});
  floor(c,0,760,2700,120);floor(c,2700,800,160,80);
  for(const p of s.level.platforms){floor(c,p.x,p.y,p.w,24);for(const x of [p.x+20,p.x+p.w-20])pipe(c,x,p.y+24,760);contacts.push({kind:'service-platform',...p,base:760});}
- const landingY=760-60*g.rope.pose;
+ const landingY=760-SEWER_LANDING_TRAVEL*g.rope.pose;
  for(const x of [2166,2312])cable(c,[[x,570],[x,landingY+10]]);
- for(const p of sewerSurfaces(s).filter(p=>p.x>=2160&&p.x<2320&&p.w===40))floor(c,p.x,p.y,p.w,20);
+ floor(c,2160,landingY,160,20);
  cable(c,[[1050,630],[1050,526],[1196,526],[1196,560-190*g.valve.pose]]);pipe(c,1080,460,640);crop(c,props,20,112,24,12,1026,616);wheel(c,1050,586,g.valve.pose*Math.PI*1.5);contacts.push({kind:'valve',x:1050,y:586,base:640,pose:g.valve.pose});
  const mouth=sewerSprayMount(g.jet);cell(c,environment,13,mouth.x,mouth.y);contacts.push({kind:'spray-mouth',x:g.jet.outletX,y:mouth.y+52,sprite:mouth,jet:{y:g.jet.y,h:g.jet.h},shielded:!!s.heroes[2].sprayBlock,pose:g.jet.pose});
  contacts.push(shutter(c,1180,580,32,180,g.valve.pose,190));
  // Upper winch drives an actual inspection leaf, exposing the physical rope.
- crop(c,grounded,0,0,96,72,1760,512);wheel(c,1824,572,g.hatch.pose*Math.PI*1.5,'winch');cable(c,[[1840,542],[1840,480],[2040,480],[2040,590-170*g.hatch.pose]]);contacts.push({kind:'inspection-winch',x:1824,sole:640,sourceSole:64,pose:g.hatch.pose});contacts.push(shutter(c,2020,600,40,160,g.hatch.pose,170));
+ crop(c,grounded,0,0,96,72,1760,512);wheel(c,1824,572,g.hatch.pose*Math.PI*1.5,'winch');cable(c,[[1840,542],[1840,480],[2040,480],[2040,590-SEWER_HATCH_TRAVEL*g.hatch.pose]]);contacts.push({kind:'inspection-winch',x:1824,sole:640,sourceSole:64,pose:g.hatch.pose});contacts.push(shutter(c,2020,600,40,160,g.hatch.pose,SEWER_HATCH_TRAVEL));
  // Golden rope is exposed exactly along x2130 y650..744, at arrow height736.
  cable(c,[[2130,636],[2330,636],[2330,580-160*g.gates[0].pose]]);
  // The severed restraint releases a suspended iron counterweight: its descent
@@ -85,8 +85,20 @@ export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer'
  const lights=sewerLights(s),walls=sewerOccluders(s);let visible=0;
  for(const l of lights){if(l.x+l.radius<camera.x||l.x-l.radius>camera.x+view.width||l.y+l.radius<camera.y||l.y-l.radius>camera.y+view.height)continue;visible++;const points=visibilityPolygon(l,walls);g.save();g.beginPath();points.forEach((p,n)=>n?g.lineTo(q(p.x),q(p.y)):g.moveTo(q(p.x),q(p.y)));g.closePath();g.clip();if(l.focused){g.beginPath();g.moveTo(l.x,l.y-14);g.lineTo(l.x+l.face*l.radius,l.y-l.radius*.36-14);g.lineTo(l.x+l.face*l.radius,l.y+l.radius*.36+14);g.lineTo(l.x,l.y+14);g.closePath();g.clip();}const gradient=g.createRadialGradient(l.x,l.y,0,l.x,l.y,l.radius);gradient.addColorStop(0,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(.44,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=gradient;g.fillRect(l.x-l.radius,l.y-l.radius,l.radius*2,l.radius*2);g.restore();}
  g.globalCompositeOperation='source-over';c.imageSmoothingEnabled=false;c.drawImage(mask,q(camera.x),q(camera.y),width*2,height*2);
+ // Front surfaces receive lamp light while their physical volumes still cast shadows.
+ // Redraw the retained native iron art, bounded to the actual moving leaf.
+ for(const leaf of sewerOccluders(s).filter(a=>a.kind==='shutter')){
+  if(leaf.x+leaf.w<camera.x||leaf.x>camera.x+view.width)continue;
+  const top=q(leaf.y);for(let yy=top;yy<top+leaf.h;yy+=16){
+   if(yy+16<camera.y||yy>camera.y+view.height)continue;
+   const strength=sewerFaceLight(s,leaf,yy+8);if(strength<.02)continue;
+   c.save();c.globalAlpha=strength*.82;
+   for(let dx=0;dx<leaf.w;dx+=24)crop(c,props,16,144+(yy-top)%48/2,Math.min(24,leaf.w-dx)/2,Math.min(16,top+leaf.h-yy)/2,leaf.x+dx,yy);
+   c.restore();
+  }
+ }
  // The front-facing cap receives the light at its upper edge; the solid slab
  // still occludes everything behind/below it. This is surface lighting, not fill.
- for(const f of [...s.level.floors.filter(f=>f.x<2700).map(f=>({...f,w:Math.min(f.w,2700-f.x)})),...s.level.platforms])for(let x=Math.max(f.x,Math.floor(camera.x/16)*16);x<Math.min(f.x+f.w,camera.x+view.width);x+=16){const strength=sewerLightAt(s,x+8,f.y-2);if(strength<.02)continue;c.save();c.globalAlpha=strength*.86;c.beginPath();c.rect(x,f.y,Math.min(16,f.x+f.w-x),20);c.clip();floor(c,Math.floor(x/120)*120,f.y,120,20);c.restore();}
+ for(const f of sewerOccluders(s).filter(a=>['floor','platform','landing'].includes(a.kind)))for(let x=Math.max(f.x,Math.floor(camera.x/16)*16);x<Math.min(f.x+f.w,camera.x+view.width);x+=16){const strength=Math.max(sewerLightAt(s,x+8,f.y-2),f.kind==='landing'?sewerFaceLight(s,f,f.y+10)*.75:0);if(strength<.02)continue;c.save();c.globalAlpha=strength*.86;c.beginPath();c.rect(x,f.y,Math.min(16,f.x+f.w-x),20);c.clip();floor(c,Math.floor(x/120)*120,f.y,120,20);c.restore();}
  return{ambient:0,lights:visible,occluders:walls.length,native:[width,height],readbacks:0};
 }

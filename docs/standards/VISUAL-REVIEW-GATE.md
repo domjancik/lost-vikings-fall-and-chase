@@ -257,3 +257,18 @@ placement, never its old nominal rectangle. Critique must inspect every
 connection terminal against actual opaque housing pixels after placement changes,
 including all animation frames. Draw the housing over its terminal to seat the
 connection naturally; retain physical floor contact and pixel-grid coordinates.
+
+## Mounted scenery and physical shadow volumes
+
+Camera travel must preserve every pipe, grille and gate mounting point relative
+to its supporting wall on both axes. Attached scenery shares the wall transform;
+parallax requires an independently complete wall/support plane. Compare identical
+fixture world anchors across x/y camera movement, zoom and mobile layouts.
+
+Opaque foreground volumes that block light must also stop bodies at their sides,
+undersides and tops. Decorative rear masonry adds neither body collision nor
+walk-plane shadow occlusion. Use one physical geometry source for movement and
+lighting. Check heads rising below slabs, lateral entry and falling landings.
+A raised leaf remains physical in its raised position; require actual body
+clearance along the intended route and around the full range of lifting landings.
+Do not accept a route that depends on walking or jumping through an opaque slab.

@@ -12,13 +12,15 @@ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Fi
 const page=await browser.newPage({viewport:touch?{width:844,height:390}:{width:1440,height:900},hasTouch:touch,isMobile:touch}),errors=[],captures=[];
 page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()==='error'&&!m.location().url.endsWith('favicon.ico'))errors.push(m.text());if(m.text().startsWith('SEWER '))console.log(m.text());});
 const read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,art:JSON.parse(c.dataset.cycleArt||'null'),darkness:JSON.parse(c.dataset.sewerDarkness||'null'),camera:JSON.parse(c.dataset.camera),time:+c.dataset.simTime,round:+c.dataset.round,transition:c.dataset.transition,won:c.dataset.won==='true'}));
-async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await page.screenshot({path:file});captures.push({file,name,label,...await read()});}
+let mountedFixtures;
+async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await page.screenshot({path:file});const state=await read();if(process.argv.includes('--structure-focus')&&state.round===10){const fixtures=state.art.contacts.filter(a=>a.kind==='rear-fixture');assert.ok(fixtures.length>0);if(mountedFixtures)assert.deepEqual(fixtures,mountedFixtures,'rear fixtures stay registered through camera travel');mountedFixtures=fixtures;}captures.push({file,name,label,...state});}
 await page.exposeBinding('sewerPhoto',async(_,name)=>{
+ if(process.argv.includes('--structure-focus')&&!['lamphouse','shielded-spray','winch-moving','inspection-open','leaf-clearance','landing-rider-start','outlet-moving','outlet-open'].includes(name))return;
  if(process.argv.includes('--spray-focus')&&name!=='shielded-spray')return;
  if(process.argv.includes('--focus')&&!['lamphouse','winch-moving','outlet-moving','stream-swept-2'].includes(name))return;
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
- for(const [size,zoom,label]of [[{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},2,'portrait'],[{width:844,height:390},2,'landscape']]){
+ for(const [size,zoom,label]of [[process.argv.includes('--structure-focus')?{width:1920,height:800}:{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},2,'portrait'],[{width:844,height:390},2,'landscape']]){
   await page.setViewportSize(size);for(let attempt=0;attempt<3&&(await read()).camera.zoom!==zoom;attempt++){await page.locator('#zoom').click();await page.waitForTimeout(50);}await page.waitForTimeout(350);await photo(name,label);
  }
  await page.setViewportSize(touch?{width:844,height:390}:{width:1440,height:900});await page.locator('#pause').click();
@@ -81,6 +83,12 @@ try{
   let body=source.slice(source.indexOf(" mark('ceiling-fall')"));
   body=body.replace("until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');","until(0,s=>s.machine.hatch.pose>=.4,{},2);mark('winch-moving');until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');");
   body=body.replace("until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');","until(1,s=>s.machine.gates[0].pose>=.4,{},3);mark('outlet-moving');until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');");
+  if(process.argv.includes('--structure-focus')){
+   body=body.replace("mark('inspection-open');", "mark('inspection-open');move(0,1950);tick(0,{item:true});mark('leaf-clearance');tick(0,{item:true});");
+   body=body.replace("mark('guarded-shot');", "mark('guarded-shot');move(0,2240);mark('landing-rider-start');");
+   body=body.replace("until(1,s=>s.machine.gates[0].pose>=.4", "until(0,s=>s.machine.gates[0].pose>=.4").replace("until(1,s=>s.machine.gates[0].pose===1", "until(0,s=>s.machine.gates[0].pose===1");
+   body=body.replace("mark('outlet-open');", "mark('outlet-open');move(0,2120);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===760,{},2);");
+  }
   body=body.replace(/s\.heroes\[(\d)\]\.itemSlot=(\d);/g,'await slot($1,$2);').replace(/\b(tick|until|move|mark)\(/g,'await $1(');
   const helpers=`async function play(){
  const read=()=>{const d=document.querySelector('#game').dataset;return{time:+d.simTime,active:+d.activeHero,cooldown:+d.cooldown,heroes:JSON.parse(d.heroes),machine:JSON.parse(d.puzzle).machine,won:d.won==='true',failed:d.failed==='true'};};

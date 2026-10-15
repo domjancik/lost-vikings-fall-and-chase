@@ -1,0 +1,15 @@
+{
+  "commit": "dfb8f98",
+  "checked": [
+    "scene-render95.js",
+    "game.js",
+    "campaign-menu95.js",
+    "orbit-render.js",
+    "cycle-render.js",
+    "level-preview95.js",
+    "orbit-art-layout.js",
+    "release-manifest.json",
+    "assets/orbit119/visual-gates.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

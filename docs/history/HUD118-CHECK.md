@@ -29,3 +29,9 @@ Validation:
  exists, then move with the touch pad successfully. No stale held input.
 - Full suite550/550 passes; source/production smoke covers3campaigns/28previews
  plus movement, selection, inventory, zoom, pause, restart and mobile.
+- Crane-context regression: a repeated active-Viking tap originally re-ran hero
+ selection and replaced CLAMP with normal ability labels. HUD re-selection now
+ only changes the slot and preserves the existing control mode. Verified through
+ a normal-input ladder/bashing approach to the panel and actual touch selection.
+- Item-button icons retry until their existing atlas is ready rather than caching
+ an empty drawing on a slower connection.

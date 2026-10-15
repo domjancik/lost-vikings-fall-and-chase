@@ -1,0 +1,78 @@
+{
+  "results": [
+    {
+      "engine": "webkit",
+      "css": {
+        "select": "none",
+        "callout": ""
+      },
+      "guards": {
+        "selection": false,
+        "callout": false,
+        "drag": false,
+        "text": true,
+        "select": true
+      },
+      "longHold": true,
+      "release": true,
+      "multiTouch": false,
+      "fallbackPauses": true,
+      "priorPausePreserved": true,
+      "manifest": {
+        "status": 200,
+        "json": {
+          "id": "/",
+          "name": "Last Call — A Viking Puzzle Adventure",
+          "short_name": "Last Call",
+          "start_url": "/",
+          "scope": "/",
+          "display": "standalone",
+          "background_color": "#10121b",
+          "theme_color": "#211c25",
+          "description": "A cooperative Viking puzzle adventure."
+        },
+        "apple": "yes"
+      }
+    },
+    {
+      "engine": "chromium",
+      "css": {
+        "select": "none",
+        "callout": ""
+      },
+      "guards": {
+        "selection": false,
+        "callout": false,
+        "drag": false,
+        "text": true,
+        "select": true
+      },
+      "longHold": true,
+      "release": true,
+      "multiTouch": true,
+      "fallbackPauses": true,
+      "priorPausePreserved": true,
+      "manifest": {
+        "status": 200,
+        "json": {
+          "id": "/",
+          "name": "Last Call — A Viking Puzzle Adventure",
+          "short_name": "Last Call",
+          "start_url": "/",
+          "scope": "/",
+          "display": "standalone",
+          "background_color": "#10121b",
+          "theme_color": "#211c25",
+          "description": "A cooperative Viking puzzle adventure."
+        },
+        "apple": "yes"
+      }
+    },
+    {
+      "engine": "chromium-native",
+      "enterExit": true
+    }
+  ],
+  "errors": [],
+  "nativeIOSDevice": false
+}

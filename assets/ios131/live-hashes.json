@@ -1,0 +1,12 @@
+{
+  "commit": "beaac5d",
+  "checked": [
+    "controls.js",
+    "style.css",
+    "app-manifest.json",
+    "fullscreen.js",
+    "game.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

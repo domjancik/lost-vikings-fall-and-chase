@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
@@ -21,7 +22,7 @@ await page.exposeBinding('orbitPhoto',async(_,label)=>{
  await page.setViewportSize(mobile?{width:430,height:780}:{width:1440,height:900});await page.locator('#pause').click();
 });
 try{
- await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=orbit113');await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release='+encodeURIComponent(process.env.ORBIT_RELEASE||'orbit121'));await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.locator('#start-picker [data-campaign-option="cycle"]').click();await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===9&&c.every(i=>i.dataset.ready==='true');});
  assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,9);
  await page.locator('#start-picker .level-card[data-round="8"]').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='8'&&JSON.parse(document.querySelector('#game').dataset.cycleArt).ready);

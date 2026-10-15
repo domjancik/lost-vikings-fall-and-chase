@@ -1,8 +1,9 @@
+import {reviewNavigate} from './review-skin.mjs';
 import {createRequire} from 'node:module';import fs from 'node:fs';import {createDevServer} from '../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json'),{chromium}=require('playwright');
 const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 try{
- const page=await browser.newPage();await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
+ const page=await browser.newPage();await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
  const result=await page.evaluate(async()=>{
   const {updateHeroResource}=await import('/hero-resources.js?v=warden104'),card=document.querySelector('.hero-card[data-hero="2"]').cloneNode(true),host=document.createElement('div');host.append(card);
   const s={level:{mechanic:'warden'},machine:{braced:true,braceAge:0,fatigue:0},heroes:[{},{},{id:2}]},results=[];

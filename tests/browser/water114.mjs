@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {createDevServer} from '../../tools/dev/server.mjs';
@@ -17,7 +18,7 @@ async function variants(name){
 }
 try{
  await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
- await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin='+skin);
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin='+skin);
  const result=await playWaterControls(page,{out,onShot:async name=>{
   if(name==='valve-before'){
    await variants('swimming');const phases=new Set();

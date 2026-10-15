@@ -10,21 +10,30 @@ import {orbitMount,orbitRope} from './campaign.js?v=orbit120';
 import {ORBIT_ART as A,ORBIT_ROOMS,plateArtPlacement,hookArtPlacement,orbitPlaneOffsets,orbitScrapDepthPlan,orbitSceneryColor,orbitGearPlan,orbitSupportPlan,orbitConnectionRoutes,craneWheelAngle} from './art-layout.js?v=orbit120';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=orbit113';
 const load=n=>{const i=new Image();i.src='assets/orbit113/'+n+'-native.png?v=orbit113';return i;};
-const far=load('far'),middle=load('middle'),parts=load('parts'),gear=load('gear');
-const plate=new Image();plate.src='assets/orbit120/plate-native.png?v=orbit120';
+const far=load('far'),middle=load('middle'),parts=load('parts');
+const fresh=n=>{const i=new Image();i.src='assets/orbit121/'+n+'-native.png?v=orbit121';return i;};
+const gear=fresh('gear'),hardware=fresh('hardware');
+const plate=fresh('plate');
 const ladder=new Image();ladder.src='assets/platform56/ladder.png';
 const approved=path=>{const i=new Image();i.src='assets/'+path+'?v=orbit113';return i;};
-const coil=approved('freight112/fan-housing-native.png'),cart=approved('freight109/cart-native.png'),wall=approved('depth94/b-native.png');
+const cart=approved('freight109/cart-native.png'),wall=approved('depth94/b-native.png');
 const iron=createAtlas('assets/freight109/machines-native.png?v=orbit113',4,4),portal=createAtlas('assets/gate61/gate.png?v=orbit113',1,1);
 const ready=image=>image.complete&&image.naturalWidth>0;
 function part(c,n,x,y){if(ready(parts))c.drawImage(parts,n%4*64,Math.floor(n/4)*64,64,64,q(x),q(y),128,128);}
-function metal(c,n,sx,sy,w,h,x,y){if(ready(iron.image))c.drawImage(iron.image,n%4*64+sx,Math.floor(n/4)*64+sy,w,h,q(x),q(y),w*2,h*2);}
-function pier(c,x,top,bottom){if(bottom<=top)return;metal(c,14,22,0,20,9,x-20,top);for(let y=top+18;y<bottom-16;y+=48){const h=Math.min(48,bottom-16-y);metal(c,14,25,12,14,h/2,x-14,y);}metal(c,14,22,45,20,8,x-20,bottom-16);}
+function metal(c,n,sx,sy,w,h,x,y){if(n===14){if(ready(hardware))c.drawImage(hardware,192+sx,sy,w,h,q(x),q(y),w*2,h*2);return;}if(ready(iron.image))c.drawImage(iron.image,n%4*64+sx,Math.floor(n/4)*64+sy,w,h,q(x),q(y),w*2,h*2);}
+function pier(c,x,top,bottom){if(bottom<=top||!ready(hardware))return;
+ // Complete authored caps and a separately tiled recessed web; no stretched column.
+ c.drawImage(hardware,213,0,22,11,q(x-22),q(top),44,22);
+ for(let y=top+22;y<bottom-22;y+=44){const h=Math.min(44,bottom-22-y);c.drawImage(hardware,218,11,14,h/2,q(x-14),q(y),28,h);}
+ c.drawImage(hardware,213,44,22,11,q(x-22),q(bottom-22),44,22);
+}
 function beam(c,left,right,y){c.save();c.translate(q(left),q(y));c.rotate(-Math.PI/2);pier(c,0,0,right-left);c.restore();}
 const base=(level,x)=>level.floors.filter(f=>x>=f.x&&x<=f.x+f.w).sort((a,b)=>a.y-b.y)[0]?.y;
 function roomWall(c,r,level){if(!ready(wall))return null;c.save();c.beginPath();c.rect(r.x,r.y,r.w,r.h);c.clip();for(let y=r.floorY-104;y>r.y-104;y-=104)for(let x=r.x;x<r.x+r.w;x+=108)c.drawImage(wall,197,10,54,52,q(x),q(y),108,104);c.restore();
  const borders=wallBorderPlan(r,level,ORBIT_ROOMS);for(const e of borders.edges){const horizontal=e.side==='top'||e.side==='bottom',x=e.side==='right'?r.x+r.w-8:r.x,y=e.side==='bottom'?r.y+r.h-8:r.y;c.save();c.beginPath();c.rect(horizontal?e.start:x,horizontal?y:e.start,horizontal?e.end-e.start:8,horizontal?8:e.end-e.start);c.clip();if(horizontal)for(let xx=r.x;xx<e.end;xx+=108)c.drawImage(wall,197,e.side==='top'?7:58,54,4,q(xx),q(y),108,8);else for(let yy=r.floorY-104;yy>e.start-104;yy-=104)c.drawImage(wall,e.side==='left'?197:247,10,4,52,q(x),q(yy),8,104);c.restore();}return{...r,borders,collision:false};
 }
+const kitCells=new Map();
+function kitCell(n){if(!ready(hardware))return null;if(kitCells.has(n))return kitCells.get(n);const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(hardware,n%4*64,Math.floor(n/4)*64,64,64,0,0,64,64);kitCells.set(n,b);return b;}
 const cells=new Map(),jawFrames=new Map(),targets=new Map(),visuals=new WeakMap(),debrisPixels=new Map(),debrisFrames=new Map();
 function debrisRaster(n,angle){const source=cell(n);if(!source)return null;const phase=((Math.round(angle*180/Math.PI)%360)+360)%360,key=n+':'+phase;if(debrisFrames.has(key))return debrisFrames.get(key);if(!debrisPixels.has(n)){const pad=document.createElement('canvas');pad.width=pad.height=96;const p=pad.getContext('2d');p.imageSmoothingEnabled=false;p.drawImage(source,16,16);debrisPixels.set(n,p.getImageData(0,0,96,96).data);}const b=document.createElement('canvas');b.width=b.height=96;b.getContext('2d').putImageData(new ImageData(rotateNativeRaster(debrisPixels.get(n),96,96,48,48,phase/5),96,96),0,0);if(debrisFrames.size>=16)debrisFrames.delete(debrisFrames.keys().next().value);debrisFrames.set(key,b);return b;}
 function cell(n){if(!ready(parts))return null;if(cells.has(n))return cells.get(n);const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(parts,n%4*64,Math.floor(n/4)*64,64,64,0,0,64,64);cells.set(n,b);return b;}
@@ -57,25 +66,30 @@ function drawScenery(c,items,far=false){for(const item of items){const b=scenery
 function jawRaster(t){const open=cell(0),closed=cell(1);if(!open||!closed)return null;const n=Math.round(t*6);if(jawFrames.has(n))return jawFrames.get(n);const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;
  if(n===0)c.drawImage(open,0,0);else if(n===6){c.drawImage(open,0,0,64,35,0,0,64,35);c.drawImage(closed,0,35,64,29,0,35,64,29);c.drawImage(open,22,21,20,19,22,21,20,19);}else{c.drawImage(open,0,0,64,35,0,0,64,35);for(const [x,w,pivot,sign]of [[17,15,24,-1],[32,15,39,1]]){const arm=document.createElement('canvas');arm.width=arm.height=64;const a=arm.getContext('2d');a.drawImage(open,x,35,w,24,x,35,w,24);const data=a.getImageData(0,0,64,64);a.putImageData(new ImageData(rotateNativeRaster(data.data,64,64,pivot,35,sign*n*2/5),64,64),0,0);c.drawImage(arm,0,0);}c.drawImage(open,22,21,20,19,22,21,20,19);}jawFrames.set(n,b);return b;
 }
-function shutterRaster(aperture,cut){const closed=cell(3),opened=cell(4);if(!closed||!opened)return null;const opening=cut>0?1:aperture,key=Number(opening===1)+':'+Math.round(opening*22)+':'+Math.floor(cut*8);if(targets.has(key))return targets.get(key);const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(closed,0,0);
- c.clearRect(11,14,42,36);c.drawImage(opened,11,14,42,36,11,14,42,36);if(opening<1){c.save();c.beginPath();c.rect(11,14,42,36);c.clip();const slide=Math.round(opening*22);c.drawImage(closed,11,14,22,36,11-slide,14,22,36);c.drawImage(closed,33,14,20,36,33+slide,14,20,36);for(let y=14;y<50;y+=5){const h=Math.min(5,50-y),w=Math.max(7,Math.ceil(17*(1-opening)));c.drawImage(closed,12,18,w,h,31-Math.floor(w/2),y,w,h);}c.restore();}
- if(cut>0){for(let x=29;x<36;x++)c.drawImage(opened,27,14,1,36,x,14,1,36);c.drawImage(opened,29,14,7,17,29,14,7,17);c.globalAlpha=Math.max(0,1-cut);c.drawImage(opened,29,32,7,18,29,32+Math.round(cut*cut*16),7,18);}if(targets.size>=24)targets.delete(targets.keys().next().value);targets.set(key,b);return b;
+function shutterRaster(aperture,cut){
+ const frame=kitCell(0),shutters=kitCell(2),rope=cell(4);if(!frame||!shutters||!rope)return null;
+ const opening=cut>0?1:aperture,key='rope:'+Math.round(opening*12)+':'+Math.floor(cut*8);if(targets.has(key))return targets.get(key);
+ const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(frame,0,0);
+ // Real fiber stays exposed at its registered hit span; the same authored guards slide aside.
+ c.drawImage(rope,29,14,7,17,29,14,7,17);c.save();c.globalAlpha=Math.max(0,1-cut);c.drawImage(rope,29,31,7,19,29,31+Math.round(cut*cut*16),7,19);c.restore();
+ if(opening<1){const slide=Math.round(opening*24);c.save();c.beginPath();c.rect(12,15,40,34);c.clip();c.drawImage(shutters,6,12,25,42,9-slide,12,25,42);c.drawImage(shutters,32,12,24,42,32+slide,12,24,42);c.restore();}
+ if(targets.size>=24)targets.delete(targets.keys().next().value);targets.set(key,b);return b;
 }
 function visual(s){let v=visuals.get(s.machine);if(!v){v={last:s.time,jaw:s.machine.hook.plateId!==null?1:0};visuals.set(s.machine,v);}const dt=Math.max(0,Math.min(.05,s.time-v.last));v.last=s.time;const wanted=s.machine.hook.plateId!==null||s.machine.hook.grab>.18?1:0;v.jaw+=Math.sign(wanted-v.jaw)*Math.min(Math.abs(wanted-v.jaw),dt/.18);return v;}
-function mountedCoil(c,x,y,side,p){if(!ready(coil))return;c.save();c.translate(q(x),q(y));c.rotate(side*Math.PI/2);c.drawImage(coil,-64,-120,128,128);c.restore();if(p.phase!=='ground'){c.fillStyle=p.phase==='charge'?'#d6a45a':'#78c4cc';c.fillRect(q(x+side*24-2),q(y-side*56-2),4,4);}}
+function mountedCoil(c,x,y,side,p){const coil=kitCell(4);if(!coil)return;c.save();c.translate(q(x),q(y));c.rotate(side*Math.PI/2);c.drawImage(coil,-64,-126,128,128);c.restore();if(p.phase!=='ground'){c.fillStyle=p.phase==='charge'?'#d6a45a':'#78c4cc';c.fillRect(q(x+side*24-2),q(y-side*56-2),4,4);}}
 const switches=new Map(),pieceBounds=new WeakMap();
 function switchRaster(aperture,pressed){
- const frame=cell(3),opened=cell(4);const strike=cell(7);if(!frame||!opened||!strike||!ready(cart))return null;
+ const frame=kitCell(0),strike=kitCell(1),shutters=kitCell(2);if(!frame||!strike||!shutters)return null;
  const a=Math.round(aperture*12),p=Math.round(pressed*6),key=a+':'+p;if(switches.has(key))return switches.get(key);
- const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(frame,0,0);c.clearRect(10,13,44,38);
+ const b=document.createElement('canvas');b.width=b.height=64;const c=b.getContext('2d');c.imageSmoothingEnabled=false;
  b.dataset.orbitSprite='spring-switch';b.dataset.pose=key;
- // A reused iron housing with a new native spring/plunger cartridge, not cut rope.
- c.fillStyle='#152630';c.fillRect(11,14,42,36);
- const dx=Math.round(p/2),cy=30+Math.round(p/3);
- for(let n=0;n<6;n++){const x=16+n*5;c.fillStyle='#374957';c.fillRect(x,39,4,7);c.fillStyle='#9aa39a';c.fillRect(x,39+(n%2),2,4);c.fillStyle='#b38a4d';c.fillRect(x+1,44,3,1);}
- c.save();c.beginPath();c.rect(11,14,42,36);c.clip();c.drawImage(strike,8,8,48,48,8+dx,8+Math.round(p/3),48,48);c.restore();c.drawImage(cart,88,64,16,16,24+dx,cy-8,16,16);
- c.fillStyle=p===6?'#a8d8ac':'#d9b878';c.fillRect(29+dx,cy-3,6,6);c.fillStyle=p===6?'#567e76':'#927344';c.fillRect(30+dx,cy+3,4,2);
- if(a<12){const slide=Math.round(a*21/12);c.save();c.beginPath();c.rect(11,14,42,36);c.clip();for(const x of [11-slide,32+slide]){c.drawImage(frame,12,14,17,36,x,14,17,36);c.drawImage(frame,12,14,4,36,x+17,14,4,36);}c.restore();}
+ c.drawImage(frame,0,0);
+ c.save();c.beginPath();c.rect(12,15,40,34);c.clip();
+ // Native cartridge travels into its guard; spring and domed strike remain one machine.
+ c.drawImage(strike,Math.round(p/2),Math.round(p/3)-2);
+ if(a<12){const slide=Math.round(a*24/12);c.drawImage(shutters,6,12,25,42,9-slide,12,25,42);c.drawImage(shutters,32,12,24,42,32+slide,12,24,42);}
+ c.restore();
+ c.fillStyle=p===6?'#a8d8ac':'#c7ad74';c.fillRect(30,56,4,2);
  if(switches.size>=96)switches.delete(switches.keys().next().value);switches.set(key,b);return b;
 }
 function disassemble(c,s,b,r,x,y){
@@ -100,11 +114,11 @@ function craneBrake(c,s){
  for(const side of [-1,1])metal(c,14,22,0,16,9,2164+q(side*t*14),side<0?128:154+q(t*10));
  return{kind:'crane-brake',rope:[2110,588,612],position:[2110,600],pose:t,released:g.ropeCut[4],enabled:t>=.999,cable:route};
 }
-function panel(c,s){const g=s.machine;part(c,2,1666,530);const t=g.panelPose,n=t<.2?5:t<.72?6:7,floor=n===7?650:634;if(t<1)iron.draw(c,n,1666,floor-122,128,128);if(g.panelOpen){c.fillStyle=g.operator===null?'#689eac':'#bce4d9';c.fillRect(1742,584,6,8);}return{kind:'panel',x:1730,bottom:650,base:60,panelOpen:g.panelOpen,coverPose:t,operator:g.operator,port:[1742,588]};}
+function panel(c,s){const g=s.machine;const art=kitCell(5);if(art)c.drawImage(art,1666,524,128,128);const t=g.panelPose,n=t<.2?5:t<.72?6:7,floor=n===7?650:634;if(t<1)iron.draw(c,n,1666,floor-122,128,128);if(g.panelOpen){c.fillStyle=g.operator===null?'#689eac':'#bce4d9';c.fillRect(1742,584,6,8);}return{kind:'panel',x:1730,bottom:650,base:60,panelOpen:g.panelOpen,coverPose:t,operator:g.operator,port:[1742,588]};}
 export function drawOrbitWorld(c,s,camera,view){const g=s.machine,contacts=[],planes=orbitPlaneOffsets(camera),v=visual(s);c.imageSmoothingEnabled=false;c.fillStyle='#0a172c';c.fillRect(camera.x,camera.y,view.width,view.height);
  if(ready(far))for(let xx=planes.far.x-1536;xx<camera.x+view.width;xx+=1536)c.drawImage(far,xx,planes.far.y,1536,1024);const gears=[],scenery=orbitScrapDepthPlan(s.time,camera);
  drawScenery(c,scenery.far,true);drawScenery(c,scenery.middle);
- for(let xx=planes.middle.x-1536;xx<camera.x+view.width;xx+=1536){for(const item of orbitGearPlan(s.time)){const x=q(xx+item.x),y=q(planes.middle.y+item.y);pier(c,x,y,planes.middle.y+1024);if(x+256<camera.x||x-256>camera.x+view.width||y+256<camera.y||y-256>camera.y+view.height)continue;const b=orbitRaster(gear,item.angle,{size:256,pivotX:128,pivotY:128,brightness:.6});if(b)c.drawImage(b,x-256,y-256,512,512);gears.push({x,y,pitchRadius:228,angle:item.angle,foundation:planes.middle.y+1024});}if(ready(middle))c.drawImage(middle,xx,planes.middle.y,1536,1024);}
+ for(let xx=planes.middle.x-1536;xx<camera.x+view.width;xx+=1536){for(const item of orbitGearPlan(s.time)){const x=q(xx+item.x),y=q(planes.middle.y+item.y);pier(c,x,y,planes.middle.y+1024);if(x+256<camera.x||x-256>camera.x+view.width||y+256<camera.y||y-256>camera.y+view.height)continue;const b=orbitRaster(gear,item.angle,{size:256,pivotX:128,pivotY:128,brightness:.78});if(b)c.drawImage(b,x-256,y-256,512,512);gears.push({x,y,pitchRadius:228,angle:item.angle,foundation:planes.middle.y+1024});}if(ready(middle))c.drawImage(middle,xx,planes.middle.y,1536,1024);}
  const distantScrap=scenery.middle,farSilhouettes=scenery.far;
  const magneticOptics=drawMagneticRefraction(c,s);const rooms=ORBIT_ROOMS.map(r=>roomWall(c,r,s.level));for(const p of orbitSupportPlan(s.level)){pier(c,p.x,p.top,p.bottom);contacts.push(p);}const fields=[];
  for(const [n,left,right,top,y]of [[0,900,1340,360,674],[1,2300,2780,200,444]]){for(const x of [left,right]){const bottom=base(s.level,x);pier(c,x,top,bottom);contacts.push({kind:'field-post',id:n,x,top,bottom});}beam(c,left,right,top);mountedCoil(c,left-14,y,-1,g.plates[n]);mountedCoil(c,right+14,y,1,g.plates[n]);fields.push({id:n,left,right,top,center:[n===0?1120:2540,y],phase:g.plates[n].phase,charge:g.plates[n].charge});if(n===0?g.sequence!==3:!g.hookDocked){for(let j=0;j<96;j++){const angle=j*Math.PI/48+s.time*.12,xx=(n===0?1120:2540)+Math.cos(angle)*(n===0?230:220),yy=y+Math.sin(angle)*(n===0?180:140);c.fillStyle=j%8<2?'#6a9eae':'#284351';c.fillRect(q(xx),q(yy),j%8<2?4:2,2);}}if(g.plates[n].phase!=='ground')for(let a=0;a<12;a++){const angle=s.time*.8+a*Math.PI/6,x=(n===0?1120:2540)+Math.cos(angle)*190,yy=y+Math.sin(angle)*170;c.fillStyle=a%3?'#426e80':'#80c2ce';c.fillRect(q(x),q(yy),4,a%3?4:6);}}
@@ -128,5 +142,5 @@ export function drawOrbitWorld(c,s,camera,view){const g=s.machine,contacts=[],pl
  c.save();c.beginPath();c.rect(3276,194,128,106);c.clip();iron.draw(c,13,3276,194-g.exitPose*104,128,128);c.restore();iron.draw(c,12,3276,194,128,128);contacts.push({kind:'exit-door',frameBottom:300,leafBottom:300-g.exitPose*104,travel:g.exitPose*104});
  const rect={x:3376,y:170,w:128,h:128},p=portal.placement(0,rect,s.level.floors);if(p){drawCycleGateField(c,{...p,active:s.power,glow:.7,frame:Math.floor(s.time*12),aperture:{x:p.x+64,y:p.y+74,w:40,h:80}});portal.drawGrounded(c,0,rect,s.level.floors);contacts.push({kind:'portal',bottom:p.visibleBottom,surface:p.surface.y});}
  for(const item of s.items)if(item.type==='magneticShoes')part(c,5,item.x-64,item.y+44-90);
- return{ready:[far,middle,plate,parts,gear,ladder,coil,cart,wall,iron.image,portal.image].every(ready)&&connectionsReady(),mechanic:'orbit',contacts,fields,rooms,gears,distantScrap,farSilhouettes,magneticOptics,sequence:g.sequence,sequenceRemaining:Math.max(0,g.sequenceUntil-s.time),parallax:planes,cable:cable.anchors,native:{far:[768,512],middle:[768,512],plate:[192,96],parts:[256,128],gear:[256,256]},releasePose:g.releasePose,brakePose:g.brakePose,operator:g.operator,hookDocked:g.hookDocked,ropeCut:g.ropeCut,exitPose:g.exitPose};
+ return{ready:[far,middle,plate,parts,gear,hardware,ladder,cart,wall,iron.image,portal.image].every(ready)&&connectionsReady(),mechanic:'orbit',contacts,fields,rooms,gears,distantScrap,farSilhouettes,magneticOptics,sequence:g.sequence,sequenceRemaining:Math.max(0,g.sequenceUntil-s.time),parallax:planes,cable:cable.anchors,native:{far:[768,512],middle:[768,512],plate:[192,96],parts:[256,128],hardware:[256,128],gear:[256,256]},releasePose:g.releasePose,brakePose:g.brakePose,operator:g.operator,hookDocked:g.hookDocked,ropeCut:g.ropeCut,exitPose:g.exitPose};
 }

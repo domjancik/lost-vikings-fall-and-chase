@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
@@ -19,7 +20,7 @@ try{
    }}return draw.call(this,source,...args);
   };
  });
- await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=orbit119');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=orbit119');
  await page.locator('#start-picker .level-card[data-round="8"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt).ready);
  await page.keyboard.down('ArrowRight');await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].x>1000);await page.keyboard.up('ArrowRight');await page.keyboard.press('Escape');

@@ -20,6 +20,6 @@ test('default Olaf shield collision uses the same reviewed equipment as his comp
   assert.equal(current.skin,'imagegen90');assert.deepEqual(current.shieldArtPose,generated.shieldArtPose);
  }
 });
-test('the current Erik and Baleog retain their existing art bindings',()=>{
- for(const id of [0,1])assert.equal(heroAnimationCell({id,skin:'current'},'run',4).sheet,'locomotion');
+test('the current Erik and Baleog use their latest corrected art bindings',()=>{
+ for(const id of [0,1])assert.equal(heroAnimationCell({id,skin:'current'},'run',4).sheet,'imagegen90');
 });

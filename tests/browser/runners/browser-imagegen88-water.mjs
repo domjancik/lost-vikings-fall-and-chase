@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import {createRequire} from 'node:module';
 import fs from 'node:fs';
 import http from 'node:http';
@@ -15,7 +16,7 @@ const server=process.env.VIKINGS88_LIVE?null:http.createServer((req,res)=>{
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage();
 try{
- await page.goto((process.env.VIKINGS88_LIVE?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3043/')+'?skin=imagegen88&release=88');
+ await reviewNavigate(page,(process.env.VIKINGS88_LIVE?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3043/')+'?skin=imagegen88&release=88');
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes||'[]').length===3);
  const active=await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.heroes));
  if(active.some(h=>h.skin!=='imagegen88')||!active[2].shieldArtPose)throw Error('Imagegen88 physical binding absent');

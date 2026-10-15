@@ -1,5 +1,5 @@
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
-import {heroSkin} from './hero-skins.js?v=olaf107';
+import {heroSkin} from './hero-skins.js?v=orbit121';
 
 export const HERO_CELL=64;
 export const HERO_ORIGIN={x:32,y:40,sole:62};

@@ -1,0 +1,127 @@
+{
+  "method": "original source once; uniform nearest normalization; binary material alpha; translation-only part assembly",
+  "plate": {
+    "source": "plate-raw-v4.png",
+    "sourceMaterialBox": [
+      90,
+      320,
+      1685,
+      552
+    ],
+    "uniformScale": 0.10783699059561129,
+    "nativeCanvas": [
+      192,
+      96
+    ],
+    "opaqueBody": [
+      172,
+      25
+    ],
+    "paste": [
+      10,
+      36
+    ],
+    "pivot": [
+      96,
+      48
+    ],
+    "alphaBox": [
+      10,
+      36,
+      182,
+      61
+    ],
+    "physicalWorldBody": [
+      344,
+      48
+    ],
+    "visualWorldBody": [
+      344,
+      50
+    ],
+    "note": "One native row of decorative lower bevel below the unchanged collision underside; no axis stretch."
+  },
+  "gear": {
+    "source": "gear-raw-v4.png",
+    "nativeCanvas": [
+      256,
+      256
+    ],
+    "pivot": [
+      128,
+      128
+    ],
+    "worldCanvas": [
+      512,
+      512
+    ],
+    "alphaBox": [
+      9,
+      8,
+      247,
+      245
+    ]
+  },
+  "hardware": {
+    "source": "hardware-raw-v2.png",
+    "nativeCanvas": [
+      256,
+      128
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "column": "Clipped upper cap excluded; intact lower cap translated to both ends, shaft retained.",
+    "cellAlphaBoxes": [
+      [
+        4,
+        7,
+        60,
+        62
+      ],
+      [
+        11,
+        11,
+        53,
+        58
+      ],
+      [
+        6,
+        12,
+        56,
+        54
+      ],
+      [
+        21,
+        0,
+        43,
+        55
+      ],
+      [
+        4,
+        1,
+        60,
+        63
+      ],
+      [
+        8,
+        4,
+        56,
+        63
+      ],
+      [
+        4,
+        8,
+        58,
+        59
+      ],
+      [
+        3,
+        4,
+        62,
+        55
+      ]
+    ]
+  }
+}

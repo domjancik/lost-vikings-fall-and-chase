@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {createDevServer} from '../../tools/dev/server.mjs';
@@ -22,7 +23,7 @@ try{
   const draw=CanvasRenderingContext2D.prototype.drawImage;
   CanvasRenderingContext2D.prototype.drawImage=function(...args){globalThis.__drawCalls=(globalThis.__drawCalls||0)+1;if(this.filter!=='none')globalThis.__filteredCalls=(globalThis.__filteredCalls||0)+1;return draw.apply(this,args);};
  });
- await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
  await page.locator('#start-picker .level-card[data-round="5"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
  const session=await page.context().newCDPSession(page);await session.send('Emulation.setCPUThrottlingRate',{rate:6});

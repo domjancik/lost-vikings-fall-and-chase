@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import {createRequire} from 'node:module';
@@ -16,7 +17,7 @@ try{
   page.on('pageerror',e=>errors.push(String(e)));
   page.on('response',r=>{if(r.status()>=400&& !r.url().endsWith('/favicon.ico'))errors.push(r.status()+' '+r.url());});
   try{
-   await page.goto(base+'/');await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
+   await reviewNavigate(page,base+'/');await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
    const campaignCounts=new Map(campaignChoices.map(c=>[c.id,c.levels.length]));
    for(const campaign of ['arcade','story','cycle']){const count=campaignCounts.get(campaign);
     await page.locator('#start-picker [data-campaign-option="'+campaign+'"]').click();
@@ -37,7 +38,7 @@ try{
    }
    await page.setViewportSize({width:430,height:780});await page.screenshot({path:`output/reorg99/browser/${built?'build':'source'}-mobile.png`});
    results.push({mode:built?'build':'source',campaigns:3,previews:campaignChoices.reduce((n,c)=>n+c.levels.length,0),movement:true,switch:true,inventory:true,zoom:true,pause:true,restart:true,mobile:true});
-   for(const html of ['hero-art-preview.html','connection-kit-preview.html','viking-gallery88.html','viking-gallery90.html']){await page.goto(base+'/'+html);await page.waitForTimeout(700);}
+   for(const html of ['hero-art-preview.html','connection-kit-preview.html','viking-gallery88.html','viking-gallery90.html']){await reviewNavigate(page,base+'/'+html);await page.waitForTimeout(700);}
   }finally{await page.close();await new Promise(r=>server.close(r));}
  }
  assert.deepEqual(errors,[]);console.log(JSON.stringify({results,errors}));

@@ -1,8 +1,9 @@
+import {reviewNavigate} from './review-skin.mjs';
 import {createRequire} from 'node:module';import fs from 'node:fs';import {createDevServer} from '../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json'),{chromium}=require('playwright');
 const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 try{
- const page=await browser.newPage();await page.goto('http://127.0.0.1:'+server.address().port+'/');
+ const page=await browser.newPage();await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/');
  const proof=await page.evaluate(async()=>{
   const {CART_ART:A,createCartPieces,cartWheelPlacement}=await import('/warden-cart-art.js?v=warden105');
   const image=new Image();image.src='/assets/warden105/cart-native.png';await image.decode();const parts=createCartPieces(image);

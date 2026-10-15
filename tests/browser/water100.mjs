@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {createDevServer} from '../../tools/dev/server.mjs';
@@ -9,7 +10,7 @@ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Fi
 try {
  const page=await browser.newPage();
  await page.addInitScript(()=>{localStorage.setItem('last-call-story-cards','off');localStorage.setItem('last-call-hints','off');});
- await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90&release=water100');
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90&release=water100');
  let route=fs.readFileSync('archive/browser/browser-water87.js','utf8');
  route=route.replace("await page.locator('#play-water').click();", "await page.locator('#start-picker .level-card[data-round=\"4\"]').click();");
  route=route.replaceAll("'output/playwright/water87-'", "'output/water100/'");

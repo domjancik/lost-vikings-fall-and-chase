@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
@@ -18,7 +19,7 @@ await page.exposeBinding('freightPhoto',async(_,label)=>{
  await page.setViewportSize({width:1440,height:900});await page.locator('#pause').click();
 });
 try{
- await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=freight109');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release=freight109');
  await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.locator('#start-picker [data-campaign-option="cycle"]').click();
  await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length>=8&&c.every(i=>i.dataset.ready==='true');});

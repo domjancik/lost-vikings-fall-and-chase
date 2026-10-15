@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {createDevServer} from '../../tools/dev/server.mjs';
@@ -9,7 +10,7 @@ try {
  const page=await browser.newPage({viewport:{width:1440,height:900}}),errors=[];
  page.on('pageerror',e=>errors.push(String(e)));
  await page.addInitScript(()=>{localStorage.setItem('last-call-story-cards','off');localStorage.setItem('last-call-zoom','1');});
- await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
  await page.locator('#start-picker .level-card[data-round="4"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
  await page.waitForTimeout(600);

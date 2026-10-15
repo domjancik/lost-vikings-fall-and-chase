@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';import {createRequire} from 'node:module';import {createDevServer} from '../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');const {chromium}=require('playwright');
 const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -10,7 +11,7 @@ try{
   body=body.replace('drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);','drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);if(globalThis.__profileFrames)globalThis.__profileFrames.push(performance.now()-profileStart);');
   await route.fulfill({body,contentType:'text/javascript'});
  });
- await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');
  await page.locator('#start-picker .level-card[data-round="5"]').click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
  await page.keyboard.press('3');await page.keyboard.press('Space');await page.keyboard.down('ArrowRight');
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroes)[2].x>=1200);await page.keyboard.up('ArrowRight');

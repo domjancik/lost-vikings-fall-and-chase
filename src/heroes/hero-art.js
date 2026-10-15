@@ -1,9 +1,9 @@
-import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=water114';
+import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=orbit121';
 import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
 import {drawProceduralHeroArt} from './hero-procedural.js?v=orbit116';
-import {normalizeSkin,heroSkin} from './hero-skins.js?v=olaf107';
+import {normalizeSkin,heroSkin} from './hero-skins.js?v=orbit121';
 
 const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];let shield,erikSwim;
 let selectedSkin='current';

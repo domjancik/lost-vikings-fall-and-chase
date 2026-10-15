@@ -4,6 +4,10 @@ const accepted = value => typeof value === 'string' && /^(?:accept|accepted)(?::
 export function validateVisualGates(gate, file = 'visual-gates.json') {
   const fail = reason => { throw Error(`Visual review incomplete: ${file}: ${reason}`); };
   if (gate?.publicationAllowed !== true) fail('publication is not approved');
+  if (gate.reviewVersion >= 2) {
+    if (!accepted(gate.aestheticGate?.verdict)) fail('aesthetic comparison must be accepted');
+    if (gate.captureSkin !== 'imagegen90') fail('scene evidence must use the latest complete Viking sheets');
+  }
   if ('sourceGate' in gate || 'runtimeGate' in gate) {
     if (!accepted(gate.sourceGate?.verdict)) fail('source review must be accepted');
     if (!accepted(gate.runtimeGate?.verdict)) fail('runtime review must be accepted');

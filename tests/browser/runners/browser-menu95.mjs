@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import {createRequire} from 'node:module';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,7 +21,7 @@ async function ready(host,count){await page.waitForFunction(({host,count})=>{con
 async function photo(label){await page.screenshot({path:'output/playwright/menu95-'+(live?'live-':'')+label+'.png'});}
 async function state(){return page.locator('#game').evaluate(c=>({campaign:c.dataset.campaign,round:c.dataset.round,time:c.dataset.simTime,heroes:c.dataset.heroes,puzzle:c.dataset.puzzle,paused:c.dataset.paused}));}
 try{
- await page.goto(base+'?release=menu95');await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
+ await reviewNavigate(page,base+'?release=menu95');await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.waitForSelector('#start-picker [data-campaign-option]');assert.equal(await page.locator('#start-picker [data-campaign-option]').count(),3);
  assert.equal(await page.locator('.mobile-controls').isVisible(),false,'Game controls do not clutter title menu');
  const titleBefore=await state();

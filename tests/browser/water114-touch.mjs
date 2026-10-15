@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';import {createRequire} from 'node:module';import {createDevServer} from '../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json'),{chromium}=require('playwright');
 const skin=process.env.WATER_SKIN||'imagegen90',live=process.env.WATER_LIVE==='1',out='assets/water114/'+(live?'live-touch-evidence':skin==='imagegen90'?'touch-evidence':'touch-evidence-'+skin);fs.mkdirSync(out,{recursive:true});const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -8,7 +9,7 @@ async function hold(key,condition,limit=6000){const b=await page.locator('[data-
  try{await page.waitForFunction(condition,{},{timeout:limit});}finally{await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});}}
 async function variants(name){await page.locator('#pause').tap();for(const zoom of [1,2]){if((await read()).camera.zoom!==zoom)await page.locator('#zoom').tap();await page.waitForTimeout(250);await page.screenshot({path:out+'/'+name+'-'+zoom+'x.png'});evidence[name+'-'+zoom+'x']=await read();}await page.locator('#pause').tap();}
 try{
- await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&skin='+skin+'&release=water114');await page.locator('#start-picker .level-card[data-round="4"]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroArt).ready);await variants('three-crew-meters');
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&skin='+skin+'&release=water114');await page.locator('#start-picker .level-card[data-round="4"]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroArt).ready);await variants('three-crew-meters');
  await hold('right',()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].x>520);
  await hold('down',()=>JSON.parse(document.querySelector('#game').dataset.heroes)[0].y>720);await page.waitForTimeout(150);await variants('swimming');
  const phases=new Set();for(let n=0;n<40&&phases.size<8;n++){

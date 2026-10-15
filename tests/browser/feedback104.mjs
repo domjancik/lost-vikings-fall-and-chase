@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
@@ -10,7 +11,7 @@ try{
  let page=await browser.newPage({viewport:{width:844,height:390},deviceScaleFactor:2,isMobile:true,hasTouch:true});page.on('pageerror',e=>errors.push(String(e)));
  await page.route('**/game.js*',async r=>{const response=await r.fetch();let body=(await response.text()).replace('const target=cameraTarget(','const target=globalThis.__feedbackCamera??cameraTarget(');body=body.replace('function draw(){','function draw(){const feedbackDrawStart=performance.now();');body=body.replace('drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);','drawLabels(labels,labelQueue,camera,canvas.clientHeight/sceneHeight,window.devicePixelRatio||1,vertical);if(globalThis.__feedbackFrames)globalThis.__feedbackFrames.push(performance.now()-feedbackDrawStart);');await r.fulfill({response,body});});
  await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
- const start=async round=>{await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');await page.locator(`#start-picker .level-card[data-round="${round}"]`).click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);};
+ const start=async round=>{await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');await page.locator(`#start-picker .level-card[data-round="${round}"]`).click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);};
  const hud=()=>page.locator('.crew').evaluate(crew=>[...crew.querySelectorAll('.hero-card')].map(card=>{
   const r=card.getBoundingClientRect(),meter=card.querySelector('.hero-resource'),m=meter.getBoundingClientRect(),bag=card.querySelector('.hud-bag').getBoundingClientRect();
   return{visible:!meter.hidden,kind:meter.dataset.kind,text:meter.textContent,value:+meter.getAttribute('aria-valuenow'),max:+meter.getAttribute('aria-valuemax'),selected:card.classList.contains('active'),rect:{x:r.x,y:r.y,w:r.width,h:r.height},meter:{x:m.x,y:m.y,w:m.width,h:m.height},bagBottom:bag.bottom};

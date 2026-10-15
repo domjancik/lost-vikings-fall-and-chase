@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 import fs from 'node:fs/promises';import path from 'node:path';import http from 'node:http';
@@ -14,7 +15,7 @@ const browser=await chromium.launch({headless:true,executablePath:'C:/Program Fi
 async function run(name,options){
  const context=await browser.newContext(options),page=await context.newPage();page.on('pageerror',e=>errors.push(name+':'+String(e)));
  await page.addInitScript(()=>{localStorage.setItem('last-call-story-cards','off');localStorage.setItem('last-call-zoom','2');localStorage.setItem('last-call-skin','current');});
- await page.goto('http://127.0.0.1:3124/?campaign=cycle&skin=current');await page.locator('#start-picker .level-card[data-round="7"]').click();
+ await reviewNavigate(page,'http://127.0.0.1:3124/?campaign=cycle&skin=current');await page.locator('#start-picker .level-card[data-round="7"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.heroArt||'{}').ready);await page.keyboard.press('3');
  const state=()=>page.locator('#game').evaluate(c=>({pose:c.dataset.pose,frame:+c.dataset.frame,paused:c.dataset.paused,time:+c.dataset.simTime,heroes:JSON.parse(c.dataset.heroes),camera:JSON.parse(c.dataset.camera),machine:JSON.parse(c.dataset.puzzle).machine}));
  async function shot(label){await page.screenshot({path:path.join(out,name+'-'+label+'.png')});captures.push({name:name+'-'+label,...await state()});}

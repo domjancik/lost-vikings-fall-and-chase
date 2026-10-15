@@ -2,6 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {validateVisualGates} from '../../tools/release/visual-gates.mjs';
 
+test('richness review requires an accepted aesthetic verdict and latest-character evidence',()=>{
+ const gate={publicationAllowed:true,reviewVersion:2,sourceGate:{verdict:'accepted'},runtimeGate:{verdict:'accepted'}};
+ assert.throws(()=>validateVisualGates(gate));
+ assert.throws(()=>validateVisualGates({...gate,aestheticGate:{verdict:'rejected'},captureSkin:'imagegen90'}));
+ assert.throws(()=>validateVisualGates({...gate,aestheticGate:{verdict:'accepted'},captureSkin:'current'}));
+ assert.doesNotThrow(()=>validateVisualGates({...gate,aestheticGate:{verdict:'accepted'},captureSkin:'imagegen90'}));
+});
+
 test('publication requires accepted source and runtime reviews', () => {
   for (const verdict of ['accept', 'accepted']) {
     assert.doesNotThrow(() => validateVisualGates({publicationAllowed: true,

@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {createRequire} from 'node:module';
 import {createDevServer} from '../../tools/dev/server.mjs';
@@ -10,7 +11,7 @@ try{
  const page=await browser.newPage({viewport:{width:1440,height:900}});page.on('pageerror',e=>errors.push(String(e)));
  await page.route('**/game.js*',route=>route.fulfill({contentType:'text/javascript',body:fs.readFileSync('dist/game.js','utf8').replace('const target=cameraTarget(','const target=globalThis.__reviewCamera??cameraTarget(')}));
  await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
- await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle');
  await page.locator('#start-picker .level-card[data-round="6"]').click();
  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
  await page.locator('#restart').click();await page.locator('#pause').click();

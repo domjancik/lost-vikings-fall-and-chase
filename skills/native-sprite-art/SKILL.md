@@ -26,6 +26,31 @@ Use the retained original source once. Normalize the sheet's scale consistently;
 register pivots/soles by translation, never stretch each frame to its alpha box.
 Keep original art, exact prompts and native/runtime dimensions in the repository.
 
+## Artistic fidelity is a separate blocking gate
+
+Native-grid compliance is necessary, but does not establish artistic quality.
+Compare the preferred earlier source, shipped baseline and proposed replacement
+at the SAME apparent gameplay size, in isolation and inside the full scene.
+Preserve modeled volume, directional light, beveled construction, raised hardware,
+deep recesses, hue-shifted material ramps and deliberate clustered wear. Reject a
+flatter, toy-like or less polished replacement even when its grid/alpha/anchors
+pass. Do not invent 16/24-color limits or 2–3-plane restrictions; a coherent pixel
+grid permits rich shading and one-native-pixel highlights. Remove subpixel noise
+without erasing the design's relief. If either richness or density fails,
+regenerate at the intended density; do not use one gate to excuse the other.
+
+New asset reviews use `reviewVersion: 2` with separate accepted sourceGate,
+runtimeGate and aestheticGate verdicts. Record what improved and what richness
+was retained, with actual comparison evidence. Publication validation blocks a
+missing/rejected aesthetic verdict for this schema; historical receipts stay intact.
+
+All general environment/gameplay screenshots explicitly use `skin=imagegen90`:
+Erik/Baleog vikings90, Olaf olaf111. Record selected skin and resolved asset paths
+in capture receipts; verify ready assets before taking pictures. Current aliases
+the complete corrected set, never a mixed legacy set. Historical/comparison-skin
+captures are allowed only as labeled comparison evidence, never as the sole scene
+fit approval. Do not rewrite old evidence to claim it used the new set.
+
 ## Mandatory review gate
 
 Before replacing or publishing an asset, provide the critique reviewer:

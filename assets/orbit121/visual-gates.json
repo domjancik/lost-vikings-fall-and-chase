@@ -1,0 +1,37 @@
+{
+  "review": "docs/history/ORBIT121-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Selected complete gear-v4 accepted with full margins/relief. Plate-v4 accepted for uniform172x25 native visual344x50 versus physical344x48, rim36/pivot96,48; one lower decorative bevel row explicitly documented, contact acceptance pending runtime. Hardware-v2 accepted excluding clipped upper column cap; reuse intact lower cap by translation only. No axis stretching, palette flattening or grid rescue."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independently inspected actual latest-imagegen90 gameplay1x/2x/mobile: curved/underside soles, riders, loaded bearing/claw, tray, coil mounts, columns and panel grounding remain coherent. Explicit172x25 visual/172x24 physical lower bevel has no obvious contact defect in reviewed states. Full healthy normal route errors empty.",
+    "evidence": [
+      "assets/orbit121/registration.json",
+      "assets/orbit121/comparison.png",
+      "assets/orbit121/switch-states.png",
+      "assets/orbit121/route/route.json",
+      "assets/orbit121/route/captures"
+    ]
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Same-apparent-size preferred/shipped/replacement comparison and actual scene review confirm restored raised rivets, weighted bevels, deep cavities, copper hardware, thick gear sidewalls/layered hub and clustered wear. Richness survives native processing and harmonizes with all3 latest imagegen90 Vikings; no flat palette/shade-count regression."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Unchanged physics/mechanisms; actual normal-input browser route winsHP3/3/3/errors empty with131 captures. Updated art preserves legible switches/rope and contact/exit behavior."
+  },
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ],
+  "reviewVersion": 2,
+  "captureSkin": "imagegen90",
+  "captureSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ]
+}

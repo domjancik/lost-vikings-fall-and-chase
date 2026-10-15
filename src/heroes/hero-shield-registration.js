@@ -1,6 +1,6 @@
-import {native85ShieldPose} from './native85-registration.js?v=water114';
-import {imagegen88ShieldPose} from './imagegen88-registration.js?v=water114';
-import {heroSkin} from './hero-skins.js?v=olaf107';
+import {native85ShieldPose} from './native85-registration.js?v=orbit121';
+import {imagegen88ShieldPose} from './imagegen88-registration.js?v=orbit121';
+import {heroSkin} from './hero-skins.js?v=orbit121';
 export function syncShieldArtPose(hero,skin,animation){
  skin=heroSkin(skin,hero.id);
  hero.skin=skin;

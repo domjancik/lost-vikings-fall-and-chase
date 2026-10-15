@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';import {createRequire} from 'node:module';import {createDevServer} from '../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json'),{chromium}=require('playwright');
 const out='assets/water114/strength-evidence';fs.mkdirSync(out,{recursive:true});const server=await createDevServer({built:process.argv.includes('--dist')});await new Promise(r=>server.listen(0,'127.0.0.1',r));
@@ -10,7 +11,7 @@ async function variants(name){await keys([]);await page.keyboard.press('Escape')
  for(const [size,label]of [[{width:1440,height:900},'desktop'],[{width:844,height:390},'mobile'],[{width:430,height:780},'portrait']]){await page.setViewportSize(size);for(const zoom of [1,2]){if((await state()).camera.zoom!==zoom)await page.locator('#zoom').click();await page.waitForTimeout(200);await page.screenshot({path:out+'/'+name+'-'+label+'-'+zoom+'x.png'});const s=await state();s.hud=await page.locator('.hero-resource').evaluateAll(ms=>ms.map(m=>({hidden:m.hidden,value:+m.getAttribute('aria-valuenow'),label:m.textContent})));if(s.resources[2]&&Math.abs(s.hud[2].value-s.resources[2].remaining)>.11)throw Error('World/HUD strength diverged');evidence[name+'-'+label+'-'+zoom+'x']=s;}}
  await page.setViewportSize({width:1440,height:900});if((await state()).camera.zoom!==original)await page.locator('#zoom').click();await page.waitForTimeout(200);await page.keyboard.press('Escape');}
 try{
- await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=current');
+ await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=current');
  await page.locator('#start-picker .level-card[data-round="5"]').click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);await page.keyboard.press('3');await move(870);await page.keyboard.press('ArrowRight');
  await until(s=>s.machine.activeLeg===0&&s.machine.cycle%6.5>=5.3&&s.machine.cycle%6.5<5.5,()=>[],30000);
  await until(s=>Math.abs(s.heroes[2].x-1490)<5&&Math.abs(s.heroes[2].vx)<16,s=>{const h=s.heroes[2],d=1490-h.x-h.vx*Math.abs(h.vx)/3000,input=Math.abs(d)<3?[]:[d>0?'ArrowRight':'ArrowLeft'];if(h.x>=1380&&!h.shieldUp)input.push('Space');return input;},10000);

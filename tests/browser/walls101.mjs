@@ -1,3 +1,4 @@
+import {reviewNavigate} from './review-skin.mjs';
 import fs from 'node:fs';
 import {execFileSync} from 'node:child_process';
 import {createRequire} from 'node:module';
@@ -22,7 +23,7 @@ try {
    await route.fulfill({contentType:'text/javascript',body:execFileSync('git',['show','c41c562:src/render/depth-render94.js'],{encoding:'utf8'})});
   });
   await page.addInitScript(()=>localStorage.setItem('last-call-story-cards','off'));
-  await page.goto('http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');
+  await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&skin=imagegen90');
   await page.locator('#start-picker .level-card[data-round="5"]').click();
   await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
   await page.locator('#pause').click();

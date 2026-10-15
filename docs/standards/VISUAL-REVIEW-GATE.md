@@ -26,6 +26,31 @@ or a failed verdict blocks publication of the affected assets. Correct the art
 and repeat the affected review. Dimensions, alpha tests and level completion
 cannot substitute for visual acceptance.
 
+## Artistic fidelity is a separate blocking gate
+
+Native-grid compliance is necessary, but does not establish artistic quality.
+Compare the preferred earlier source, shipped baseline and proposed replacement
+at the SAME apparent gameplay size, in isolation and inside the full scene.
+Preserve modeled volume, directional light, beveled construction, raised hardware,
+deep recesses, hue-shifted material ramps and deliberate clustered wear. Reject a
+flatter, toy-like or less polished replacement even when its grid/alpha/anchors
+pass. Do not invent 16/24-color limits or 2–3-plane restrictions; a coherent pixel
+grid permits rich shading and one-native-pixel highlights. Remove subpixel noise
+without erasing the design's relief. If either richness or density fails,
+regenerate at the intended density; do not use one gate to excuse the other.
+
+New asset reviews use `reviewVersion: 2` with separate accepted sourceGate,
+runtimeGate and aestheticGate verdicts. Record what improved and what richness
+was retained, with actual comparison evidence. Publication validation blocks a
+missing/rejected aesthetic verdict for this schema; historical receipts stay intact.
+
+All general environment/gameplay screenshots explicitly use `skin=imagegen90`:
+Erik/Baleog vikings90, Olaf olaf111. Record selected skin and resolved asset paths
+in capture receipts; verify ready assets before taking pictures. Current aliases
+the complete corrected set, never a mixed legacy set. Historical/comparison-skin
+captures are allowed only as labeled comparison evidence, never as the sole scene
+fit approval. Do not rewrite old evidence to claim it used the new set.
+
 ## Ground contact
 
 For articulated feet, measure each near/far sprite independently from its actual

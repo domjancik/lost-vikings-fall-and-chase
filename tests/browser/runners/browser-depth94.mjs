@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import {createRequire} from 'node:module';
 import fs from 'node:fs';
 import http from 'node:http';
@@ -24,7 +25,7 @@ async function shot(label,diagnostic){
  const file='output/playwright/depth94-'+(live?'live-':'')+label+'.png';await page.screenshot({path:file});proofs.push({label,diagnostic,file,...proof});return proof;
 }
 try{
- await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3052/')+'?skin=imagegen90&release=depth94');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3052/')+'?skin=imagegen90&release=depth94');
  await page.locator('#play-clockwork').click();
  for(let i=0;i<6;i++){
   await page.evaluate(()=>{delete globalThis.__depthCamera;});await page.setViewportSize({width:1440,height:900});

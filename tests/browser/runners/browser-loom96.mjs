@@ -1,3 +1,4 @@
+import {reviewNavigate} from '../review-skin.mjs';
 import {createRequire} from 'node:module';
 import fs from 'node:fs';
 import http from 'node:http';
@@ -22,7 +23,7 @@ await page.exposeBinding('loomPhoto',async(_,label)=>{
  await page.setViewportSize({width:1440,height:900});await page.locator('#pause').click();
 });
 try{
- await page.goto((live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3054/')+'?release=loom96');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:3054/')+'?release=loom96');
  await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
  await page.locator('#start-picker [data-campaign-option="cycle"]').click();
  await page.waitForFunction(count=>{const cs=[...document.querySelectorAll('#start-picker canvas')];return cs.length===count&&cs.every(c=>c.dataset.ready==='true');},cycleLevels.length);

@@ -1,0 +1,17 @@
+{
+  "commit": "941cd59",
+  "checked": [
+    "cycle-render.js",
+    "orbit-render.js",
+    "game.js",
+    "scene-render95.js",
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "hero-feedback.js",
+    "orbit-field-optics.js",
+    "orbit-hero-indicator.js",
+    "release-manifest.json",
+    "assets/orbit117/visual-gates.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

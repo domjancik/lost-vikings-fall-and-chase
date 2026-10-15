@@ -1,4 +1,4 @@
-import {TRANSIT_DURATION} from '../../render/portal-effects.js?v=arc46';
+import {TRANSIT_DURATION} from '../../render/portal-effects.js?v=transitions126';
 const clamp=v=>Math.max(0,Math.min(1,v));
 export function sweptHeroPose(h,travel){
  if(travel==null||h.sweptAway)return null;

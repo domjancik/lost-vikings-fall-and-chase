@@ -26,7 +26,7 @@ try{
    }
    await page.locator('#start-picker .level-card[data-round="6"]').click();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready);
    const state=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),camera:JSON.parse(c.dataset.camera),campaign:c.dataset.campaign,round:c.dataset.round,active:c.dataset.activeHero,paused:c.dataset.paused}));
-   const before=await state();await page.keyboard.down('ArrowRight');await page.waitForTimeout(300);await page.keyboard.up('ArrowRight');assert.ok((await state()).heroes[0].x>before.heroes[0].x+20);
+   await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');const before=await state();await page.keyboard.down('ArrowRight');await page.waitForTimeout(300);await page.keyboard.up('ArrowRight');assert.ok((await state()).heroes[0].x>before.heroes[0].x+20);
    await page.locator('[data-hero="2"]').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.activeHero==='2');
    await page.locator('#bag').click();assert.ok(await page.locator('#inventory-dialog').isVisible());await page.locator('#close-inventory').click();
    const zoom=(await state()).camera.zoom;await page.locator('#zoom').click();await page.waitForFunction(z=>JSON.parse(document.querySelector('#game').dataset.camera).zoom!==z,zoom);

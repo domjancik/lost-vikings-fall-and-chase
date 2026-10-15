@@ -1,0 +1,28 @@
+{
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "url": "http://127.0.0.1:5800/?campaign=cycle&release=transitions126&skin=imagegen90",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "resolvedHeroes": [
+    {
+      "id": 0,
+      "skin": "imagegen90"
+    },
+    {
+      "id": 1,
+      "skin": "imagegen90"
+    },
+    {
+      "id": 2,
+      "skin": "imagegen90"
+    }
+  ],
+  "ready": true
+}

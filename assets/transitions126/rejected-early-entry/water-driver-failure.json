@@ -1,0 +1,581 @@
+{
+  "error": "Error: page.evaluate: Error: Timeout lamphouse {\"time\":25.858333333332506,\"active\":0,\"cooldown\":0,\"heroes\":[{\"id\":0,\"skin\":\"imagegen90\",\"rotation\":0,\"magnet\":null,\"boots\":false,\"x\":155,\"y\":716,\"vx\":0,\"vy\":0,\"ground\":true,\"hp\":3,\"dead\":false,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"face\":1,\"support\":null,\"climbing\":false,\"sweptAway\":false},{\"id\":1,\"skin\":\"imagegen90\",\"rotation\":0,\"magnet\":null,\"boots\":false,\"x\":220,\"y\":716,\"vx\":0,\"vy\":0,\"ground\":true,\"hp\":3,\"dead\":false,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"face\":1,\"support\":null,\"climbing\":false,\"sweptAway\":false},{\"id\":2,\"skin\":\"imagegen90\",\"shieldArtPose\":{\"x\":28.675,\"y\":8.849999999999994,\"rx\":16.970562748477143,\"ry\":24,\"roll\":-0.13962634015954636,\"mode\":\"front\",\"cell\":8},\"rotation\":0,\"magnet\":null,\"boots\":false,\"x\":285,\"y\":716,\"vx\":0,\"vy\":0,\"ground\":true,\"hp\":3,\"dead\":false,\"inventory\":[null,null,null,null],\"itemSlot\":0,\"shieldUp\":false,\"shield\":true,\"face\":1,\"support\":null,\"climbing\":false,\"sweptAway\":false}],\"machine\":{\"introTime\":25.858333333332506,\"landed\":true,\"lamp\":{\"lit\":true,\"focused\":false,\"lens\":false,\"hookId\":null},\"hooks\":[{\"id\":\"spray\",\"x\":620,\"y\":704,\"face\":1},{\"id\":\"inspection\",\"x\":1850,\"y\":724,\"face\":1}],\"lamps\":[{\"id\":\"entry\",\"x\":260,\"y\":700,\"oil\":1,\"lit\":true,\"fill\":1},{\"id\":\"refuge\",\"x\":1530,\"y\":700,\"oil\":0,\"lit\":false,\"fill\":0},{\"id\":\"outlet-service\",\"x\":2460,\"y\":700,\"oil\":1,\"lit\":true,\"fill\":1},{\"id\":\"channel\",\"x\":2740,\"y\":700,\"oil\":1,\"lit\":true,\"fill\":1},{\"id\":\"tunnel\",\"x\":3060,\"y\":820,\"oil\":1,\"lit\":true,\"fill\":1}],\"oilSupply\":{\"x\":520,\"y\":716},\"jet\":{\"x\":640,\"y\":716,\"w\":300,\"h\":26,\"dir\":-1,\"pose\":1,\"outletX\":940},\"valve\":{\"x\":1050,\"y\":596,\"pose\":0},\"valveOpened\":false,\"hatch\":{\"x\":1840,\"y\":596,\"open\":false,\"pose\":0,\"blocked\":false},\"rope\":{\"x\":2130,\"y\":650,\"w\":10,\"h\":94,\"cut\":false,\"pose\":0},\"gates\":[{\"id\":\"outlet\",\"x\":2300,\"y\":600,\"w\":48,\"h\":160,\"open\":false,\"pose\":0}],\"lurkers\":[{\"id\":0,\"x\":2103.833333333316,\"y\":760,\"dir\":-1,\"hp\":3,\"phase\":\"patrol\",\"warning\":0,\"attack\":0,\"recoil\":0}],\"stream\":{\"x\":2700,\"y\":680,\"w\":600,\"h\":160,\"active\":true,\"pose\":5.85833333333356},\"captured\":[false,false,false],\"escapeTravel\":[0,0,0],\"events\":[],\"eventSerial\":0,\"blocks\":0},\"won\":false,\"failed\":false}\n    at until (eval at evaluate (:311:30), <anonymous>:11:139)\n    at async move (eval at evaluate (:311:30), <anonymous>:12:28)\n    at async play (eval at evaluate (:311:30), <anonymous>:15:32)\n    at async <anonymous>:337:30",
+  "errors": [],
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 155,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 220,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.295000000000002,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 9
+        },
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 285,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "machine": {
+      "introTime": 25.9583333333325,
+      "landed": true,
+      "lamp": {
+        "lit": true,
+        "focused": false,
+        "lens": false,
+        "hookId": null
+      },
+      "hooks": [
+        {
+          "id": "spray",
+          "x": 620,
+          "y": 704,
+          "face": 1
+        },
+        {
+          "id": "inspection",
+          "x": 1850,
+          "y": 724,
+          "face": 1
+        }
+      ],
+      "lamps": [
+        {
+          "id": "entry",
+          "x": 260,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1
+        },
+        {
+          "id": "refuge",
+          "x": 1530,
+          "y": 700,
+          "oil": 0,
+          "lit": false,
+          "fill": 0
+        },
+        {
+          "id": "outlet-service",
+          "x": 2460,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1
+        },
+        {
+          "id": "channel",
+          "x": 2740,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1
+        },
+        {
+          "id": "tunnel",
+          "x": 3060,
+          "y": 820,
+          "oil": 1,
+          "lit": true,
+          "fill": 1
+        }
+      ],
+      "oilSupply": {
+        "x": 520,
+        "y": 716
+      },
+      "jet": {
+        "x": 640,
+        "y": 716,
+        "w": 300,
+        "h": 26,
+        "dir": -1,
+        "pose": 1,
+        "outletX": 940
+      },
+      "valve": {
+        "x": 1050,
+        "y": 596,
+        "pose": 0
+      },
+      "valveOpened": false,
+      "hatch": {
+        "x": 1840,
+        "y": 596,
+        "open": false,
+        "pose": 0,
+        "blocked": false
+      },
+      "rope": {
+        "x": 2130,
+        "y": 650,
+        "w": 10,
+        "h": 94,
+        "cut": false,
+        "pose": 0
+      },
+      "gates": [
+        {
+          "id": "outlet",
+          "x": 2300,
+          "y": 600,
+          "w": 48,
+          "h": 160,
+          "open": false,
+          "pose": 0
+        }
+      ],
+      "lurkers": [
+        {
+          "id": 0,
+          "x": 2101.833333333318,
+          "y": 760,
+          "dir": -1,
+          "hp": 3,
+          "phase": "patrol",
+          "warning": 0,
+          "attack": 0,
+          "recoil": 0
+        }
+      ],
+      "stream": {
+        "x": 2700,
+        "y": 680,
+        "w": 600,
+        "h": 160,
+        "active": true,
+        "pose": 5.958333333333565
+      },
+      "captured": [
+        false,
+        false,
+        false
+      ],
+      "escapeTravel": [
+        0,
+        0,
+        0
+      ],
+      "events": [],
+      "eventSerial": 0,
+      "blocks": 0
+    },
+    "art": {
+      "ready": true,
+      "mechanic": "sewer",
+      "release": "sewer125",
+      "contacts": [
+        {
+          "kind": "ceiling",
+          "x": 0,
+          "y": 530,
+          "w": 100,
+          "h": 50,
+          "bottom": 580
+        },
+        {
+          "kind": "ceiling",
+          "x": 380,
+          "y": 530,
+          "w": 440,
+          "h": 50,
+          "bottom": 580
+        },
+        {
+          "kind": "ceiling",
+          "x": 820,
+          "y": 400,
+          "w": 360,
+          "h": 40,
+          "bottom": 440
+        },
+        {
+          "kind": "ceiling",
+          "x": 1180,
+          "y": 530,
+          "w": 570,
+          "h": 50,
+          "bottom": 580
+        },
+        {
+          "kind": "ceiling",
+          "x": 1750,
+          "y": 400,
+          "w": 450,
+          "h": 40,
+          "bottom": 440
+        },
+        {
+          "kind": "ceiling",
+          "x": 2200,
+          "y": 530,
+          "w": 1100,
+          "h": 50,
+          "bottom": 580
+        },
+        {
+          "kind": "entry",
+          "opening": [
+            100,
+            380
+          ],
+          "top": 390,
+          "land": 760,
+          "fall": [
+            {
+              "id": 0,
+              "y": 716,
+              "ground": true
+            },
+            {
+              "id": 1,
+              "y": 716,
+              "ground": true
+            },
+            {
+              "id": 2,
+              "y": 716,
+              "ground": true
+            }
+          ]
+        },
+        {
+          "kind": "service-platform",
+          "x": 900,
+          "y": 640,
+          "w": 240,
+          "base": 760
+        },
+        {
+          "kind": "service-platform",
+          "x": 1800,
+          "y": 640,
+          "w": 190,
+          "base": 760
+        },
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 586,
+          "base": 640,
+          "pose": 0
+        },
+        {
+          "kind": "spray-mouth",
+          "x": 940,
+          "y": 716,
+          "shielded": false,
+          "pose": 1
+        },
+        {
+          "kind": "shutter",
+          "x": 1180,
+          "top": 580,
+          "w": 32,
+          "height": 180,
+          "leafBottom": 760,
+          "pose": 0
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1824,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0
+        },
+        {
+          "kind": "shutter",
+          "x": 2020,
+          "top": 600,
+          "w": 40,
+          "height": 160,
+          "leafBottom": 760,
+          "pose": 0
+        },
+        {
+          "kind": "counterweight",
+          "x": 2400,
+          "top": 550,
+          "bottom": 622,
+          "pose": 0
+        },
+        {
+          "kind": "exposed-rope",
+          "x": 2130,
+          "top": 650,
+          "bottom": 744,
+          "cut": false,
+          "pose": 0
+        },
+        {
+          "kind": "shutter",
+          "x": 2300,
+          "top": 600,
+          "w": 48,
+          "height": 160,
+          "leafBottom": 760,
+          "pose": 0
+        },
+        {
+          "kind": "oil-supply",
+          "x": 520,
+          "sole": 760,
+          "sourceSole": 66
+        },
+        {
+          "kind": "wick",
+          "id": "entry",
+          "x": 260,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "reservoirBottom": 760,
+          "mount": "rear-masonry-bracket"
+        },
+        {
+          "kind": "wick",
+          "id": "refuge",
+          "x": 1530,
+          "y": 700,
+          "oil": 0,
+          "lit": false,
+          "fill": 0,
+          "reservoirBottom": 760,
+          "mount": "rear-masonry-bracket"
+        },
+        {
+          "kind": "wick",
+          "id": "outlet-service",
+          "x": 2460,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "reservoirBottom": 760,
+          "mount": "rear-masonry-bracket"
+        },
+        {
+          "kind": "wick",
+          "id": "channel",
+          "x": 2740,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "reservoirBottom": 760,
+          "mount": "rear-masonry-bracket"
+        },
+        {
+          "kind": "wick",
+          "id": "tunnel",
+          "x": 3060,
+          "y": 820,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "reservoirBottom": 880,
+          "mount": "rear-masonry-bracket"
+        },
+        {
+          "kind": "lamp-hook",
+          "id": "spray",
+          "x": 620,
+          "y": 704,
+          "face": 1,
+          "occupied": false
+        },
+        {
+          "kind": "lamp-hook",
+          "id": "inspection",
+          "x": 1850,
+          "y": 724,
+          "face": 1,
+          "occupied": false
+        },
+        {
+          "kind": "lurker",
+          "id": 0,
+          "x": 2101.833333333318,
+          "sole": 760,
+          "phase": "patrol",
+          "warning": 0
+        },
+        {
+          "kind": "water-outlet",
+          "captureX": 2780,
+          "stream": {
+            "x": 2700,
+            "y": 680,
+            "w": 600,
+            "h": 160,
+            "active": true,
+            "pose": 5.958333333333565
+          },
+          "captured": [
+            false,
+            false,
+            false
+          ],
+          "travel": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "lamps": [
+        {
+          "id": "entry",
+          "x": 260,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "radius": 215,
+          "focused": false,
+          "face": 1
+        },
+        {
+          "id": "outlet-service",
+          "x": 2460,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "radius": 215,
+          "focused": false,
+          "face": 1
+        },
+        {
+          "id": "channel",
+          "x": 2740,
+          "y": 700,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "radius": 215,
+          "focused": false,
+          "face": 1
+        },
+        {
+          "id": "tunnel",
+          "x": 3060,
+          "y": 820,
+          "oil": 1,
+          "lit": true,
+          "fill": 1,
+          "radius": 215,
+          "focused": false,
+          "face": 1
+        },
+        {
+          "x": 390,
+          "y": 748,
+          "face": 1,
+          "radius": 205,
+          "focused": false,
+          "portable": true
+        }
+      ],
+      "blackAmbient": true
+    },
+    "darkness": {
+      "ambient": 0,
+      "lights": 2,
+      "occluders": 12,
+      "native": [
+        316,
+        198
+      ],
+      "readbacks": 0
+    },
+    "camera": {
+      "x": 0,
+      "y": 512,
+      "width": 632,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 25.9583333333325,
+    "round": 10,
+    "transition": "idle",
+    "won": false
+  }
+}

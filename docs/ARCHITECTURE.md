@@ -60,3 +60,9 @@ one-time migration tool preserves original bytes and HEAD versions under ignored
 `output/reorg99/`. It stages transformed HEAD separately so pre-existing local
 changes remain unstaged at their new paths. Local sprite experiments and the
 pixel-fixer submodule remain outside the release manifest.
+
+Level travel policy and native distortion geometry live in
+`src/render/level-transition.js`; `transition-render.js` composes their effects.
+The app keeps departure, interstitial wait and arrival separate. Arrival accepts
+the outgoing method while initial/retry entries use the destination's own entry
+construction. Input quarantine lasts until keyup, including across dialog close.

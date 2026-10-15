@@ -7,7 +7,7 @@ import {sceneResolution,prepareScenePixels} from '../../render/scene-resolution.
 import {createAtlas} from '../../render/sprite-atlas.js?v=arc46';
 import {storyObjects,storyWalls} from './story-campaign.js?v=sewer125';
 import {snapPixel,animationTime} from '../../render/pixel-grid.js?v=arc46';
-import {drawPortal} from '../../render/portal-effects.js?v=arc46';
+import {drawPortal} from '../../render/portal-effects.js?v=transitions126';
 import {ease,gateFrameRects} from './story-mechanisms.js?v=arc46';
 const art=createAtlas('assets/campaign46/machines.png?v=arc46',8,4,true);
 const frames=createAtlas('assets/campaign46/machines.png?v=arc46',8,4);

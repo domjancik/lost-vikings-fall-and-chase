@@ -1,0 +1,197 @@
+{
+  "results": [
+    {
+      "touch": false,
+      "campaign": "cycle",
+      "round": 0,
+      "kind": "portal",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 48,
+        "copy": [
+          261,
+          191
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": false,
+      "campaign": "cycle",
+      "round": 4,
+      "kind": "water",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 49,
+        "copy": [
+          316,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": false,
+      "campaign": "cycle",
+      "round": 10,
+      "kind": "fall",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 49,
+        "copy": [
+          316,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": false,
+      "campaign": "story",
+      "round": 0,
+      "kind": "door",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 50,
+        "copy": [
+          316,
+          198
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": false,
+      "campaign": "story",
+      "round": 7,
+      "kind": "transfer",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 50,
+        "copy": [
+          316,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": false,
+      "chapterFreeze": true,
+      "chapterHeldKey": true,
+      "restartReplacesEntry": true
+    },
+    {
+      "touch": true,
+      "campaign": "cycle",
+      "round": 0,
+      "kind": "portal",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 48,
+        "copy": [
+          278,
+          191
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": true,
+      "campaign": "cycle",
+      "round": 4,
+      "kind": "water",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 49,
+        "copy": [
+          428,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": true,
+      "campaign": "cycle",
+      "round": 10,
+      "kind": "fall",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 49,
+        "copy": [
+          428,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": true,
+      "campaign": "story",
+      "round": 0,
+      "kind": "door",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 50,
+        "copy": [
+          428,
+          198
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": true,
+      "campaign": "story",
+      "round": 7,
+      "kind": "transfer",
+      "pause": true,
+      "noInputLeak": true,
+      "normalMovement": true,
+      "optics": {
+        "bands": 50,
+        "copy": [
+          428,
+          195
+        ],
+        "readbacks": 0
+      },
+      "ready": true
+    },
+    {
+      "touch": true,
+      "chapterFreeze": true,
+      "chapterHeldKey": true,
+      "restartReplacesEntry": true
+    }
+  ],
+  "errors": []
+}

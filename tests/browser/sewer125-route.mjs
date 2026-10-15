@@ -5,7 +5,7 @@ import {createDevServer} from '../../tools/dev/server.mjs';
 import {reviewNavigate} from './review-skin.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright'),live=!!process.env.SEWER_LIVE,touchSmoke=process.argv.includes('--touch-smoke'),touch=process.argv.includes('--touch')||touchSmoke;
-const out='assets/sewer125/'+(touchSmoke?(live?'live-touch':'touch'):live?'live-route':touch?'touch-route':'route');fs.mkdirSync(out,{recursive:true});
+const out=(process.argv.includes('--transition-evidence')?'assets/transitions126/water-':'assets/sewer125/')+(touchSmoke?(live?'live-touch':'touch'):live?'live-route':touch?'touch-route':'route');fs.mkdirSync(out,{recursive:true});
 const server=live?null:await createDevServer({built:true});if(server)await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const base=live?(process.env.SEWER_LIVE.startsWith('http')?process.env.SEWER_LIVE:'https://united-marsh-6ppd.here.now'):'http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
@@ -37,7 +37,7 @@ try{
  if(touchSmoke){
   const cdp=await page.context().newCDPSession(page),actions=[];
   assert.equal(await page.evaluate(()=>matchMedia('(pointer:coarse)').matches),true);
-  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.landed);
+  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.landed);await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');
   await page.locator('[data-hero="1"]').tap();await page.waitForFunction(()=>document.querySelector('#game').dataset.activeHero==='1');
   await page.locator('[data-hero="0"]').tap();await page.waitForFunction(()=>document.querySelector('#game').dataset.activeHero==='0');actions.push('hero-selection');
   async function walkRightTo(x){
@@ -73,7 +73,7 @@ try{
   const state=await read();assert.ok(state.camera.x>=0&&state.camera.x+state.camera.width<=3300);assert.deepEqual(state.heroes.map(h=>h.hp),[3,3,3]);assert.deepEqual(errors,[]);
   fs.writeFileSync(out+'/touch.json',JSON.stringify({actions,layout,state,captures,errors},null,2));console.log(JSON.stringify({touch:true,actions,overlaps:layout.overlaps,errors}));
  }else if(process.argv.includes('--smoke')){
-  await page.evaluate(()=>window.sewerPhoto('ceiling-fall'));await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.landed);
+  await page.evaluate(()=>window.sewerPhoto('ceiling-fall'));await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.landed);await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');
   await page.evaluate(()=>window.sewerPhoto('lamphouse'));assert.deepEqual(errors,[]);console.log(JSON.stringify({ready:true,errors,captures:captures.length}));
  }else{
   const source=fs.readFileSync('tests/routes/sewer-route125.js','utf8');
@@ -93,7 +93,7 @@ try{
  const pulses=[];for(const [field,k]of [['jump',' '],['action','d'],['sword','z'],['interact','e'],['item','q']])if(input[field]){key(k,true);pulses.push(k);}const before=s.time,start=performance.now();await new Promise(requestAnimationFrame);while(read().time<=before+(input.item?1/60:0)&&!read().won&&!read().failed){if(performance.now()-start>5000)throw Error('Stopped '+stage);await new Promise(requestAnimationFrame);}for(const k of pulses)key(k,false);s=read();if(input.item)console.log('SEWER item '+stage+' '+JSON.stringify({slot:s.heroes[id].itemSlot,inventory:s.heroes[id].inventory,lamp:s.machine.lamp,lamps:s.machine.lamps}));if(s.failed)throw Error('Crew lost '+stage);}
  async function until(id,predicate,input={},seconds=25){const end=s.time+seconds;while(!predicate(s)){if(s.won)return;if(s.time>end)throw Error('Timeout '+stage+' '+JSON.stringify(s));await tick(id,typeof input==='function'?input(s):input);}}
  async function move(id,x){await until(id,s=>Math.abs(s.heroes[id].x-x)<3&&Math.abs(s.heroes[id].vx)<16,()=>{const h=s.heroes[id],error=x-h.x,stop=h.vx*h.vx/(2*(h.ground?[2600,2300,2100][id]:1875));return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};});}
- async function mark(name){stage=name;if(name==='permanent-refuge'){const refuge=s.machine.lamps.find(a=>a.id==='refuge');if(!refuge.oil||!refuge.lit||s.heroes[0].inventory.includes('lampOil'))throw Error('Refuge oil/light action did not complete '+JSON.stringify(s));}if(name==='valve-closed'&&(!s.machine.lamp.lens||s.heroes[0].inventory.includes('bullseyeLens')))throw Error('Lens was not actually fitted');console.log('SEWER '+name+' '+s.time);milestones.push({name,time:s.time,heroes:s.heroes,machine:s.machine});release();if(!s.won)await window.sewerPhoto(name);s=read();}
+ async function mark(name){stage=name;if(name==='permanent-refuge'){const refuge=s.machine.lamps.find(a=>a.id==='refuge');if(!refuge.oil||!refuge.lit||s.heroes[0].inventory.includes('lampOil'))throw Error('Refuge oil/light action did not complete '+JSON.stringify(s));}if(name==='valve-closed'&&(!s.machine.lamp.lens||s.heroes[0].inventory.includes('bullseyeLens')))throw Error('Lens was not actually fitted');console.log('SEWER '+name+' '+s.time);milestones.push({name,time:s.time,heroes:s.heroes,machine:s.machine});release();if(!s.won)await window.sewerPhoto(name);if(name==='lamphouse')while(document.querySelector('#game').dataset.transition==='arriving')await new Promise(requestAnimationFrame);s=read();}
  `;
   const result=await page.evaluate('('+helpers+body+')()');
   assert.equal(result.won,true);assert.deepEqual(result.hp,[3,3,3]);
@@ -104,8 +104,8 @@ try{
   await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='complete');await photo('all-caught','complete');
   assert.match(await page.locator('#next-round').textContent(),/FOLLOW THE CURRENT/);
   assert.match(await page.locator('#win p').textContent(),/DROWNED REGULATOR/);
-  await page.keyboard.press('Enter');await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='4');
-  const water=await read();assert.equal(water.round,4);await photo('continued-water','entry');
+  if(process.argv.includes('--transition-evidence')){await page.keyboard.down('ArrowRight');await page.keyboard.down('Enter');}else await page.keyboard.press('Enter');await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='4');
+  const water=await read();assert.equal(water.round,4);await photo('continued-water','entry');if(process.argv.includes('--transition-evidence')){await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.transitionDetail||'{}').phase==='entry');const arrival=await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.transitionDetail));assert.equal(arrival.method,'water');await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.transitionDetail||'{}').elapsed>.6);await photo('continued-water','late-entry');await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');await page.evaluate(()=>window.dispatchEvent(new KeyboardEvent('keydown',{key:'ArrowRight',code:'ArrowRight',repeat:true,bubbles:true})));await page.waitForTimeout(200);const settled=await read();assert.deepEqual(settled.heroes.map(h=>h.x),water.heroes.map(h=>h.x));assert.deepEqual(settled.heroes.map(h=>h.hp),[3,3,3]);await page.keyboard.up('ArrowRight');await page.keyboard.up('Enter');await photo('continued-water','arrived');}
   assert.deepEqual(errors,[]);fs.writeFileSync(out+'/evidence.json',JSON.stringify({result,captures,errors,continuedTo:water.round},null,2));
   console.log(JSON.stringify({won:true,hp:result.hp,time:result.time,captures:captures.length,continuedTo:water.round,errors}));
  }

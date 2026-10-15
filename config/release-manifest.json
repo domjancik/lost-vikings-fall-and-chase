@@ -603,6 +603,14 @@
     {
       "source": "src/audio/event-options.js",
       "output": "audio-event-options.js"
+    },
+    {
+      "source": "src/render/level-transition.js",
+      "output": "level-transition.js"
+    },
+    {
+      "source": "src/render/transition-render.js",
+      "output": "transition-render.js"
     }
   ],
   "files": [

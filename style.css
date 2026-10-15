@@ -31,7 +31,7 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 
 #inventory-dialog{width:min(480px,92vw)}#inventory-slots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}#inventory-slots button{padding:8px 2px;min-width:0;min-height:86px;border:2px solid #705d52;display:flex;flex-direction:column;align-items:center;font-size:11px}#inventory-slots button.selected{border-color:#d5ef83;background:#393d28}#inventory-slots canvas{width:42px;height:42px;image-rendering:pixelated}#inventory-description{min-height:48px}.inventory-actions{display:flex;gap:10px;margin:12px 0}.inventory-actions>*{flex:1;min-width:0}#inventory-message{font-size:12px;color:#eac48c}.hero-card.dead{opacity:.45;filter:grayscale(1)}#death{background:#19121bef}#death small{display:block;margin:20px;color:#e9d8ac}@media(max-width:420px){#sound,#timer{display:none}.toolbar-tools{gap:2px}#bag{font-size:9px;padding:5px}}
 
-#portal-transit{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;pointer-events:none;z-index:30}#portal-transit[hidden]{display:none}.portal-travel .game-top,.portal-travel .below,.portal-travel .mobile-controls,.portal-travel .game-bottom{opacity:0;pointer-events:none}#continue-keyboard{color:#d6b7eb;font-size:12px;letter-spacing:1px}
+#portal-transit{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;pointer-events:none;z-index:30}#portal-transit[hidden]{display:none}.portal-travel .game-top,.portal-travel .below,.portal-travel .mobile-controls,.portal-travel .game-bottom{opacity:0;pointer-events:none}.level-arrival .mobile-controls{opacity:.35}#continue-keyboard{color:#d6b7eb;font-size:12px;letter-spacing:1px}
 
 .portal-travel .game-top,.portal-travel .below,.portal-travel .mobile-controls,.portal-travel .game-bottom{visibility:hidden}
 
@@ -126,3 +126,6 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 .action-pad [data-key=item].equipped{border-color:#9acacb;color:#c8e8df}
 /* Keep the pressed tint visible above the primary-action base tint. */
 .mobile-controls .action-pad button.held,.mobile-controls .action-pad button:active{background-color:rgba(148,111,60,.68)}
+
+.level-arrival .game-top,.level-arrival .below{z-index:40}
+.level-arrival #game-labels{z-index:35}

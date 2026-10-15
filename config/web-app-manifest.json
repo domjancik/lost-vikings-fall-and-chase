@@ -1,0 +1,11 @@
+{
+  "id": "/",
+  "name": "Last Call — A Viking Puzzle Adventure",
+  "short_name": "Last Call",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#10121b",
+  "theme_color": "#211c25",
+  "description": "A cooperative Viking puzzle adventure."
+}

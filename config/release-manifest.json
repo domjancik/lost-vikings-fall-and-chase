@@ -109,6 +109,10 @@
       "output": "forge-material.js"
     },
     {
+      "source": "src/app/fullscreen.js",
+      "output": "fullscreen.js"
+    },
+    {
       "source": "src/app/game.js",
       "output": "game.js"
     },
@@ -618,6 +622,10 @@
     }
   ],
   "files": [
+    {
+      "source": "config/web-app-manifest.json",
+      "output": "app-manifest.json"
+    },
     {
       "source": "index.html",
       "output": "index.html"

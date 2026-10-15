@@ -129,3 +129,9 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 
 .level-arrival .game-top,.level-arrival .below{z-index:40}
 .level-arrival #game-labels{z-index:35}
+
+/* WebKit requires its prefixed selection/callout rules on nested control labels. */
+button,button *,.mobile-controls,.mobile-controls *,.crew,.crew *,.game-top,.game-top *,#game,#game-labels,#game-labels *,#hint,#hint *{
+ -webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-user-drag:none;
+}
+#fullscreen[hidden]{display:none}

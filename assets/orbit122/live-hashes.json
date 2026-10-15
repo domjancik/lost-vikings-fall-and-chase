@@ -1,0 +1,25 @@
+{
+  "commit": "bba0412",
+  "checked": [
+    "engine.js",
+    "cycle-render.js",
+    "game.js",
+    "campaign-picker95.js",
+    "cycle-campaign.js",
+    "campaign-menu95.js",
+    "scene-render95.js",
+    "world-render.js",
+    "orbit-campaign.js",
+    "level-preview95.js",
+    "orbit-render.js",
+    "interactions.js",
+    "assets/orbit121/hardware-native.png",
+    "assets/orbit121/gear-native.png",
+    "orbit-art-layout.js",
+    "assets/orbit122/visual-gates.json",
+    "orbit-view.js",
+    "assets/orbit121/plate-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

@@ -1,0 +1,129 @@
+{
+  "records": {
+    "attached-over-gap": {
+      "id": 1,
+      "skin": "imagegen90",
+      "rotation": 3.141592653589793,
+      "magnet": {
+        "plateId": 2,
+        "u": 557.7013416904988,
+        "attaching": false,
+        "pull": 1,
+        "startX": 1863.7604166666636,
+        "startY": 650
+      },
+      "magnetSole": {
+        "x": 1863.7604166666636,
+        "y": 576
+      },
+      "magV": 0,
+      "boots": true,
+      "x": 1863.7604166666636,
+      "y": 576,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "face": 1,
+      "support": "orbit-2",
+      "climbing": false
+    },
+    "rounded-far-end": {
+      "id": 1,
+      "skin": "imagegen90",
+      "rotation": 1.8363187028510926,
+      "magnet": {
+        "plateId": 2,
+        "u": 352.8992583571667,
+        "attaching": false,
+        "pull": 1,
+        "startX": 1863.7604166666636,
+        "startY": 650
+      },
+      "magnetSole": {
+        "x": 2060.8148476511415,
+        "y": 561.0648028337803
+      },
+      "magV": 0,
+      "boots": true,
+      "x": 2082.0438698409307,
+      "y": 544.8378970531254,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "face": -1,
+      "support": "orbit-2",
+      "climbing": false
+    },
+    "right-landing": {
+      "id": 1,
+      "skin": "imagegen90",
+      "rotation": 0,
+      "magnet": null,
+      "magnetSole": null,
+      "magV": 0,
+      "boots": false,
+      "x": 2082.0438698409307,
+      "y": 606,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "face": -1,
+      "support": null,
+      "climbing": false
+    }
+  },
+  "end": {
+    "id": 1,
+    "skin": "imagegen90",
+    "rotation": 0,
+    "magnet": null,
+    "magnetSole": null,
+    "magV": 0,
+    "boots": false,
+    "x": 2082.0438698409307,
+    "y": 606,
+    "vx": 0,
+    "vy": 0,
+    "ground": true,
+    "hp": 3,
+    "dead": false,
+    "inventory": [
+      "magneticShoes",
+      null,
+      null,
+      null
+    ],
+    "itemSlot": 0,
+    "face": -1,
+    "support": null,
+    "climbing": false
+  },
+  "errors": []
+}

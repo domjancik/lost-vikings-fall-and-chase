@@ -1,0 +1,23 @@
+{
+  "commit": "8f29af7",
+  "checked": [
+    "inventory-render.js",
+    "scene-render95.js",
+    "game.js",
+    "level-preview95.js",
+    "cycle-render.js",
+    "campaign-menu95.js",
+    "shoe-rack-render.js",
+    "assets/shoes124/rack-native.png",
+    "shoe-rack-layout.js",
+    "world-render.js",
+    "orbit-render.js",
+    "lode-render.js",
+    "assets/shoes124/visual-gates.json",
+    "assets/shoes124/registration.json",
+    "assets/shoes124/boots-native.png",
+    "assets/shoes124/icon-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

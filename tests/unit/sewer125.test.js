@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createState} from '../../src/core/engine.js';
-import {setupSewer,sewerStep,sewerObjects} from '../../src/levels/sewer/campaign.js';
+import {setupSewer,sewerStep,sewerObjects,sewerSprayMount} from '../../src/levels/sewer/campaign.js';
 import {sewerLights,sewerLightAt,sewerOccluders} from '../../src/levels/sewer/light.js';
 const state=()=>{const s=createState();setupSewer(s);return s;};
 const run=(s,input={},t=1)=>{for(let n=0;n<t*120;n++)sewerStep(s,input,1/120);};
@@ -30,3 +30,5 @@ test('a loose inspection lamp shines from its visible wick rather than above its
 test('fixed caged outlet lamps illuminate the physical stream without leaking through its closed door',()=>{const s=state();s.machine.introTime=3;assert.ok(s.machine.lamps.some(a=>a.id==='channel'&&a.lit));assert.ok(sewerLightAt(s,2800,730)>0);assert.equal(sewerLightAt(s,2250,716),0);});
 test('the focused lantern has local ventilation spill without turning its long beam into ambient light',()=>{const s=state();s.machine.introTime=3;s.items=[];Object.assign(s.heroes[0],{x:1560,y:716,inventory:['inspectionLamp',null,null,null]});s.machine.lamp.focused=true;assert.ok(sewerLightAt(s,1530,700)>0);assert.ok(sewerLightAt(s,1760,724)>0);assert.equal(sewerLightAt(s,1760,620),0);assert.equal(sewerLightAt(s,1360,724),0);assert.ok(sewerLights(s).some(a=>a.spill&&a.radius===80));});
 test('the completion frame marks every Viking as swept away immediately',()=>{const s=state();for(const h of s.heroes)Object.assign(h,{x:2790,y:716});for(let n=0;n<500&&!s.won;n++)sewerStep(s,{},1/120);assert.ok(s.won);assert.ok(s.heroes.every(h=>h.sweptAway));});
+
+test('spray originates inside the registered native pipe opening, including moved jets',()=>{const s=state();for(const j of [s.machine.jet,{...s.machine.jet,y:690,outletX:1010}]){const m=sewerSprayMount(j);assert.equal(m.x+11*2,j.outletX);assert.ok(Math.abs(m.y+26*2-(j.y+j.h/2))<=1);assert.ok(j.y>=m.y+17*2);assert.ok(j.y+j.h<=m.y+36*2);assert.equal(m.x%2,0);assert.equal(m.y%2,0);}});

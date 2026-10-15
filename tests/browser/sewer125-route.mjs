@@ -5,7 +5,7 @@ import {createDevServer} from '../../tools/dev/server.mjs';
 import {reviewNavigate} from './review-skin.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright'),live=!!process.env.SEWER_LIVE,touchSmoke=process.argv.includes('--touch-smoke'),touch=process.argv.includes('--touch')||touchSmoke;
-const out=(process.argv.includes('--transition-evidence')?'assets/transitions126/water-':'assets/sewer125/')+(touchSmoke?(live?'live-touch':'touch'):live?'live-route':touch?'touch-route':'route');fs.mkdirSync(out,{recursive:true});
+const out=process.env.SEWER_EVIDENCE||(process.argv.includes('--transition-evidence')?'assets/transitions126/water-':'assets/sewer125/')+(touchSmoke?(live?'live-touch':'touch'):live?'live-route':touch?'touch-route':'route');fs.mkdirSync(out,{recursive:true});
 const server=live?null:await createDevServer({built:true});if(server)await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const base=live?(process.env.SEWER_LIVE.startsWith('http')?process.env.SEWER_LIVE:'https://united-marsh-6ppd.here.now'):'http://127.0.0.1:'+server.address().port;
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
@@ -14,6 +14,7 @@ page.on('pageerror',e=>errors.push(String(e)));page.on('console',m=>{if(m.type()
 const read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,art:JSON.parse(c.dataset.cycleArt||'null'),darkness:JSON.parse(c.dataset.sewerDarkness||'null'),camera:JSON.parse(c.dataset.camera),time:+c.dataset.simTime,round:+c.dataset.round,transition:c.dataset.transition,won:c.dataset.won==='true'}));
 async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await page.screenshot({path:file});captures.push({file,name,label,...await read()});}
 await page.exposeBinding('sewerPhoto',async(_,name)=>{
+ if(process.argv.includes('--spray-focus')&&name!=='shielded-spray')return;
  if(process.argv.includes('--focus')&&!['lamphouse','winch-moving','outlet-moving','stream-swept-2'].includes(name))return;
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');

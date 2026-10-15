@@ -2,7 +2,7 @@ import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerOccluders,sewerLightAt} from './light.js?v=sewer125';
 import {visibilityPolygon} from './optics.js?v=sewer125';
 import {orbitRaster} from '../orbit/raster.js';
-import {sewerSurfaces} from './campaign.js?v=sewer125';
+import {sewerSurfaces,sewerSprayMount} from './campaign.js?v=sewer128';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
@@ -43,7 +43,7 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[];c.
  for(const x of [2166,2312])cable(c,[[x,570],[x,landingY+10]]);
  for(const p of sewerSurfaces(s).filter(p=>p.x>=2160&&p.x<2320&&p.w===40))floor(c,p.x,p.y,p.w,20);
  cable(c,[[1050,630],[1050,526],[1196,526],[1196,560-190*g.valve.pose]]);pipe(c,1080,460,640);crop(c,props,20,112,24,12,1026,616);wheel(c,1050,586,g.valve.pose*Math.PI*1.5);contacts.push({kind:'valve',x:1050,y:586,base:640,pose:g.valve.pose});
- cell(c,environment,13,908,652);contacts.push({kind:'spray-mouth',x:940,y:716,shielded:!!s.heroes[2].sprayBlock,pose:g.jet.pose});
+ const mouth=sewerSprayMount(g.jet);cell(c,environment,13,mouth.x,mouth.y);contacts.push({kind:'spray-mouth',x:g.jet.outletX,y:mouth.y+52,sprite:mouth,jet:{y:g.jet.y,h:g.jet.h},shielded:!!s.heroes[2].sprayBlock,pose:g.jet.pose});
  contacts.push(shutter(c,1180,580,32,180,g.valve.pose,190));
  // Upper winch drives an actual inspection leaf, exposing the physical rope.
  crop(c,grounded,0,0,96,72,1760,512);wheel(c,1824,572,g.hatch.pose*Math.PI*1.5,'winch');cable(c,[[1840,542],[1840,480],[2040,480],[2040,590-170*g.hatch.pose]]);contacts.push({kind:'inspection-winch',x:1824,sole:640,sourceSole:64,pose:g.hatch.pose});contacts.push(shutter(c,2020,600,40,160,g.hatch.pose,170));

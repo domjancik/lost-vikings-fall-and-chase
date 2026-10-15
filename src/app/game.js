@@ -1,12 +1,13 @@
-import {drawMagneticAttraction} from '../levels/orbit/field-optics.js?v=orbit120';
+import {createLodeSounds} from '../levels/lode/audio.js?v=lode123';
+import {drawMagneticAttraction} from '../levels/orbit/field-optics.js?v=lode123';
 import {drawWorldResources,worldResources} from "./world-resources.js?v=orbit116";
 import {drawHeroFeedback} from "./hero-feedback.js?v=orbit117";
 import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit120";
 import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=orbit122";
 import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit121";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=orbit122';
-import {drawScene} from '../render/scene-render95.js?v=orbit122';
+import {campaignMenu} from './campaign-menu.js?v=lode123';
+import {drawScene} from '../render/scene-render95.js?v=lode123';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=orbit121';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
@@ -14,7 +15,7 @@ import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=orbit121'
 import {setHeroSkin} from '../heroes/hero-art.js?v=orbit121';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=orbit121';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=orbit122';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=lode123';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from '../campaigns/story/story-custody.js?v=arc46';
@@ -40,8 +41,8 @@ import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit121';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=orbit122';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=orbit122';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=lode123';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=lode123';
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
 let campaign=['story','cycle'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'arcade',levels=campaignLevels(campaign);let round=0;try{round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(campaign)))||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),continueKeys=new Set();
@@ -84,10 +85,10 @@ drawWorldResources(ctx,s,text,viewport.uiScale);canvas.dataset.worldResources=JS
 }
 function toast(t){document.querySelector('#toast').textContent=t;document.querySelector('#toast').classList.add('show');document.querySelector('#message-label').textContent='MESSAGE';if(hintsVisible)document.querySelector('#clue').classList.add('new-clue');toastUntil=performance.now()+5500;}
 import {createFreightSounds} from '../levels/freight/audio.js?v=orbit113';
-const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds(),freightSounds=createFreightSounds(),orbitSounds=createOrbitSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
+const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds(),freightSounds=createFreightSounds(),orbitSounds=createOrbitSounds(),lodeSounds=createLodeSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
 function updateSoundButton(){const button=document.querySelector('#sound');button.querySelector('span').textContent=sound?'SOUND ON':'SOUND OFF';button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',sound?'Mute sound effects':'Enable sound effects');button.title=sound?'Sound effects on':'Sound effects off';button.classList.toggle('muted',!sound);}
 updateSoundButton();
-function playWorldSounds(){canvas.dataset.cooldown=String(s.cooldown);const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s),...freightSounds(s),...orbitSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?(e.name.startsWith('warden')?.7:.35):1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
+function playWorldSounds(){canvas.dataset.cooldown=String(s.cooldown);const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s),...freightSounds(s),...orbitSounds(s),...lodeSounds(s)]){const pan=(e.x-camera.x)/camera.width*2-1;audio.play(e.name,{pan,id:e.id,pitch:e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1,volume:Math.abs(pan)>1?(e.name.startsWith('warden')?.7:.35):1});}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
 for(const event of ['pointerdown','keydown'])document.addEventListener(event,()=>{if(sound)audio.unlock();},{capture:true});
 document.addEventListener('click',e=>{if(!sound||!e.target.closest('button')||e.target.closest('#sound'))return;audio.unlock().then(()=>audio.play(e.target.closest('#play,#restart,#retry-death,#next-round')?'start':'click'));});
 document.addEventListener('visibilitychange',()=>{audio.setEnabled(sound&&!document.hidden);});
@@ -154,4 +155,3 @@ const startMenu=campaignMenu(document.querySelector('#start-picker'),{campaign,o
 const roundMenu=campaignMenu(document.querySelector('#round-picker'),{campaign,onLevel:loadLevel});
 document.querySelector('#start-picker [aria-pressed="true"]').focus({preventScroll:true});
 document.body.classList.toggle('has-ladders',campaign==='cycle');
-

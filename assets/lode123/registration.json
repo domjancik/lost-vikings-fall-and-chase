@@ -1,0 +1,422 @@
+{
+  "method": "Retained source once; uniform nearest normalization, binary material alpha, zero hidden RGB. No palette quantization/grid rescue.",
+  "stator": {
+    "source": "stator-raw-v1.png",
+    "sourceBox": [
+      41,
+      35,
+      1208,
+      1193
+    ],
+    "scale": 0.23993144815766923,
+    "nativeCanvas": [
+      300,
+      300
+    ],
+    "body": [
+      280,
+      278
+    ],
+    "paste": [
+      10,
+      11
+    ],
+    "pivot": [
+      150,
+      150
+    ],
+    "worldBody": [
+      560,
+      556
+    ],
+    "center": [
+      1000,
+      978
+    ],
+    "top": 700,
+    "bottom": 1256
+  },
+  "kit": {
+    "source": "kit-raw-v2.png",
+    "nativeCanvas": [
+      256,
+      192
+    ],
+    "cell": [
+      64,
+      64
+    ],
+    "frames": [
+      {
+        "cell": 0,
+        "sourceBox": [
+          8,
+          12,
+          55,
+          59
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "nativeBox": [
+          8,
+          12,
+          55,
+          59
+        ]
+      },
+      {
+        "cell": 1,
+        "sourceBox": [
+          71,
+          12,
+          124,
+          66
+        ],
+        "translation": [
+          0,
+          -6
+        ],
+        "nativeBox": [
+          7,
+          6,
+          60,
+          60
+        ]
+      },
+      {
+        "cell": 2,
+        "sourceBox": [
+          138,
+          15,
+          184,
+          64
+        ],
+        "translation": [
+          0,
+          -4
+        ],
+        "nativeBox": [
+          10,
+          11,
+          56,
+          60
+        ]
+      },
+      {
+        "cell": 3,
+        "sourceBox": [
+          205,
+          19,
+          248,
+          65
+        ],
+        "translation": [
+          0,
+          -5
+        ],
+        "nativeBox": [
+          13,
+          14,
+          56,
+          60
+        ]
+      },
+      {
+        "cell": 4,
+        "sourceBox": [
+          10,
+          74,
+          54,
+          123
+        ],
+        "translation": [
+          0,
+          1
+        ],
+        "nativeBox": [
+          10,
+          11,
+          54,
+          60
+        ]
+      },
+      {
+        "cell": 5,
+        "sourceBox": [
+          66,
+          80,
+          126,
+          124
+        ],
+        "translation": [
+          0,
+          -6
+        ],
+        "nativeBox": [
+          2,
+          10,
+          62,
+          54
+        ]
+      },
+      {
+        "cell": 6,
+        "sourceBox": [
+          136,
+          80,
+          190,
+          124
+        ],
+        "translation": [
+          0,
+          -6
+        ],
+        "nativeBox": [
+          8,
+          10,
+          62,
+          54
+        ]
+      },
+      {
+        "cell": 7,
+        "sourceBox": [
+          197,
+          94,
+          251,
+          123
+        ],
+        "translation": [
+          0,
+          -5
+        ],
+        "nativeBox": [
+          5,
+          25,
+          59,
+          54
+        ]
+      },
+      {
+        "cell": 8,
+        "sourceBox": [
+          7,
+          160,
+          58,
+          186
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "nativeBox": [
+          7,
+          32,
+          58,
+          58
+        ]
+      },
+      {
+        "cell": 9,
+        "sourceBox": [
+          70,
+          167,
+          124,
+          186
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "nativeBox": [
+          6,
+          39,
+          60,
+          58
+        ]
+      },
+      {
+        "cell": 10,
+        "sourceBox": [
+          141,
+          130,
+          181,
+          186
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "nativeBox": [
+          13,
+          2,
+          53,
+          58
+        ]
+      },
+      {
+        "cell": 11,
+        "sourceBox": [
+          197,
+          120,
+          251,
+          186
+        ],
+        "translation": [
+          0,
+          0
+        ],
+        "nativeBox": [
+          12,
+          2,
+          53,
+          58
+        ]
+      }
+    ],
+    "boxes": [
+      [
+        8,
+        12,
+        55,
+        59
+      ],
+      [
+        7,
+        6,
+        60,
+        60
+      ],
+      [
+        10,
+        11,
+        56,
+        60
+      ],
+      [
+        13,
+        14,
+        56,
+        60
+      ],
+      [
+        10,
+        11,
+        54,
+        60
+      ],
+      [
+        2,
+        10,
+        62,
+        54
+      ],
+      [
+        8,
+        10,
+        62,
+        54
+      ],
+      [
+        5,
+        25,
+        59,
+        54
+      ],
+      [
+        7,
+        32,
+        58,
+        58
+      ],
+      [
+        6,
+        39,
+        60,
+        58
+      ],
+      [
+        13,
+        2,
+        53,
+        58
+      ],
+      [
+        12,
+        2,
+        53,
+        58
+      ]
+    ],
+    "brake": {
+      "ropeTargetNative": [
+        32,
+        29
+      ],
+      "drawOrigin": [
+        1932,
+        618
+      ],
+      "worldTarget": [
+        1996,
+        676
+      ],
+      "upperMountY": 622,
+      "hingeConnectionY": 724
+    },
+    "sentry": {
+      "sole": 54,
+      "muzzle": [
+        62,
+        32
+      ],
+      "worldMuzzleOffset": [
+        60,
+        -44
+      ]
+    },
+    "cart": {
+      "wheelOuterTop": 12,
+      "axle": 19,
+      "bodyBottom": 59,
+      "sourceHeightWorld": 94,
+      "flangeSeatingWorld": 2,
+      "hangingDepthWorld": 92,
+      "ropePort": [
+        32,
+        19
+      ],
+      "railBottom": 600,
+      "floor": 700,
+      "note": "Outer tread seats2world into the rail flange. Full silhouette retained; 100world gap leaves8world body clearance. Rope connects actual axle crossbar native32,19."
+    }
+  },
+  "far": {
+    "source": "far-raw-v1.png",
+    "native": [
+      768,
+      640
+    ],
+    "world": [
+      1536,
+      1280
+    ]
+  },
+  "middle": {
+    "source": "middle-raw-v2.png",
+    "native": [
+      768,
+      640
+    ],
+    "world": [
+      1536,
+      1280
+    ],
+    "foundation": 1260,
+    "drawY": "-20+snap(camera.y*.025)",
+    "depthBrightness": 0.8,
+    "note": "Baked counterweights removed with imagegen; runtime native loads animate in clear shafts."
+  }
+}

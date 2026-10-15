@@ -551,6 +551,18 @@
     {
       "source": "src/levels/orbit/field-optics.js",
       "output": "orbit-field-optics.js"
+    },
+    {
+      "source": "src/levels/lode/campaign.js",
+      "output": "lode-campaign.js"
+    },
+    {
+      "source": "src/levels/lode/render.js",
+      "output": "lode-render.js"
+    },
+    {
+      "source": "src/levels/lode/audio.js",
+      "output": "lode-audio.js"
     }
   ],
   "files": [
@@ -874,6 +886,12 @@
     "assets/orbit121/hardware-native.png",
     "assets/orbit121/registration.json",
     "assets/orbit121/visual-gates.json",
-    "assets/orbit122/visual-gates.json"
+    "assets/orbit122/visual-gates.json",
+    "assets/lode123/stator-native.png",
+    "assets/lode123/kit-native.png",
+    "assets/lode123/far-native.png",
+    "assets/lode123/middle-native.png",
+    "assets/lode123/registration.json",
+    "assets/lode123/visual-gates.json"
   ]
 }

@@ -1,4 +1,4 @@
-import {drawMagneticRefraction} from './field-optics.js?v=orbit120';
+import {drawMagneticRefraction} from './field-optics.js?v=lode123';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=orbit113';

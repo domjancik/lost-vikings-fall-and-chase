@@ -9,7 +9,7 @@
 | `src/campaigns/arcade/` | Original arcade/inventory/vertical worlds |
 | `src/campaigns/story/` | Story campaign, enemies, machinery, world layout and custody |
 | `src/campaigns/machines/` | Machine Rooms dispatch and shared mechanisms |
-| `src/levels/` | Clockwork, water, Warden, Loom, freight, momentum and refraction; local mechanics/render/art together |
+| `src/levels/` | Clockwork, water, Warden, Loom, freight, momentum, refraction, orbit and lode; local mechanics/render/art together |
 | `src/heroes/` | Viking animation, procedural and generated skin registration |
 | `src/render/` | Scene composition, terrain, parallax, camera, text and pixel grid |
 | `src/audio/` | Shared sound event processing and recipes |

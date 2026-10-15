@@ -1,0 +1,37 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/LODE123-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Accepted raw stator/far-v1,middle-v2,kit-v2 and actual processed native art; original crop metadata corrected, complete kit components translated without resizing, modeled richness retained. Actual stator footing seats rim1260; honest cart tread/body anchors."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Inspected actual1x/2x/portrait/landscape production states and focused sustained pushContact proof: seated tread598/contact600, massbottom692, connected crossbar, real Olaf contact, wheel/axle separation, fixed counterweight transfer and free-cap exit. Final normal browser recall route105.55s wins HP3/3/3/errors[] with50 captures; touch passes. All13 Lode tests independently pass. Final translation-only brake correction independently inspected: exposed cord and cut gap match actual ray1996,676; grounded bracket/pier and hinge cable connected. Focused brake route20captures allHP3/errors[] accepted."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Independent raw/native and actual1x/2x/mobile scenes retain rich dimensional stator, hardware, human-scale grounded galleries, deep city reveal and quiet rear animated weights; all3 latest90 characters harmonize."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Final ordinary-input browser route105.55s HP3/3/3/errors[] includes deliberate missed passenger, ground recall, reboarding, onboard re-raise and reunion; independent13 tests cover60/120 healthy completion, true contact push, opposite2:1 counterweight, continuous bridge, terrain blocking and right-side fall/ladder return."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ],
+  "evidence": [
+    "assets/lode123/route/evidence.json",
+    "assets/lode123/contact/evidence.json",
+    "assets/lode123/route/touch.json",
+    "assets/lode123/registration.json",
+    "assets/lode123/brake/evidence.json"
+  ],
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": -2.4284287867880288,
+        "magnet": {
+          "plateId": 0,
+          "u": 1076.965747551545,
+          "attaching": false,
+          "pull": 1,
+          "startX": 752.5347222222196,
+          "startY": 1260
+        },
+        "magnetSole": {
+          "x": 816.065309861017,
+          "y": 1187.603476839168
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 801.6722529291559,
+        "y": 1182.2419837480288,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": "orbit-0",
+        "climbing": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "boots": false,
+        "x": 155,
+        "y": 1216,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.849999999999994,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 8
+        },
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "boots": false,
+        "x": 210,
+        "y": 1216,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false
+      }
+    ],
+    "machine": {
+      "plates": [
+        {
+          "id": 0,
+          "x": 1000,
+          "y": 978,
+          "w": 560,
+          "h": 556,
+          "capRx": 280,
+          "angle": 0,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "id": 1,
+          "x": 2100,
+          "y": 724,
+          "w": 440,
+          "h": 48,
+          "capRx": 16,
+          "angle": 1.5707963267948966,
+          "vx": 0,
+          "vy": 0
+        },
+        {
+          "id": 2,
+          "x": 3040,
+          "y": 576,
+          "w": 640,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "vx": 0,
+          "vy": 0
+        }
+      ],
+      "roofs": [],
+      "brakeCut": false,
+      "brakePose": 0,
+      "bridgeWanted": false,
+      "winding": 0,
+      "bridgeSpeed": 0,
+      "recovery": false,
+      "recoveryPose": 0,
+      "banked": false,
+      "bankPose": 0,
+      "liftWanted": false,
+      "liftSpeed": 0,
+      "liftBlocked": false,
+      "pushContact": false,
+      "ballastU": 1155.4617583571624,
+      "ballastTravel": 0,
+      "sentry": {
+        "x": 2564.3999999999796,
+        "y": 700,
+        "dir": 1,
+        "hp": 2,
+        "clock": 4.016666666666656,
+        "fireAt": 2,
+        "warning": 0,
+        "targetId": null
+      },
+      "events": [],
+      "eventSerial": 0
+    },
+    "art": {
+      "ready": true,
+      "release": "lode123",
+      "planes": {
+        "far": {
+          "x": 330,
+          "y": 44
+        },
+        "middle": {
+          "x": 232,
+          "y": 4
+        }
+      },
+      "contacts": [
+        {
+          "kind": "pier",
+          "x": 1140,
+          "top": 748,
+          "bottom": 1260
+        },
+        {
+          "kind": "pier",
+          "x": 1710,
+          "top": 748,
+          "bottom": 1260
+        },
+        {
+          "kind": "pier",
+          "x": 2390,
+          "top": 748,
+          "bottom": 1260
+        },
+        {
+          "kind": "pier",
+          "x": 2920,
+          "top": 748,
+          "bottom": 1260
+        },
+        {
+          "kind": "pier",
+          "x": 2390,
+          "top": 364,
+          "bottom": 700
+        },
+        {
+          "kind": "pier",
+          "x": 2630,
+          "top": 364,
+          "bottom": 700
+        },
+        {
+          "kind": "pier",
+          "x": 3240,
+          "top": 180,
+          "bottom": 1260
+        },
+        {
+          "kind": "pier",
+          "x": 3460,
+          "top": 180,
+          "bottom": 1260
+        },
+        {
+          "kind": "stator",
+          "body": [
+            720,
+            700,
+            560,
+            556
+          ],
+          "foundation": 1260
+        },
+        {
+          "kind": "rail",
+          "id": 1,
+          "x": 2100,
+          "y": 724,
+          "w": 440,
+          "h": 48,
+          "angle": 1.5707963267948966,
+          "nativePixel": 2
+        },
+        {
+          "kind": "rail",
+          "id": 2,
+          "x": 3040,
+          "y": 576,
+          "w": 640,
+          "h": 48,
+          "angle": 0,
+          "nativePixel": 2
+        },
+        {
+          "kind": "ballast",
+          "wheelTop": 600,
+          "bottom": 694,
+          "banked": false,
+          "worldX": 2860,
+          "worldY": 600
+        },
+        {
+          "kind": "call",
+          "x": 2660,
+          "y": 656,
+          "active": true,
+          "materialBase": 700
+        },
+        {
+          "kind": "cabin",
+          "x": 2760,
+          "y": 600,
+          "active": false,
+          "materialBase": 644
+        },
+        {
+          "kind": "sentry",
+          "x": 2564.3999999999796,
+          "sole": 700,
+          "hp": 2
+        }
+      ],
+      "brakePose": 0,
+      "bridgeAngle": 1.5707963267948966,
+      "liftY": 576,
+      "bankPose": 0
+    },
+    "camera": {
+      "x": 374,
+      "y": 944,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 4.016666666666656
+  },
+  "errors": []
+}

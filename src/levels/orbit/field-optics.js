@@ -29,7 +29,7 @@ function drawBands(c,bands){
 }
 
 export function magneticAttractionPaths(s){
- if(s.level.mechanic!=='orbit')return [];
+ if(!['orbit','lode'].includes(s.level.mechanic))return [];
  const result=[];
  for(const h of s.heroes){if(!h.boots||!h.magnet||h.dead||h.magnet.pull===undefined||h.magnet.pull>=1)continue;const p=magneticRails(s).find(p=>p.id===h.magnet.plateId);if(!p)continue;
   for(const from of magneticSoles(h)){const to=railContact(p,h.magnet.u+from.side*9),distance=Math.hypot(from.x-to.x,from.y-to.y);if(distance>4)result.push({heroId:h.id,side:from.side,from:{x:from.x,y:from.y},to:{x:to.x,y:to.y},distance});}
@@ -43,7 +43,7 @@ export function magneticAttractionBands(s,view){
  }return result;
 }
 export function drawMagneticAttraction(c,s){
- if(s.level.mechanic!=='orbit')return null;
+ if(!['orbit','lode'].includes(s.level.mechanic))return null;
  const view=canvasView(c),paths=magneticAttractionPaths(s),stats=drawBands(c,magneticAttractionBands(s,view));
  c.fillStyle='#739daa';for(const path of paths)for(let n=0;n<4;n++){const t=(s.time*2+n/4)%1,p=along(path,t);if(p.x>=view.x&&p.x<view.x+view.width&&p.y>=view.y&&p.y<view.y+view.height)c.fillRect(q(p.x),q(p.y),2,2);}
  return{...stats,paths};

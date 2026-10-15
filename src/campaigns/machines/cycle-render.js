@@ -1,4 +1,5 @@
-import {drawOrbitWorld} from "../../levels/orbit/render.js?v=orbit122";
+import {drawLodeWorld} from '../../levels/lode/render.js?v=lode123';
+import {drawOrbitWorld} from "../../levels/orbit/render.js?v=lode123";
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
 import {drawLoomWorld} from '../../levels/loom/render.js?v=loom106';
 import {drawFreightWorld} from '../../levels/freight/render.js?v=orbit113';
@@ -20,6 +21,7 @@ const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return
 const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
 ladder.src='assets/platform56/ladder.png';
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
+ if(s.level.mechanic==='lode')return drawLodeWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==="orbit")return drawOrbitWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='freight')return drawFreightWorld(ctx,s,camera,viewport);
  if(s.level.mechanic==='loom')return drawLoomWorld(ctx,s,camera,viewport);

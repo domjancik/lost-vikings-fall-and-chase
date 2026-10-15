@@ -1,0 +1,10 @@
+{
+  "commit": "6a693f4",
+  "checked": [
+    "style.css",
+    "controls.js",
+    "release-manifest.json",
+    "game.js"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

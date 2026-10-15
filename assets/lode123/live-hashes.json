@@ -1,0 +1,31 @@
+{
+  "commit": "b30d0a1",
+  "checked": [
+    "game.js",
+    "engine.js",
+    "campaign-picker95.js",
+    "cycle-render.js",
+    "campaign-menu95.js",
+    "cycle-campaign.js",
+    "orbit-render.js",
+    "world-render.js",
+    "level-preview95.js",
+    "orbit-field-optics.js",
+    "interactions.js",
+    "scene-render95.js",
+    "lode-audio.js",
+    "lode-campaign.js",
+    "lode-render.js",
+    "assets/lode123/kit-native.png",
+    "assets/lode123/stator-native.png",
+    "assets/lode123/far-native.png",
+    "assets/lode123/visual-gates.json",
+    "assets/lode123/registration.json",
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png",
+    "assets/lode123/middle-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

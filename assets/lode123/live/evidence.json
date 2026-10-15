@@ -1,0 +1,7368 @@
+{
+  "result": {
+    "brake": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "time": 33.19166666666543,
+    "milestones": [
+      {
+        "name": "service-shoes",
+        "time": 0.008333333333333333,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 100,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 155,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 210,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": false,
+          "recoveryPose": 0,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2619.616666666667,
+            "y": 700,
+            "dir": -1,
+            "hp": 2,
+            "clock": 0.008333333333333333,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [],
+          "eventSerial": 0
+        }
+      },
+      {
+        "name": "stator-climb-0",
+        "time": 0.8916666666666659,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 118.36458333333334,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 174.40625,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 229.125,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": false,
+          "recoveryPose": 0,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2578.9833333333463,
+            "y": 700,
+            "dir": -1,
+            "hp": 2,
+            "clock": 0.8916666666666659,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [],
+          "eventSerial": 0
+        }
+      },
+      {
+        "name": "stator-climb-1",
+        "time": 8.366666666666832,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 13.333333333333346,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 174.40625,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 229.125,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 0.3333333333333332,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2764.4999999999163,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 8.366666666666832,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            }
+          ],
+          "eventSerial": 1
+        }
+      },
+      {
+        "name": "stator-climb-2",
+        "time": 18.049999999999617,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1278.803079326354,
+            "y": 656,
+            "vx": 2.499999999999993,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "boots": false,
+            "x": 229.125,
+            "y": 1216,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 1,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2629.5666666666257,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 18.049999999999617,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            }
+          ],
+          "eventSerial": 1
+        }
+      },
+      {
+        "name": "gallery-recovery",
+        "time": 29.349999999998975,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1278.803079326354,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.860000000000003,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 0
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1358.5990135345594,
+            "y": 656,
+            "vx": 10,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 1,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2568.999999999978,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 29.349999999998975,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            }
+          ],
+          "eventSerial": 1
+        }
+      },
+      {
+        "name": "brake-release",
+        "time": 29.4833333333323,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1278.803079326354,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1358.6406802012261,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 1,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2575.1333333333096,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 29.4833333333323,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            }
+          ],
+          "eventSerial": 1
+        }
+      },
+      {
+        "name": "brake-aim",
+        "time": 32.633333333332125,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1808.8030793263276,
+            "y": 656,
+            "vx": 2.499999999999993,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1358.6406802012261,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": false,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 1,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2720.0333333332637,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 32.633333333332125,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            }
+          ],
+          "eventSerial": 1
+        }
+      },
+      {
+        "name": "brake-freed",
+        "time": 33.0333333333321,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1199.558519886882,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1808.8134959929944,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "magnetSole": null,
+            "magV": 0,
+            "boots": false,
+            "x": 1358.6406802012261,
+            "y": 656,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "magneticShoes",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false
+          }
+        ],
+        "machine": {
+          "plates": [
+            {
+              "id": 0,
+              "x": 1000,
+              "y": 978,
+              "w": 560,
+              "h": 556,
+              "capRx": 280,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 1,
+              "x": 2100,
+              "y": 724,
+              "w": 440,
+              "h": 48,
+              "capRx": 16,
+              "angle": 1.5707963267948966,
+              "vx": 0,
+              "vy": 0
+            },
+            {
+              "id": 2,
+              "x": 3040,
+              "y": 576,
+              "w": 640,
+              "h": 48,
+              "capRx": 16,
+              "angle": 0,
+              "vx": 0,
+              "vy": 0
+            }
+          ],
+          "roofs": [],
+          "brakeCut": true,
+          "brakePose": 0,
+          "bridgeWanted": false,
+          "winding": 0,
+          "bridgeSpeed": 0,
+          "recovery": true,
+          "recoveryPose": 1,
+          "banked": false,
+          "bankPose": 0,
+          "liftWanted": false,
+          "liftSpeed": 0,
+          "liftBlocked": false,
+          "pushContact": false,
+          "ballastU": 1155.4617583571624,
+          "ballastTravel": 0,
+          "sentry": {
+            "x": 2738.433333333258,
+            "y": 700,
+            "dir": 1,
+            "hp": 2,
+            "clock": 33.0333333333321,
+            "fireAt": 2,
+            "warning": 0,
+            "targetId": null
+          },
+          "events": [
+            {
+              "name": "chain",
+              "x": 1140,
+              "id": 0
+            },
+            {
+              "name": "chain",
+              "x": 1996,
+              "id": 1
+            }
+          ],
+          "eventSerial": 2
+        }
+      }
+    ]
+  },
+  "captures": [
+    {
+      "file": "assets/lode123/live/service-shoes-live.png",
+      "name": "service-shoes",
+      "label": "live",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 100,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": false,
+        "recoveryPose": 0,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2613.100000000002,
+          "y": 700,
+          "dir": -1,
+          "hp": 2,
+          "clock": 0.15,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [],
+        "eventSerial": 0
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 0,
+            "y": 44
+          },
+          "middle": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2613.100000000002,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": 944,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.15
+    },
+    {
+      "file": "assets/lode123/live/service-shoes-2x.png",
+      "name": "service-shoes",
+      "label": "2x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 100,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": false,
+        "recoveryPose": 0,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2611.5666666666693,
+          "y": 700,
+          "dir": -1,
+          "hp": 2,
+          "clock": 0.18333333333333332,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [],
+        "eventSerial": 0
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 0,
+            "y": 44
+          },
+          "middle": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2611.5666666666693,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": 944,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.18333333333333332
+    },
+    {
+      "file": "assets/lode123/live/service-shoes-1x.png",
+      "name": "service-shoes",
+      "label": "1x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 100,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": false,
+        "recoveryPose": 0,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2611.5666666666693,
+          "y": 700,
+          "dir": -1,
+          "hp": 2,
+          "clock": 0.18333333333333332,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [],
+        "eventSerial": 0
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 0,
+            "y": 10
+          },
+          "middle": {
+            "x": 0,
+            "y": -6
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2611.5666666666693,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": 550,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 0.18333333333333332
+    },
+    {
+      "file": "assets/lode123/live/service-shoes-portrait.png",
+      "name": "service-shoes",
+      "label": "portrait",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 100,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": false,
+        "recoveryPose": 0,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2611.5666666666693,
+          "y": 700,
+          "dir": -1,
+          "hp": 2,
+          "clock": 0.18333333333333332,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [],
+        "eventSerial": 0
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 0,
+            "y": 44
+          },
+          "middle": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2611.5666666666693,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": 944,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.18333333333333332
+    },
+    {
+      "file": "assets/lode123/live/service-shoes-landscape.png",
+      "name": "service-shoes",
+      "label": "landscape",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 100,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 1216,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": false,
+        "recoveryPose": 0,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2611.5666666666693,
+          "y": 700,
+          "dir": -1,
+          "hp": 2,
+          "clock": 0.18333333333333332,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [],
+        "eventSerial": 0
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 0,
+            "y": 44
+          },
+          "middle": {
+            "x": 0,
+            "y": 4
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2611.5666666666693,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 0,
+        "y": 944,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.18333333333333332
+    },
+    {
+      "file": "assets/lode123/live/gallery-recovery-live.png",
+      "name": "gallery-recovery",
+      "label": "live",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1278.803079326354,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2573.98333333331,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 29.458333333332302,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 918,
+            "y": 0
+          },
+          "middle": {
+            "x": 648,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2573.98333333331,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1044,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 29.458333333332302
+    },
+    {
+      "file": "assets/lode123/live/gallery-recovery-2x.png",
+      "name": "gallery-recovery",
+      "label": "2x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1278.803079326354,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2575.1333333333096,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 29.4833333333323,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 916,
+            "y": 0
+          },
+          "middle": {
+            "x": 646,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2575.1333333333096,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1042,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 29.4833333333323
+    },
+    {
+      "file": "assets/lode123/live/gallery-recovery-1x.png",
+      "name": "gallery-recovery",
+      "label": "1x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1278.803079326354,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2575.1333333333096,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 29.4833333333323,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 638,
+            "y": -20
+          },
+          "middle": {
+            "x": 450,
+            "y": -14
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2575.1333333333096,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 726,
+        "y": 228,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 29.4833333333323
+    },
+    {
+      "file": "assets/lode123/live/gallery-recovery-portrait.png",
+      "name": "gallery-recovery",
+      "label": "portrait",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1278.803079326354,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2575.1333333333096,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 29.4833333333323,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1100,
+            "y": 0
+          },
+          "middle": {
+            "x": 776,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2575.1333333333096,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1250,
+        "y": 452,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 29.4833333333323
+    },
+    {
+      "file": "assets/lode123/live/gallery-recovery-landscape.png",
+      "name": "gallery-recovery",
+      "label": "landscape",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1278.803079326354,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2575.1333333333096,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 29.4833333333323,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 822,
+            "y": 0
+          },
+          "middle": {
+            "x": 580,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2575.1333333333096,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 934,
+        "y": 452,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 29.4833333333323
+    },
+    {
+      "file": "assets/lode123/live/brake-aim-live.png",
+      "name": "brake-aim",
+      "label": "live",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2725.0166666665955,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 32.74166666666545,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1314,
+            "y": 0
+          },
+          "middle": {
+            "x": 926,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2725.0166666665955,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1494,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.74166666666545
+    },
+    {
+      "file": "assets/lode123/live/brake-aim-2x.png",
+      "name": "brake-aim",
+      "label": "2x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2726.166666666595,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 32.76666666666545,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1312,
+            "y": 0
+          },
+          "middle": {
+            "x": 926,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2726.166666666595,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1492,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.76666666666545
+    },
+    {
+      "file": "assets/lode123/live/brake-aim-1x.png",
+      "name": "brake-aim",
+      "label": "1x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2726.166666666595,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 32.76666666666545,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1034,
+            "y": -20
+          },
+          "middle": {
+            "x": 730,
+            "y": -14
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2726.166666666595,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1176,
+        "y": 228,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 32.76666666666545
+    },
+    {
+      "file": "assets/lode123/live/brake-aim-portrait.png",
+      "name": "brake-aim",
+      "label": "portrait",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2726.166666666595,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 32.76666666666545,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1496,
+            "y": 0
+          },
+          "middle": {
+            "x": 1054,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2726.166666666595,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1700,
+        "y": 452,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.76666666666545
+    },
+    {
+      "file": "assets/lode123/live/brake-aim-landscape.png",
+      "name": "brake-aim",
+      "label": "landscape",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": false,
+        "brakePose": 0,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2726.166666666595,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 32.76666666666545,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          }
+        ],
+        "eventSerial": 1
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1218,
+            "y": 0
+          },
+          "middle": {
+            "x": 858,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2726.166666666595,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1384,
+        "y": 452,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.76666666666545
+    },
+    {
+      "file": "assets/lode123/live/brake-freed-live.png",
+      "name": "brake-freed",
+      "label": "live",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": true,
+        "brakePose": 0.1944444444444445,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2743.799999999923,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 33.14999999999876,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          },
+          {
+            "name": "chain",
+            "x": 1996,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1312,
+            "y": 0
+          },
+          "middle": {
+            "x": 926,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2743.799999999923,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0.1944444444444445,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1492,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 33.14999999999876
+    },
+    {
+      "file": "assets/lode123/live/brake-freed-2x.png",
+      "name": "brake-freed",
+      "label": "2x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": true,
+        "brakePose": 0.2361111111111112,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2744.9499999999225,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 33.17499999999876,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          },
+          {
+            "name": "chain",
+            "x": 1996,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1312,
+            "y": 0
+          },
+          "middle": {
+            "x": 926,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2744.9499999999225,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0.2361111111111112,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1492,
+        "y": 452,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 33.17499999999876
+    },
+    {
+      "file": "assets/lode123/live/brake-freed-1x.png",
+      "name": "brake-freed",
+      "label": "1x",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": true,
+        "brakePose": 0.2361111111111112,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2744.9499999999225,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 33.17499999999876,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          },
+          {
+            "name": "chain",
+            "x": 1996,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1034,
+            "y": -20
+          },
+          "middle": {
+            "x": 730,
+            "y": -14
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2744.9499999999225,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0.2361111111111112,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1176,
+        "y": 228,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 33.17499999999876
+    },
+    {
+      "file": "assets/lode123/live/brake-freed-portrait.png",
+      "name": "brake-freed",
+      "label": "portrait",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": true,
+        "brakePose": 0.2361111111111112,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2744.9499999999225,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 33.17499999999876,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          },
+          {
+            "name": "chain",
+            "x": 1996,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1496,
+            "y": 0
+          },
+          "middle": {
+            "x": 1054,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2744.9499999999225,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0.2361111111111112,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1700,
+        "y": 452,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 33.17499999999876
+    },
+    {
+      "file": "assets/lode123/live/brake-freed-landscape.png",
+      "name": "brake-freed",
+      "label": "landscape",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1199.558519886882,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1808.8134959929944,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "magV": 0,
+          "boots": false,
+          "x": 1358.6406802012261,
+          "y": 656,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "machine": {
+        "plates": [
+          {
+            "id": 0,
+            "x": 1000,
+            "y": 978,
+            "w": 560,
+            "h": 556,
+            "capRx": 280,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "capRx": 16,
+            "angle": 1.5707963267948966,
+            "vx": 0,
+            "vy": 0
+          },
+          {
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "capRx": 16,
+            "angle": 0,
+            "vx": 0,
+            "vy": 0
+          }
+        ],
+        "roofs": [],
+        "brakeCut": true,
+        "brakePose": 0.2361111111111112,
+        "bridgeWanted": false,
+        "winding": 0,
+        "bridgeSpeed": 0,
+        "recovery": true,
+        "recoveryPose": 1,
+        "banked": false,
+        "bankPose": 0,
+        "liftWanted": false,
+        "liftSpeed": 0,
+        "liftBlocked": false,
+        "pushContact": false,
+        "ballastU": 1155.4617583571624,
+        "ballastTravel": 0,
+        "sentry": {
+          "x": 2744.9499999999225,
+          "y": 700,
+          "dir": 1,
+          "hp": 2,
+          "clock": 33.17499999999876,
+          "fireAt": 2,
+          "warning": 0,
+          "targetId": null
+        },
+        "events": [
+          {
+            "name": "chain",
+            "x": 1140,
+            "id": 0
+          },
+          {
+            "name": "chain",
+            "x": 1996,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2
+      },
+      "art": {
+        "ready": true,
+        "release": "lode123",
+        "planes": {
+          "far": {
+            "x": 1218,
+            "y": 0
+          },
+          "middle": {
+            "x": 858,
+            "y": -8
+          }
+        },
+        "contacts": [
+          {
+            "kind": "pier",
+            "x": 1140,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 1710,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2920,
+            "top": 748,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 2390,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 2630,
+            "top": 364,
+            "bottom": 700
+          },
+          {
+            "kind": "pier",
+            "x": 3240,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "pier",
+            "x": 3460,
+            "top": 180,
+            "bottom": 1260
+          },
+          {
+            "kind": "stator",
+            "body": [
+              720,
+              700,
+              560,
+              556
+            ],
+            "foundation": 1260
+          },
+          {
+            "kind": "rail",
+            "id": 1,
+            "x": 2100,
+            "y": 724,
+            "w": 440,
+            "h": 48,
+            "angle": 1.5707963267948966,
+            "nativePixel": 2
+          },
+          {
+            "kind": "rail",
+            "id": 2,
+            "x": 3040,
+            "y": 576,
+            "w": 640,
+            "h": 48,
+            "angle": 0,
+            "nativePixel": 2
+          },
+          {
+            "kind": "ballast",
+            "wheelTop": 598,
+            "contactPlane": 600,
+            "bottom": 692,
+            "banked": false,
+            "worldX": 2860,
+            "worldY": 600
+          },
+          {
+            "kind": "call",
+            "x": 2660,
+            "y": 656,
+            "active": true,
+            "materialBase": 700
+          },
+          {
+            "kind": "cabin",
+            "x": 2760,
+            "y": 600,
+            "active": false,
+            "materialBase": 644
+          },
+          {
+            "kind": "sentry",
+            "x": 2744.9499999999225,
+            "sole": 700,
+            "hp": 2
+          }
+        ],
+        "brakePose": 0.2361111111111112,
+        "bridgeAngle": 1.5707963267948966,
+        "liftY": 576,
+        "bankPose": 0
+      },
+      "camera": {
+        "x": 1384,
+        "y": 452,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 33.17499999999876
+    }
+  ],
+  "errors": []
+}

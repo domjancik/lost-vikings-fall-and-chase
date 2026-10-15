@@ -1,0 +1,145 @@
+{
+  "release": "lode123",
+  "implementationCommit": "b30d0a1",
+  "level": "Machine Rooms / 10 / The Lode Engine",
+  "tests": {
+    "unit": 582,
+    "failed": 0,
+    "browser": {
+      "sourceAndBuild": true,
+      "previews": 29,
+      "errors": []
+    },
+    "routes": {
+      "normalRates": [
+        60,
+        120
+      ],
+      "recallRates": [
+        60,
+        120
+      ],
+      "browser": {
+        "won": true,
+        "hp": [
+          3,
+          3,
+          3
+        ],
+        "time": 105.55000000003007,
+        "captures": 50,
+        "errors": []
+      },
+      "sustainedPush": [
+        {
+          "layout": "live",
+          "pushContact": true,
+          "travel": 132.5
+        },
+        {
+          "layout": "2x",
+          "pushContact": true,
+          "travel": 136.25
+        },
+        {
+          "layout": "1x",
+          "pushContact": true,
+          "travel": 136.25
+        },
+        {
+          "layout": "portrait",
+          "pushContact": true,
+          "travel": 136.25
+        },
+        {
+          "layout": "landscape",
+          "pushContact": true,
+          "travel": 136.25
+        }
+      ]
+    }
+  },
+  "gates": {
+    "reviewVersion": 2,
+    "review": "docs/history/LODE123-REVIEW.md",
+    "sourceGate": {
+      "verdict": "accepted",
+      "reason": "Accepted raw stator/far-v1,middle-v2,kit-v2 and actual processed native art; original crop metadata corrected, complete kit components translated without resizing, modeled richness retained. Actual stator footing seats rim1260; honest cart tread/body anchors."
+    },
+    "runtimeGate": {
+      "verdict": "accepted",
+      "reason": "Inspected actual1x/2x/portrait/landscape production states and focused sustained pushContact proof: seated tread598/contact600, massbottom692, connected crossbar, real Olaf contact, wheel/axle separation, fixed counterweight transfer and free-cap exit. Final normal browser recall route105.55s wins HP3/3/3/errors[] with50 captures; touch passes. All13 Lode tests independently pass. Final translation-only brake correction independently inspected: exposed cord and cut gap match actual ray1996,676; grounded bracket/pier and hinge cable connected. Focused brake route20captures allHP3/errors[] accepted."
+    },
+    "aestheticGate": {
+      "verdict": "accepted",
+      "reason": "Independent raw/native and actual1x/2x/mobile scenes retain rich dimensional stator, hardware, human-scale grounded galleries, deep city reveal and quiet rear animated weights; all3 latest90 characters harmonize."
+    },
+    "cooperationGate": {
+      "verdict": "accepted",
+      "reason": "Final ordinary-input browser route105.55s HP3/3/3/errors[] includes deliberate missed passenger, ground recall, reboarding, onboard re-raise and reunion; independent13 tests cover60/120 healthy completion, true contact push, opposite2:1 counterweight, continuous bridge, terrain blocking and right-side fall/ladder return."
+    },
+    "captureSkin": "imagegen90",
+    "publicationAllowed": true,
+    "releaseConditions": [
+      "Final package/build/release checks"
+    ],
+    "evidence": [
+      "assets/lode123/route/evidence.json",
+      "assets/lode123/contact/evidence.json",
+      "assets/lode123/route/touch.json",
+      "assets/lode123/registration.json",
+      "assets/lode123/brake/evidence.json"
+    ],
+    "resolvedSkinSheets": [
+      "assets/vikings90/erik-native.png",
+      "assets/vikings90/baleog-native.png",
+      "assets/olaf111/olaf-native.png"
+    ]
+  },
+  "buildFiles": 447,
+  "publishFiles": 448,
+  "publication": {
+    "site": "https://united-marsh-6ppd.here.now/?campaign=cycle&release=lode123&skin=imagegen90",
+    "version": "01M504GTDX2G20Q022M2CHG8AD",
+    "liveHashes": {
+      "commit": "b30d0a1",
+      "checked": [
+        "game.js",
+        "engine.js",
+        "campaign-picker95.js",
+        "cycle-render.js",
+        "campaign-menu95.js",
+        "cycle-campaign.js",
+        "orbit-render.js",
+        "world-render.js",
+        "level-preview95.js",
+        "orbit-field-optics.js",
+        "interactions.js",
+        "scene-render95.js",
+        "lode-audio.js",
+        "lode-campaign.js",
+        "lode-render.js",
+        "assets/lode123/kit-native.png",
+        "assets/lode123/stator-native.png",
+        "assets/lode123/far-native.png",
+        "assets/lode123/visual-gates.json",
+        "assets/lode123/registration.json",
+        "assets/vikings90/erik-native.png",
+        "assets/vikings90/baleog-native.png",
+        "assets/olaf111/olaf-native.png",
+        "assets/lode123/middle-native.png",
+        "release-manifest.json"
+      ],
+      "html": "Matches after removing hosting social metadata"
+    },
+    "touch": [],
+    "ordinaryInputBrakeRoute": {
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "errors": []
+    }
+  }
+}

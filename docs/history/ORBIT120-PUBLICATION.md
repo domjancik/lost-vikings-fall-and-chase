@@ -20,7 +20,7 @@ Hosting version01M4ZGAP3W6RM620YGZNWCTCTC; implementation18f8e56.
   attachment ends withzero attractionpaths, HP3/errors[]. Four viewport/zoom
   captures in assets/orbit120/live-smoke/evidence.json.
 -Live actual touch equipment pickup/use, movement, hero switching and Olaf
-  shield test passed/errors[]. assets/orbit120/live-touch/route.json.
+  shield test passed/errors[]. assets/orbit120/live-touch/touch.json.
 
 No source/runtime changes after the reviewed implementation. Additional live
 smoke harness and publication evidence are retained with this receipt. Unrelated

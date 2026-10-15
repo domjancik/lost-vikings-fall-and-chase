@@ -1,0 +1,28 @@
+{
+  "commit": "18f8e56",
+  "checked": [
+    "game.js",
+    "engine.js",
+    "cycle-campaign.js",
+    "campaign-menu95.js",
+    "campaign-picker95.js",
+    "cycle-render.js",
+    "world-render.js",
+    "level-preview95.js",
+    "scene-render95.js",
+    "interactions.js",
+    "orbit-campaign.js",
+    "sound-effects.js",
+    "orbit-art-layout.js",
+    "orbit-view.js",
+    "orbit-render.js",
+    "orbit-field-optics.js",
+    "orbit-magnetic.js",
+    "orbit-audio.js",
+    "assets/orbit120/visual-gates.json",
+    "release-manifest.json",
+    "assets/orbit120/plate-native.png",
+    "assets/orbit120/plate-registration.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

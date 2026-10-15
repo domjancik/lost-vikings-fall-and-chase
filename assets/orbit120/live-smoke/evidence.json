@@ -1,0 +1,830 @@
+{
+  "records": {
+    "pull": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 0.7500000000000001,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": true,
+            "pull": 0.2083333333333334,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 641.7028356481482
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1794.9960527205133,
+          "y": 603.6056805329241,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 48,
+        "copiedPixels": 608,
+        "paths": [
+          {
+            "heroId": 0,
+            "side": -1,
+            "from": {
+              "x": 1773.4148001801357,
+              "y": 635.5680868079381
+            },
+            "to": {
+              "x": 1789,
+              "y": 576
+            },
+            "distance": 61.573171263003424
+          },
+          {
+            "heroId": 0,
+            "side": 1,
+            "from": {
+              "x": 1786.5851998198643,
+              "y": 647.8375844883582
+            },
+            "to": {
+              "x": 1771,
+              "y": 576
+            },
+            "distance": 73.50875457077952
+          }
+        ]
+      },
+      "camera": {
+        "x": 1360,
+        "y": 406,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "failed": false
+    },
+    "landscape": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 0.7500000000000001,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": true,
+            "pull": 0.2083333333333334,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 641.7028356481482
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1794.9960527205133,
+          "y": 603.6056805329241,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 48,
+        "copiedPixels": 608,
+        "paths": [
+          {
+            "heroId": 0,
+            "side": -1,
+            "from": {
+              "x": 1773.4148001801357,
+              "y": 635.5680868079381
+            },
+            "to": {
+              "x": 1789,
+              "y": 576
+            },
+            "distance": 61.573171263003424
+          },
+          {
+            "heroId": 0,
+            "side": 1,
+            "from": {
+              "x": 1786.5851998198643,
+              "y": 647.8375844883582
+            },
+            "to": {
+              "x": 1771,
+              "y": 576
+            },
+            "distance": 73.50875457077952
+          }
+        ]
+      },
+      "camera": {
+        "x": 1368,
+        "y": 400,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "failed": false
+    },
+    "1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 0.7500000000000001,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": true,
+            "pull": 0.2083333333333334,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 641.7028356481482
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1794.9960527205133,
+          "y": 603.6056805329241,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 48,
+        "copiedPixels": 608,
+        "paths": [
+          {
+            "heroId": 0,
+            "side": -1,
+            "from": {
+              "x": 1773.4148001801357,
+              "y": 635.5680868079381
+            },
+            "to": {
+              "x": 1789,
+              "y": 576
+            },
+            "distance": 61.573171263003424
+          },
+          {
+            "heroId": 0,
+            "side": 1,
+            "from": {
+              "x": 1786.5851998198643,
+              "y": 647.8375844883582
+            },
+            "to": {
+              "x": 1771,
+              "y": 576
+            },
+            "distance": 73.50875457077952
+          }
+        ]
+      },
+      "camera": {
+        "x": 1162,
+        "y": 176,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "failed": false
+    },
+    "2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 0.7500000000000001,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": true,
+            "pull": 0.2083333333333334,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 641.7028356481482
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1794.9960527205133,
+          "y": 603.6056805329241,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 48,
+        "copiedPixels": 608,
+        "paths": [
+          {
+            "heroId": 0,
+            "side": -1,
+            "from": {
+              "x": 1773.4148001801357,
+              "y": 635.5680868079381
+            },
+            "to": {
+              "x": 1789,
+              "y": 576
+            },
+            "distance": 61.573171263003424
+          },
+          {
+            "heroId": 0,
+            "side": 1,
+            "from": {
+              "x": 1786.5851998198643,
+              "y": 647.8375844883582
+            },
+            "to": {
+              "x": 1771,
+              "y": 576
+            },
+            "distance": 73.50875457077952
+          }
+        ]
+      },
+      "camera": {
+        "x": 1478,
+        "y": 400,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "failed": false
+    },
+    "portrait": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 0.7500000000000001,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": true,
+            "pull": 0.2083333333333334,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 641.7028356481482
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1794.9960527205133,
+          "y": 603.6056805329241,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 48,
+        "copiedPixels": 608,
+        "paths": [
+          {
+            "heroId": 0,
+            "side": -1,
+            "from": {
+              "x": 1773.4148001801357,
+              "y": 635.5680868079381
+            },
+            "to": {
+              "x": 1789,
+              "y": 576
+            },
+            "distance": 61.573171263003424
+          },
+          {
+            "heroId": 0,
+            "side": 1,
+            "from": {
+              "x": 1786.5851998198643,
+              "y": 647.8375844883582
+            },
+            "to": {
+              "x": 1771,
+              "y": 576
+            },
+            "distance": 73.50875457077952
+          }
+        ]
+      },
+      "camera": {
+        "x": 1670,
+        "y": 400,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "failed": false
+    },
+    "attached": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "current",
+          "rotation": 3.141592653589793,
+          "magnet": {
+            "plateId": 2,
+            "u": 641.4617583571624,
+            "attaching": false,
+            "pull": 1,
+            "startX": 1780,
+            "startY": 650
+          },
+          "magnetSole": {
+            "x": 1780,
+            "y": 576
+          },
+          "magV": 0,
+          "boots": true,
+          "x": 1780,
+          "y": 576,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            "magneticShoes",
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": "orbit-2",
+          "climbing": false
+        },
+        {
+          "id": 1,
+          "skin": "current",
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 155,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "magnetSole": null,
+          "boots": false,
+          "x": 210,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false
+        }
+      ],
+      "attraction": {
+        "strips": 0,
+        "copiedPixels": 0,
+        "paths": []
+      },
+      "camera": {
+        "x": 1674,
+        "y": 378,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "failed": false
+    }
+  },
+  "errors": []
+}

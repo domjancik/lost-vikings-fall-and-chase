@@ -1,0 +1,28 @@
+{
+  "review": "docs/history/ORBIT117-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "scope": "Unchanged approved113/116 rasters; native-grid programmatic feedback only",
+    "reason": "No sprite density, source art or physical dimensions changed. New sole stamps are2-world-unit native pixels, using local tangent/sole registration."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independently reviewed actual1x/2x/coarse-mobile rounded/vertical/underside boot contacts and body-relative health. Clean normal-input corner feedback receipt is allHP3/errors empty. Unobstructed keyboard ladder-to-roof pull shows native distortion/flecks, actual two finite sole-to-rail paths,60 strips/752 copied pixels, then zero paths on contact. All5 focused regressions pass.",
+    "evidence": [
+      "assets/orbit117/corners/route.json",
+      "assets/orbit117/mobile/captures",
+      "assets/orbit117/attraction/evidence.json",
+      "assets/orbit117/attraction/pull-1x.png",
+      "assets/orbit117/attraction/pull-2x.png",
+      "assets/orbit117/attraction/pull-portrait.png"
+    ]
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "No physics, level route or puzzle state changes;116 normal-control cooperation approval remains applicable."
+  },
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ]
+}

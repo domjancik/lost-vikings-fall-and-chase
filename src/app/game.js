@@ -1,11 +1,12 @@
+import {drawMagneticAttraction} from '../levels/orbit/field-optics.js?v=orbit117';
 import {drawWorldResources,worldResources} from "./world-resources.js?v=orbit116";
-import {drawHeroFeedback} from "./hero-feedback.js?v=orbit116";
+import {drawHeroFeedback} from "./hero-feedback.js?v=orbit117";
 import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit116";
 import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=orbit116";
 import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit116";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=orbit116';
-import {drawScene} from '../render/scene-render95.js?v=orbit116';
+import {campaignMenu} from './campaign-menu.js?v=orbit117';
+import {drawScene} from '../render/scene-render95.js?v=orbit117';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=water114';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
@@ -71,6 +72,7 @@ function draw(){
  canvas.dataset.plunger=campaign==='arcade'&&s.round===2?JSON.stringify(plungerPose(s)):'';canvas.dataset.forgeMaterial=campaign==='arcade'&&s.round===5?JSON.stringify(forgeMaterialPose(s)):'';canvas.dataset.environment=JSON.stringify(environmentPose(s));canvas.dataset.animations=JSON.stringify(s.heroes.map(h=>({id:h.id,...animationFor(h)})));canvas.dataset.impact=JSON.stringify(s.impact||null);canvas.dataset.shots=JSON.stringify(s.shots.map(p=>({...projectilePose(p,renderAlpha),kind:p.kind,enemy:!!p.enemy})));for(const p of s.shots)if(s.level.mechanic!=='momentum'||p.kind!=='fire')drawProjectile(ctx,p,renderAlpha,s.time);
  const shadows=s.heroes.map(h=>groundShadow(s,{x:(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,y:(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha},platforms));canvas.dataset.shadows=JSON.stringify(shadows);
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
+ const attraction=drawMagneticAttraction(ctx,s);if(attraction)canvas.dataset.magneticAttraction=JSON.stringify(attraction);else delete canvas.dataset.magneticAttraction;
  for(const h of heroDrawOrder(s.heroes)){if(s.won&&completion&&!completion.done)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();}
  drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);const wardenOptics=drawWardenOverlay(ctx,s);if(wardenOptics)canvas.dataset.wardenOptics=JSON.stringify(wardenOptics);else delete canvas.dataset.wardenOptics;
  const magneticOptics=scene.cycleArt?.magneticOptics;if(magneticOptics)canvas.dataset.magneticOptics=JSON.stringify(magneticOptics);else delete canvas.dataset.magneticOptics;

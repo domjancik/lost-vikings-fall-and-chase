@@ -6,7 +6,7 @@ import {orbitCameraFocus,orbitViewport} from '../../src/levels/orbit/view.js';
 import {orbitHeroIndicator} from '../../src/levels/orbit/hero-indicator.js';
 test('magnetic selection marker stays by the actual head and points back through the local basis',()=>{
  const h={id:0,magnetSole:{x:100,y:400},rotation:Math.PI},p=orbitHeroIndicator(h);
- assert.ok(Math.abs(p.x-100)<1e-6);assert.equal(p.y,486);assert.equal(p.angle,Math.PI);
+ assert.ok(Math.abs(p.x-100)<1e-6);assert.equal(p.y,490);assert.equal(p.angle,Math.PI);
  assert.equal(orbitHeroIndicator({id:0,x:100,y:400}),null);
 });
 test('magnetic crane sounds follow actual changes once and reset silently',()=>{

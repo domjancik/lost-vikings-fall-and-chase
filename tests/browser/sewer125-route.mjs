@@ -18,7 +18,7 @@ await page.exposeBinding('sewerPhoto',async(_,name)=>{
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
  for(const [size,zoom,label]of [[{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},2,'portrait'],[{width:844,height:390},2,'landscape']]){
-  await page.setViewportSize(size);if((await read()).camera.zoom!==zoom)await page.locator('#zoom').click();await page.waitForTimeout(350);await photo(name,label);
+  await page.setViewportSize(size);for(let attempt=0;attempt<3&&(await read()).camera.zoom!==zoom;attempt++){await page.locator('#zoom').click();await page.waitForTimeout(50);}await page.waitForTimeout(350);await photo(name,label);
  }
  await page.setViewportSize(touch?{width:844,height:390}:{width:1440,height:900});await page.locator('#pause').click();
 });

@@ -13,8 +13,8 @@ import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit120";
 import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=sewer125";
 import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit121";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=transitions126';
-import {drawScene} from '../render/scene-render95.js?v=transitions126';
+import {campaignMenu} from './campaign-menu.js?v=zoom127';
+import {drawScene} from '../render/scene-render95.js?v=zoom127';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=orbit121';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
@@ -44,7 +44,7 @@ import {cameraTarget,cameraLookDirection} from '../render/view-camera.js?v=look5
 import {drawLabels} from '../render/text-render.js?v=orbit113';
 import {WORLD_PIXEL,rasterSize,snapPixel} from '../render/pixel-grid.js?v=arc46';
 import {drawProjectile,projectilePose,environmentPose} from '../render/environment-animation.js?v=arc46';
-import {viewportSize} from '../render/background-render.js?v=menu95';
+import {viewportSize,storedZoom,nextZoom} from '../render/background-render.js?v=zoom127';
 import {createControls,keyAction,selectHudHero} from './controls.js?v=hud118';
 import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit121';
@@ -55,7 +55,7 @@ import {createState,step,platforms,W,H} from '../core/engine.js?v=sewer125';
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
 let campaign=['story','cycle'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'arcade',levels=campaignLevels(campaign);let round=0;try{round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(campaign)))||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),travelKeys=createTravelKeys(),continueKeys=travelKeys.blocked;
-let zoom=2;try{zoom=localStorage.getItem('last-call-zoom')==='1'?1:2;}catch{}let accumulator=0,renderAlpha=1,cameraX=0,cameraY=0,cameraTime=0;const SIM_STEP=1/120;
+let zoom=2;try{zoom=storedZoom(localStorage.getItem('last-call-zoom'));}catch{}let accumulator=0,renderAlpha=1,cameraX=0,cameraY=0,cameraTime=0;const SIM_STEP=1/120;
 const transit=document.createElement('canvas');transit.id='portal-transit';transit.setAttribute('aria-hidden','true');transit.hidden=true;document.querySelector('.viewport').append(transit);let completion=null,arrival=null;document.addEventListener('close',()=>{if(arrival)travelKeys.beginEntry();},true);
 const colors=['#db6b3d','#69b5b2','#dfb952'];const labels=document.createElement('canvas');labels.id='game-labels';labels.setAttribute('aria-hidden','true');canvas.after(labels);let labelQueue=[];
 function box(c,x,y,w,h){ctx.fillStyle=c;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));}
@@ -120,7 +120,7 @@ function debugLoad(n){carry=null;round=Math.max(0,Math.min(levels.length-1,n));s
 document.querySelector('#debug').onclick=openDebug;document.querySelector('#close-debug').onclick=()=>debugDialog.close();debugDialog.addEventListener('close',()=>{paused=chapterDialog.open;canvas.focus({preventScroll:true});});
 document.querySelector('#debug-go').onclick=()=>debugLoad(Number(debugSelect.value));document.querySelector('#debug-prev').onclick=()=>debugLoad(campaignPrevious(campaign,round,levels.length)??round);document.querySelector('#debug-next').onclick=()=>debugLoad(campaignNext(campaign,round,levels.length,false)??round);
 
-function toggleZoom(){zoom=zoom===1?2:1;const view=viewportSize(canvas.clientWidth,canvas.clientHeight,zoom),target=cameraTarget(orbitCameraFocus(s,clockworkView(s,view).focus),view,s.level);cameraX=target.x;cameraY=target.y;cameraTime=performance.now();document.querySelector('#zoom').textContent=zoom+'×';document.querySelector('#zoom').setAttribute('aria-pressed',String(zoom===2));try{localStorage.setItem('last-call-zoom',String(zoom));}catch{}}document.querySelector('#zoom').textContent=zoom+'×';document.querySelector('#zoom').setAttribute('aria-pressed',String(zoom===2));document.querySelector('#zoom').onclick=toggleZoom;
+function toggleZoom(){zoom=nextZoom(zoom);const view=viewportSize(canvas.clientWidth,canvas.clientHeight,zoom),target=cameraTarget(orbitCameraFocus(s,clockworkView(s,view).focus),view,s.level);cameraX=target.x;cameraY=target.y;cameraTime=performance.now();document.querySelector('#zoom').textContent=zoom+'×';document.querySelector('#zoom').setAttribute('aria-label',`Zoom ${zoom}×; press for ${nextZoom(zoom)}×`);try{localStorage.setItem('last-call-zoom',String(zoom));}catch{}}document.querySelector('#zoom').textContent=zoom+'×';document.querySelector('#zoom').setAttribute('aria-label',`Zoom ${zoom}×; press for ${nextZoom(zoom)}×`);document.querySelector('#zoom').onclick=toggleZoom;
 document.querySelector('#fullscreen').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen?.();else document.documentElement.requestFullscreen?.().catch(()=>toast('Fullscreen is managed by your browser. The game still fills the window.'));};
 document.querySelector('#pause').onclick=()=>{if(started)paused=!paused;};
 document.querySelector('#sound').onclick=()=>{sound=!sound;audio.setEnabled(sound);updateSoundButton();try{localStorage.setItem('last-call-sound',sound?'on':'off');}catch{}if(sound)audio.unlock().then(()=>audio.play('click'));};

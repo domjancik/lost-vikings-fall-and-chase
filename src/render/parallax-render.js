@@ -1,7 +1,7 @@
-import {drawBackground} from './background-render.js?v=arc46';
+import {drawBackground} from './background-render.js?v=zoom127';
 import {depthScenes,depthLayout} from './background-depth.js?v=vertical65';
 import {snapPixel} from './pixel-grid.js?v=arc46';
-import {drawBackgroundEffects} from './background-effects.js?v=arc46';
+import {drawBackgroundEffects} from './background-effects.js?v=zoom127';
 const images=new Map();let fxAtlas;function effectAtlas(){if(!fxAtlas){fxAtlas=new Image();fxAtlas.src='assets/pixel/background-fx.png?v=pipeline44';}return fxAtlas;}
 function sceneImages(round){if(!images.has(round)){const scene=depthScenes[round],far=new Image(),near=new Image();far.src=scene.farSource+'?v=pipeline44';near.src=scene.nearSource+'?v=pipeline44';images.set(round,{far,near});}return images.get(round);}
 const ready=image=>!!image&&(image.naturalWidth===undefined?image.width>0:image.complete&&image.naturalWidth>0);

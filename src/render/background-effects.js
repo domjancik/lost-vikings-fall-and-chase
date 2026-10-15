@@ -1,4 +1,4 @@
-import {coverRect} from './background-render.js?v=arc46';
+import {coverRect} from './background-render.js?v=zoom127';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 const effect=(kind,x,y,width,height,phase=0,layer='near')=>({kind,x,y,width,height,phase,layer});
 const fire=(x,y,width=8,height=12,phase=0)=>effect('fire',x,y,width,height,phase);

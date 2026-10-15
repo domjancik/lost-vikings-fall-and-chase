@@ -1,3 +1,4 @@
+import {drawShoeRack,shoeRackReady} from '../orbit/shoe-rack-render.js?v=shoes124';
 import {drawTerrain} from '../../render/terrain-render.js';
 import {drawConnection,drawConnectionTile} from '../../render/connection-render.js';
 import {createAtlas} from '../../render/sprite-atlas.js';
@@ -61,5 +62,6 @@ export function drawLodeWorld(c,s,camera,view){const g=s.machine,contacts=[];c.i
  if(e.warning>0&&e.hp){c.fillStyle='#d28e66';for(let n=0;n<3;n++)c.fillRect(q(e.x-12+n*10),594,6,q(e.warning*10+2));}
  for(const shot of s.shots){c.save();c.translate(q(shot.x),q(shot.y));c.rotate(Math.atan2(shot.vy||0,shot.vx));c.fillStyle=shot.kind==='arrow'?'#e0c595':'#a3e9e2';c.fillRect(-18,-2,22,4);c.fillRect(0,-4,6,8);c.restore();}
  gate.draw(c,0,2416,188,128,128);drawCycleGateField(c,{active:!!s.power,frame:Math.floor(s.time*12),glow:.72+.18*Math.sin(s.time*4),aperture:{x:2480,y:264,w:40,h:80}});
- return{ready:[far,middle,stator,kit,hardware,plate,gate.image].every(ready),release:'lode123',planes,contacts,brakePose:g.brakePose,bridgeAngle:p.angle,liftY:g.plates[2].y,bankPose:g.bankPose};
+ contacts.push(drawShoeRack(c,s));
+ return{ready:[far,middle,stator,kit,hardware,plate,gate.image].every(ready)&&shoeRackReady(),release:'lode123',planes,contacts,brakePose:g.brakePose,bridgeAngle:p.angle,liftY:g.plates[2].y,bankPose:g.bankPose};
 }

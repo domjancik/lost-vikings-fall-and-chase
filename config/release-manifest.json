@@ -563,6 +563,14 @@
     {
       "source": "src/levels/lode/audio.js",
       "output": "lode-audio.js"
+    },
+    {
+      "source": "src/levels/orbit/shoe-rack-layout.js",
+      "output": "shoe-rack-layout.js"
+    },
+    {
+      "source": "src/levels/orbit/shoe-rack-render.js",
+      "output": "shoe-rack-render.js"
     }
   ],
   "files": [
@@ -892,6 +900,11 @@
     "assets/lode123/far-native.png",
     "assets/lode123/middle-native.png",
     "assets/lode123/registration.json",
-    "assets/lode123/visual-gates.json"
+    "assets/lode123/visual-gates.json",
+    "assets/shoes124/rack-native.png",
+    "assets/shoes124/boots-native.png",
+    "assets/shoes124/icon-native.png",
+    "assets/shoes124/registration.json",
+    "assets/shoes124/visual-gates.json"
   ]
 }

@@ -1,0 +1,70 @@
+{
+  "source": "source-v3.png",
+  "method": "Each independent subject uniformly normalized once from retained raw original; alpha>=240 material, hiddenRGBzero. No grid detection, no palette flattening.",
+  "rack": {
+    "sourceBox": [
+      0,
+      0,
+      1225,
+      971
+    ],
+    "native": [
+      128,
+      96
+    ],
+    "scale": 0.09882643607164916,
+    "materialBox": [
+      3,
+      7,
+      120,
+      89
+    ],
+    "sole": 89,
+    "shelfTop": 49
+  },
+  "boots": {
+    "sourceBox": [
+      1236,
+      163,
+      1568,
+      416
+    ],
+    "native": [
+      32,
+      32
+    ],
+    "material": [
+      27,
+      21
+    ],
+    "paste": [
+      2,
+      6
+    ],
+    "sole": 27,
+    "worldMaterial": [
+      54,
+      42
+    ]
+  },
+  "icon": {
+    "sourceBox": [
+      1236,
+      163,
+      1568,
+      416
+    ],
+    "native": [
+      16,
+      16
+    ],
+    "material": [
+      12,
+      9
+    ],
+    "paste": [
+      2,
+      4
+    ]
+  }
+}

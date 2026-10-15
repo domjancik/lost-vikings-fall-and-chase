@@ -1,3 +1,4 @@
+import {drawShoeRack,shoeRackReady} from './shoe-rack-render.js?v=shoes124';
 import {drawMagneticRefraction} from './field-optics.js?v=lode123';
 import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
@@ -141,6 +142,6 @@ export function drawOrbitWorld(c,s,camera,view){const g=s.machine,contacts=[],pl
  if(ready(ladder))for(const l of s.level.ladders)for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,q(l.x-24),q(y),48,h);}
  c.save();c.beginPath();c.rect(3276,194,128,106);c.clip();iron.draw(c,13,3276,194-g.exitPose*104,128,128);c.restore();iron.draw(c,12,3276,194,128,128);contacts.push({kind:'exit-door',frameBottom:300,leafBottom:300-g.exitPose*104,travel:g.exitPose*104});
  const rect={x:3376,y:170,w:128,h:128},p=portal.placement(0,rect,s.level.floors);if(p){drawCycleGateField(c,{...p,active:s.power,glow:.7,frame:Math.floor(s.time*12),aperture:{x:p.x+64,y:p.y+74,w:40,h:80}});portal.drawGrounded(c,0,rect,s.level.floors);contacts.push({kind:'portal',bottom:p.visibleBottom,surface:p.surface.y});}
- for(const item of s.items)if(item.type==='magneticShoes')part(c,5,item.x-64,item.y+44-90);
- return{ready:[far,middle,plate,parts,gear,hardware,ladder,cart,wall,iron.image,portal.image].every(ready)&&connectionsReady(),mechanic:'orbit',contacts,fields,rooms,gears,distantScrap,farSilhouettes,magneticOptics,sequence:g.sequence,sequenceRemaining:Math.max(0,g.sequenceUntil-s.time),parallax:planes,cable:cable.anchors,native:{far:[768,512],middle:[768,512],plate:[192,96],parts:[256,128],hardware:[256,128],gear:[256,256]},releasePose:g.releasePose,brakePose:g.brakePose,operator:g.operator,hookDocked:g.hookDocked,ropeCut:g.ropeCut,exitPose:g.exitPose};
+ contacts.push(drawShoeRack(c,s));
+ return{ready:[far,middle,plate,parts,gear,hardware,ladder,cart,wall,iron.image,portal.image].every(ready)&&connectionsReady()&&shoeRackReady(),mechanic:'orbit',contacts,fields,rooms,gears,distantScrap,farSilhouettes,magneticOptics,sequence:g.sequence,sequenceRemaining:Math.max(0,g.sequenceUntil-s.time),parallax:planes,cable:cable.anchors,native:{far:[768,512],middle:[768,512],plate:[192,96],parts:[256,128],hardware:[256,128],gear:[256,256]},releasePose:g.releasePose,brakePose:g.brakePose,operator:g.operator,hookDocked:g.hookDocked,ropeCut:g.ropeCut,exitPose:g.exitPose};
 }

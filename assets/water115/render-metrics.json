@@ -1,0 +1,110 @@
+[
+  {
+    "skin": "imagegen90",
+    "pose": "idle",
+    "frame": 0,
+    "opaqueArea": 510
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 0,
+    "opaqueArea": 462
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 1,
+    "opaqueArea": 502
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 2,
+    "opaqueArea": 568
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 3,
+    "opaqueArea": 490
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 4,
+    "opaqueArea": 488
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 5,
+    "opaqueArea": 475
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 6,
+    "opaqueArea": 526
+  },
+  {
+    "skin": "imagegen90",
+    "pose": "swim",
+    "frame": 7,
+    "opaqueArea": 441
+  },
+  {
+    "skin": "procedural",
+    "pose": "idle",
+    "frame": 0,
+    "opaqueArea": 407
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 0,
+    "opaqueArea": 433
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 1,
+    "opaqueArea": 424
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 2,
+    "opaqueArea": 429
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 3,
+    "opaqueArea": 391
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 4,
+    "opaqueArea": 413
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 5,
+    "opaqueArea": 377
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 6,
+    "opaqueArea": 400
+  },
+  {
+    "skin": "procedural",
+    "pose": "swim",
+    "frame": 7,
+    "opaqueArea": 351
+  }
+]

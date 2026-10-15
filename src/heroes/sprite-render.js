@@ -1,5 +1,5 @@
-import {drawHeroArt} from './hero-art.js?v=water114';
-export {heroesReady,whenHeroesReady} from './hero-art.js?v=water114';
+import {drawHeroArt} from './hero-art.js?v=orbit116';
+export {heroesReady,whenHeroesReady} from './hero-art.js?v=orbit116';
 
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 export function animationFor(h){
@@ -15,7 +15,7 @@ export function animationFor(h){
   if(!h.shieldUp&&(!h.skin||['current','native85','imagegen88','imagegen90'].includes(h.skin)))frame=6-frame;
  }
  else if(h.climbing){pose='climb';frame=((Math.floor(h.climbPhase||0)%4)+4)%4;}
- else if(h.id===0&&h.swimming){pose=['procedural','imagegen90'].includes(h.skin)?'swim':'fall';frame=pose==='swim'?Math.floor((h.animTime||0)*6)%8:0;}
+ else if(h.id===0&&h.swimming){pose=['procedural','imagegen90'].includes(h.skin)?'swim':'fall';frame=pose==='swim'?Math.floor((h.swimDistance||0)/28)%8:0;}
  else if(!h.ground){pose=h.id===2&&h.shieldUp?'float':h.vy<0?'rise':'fall';frame=pose==='float'?h.vy<-40?0:h.turn||Math.abs(h.vx||0)<35?3:1+Math.floor((h.animTime||0)*4)%2:Math.abs(h.vy)>280?1:0;}
  else if(h.land>0){pose='land';frame=clamp(Math.floor((.12-h.land)/.12*3),0,2);}
  else if(Math.abs(h.magnet?h.magV||0:h.vx||0)>7){

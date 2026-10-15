@@ -1,5 +1,5 @@
-import {drawHeroArt} from './hero-art.js?v=water114';
-import {animationFor} from './sprite-render.js?v=water114';
+import {drawHeroArt} from './hero-art.js?v=orbit116';
+import {animationFor} from './sprite-render.js?v=orbit116';
 import {snapPixel} from '../render/pixel-grid.js?v=orbit113';
 
 const sources=new Map(),rotations=new Map(),SIZE=96,CENTER=48;

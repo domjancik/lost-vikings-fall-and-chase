@@ -4,7 +4,9 @@ const cache=new Map();
 export function proceduralSwimFrame(frame){
  frame=((frame%8)+8)%8;if(cache.has(frame))return cache.get(frame);
  const c=document.createElement('canvas');c.width=c.height=80;const g=c.getContext('2d'),m=swimMotion(frame);
- const rect=(color,x,y,w,h)=>{g.fillStyle=color;g.fillRect(Math.round(x),Math.round(y),w,h);};
+ // The original procedural skin is smaller than the generated skin. Author
+ // its swim clusters at that same size, still on the native integer grid.
+ const rect=(color,x,y,w,h)=>{g.fillStyle=color;g.fillRect(Math.round(40+(x-40)*.75),Math.round(58+(y-58)*.75),Math.max(1,Math.round(w*.75)),Math.max(1,Math.round(h*.75)));};
  const line=(points,color,width=3)=>{for(let j=1;j<points.length;j++){const a=points[j-1],b=points[j],steps=Math.max(Math.abs(b[0]-a[0]),Math.abs(b[1]-a[1]));for(let i=0;i<=steps;i++){const t=steps?i/steps:0;rect('#192532',a[0]+(b[0]-a[0])*t-width/2,a[1]+(b[1]-a[1])*t-width/2,width+2,width+2);rect(color,a[0]+(b[0]-a[0])*t-width/2+1,a[1]+(b[1]-a[1])*t-width/2+1,width,width);}}};
  const arm=(a,near)=>{line([a.shoulder,a.elbow,a.hand],near?'#d55c31':'#803827',3);rect(near?'#f2bf84':'#b87751',a.hand[0]-1,a.hand[1]-1,3,3);};
  for(const [leg,near]of [[m.farLeg,false],[m.nearLeg,true]]){line([leg.hip,leg.knee,leg.foot],near?'#647782':'#364855',3);rect('#1c2935',leg.foot[0]-4,leg.foot[1]-2,6,4);rect(near?'#ac8050':'#6a513b',leg.foot[0]-3,leg.foot[1]-1,4,2);}

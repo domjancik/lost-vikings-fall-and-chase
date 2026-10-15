@@ -1,9 +1,10 @@
-import {WATER_AIR} from '../levels/water/campaign.js?v=water114';
+import {WATER_AIR} from '../levels/water/campaign.js?v=orbit116';
 import {WARDEN_BRACE_LIMIT} from '../levels/warden/campaign.js?v=warden104';
 const clamp=(n,max)=>Math.max(0,Math.min(max,n));
 export function heroResource(s,id){
  const h=s.heroes[id];if(!h||h.dead)return null;
  if(s.level.mechanic==='water'){
+  if(!h.underwater)return null;
   const remaining=clamp(h.air??WATER_AIR,WATER_AIR);
   return{kind:'air',label:'AIR',remaining,max:WATER_AIR,ratio:remaining/WATER_AIR,critical:remaining<=3};
  }
@@ -23,7 +24,7 @@ export function mountHeroResource(card){
 export const resourcePaintKey=r=>[r.kind,Math.ceil(r.remaining),r.remaining.toFixed(1),r.ratio.toFixed(2),r.critical].join(':');
 export function updateHeroResource(s,id,card){
  const meter=card.querySelector('.hero-resource'),r=heroResource(s,id);meter.hidden=!r;card.classList.toggle('has-resource',!!r);
- card.parentElement.classList.toggle('has-resources',s.level.mechanic==='water'||s.level.mechanic==='warden');
+ card.parentElement.classList.toggle('has-resources',s.heroes.some((_,id)=>!!heroResource(s,id)));
  if(!r){delete meter.dataset.kind;delete meter.dataset.paint;return;}
  const paint=resourcePaintKey(r);
  if(meter.dataset.paint===paint)return;meter.dataset.paint=paint;

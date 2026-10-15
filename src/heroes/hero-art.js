@@ -2,14 +2,14 @@ import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=water1
 import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
-import {drawProceduralHeroArt} from './hero-procedural.js?v=water114';
+import {drawProceduralHeroArt} from './hero-procedural.js?v=orbit116';
 import {normalizeSkin,heroSkin} from './hero-skins.js?v=olaf107';
 
 const sheets=[],locomotion=[],trial=[],native85=[],imagegen88=[],imagegen90=[];let shield,erikSwim;
 let selectedSkin='current';
 export function setHeroSkin(skin){selectedSkin=normalizeSkin(skin);if(selectedSkin==='imagegen88')ensureImagegen88();if(selectedSkin==='imagegen90'){ensureImagegen90();ensureErikSwim();}}
 function ensureImagegen88(){if(imagegen88.length)return;for(const name of ['erik','baleog','olaf'])imagegen88.push(load(`assets/vikings88/${name}-native.png`));}
-function ensureErikSwim(){erikSwim??=load('assets/water114/erik-swim-native.png');}
+function ensureErikSwim(){erikSwim??=load('assets/water115/erik-swim-native.png');}
 function ensureImagegen90(){if(imagegen90.length)return;for(const name of ['erik','baleog','olaf'])imagegen90.push(load(name==='olaf'?'assets/olaf111/olaf-native.png':`assets/vikings90/${name}-native.png`));}
 function ensureLoaded(){
  if(sheets.length)return;

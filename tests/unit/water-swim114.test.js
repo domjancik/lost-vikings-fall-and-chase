@@ -5,16 +5,29 @@ import {animationFor} from '../../src/heroes/sprite-render.js';
 import {heroAnimationCell} from '../../src/heroes/hero-frames.js';
 import {swimMotion} from '../../src/heroes/swim-motion.js';
 const ticks=(s,input={},n=1)=>{for(let i=0;i<n;i++)step(s,input,1/120);};
+test('swim strokes advance with active swimming travel, pause on release, and stay frozen for inactive Erik',()=>{
+ const s=createState(4,'cycle'),e=s.heroes[0];Object.assign(e,{x:1200,y:750,ground:false,vx:0,vy:0,skin:'imagegen90'});
+ ticks(s,{right:true},80);assert.ok(e.swimDistance>50);const moving=e.swimDistance,frame=animationFor(e).frame;
+ ticks(s,{},40);assert.equal(e.swimDistance,moving);assert.equal(animationFor(e).frame,frame);
+ s.active=1;ticks(s,{right:true},40);assert.equal(e.swimDistance,moving);assert.equal(animationFor(e).frame,frame);
+ s.active=0;Object.assign(e,{y:956,vy:0,swimVy:0});ticks(s,{down:true},40);assert.equal(e.swimDistance,moving,'Pushing into a solid floor must not cycle the stroke');
+ ticks(s,{up:true},80);assert.ok(e.swimDistance>moving+40);
+});
+test('a current cannot drive the stroke, including while Down is blocked by the basin floor',()=>{
+ const s=createState(4,'cycle'),e=s.heroes[0];Object.assign(e,{x:710,y:956,ground:false,vx:0,vy:0,swimDistance:45});
+ const oldX=e.x;ticks(s,{down:true},10);assert.ok(e.x<oldX,'The live inlet must actually push Erik');assert.equal(e.swimDistance,45);
+ ticks(s,{},10);assert.equal(e.swimDistance,45);
+});
 test('world meters use the same remaining resource as HUD, including inactive heroes and raised-shield clearance',async()=>{
  const api=await import('../../src/app/world-resources.js').catch(()=>null);assert.ok(api?.worldResource);
- const s=createState(4,'cycle');s.active=2;s.heroes[0].air=2.5;
+ const s=createState(4,'cycle');s.active=2;s.heroes[0].air=2.5;s.heroes[0].underwater=true;
  const r=api.worldResource(s,0);assert.equal(r.remaining,2.5);assert.equal(r.label,'AIR');assert.ok(r.y<s.heroes[0].y-46);
  const w=createState(5,'cycle');w.machine.braced=true;w.machine.braceAge=11;w.heroes[2].shieldUp=true;
  const strength=api.worldResource(w,2);assert.equal(strength.label,'STR');assert.equal(strength.remaining,3);assert.ok(strength.y<w.heroes[2].y-58);
 });
 test('nearby resource callouts stack without merging labels and retain their hero anchors',async()=>{
  const {worldResources}=await import('../../src/app/world-resources.js');const s=createState(4,'cycle');
- for(const h of s.heroes)Object.assign(h,{x:940+h.id*8,y:856});
+ for(const h of s.heroes)Object.assign(h,{x:940+h.id*8,y:856,underwater:true});
  const rs=worldResources(s);assert.equal(rs.length,3);
  for(let i=0;i<rs.length;i++){assert.equal(rs[i].heroId,i);assert.equal(rs[i].anchorX,940+i*8);for(let j=0;j<i;j++)assert.ok(Math.abs(rs[i].y-rs[j].y)>=26);}
  assert.deepEqual(rs.map(r=>r.tag),['E','B','O']);

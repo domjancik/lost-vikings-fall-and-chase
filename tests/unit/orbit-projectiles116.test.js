@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createState,step} from '../../src/core/engine.js';
+test('the solid carrier blocks arrows crossing its body, while a tangent shot passes',()=>{const s=createState(8,'cycle'),p=s.machine.plates[0];s.shots=[{kind:'arrow',x:p.x,y:p.y-28,vx:0,vy:580,life:2}];for(let n=0;n<5;n++)step(s,{},1/120);assert.equal(s.shots.length,0);s.shots=[{kind:'arrow',x:p.x,y:p.y-48,vx:580,vy:0,life:2}];for(let n=0;n<5;n++)step(s,{},1/120);assert.equal(s.shots.length,1);});

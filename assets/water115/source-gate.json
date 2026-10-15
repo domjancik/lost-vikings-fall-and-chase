@@ -1,0 +1,11 @@
+{
+ "review":"docs/history/WATER115-REVIEW.md",
+ "verdict":"accepted",
+ "acceptedCells":{"assets/water114/erik-swim-raw-v2.png":[0,1,3,4,5,6,7],"assets/water114/erik-swim-raw-v3.png":[2]},
+ "authoringCell":[64,64],
+ "runtimeCell":[80,80],
+ "worldPixel":2,
+ "reason":"User-requested uniform original-source size correction retains defining native features and brings occupied mass near standing Erik; integer whole-actor packing only.",
+ "runtimeGate":"pending",
+ "publicationAllowed":false
+}

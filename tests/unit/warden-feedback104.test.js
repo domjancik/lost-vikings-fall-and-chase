@@ -27,7 +27,7 @@ test('crew resources follow every hero independently of selection, including rep
  const s=createState(4,'cycle');s.active=2;s.heroes[0].air=2.25;s.heroes[0].underwater=true;
  const a=hud.heroResource(s,0);assert.equal(a.kind,'air');assert.equal(a.remaining,2.25);assert.equal(a.max,12);assert.ok(a.critical);
  s.active=0;assert.deepEqual(hud.heroResource(s,0),a);
- s.heroes[0].air=8;s.heroes[0].inAirPocket=true;assert.equal(hud.heroResource(s,0).remaining,8);
+ s.heroes[0].air=8;s.heroes[0].inAirPocket=true;s.heroes[0].underwater=false;assert.equal(hud.heroResource(s,0),null);
  const w=createState(5,'cycle');w.active=0;w.machine.braced=true;w.machine.braceAge=11;
  assert.equal(hud.heroResource(w,2).remaining,3);assert.ok(hud.heroResource(w,2).critical);assert.equal(hud.heroResource(w,0),null);
  w.machine.braced=false;w.machine.fatigue=1;assert.equal(hud.heroResource(w,2).kind,'recover');

@@ -1,0 +1,768 @@
+{
+  "heroes": [
+    {
+      "id": 0,
+      "skin": "current",
+      "rotation": 0,
+      "magnet": null,
+      "magnetSole": null,
+      "magV": 0,
+      "boots": false,
+      "x": 1731.1984801570266,
+      "y": 606,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "face": -1,
+      "support": "orbit-0",
+      "climbing": false
+    },
+    {
+      "id": 1,
+      "skin": "current",
+      "rotation": 0,
+      "magnet": {
+        "plateId": 1,
+        "u": 238.57783533613642,
+        "attaching": false
+      },
+      "magnetSole": {
+        "x": 2622.5778353361366,
+        "y": 420.0208333333333
+      },
+      "magV": 0,
+      "boots": true,
+      "x": 2622.5778353361366,
+      "y": 376.0208333333333,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "face": 1,
+      "support": "orbit-1",
+      "climbing": false
+    },
+    {
+      "id": 2,
+      "skin": "imagegen90",
+      "shieldArtPose": {
+        "x": -28.675,
+        "y": 8.295000000000002,
+        "rx": 16.970562748477143,
+        "ry": 24,
+        "roll": 0.13962634015954636,
+        "mode": "front",
+        "cell": 11
+      },
+      "rotation": -6.283185307179586,
+      "magnet": {
+        "plateId": 1,
+        "u": 100.79608124623076,
+        "attaching": false
+      },
+      "magnetSole": {
+        "x": 2484.7960812462306,
+        "y": 420.0208333333333
+      },
+      "magV": 0,
+      "boots": true,
+      "x": 2484.7960812462306,
+      "y": 376.0208333333333,
+      "vx": 0,
+      "vy": 0,
+      "ground": true,
+      "hp": 3,
+      "dead": false,
+      "inventory": [
+        "magneticShoes",
+        null,
+        null,
+        null
+      ],
+      "itemSlot": 0,
+      "shieldUp": false,
+      "shield": true,
+      "face": -1,
+      "support": "orbit-1",
+      "climbing": false
+    }
+  ],
+  "machine": {
+    "plates": [
+      {
+        "id": 0,
+        "x": 1610,
+        "y": 674,
+        "w": 344,
+        "h": 48,
+        "capRx": 16,
+        "angle": 0,
+        "phase": "parked",
+        "charge": 1,
+        "vx": 0,
+        "vy": 0
+      },
+      {
+        "id": 1,
+        "x": 2540,
+        "y": 444.0208333333333,
+        "w": 344,
+        "h": 48,
+        "capRx": 16,
+        "angle": 0,
+        "phase": "hooked",
+        "charge": 1,
+        "vx": 0,
+        "vy": 0
+      }
+    ],
+    "sequence": 3,
+    "sequenceUntil": 60.383333333331684,
+    "ropeCut": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "ropePose": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "ropeAperture": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "panelOpen": true,
+    "panelPose": 1,
+    "operator": 0,
+    "roofs": [
+      {
+        "id": 2,
+        "x": 1890,
+        "y": 532,
+        "w": 344,
+        "h": 48,
+        "capRx": 16,
+        "angle": 0,
+        "phase": "roof",
+        "vx": 0,
+        "vy": 0
+      }
+    ],
+    "hook": {
+      "x": 2540,
+      "y": 419.6666666666667,
+      "vx": 0,
+      "vy": 0,
+      "plateId": 1,
+      "offset": {
+        "x": 0,
+        "y": 24.35416666666663
+      },
+      "grab": 0.3783333333333332,
+      "attempts": 2
+    },
+    "hookDocked": false,
+    "exitPose": 0,
+    "ladderPose": 0,
+    "blocks": 0,
+    "safety": false,
+    "debris": [
+      {
+        "id": 0,
+        "cx": 1120,
+        "cy": 674,
+        "rx": 230,
+        "ry": 180,
+        "clock": 76.85000000000723,
+        "phase": "active",
+        "x": 1450.4082453334472,
+        "y": -288.9748764136021,
+        "angle": 61.90548600728162,
+        "escape": 320,
+        "vx": 355.0798762783961,
+        "vy": 194.62893278671572
+      },
+      {
+        "id": 1,
+        "cx": 2540,
+        "cy": 444,
+        "rx": 220,
+        "ry": 140,
+        "clock": 78.85000000000882,
+        "phase": "active",
+        "x": 2710.4130916010954,
+        "y": 532.5423525841234,
+        "angle": 63.516559162969976,
+        "escape": 0,
+        "vx": -111.61914763835739,
+        "vy": 87.59490364351677
+      }
+    ],
+    "pushContact": null
+  },
+  "art": {
+    "ready": true,
+    "mechanic": "orbit",
+    "contacts": [
+      {
+        "kind": "pier",
+        "x": 24,
+        "top": 1048,
+        "bottom": 1180
+      },
+      {
+        "kind": "pier",
+        "x": 956,
+        "top": 1048,
+        "bottom": 1180
+      },
+      {
+        "kind": "pier",
+        "x": 1714,
+        "top": 698,
+        "bottom": 1180
+      },
+      {
+        "kind": "pier",
+        "x": 2416,
+        "top": 698,
+        "bottom": 1180
+      },
+      {
+        "kind": "pier",
+        "x": 2884,
+        "top": 348,
+        "bottom": 1180
+      },
+      {
+        "kind": "pier",
+        "x": 3536,
+        "top": 348,
+        "bottom": 1180
+      },
+      {
+        "kind": "field-post",
+        "id": 0,
+        "x": 900,
+        "top": 360,
+        "bottom": 1000
+      },
+      {
+        "kind": "field-post",
+        "id": 0,
+        "x": 1340,
+        "top": 360,
+        "bottom": 1180
+      },
+      {
+        "kind": "field-post",
+        "id": 1,
+        "x": 2300,
+        "top": 200,
+        "bottom": 650
+      },
+      {
+        "kind": "field-post",
+        "id": 1,
+        "x": 2780,
+        "top": 200,
+        "bottom": 1180
+      },
+      {
+        "kind": "gantry-post",
+        "x": 2080,
+        "top": 140,
+        "bottom": 650
+      },
+      {
+        "kind": "gantry-post",
+        "x": 3060,
+        "top": 140,
+        "bottom": 300
+      },
+      {
+        "kind": "restraint-support",
+        "id": 2,
+        "top": 966,
+        "bottom": 1180
+      },
+      {
+        "kind": "restraint-support",
+        "id": 3,
+        "top": 774,
+        "bottom": 1000
+      },
+      {
+        "kind": "panel",
+        "x": 1730,
+        "bottom": 650,
+        "base": 60,
+        "panelOpen": true,
+        "coverPose": 1,
+        "operator": 0,
+        "port": [
+          1742,
+          588
+        ]
+      },
+      {
+        "kind": "rope-shutter",
+        "id": 0,
+        "position": [
+          1360,
+          626
+        ],
+        "artRope": [
+          1360,
+          626
+        ],
+        "ropeSpan": [
+          590,
+          662
+        ],
+        "open": false,
+        "aperture": 0,
+        "cut": true,
+        "cutProgress": 1,
+        "mount": [
+          1340,
+          626
+        ]
+      },
+      {
+        "kind": "rope-shutter",
+        "id": 2,
+        "position": [
+          1168,
+          914
+        ],
+        "artRope": [
+          1168,
+          914
+        ],
+        "ropeSpan": [
+          878,
+          950
+        ],
+        "open": false,
+        "aperture": 0,
+        "cut": true,
+        "cutProgress": 1,
+        "mount": [
+          1168,
+          966
+        ]
+      },
+      {
+        "kind": "rope-shutter",
+        "id": 3,
+        "position": [
+          880,
+          722
+        ],
+        "artRope": [
+          880,
+          722
+        ],
+        "ropeSpan": [
+          686,
+          758
+        ],
+        "open": false,
+        "aperture": 0,
+        "cut": true,
+        "cutProgress": 1,
+        "mount": [
+          880,
+          774
+        ]
+      },
+      {
+        "kind": "rope-shutter",
+        "id": 1,
+        "position": [
+          3180,
+          248
+        ],
+        "artRope": [
+          3180,
+          248
+        ],
+        "ropeSpan": [
+          212,
+          284
+        ],
+        "open": false,
+        "aperture": 0,
+        "cut": false,
+        "cutProgress": 0,
+        "mount": [
+          3200,
+          248
+        ]
+      },
+      {
+        "kind": "ceiling-rail",
+        "id": 2,
+        "bottom": 556,
+        "mountedAt": 440
+      },
+      {
+        "kind": "carrier",
+        "id": 0,
+        "pivot": [
+          1610,
+          674
+        ],
+        "nativePivot": [
+          96,
+          48
+        ],
+        "body": [
+          344,
+          48
+        ],
+        "flatDeck": [
+          1454,
+          650,
+          312
+        ],
+        "angle": 0,
+        "phase": "parked",
+        "eye": {
+          "x": 1610,
+          "y": 650
+        }
+      },
+      {
+        "kind": "carrier",
+        "id": 1,
+        "pivot": [
+          2540,
+          444
+        ],
+        "nativePivot": [
+          96,
+          48
+        ],
+        "body": [
+          344,
+          48
+        ],
+        "flatDeck": [
+          2384,
+          420.0208333333333,
+          312
+        ],
+        "angle": 0,
+        "phase": "hooked",
+        "eye": {
+          "x": 2540,
+          "y": 420.0208333333333
+        }
+      },
+      {
+        "kind": "floating-debris",
+        "id": 0,
+        "x": 1450,
+        "y": -288,
+        "phase": "active",
+        "angle": 61.90548600728162,
+        "nativeRotation": true
+      },
+      {
+        "kind": "floating-debris",
+        "id": 1,
+        "x": 2710,
+        "y": 532,
+        "phase": "active",
+        "angle": 63.516559162969976,
+        "nativeRotation": true
+      },
+      {
+        "kind": "hook",
+        "stem": [
+          2540,
+          338
+        ],
+        "cableEnd": [
+          2540,
+          338
+        ],
+        "clampPoint": [
+          2540,
+          420
+        ],
+        "tipY": 444,
+        "jaw": 0.27777777777799884,
+        "plateId": 1
+      },
+      {
+        "kind": "exit-door",
+        "frameBottom": 300,
+        "leafBottom": 300,
+        "travel": 0
+      },
+      {
+        "kind": "portal",
+        "bottom": 300,
+        "surface": 300
+      }
+    ],
+    "fields": [
+      {
+        "id": 0,
+        "left": 900,
+        "right": 1340,
+        "top": 360,
+        "center": [
+          1120,
+          674
+        ],
+        "phase": "parked",
+        "charge": 1
+      },
+      {
+        "id": 1,
+        "left": 2300,
+        "right": 2780,
+        "top": 200,
+        "center": [
+          2540,
+          444
+        ],
+        "phase": "hooked",
+        "charge": 1
+      }
+    ],
+    "rooms": [
+      {
+        "x": 0,
+        "y": 780,
+        "w": 520,
+        "h": 220,
+        "floorY": 1000,
+        "borders": {
+          "edges": [
+            {
+              "side": "top",
+              "start": 0,
+              "end": 520
+            },
+            {
+              "side": "right",
+              "start": 780,
+              "end": 1000
+            }
+          ],
+          "corners": [
+            {
+              "kind": "top-right",
+              "x": 520,
+              "y": 780
+            }
+          ]
+        },
+        "collision": false
+      },
+      {
+        "x": 1690,
+        "y": 440,
+        "w": 250,
+        "h": 210,
+        "floorY": 650,
+        "borders": {
+          "edges": [
+            {
+              "side": "top",
+              "start": 1690,
+              "end": 1940
+            },
+            {
+              "side": "left",
+              "start": 440,
+              "end": 650
+            },
+            {
+              "side": "right",
+              "start": 440,
+              "end": 650
+            }
+          ],
+          "corners": [
+            {
+              "kind": "top-left",
+              "x": 1690,
+              "y": 440
+            },
+            {
+              "kind": "top-right",
+              "x": 1940,
+              "y": 440
+            }
+          ]
+        },
+        "collision": false
+      },
+      {
+        "x": 3340,
+        "y": 100,
+        "w": 220,
+        "h": 200,
+        "floorY": 300,
+        "borders": {
+          "edges": [
+            {
+              "side": "top",
+              "start": 3340,
+              "end": 3560
+            },
+            {
+              "side": "left",
+              "start": 100,
+              "end": 300
+            }
+          ],
+          "corners": [
+            {
+              "kind": "top-left",
+              "x": 3340,
+              "y": 100
+            }
+          ]
+        },
+        "collision": false
+      }
+    ],
+    "gears": [],
+    "distantScrap": [
+      {
+        "x": 1826,
+        "y": 522,
+        "angle": -6.148000000000579
+      },
+      {
+        "x": 2882,
+        "y": 378,
+        "angle": 10.853500000000796
+      },
+      {
+        "x": 1656,
+        "y": 372,
+        "angle": -1.348000000000579
+      },
+      {
+        "x": 2636,
+        "y": 514,
+        "angle": 15.653500000000795
+      },
+      {
+        "x": 1314,
+        "y": 458,
+        "angle": 3.451999999999421
+      },
+      {
+        "x": 2906,
+        "y": 670,
+        "angle": 20.453500000000794
+      },
+      {
+        "x": 1468,
+        "y": 666,
+        "angle": 8.25199999999942
+      },
+      {
+        "x": 3264,
+        "y": 528,
+        "angle": 25.2535000000008
+      }
+    ],
+    "sequence": 3,
+    "sequenceRemaining": 0,
+    "parallax": {
+      "far": {
+        "x": 1992,
+        "y": 216,
+        "factorX": 0.82,
+        "factorY": 0.6
+      },
+      "middle": {
+        "x": 632,
+        "y": 160,
+        "factorX": 0.26,
+        "factorY": 0.025
+      }
+    },
+    "cable": [
+      [
+        2540,
+        120
+      ],
+      [
+        2540,
+        338
+      ]
+    ],
+    "native": {
+      "far": [
+        768,
+        512
+      ],
+      "middle": [
+        768,
+        512
+      ],
+      "plate": [
+        192,
+        96
+      ],
+      "parts": [
+        256,
+        128
+      ],
+      "gear": [
+        256,
+        256
+      ]
+    },
+    "operator": 0,
+    "hookDocked": false,
+    "ropeCut": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "exitPose": 0
+  },
+  "camera": {
+    "x": 2430,
+    "y": 192,
+    "width": 218,
+    "height": 395,
+    "zoom": 2,
+    "look": 0
+  }
+}

@@ -34,8 +34,8 @@ test('hook clamp preserves actual carrier position and release does not teleport
  const s=fresh(),g=s.machine,p=g.plates[1];g.panelOpen=true;g.operator=0;s.active=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});Object.assign(p,{x:2540,y:444,phase:'float'});Object.assign(g.hook,{x:2540,y:420});
  tick(s,{action:true});assert.equal(g.hook.plateId,1);const old=p.x;tick(s,{right:true});assert.ok(p.x>old&&p.x-old<2);const before={x:p.x,y:p.y};tick(s,{sword:true});assert.equal(g.hook.plateId,null);assert.ok(Math.hypot(p.x-before.x,p.y-before.y)<2);
 });
-test('floating debris damages exposed bodies and has a warning/rest envelope',()=>{
- const s=fresh(),d=s.machine.debris[0],h=s.heroes[0];s.machine.safety=false;s.time=3;d.clock=3;Object.assign(h,{x:d.cx-d.rx,y:d.cy-22,ground:false});tick(s);assert.ok(h.hp<3);assert.ok(s.machine.debris.every(q=>q.phase==='warning'||q.phase==='active'||q.phase==='rest'));
+test('orbiting debris damages exposed bodies along its continuous ellipse',()=>{
+ const s=fresh(),d=s.machine.debris[0],h=s.heroes[0];s.machine.safety=false;s.time=3;d.clock=3;d.angle=3*Math.PI*2/7.8;const a=(3+1/120)*Math.PI*2/7.8;Object.assign(h,{x:d.cx+Math.cos(a)*d.rx,y:d.cy+Math.sin(a)*d.ry-22,ground:false});tick(s);assert.ok(h.hp<3);assert.ok(s.machine.debris.every(q=>q.phase==='warning'||q.phase==='active'||q.phase==='rest'));
 });
 test('transferring the physical shoes removes the former wearer’s adhesion',()=>{
  const s=fresh(),h=s.heroes[0],b=s.heroes[1],p=s.machine.plates[0];h.inventory[0]='magneticShoes';h.boots=true;h.magnet={plateId:0,u:100};magneticPoint(h,p);Object.assign(b,{x:h.x+30,y:h.y});assert.equal(transferItem(s,0,1,0),true);tick(s);assert.equal(h.magnet,null);assert.equal(h.boots,false);assert.ok(b.inventory.includes('magneticShoes'));assert.equal(b.boots,false);
@@ -58,7 +58,7 @@ test('hook operation ends when switching heroes or when its operator is hurt',()
  const s=fresh(),g=s.machine;g.panelOpen=true;g.operator=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});s.active=1;tick(s);assert.equal(g.operator,null);g.operator=0;s.active=0;s.heroes[0].hurt=.3;tick(s);assert.equal(g.operator,null);
 });
 test('a lethal hazard during crane operation releases camera ownership in that same step',()=>{
- const s=fresh(),g=s.machine,h=s.heroes[0],d=g.debris[0];g.operator=0;s.active=0;Object.assign(h,{x:1730,y:606,ground:true,hp:1});Object.assign(d,{cx:1860,cy:628,clock:3});tick(s);assert.equal(s.failed,true);assert.equal(h.dead,true);assert.equal(g.operator,null);
+ const s=fresh(),g=s.machine,h=s.heroes[0],d=g.debris[0];g.operator=0;s.active=0;Object.assign(h,{x:1730,y:606,ground:true,hp:1});Object.assign(d,{cx:1500,cy:628,clock:-1/120,angle:-Math.PI*2/7.8/120});tick(s);assert.equal(s.failed,true);assert.equal(h.dead,true);assert.equal(g.operator,null);
 });
 test('debris warning and active sweeps have continuous endpoints',()=>{
  const s=fresh();s.machine.safety=true;let old=s.machine.debris[0];let x=old.x,y=old.y;for(let n=0;n<120*9;n++){tick(s);old=s.machine.debris[0];assert.ok(Math.hypot(old.x-x,old.y-y)<4);x=old.x;y=old.y;}

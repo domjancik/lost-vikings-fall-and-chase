@@ -32,6 +32,15 @@ export function waterShelterTarget(s){
 export function waterSheltered(s){return waterShelterTarget(s)>.95;}
 export function waterAirPockets(s){return[waterBellPocket(940,900),waterBellPocket(s.machine.float.x,1000,true)];}
 export function waterInAirPocket(s,h){const headY=h.y-20;return waterAirPockets(s).some(p=>h.x>p.x+10&&h.x<p.x+p.w-10&&headY>p.y&&headY<p.y+p.h);}
+function setSwimming(s,h){
+ const swimming=h.id===0&&h.x>320&&h.x<2100&&h.y+44>s.machine.waterY+4&&h.breach===0&&!waterInAirPocket(s,h)&&!h.climbing;
+ // Crossing the surface used to replace a falling velocity with stale/zero
+ // swim velocity, suspending Erik with only his feet in the water. Carry the
+ // entry momentum into water drag, including a returning surface jump.
+ if(swimming&&!h.swimming)h.swimVy=Math.max(-180,Math.min(250,h.vy));
+ h.swimming=swimming;
+ if(swimming){h.ground=false;h.coyote=0;h.land=0;}
+}
 export function waterSurfaces(s){return [...s.level.floors,...s.level.platforms,{x:s.machine.float.x-WATER_CRADLE_WIDTH/2,y:WATER_CRADLE_SEAT,w:WATER_CRADLE_WIDTH,support:'water-cradle'},{...s.machine.float,x:s.machine.float.x-s.machine.float.w/2}];}
 const feedback=(s,message)=>{s.feedback={message,sequence:(s.feedback?.sequence||0)+1};};
 export function waterObjects(s){const g=s.machine;return[
@@ -72,8 +81,9 @@ export function waterStep(s,input,dt){
  if(g.drainPose>0){g.waterY=Math.min(950,g.waterY+40*g.drainPose*dt);g.drainStarted=true;}
  const surfaceVelocity=(g.waterY-oldWaterY)/dt;
  for(const h of s.heroes){h.waterFloat=h.id===2&&h.x>320&&h.x<2100&&h.y+44>=g.waterY-8;
-  h.breach=Math.max(0,(h.breach||0)-dt);h.swimming=h.id===0&&h.x>320&&h.x<2100&&h.y+44>g.waterY+4&&h.breach===0&&!waterInAirPocket(s,h)&&!h.climbing;
-  if(h.swimming){h.ground=false;h.coyote=0;h.land=0;}
+  h.breach=Math.max(0,(h.breach||0)-dt);
+  if(h.id===0&&h.breach>0&&h.vy>=0&&h.y+44>g.waterY+4)h.breach=0;
+  setSwimming(s,h);
  }
  prepareMotion(s,input,dt);
  // The flow retains a short physical response when the shield enters/leaves.
@@ -123,9 +133,16 @@ export function waterStep(s,input,dt){
  const o=s.heroes[2];if(o.waterFloat&&!o.climbing&&!o.ground){o.support='water';o.walk=(o.walk||0)+Math.abs(o.x-o.prevX)/9;}
  for(const {h,x,y}of climbs){h.x=x;h.y=y;h.vy=0;h.ground=true;h.support='ladder';h.climbMoving=h.id===s.active&&(input.up||input.down);}
  for(const h of s.heroes)if(h.id!==2&&h.support===2&&o.waterFloat)h.y=o.y-36-44;
+ const erik=s.heroes[0];setSwimming(s,erik);
  breathing(s,dt);
- const erik=s.heroes[0];erik.swimming=erik.x>320&&erik.x<2100&&erik.y+44>g.waterY+4&&!waterInAirPocket(s,erik)&&erik.breach===0&&!erik.climbing;
- if(erik.swimming){erik.ground=false;erik.coyote=0;erik.land=0;}
+ // Only deliberate swimming travel drives the stroke. Released controls,
+ // inactive characters, passive currents and contact with a wall/floor freeze
+ // its current key instead of running a perpetual elapsed-time animation.
+ if(erik.swimming&&s.active===0&&(input.left||input.right||input.up||input.down)){
+  const dx=Number(!!input.right)-Number(!!input.left),dy=Number(!!input.down)-Number(!!input.up),intent=Math.hypot(dx,dy);
+  const distance=intent?Math.max(0,((erik.x-erik.prevX)*dx+(erik.y-erik.prevY)*dy)/intent):0;
+  erik.swimDistance=(erik.swimDistance||0)+distance;
+ }
  s.power=g.waterY>=900;
  s.won=!s.failed&&s.power&&s.heroes.every(h=>Math.abs(h.x-2300)<80&&Math.abs(h.y+44-540)<4);
 }

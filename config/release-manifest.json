@@ -543,6 +543,14 @@
     {
       "source": "src/heroes/swim-procedural.js",
       "output": "swim-procedural.js"
+    },
+    {
+      "source": "src/app/hero-feedback.js",
+      "output": "hero-feedback.js"
+    },
+    {
+      "source": "src/levels/orbit/field-optics.js",
+      "output": "orbit-field-optics.js"
     }
   ],
   "files": [
@@ -851,6 +859,10 @@
     "assets/orbit113/visual-gates.json",
     "assets/water114/erik-swim-native.png",
     "assets/water114/registration.json",
-    "assets/water114/visual-gates.json"
+    "assets/water114/visual-gates.json",
+    "assets/water115/erik-swim-native.png",
+    "assets/water115/registration.json",
+    "assets/water115/visual-gates.json",
+    "assets/orbit116/visual-gates.json"
   ]
 }

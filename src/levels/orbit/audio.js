@@ -1,9 +1,12 @@
 export function createOrbitSounds(){let state=null,previous=null,lastMotor=0,lastStep=[0,0,0];return s=>{
  if(s.level.mechanic!=='orbit'){state=null;return [];}
- const g=s.machine,now={boots:s.heroes.map(h=>h.boots),phases:g.plates.map(p=>p.phase),ropes:[...g.ropeCut],panel:g.panelOpen,clamp:g.hook.plateId,dock:g.hookDocked,debris:g.debris.map(d=>d.phase)};
+ const g=s.machine,now={boots:s.heroes.map(h=>h.boots),phases:g.plates.map(p=>p.phase),ropes:[...g.ropeCut],panel:g.panelOpen,clamp:g.hook.plateId,attempts:g.hook.attempts,attached:s.heroes.map(h=>h.magnet?.plateId??null),sequence:g.sequence,dock:g.hookDocked,debris:g.debris.map(d=>d.phase)};
  if(state!==s){state=s;previous=now;lastMotor=s.time;lastStep=[s.time,s.time,s.time];return [];}
  const events=[],add=(name,x,id=0)=>events.push({name,x,id});
- for(let n=0;n<3;n++)if(now.boots[n]!==previous.boots[n])add('lever',s.heroes[n].x,n);
+ for(let n=0;n<3;n++)if(now.boots[n]!==previous.boots[n])add(now.boots[n]?'magnetOn':'magnetOff',s.heroes[n].x,n);
+ for(let n=0;n<3;n++)if(now.attached[n]!==previous.attached[n]&&now.attached[n]!==null)add('magnetGrab',s.heroes[n].x,n);
+ if(now.attempts!==previous.attempts)add('shieldLower',g.hook.x);
+ if(now.sequence!==previous.sequence)add(now.sequence?'reflect':'magnetOff',1120);
  for(const h of s.heroes)if(h.magnet&&Math.abs(h.magV)>40&&s.time-lastStep[h.id]>(h.id===2?.32:.23)){add('step',h.x,h.id);lastStep[h.id]=s.time;}
  for(let n=0;n<2;n++){
   if(now.phases[n]!==previous.phases[n])add(now.phases[n]==='charge'?'pump':now.phases[n]==='parked'?'land':'chain',g.plates[n].x);

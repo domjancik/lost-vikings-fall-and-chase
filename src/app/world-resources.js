@@ -1,4 +1,4 @@
-import {heroResource} from './hero-resources.js?v=water114';
+import {heroResource} from './hero-resources.js?v=orbit116';
 import {snapPixel} from '../render/pixel-grid.js?v=water114';
 export function worldResource(s,id){
  const h=s.heroes[id],r=heroResource(s,id);if(!r)return null;

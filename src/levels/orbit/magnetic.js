@@ -29,7 +29,7 @@ export function nearestRail(p,x,y){
 export function magneticPoint(h,p,dt=0){
  const q=railContact(p,h.magnet.u);let angle=Math.atan2(q.ty,q.tx);const old=h.rotation??angle;while(angle-old>Math.PI)angle-=TAU;while(angle-old<-Math.PI)angle+=TAU;
  if(h.magnet.attaching){const delta=angle-old;if(dt>0)angle=old+Math.sign(delta)*Math.min(Math.abs(delta),6*dt);else angle=old;if(Math.abs(delta)<.02)h.magnet.attaching=false;}
- const nx=Math.sin(angle),ny=-Math.cos(angle);h.rotation=angle;h.magnetSole={x:q.x,y:q.y};h.magnetNormal={x:nx,y:ny};h.x=q.x+nx*22;h.y=q.y+ny*22-22;h.ground=true;h.support='orbit-'+p.id;h.vy=0;
+ const nx=Math.sin(angle),ny=-Math.cos(angle);h.rotation=angle;let soleX=q.x,soleY=q.y;if(h.magnet.pull!==undefined&&h.magnet.pull<1){h.magnet.pull=Math.min(1,h.magnet.pull+dt/.6);const t=h.magnet.pull*h.magnet.pull*(3-2*h.magnet.pull);soleX=h.magnet.startX+(q.x-h.magnet.startX)*t;soleY=h.magnet.startY+(q.y-h.magnet.startY)*t;}h.magnetSole={x:soleX,y:soleY};h.magnetNormal={x:nx,y:ny};h.x=soleX+nx*22;h.y=soleY+ny*22-22;h.ground=true;h.support='orbit-'+p.id;h.vy=0;
 }
 export function detachMagnet(h,p,jump=false){
  const q=railContact(p,h.magnet.u);h.magnet=null;h.detachTime=.35;h.ground=false;h.support=null;h.vx=q.tx*(h.magV||0)+(p.vx||0)+(jump?q.nx*570:0);h.vy=q.ty*(h.magV||0)+(p.vy||0)+(jump?q.ny*570:0);h.magV=0;
@@ -39,13 +39,14 @@ export function recoverFreeRotation(h,dt){
  if(Math.abs(next-target)<1e-6){h.rotation=0;h.magnetSole=null;h.magnetNormal=null;return;}
  h.rotation=next;const nx=Math.sin(next),ny=-Math.cos(next);h.magnetSole={x:h.x-nx*22,y:h.y+22-ny*22};h.magnetNormal={x:nx,y:ny};
 }
+export const magneticRails=s=>[...s.machine.plates,...(s.machine.roofs||[])];
 export function magneticMotion(s,input,dt){
  const attached=[];
- for(const h of s.heroes){h.detachTime=Math.max(0,(h.detachTime||0)-dt);if(h.boots&&!h.inventory.includes('magneticShoes'))h.boots=false;const p=s.machine.plates.find(p=>p.id===h.magnet?.plateId);
+ for(const h of s.heroes){h.detachTime=Math.max(0,(h.detachTime||0)-dt);if(h.boots&&!h.inventory.includes('magneticShoes'))h.boots=false;const p=magneticRails(s).find(p=>p.id===h.magnet?.plateId);
   if(h.magnet&&(!h.boots||!h.inventory.includes('magneticShoes')||h.dead)){if(p)detachMagnet(h,p);else h.magnet=null;}
   if(h.magnet&&h.id===s.active&&input.jump&&h.id===0){detachMagnet(h,p,true);continue;}
-  if(!h.magnet&&h.boots&&h.inventory.includes('magneticShoes')&&!h.detachTime&&!h.dead){for(const plate of s.machine.plates){const q=nearestRail(plate,h.x,h.y+44);if(q.distance<6&&h.vy>=-20){h.magnet={plateId:plate.id,u:q.u,attaching:true};h.magV=0;break;}}}
-  if(h.magnet){const plate=s.machine.plates.find(p=>p.id===h.magnet.plateId),profile=motionProfiles[h.id],dir=h.id===s.active?Number(!!input.right)-Number(!!input.left):0;
+  if(!h.magnet&&h.boots&&h.inventory.includes('magneticShoes')&&!h.detachTime&&!h.dead){for(const plate of magneticRails(s)){const q=nearestRail(plate,h.x,h.y+44);if((q.distance<6&&h.vy>=-20)||(plate.phase==='roof'&&h.y+44>plate.y&&q.distance<112)){h.magnet={plateId:plate.id,u:q.u,attaching:true,...(plate.phase==='roof'?{pull:0,startX:h.x,startY:h.y+44}: {})};h.climbing=false;h.climbMoving=false;h.land=0;h.magV=0;break;}}}
+  if(h.magnet){const plate=magneticRails(s).find(p=>p.id===h.magnet.plateId),profile=motionProfiles[h.id],dir=h.id===s.active?Number(!!input.right)-Number(!!input.left):0;
    const old=h.magV||0,target=dir*profile.speed,change=(dir?profile.accel:profile.brake)*dt;h.magV=old+Math.sign(target-old)*Math.min(Math.abs(target-old),change);const travel=(old+h.magV)*.5*dt;h.magnet.u+=travel;h.walk=(h.walk||0)+Math.abs(travel)/9;if(dir)h.face=dir;h.moveX=0;attached.push(h);magneticPoint(h,plate,dt);
   }
  }

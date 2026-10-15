@@ -1,7 +1,7 @@
 // Original procedural artwork restored from d2c551a; current pose and shield geometry retained.
 import {SHIELD,shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
-import {drawProceduralSwim} from './swim-procedural.js?v=water114';
+import {drawProceduralSwim} from './swim-procedural.js?v=orbit116';
 const clamp=(n,a,b)=>Math.max(a,Math.min(b,n));
 const palettes=[
  {cloth:'#ca512d',light:'#f78342',dark:'#803425',hair:'#b44421',gold:'#efd293',skin:'#f2b77e',shadow:'#b87751'},

@@ -4,6 +4,10 @@ const noise=(frequency,end,duration,volume=.16,delay=0)=>tone(frequency,end,dura
 const metal=(f=720)=>[noise(2800,500,.045,.13),tone(f,f*.97,.34,.1,'sine'),tone(f*2.71,f*2.68,.2,.04,'sine')];
 const chime=(f=440)=>[tone(f,f,.18,.13,'sine'),tone(f*1.25,f*1.25,.2,.1,'sine',.09),tone(f*1.5,f*1.5,.32,.1,'sine',.18)];
 export const effects={
+ magnetOn:[tone(110,330,.24,.14,'sine'),...metal(950),tone(720,1080,.13,.07,'sine',.08)],
+ magnetOff:[tone(440,90,.22,.13,'sine'),noise(1500,150,.08,.07)],
+ magnetGrab:[...metal(680),tone(100,75,.2,.09,'triangle')],
+
  wardenCharge:[{...noise(350,2600,1.5,.085),attack:1.15},{...tone(90,620,1.5,.07,'sine'),attack:1.1},{...tone(180,1240,1.4,.035,'sine',.08),attack:1.05}],
  wardenLaser:[noise(6500,900,.35,.28),noise(1800,240,.55,.16,.025),tone(180,48,.38,.21,'sine'),tone(1200,260,.3,.06,'sawtooth'),noise(900,180,.6,.065,.12)],
  wardenDrop:[{...noise(240,1800,.5,.2),attack:.32},{...tone(110,58,.55,.09,'sine'),attack:.27},{...noise(2400,600,.18,.07,.27),attack:.08}],

@@ -1,0 +1,33 @@
+{
+  "review": "docs/history/ORBIT116-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "scope": "Unchanged approved orbit113 rasters and native source-cell reuse only; no new generated raster",
+    "reason": "Reinspected retained parts raw/native and plate native art, original approval provenance and current source crops. Plate192x96, parts256x128, far/middle768x512 and gear256x256 retain2-world-unit native pixels. No density rescue or per-frame stretch introduced.",
+    "provenance": "assets/orbit113/visual-gates.json"
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independent final native1x/2x/coarse-mobile review accepted sustained shield/handle contact, three visible pawl targets, persistent timeout cuts, empty and loaded jaw states, readable crane controls, grounded target posts, magnetic underside contacts, final Baleog/exit-target framing, receiving-deck crane lookahead and equipment badge.",
+    "evidence": [
+      "assets/orbit116/desktop/route.json",
+      "assets/orbit116/mobile/route.json",
+      "assets/orbit116/desktop/captures",
+      "assets/orbit116/mobile/captures",
+      "assets/orbit116/final-mobile/route.json",
+      "assets/orbit116/exit-aim/route.json",
+      "assets/orbit116/exit-aim/captures",
+      "assets/orbit116/final-hook/route.json",
+      "assets/orbit116/final-hook/captures",
+      "assets/orbit116/touch/captures/coarse-touch.png"
+    ]
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Normal-control coarse/mobile route with actual timeout retry wins allHP3/errors empty. Completed cuts remain persistent. Carrier steel blocks crossing arrows; Olaf physically reverses scrap and protects a companion. Final exit target is inspectable from Baleog firing view. All initially requested review corrections have been resolved."
+  },
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ]
+}

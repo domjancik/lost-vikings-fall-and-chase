@@ -103,3 +103,9 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
  #round-dialog{padding:14px}
 }
 @media(max-height:500px){.campaign-ticket{margin:0 auto;padding:14px}.picker-title{margin-bottom:12px}.picker-title h1{font-size:26px}.campaign-picker .campaign-choices button{min-height:44px}.start-overlay{padding:12px}}
+/* Persistent equipment state belongs to the picker, below the inventory row. */
+.magnet-status{position:absolute;right:4px;bottom:1px;white-space:nowrap;font:700 8px/9px monospace;letter-spacing:.2px;color:#9b9490;pointer-events:none}
+.magnet-status.on{color:#b7e7df;text-shadow:0 0 4px #487078}
+.magnet-status[hidden]{display:none}
+.crew .hero-card:has(.magnet-status:not([hidden])){height:46px;min-height:46px}
+.hero-card:has(.magnet-status:not([hidden])) .hero-info{align-self:flex-start}

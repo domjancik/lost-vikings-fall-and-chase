@@ -1,0 +1,18 @@
+{
+  "review": "docs/history/WATER115-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted"
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "swimArt": "accepted",
+    "movementPhase": "accepted",
+    "airVisibility": "accepted",
+    "fallingWaterEntry": "accepted",
+    "healthAfterOptics": "accepted",
+    "pending": [],
+    "supplementalEvidence": "assets/water115/supplemental/evidence.json",
+    "contexts": ["imagegen90-desktop", "imagegen90-mobile", "procedural-desktop", "procedural-mobile"]
+  },
+  "publicationAllowed": true
+}

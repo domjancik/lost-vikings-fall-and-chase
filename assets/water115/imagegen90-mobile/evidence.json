@@ -1,0 +1,3705 @@
+{
+  "skin": "imagegen90",
+  "mobile": true,
+  "errors": [],
+  "evidence": {
+    "standing-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 120,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 0.14166666666666666,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "standing-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 292,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0.14166666666666666,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "entry-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 355.5989583333337,
+          "y": 500.77430555555554,
+          "vx": 187.91666666666669,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 1.9166666666666856,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 0
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 120,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 1.3416666666666643,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "entry-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 355.5989583333337,
+          "y": 500.77430555555554,
+          "vx": 187.91666666666669,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 1.9166666666666856,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 0
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 298,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 1.3416666666666643,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-5": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 707.8159722222272,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 10.933333333333394,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 367.65972222222706,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 496,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 3.5416666666666567,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-6": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 739.1493055555611,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 10.733333333333405,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 394.07638888889437,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 6
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 530,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 3.741666666666656,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-7": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 773.1493055555618,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 10.516666666666751,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 423.1597222222284,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 7
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 2
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 562,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 3.958333333333322,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-0": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 804.4826388888957,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 10.316666666666762,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 449.57638888889574,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 0
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 2
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 596,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 4.15833333333333,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-1": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 838.4826388888964,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 10.100000000000108,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 478.6597222222298,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 1
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 1
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 628,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 4.375000000000007,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-2": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 872.3576388888971,
+          "vx": 0,
+          "vy": 145,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 9.883333333333454,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 506.40972222223047,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 2
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 1
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 662,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 4.5916666666666845,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-3": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 906.1076388888977,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 9.6666666666668,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 535.3263888888978,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 3
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 696,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 4.808333333333362,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "stroke-4": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 939.7326388888982,
+          "vx": 0,
+          "vy": 150,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 9.450000000000145,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 722,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 5.025000000000039,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "swimming-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 942.1076388888982,
+          "vx": 0,
+          "vy": 140,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 9.43333333333348,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 330,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 5.041666666666707,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "swimming-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 942.1076388888982,
+          "vx": 0,
+          "vy": 140,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 9.43333333333348,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 724,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 5.041666666666707,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "released-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 8.841666666666846,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 330,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 5.633333333333403,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "released-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 8.841666666666846,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 104,
+        "y": 724,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 5.633333333333403,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "inactive-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 8.225000000000215,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 1
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 120,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 6.2500000000001,
+      "active": 1,
+      "coarse": true,
+      "failed": false
+    },
+    "inactive-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 531.060763888889,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 8.225000000000215,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 562.9097222222317,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 4
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 1
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 292,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 6.2500000000001,
+      "active": 1,
+      "coarse": true,
+      "failed": false
+    },
+    "mirrored-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 498.58680555555577,
+          "y": 956,
+          "vx": -182.50000000000003,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.975000000000226,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 592.1666666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 330,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 6.500000000000113,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "mirrored-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 498.58680555555577,
+          "y": 956,
+          "vx": -182.50000000000003,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.975000000000226,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 592.1666666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 3
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 2
+        }
+      ],
+      "camera": {
+        "x": 50,
+        "y": 724,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 6.500000000000113,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "blocked-floor-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 492.7326388888891,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.5000000000002025,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 592.1666666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 330,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 6.975000000000136,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "blocked-floor-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 492.7326388888891,
+          "y": 956,
+          "vx": 0,
+          "vy": 0,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.5000000000002025,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 592.1666666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 0
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 3
+        }
+      ],
+      "camera": {
+        "x": 66,
+        "y": 724,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 6.975000000000136,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "resumed-1x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 492.7326388888891,
+          "y": 951.5,
+          "vx": 0,
+          "vy": -45,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.125000000000184,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 595.4166666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 0,
+        "y": 330,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 7.350000000000155,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    },
+    "resumed-2x": {
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 492.7326388888891,
+          "y": 951.5,
+          "vx": 0,
+          "vy": -45,
+          "ground": false,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "air": 7.125000000000184,
+          "underwater": true,
+          "inAirPocket": false,
+          "swimming": true,
+          "swimDistance": 595.4166666666761,
+          "waterFloat": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 496,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "air": 12,
+          "underwater": false,
+          "inAirPocket": false,
+          "swimming": false,
+          "waterFloat": false
+        }
+      ],
+      "animations": [
+        {
+          "id": 0,
+          "pose": "swim",
+          "frame": 5
+        },
+        {
+          "id": 1,
+          "pose": "idle",
+          "frame": 1
+        },
+        {
+          "id": 2,
+          "pose": "idle",
+          "frame": 0
+        }
+      ],
+      "camera": {
+        "x": 66,
+        "y": 724,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 7.350000000000155,
+      "active": 0,
+      "coarse": true,
+      "failed": false
+    }
+  },
+  "phases": [
+    5,
+    6,
+    7,
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "stopped": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 531.060763888889,
+        "y": 942.1076388888982,
+        "vx": 0,
+        "vy": 140,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 9.43333333333348,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 562.9097222222317,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 7.647500000000008,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 10
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 4
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 0
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 2
+      }
+    ],
+    "camera": {
+      "x": 104,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 5.041666666666707,
+    "active": 0,
+    "coarse": true,
+    "failed": false
+  },
+  "still": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 531.060763888889,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 8.858333333333512,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 562.9097222222317,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.849999999999994,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 8
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 4
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 1
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 0
+      }
+    ],
+    "camera": {
+      "x": 104,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 5.6166666666667355,
+    "active": 0,
+    "coarse": true,
+    "failed": false
+  },
+  "inactive": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 531.060763888889,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 8.250000000000213,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 562.9097222222317,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.295000000000002,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 9
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 4
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 3
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 1
+      }
+    ],
+    "camera": {
+      "x": 0,
+      "y": 294,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 6.225000000000099,
+    "active": 1,
+    "coarse": true,
+    "failed": false
+  },
+  "blocked": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 496.07118055555577,
+        "y": 956,
+        "vx": -140.4166666666667,
+        "vy": 0,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "air": 7.958333333333559,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 592.1666666666761,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 7.647500000000008,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 10
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 5
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 3
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 2
+      }
+    ],
+    "camera": {
+      "x": 50,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 6.51666666666678,
+    "active": 0,
+    "coarse": true,
+    "failed": false
+  },
+  "heldFloor": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 492.7326388888891,
+        "y": 956,
+        "vx": 0,
+        "vy": 0,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "air": 7.5333333333335375,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 592.1666666666761,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.295000000000002,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 11
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 5
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 0
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 3
+      }
+    ],
+    "camera": {
+      "x": 64,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 6.941666666666801,
+    "active": 0,
+    "coarse": true,
+    "failed": false
+  },
+  "resumed": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "x": 492.7326388888891,
+        "y": 952.75,
+        "vx": 0,
+        "vy": -60.00000000000001,
+        "ground": false,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "air": 7.150000000000185,
+        "underwater": true,
+        "inAirPocket": false,
+        "swimming": true,
+        "swimDistance": 595.4166666666761,
+        "waterFloat": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "x": 155,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": 28.675,
+          "y": 8.849999999999994,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": -0.13962634015954636,
+          "mode": "front",
+          "cell": 8
+        },
+        "x": 210,
+        "y": 496,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "air": 12,
+        "underwater": false,
+        "inAirPocket": false,
+        "swimming": false,
+        "waterFloat": false
+      }
+    ],
+    "animations": [
+      {
+        "id": 0,
+        "pose": "swim",
+        "frame": 5
+      },
+      {
+        "id": 1,
+        "pose": "idle",
+        "frame": 1
+      },
+      {
+        "id": 2,
+        "pose": "idle",
+        "frame": 0
+      }
+    ],
+    "camera": {
+      "x": 66,
+      "y": 724,
+      "width": 855,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "time": 7.325000000000154,
+    "active": 0,
+    "coarse": true,
+    "failed": false
+  }
+}

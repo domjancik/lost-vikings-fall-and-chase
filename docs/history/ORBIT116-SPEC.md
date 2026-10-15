@@ -1,0 +1,11 @@
+# Scrap Orbit116: readable magnetic machinery
+
+The sorter suspends scrap carriers in two local gravity wells. Three stolen service shoes let adult human workers hold moving steel and its underside; overhead maintenance rails demonstrate attraction safely before the crane gallery.
+
+- Shoes have persistent lit soles, an ON/OFF HUD badge, distinct engagement/release tones and a smooth upward capture toward nearby ceiling steel. Detachment restores normal gravity. Attaching always ends ladder animation.
+- Olaf pushes with his shield physically touching the carrier end; no remote movement. Existing authored carrier sprites remain at native density.
+- Debris continuously follows elliptical orbits about its field center, with safe lower recovery floors. Separate smaller distant scrap circles in both parallax planes; native-grid field distortion shows energy without transparent duplicate backgrounds.
+- The crane's every clamp attempt closes and reopens its jaws. A thirty-unit eye capture tolerance and a visible receiving cradle replace pixel hunting. Clamped controls remain onscreen: arrows move, action grips, alt releases, use exits. A broad receiver captures, then seats continuously; a tether connects carrier eye to the hook. Docking clearly changes the socket and exit-restraint state.
+- A graduated rotating-bow challenge adds three numbered restraint shutters around the first well. The currently exposed rope and progressive lamps explain the ordered circuit. The first hit starts a generous twenty-second circuit window, with a visible countdown arc; a miss does not erase progress, timeout closes remaining shutters for four seconds while the flywheel recovers, then resumes the next intact restraint. Severed ropes and released pawls remain permanent. All three physical ropes use the established cuttable material. Completing the circuit parks the carrier. Final crane restraint remains a single readable repeat.
+
+Independent critique must inspect causality, boots cues, object grounding, continuous animation, forgiving crane end state, collision and normal-input healthy routes at60/120Hz plus desktop1x/2x and coarse mobile. Preserve the existing approved backgrounds and native sprite density; no enlargement to hide pixel defects.

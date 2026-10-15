@@ -1,0 +1,201 @@
+{
+  "origin": [
+    40,
+    48
+  ],
+  "nativeCell": [
+    80,
+    80
+  ],
+  "authoringCell": [
+    64,
+    64
+  ],
+  "columns": 4,
+  "worldPixel": 2,
+  "targetHelmet": [
+    52,
+    48
+  ],
+  "standingArea": 510,
+  "records": [
+    {
+      "frame": 0,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 0,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.0,
+        36.5
+      ],
+      "translation": [
+        10,
+        12
+      ],
+      "bounds": [
+        23,
+        42,
+        65,
+        67
+      ],
+      "opaqueArea": 462
+    },
+    {
+      "frame": 1,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 1,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.0,
+        37.0
+      ],
+      "translation": [
+        10,
+        11
+      ],
+      "bounds": [
+        24,
+        41,
+        62,
+        66
+      ],
+      "opaqueArea": 502
+    },
+    {
+      "frame": 2,
+      "source": "assets/water114/erik-swim-raw-v3.png",
+      "sourceCell": 2,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.5,
+        36.5
+      ],
+      "translation": [
+        10,
+        12
+      ],
+      "bounds": [
+        22,
+        40,
+        60,
+        68
+      ],
+      "opaqueArea": 568
+    },
+    {
+      "frame": 3,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 3,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        43.0,
+        36.5
+      ],
+      "translation": [
+        9,
+        12
+      ],
+      "bounds": [
+        21,
+        42,
+        63,
+        67
+      ],
+      "opaqueArea": 490
+    },
+    {
+      "frame": 4,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 4,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.5,
+        36.5
+      ],
+      "translation": [
+        10,
+        12
+      ],
+      "bounds": [
+        23,
+        42,
+        64,
+        67
+      ],
+      "opaqueArea": 488
+    },
+    {
+      "frame": 5,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 5,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.5,
+        36.5
+      ],
+      "translation": [
+        10,
+        12
+      ],
+      "bounds": [
+        24,
+        41,
+        62,
+        67
+      ],
+      "opaqueArea": 475
+    },
+    {
+      "frame": 6,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 6,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        42.5,
+        37.0
+      ],
+      "translation": [
+        10,
+        11
+      ],
+      "bounds": [
+        22,
+        39,
+        60,
+        66
+      ],
+      "opaqueArea": 526
+    },
+    {
+      "frame": 7,
+      "source": "assets/water114/erik-swim-raw-v2.png",
+      "sourceCell": 7,
+      "authoringCell": 64,
+      "nativeCell": 80,
+      "helmetAnchor": [
+        43.5,
+        36.0
+      ],
+      "translation": [
+        8,
+        12
+      ],
+      "bounds": [
+        20,
+        42,
+        62,
+        67
+      ],
+      "opaqueArea": 441
+    }
+  ],
+  "sourceGate": "accepted",
+  "runtimeGate": "pending"
+}

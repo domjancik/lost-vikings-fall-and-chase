@@ -5,6 +5,13 @@ export const ORBIT_ART={
  background:{native:[768,512],world:[1536,1024],foundation:450}
 };
 const q=n=>Math.round(n/2)*2;
+// Scenery has its own footprint, palette and depth; it never shares hazard art scale.
+export function orbitSceneryColor(r,g,b){const light=(r*.2126+g*.7152+b*.0722)/255;return[18+Math.round(light*14),32+Math.round(light*18),43+Math.round(light*20)];}
+export function orbitScrapDepthPlan(time,camera){
+ const middle=Array.from({length:8},(_,n)=>{const angle=time*(n%2?.035:-.027)+n*2.4;return{x:q(660+(n%4)*760+camera.x*.48+Math.cos(angle)*(110+n*6)),y:q(220+Math.floor(n/4)*420+camera.y*.3+Math.sin(angle)*(76+n*4)),angle,native:32,size:64,kind:n%2?7:6,layer:'behind-middle'};});
+ const far=Array.from({length:12},(_,n)=>{const angle=n*1.9+time*(n%2?.012:-.016);return{x:q(240+(n%6)*510+camera.x*.87+Math.cos(angle)*54),y:q(100+Math.floor(n/6)*360+camera.y*.67+Math.sin(angle)*36),angle,native:24,size:48,kind:n%3,layer:'behind-middle-and-scrap'};});
+ return{middle,far};
+}
 export function plateArtPlacement(p){return{x:q(p.x-256),y:q(p.y-256),w:512,h:512,pivot:[q(p.x),q(p.y)]};}
 export function hookArtPlacement(k){return{x:q(k.x-64),y:q(k.y-88),w:128,h:128,stemX:q(k.x),stemY:q(k.y-82),tipY:q(k.y+24)};}
 export function orbitPlaneOffsets(camera){return{far:{x:q(camera.x*.82),y:q(100+camera.y*.6),factorX:.82,factorY:.6},middle:{x:q(camera.x*.26),y:q(156+camera.y*.025),factorX:.26,factorY:.025}};}

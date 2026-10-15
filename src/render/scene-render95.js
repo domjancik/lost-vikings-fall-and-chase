@@ -1,4 +1,4 @@
-import {drawCycleWorld} from '../campaigns/machines/cycle-render.js?v=orbit117';
+import {drawCycleWorld} from '../campaigns/machines/cycle-render.js?v=orbit119';
 import {drawStoryBackground,drawStoryWorld} from '../campaigns/story/story-render.js?v=orbit113';
 import {drawWorld} from './world-render.js?v=orbit116';
 import {drawInventoryWorld} from './inventory-render.js?v=orbit113';

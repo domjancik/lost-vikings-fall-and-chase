@@ -1,0 +1,25 @@
+{
+  "review": "docs/history/ORBIT119-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Independently inspected approved original source, actual32px middle miniatures native12/13 and actual24px far silhouettes native0..4. Quiet opaque material and deliberate girder/rim/plate clusters preserve intended miniature readability; no halos, bright hazard highlights or density-rescue processing. Corrected harness captures both24/32 native classes explicitly."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Actual1x/2x portrait/landscape first-field/upper-gallery views distinguish tiny dim opaque scenery from bright192-world foreground hazards. Architecture occludes decorative layers; native density, contacts and scale preserved.",
+    "evidence": [
+      "assets/orbit119/local/route.json",
+      "assets/orbit119/local/captures",
+      "assets/orbit119/depth/evidence.json",
+      "assets/orbit119/depth"
+    ]
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Scenery-only change leaves hazards, physics and puzzle states unchanged. Focused ordinary-input route allHP3/errors empty; previous full healthy route remains applicable."
+  },
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ]
+}

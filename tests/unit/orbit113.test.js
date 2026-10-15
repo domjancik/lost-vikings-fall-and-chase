@@ -31,7 +31,7 @@ test('magnetic gait counts local foot travel once and never advances from passiv
  s.active=1;const u=h.magnet.u,walk=h.walk;tick(s,{right:true});assert.ok(Math.abs(h.walk-walk-Math.abs(h.magnet.u-u)/9)<1e-8);
 });
 test('hook clamp preserves actual carrier position and release does not teleport',()=>{
- const s=fresh(),g=s.machine,p=g.plates[1];g.panelOpen=true;g.operator=0;s.active=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});Object.assign(p,{x:2540,y:444,phase:'float'});Object.assign(g.hook,{x:2540,y:420});
+ const s=fresh(),g=s.machine,p=g.plates[1];g.panelOpen=true;g.ropeCut[4]=true;g.brakePose=1;g.operator=0;s.active=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});Object.assign(p,{x:2540,y:444,phase:'float'});Object.assign(g.hook,{x:2540,y:420});
  tick(s,{action:true});assert.equal(g.hook.plateId,1);const old=p.x;tick(s,{right:true});assert.ok(p.x>old&&p.x-old<2);const before={x:p.x,y:p.y};tick(s,{sword:true});assert.equal(g.hook.plateId,null);assert.ok(Math.hypot(p.x-before.x,p.y-before.y)<2);
 });
 test('orbiting debris damages exposed bodies along its continuous ellipse',()=>{
@@ -55,7 +55,7 @@ test('the timed shutter travels continuously before exposing rope, then reverses
  const s=fresh(),p=s.machine.plates[0];Object.assign(p,{x:1120,y:674,phase:'orbit'});for(let n=0;n<8;n++)tick(s);assert.ok(orbitRope(s,0).aperture>0&&orbitRope(s,0).aperture<1);assert.equal(orbitRope(s,0).open,false);for(let n=0;n<24;n++)tick(s);assert.equal(orbitRope(s,0).aperture,1);assert.equal(orbitRope(s,0).open,true);p.angle=Math.PI;tick(s);assert.ok(orbitRope(s,0).aperture>0&&orbitRope(s,0).aperture<1);assert.equal(orbitRope(s,0).open,false);for(let n=0;n<24;n++)tick(s);assert.equal(orbitRope(s,0).aperture,0);
 });
 test('hook operation ends when switching heroes or when its operator is hurt',()=>{
- const s=fresh(),g=s.machine;g.panelOpen=true;g.operator=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});s.active=1;tick(s);assert.equal(g.operator,null);g.operator=0;s.active=0;s.heroes[0].hurt=.3;tick(s);assert.equal(g.operator,null);
+ const s=fresh(),g=s.machine;g.panelOpen=true;g.ropeCut[4]=true;g.brakePose=1;g.operator=0;Object.assign(s.heroes[0],{x:1730,y:606,ground:true});s.active=1;tick(s);assert.equal(g.operator,null);g.operator=0;s.active=0;s.heroes[0].hurt=.3;tick(s);assert.equal(g.operator,null);
 });
 test('a lethal hazard during crane operation releases camera ownership in that same step',()=>{
  const s=fresh(),g=s.machine,h=s.heroes[0],d=g.debris[0];g.operator=0;s.active=0;Object.assign(h,{x:1730,y:606,ground:true,hp:1});Object.assign(d,{cx:1500,cy:628,clock:-1/120,angle:-Math.PI*2/7.8/120});tick(s);assert.equal(s.failed,true);assert.equal(h.dead,true);assert.equal(g.operator,null);

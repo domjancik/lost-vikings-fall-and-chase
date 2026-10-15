@@ -45,7 +45,7 @@ export function magneticMotion(s,input,dt){
  for(const h of s.heroes){h.detachTime=Math.max(0,(h.detachTime||0)-dt);if(h.boots&&!h.inventory.includes('magneticShoes'))h.boots=false;const p=magneticRails(s).find(p=>p.id===h.magnet?.plateId);
   if(h.magnet&&(!h.boots||!h.inventory.includes('magneticShoes')||h.dead)){if(p)detachMagnet(h,p);else h.magnet=null;}
   if(h.magnet&&h.id===s.active&&input.jump&&h.id===0){detachMagnet(h,p,true);continue;}
-  if(!h.magnet&&h.boots&&h.inventory.includes('magneticShoes')&&!h.detachTime&&!h.dead){for(const plate of magneticRails(s)){const q=nearestRail(plate,h.x,h.y+44);if((q.distance<6&&h.vy>=-20)||(plate.phase==='roof'&&h.y+44>plate.y&&q.distance<112)){h.magnet={plateId:plate.id,u:q.u,attaching:true,...(plate.phase==='roof'?{pull:0,startX:h.x,startY:h.y+44}: {})};h.climbing=false;h.climbMoving=false;h.land=0;h.magV=0;break;}}}
+  if(!h.magnet&&h.boots&&h.inventory.includes('magneticShoes')&&!h.detachTime&&!h.dead){for(const {plate,q} of magneticRails(s).map(plate=>({plate,q:nearestRail(plate,h.x,h.y+44)})).sort((a,b)=>a.q.distance-b.q.distance)){if(q.distance<112){h.magnet={plateId:plate.id,u:q.u,attaching:true,...(q.distance>6?{pull:0,startX:h.x,startY:h.y+44}: {})};h.climbing=false;h.climbMoving=false;h.land=0;h.magV=0;break;}}}
   if(h.magnet){const plate=magneticRails(s).find(p=>p.id===h.magnet.plateId),profile=motionProfiles[h.id],dir=h.id===s.active?Number(!!input.right)-Number(!!input.left):0;
    const old=h.magV||0,target=dir*profile.speed,change=(dir?profile.accel:profile.brake)*dt;h.magV=old+Math.sign(target-old)*Math.min(Math.abs(target-old),change);const travel=(old+h.magV)*.5*dt;h.magnet.u+=travel;h.walk=(h.walk||0)+Math.abs(travel)/9;if(dir)h.face=dir;h.moveX=0;attached.push(h);magneticPoint(h,plate,dt);
   }
@@ -53,3 +53,26 @@ export function magneticMotion(s,input,dt){
  return attached;
 }
 export function localHeroPoint(h,x,y){const a=h.rotation||0,c=Math.cos(a),s=Math.sin(a),sole=h.magnetSole||{x:h.x,y:h.y+44};return{x:sole.x+x*c-y*s,y:sole.y+x*s+y*c};}
+
+// Convex rounded steel against the ordinary upright actor box. Resolve every face,
+// not just a one-way deck, while magnetic actors use their exact rail sole instead.
+export function resolveSteelCollisions(s){
+ for(const h of s.heroes){if(h.magnet||h.dead)continue;
+  for(const p of magneticRails(s)){
+   if(Math.hypot(h.x-p.x,h.y+22-p.y)>p.w/2+80)continue;
+   const rx=p.capRx??p.h/2,ry=p.h/2,l=p.w-2*rx,c=Math.cos(p.angle),sn=Math.sin(p.angle),points=[];
+   for(let n=0;n<=8;n++){const a=-Math.PI/2+n*Math.PI/8;points.push({x:l/2+Math.cos(a)*rx,y:Math.sin(a)*ry});}
+   for(let n=0;n<=8;n++){const a=Math.PI/2+n*Math.PI/8;points.push({x:-l/2+Math.cos(a)*rx,y:Math.sin(a)*ry});}
+   const polygon=points.map(q=>({x:p.x+q.x*c-q.y*sn,y:p.y+q.x*sn+q.y*c})),cx=h.x,cy=h.y+22;
+   const axes=[{x:1,y:0},{x:0,y:1}];for(let n=0;n<polygon.length;n++){const a=polygon[n],b=polygon[(n+1)%polygon.length],len=Math.hypot(b.x-a.x,b.y-a.y);if(len)axes.push({x:-(b.y-a.y)/len,y:(b.x-a.x)/len});}
+   let push=null,depth=Infinity,separate=false;
+   for(const axis of axes){const center=cx*axis.x+cy*axis.y,r=16*Math.abs(axis.x)+22*Math.abs(axis.y),values=polygon.map(v=>v.x*axis.x+v.y*axis.y),lo=Math.min(...values),hi=Math.max(...values);
+    if(center+r<=lo||center-r>=hi){separate=true;break;}
+    const negative=center+r-lo,positive=hi-center+r,d=Math.min(negative,positive),sign=negative<positive?-1:1;if(d<depth){depth=d;push={x:axis.x*sign,y:axis.y*sign};}
+   }
+   if(separate||!push)continue;h.x+=push.x*(depth+.001);h.y+=push.y*(depth+.001);
+   const dot=h.vx*push.x+h.vy*push.y;if(dot<0){h.vx-=dot*push.x;h.vy-=dot*push.y;}
+   if(push.y<-.45){h.ground=true;h.support='orbit-'+p.id;h.vy=Math.min(0,h.vy);}
+  }
+ }
+}

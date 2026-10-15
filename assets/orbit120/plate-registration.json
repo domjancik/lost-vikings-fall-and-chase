@@ -1,0 +1,37 @@
+{
+  "source": "assets/orbit120/plate-raw-v4.png",
+  "sourceMaterialBox": [
+    51,
+    325,
+    1723,
+    560
+  ],
+  "uniformScale": 0.10287081339712918,
+  "roundedNativeBody": [
+    172,
+    24
+  ],
+  "nativeCanvas": [
+    192,
+    96
+  ],
+  "pivot": [
+    96,
+    48
+  ],
+  "paste": [
+    10,
+    36
+  ],
+  "alphaBox": [
+    10,
+    36,
+    182,
+    60
+  ],
+  "worldBody": [
+    344,
+    48
+  ],
+  "method": "original once; uniform nearest normalization; material alpha threshold; translation"
+}

@@ -1,12 +1,13 @@
-import {magneticRails,railContact} from './magnetic.js?v=orbit113';
+import {magneticRails,railContact} from './magnetic.js?v=orbit120';
 import {magneticSoles} from './hero-indicator.js?v=orbit117';
 const q=n=>Math.round(n/2)*2;
 export function magneticRefractionBands(s,view){
  if(s.level.mechanic!=='orbit')return [];
  const result=[];
  for(const [n,p]of s.machine.plates.entries()){
-  if(['ground','parked','dock','seating'].includes(p.phase))continue;
-  const cx=n===0?1120:2540,cy=n===0?674:444,rx=230,ry=180;
+  // The powered well exists independently of whether its carrier is inside it.
+  if(n===0?s.machine.sequence===3:s.machine.hookDocked)continue;
+  const cx=n===0?1120:2540,cy=n===0?674:444,rx=n===0?230:220,ry=n===0?180:140;
   const top=Math.ceil(Math.max(cy-ry,view.y)/2)*2,bottom=Math.floor(Math.min(cy+ry,view.y+view.height)/2)*2;
   for(let y=top;y<bottom;y+=4){const normalized=(y-cy)/ry,reach=Math.sqrt(Math.max(0,1-normalized*normalized))*rx;
    for(const side of [-1,1]){const middle=cx+side*reach,left=Math.ceil(Math.max(middle-18,view.x)/2)*2,right=Math.floor(Math.min(middle+18,view.x+view.width)/2)*2,offset=q(Math.sin(y*.07-s.time*5)*4),w=right-left-Math.abs(offset);if(w>0)result.push({x:left+Math.max(0,-offset),sourceX:left+Math.max(0,offset),y,w,h:Math.min(4,bottom-y)});}

@@ -10,7 +10,7 @@ import {startBash,bashImpact} from '../../core/bash.js?v=orbit113';
 
 import {ladderAtHero} from '../../core/ladder-context.js?v=orbit113';
 
-import {magneticMotion,magneticPoint,localHeroPoint,recoverFreeRotation,magneticRails} from './magnetic.js?v=orbit116';
+import {magneticMotion,resolveSteelCollisions,magneticPoint,localHeroPoint,recoverFreeRotation,magneticRails} from './magnetic.js?v=orbit120';
 
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 
@@ -22,7 +22,7 @@ export const orbitLevel={name:'SCRAP ORBIT',subtitle:'Iron remembers the undersi
 
  story:['Rejected storms leave iron behind. A magnetic sorter turns it above the furnace recovery gallery.','Its shoes still cling to the service rails. The departure crane waits behind a cracked cover.'],
 
- hint:'Pick up magnetic shoes and use their bag slot to wear them. Olaf pushes roller frames into the coils. Shoes follow steel rails around the underside. Cut the three lit restraints around the first well in order. Your released pawls stay open. Bash the cracked crane cover, use the panel and steer the hook; action clamps, alt releases, use leaves.',
+ hint:'Pick up magnetic shoes and use their bag slot to wear them. Olaf pushes roller frames into the coils. Shoes follow steel rails around the underside. Strike all three spring switches within one revolution. From the overhead rail, shoot the short cable to release the crane brake. Bash the cracked crane cover, use the panel and steer the hook; action clamps, alt releases, use leaves.',
 
  floors:[floor(0,1180,3560),floor(0,1000,980),floor(1690,650,750),floor(2860,300,700)],platforms:[],ladders:[{x:260,top:1000,bottom:1180},{x:1780,top:650,bottom:1180}],exit:{x:3440,y:300,w:160}};
 
@@ -32,7 +32,7 @@ export function setupOrbit(s){
 
  for(const h of s.heroes)Object.assign(h,{x:100+h.id*55,y:956,vx:0,vy:0,ground:true,support:null,rotation:0,magnet:null,boots:false});
 
- s.machine={plates:[{id:0,x:780,y:1024,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0},{id:1,x:2150,y:674,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0}],sequence:0,sequenceUntil:0,sequenceRecoverUntil:0,ropeCut:[false,false,false,false],ropePose:[0,0,0,0],ropeAperture:[0,0,0,0],panelOpen:false,panelPose:0,operator:null,roofs:[{id:2,x:1890,y:532,w:344,h:48,capRx:16,angle:0,phase:'roof',vx:0,vy:0}],hook:{x:2540,y:380,vx:0,vy:0,plateId:null,offset:null,grab:0,attempts:0},hookDocked:false,exitPose:0,ladderPose:0,blocks:0,safety:false,
+ s.machine={plates:[{id:0,x:780,y:1024,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0},{id:1,x:2150,y:674,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0}],sequence:0,sequenceUntil:0,sequenceStartAngle:null,sequenceRecoverUntil:0,resetAt:-100,releaseAt:null,releasePose:0,brakePose:0,ropeCut:[false,false,false,false,false],ropePose:[0,0,0,0,0],ropeAperture:[0,0,0,0,1],panelOpen:false,panelPose:0,operator:null,roofs:[{id:2,x:1890,y:552,w:344,h:48,capRx:16,angle:0,phase:'roof',vx:0,vy:0}],hook:{x:2540,y:380,vx:0,vy:0,plateId:null,offset:null,grab:0,attempts:0},hookDocked:false,exitPose:0,ladderPose:0,blocks:0,safety:false,
 
  debris:[{id:0,cx:1120,cy:674,rx:230,ry:180,clock:0,phase:'rest',x:1510,y:890,angle:0},{id:1,cx:2540,cy:444,rx:220,ry:140,clock:2,phase:'rest',x:2800,y:620,angle:0}]};
 
@@ -42,27 +42,31 @@ export function setupOrbit(s){
 
 }
 
-export function orbitSurfaces(s){return[...s.level.floors,...s.level.platforms,...s.machine.plates.filter(p=>Math.abs(Math.sin(p.angle))<.015).map(p=>({x:p.x-(p.w-2*p.capRx)/2,y:p.y-p.h/2,w:p.w-2*p.capRx,support:'orbit-'+p.id}))];}
+export function orbitSurfaces(s){return[...s.level.floors,...s.level.platforms,...magneticRails(s).filter(p=>Math.abs(Math.sin(p.angle))<.015).map(p=>({x:p.x-(p.w-2*p.capRx)/2,y:p.y-p.h/2,w:p.w-2*p.capRx,support:'orbit-'+p.id}))];}
 
 export function orbitObjects(s){const g=s.machine;return[{id:'orbit-crane-panel',x:1730,y:606,radius:72,title:'DEPARTURE CRANE',reason:g.panelOpen?'Arrows steer the hook. Action clamps, alt releases, use leaves.':'A cracked ceramic cover blocks the panel.',ready:g.panelOpen,done:g.hookDocked,
 
- run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';g.operator=g.operator===s.active?null:s.active;return g.operator===null?'Crane controls released.':'Crane controls engaged.';}}];}
+ run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';g.operator=g.operator===s.active?null:s.active;return g.operator===null?'Crane controls released.':g.brakePose<1?'The gantry brake is still clamped. Its short tension rope hangs above the gallery.':'Crane controls engaged.';}}];}
 
 const restraintOrder=[0,2,3];
 
-function ropeCommand(s,n){const g=s.machine;if(n===1)return g.hookDocked&&s.time%5.4<2.4;const index=restraintOrder.indexOf(n),angle=g.plates[0].angle-index*Math.PI/2;return s.time>=g.sequenceRecoverUntil&&g.sequence===index&&g.plates[0].phase==='orbit'&&Math.abs(Math.sin(angle/2))<.28;}
+function ropeCommand(s,n){const g=s.machine;if(n===4)return true;if(n===1)return g.hookDocked&&s.time%5.4<2.4;const index=restraintOrder.indexOf(n),angle=g.plates[0].angle-index*Math.PI/2;return !g.ropeCut[n]&&g.plates[0].phase==='orbit'&&Math.abs(Math.sin(angle/2))<.28;}
 
-export function orbitRope(s,n){const g=s.machine,[x,y]=[[1360,626],[3180,248],[1168,914],[880,722]][n];return{x,y,w:36,h:80,aperture:g.ropeAperture[n],open:g.ropeAperture[n]>=.9999&&ropeCommand(s,n),cut:g.ropeCut[n]};}
+export function orbitRope(s,n){const g=s.machine,[x,y]=[[1360,626],[3180,248],[1168,914],[880,722],[2110,600]][n];return{x,y,w:n===4?16:n===1?36:64,h:n===4?24:n===1?80:64,kind:n===4?'brake-rope':n===1?'exit-rope':'impact-switch',aperture:g.ropeAperture[n],open:g.ropeAperture[n]>=.9999&&ropeCommand(s,n),cut:g.ropeCut[n]};}
 
 function strikeRope(s,n,from,to){const r=orbitRope(s,n);if(r.cut||!segmentHit(from.x,from.y,to.x,to.y,{x:r.x-r.w/2,y:r.y-r.h/2,w:r.w,h:r.h}))return false;
 
- if(r.open){s.machine.ropeCut[n]=true;if(n!==1){s.machine.sequence++;s.machine.lastPawlAt=s.time;if(s.machine.sequence===1)s.machine.sequenceUntil=s.time+20;if(s.machine.sequence===3)s.machine.plates[0].phase='dock';}message(s,n===1?'Exit restraint released. The reunion ladder descends.':s.machine.sequence===3?'All three pawls released. The carrier glides into the receiving dock.':'Pawl '+s.machine.sequence+'/3 released. Follow the next lit rope around the well.');}return true;
+ if(r.open){const g=s.machine;g.ropeCut[n]=true;
+  if(n===4){g.brakeReleasedAt=s.time;message(s,'The short cable parts. The crane brake springs open.');}
+  else if(n===1)message(s,'Exit restraint released. The reunion ladder descends.');
+  else{g.lastPawlAt=s.time;g.lastSwitch=n;if(g.sequence===0)g.sequenceStartAngle=g.plates[0].angle;g.sequence=restraintOrder.filter(id=>g.ropeCut[id]).length;g.sequenceUntil=s.time+(Math.PI*2-(g.plates[0].angle-g.sequenceStartAngle))/(Math.PI/8);if(g.sequence===3){g.releaseAt=s.time;g.plates[0].phase='release';message(s,'Three switches latched. The retaining assembly releases.');}else message(s,g.sequence+'/3 latched · complete the set before one full revolution.');}
+ }return true;
 
 }
 
 function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 
- if(g.sequence>0&&g.sequence<3&&s.time>g.sequenceUntil){g.sequenceRecoverUntil=s.time+4;g.sequenceUntil=s.time+24;message(s,'The shutter drive cools for a moment. Released pawls stay open; the next rope will reopen.');}
+
 
  g.pushContact=null;g.hook.grab=Math.max(0,(g.hook.grab||0)-dt);for(const h of s.heroes)h.bootPulse=Math.max(0,(h.bootPulse||0)-dt);
 
@@ -75,6 +79,8 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
   if(p.phase==='lift'){const y=p.id===0?674:444;p.y=approach(p.y,y,120*dt);if(p.y===y)p.phase=p.id===0?'orbit':'float';}
 
   if(p.phase==='orbit')p.angle+=Math.PI/8*dt;
+  if(p.id===0)if(g.sequence>0&&g.sequence<3&&g.plates[0].angle-g.sequenceStartAngle>=Math.PI*2){for(const n of restraintOrder)g.ropeCut[n]=false;g.sequence=0;g.sequenceStartAngle=null;g.sequenceUntil=0;g.resetAt=s.time;message(s,'One revolution elapsed. The three spring switches return.');}
+  if(p.phase==='release'){g.releasePose=Math.min(1,g.releasePose+dt/1.1);if(g.releasePose===1)p.phase='dock';}
 
   if(p.phase==='float'&&g.hook.plateId!==p.id)p.angle=approach(p.angle,Math.sin(s.time*.45)*.18,.2*dt);
 
@@ -90,7 +96,7 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 
  if(operator&&(g.operator!==s.active||operator.dead||operator.hurt>0||Math.abs(operator.x-1730)>76||Math.abs(operator.y+44-650)>18))g.operator=null;
 
- if(g.operator!==null){const k=g.hook,kx=k.x,ky=k.y;k.vx=approach(k.vx,(Number(!!input.right)-Number(!!input.left))*170,500*dt);k.vy=approach(k.vy,(Number(!!input.down)-Number(!!input.up))*140,500*dt);k.x=Math.max(2100,Math.min(3040,k.x+k.vx*dt));k.y=Math.max(260,Math.min(600,k.y+k.vy*dt));
+ if(g.operator!==null&&g.brakePose>=.999){const k=g.hook,kx=k.x,ky=k.y;k.vx=approach(k.vx,(Number(!!input.right)-Number(!!input.left))*170,500*dt);k.vy=approach(k.vy,(Number(!!input.down)-Number(!!input.up))*140,500*dt);k.x=Math.max(2100,Math.min(3040,k.x+k.vx*dt));k.y=Math.max(260,Math.min(600,k.y+k.vy*dt));
 
   if(input.action){k.grab=.42;k.attempts=(k.attempts||0)+1;}
 
@@ -106,7 +112,7 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 
  const p=g.plates[1];if(p.phase==='seating'){p.x=approach(p.x,2900,70*dt);p.y=approach(p.y,324,70*dt);p.angle=approach(p.angle,0,.3*dt);if(p.x===2900&&p.y===324)p.phase='parked';}
 
- g.panelPose=approach(g.panelPose,g.panelOpen?1:0,dt/.65);for(let n=0;n<4;n++){g.ropePose[n]=approach(g.ropePose[n],g.ropeCut[n]?1:0,dt/.65);g.ropeAperture[n]=approach(g.ropeAperture[n],ropeCommand(s,n)?1:0,dt/.2);}g.exitPose=approach(g.exitPose,g.ropeCut[1]?1:0,dt);g.ladderPose=approach(g.ladderPose,g.ropeCut[1]?1:0,dt/1.2);
+ g.brakePose=approach(g.brakePose,g.ropeCut[4]?1:0,dt/.7);g.panelPose=approach(g.panelPose,g.panelOpen?1:0,dt/.65);for(let n=0;n<5;n++){g.ropePose[n]=approach(g.ropePose[n],g.ropeCut[n]?1:0,dt/.65);g.ropeAperture[n]=approach(g.ropeAperture[n],ropeCommand(s,n)?1:0,dt/.2);}g.exitPose=approach(g.exitPose,g.ropeCut[1]?1:0,dt);g.ladderPose=approach(g.ladderPose,g.ropeCut[1]?1:0,dt/1.2);
 
  s.level={...orbitLevel,ladders:[...orbitLevel.ladders,...(g.ladderPose>0?[{x:2980,top:300,bottom:300+880*g.ladderPose}]:[])]};
 
@@ -115,11 +121,15 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 function arrows(s,dt){for(const p of s.shots){const ox=p.x,oy=p.y;p.x+=(p.vx??p.v??0)*dt;p.y+=(p.vy||0)*dt;p.life=(p.life??4)-dt;
 
  for(const steel of magneticRails(s)){const c=Math.cos(steel.angle),sn=Math.sin(steel.angle),local=(x,y)=>({x:(x-steel.x)*c+(y-steel.y)*sn,y:-(x-steel.x)*sn+(y-steel.y)*c}),a=local(ox,oy),b=local(p.x,p.y);if(segmentHit(a.x,a.y,b.x,b.y,{x:-steel.w/2+(steel.capRx||0),y:-steel.h/2,w:steel.w-2*(steel.capRx||0),h:steel.h})){p.dead=true;break;}}
- if(p.dead)continue;for(let n=0;n<4;n++)if(strikeRope(s,n,{x:ox,y:oy},p)){p.dead=true;break;}
+ if(p.dead)continue;for(let n=0;n<5;n++)if(strikeRope(s,n,{x:ox,y:oy},p)){p.dead=true;break;}
 
  }s.shots=s.shots.filter(p=>!p.dead&&p.life>0&&p.x>0&&p.x<3560&&p.y>0&&p.y<1300);}
 
-function debris(s,dt){for(const d of s.machine.debris){const oldX=d.x,oldY=d.y;d.clock+=dt;d.escape=approach(d.escape||0,(d.id===0?s.machine.sequence===3:s.machine.hookDocked)?320:0,100*dt);d.phase='active';d.deflectGrace=Math.max(0,(d.deflectGrace||0)-dt);d.angle+=(d.direction||1)*dt*Math.PI*2/7.8;d.x=d.cx+Math.cos(d.angle)*(d.rx+d.escape);d.y=d.cy-d.escape*2+Math.sin(d.angle)*(d.ry+d.escape*.7);d.vx=(d.x-oldX)/dt;d.vy=(d.y-oldY)/dt;
+function debris(s,dt){for(const d of s.machine.debris){const oldX=d.x,oldY=d.y;d.clock+=dt;d.escape=approach(d.escape||0,(d.id===0?s.machine.sequence===3:s.machine.hookDocked)?320:0,100*dt);d.phase='active';d.deflectGrace=Math.max(0,(d.deflectGrace||0)-dt);d.angle+=(d.direction||1)*dt*Math.PI*2/7.8;const released=d.id===0?s.machine.sequence===3:s.machine.hookDocked;
+ if(released&&!d.release){const length=Math.hypot(oldX-d.cx,oldY-d.cy);d.release={at:s.time,x:oldX,y:oldY,vx:(oldX-d.cx)/length*280+(d.vx||0)*.2,vy:(oldY-d.cy)/length*280+(d.vy||0)*.2};}
+ if(d.release){const t=s.time-d.release.at;d.x=d.release.x+d.release.vx*t;d.y=d.release.y+d.release.vy*t-t*t*40;}
+ else{d.x=d.cx+Math.cos(d.angle)*d.rx;d.y=d.cy+Math.sin(d.angle)*d.ry;}
+ d.vx=(d.x-oldX)/dt;d.vy=(d.y-oldY)/dt;
 
  if(d.phase==='active'&&!s.machine.safety)for(const h of s.heroes){if(h.dead||d.deflector===h.id&&d.deflectGrace>0||Math.hypot(h.x-d.x,h.y+22-d.y)>42)continue;const local=localHeroPoint(h,h.face*24,-24),c=Math.cos(h.rotation||0),sn=Math.sin(h.rotation||0),front=((d.x-h.x)*c+(d.y-h.y-22)*sn)*h.face,approach=(d.vx*c+d.vy*sn)*h.face;
 
@@ -139,7 +149,7 @@ export function orbitStep(s,input,dt){const g=s.machine,a=s.heroes[s.active];s.t
 
  if(input.interact){if(g.operator===s.active)g.operator=null;else if(!pickupItem(s)){const object=orbitObjects(s).find(o=>Math.abs(a.x-o.x)<o.radius&&Math.abs(a.y-o.y)<60);if(object)message(s,object.run());}}
 
- if(!operating&&a.id===1&&input.sword&&s.cooldown===0){a.swing=.24;s.cooldown=.3;const from=localHeroPoint(a,a.face*18,-24),to=localHeroPoint(a,a.face*84,-24);for(let n=0;n<4;n++)strikeRope(s,n,from,to);}
+ if(!operating&&a.id===1&&input.sword&&s.cooldown===0){a.swing=.24;s.cooldown=.3;const from=localHeroPoint(a,a.face*18,-24),to=localHeroPoint(a,a.face*84,-24);for(let n=0;n<5;n++)strikeRope(s,n,from,to);}
 
  if(!operating&&a.id===1&&input.action&&s.cooldown===0){const muzzle=localHeroPoint(a,a.face*25,-24),angle=a.rotation||0;a.bow=.28;s.cooldown=.35;s.shots.push({kind:'arrow',x:muzzle.x,y:muzzle.y,v:Math.cos(angle)*a.face*580,vx:Math.cos(angle)*a.face*580,vy:Math.sin(angle)*a.face*580,life:4});}
 
@@ -151,7 +161,7 @@ export function orbitStep(s,input,dt){const g=s.machine,a=s.heroes[s.active];s.t
 
  const shieldUp=s.heroes[2].shieldUp;if(Math.abs(s.heroes[2].rotation||0)>.05)s.heroes[2].shieldUp=false;
 
- integrateMotion(s,orbitSurfaces(s),[{x:3310,w:60,top:200,bottom:300,on:g.exitPose<.99}],dt);s.heroes[2].shieldUp=shieldUp;
+ integrateMotion(s,orbitSurfaces(s),[{x:3310,w:60,top:200,bottom:300,on:g.exitPose<.99}],dt);s.heroes[2].shieldUp=shieldUp;resolveSteelCollisions(s);
 
  for(const h of attached){h.walk=attachedWalk.get(h);magneticPoint(h,magneticRails(s).find(p=>p.id===h.magnet.plateId));}for(const {h,x,y}of climbs){h.x=x;h.y=y;h.vy=0;h.ground=true;h.support='ladder';h.climbMoving=h.id===s.active&&(input.up||input.down);}
 

@@ -4,6 +4,9 @@ const noise=(frequency,end,duration,volume=.16,delay=0)=>tone(frequency,end,dura
 const metal=(f=720)=>[noise(2800,500,.045,.13),tone(f,f*.97,.34,.1,'sine'),tone(f*2.71,f*2.68,.2,.04,'sine')];
 const chime=(f=440)=>[tone(f,f,.18,.13,'sine'),tone(f*1.25,f*1.25,.2,.1,'sine',.09),tone(f*1.5,f*1.5,.32,.1,'sine',.18)];
 export const effects={
+ orbitLatch:[...metal(820),tone(180,95,.16,.13,'triangle'),noise(1700,600,.09,.1)],
+ orbitReset:[tone(420,140,.3,.12,'triangle'),...metal(480),noise(2200,500,.28,.12)],
+ orbitRelease:[noise(2600,120,.75,.3),tone(88,28,.8,.3,'sine'),...metal(320),tone(620,170,.36,.12,'triangle',.12),noise(4000,400,.45,.2,.25)],
  magnetOn:[tone(110,330,.24,.14,'sine'),...metal(950),tone(720,1080,.13,.07,'sine',.08)],
  magnetOff:[tone(440,90,.22,.13,'sine'),noise(1500,150,.08,.07)],
  magnetGrab:[...metal(680),tone(100,75,.2,.09,'triangle')],

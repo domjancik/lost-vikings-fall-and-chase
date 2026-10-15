@@ -865,6 +865,9 @@
     "assets/water115/visual-gates.json",
     "assets/orbit116/visual-gates.json",
     "assets/orbit117/visual-gates.json",
-    "assets/orbit119/visual-gates.json"
+    "assets/orbit119/visual-gates.json",
+    "assets/orbit120/plate-native.png",
+    "assets/orbit120/plate-registration.json",
+    "assets/orbit120/visual-gates.json"
   ]
 }

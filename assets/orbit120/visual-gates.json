@@ -1,0 +1,26 @@
+{
+  "review": "docs/history/ORBIT120-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Selectedv4 exec-3f45a539-b12f-4030-a734-5f14b0b36d53.png independently accepted before processing: broad ribs/bolt blocks/copper bars/bearing/cyan clusters match intended172x24 native body. V1/v3 rejected; v2 density-safe but not selected. Uniform normalization/translation only; processed native registration remains runtime-gate condition."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independent selectedv4 processed/native registration and actual1x/2x/mobile review accepted rigid344x48 carrier contacts, spring-switch states/reset/disassembly, unobstructed inverted ceiling rope/brake, field2-only optics, rolling trolley wheel and physically seated U-tray. V1/v3 remain rejected and excluded.",
+    "evidence": [
+      "assets/orbit120/plate-registration.json",
+      "assets/orbit120/route/route.json",
+      "assets/orbit120/retry/route.json",
+      "assets/orbit120/retry/native",
+      "assets/orbit120/retry/captures"
+    ]
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Full real-browser ordinary route wins allHP3/errors empty; deliberate one-revolution timeout/reset retry also wins allHP3/errors empty with151 captures. Physical short ceiling rope gives roof a causal purpose. Any-order switch set and exact angular deadline, common attraction/collision, brake delay and audio regressions pass10/10 independently."
+  },
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ]
+}

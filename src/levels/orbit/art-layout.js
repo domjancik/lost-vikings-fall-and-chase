@@ -30,3 +30,5 @@ export function orbitConnectionRoutes(hook,rope,first={x:1360,y:626}){return[
  [[3180,rope.y-36],[3180,154],[3340,154],[3340,202]],
  [[q(hook.x),120],[q(hook.x),hookArtPlacement(hook).stemY]]
 ];}
+
+export const craneWheelAngle=hook=>(hook.x-2540)/16;

@@ -1,3 +1,4 @@
+import {drawSewerFog} from './fog.js?v=sewer130';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer129';
 import {visibilityPolygon} from './optics.js?v=sewer125';
@@ -67,7 +68,7 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[];c.
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
  flow(c,s);contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});
- return{ready:[environment,props,items,grounded].every(ready),mechanic:'sewer',release:'sewer125',contacts,lamps:sewerLights(s),blackAmbient:true};
+ return{ready:[environment,props,items,grounded].every(ready),mechanic:'sewer',release:'sewer125',contacts,lamps:sewerLights(s),blackAmbient:false,occludedAmbient:true};
 }
 let mask;
 export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer')return null;
@@ -81,7 +82,7 @@ export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer'
  }
  // Outlet foreground covers actors only after their continuous440world journey.
  if(ready(environment)){for(let y=818;y<1100;y+=120)wall(c,3110,y,190,120);cell(c,environment,12,3090,812);}
- const width=Math.ceil(view.width/2),height=Math.ceil(view.height/2);if(!mask)mask=document.createElement('canvas');if(mask.width!==width||mask.height!==height){mask.width=width;mask.height=height;}const g=mask.getContext('2d');g.setTransform(.5,0,0,.5,-camera.x/2,-camera.y/2);g.globalCompositeOperation='source-over';g.fillStyle='#000';g.fillRect(camera.x,camera.y,width*2,height*2);g.globalCompositeOperation='destination-out';
+ const width=Math.ceil(view.width/2),height=Math.ceil(view.height/2);if(!mask)mask=document.createElement('canvas');if(mask.width!==width||mask.height!==height){mask.width=width;mask.height=height;}const g=mask.getContext('2d');g.setTransform(.5,0,0,.5,-camera.x/2,-camera.y/2);g.globalCompositeOperation='source-over';const fog=drawSewerFog(g,camera,width*2,height*2,s.time);g.globalCompositeOperation='destination-out';
  const lights=sewerLights(s),walls=sewerOccluders(s);let visible=0;
  for(const l of lights){if(l.x+l.radius<camera.x||l.x-l.radius>camera.x+view.width||l.y+l.radius<camera.y||l.y-l.radius>camera.y+view.height)continue;visible++;const points=visibilityPolygon(l,walls);g.save();g.beginPath();points.forEach((p,n)=>n?g.lineTo(q(p.x),q(p.y)):g.moveTo(q(p.x),q(p.y)));g.closePath();g.clip();if(l.focused){g.beginPath();g.moveTo(l.x,l.y-14);g.lineTo(l.x+l.face*l.radius,l.y-l.radius*.36-14);g.lineTo(l.x+l.face*l.radius,l.y+l.radius*.36+14);g.lineTo(l.x,l.y+14);g.closePath();g.clip();}const gradient=g.createRadialGradient(l.x,l.y,0,l.x,l.y,l.radius);gradient.addColorStop(0,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(.44,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=gradient;g.fillRect(l.x-l.radius,l.y-l.radius,l.radius*2,l.radius*2);g.restore();}
  g.globalCompositeOperation='source-over';c.imageSmoothingEnabled=false;c.drawImage(mask,q(camera.x),q(camera.y),width*2,height*2);
@@ -100,5 +101,5 @@ export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer'
  // The front-facing cap receives the light at its upper edge; the solid slab
  // still occludes everything behind/below it. This is surface lighting, not fill.
  for(const f of sewerOccluders(s).filter(a=>['floor','platform','landing'].includes(a.kind)))for(let x=Math.max(f.x,Math.floor(camera.x/16)*16);x<Math.min(f.x+f.w,camera.x+view.width);x+=16){const strength=Math.max(sewerLightAt(s,x+8,f.y-2),f.kind==='landing'?sewerFaceLight(s,f,f.y+10)*.75:0);if(strength<.02)continue;c.save();c.globalAlpha=strength*.86;c.beginPath();c.rect(x,f.y,Math.min(16,f.x+f.w-x),20);c.clip();floor(c,Math.floor(x/120)*120,f.y,120,20);c.restore();}
- return{ambient:0,lights:visible,occluders:walls.length,native:[width,height],readbacks:0};
+ return{ambient:0,lights:visible,occluders:walls.length,native:[width,height],readbacks:0,fog};
 }

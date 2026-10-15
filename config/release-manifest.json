@@ -581,6 +581,10 @@
       "output": "sewer-light.js"
     },
     {
+      "source": "src/levels/sewer/fog.js",
+      "output": "sewer-fog.js"
+    },
+    {
       "source": "src/levels/sewer/render.js",
       "output": "sewer-render.js"
     },

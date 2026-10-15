@@ -7,3 +7,5 @@ Regression covers current and repositioned jets, opening containment and native 
 Verification: 635 tests passed; build and release check match471 files; publish preflight472 files. Ordinary browser route completed in60.35s with all three at3HP, no page errors, continued into stable water level4. Evidence assets/sewer128/route includes1×/2×, portrait and landscape plus review-skin receipts.
 
 Independent sewer128_review critique: source gate accepted (existing source/detail density unchanged); runtime gate accepted (stream emerges within recessed mouth at1×/2× and mobile, bronze rim retained, no floating contact); aesthetic gate accepted (translation-only correction preserves existing pixel-art volume/materials). Latest imagegen90 review skin verified as vikings90 Erik/Baleog and olaf111.
+
+Published version01M50TDP3EMBTS9KEJAK4P1RZR. Live HTML and13 release files match the tested build. Implementation commit5621a7e.

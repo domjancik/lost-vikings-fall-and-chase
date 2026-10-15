@@ -1,0 +1,19 @@
+{
+  "commit": "5621a7e",
+  "checked": [
+    "cycle-render.js",
+    "campaign-menu95.js",
+    "engine.js",
+    "cycle-campaign.js",
+    "campaign-picker95.js",
+    "game.js",
+    "world-render.js",
+    "scene-render95.js",
+    "sewer-campaign.js",
+    "interactions.js",
+    "sewer-render.js",
+    "level-preview95.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

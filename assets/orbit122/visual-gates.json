@@ -1,0 +1,30 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/ORBIT122-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "No new raster; rich native121 selected sources and registered footprints unchanged. Provenance assets/orbit121/visual-gates.json."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Actual1x/2x/mobile shows real190-world shaft1870..2060, clean roof contacts/short brake aim, both heroes landing on right gallery, and supported second-carrier2280 push root2076. Floor/wall/support edges match geometry; full browser route allHP3/errors empty.",
+    "evidence": [
+      "assets/orbit122/route/route.json",
+      "assets/orbit122/route/captures",
+      "docs/history/ORBIT122-SPEC.md"
+    ]
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Unchanged rich121 art/material relief and latest90 characters retained; actual trimmed wall/open shaft/ledge/support views preserve believable depth and native contacts at1x/2x/mobile."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Ceiling physically transports Baleog/Olaf across missing floor while Erik controls crane from left. Initial unsupported push fixed by carrier2280. Full real-browser route winsHP3/3/3; independent3 tests prove no walking bypass, actual fall/ladder recovery, and healthy ordinary60/120 crossings."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "releaseConditions": [
+    "Final package/build/release checks"
+  ]
+}

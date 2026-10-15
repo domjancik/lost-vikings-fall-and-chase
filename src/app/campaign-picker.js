@@ -1,5 +1,5 @@
 import {storyLevels} from '../campaigns/story/story-campaign.js?v=orbit113';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=orbit120';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=orbit122';
 import {levels} from '../campaigns/arcade/levels.js?v=menu95';
 export const campaignChoices=[
  {id:'story',name:'The Return Address',levels:storyLevels},

@@ -1,4 +1,4 @@
-import {orbitRope} from './campaign.js?v=orbit120';
+import {orbitRope} from './campaign.js?v=orbit122';
 export function orbitCameraFocus(s,fallback){
  if(s.level.mechanic!=='orbit')return fallback;
  if(s.machine.operator!==s.active){const h=s.heroes[s.active];if(h.id===1&&h.magnet?.plateId===0&&(s.machine.plates[0].phase==='orbit'||s.time-(s.machine.lastPawlAt??-10)<.7)){const order=[0,2,3],recent=s.time-(s.machine.lastPawlAt??-10)<.7,n=recent?s.machine.lastSwitch??0:order.find(n=>!s.machine.ropeCut[n])??3,r=orbitRope(s,n);return {...fallback,x:(h.x+r.x)/2,y:(h.y+r.y-22)/2};}if(h.id===1&&h.magnet?.plateId===2&&!s.machine.ropeCut[4])return{...fallback,x:(h.x+2110)/2};return s.machine.hookDocked&&h.id===1&&h.magnet?.plateId===1?{...fallback,x:h.x+100}:fallback;}

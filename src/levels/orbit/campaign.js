@@ -22,9 +22,9 @@ export const orbitLevel={name:'SCRAP ORBIT',subtitle:'Iron remembers the undersi
 
  story:['Rejected storms leave iron behind. A magnetic sorter turns it above the furnace recovery gallery.','Its shoes still cling to the service rails. The departure crane waits behind a cracked cover.'],
 
- hint:'Pick up magnetic shoes and use their bag slot to wear them. Olaf pushes roller frames into the coils. Shoes follow steel rails around the underside. Strike all three spring switches within one revolution. From the overhead rail, shoot the short cable to release the crane brake. Bash the cracked crane cover, use the panel and steer the hook; action clamps, alt releases, use leaves.',
+ hint:'Pick up magnetic shoes and use their bag slot to wear them. Olaf pushes roller frames into the coils. Shoes follow steel rails around the underside. Strike all three spring switches within one revolution. Cross the open service gap on the overhead rail. Shoot its short cable to release the crane brake, then round the far end to reach the second carrier. Bash the cracked crane cover, use the panel and steer the hook; action clamps, alt releases, use leaves.',
 
- floors:[floor(0,1180,3560),floor(0,1000,980),floor(1690,650,750),floor(2860,300,700)],platforms:[],ladders:[{x:260,top:1000,bottom:1180},{x:1780,top:650,bottom:1180}],exit:{x:3440,y:300,w:160}};
+ floors:[floor(0,1180,3560),floor(0,1000,980),floor(1690,650,180),floor(2060,650,380),floor(2860,300,700)],platforms:[],ladders:[{x:260,top:1000,bottom:1180},{x:1780,top:650,bottom:1180}],exit:{x:3440,y:300,w:160}};
 
 export function setupOrbit(s){
 
@@ -32,7 +32,7 @@ export function setupOrbit(s){
 
  for(const h of s.heroes)Object.assign(h,{x:100+h.id*55,y:956,vx:0,vy:0,ground:true,support:null,rotation:0,magnet:null,boots:false});
 
- s.machine={plates:[{id:0,x:780,y:1024,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0},{id:1,x:2150,y:674,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0}],sequence:0,sequenceUntil:0,sequenceStartAngle:null,sequenceRecoverUntil:0,resetAt:-100,releaseAt:null,releasePose:0,brakePose:0,ropeCut:[false,false,false,false,false],ropePose:[0,0,0,0,0],ropeAperture:[0,0,0,0,1],panelOpen:false,panelPose:0,operator:null,roofs:[{id:2,x:1890,y:552,w:344,h:48,capRx:16,angle:0,phase:'roof',vx:0,vy:0}],hook:{x:2540,y:380,vx:0,vy:0,plateId:null,offset:null,grab:0,attempts:0},hookDocked:false,exitPose:0,ladderPose:0,blocks:0,safety:false,
+ s.machine={plates:[{id:0,x:780,y:1024,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0},{id:1,x:2280,y:674,w:344,h:48,capRx:16,angle:0,phase:'ground',charge:0,vx:0,vy:0}],sequence:0,sequenceUntil:0,sequenceStartAngle:null,sequenceRecoverUntil:0,resetAt:-100,releaseAt:null,releasePose:0,brakePose:0,ropeCut:[false,false,false,false,false],ropePose:[0,0,0,0,0],ropeAperture:[0,0,0,0,1],panelOpen:false,panelPose:0,operator:null,roofs:[{id:2,x:1890,y:552,w:344,h:48,capRx:16,angle:0,phase:'roof',vx:0,vy:0}],hook:{x:2540,y:380,vx:0,vy:0,plateId:null,offset:null,grab:0,attempts:0},hookDocked:false,exitPose:0,ladderPose:0,blocks:0,safety:false,
 
  debris:[{id:0,cx:1120,cy:674,rx:230,ry:180,clock:0,phase:'rest',x:1510,y:890,angle:0},{id:1,cx:2540,cy:444,rx:220,ry:140,clock:2,phase:'rest',x:2800,y:620,angle:0}]};
 

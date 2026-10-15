@@ -23,7 +23,7 @@ export function orbitSupportPlan(level){
   if(below)result.push({kind:'pier',x,top:floor.y+48,bottom:below.y});
  }return result;
 }
-export const ORBIT_ROOMS=[{x:0,y:780,w:520,h:220,floorY:1000},{x:1690,y:440,w:250,h:210,floorY:650},{x:3340,y:100,w:220,h:200,floorY:300}];
+export const ORBIT_ROOMS=[{x:0,y:780,w:520,h:220,floorY:1000},{x:1690,y:440,w:180,h:210,floorY:650},{x:3340,y:100,w:220,h:200,floorY:300}];
 export function orbitConnectionRoutes(hook,rope,first={x:1360,y:626}){return[
  [[1742,588],[1940,588],[1940,120],[2080,120]],
  [[first.x,first.y+36],[first.x,first.y+108],[first.x+70,first.y+108],[first.x+70,first.y-8],[first.x+18,first.y-8]],

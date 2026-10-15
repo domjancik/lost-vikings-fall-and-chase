@@ -1,0 +1,72 @@
+{
+  "pixelWorldSize": 2,
+  "assets": [
+    {
+      "file": "environment-native.png",
+      "size": [
+        256,
+        256
+      ],
+      "binaryAlpha": true,
+      "hiddenRGBZero": true
+    },
+    {
+      "file": "props-native.png",
+      "size": [
+        256,
+        256
+      ],
+      "binaryAlpha": true,
+      "hiddenRGBZero": true
+    },
+    {
+      "file": "items-native.png",
+      "size": [
+        96,
+        32
+      ],
+      "binaryAlpha": true,
+      "hiddenRGBZero": true
+    },
+    {
+      "file": "icons-native.png",
+      "size": [
+        48,
+        16
+      ],
+      "binaryAlpha": true,
+      "hiddenRGBZero": true
+    },
+    {
+      "file": "grounded-native.png",
+      "size": [
+        192,
+        72
+      ],
+      "binaryAlpha": true,
+      "hiddenRGBZero": true
+    }
+  ],
+  "contacts": [
+    {
+      "kind": "winch",
+      "opaqueExclusiveBottom": 64,
+      "worldOriginY": 512,
+      "worldSole": 640,
+      "support": 640
+    },
+    {
+      "kind": "oilSupply",
+      "opaqueExclusiveBottom": 66,
+      "worldOriginY": 628,
+      "worldSole": 760,
+      "support": 760
+    }
+  ],
+  "lurkerSoles": [
+    60,
+    60,
+    60,
+    60
+  ]
+}

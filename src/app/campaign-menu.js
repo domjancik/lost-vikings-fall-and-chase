@@ -1,5 +1,6 @@
-import {campaignChoices} from './campaign-picker.js?v=lode123';
-import {levelPreview} from './level-preview.js?v=shoes124';
+import {campaignOrder} from '../campaigns/machines/cycle-order.js?v=sewer125';
+import {campaignChoices} from './campaign-picker.js?v=sewer125';
+import {levelPreview} from './level-preview.js?v=sewer125';
 export function campaignMenu(host,{campaign,onLevel}){
  const nav=document.createElement('nav'),grid=document.createElement('div');
  nav.className='campaign-choices';nav.setAttribute('aria-label','Campaigns');grid.className='level-grid';
@@ -12,14 +13,15 @@ export function campaignMenu(host,{campaign,onLevel}){
   const choice=campaignChoices.find(c=>c.id===id);host.dataset.campaign=id;
   buttons.forEach(button=>{const selected=button.dataset.campaignOption===id;button.classList.toggle('selected',selected);button.setAttribute('aria-pressed',String(selected));});
   grid.setAttribute('aria-label',choice.name+' levels');
-  grid.replaceChildren(...choice.levels.map((level,round)=>{
+  grid.replaceChildren(...campaignOrder(id,choice.levels.length).map((round,position)=>{
+   const level=choice.levels[round];
    const button=document.createElement('button');button.type='button';button.className='round-option level-card';button.dataset.round=round;button.dataset.campaign=id;
-   button.setAttribute('aria-label',String(round+1)+'. '+level.name);const preview=levelPreview(id,round);
+   button.setAttribute('aria-label',String(position+1)+'. '+level.name);const preview=levelPreview(id,round);
    // Cached frames are copied so both title and in-game pickers can show them.
    const picture=document.createElement('canvas');picture.width=preview.canvas.width;picture.height=preview.canvas.height;picture.setAttribute('aria-hidden','true');
    function copy(){picture.getContext('2d').drawImage(preview.canvas,0,0);if(preview.ready){picture.dataset.ready='true';return;}if(preview.failed){picture.dataset.ready='failed';return;}if(picture.isConnected)setTimeout(copy,120);}
    const caption=document.createElement('span'),number=document.createElement('b'),name=document.createElement('span');
-   number.textContent=String(round+1).padStart(2,'0');name.textContent=level.name;caption.append(number,name);button.append(picture,caption);
+   number.textContent=String(position+1).padStart(2,'0');name.textContent=level.name;caption.append(number,name);button.append(picture,caption);
    button.onclick=()=>onLevel(id,round);setTimeout(copy,0);return button;
   }));
  }

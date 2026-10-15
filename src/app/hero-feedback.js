@@ -4,6 +4,7 @@ const colors=['#db6b3d','#69b5b2','#dfb952'];
 // must never become part of the scene texture sampled by those optical passes.
 export function drawHeroFeedback(s,box,text){
  for(const h of s.heroes){
+  if(h.sweptAway)continue;
   if(h.boots)for(const p of soleIndicatorPixels(h))box(h.magnet?'#b7e7df':'#669ba9',p.x,p.y,2,2);
 
   const badge=orbitHeroIndicator(h);

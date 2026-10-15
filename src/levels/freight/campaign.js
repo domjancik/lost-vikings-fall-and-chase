@@ -3,7 +3,7 @@ import {segmentHit,shieldHit} from '../../core/projectile-collision.js?v=freight
 import {damage} from '../../core/health.js?v=freight109';
 import {ladderAtHero} from '../../core/ladder-context.js?v=freight109';
 import {startBash,bashImpact} from '../../core/bash.js?v=freight109';
-import {pickupItem,useItem,message} from '../../core/inventory.js?v=orbit113';
+import {pickupItem,useItem,message} from '../../core/inventory.js?v=sewer125';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const floor=(x,y,w)=>({x,y,w});
 export const freightLevel={name:'THE EMBER FREIGHT',subtitle:'Carry the pressure. Quiet the furnace.',

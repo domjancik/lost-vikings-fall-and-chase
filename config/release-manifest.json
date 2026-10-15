@@ -571,6 +571,38 @@
     {
       "source": "src/levels/orbit/shoe-rack-render.js",
       "output": "shoe-rack-render.js"
+    },
+    {
+      "source": "src/levels/sewer/campaign.js",
+      "output": "sewer-campaign.js"
+    },
+    {
+      "source": "src/levels/sewer/light.js",
+      "output": "sewer-light.js"
+    },
+    {
+      "source": "src/levels/sewer/render.js",
+      "output": "sewer-render.js"
+    },
+    {
+      "source": "src/levels/sewer/optics.js",
+      "output": "sewer-optics.js"
+    },
+    {
+      "source": "src/levels/sewer/audio.js",
+      "output": "sewer-audio.js"
+    },
+    {
+      "source": "src/levels/sewer/water-transit.js",
+      "output": "sewer-water-transit.js"
+    },
+    {
+      "source": "src/campaigns/machines/cycle-order.js",
+      "output": "cycle-order.js"
+    },
+    {
+      "source": "src/audio/event-options.js",
+      "output": "audio-event-options.js"
     }
   ],
   "files": [
@@ -905,6 +937,13 @@
     "assets/shoes124/boots-native.png",
     "assets/shoes124/icon-native.png",
     "assets/shoes124/registration.json",
-    "assets/shoes124/visual-gates.json"
+    "assets/shoes124/visual-gates.json",
+    "assets/sewer125/environment-native.png",
+    "assets/sewer125/props-native.png",
+    "assets/sewer125/grounded-native.png",
+    "assets/sewer125/items-native.png",
+    "assets/sewer125/icons-native.png",
+    "assets/sewer125/registration.json",
+    "assets/sewer125/visual-gates.json"
   ]
 }

@@ -4,6 +4,20 @@ const noise=(frequency,end,duration,volume=.16,delay=0)=>tone(frequency,end,dura
 const metal=(f=720)=>[noise(2800,500,.045,.13),tone(f,f*.97,.34,.1,'sine'),tone(f*2.71,f*2.68,.2,.04,'sine')];
 const chime=(f=440)=>[tone(f,f,.18,.13,'sine'),tone(f*1.25,f*1.25,.2,.1,'sine',.09),tone(f*1.5,f*1.5,.32,.1,'sine',.18)];
 export const effects={
+ // Sewer voices retain a low wet body and restrained, irregular metal transients.
+ sewerWood:[noise(3400,320,.14,.27),tone(145,56,.32,.13,'triangle'),noise(1400,110,.5,.16,.06),noise(2500,170,.16,.12,.19)],
+ sewerLand:[noise(3300,300,.12,.2),tone(105,43,.22,.22),noise(1800,160,.45,.13,.03)],
+ sewerDrip:[tone(1220,590,.09,.08,'sine'),tone(510,295,.18,.05,'sine',.045),noise(1900,600,.045,.025)],
+ sewerClaw:[noise(3400,420,.23,.15),tone(570,340,.22,.07,'triangle'),tone(1120,690,.14,.028,'sine',.04)],
+ sewerCrawl:[noise(1400,170,.32,.07),noise(2700,240,.13,.065,.12),tone(125,83,.26,.027,'sine')],
+ sewerWater:[noise(950,450,1.55,.06),noise(2700,800,.85,.035,.23),tone(65,72,1.5,.018,'sine')],
+ sewerSplash:[noise(4600,280,.16,.25),noise(1500,100,.95,.24,.025),tone(87,29,.6,.24,'sine'),noise(3100,400,.4,.12,.2)],
+ sewerHiss:[noise(2800,1100,.7,.08),noise(1100,430,.75,.045,.04)],
+ sewerValve:[noise(2400,350,.16,.1),tone(170,83,.26,.1,'triangle'),noise(850,180,.4,.085,.08)],
+ sewerIgnite:[noise(4100,680,.16,.13),noise(1700,600,.42,.08,.05),tone(135,190,.13,.045,'sine')],
+ sewerChain:[noise(3500,650,.12,.11),...metal(440),noise(2100,250,.2,.08,.13),tone(82,58,.3,.055,'triangle')],
+ sewerPour:[noise(1800,550,.75,.12),tone(380,180,.15,.045,'sine',.1),noise(2600,900,.24,.045,.2)],
+ sewerLamp:[noise(2400,600,.035,.055),tone(620,390,.045,.05,'triangle')],
  orbitLatch:[...metal(820),tone(180,95,.16,.13,'triangle'),noise(1700,600,.09,.1)],
  orbitReset:[tone(420,140,.3,.12,'triangle'),...metal(480),noise(2200,500,.28,.12)],
  orbitRelease:[noise(2600,120,.75,.3),tone(88,28,.8,.3,'sine'),...metal(320),tone(620,170,.36,.12,'triangle',.12),noise(4000,400,.45,.2,.25)],

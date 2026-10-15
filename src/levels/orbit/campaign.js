@@ -1,6 +1,6 @@
 import {prepareMotion,integrateMotion} from '../../core/movement.js?v=orbit113';
 
-import {pickupItem,useItem,message} from '../../core/inventory.js?v=orbit113';
+import {pickupItem,useItem,message} from '../../core/inventory.js?v=sewer125';
 
 import {damage} from '../../core/health.js?v=orbit113';
 

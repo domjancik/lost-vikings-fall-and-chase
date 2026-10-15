@@ -7,7 +7,7 @@ import {wallBorderPlan} from '../../render/wall-boundaries.js?v=walls101';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {rotateNativeRaster} from '../freight/rotor.js?v=orbit113';
 import {orbitRaster} from './raster.js?v=orbit113';
-import {orbitMount,orbitRope} from './campaign.js?v=orbit122';
+import {orbitMount,orbitRope} from './campaign.js?v=sewer125';
 import {ORBIT_ART as A,ORBIT_ROOMS,plateArtPlacement,hookArtPlacement,orbitPlaneOffsets,orbitScrapDepthPlan,orbitSceneryColor,orbitGearPlan,orbitSupportPlan,orbitConnectionRoutes,craneWheelAngle} from './art-layout.js?v=orbit122';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=orbit113';
 const load=n=>{const i=new Image();i.src='assets/orbit113/'+n+'-native.png?v=orbit113';return i;};

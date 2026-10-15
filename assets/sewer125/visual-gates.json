@@ -1,0 +1,36 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/SEWER125-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Independently inspected raw and native-density comparisons: environment-v2, machinery/lurkers-v2 and guided items-v2 preserve deliberate matching pixel clusters and modeled richness. Rejected v1 sources retained. Complete padded oil/winch originals preserve feet/crank at unchanged scale; source-to-runtime comparisons accepted."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Inspected actual 1x/2x/portrait/landscape latest90 states and final focused current-build59.8083s route HP3/3/3 errors[]24photos. Correct oil sole760/winch640/lurker60 anchors, complete camera-relative foundations, visible winch/rope/counterweight motion, real occluded darkness/refuges, visible tilted/immersed stream travel and downstream continuation to stable4. Final wake has irregular channel-clipped crest; static spokes removed. Actual coarse-touch actions/layout pass."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Raw/native and actual gameplay retain rich dimensional damp masonry, beveled iron/copper machinery, readable small guided tools and human-scale latest90 characters. Rejected micrograin was regenerated, not downsample-rescued. Warm physical source pools preserve real black unknown space; completed enclosure and parallax fixtures remain grounded. Final layered wheel and water wake retain native grid without flat overlay artifacts."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Independently reran37 focused sewer tests and inspected complete ordinary-input routes, including final current receipt59.8083s HP3/3/3 errors[]24focusphotos (earlier104-photo full survey separately reviewed). Actual oil1/littrue refuge, consumed oil/lens, reversible winch, ranged rope release, shielded spray, travel200 stream capture and all3actualjourneys before Enter continues to stable4. Coarse-touch movement/USE/inventory/item/lens/beam actions pass; recovery/occlusion/occupied shutter/continuous recoil covered."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "evidence": [
+    "assets/sewer125/route/evidence.json",
+    "assets/sewer125/touch/touch.json",
+    "assets/sewer125/registration.json",
+    "assets/sewer125/native-validation.json"
+  ],
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "releaseConditions": [
+    "Final package/build/release checks and live-byte verification"
+  ]
+}

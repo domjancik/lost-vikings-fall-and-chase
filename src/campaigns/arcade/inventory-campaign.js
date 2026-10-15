@@ -2,7 +2,7 @@ import {prepareMotion,integrateMotion} from '../../core/movement.js?v=vikings70'
 import {shieldHit,segmentHit} from '../../core/projectile-collision.js?v=arc46';
 import {startBash} from '../../core/bash.js?v=arc46';
 import {damage} from '../../core/health.js?v=arc46';
-import {giveItem,pickupItem,useItem,message} from '../../core/inventory.js?v=orbit113';
+import {giveItem,pickupItem,useItem,message} from '../../core/inventory.js?v=sewer125';
 export function setupInventoryLevel(s){if(s.round<6)return;const g=s.machine;Object.assign(g,{ingredients:[],ovenMode:0,cook:0,oven:false,baked:false,ticket:false,lamp:false,lens:null,angle:0,sunset:false,ocean:false,motor:false,gate:false,safe:false});
  const item=(id,type,x,y,locked=false)=>({id,type,x,y,locked});
  s.items=s.round===6?[item('flour','flour',350,566,true),item('spice','spice',610,236),item('apple','apple',160,566)]:s.round===7?[item('lamp','lamp',300,566,true),item('red','red',600,236),item('blue','blue',1000,566),item('meat','meat',820,566)]:[item('apple','apple',250,566)];

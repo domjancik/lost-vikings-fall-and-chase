@@ -1,0 +1,162 @@
+{
+  "method": "Accepted originals each uniformly normalized once; binaryalpha>=240, zero hiddenRGB. Whole machinery atlas retains common scale; feet registered by translation, no per-frame scale.",
+  "environment": {
+    "source": "environment-raw-v2.png",
+    "original": [
+      1254,
+      1254
+    ],
+    "native": [
+      256,
+      256
+    ]
+  },
+  "props": {
+    "source": "props-raw-v2.png",
+    "original": [
+      1254,
+      1254
+    ],
+    "native": [
+      256,
+      256
+    ],
+    "grounded": {
+      "native": [
+        192,
+        72
+      ],
+      "cell": [
+        96,
+        72
+      ],
+      "frames": [
+        {
+          "kind": "winch",
+          "cell": 0,
+          "sourceBox": [
+            3,
+            6,
+            71,
+            64
+          ],
+          "padX": 8,
+          "sole": 64
+        },
+        {
+          "kind": "oilSupply",
+          "cell": 1,
+          "sourceBox": [
+            6,
+            0,
+            49,
+            66
+          ],
+          "padX": 16,
+          "sole": 66
+        }
+      ]
+    },
+    "lurkerFrames": [
+      {
+        "cell": 12,
+        "sourceBox": [
+          3,
+          15,
+          64,
+          53
+        ],
+        "dy": 7,
+        "box": [
+          3,
+          22,
+          64,
+          60
+        ],
+        "sole": 60
+      },
+      {
+        "cell": 13,
+        "sourceBox": [
+          2,
+          16,
+          61,
+          53
+        ],
+        "dy": 7,
+        "box": [
+          2,
+          23,
+          61,
+          60
+        ],
+        "sole": 60
+      },
+      {
+        "cell": 14,
+        "sourceBox": [
+          1,
+          3,
+          62,
+          53
+        ],
+        "dy": 7,
+        "box": [
+          1,
+          10,
+          62,
+          60
+        ],
+        "sole": 60
+      },
+      {
+        "cell": 15,
+        "sourceBox": [
+          4,
+          23,
+          60,
+          53
+        ],
+        "dy": 7,
+        "box": [
+          4,
+          30,
+          60,
+          60
+        ],
+        "sole": 60
+      }
+    ]
+  },
+  "items": {
+    "source": "items-raw-v2.png",
+    "original": [
+      2172,
+      724
+    ],
+    "native": [
+      96,
+      32
+    ],
+    "boxes": [
+      [
+        10,
+        5,
+        22,
+        28
+      ],
+      [
+        5,
+        13,
+        26,
+        28
+      ],
+      [
+        10,
+        15,
+        23,
+        28
+      ]
+    ]
+  }
+}

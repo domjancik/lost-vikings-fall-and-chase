@@ -1,5 +1,5 @@
 import {prepareMotion,integrateMotion} from '../../core/movement.js';
-import {pickupItem,useItem,message} from '../../core/inventory.js';
+import {pickupItem,useItem,message} from '../../core/inventory.js?v=sewer125';
 import {damage} from '../../core/health.js';
 import {segmentHit,shieldHit} from '../../core/projectile-collision.js';
 import {ladderAtHero} from '../../core/ladder-context.js';

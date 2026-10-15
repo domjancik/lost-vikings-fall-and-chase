@@ -87,3 +87,5 @@ The new warm modeled metal fits the complete latest Vikings materially: dimensio
 Full real-browser ordinary-input route `assets/orbit121/route/route.json`: won,HP[3,3,3], errors[],104.3667seconds,131 captures. Mechanism/physics remain unchanged from120; this route verifies the richer replacement art preserves clear cooperative interactions and all-three exit feasibility. **Runtime and cooperation gates accepted.**
 
 Source/native correctness and richness have both been independently accepted, with actual latest-character scene evidence. Publication may proceed subject to normal package/build checks. No review-requested art or runtime correction remains.
+
+Additional final retry evidence: `assets/orbit121/retry/route.json` winsHP[3,3,3], errors[],135.675seconds with151 captures. Inspected its actual `circuit-recovery-live.png`: reusable switch hardware returns coherently with the richer art, crew/rail contacts remain stable and safe. This reinforces the already accepted unchanged cooperative reset behavior.

@@ -1,0 +1,27 @@
+{
+  "commit": "9c806fe",
+  "checked": [
+    "cycle-render.js",
+    "campaign-menu95.js",
+    "game.js",
+    "clockwork-render.js",
+    "hero-art.js",
+    "hero-frames.js",
+    "native85-registration.js",
+    "scene-render95.js",
+    "imagegen88-registration.js",
+    "hero-shield-registration.js",
+    "level-preview95.js",
+    "hero-skins.js",
+    "assets/orbit121/gear-native.png",
+    "orbit-render.js",
+    "assets/orbit121/hardware-native.png",
+    "magnetic-render.js",
+    "assets/orbit121/plate-native.png",
+    "sprite-render.js",
+    "assets/orbit121/visual-gates.json",
+    "assets/orbit121/registration.json",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

@@ -7,3 +7,5 @@ Fractional zoom rounds the viewport to integer canvas dimensions, avoiding conti
 Validation: 634 unit/build tests passed; build and release hashes verified (471 files). Desktop and coarse-touch browser checks passed button taps, keyboard cycling, reload persistence, movement, and zero canvas dimension resets at 1.5×, with no page errors. Screenshot evidence uses the latest review skin.
 
 Visual check: touch 1.5× framing preserves full-screen gameplay, character picker and bottom controls. No replacement art.
+
+Published version 01M50HSZK7RVYH27Q3WNBW1DHV. Live HTML and eight changed release files match the build. Live desktop and touch checks passed cycling, persistence, movement, and zero canvas resets; no page errors. Implementation commit ae1d3a4.

@@ -1,0 +1,14 @@
+{
+  "commit": "ae1d3a4",
+  "checked": [
+    "background-render.js",
+    "level-preview95.js",
+    "parallax-render.js",
+    "campaign-menu95.js",
+    "background-effects.js",
+    "game.js",
+    "release-manifest.json",
+    "scene-render95.js"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

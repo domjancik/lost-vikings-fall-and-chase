@@ -1,0 +1,14 @@
+{
+  "commit": "1a7fd12",
+  "checked": [
+    "sewer-fog.js",
+    "campaign-menu95.js",
+    "scene-render95.js",
+    "game.js",
+    "level-preview95.js",
+    "cycle-render.js",
+    "sewer-render.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

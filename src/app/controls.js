@@ -10,3 +10,10 @@ export function createControls(){
   consume(hero){const primary=pending.has('primary');const result={left:this.has('left'),right:this.has('right'),up:this.has('up'),down:this.has('down'),jump:primary&&hero!==1,sword:pending.has('sword')||(primary&&hero===1),action:pending.has('secondary'),interact:pending.has('interact'),item:pending.has('item')};pending.clear();return result;}
  };
 }
+
+// Only HUD re-selection cycles a bag. Keyboard hero keys keep their old meaning.
+export function selectHudHero(s,id){
+ if(!Number.isInteger(id)||!s.heroes[id])return false;
+ if(s.active===id){const h=s.heroes[id];h.itemSlot=((h.itemSlot||0)+1)%(h.inventory?.length||4);return true;}
+ s.active=id;return false;
+}

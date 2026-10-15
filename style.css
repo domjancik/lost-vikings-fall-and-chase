@@ -109,3 +109,20 @@ dialog{width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);overfl
 .magnet-status[hidden]{display:none}
 .crew .hero-card:has(.magnet-status:not([hidden])){height:46px;min-height:46px}
 .hero-card:has(.magnet-status:not([hidden])) .hero-info{align-self:flex-start}
+/* Translucent touch HUD: desaturate the world beneath panels, not their contents. */
+.game-top,.crew .hero-card,.toolbar-tools button,.mobile-controls button,#hint{
+ background-color:rgba(27,25,32,.44);background-image:none;
+ -webkit-backdrop-filter:grayscale(1);backdrop-filter:grayscale(1);
+}
+.crew .hero-card.active{background-color:rgba(88,67,47,.48)}
+.mobile-controls .action-pad [data-key=primary]{background-color:rgba(94,68,48,.48)}
+.mobile-controls button.held,.mobile-controls button:active{background-color:rgba(148,111,60,.68)}
+.mobile-controls [data-key=interact].available{background-color:rgba(112,80,48,.5)}
+.mobile-controls button:disabled{color:#b1a695;cursor:default}
+.action-pad [data-key=item]{grid-column:1;grid-row:1;display:grid;grid-template-columns:1fr 16px;grid-template-rows:18px 12px;align-content:center;gap:0 1px;text-align:left;overflow:hidden;padding:3px 4px}
+.item-action-title{font-size:10px;white-space:nowrap;line-height:18px}.item-action-slot{color:#e4bf73}
+.action-pad [data-key=item] canvas{width:16px;height:16px;image-rendering:pixelated;pointer-events:none}
+.action-pad [data-key=item] .item-action-name{grid-column:1/-1;display:block;font-size:8px;line-height:12px;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.action-pad [data-key=item].equipped{border-color:#9acacb;color:#c8e8df}
+/* Keep the pressed tint visible above the primary-action base tint. */
+.mobile-controls .action-pad button.held,.mobile-controls .action-pad button:active{background-color:rgba(148,111,60,.68)}

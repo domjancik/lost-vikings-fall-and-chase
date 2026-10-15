@@ -1,0 +1,20 @@
+{
+  "commit": "f536a2a",
+  "checked": [
+    "game.js",
+    "campaign-menu95.js",
+    "audio-events.js",
+    "scene-render95.js",
+    "portal-effects.js",
+    "level-preview95.js",
+    "sewer-water-transit.js",
+    "world-render.js",
+    "transition-render.js",
+    "story-render.js",
+    "vertical-render.js",
+    "level-transition.js",
+    "style.css",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

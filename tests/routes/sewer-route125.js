@@ -10,6 +10,8 @@ export function simulateSewerRoute(hz=120){
  move(0,615);mark('unshielded-spray');move(2,885);tick(2,{action:true});mark('shielded-spray');move(0,858);tick(0,{jump:true,right:true});until(0,s=>s.heroes[0].x>950,{right:true},2);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===640,{},2);move(0,1050);tick(0,{interact:true});until(0,s=>s.machine.jet.pose===0,{},2);mark('valve-closed');
  move(0,1530);s.heroes[0].itemSlot=1;tick(0,{item:true});s.heroes[0].itemSlot=0;tick(0,{item:true});mark('permanent-refuge');
  move(1,1530);move(2,1530);tick(2,{action:true});move(0,1770);tick(0,{jump:true,right:true});until(0,s=>s.heroes[0].x>1840,{right:true},2);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===640,{},2);move(0,1840);tick(0,{interact:true});until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');
+ // Clear the animal with ranged attacks before Erik enters its physical reach.
+ move(1,1700);until(1,s=>s.machine.lurkers.every(e=>!e.hp),()=>s.cooldown===0?{action:true}:{},8);
  // Return the portable lamp to the lower hook; leave its focused beam aimed along the rope.
  move(0,2010);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===760,{},2);move(0,1850);tick(0,{interact:true});mark('lamp-hooked');move(0,1530);
  move(2,1800);tick(2,{action:true});move(1,1920);mark('guarded-shot');until(1,s=>s.machine.rope.cut,()=>s.cooldown===0?{action:true}:{},5);until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');

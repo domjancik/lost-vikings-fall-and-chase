@@ -1,13 +1,13 @@
 import {drawSewerSpray} from './stream-render.js?v=sewer136';
 import {drawSewerGlobe,sewerGlobeArtState} from './globe-art.js?v=pub139';
-import {lurkerDeathPose} from './lurker-art.js?v=sewer132';
+import {lurkerDeathPose,drawLurkerWalk} from './lurker-art.js?v=sewer145';
 import {drawSewerFog} from './fog.js?v=sewer130';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerLightCone,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer136';
 import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
 import {drawSewerWheel} from './wheel.js?v=sewer141';
-import {sewerSprayMount} from './campaign.js?v=sewer136';
+import {sewerSprayMount} from './campaign.js?v=sewer145';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
@@ -71,7 +71,7 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[],li
  for(const h of g.hooks){crop(c,environment,146,68,12,8,h.x-12,h.y-44);c.fillStyle='#8b7960';c.fillRect(q(h.x)-2,q(h.y-30),4,22);contacts.push({kind:'lamp-hook',...h,occupied:g.lamp.hookId===h.id});}
  for(const a of s.items){const n={inspectionLamp:0,lampOil:1,bullseyeLens:2}[a.type];if(n!==undefined)item(c,n,a.x,a.y+44);}
  for(const l of lights.filter(a=>a.portable&&!a.spill)){item(c,0,l.housingX,l.housingY+12);flame(c,l.x,l.y,s.time);if(g.lamp.lens){c.fillStyle='#a4c9cd';c.fillRect(q(l.housingX+l.face*10),q(l.housingY-6),4,6);}}
- for(const e of g.lurkers){if(!e.hp){contacts.push(deadLurker(c,e,s.time));continue;}const n=e.phase==='warning'?14:e.phase==='recoil'||e.phase==='retreat'?15:12+Math.floor(s.time*6)%2;cell(c,props,n,e.x-64,e.y-120,e.dir>0);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning});}
+ for(const e of g.lurkers){if(!e.hp){contacts.push(deadLurker(c,e,s.time));continue;}const gait=drawLurkerWalk(c,props,e);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning,gait});}
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
  flow(c,s);const globeArt=sewerGlobeArtState(s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});

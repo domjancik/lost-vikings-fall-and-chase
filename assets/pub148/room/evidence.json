@@ -1,0 +1,3150 @@
+{
+  "captures": [
+    {
+      "file": "assets/pub148/room/desktop-1x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 5.825000000000079,
+          "made": 2,
+          "pile": 10,
+          "flying": []
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 1050,
+        "y": 288,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 742,
+          "y": 410,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 742,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1510,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": true,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1178,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1174,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1164,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1184,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1152,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1182,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#d98938"
+            },
+            {
+              "x": 1150,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1154,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1184,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1152,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1172,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1176,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1158,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1162,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": {
+            "region": {
+              "x": 1142,
+              "y": 624,
+              "w": 58,
+              "h": 82
+            },
+            "strips": [
+              {
+                "y": 640,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 644,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 656,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 660,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 664,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 668,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 672,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 680,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 684,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 688,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 692,
+                "h": 4,
+                "offset": -2
+              }
+            ],
+            "copiedPixels": 1189,
+            "drawnStrips": 11
+          },
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [],
+          "made": 2
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 0,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    },
+    {
+      "file": "assets/pub148/room/desktop-2x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 7.647500000000008,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 10
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 6.5416666666667815,
+          "made": 2,
+          "pile": 10,
+          "flying": []
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 1366,
+        "y": 512,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 1000,
+          "y": 490,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1000,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1000,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1180,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1168,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1178,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1186,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1156,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1168,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1150,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1180,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1154,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1186,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1170,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1182,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1160,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": null,
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [],
+          "made": 2
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 0,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    },
+    {
+      "file": "assets/pub148/room/landscape-1x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 7.191666666666814,
+          "made": 2,
+          "pile": 10,
+          "flying": []
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 690,
+        "y": 288,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 446,
+          "y": 410,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 446,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              },
+              {
+                "x": 1214,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": true,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1214,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": true,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1184,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1168,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1182,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1186,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1156,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1174,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1152,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1174,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1160,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1182,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1164,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1182,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1150,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1154,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": {
+            "region": {
+              "x": 1142,
+              "y": 624,
+              "w": 58,
+              "h": 82
+            },
+            "strips": [
+              {
+                "y": 640,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 644,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 648,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 660,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 664,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 668,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 672,
+                "h": 4,
+                "offset": -2
+              },
+              {
+                "y": 684,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 688,
+                "h": 4,
+                "offset": 2
+              },
+              {
+                "y": 692,
+                "h": 4,
+                "offset": 2
+              }
+            ],
+            "copiedPixels": 1189,
+            "drawnStrips": 10
+          },
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [],
+          "made": 2
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 2,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    },
+    {
+      "file": "assets/pub148/room/landscape-2x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 9
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 7.883333333333515,
+          "made": 3,
+          "pile": 10,
+          "flying": [
+            {
+              "id": 2,
+              "x": 2201.7666666666996,
+              "y": 661.4055555555525,
+              "bottom": 661.4055555555525,
+              "angle": 3.8746309394262703,
+              "height": 16,
+              "phase": "throw"
+            }
+          ]
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 1254,
+        "y": 512,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 908,
+          "y": 490,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 908,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 908,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1164,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1186,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1160,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1184,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1156,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1152,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1176,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1164,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1172,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1160,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1184,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1182,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1152,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": null,
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [
+            {
+              "id": 2,
+              "x": 2201.7666666666996,
+              "y": 661.4055555555525,
+              "bottom": 661.4055555555525,
+              "angle": 3.8746309394262703,
+              "height": 16,
+              "phase": "throw"
+            }
+          ],
+          "made": 3
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 3,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    },
+    {
+      "file": "assets/pub148/room/portrait-1x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 8.295000000000002,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 11
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 8.466666666666827,
+          "made": 3,
+          "pile": 10,
+          "flying": [
+            {
+              "id": 2,
+              "x": 2307.9333333333625,
+              "y": 740.1555555556014,
+              "bottom": 740.1555555556014,
+              "angle": 0.20943951023831428,
+              "height": 16,
+              "phase": "throw"
+            }
+          ]
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          }
+        ],
+        "eventSerial": 2,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 1464,
+        "y": 288,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 1080,
+          "y": 410,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1080,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1080,
+                "y": 410,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1170,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1156,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1154,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1184,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1166,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1176,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1158,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#d98938"
+            },
+            {
+              "x": 1186,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1172,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1152,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1180,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1180,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": null,
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [
+            {
+              "id": 2,
+              "x": 2307.9333333333625,
+              "y": 740.1555555556014,
+              "bottom": 740.1555555556014,
+              "angle": 0.20943951023831428,
+              "height": 16,
+              "phase": "throw"
+            }
+          ],
+          "made": 3
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 0,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    },
+    {
+      "file": "assets/pub148/room/portrait-2x.png",
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1681.736111111129,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 1,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 690,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": -28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": 0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "rotation": 0,
+          "magnet": null,
+          "boots": false,
+          "x": 1100,
+          "y": 716,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": -1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "phase": "play",
+        "factory": {
+          "clock": 9.100000000000124,
+          "made": 3,
+          "pile": 11,
+          "flying": []
+        },
+        "invitations": {},
+        "bashHit": false,
+        "bashAt": -10,
+        "bashPose": 0,
+        "defense": {
+          "phase": "idle",
+          "at": 0
+        },
+        "defenseBlocks": 0,
+        "cart": {
+          "x": 1020,
+          "y": 706,
+          "w": 96,
+          "parked": false
+        },
+        "door": {
+          "open": false,
+          "pose": 0
+        },
+        "cups": {
+          "mode": "empty",
+          "at": 0
+        },
+        "served": false,
+        "targetHit": false,
+        "targetPose": 0,
+        "wrapCut": false,
+        "wrapPose": 0,
+        "inspectClock": 0,
+        "crackTime": 0,
+        "fallTime": 0,
+        "bend": 0,
+        "events": [
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 0
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 1
+          },
+          {
+            "name": "cupLand",
+            "x": 2324,
+            "id": 2
+          }
+        ],
+        "eventSerial": 3,
+        "dialogue": {
+          "speaker": "ASTRID",
+          "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+          "x": 1040,
+          "until": 6,
+          "kind": "opener"
+        },
+        "pushing": false
+      },
+      "camera": {
+        "x": 1572,
+        "y": 512,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "ready": true,
+        "mechanic": "alehall",
+        "contacts": [
+          {
+            "kind": "patron",
+            "name": "ASTRID",
+            "row": 0,
+            "x": 1040,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "EINAR",
+            "row": 1,
+            "x": 1350,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "HAKON",
+            "row": 1,
+            "x": 1460,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "RUNA",
+            "row": 2,
+            "x": 1620,
+            "bottom": 760
+          },
+          {
+            "kind": "patron",
+            "name": "TORSTEN",
+            "row": 3,
+            "x": 440,
+            "bottom": 760
+          },
+          {
+            "kind": "cart",
+            "x": 956,
+            "y": 644,
+            "w": 128,
+            "h": 128,
+            "visibleBottom": 760,
+            "surface": {
+              "x": -10000,
+              "y": 760,
+              "w": 20000
+            },
+            "artTop": 706,
+            "collision": false,
+            "walkable": false,
+            "pushable": true
+          }
+        ],
+        "dryingCups": [],
+        "far": {
+          "x": 1170,
+          "y": 490,
+          "w": 768,
+          "h": 384
+        },
+        "windowScenery": [
+          {
+            "opening": {
+              "x": 1192,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1170,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          },
+          {
+            "opening": {
+              "x": 1512,
+              "y": 534,
+              "w": 66,
+              "h": 38
+            },
+            "tiles": [
+              {
+                "x": 1170,
+                "y": 490,
+                "w": 768,
+                "h": 384,
+                "flipX": false,
+                "flipY": false
+              }
+            ]
+          }
+        ],
+        "loftWall": {
+          "x": 660,
+          "y": 634,
+          "w": 216,
+          "h": 126,
+          "collision": false,
+          "attachment": "rear of loft posts, underside and room floor"
+        },
+        "partition": {
+          "header": {
+            "x": 1680,
+            "y": 480,
+            "w": 720,
+            "h": 166
+          },
+          "doorway": {
+            "x": 1708,
+            "y": 646,
+            "w": 72,
+            "h": 114
+          },
+          "shadow": {
+            "x": 1774,
+            "y": 646,
+            "w": 626,
+            "h": 142,
+            "threshold": 64,
+            "floor": 760
+          },
+          "collision": false
+        },
+        "hearth": {
+          "opening": {
+            "x": 1140,
+            "y": 706,
+            "w": 54,
+            "h": 10
+          },
+          "flames": [
+            {
+              "x": 1182,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1172,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1164,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1154,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1186,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1174,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1150,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1180,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1152,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#d98938"
+            },
+            {
+              "x": 1184,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1166,
+              "y": 708,
+              "w": 4,
+              "h": 6,
+              "color": "#f0d59a"
+            },
+            {
+              "x": 1150,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#ad522a"
+            },
+            {
+              "x": 1178,
+              "y": 710,
+              "w": 4,
+              "h": 6,
+              "color": "#d98938"
+            },
+            {
+              "x": 1176,
+              "y": 708,
+              "w": 4,
+              "h": 8,
+              "color": "#e8b961"
+            },
+            {
+              "x": 1184,
+              "y": 710,
+              "w": 4,
+              "h": 4,
+              "color": "#f0d59a"
+            }
+          ],
+          "heat": null,
+          "readbacks": 0
+        },
+        "factory": {
+          "pile": [
+            {
+              "x": 2282,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2294,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2306,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2318,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2330,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2342,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2354,
+              "bottom": 760,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2366,
+              "bottom": 760,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2290,
+              "bottom": 750,
+              "angle": 1.5707963267948966,
+              "height": 12
+            },
+            {
+              "x": 2302,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            },
+            {
+              "x": 2314,
+              "bottom": 750,
+              "angle": 0,
+              "height": 16
+            }
+          ],
+          "flying": [],
+          "made": 3
+        },
+        "phase": "play",
+        "globe": {
+          "frame": 0,
+          "bottom": 734,
+          "diameter": 40
+        },
+        "door": 0,
+        "nativePixel": 2
+      }
+    }
+  ],
+  "errors": [],
+  "ordinaryInput": true
+}

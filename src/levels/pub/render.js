@@ -5,7 +5,7 @@ import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {alehallSag} from './campaign.js?v=pub147';
 import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,alehallDryingCups} from './layout.js?v=pub147';
-import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking} from './scenery.js?v=pub147';
+import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub148';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -35,6 +35,11 @@ function roomWalls(c,camera,view){
  c.save();c.beginPath();c.rect(512,352,1888,128);c.rect(1144,352,52,36);c.clip('evenodd');c.fillStyle='#24231e';c.fillRect(512,352,1888,128);c.restore();
  for(let x=512;x<2400;x+=128)if(visible(x,128,camera,view))crop(c,architecture,2,0,0,64,64,x,352);
  beam(c,512,448,1888);for(const x of [1224,1544])sprite(c,architecture,7,x,594);
+ // The storeroom's lower ceiling joins the roof beam to the actual door
+ // lintel. Reuse the native timber, at its retained two-world-unit density.
+ const {header}=alehallRoomPartition();c.save();c.beginPath();c.rect(header.x,header.y,header.w,header.h);c.clip();c.fillStyle='#241b14';c.fillRect(header.x,header.y,header.w,header.h);c.filter='brightness(.7)';
+ for(let x=header.x;x<header.x+header.w;x+=96)if(visible(x,96,camera,view))for(let y=header.y;y<header.y+header.h;y+=112)crop(c,architecture,0,8,4,48,56,x,y);
+ c.filter='none';beam(c,header.x,header.y+header.h-36,header.w);c.restore();
  sprite(c,architecture,6,544,760);sprite(c,architecture,6,1744,760);sprite(c,architecture,13,1330,640);sprite(c,architecture,14,1010,642);
  return loftWall;
 }
@@ -98,15 +103,24 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  // Back room: quiet storage, a single candle and the impossible find on its stool.
  sprite(c,props,12,1850,730);sprite(c,props,2,2120,globeBottom(s)+26);drawGlobe(c,s);drawFactoryCups(c,s);
  contacts.push({kind:'cart',...sprite(c,props,0,g.cart.x,760),artTop:g.cart.y,collision:false,walkable:false,pushable:true});
- return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,dryingCups,far,windowScenery,loftWall,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
+ return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,dryingCups,far,windowScenery,loftWall,partition:alehallRoomPartition(),hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
 }
-let darkness;
+let darkness,roomShade;
+function roomShadeMask(){
+ if(roomShade)return roomShade;
+ const p=alehallRoomPartition().shadow;roomShade=document.createElement('canvas');roomShade.width=p.w/2;roomShade.height=p.h/2;
+ const c=roomShade.getContext('2d'),pixels=c.createImageData(roomShade.width,roomShade.height);
+ for(let y=0;y<roomShade.height;y++)for(let x=0;x<roomShade.width;x++){
+  const i=(y*roomShade.width+x)*4;pixels.data[i]=8;pixels.data[i+1]=11;pixels.data[i+2]=13;pixels.data[i+3]=Math.round(255*.9*alehallRoomShade(p.x+x*2+1,p.y+y*2+1));
+ }
+ c.putImageData(pixels,0,0);return roomShade;
+}
 export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mechanic!=='alehall')return null;const g=s.machine,mode=g.cups.mode;
  drawCups(c,s,'overlay');
  drawPracticeCups(c,s);
- darkness??=document.createElement('canvas');const w=Math.ceil(view.width/2),h=Math.ceil(view.height/2);if(darkness.width!==w||darkness.height!==h){darkness.width=w;darkness.height=h;}const d=darkness.getContext('2d');d.clearRect(0,0,w,h);d.globalCompositeOperation='source-over';d.fillStyle='rgba(8,11,13,.9)';d.fillRect(0,0,w,h);d.globalCompositeOperation='destination-out';
+ darkness??=document.createElement('canvas');const w=Math.ceil(view.width/2),h=Math.ceil(view.height/2);if(darkness.width!==w||darkness.height!==h){darkness.width=w;darkness.height=h;}const d=darkness.getContext('2d');d.clearRect(0,0,w,h);d.globalCompositeOperation='source-over';d.imageSmoothingEnabled=false;const shade=alehallRoomPartition().shadow;d.drawImage(roomShadeMask(),(shade.x-camera.x)/2,(shade.y-camera.y)/2);d.globalCompositeOperation='destination-out';
  for(const light of [{x:1850,y:702,r:125,light:.8},{x:2120,y:globeBottom(s)-28,r:310,light:.96}]){const x=(light.x-camera.x)/2,y=(light.y-camera.y)/2,r=light.r/2,a=d.createRadialGradient(x,y,0,x,y,r);a.addColorStop(0,`rgba(0,0,0,${light.light})`);a.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=a;d.fillRect(x-r,y-r,r*2,r*2);}
- c.save();c.beginPath();c.rect(1774,390,626,860);c.clip();c.drawImage(darkness,camera.x,camera.y,w*2,h*2);c.restore();fire(c,s.time,1850,704,.35);
+ c.drawImage(darkness,camera.x,camera.y,w*2,h*2);fire(c,s.time,1850,704,.35);
  const speech=dialogueLayout(s,camera,view);
  if(speech){const {anchor,x,y,w,h,lines}=speech;
   c.fillStyle='#141713e8';c.fillRect(x-w/2,y-8,w,h+4);c.strokeStyle='#b49a73';c.lineWidth=2;c.beginPath();c.moveTo(x,y+h-4);c.lineTo(anchor.x,anchor.y);c.stroke();

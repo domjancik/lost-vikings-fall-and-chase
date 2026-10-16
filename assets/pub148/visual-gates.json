@@ -1,0 +1,43 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB148-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Continuity review of retained native architecture timber: cropped at matching two-world-units/native-pixel density without regeneration or resampling. Wood grain, fasteners, shaded volume and adult scale are preserved. Cached shadow mask also uses the native grid."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "28 focused tests independently pass, including partition/lintel/floor and soft-shade regressions plus ordinary60/120Hz route coverage. Actual six closed-door desktop/coarse1x/2x views are error-free. Final refreshed ordinary coarse-context route wins in60.0152seconds with3HP each,8scene captures/errors[] and correct sewer fall entry; unpaused doorway views and paused transient floor-break views inspected."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Horizontal timber header joins roof beam480 to door lintel646, reading as real overhead construction rather than an arbitrary lower strip. Final unobscured1x/2x/portrait views retain rich native wood and grounded frame. Doorway threshold softens over64world units; darkness fades through floorboards760..788 and never divides unrelated soil below. Candle/globe remain local light sources."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Scenery/light correction adds no new collision or puzzle gate. Existing physical floor, loft and inventory door remain, with the opening visibly distinct beneath the cutaway header. Full healthy ordinary-input completion confirms shield/loft/key/globe/fall progression remains clearable."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/architecture-native.png",
+    "assets/alehall135/registration.json",
+    "assets/pub148/room/evidence.json",
+    "assets/pub148/room/desktop-1x.png",
+    "assets/pub148/room/landscape-2x.png",
+    "assets/pub148/room/portrait-2x.png",
+    "assets/pub148/touch/route.json",
+    "assets/pub148/touch/door-open-1x.png",
+    "assets/pub148/touch/door-open-landscape.png",
+    "assets/pub148/touch/door-open-portrait.png",
+    "assets/pub148/touch/floor-break-1x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

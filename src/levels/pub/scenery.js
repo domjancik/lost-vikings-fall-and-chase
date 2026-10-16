@@ -26,3 +26,18 @@ export function drawAlehallWindowScenery(c,image,camera){
  return groups;
 }
 export const alehallLoftBacking=()=>({x:ALEHALL_LOFT.x+20,y:ALEHALL_LOFT.y+ALEHALL_LOFT.h,w:ALEHALL_LOFT.w-44,h:760-ALEHALL_LOFT.y-ALEHALL_LOFT.h,collision:false,attachment:'rear of loft posts, underside and room floor'});
+
+// Cutaway partition above the storeroom door. Its lower edge is the lintel,
+// not an invisible obstacle across the walking opening.
+export const alehallRoomPartition=()=>({
+ header:{x:1680,y:480,w:720,h:166},
+ doorway:{x:1708,y:646,w:72,h:114},
+ shadow:{x:1774,y:646,w:626,h:142,threshold:64,floor:760},
+ collision:false
+});
+const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
+export function alehallRoomShade(x,y){
+ const p=alehallRoomPartition().shadow;
+ if(x<p.x||x>=p.x+p.w||y<p.y||y>=p.y+p.h)return 0;
+ return smooth((x-p.x)/p.threshold)*(1-smooth((y-p.floor)/(p.y+p.h-p.floor)));
+}

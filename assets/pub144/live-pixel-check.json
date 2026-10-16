@@ -1,0 +1,146 @@
+[
+  {
+    "camera": {
+      "x": 0,
+      "y": -800
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 0,
+      "y": 0
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 0,
+      "y": 500
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 0,
+      "y": 900
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 500,
+      "y": -800
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 500,
+      "y": 0
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 500,
+      "y": 500
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 500,
+      "y": 900
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1000,
+      "y": -800
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1000,
+      "y": 0
+    },
+    "changedOutside": 0,
+    "missingBefore": 627,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1000,
+      "y": 500
+    },
+    "changedOutside": 0,
+    "missingBefore": 627,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1000,
+      "y": 900
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1600,
+      "y": -800
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1600,
+      "y": 0
+    },
+    "changedOutside": 0,
+    "missingBefore": 0,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1600,
+      "y": 500
+    },
+    "changedOutside": 0,
+    "missingBefore": 0,
+    "missingAfter": 0
+  },
+  {
+    "camera": {
+      "x": 1600,
+      "y": 900
+    },
+    "changedOutside": 0,
+    "missingBefore": 1254,
+    "missingAfter": 0
+  }
+]

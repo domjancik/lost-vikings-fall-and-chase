@@ -1,0 +1,28 @@
+{
+  "commit": "d13732a",
+  "checked": [
+    "campaign-menu95.js",
+    "cycle-campaign.js",
+    "game.js",
+    "cycle-render.js",
+    "campaign-picker95.js",
+    "engine.js",
+    "interactions.js",
+    "world-render.js",
+    "level-preview95.js",
+    "alehall-campaign.js",
+    "scene-render95.js",
+    "ground-shadow.js",
+    "alehall-dialogue147.js",
+    "pub-tutorial.js",
+    "alehall-scenery144.js",
+    "alehall-layout143.js",
+    "alehall-render.js",
+    "assets/alehall135/props-native.png",
+    "assets/alehall135/patrons-native.png",
+    "assets/pub147/visual-gates.json",
+    "assets/alehall135/cup-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

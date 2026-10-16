@@ -1,0 +1,37 @@
+{
+  "captures": 18,
+  "trace": {
+    "frames": 8980,
+    "min": [
+      760,
+      760,
+      760
+    ],
+    "max": [
+      760,
+      760,
+      760
+    ]
+  },
+  "errors": [],
+  "coarse": true,
+  "park": 840,
+  "notes": "Ordinary live touch-context passage/push, repeated ALT instructions and opened hearth stand; source sheets imagegen90.",
+  "dryingCups": [
+    {
+      "x": 1244,
+      "bottom": 724,
+      "alpha": 1
+    },
+    {
+      "x": 1260,
+      "bottom": 724,
+      "alpha": 1
+    },
+    {
+      "x": 1276,
+      "bottom": 724,
+      "alpha": 1
+    }
+  ]
+}

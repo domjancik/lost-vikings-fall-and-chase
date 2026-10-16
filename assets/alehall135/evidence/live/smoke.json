@@ -1,0 +1,202 @@
+{
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 620,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 690,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": -28.675,
+          "y": 7.647500000000008,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": 0.13962634015954636,
+          "mode": "front",
+          "cell": 10
+        },
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 1100,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "machine": {
+      "phase": "play",
+      "cart": {
+        "x": 1020,
+        "y": 706,
+        "w": 96,
+        "parked": false
+      },
+      "door": {
+        "open": false,
+        "pose": 0
+      },
+      "cups": {
+        "mode": "empty",
+        "at": 0
+      },
+      "served": false,
+      "targetHit": false,
+      "targetPose": 0,
+      "wrapCut": false,
+      "wrapPose": 0,
+      "inspectClock": 0,
+      "crackTime": 0,
+      "fallTime": 0,
+      "bend": 0,
+      "events": [],
+      "eventSerial": 0,
+      "dialogue": {
+        "speaker": "ASTRID",
+        "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+        "x": 1040,
+        "until": 6
+      },
+      "pushing": false
+    },
+    "camera": {
+      "x": 304,
+      "y": 512,
+      "width": 632,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "art": {
+      "ready": true,
+      "mechanic": "alehall",
+      "contacts": [
+        {
+          "kind": "patron",
+          "row": 0,
+          "x": 1040,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 1,
+          "x": 1350,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 1,
+          "x": 1460,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 2,
+          "x": 1620,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 3,
+          "x": 960,
+          "bottom": 760
+        },
+        {
+          "kind": "cart",
+          "x": 956,
+          "y": 644,
+          "w": 128,
+          "h": 128,
+          "visibleBottom": 760,
+          "surface": {
+            "x": -10000,
+            "y": 760,
+            "w": 20000
+          },
+          "top": 706
+        }
+      ],
+      "far": {
+        "x": 130,
+        "y": 490,
+        "w": 768,
+        "h": 384
+      },
+      "phase": "play",
+      "globe": {
+        "frame": 0,
+        "bottom": 734,
+        "diameter": 40
+      },
+      "door": 0,
+      "nativePixel": 2
+    },
+    "round": 11,
+    "transition": "idle"
+  },
+  "errors": []
+}

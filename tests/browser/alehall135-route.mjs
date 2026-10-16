@@ -24,7 +24,7 @@ await page.exposeBinding('pubPhoto',async(_,label)=>{
 try{
  await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now':'http://127.0.0.1:'+server.address().port)+'/?campaign=cycle&release=alehall135');
  await page.locator('#start-picker .level-card[data-round="11"]').click();await page.waitForFunction(()=>{const d=document.querySelector('#game').dataset;return d.transition==='idle'&&JSON.parse(d.cycleArt||'{}').ready;});
- if(process.argv.includes('--smoke')){await page.screenshot({path:out+'/initial.png'});console.log(JSON.stringify(await read()));}
+ if(process.argv.includes('--smoke')){await page.screenshot({path:out+'/initial.png'});const state=await read();assert.deepEqual(errors,[]);fs.writeFileSync(out+'/smoke.json',JSON.stringify({state,errors},null,2));console.log(JSON.stringify({round:state.round,artReady:state.art.ready,errors}));}
  else{
   let source=fs.readFileSync('tests/routes/alehall135-route.js','utf8');source=source.slice(source.indexOf('export function')).replace('export function simulateAlehallRoute(hz=120)','async function playHall()');
   const begin=source.indexOf('const s=createState'),bodyStart=source.indexOf(" mark('push-sledge')"),bodyEnd=source.indexOf(' const compact=');

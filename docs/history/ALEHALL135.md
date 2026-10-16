@@ -79,3 +79,16 @@ ownership, keeps the worker camera and identifies its release cable. The cable
 puzzle remains intact. A regression covers locked entry, brake release and real
 hook motion after entry. This supplements the already published operator-drift
 and eased-motion fixes.
+
+## Published verification
+
+Runtime commit `7b0acb5` is published at
+`https://united-marsh-6ppd.here.now/?campaign=cycle&release=alehall135`.
+Hosting version: `01M52374DSGH3J3ZANN40FHCJA`.
+
+All678 tests passed. The487-file build passed release verification and the488-file
+publication preflight. Live verification matched43 changed modules/assets and
+the HTML after removing hosting-added social metadata. A fresh public Chrome
+smoke loaded level11 with every scene atlas ready and no JavaScript errors.
+Receipts are `assets/alehall135/{validation,live-hashes,deployment}.json` and
+`assets/alehall135/evidence/live/`. Unrelated archived/Vikings55 work is preserved.

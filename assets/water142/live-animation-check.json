@@ -1,0 +1,43 @@
+{
+  "counts": [
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294,
+    294
+  ],
+  "rootsStable": true,
+  "dryCounts": [
+    {
+      "waterY": 550,
+      "count": 303
+    },
+    {
+      "waterY": 850,
+      "count": 303
+    },
+    {
+      "waterY": 874,
+      "count": 303
+    },
+    {
+      "waterY": 899,
+      "count": 303
+    },
+    {
+      "waterY": 901,
+      "count": 303
+    },
+    {
+      "waterY": 950,
+      "count": 303
+    }
+  ]
+}

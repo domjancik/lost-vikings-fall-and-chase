@@ -1,0 +1,16 @@
+{
+  "commit": "153354f",
+  "checked": [
+    "level-preview95.js",
+    "scene-render95.js",
+    "campaign-menu95.js",
+    "game.js",
+    "cycle-render.js",
+    "water-effects92.js",
+    "water-render.js",
+    "assets/water92/flora-native.png",
+    "assets/water142/visual-gates.json",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

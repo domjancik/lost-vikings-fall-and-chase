@@ -4,6 +4,7 @@ import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub143';
 import {ALEHALL_DELIVERY_X,ALEHALL_LOFT} from './layout.js?v=pub143';
+import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking} from './scenery.js?v=pub144';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -18,9 +19,15 @@ function beam(c,x,y,w){for(let n=x;n<x+w;n+=96)crop(c,architecture,5,7,24,48,18,
 function column(c,x,top,bottom){sprite(c,architecture,4,x,bottom);for(let y=bottom-110;y>top;y-=48)crop(c,architecture,4,26,24,12,24,x-12,y-48);}
 function fire(c,time,x,y,scale=1){for(let n=0;n<14;n++){const age=(time*(.8+n%3*.17)+n*.127)%1,xx=q(x+Math.sin(n*2.4+age*3)*12*scale),yy=q(y-age*(18+n%5*4)*scale);c.fillStyle=['#ab522b','#d58a3b','#e7bc6a','#f0dba3'][n%4];c.fillRect(xx,yy,q(4*scale)||2,q((7-age*5)*scale)||2);}for(let n=0;n<8;n++){const age=(time*.17+n*.13)%1;c.fillStyle=`rgba(116,109,94,${(1-age)*.13})`;c.fillRect(q(x+Math.sin(n+age*4)*12),q(y-35-age*120),8,8);}}
 function roomWalls(c,camera,view){
- c.save();c.beginPath();c.rect(512,400,1888,360);c.rect(516,656,58,104);c.rect(1192,534,66,38);c.rect(1512,534,66,38);c.clip('evenodd');c.fillStyle='#35291e';c.fillRect(512,400,1888,360);
+ c.save();c.beginPath();c.rect(512,400,1888,360);c.rect(516,656,58,104);for(const p of ALEHALL_WINDOWS)c.rect(p.x,p.y,p.w,p.h);c.clip('evenodd');c.fillStyle='#35291e';c.fillRect(512,400,1888,360);
  for(let x=512;x<2400;x+=96)if(visible(x,96,camera,view))for(let y=400;y<760;y+=112)crop(c,architecture,0,8,4,48,56,x,y);
  c.restore();
+ // Recessed rear timber closes the under-loft bay. Front posts and the deck
+ // remain separate, so actors pass in front of the wall rather than through it.
+ const loftWall=alehallLoftBacking();c.save();c.beginPath();c.rect(loftWall.x,loftWall.y,loftWall.w,loftWall.h);c.clip();c.fillStyle='#241b14';c.fillRect(loftWall.x,loftWall.y,loftWall.w,loftWall.h);c.filter='brightness(.72)';
+ for(let y=loftWall.y;y<760;y+=112)for(let x=loftWall.x;x<loftWall.x+loftWall.w;x+=96)crop(c,architecture,0,8,4,48,56,x,y);
+ c.restore();c.fillStyle='#100d0a88';c.fillRect(loftWall.x,loftWall.y,loftWall.w,6);c.fillStyle='#100d0a44';c.fillRect(loftWall.x,loftWall.y+6,loftWall.w,4);
+ for(let x=loftWall.x;x<loftWall.x+loftWall.w;x+=96)crop(c,architecture,5,7,24,Math.min(48,(loftWall.x+loftWall.w-x)/2),4,x,752);
  for(const x of [512,928,1344,2380])if(visible(x-32,64,camera,view))column(c,x,406,760);
  // Atlas padding separates rafters, not the roof envelope. One intentional
  // smoke opening sits above the hearth; the remaining roof is continuous.
@@ -28,6 +35,7 @@ function roomWalls(c,camera,view){
  for(let x=512;x<2400;x+=128)if(visible(x,128,camera,view))crop(c,architecture,2,0,0,64,64,x,352);
  beam(c,512,448,1888);for(const x of [1224,1544])sprite(c,architecture,7,x,594);
  sprite(c,architecture,6,544,760);sprite(c,architecture,6,1744,760);sprite(c,architecture,13,1330,640);sprite(c,architecture,14,1010,642);
+ return loftWall;
 }
 function terrain(c,s,camera,view){const g=s.machine,hole=g.phase==='crack'||g.phase==='fall';
  c.save();if(hole){c.beginPath();c.rect(0,760,1990,490);c.rect(2260,760,140,490);c.clip();}c.fillStyle='#382b20';c.fillRect(0,760,2400,490);
@@ -69,9 +77,10 @@ export function drawAlehallBerth(c){return alehallBerthSteps.map(step=>{
  return {...step,bottom:760,opaque:true,kind:'loading-berth'};
 });}
 export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];c.imageSmoothingEnabled=false;c.fillStyle='#47575c';c.fillRect(camera.x,camera.y,view.width,view.height);
- const far={x:q(camera.x*.82-120),y:q(310+camera.y*.35),w:768,h:384};if(ready(coast))c.drawImage(coast,far.x,far.y,far.w,far.h);
+ const far=alehallCoastPlacement(camera);if(ready(coast))c.drawImage(coast,far.x,far.y,far.w,far.h);
+ const windowScenery=drawAlehallWindowScenery(c,coast,camera);
  for(let n=0;n<36;n++){const x=q((n*71-s.time*24+20000)%540),y=q(420+(n*39+s.time*180)%340);c.fillStyle='#a0b0ae66';c.fillRect(x,y,2,8);}
- roomWalls(c,camera,view);terrain(c,s,camera,view);
+ const loftWall=roomWalls(c,camera,view);terrain(c,s,camera,view);
  const berthTreads=drawAlehallBerth(c);
  // Loft deck is attached to posts that continue to the walking floor.
  for(const x of [ALEHALL_LOFT.x+8,ALEHALL_LOFT.x+ALEHALL_LOFT.w-12])column(c,x,ALEHALL_LOFT.y,760);
@@ -97,7 +106,7 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  // Back room: quiet storage, a single candle and the impossible find on its stool.
  sprite(c,props,12,1850,730);sprite(c,props,2,2120,globeBottom(s)+26);drawGlobe(c,s);drawFactoryCups(c,s);
  contacts.push({kind:'cart',...sprite(c,props,0,g.cart.x,760),top:g.cart.y});
- return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,berthTreads,far,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
+ return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,berthTreads,far,windowScenery,loftWall,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
 }
 let darkness;
 export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mechanic!=='alehall')return null;const g=s.machine,mode=g.cups.mode;

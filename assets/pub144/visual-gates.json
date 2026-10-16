@@ -1,0 +1,40 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB144-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Continuity review of unchanged retained coast384x192 and architecture-native artwork. Coast remains768x384world at native2world per pixel, with original snapped x/y response and aspect. No new generated or resampled art. Shared mirrored repetition is confined to existing interior window apertures."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independently inspected actual desktop1x/2x and coarse-mobile landscape/portrait window/bay/look views. Receipts record10desktop and12mobile captures, errors[], authoritative zoom1/2 and vertical look-1/0/1. Production-canvas16camera proof reproduces old gaps, leaves zero missing window pixels and zero changed pixels outside window masks. Three focused geometry regressions independently pass."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Before/after actual-scene comparison replaces flatgray window holes with coherent mountain/shore/sky scenery while retaining the approved exterior. Recessed timber panel joins deck634, post inner edges660..876 and floor760. Front posts/actors occlude it, so contact shading reads on a real rear surface. Native density, rich material and adult scale are preserved without a floating wall or translucent doubled scenery."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Scenery-only correction introduces no new collision or blocking light volume. Existing physical loft deck, shield approach, inventory and puzzle mechanics are unchanged. The panel visibly belongs behind actors, and normal movement/look captures remain error-free."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/coast-native.png",
+    "assets/alehall135/registration.json",
+    "assets/pub144/pixel-check.json",
+    "assets/pub144/desktop/evidence.json",
+    "assets/pub144/touch/evidence.json",
+    "assets/pub144/desktop/first-window-2x.png",
+    "assets/pub144/desktop/loft-backing-2x.png",
+    "assets/pub144/touch/portrait-window-2x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification"
+  ]
+}

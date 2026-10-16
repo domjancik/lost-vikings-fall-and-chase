@@ -675,6 +675,10 @@
     {
       "source": "src/levels/pub/layout.js",
       "output": "alehall-layout143.js"
+    },
+    {
+      "source": "src/levels/pub/scenery.js",
+      "output": "alehall-scenery144.js"
     }
   ],
   "files": [
@@ -1044,6 +1048,7 @@
     "assets/sewer141/winch-axle.png",
     "assets/sewer141/visual-gates.json",
     "assets/water142/visual-gates.json",
-    "assets/pub143/visual-gates.json"
+    "assets/pub143/visual-gates.json",
+    "assets/pub144/visual-gates.json"
   ]
 }

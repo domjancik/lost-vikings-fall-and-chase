@@ -581,6 +581,10 @@
       "output": "sewer-campaign.js"
     },
     {
+      "source": "src/levels/sewer/lurkers.js",
+      "output": "sewer-lurkers149.js"
+    },
+    {
       "source": "src/levels/sewer/light.js",
       "output": "sewer-light.js"
     },
@@ -1061,6 +1065,7 @@
     "assets/sewer145/visual-gates.json",
     "assets/depth146/visual-gates.json",
     "assets/pub147/visual-gates.json",
-    "assets/pub148/visual-gates.json"
+    "assets/pub148/visual-gates.json",
+    "assets/sewer149/visual-gates.json"
   ]
 }

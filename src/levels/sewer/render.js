@@ -1,13 +1,13 @@
 import {drawSewerSpray} from './stream-render.js?v=sewer136';
 import {drawSewerGlobe,sewerGlobeArtState} from './globe-art.js?v=pub139';
-import {lurkerDeathPose,drawLurkerWalk} from './lurker-art.js?v=sewer145';
+import {lurkerDeathPose,drawLurkerWalk} from './lurker-art.js?v=sewer149';
 import {drawSewerFog} from './fog.js?v=sewer130';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerLightCone,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer136';
 import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
 import {drawSewerWheel} from './wheel.js?v=sewer141';
-import {sewerSprayMount} from './campaign.js?v=sewer145';
+import {sewerSprayMount} from './campaign.js?v=sewer149';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}

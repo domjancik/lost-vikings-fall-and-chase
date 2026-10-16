@@ -279,6 +279,16 @@ A raised leaf remains physical in its raised position; require actual body
 clearance along the intended route and around the full range of lifting landings.
 Do not accept a route that depends on walking or jumping through an opaque slab.
 
+When adding enemy traversal, check the entire path against neighboring decks and
+ceilings, including the exposed side of a wall, top turns and the return to the
+floor. A clear anchor point does not establish clearance for the body and legs.
+Exercise moving supports and death mid-climb: the corpse must settle on a real
+support. Contact/attack visibility rays start at the rotated body in air, never
+inside the wall at its attachment point. Verify wind-up, damaging interval,
+recovery, shield block, evasion and repeated patrol turns separately. Diagnostics
+must illuminate the actual subject and retain per-frame copies of mutable state;
+dark or stale screenshots do not establish animation/contact quality.
+
 ## Era and story continuity
 
 The campaign opening takes place in the Vikings’ own time. The alehall must

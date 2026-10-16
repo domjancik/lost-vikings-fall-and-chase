@@ -1,0 +1,47 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/SEWER149-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Unchanged retained sewer125 native chitin source inspected directly. Shell, head, antennae and shaded material preserved. Wider96x64 motion canvas retains the forward lunge without changing two-world-unit native density;128x128 inverse-nearest raster supplies5degree wall turns. No generated replacement or downsampling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "40 focused tests independently pass, including telegraphed bite reach/window, dodge/immunity, hazards disabled, stable patrol direction, continuous60/120Hz clear-wall traversal, real adjacent-deck avoidance/return, shutter release, rotated-center contact and falling wall corpse. Final actual coarse/touch normal route wins at69.4667seconds with all heroes3HP,9captures/errors[] and next water round4. Final labeled seeded diagnostics contain24visible1x/2x images across12states; stationary bite damages Erik3to2, front-shield Olaf remains3 and recoils attacker."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Final native1x/2x diagnostics visibly retain rich chitin during crouch/lunge, side/top/return and death. Actual-layout crawler turns atop the shutter and descends the exposed right face, remaining clear of the neighboring service deck. Feet follow the surface, extended head is not cropped, floor return and overturned corpse are grounded. Ordinary gameplay1x/2x/portrait shots confirm fit with current heroes and production darkness. Initial invisible bite/descent images and blocked-side traversal were superseded; all extra diagnostic lights are render-only, production darkness unchanged."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Committed0.7second warning, active bite and recovery allow deliberate dodge, local front-shield block or weapon response. No remote protection or arbitrary ability gate. Real shutter/light/platform geometry stays meaningful: adjacent service deck prevents blocked-side descent, so creature returns via exposed side; clear isolated walls permit crossing. Opening and killing a climber cause continuous gravity rather than teleportation. Healthy full route preserves the established collaborative light/weapon/stream sequence."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/sewer125/props-native.png",
+    "assets/sewer149/diagnostic/check.json",
+    "assets/sewer149/diagnostic/bite-warning-1x.png",
+    "assets/sewer149/diagnostic/bite-active-2x.png",
+    "assets/sewer149/diagnostic/shield-block-2x.png",
+    "assets/sewer149/diagnostic/wall-ascent-2x.png",
+    "assets/sewer149/diagnostic/shutter-top-2x.png",
+    "assets/sewer149/diagnostic/wall-descent-2x.png",
+    "assets/sewer149/diagnostic/floor-return-2x.png",
+    "assets/sewer149/diagnostic/wall-death-1x.png",
+    "assets/sewer149/diagnostic/corpse-grounded-1x.png",
+    "assets/sewer149/route/evidence.json",
+    "assets/sewer149/route/guarded-shot-1x.png",
+    "assets/sewer149/route/guarded-shot-2x.png",
+    "assets/sewer149/route/guarded-shot-portrait.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

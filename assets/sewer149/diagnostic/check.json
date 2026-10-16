@@ -1,0 +1,1181 @@
+{
+  "shots": [
+    "bite-warning-1x",
+    "bite-warning-2x",
+    "bite-active-1x",
+    "bite-active-2x",
+    "shield-brace-1x",
+    "shield-brace-2x",
+    "shield-block-1x",
+    "shield-block-2x",
+    "wall-turn-1x",
+    "wall-turn-2x",
+    "wall-ascent-1x",
+    "wall-ascent-2x",
+    "upper-corner-1x",
+    "upper-corner-2x",
+    "shutter-top-1x",
+    "shutter-top-2x",
+    "wall-descent-1x",
+    "wall-descent-2x",
+    "floor-return-1x",
+    "floor-return-2x",
+    "wall-death-1x",
+    "wall-death-2x",
+    "corpse-grounded-1x",
+    "corpse-grounded-2x"
+  ],
+  "checks": [
+    {
+      "name": "bite-warning",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2150,
+        "y": 760,
+        "dir": -1,
+        "hp": 3,
+        "phase": "warning",
+        "warning": 0.5000000000000007,
+        "attack": 0,
+        "travel": 0,
+        "gaitTravel": 0
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2150,
+        "sole": 760,
+        "phase": "warning",
+        "warning": 0.5000000000000007,
+        "gait": {
+          "travel": 0,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -34,
+              "kneeY": -16,
+              "footX": -44,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -22,
+              "kneeY": -16,
+              "footX": -20,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": 4,
+              "kneeY": -16,
+              "footX": 10,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -8,
+              "kneeY": -16,
+              "footX": -14,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 18,
+              "kneeY": -16,
+              "footX": 16,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 30,
+              "kneeY": -16,
+              "footX": 40,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 0,
+          "bite": 0,
+          "brace": 0.7142857142857153,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "bite-active",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 2,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2150,
+        "y": 760,
+        "dir": -1,
+        "hp": 3,
+        "phase": "attack",
+        "warning": 0,
+        "attack": 0.1166666666666667,
+        "travel": 0,
+        "gaitTravel": 0,
+        "attackCount": 1,
+        "attackDir": -1
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2150,
+        "sole": 760,
+        "phase": "attack",
+        "warning": 0,
+        "gait": {
+          "travel": 0,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -34,
+              "kneeY": -16,
+              "footX": -44,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -22,
+              "kneeY": -16,
+              "footX": -20,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": 4,
+              "kneeY": -16,
+              "footX": 10,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -8,
+              "kneeY": -16,
+              "footX": -14,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 18,
+              "kneeY": -16,
+              "footX": 16,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 30,
+              "kneeY": -16,
+              "footX": 40,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 0,
+          "bite": 0.9659258262890682,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "shield-brace",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2150,
+        "y": 760,
+        "dir": -1,
+        "hp": 3,
+        "phase": "warning",
+        "warning": 0.5000000000000007,
+        "attack": 0,
+        "travel": 0,
+        "gaitTravel": 0
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2150,
+        "sole": 760,
+        "phase": "warning",
+        "warning": 0.5000000000000007,
+        "gait": {
+          "travel": 0,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -34,
+              "kneeY": -16,
+              "footX": -44,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -22,
+              "kneeY": -16,
+              "footX": -20,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": 4,
+              "kneeY": -16,
+              "footX": 10,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -8,
+              "kneeY": -16,
+              "footX": -14,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 18,
+              "kneeY": -16,
+              "footX": 16,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 30,
+              "kneeY": -16,
+              "footX": 40,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 0,
+          "bite": 0,
+          "brace": 0.7142857142857153,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "shield-block",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2155.0625,
+        "y": 760,
+        "dir": -1,
+        "hp": 3,
+        "phase": "recoil",
+        "warning": 0,
+        "attack": 0.1416666666666667,
+        "travel": 5.0625,
+        "gaitTravel": -5.0625,
+        "attackCount": 1,
+        "attackDir": -1,
+        "recoil": 187.5
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2155.0625,
+        "sole": 760,
+        "phase": "recoil",
+        "warning": 0,
+        "gait": {
+          "travel": 5.0625,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -31.46875,
+              "kneeY": -18.460926362322507,
+              "footX": -38.9375,
+              "footY": -4.921852724645015
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -24.53125,
+              "kneeY": -16,
+              "footX": -25.0625,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": 1.46875,
+              "kneeY": -16,
+              "footX": 4.9375,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -5.46875,
+              "kneeY": -18.460926362322507,
+              "footX": -8.9375,
+              "footY": -4.921852724645015
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 20.53125,
+              "kneeY": -18.460926362322507,
+              "footX": 21.0625,
+              "footY": -4.921852724645015
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 27.46875,
+              "kneeY": -16,
+              "footX": 34.9375,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 0,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "wall-turn",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2064.5,
+        "y": 760,
+        "dir": -1,
+        "hp": 3,
+        "phase": "climb",
+        "warning": 0,
+        "attack": 0,
+        "travel": 25.5,
+        "gaitTravel": 25.5,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 0
+        },
+        "recoil": 0,
+        "rotation": 1.5707963267948966
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2064.5,
+        "sole": 760,
+        "phase": "climb",
+        "warning": 0,
+        "gait": {
+          "travel": 25.5,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -22.75,
+              "kneeY": -16.780361288064512,
+              "footX": -21.5,
+              "footY": -1.560722576129026
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -33.25,
+              "kneeY": -16,
+              "footX": -42.5,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": -7.25,
+              "kneeY": -16,
+              "footX": -12.5,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": 3.25,
+              "kneeY": -16.780361288064512,
+              "footX": 8.5,
+              "footY": -1.560722576129026
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 29.25,
+              "kneeY": -16.780361288064512,
+              "footX": 38.5,
+              "footY": -1.560722576129026
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 18.75,
+              "kneeY": -16,
+              "footX": 17.5,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 1.5707963267948966,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "wall-ascent",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2060,
+        "y": 716,
+        "dir": -1,
+        "hp": 3,
+        "phase": "climb",
+        "warning": 0,
+        "attack": 0,
+        "travel": 74,
+        "gaitTravel": 74,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 1
+        },
+        "recoil": 0,
+        "rotation": 1.5707963267948966
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2060,
+        "sole": 716,
+        "phase": "climb",
+        "warning": 0,
+        "gait": {
+          "travel": 74,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -23,
+              "kneeY": -17.035276180410087,
+              "footX": -22.000000000000004,
+              "footY": -2.07055236082017
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -32.99999999999999,
+              "kneeY": -16,
+              "footX": -41.999999999999986,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": -6.999999999999993,
+              "kneeY": -16,
+              "footX": -11.999999999999986,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": 2.9999999999999982,
+              "kneeY": -17.035276180410087,
+              "footX": 7.9999999999999964,
+              "footY": -2.07055236082017
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 29,
+              "kneeY": -17.035276180410087,
+              "footX": 38,
+              "footY": -2.07055236082017
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 19.000000000000007,
+              "kneeY": -16,
+              "footX": 18.000000000000014,
+              "footY": 0
+            }
+          ],
+          "sole": 716,
+          "rotation": 1.5707963267948966,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "upper-corner",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2060,
+        "y": 602,
+        "dir": -1,
+        "hp": 3,
+        "phase": "climb",
+        "warning": 0,
+        "attack": 0,
+        "travel": 188,
+        "gaitTravel": 188,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 1
+        },
+        "recoil": 0,
+        "rotation": 1.5707963267948966
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2060,
+        "sole": 602,
+        "phase": "climb",
+        "warning": 0,
+        "gait": {
+          "travel": 188,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -31.999999999999996,
+              "kneeY": -18.000000000000004,
+              "footX": -39.99999999999999,
+              "footY": -4.000000000000006
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -24.000000000000014,
+              "kneeY": -16,
+              "footX": -24.00000000000003,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": 1.9999999999999858,
+              "kneeY": -16,
+              "footX": 5.999999999999972,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -5.9999999999999964,
+              "kneeY": -18.000000000000004,
+              "footX": -9.999999999999993,
+              "footY": -4.000000000000006
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 20.000000000000004,
+              "kneeY": -18.000000000000004,
+              "footX": 20.000000000000007,
+              "footY": -4.000000000000006
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 27.999999999999986,
+              "kneeY": -16,
+              "footX": 35.99999999999997,
+              "footY": 0
+            }
+          ],
+          "sole": 602,
+          "rotation": 1.5707963267948966,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "shutter-top",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2029,
+        "y": 600,
+        "dir": -1,
+        "hp": 3,
+        "phase": "climb",
+        "warning": 0,
+        "attack": 0,
+        "travel": 221,
+        "gaitTravel": 221,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 3
+        },
+        "recoil": 0,
+        "rotation": 0
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2029,
+        "sole": 600,
+        "phase": "climb",
+        "warning": 0,
+        "gait": {
+          "travel": 221,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -24.500000000000007,
+              "kneeY": -18.43504571603489,
+              "footX": -25.000000000000014,
+              "footY": -4.870091432069777
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -31.499999999999993,
+              "kneeY": -16,
+              "footX": -38.999999999999986,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": -5.499999999999993,
+              "kneeY": -16,
+              "footX": -8.999999999999986,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": 1.499999999999993,
+              "kneeY": -18.43504571603489,
+              "footX": 4.999999999999986,
+              "footY": -4.870091432069777
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 27.499999999999993,
+              "kneeY": -18.43504571603489,
+              "footX": 34.999999999999986,
+              "footY": -4.870091432069777
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 20.500000000000007,
+              "kneeY": -16,
+              "footX": 21.000000000000014,
+              "footY": 0
+            }
+          ],
+          "sole": 600,
+          "rotation": 0,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "wall-descent",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2060,
+        "y": 631,
+        "dir": 1,
+        "hp": 3,
+        "phase": "climb",
+        "warning": 0,
+        "attack": 0,
+        "travel": 301,
+        "gaitTravel": 300,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": 1,
+          "stage": 5,
+          "returning": true
+        },
+        "recoil": 0,
+        "rotation": 1.5707963267948966
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2060,
+        "sole": 631,
+        "phase": "climb",
+        "warning": 0,
+        "gait": {
+          "travel": 301,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -28,
+              "kneeY": -16,
+              "footX": -32,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -28,
+              "kneeY": -20,
+              "footX": -32,
+              "footY": -8
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": -2,
+              "kneeY": -20,
+              "footX": -2,
+              "footY": -8
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -2,
+              "kneeY": -16,
+              "footX": -2,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 24,
+              "kneeY": -16,
+              "footX": 28,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 24,
+              "kneeY": -20,
+              "footX": 28,
+              "footY": -8
+            }
+          ],
+          "sole": 631,
+          "rotation": 1.5707963267948966,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "floor-return",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2097.666666666655,
+        "y": 760,
+        "dir": 1,
+        "hp": 3,
+        "phase": "patrol",
+        "warning": 0,
+        "attack": 0,
+        "travel": 467.66666666665515,
+        "gaitTravel": 466.66666666665515,
+        "crawl": null,
+        "recoil": 0,
+        "rotation": 0
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2097.666666666655,
+        "sole": 760,
+        "phase": "patrol",
+        "warning": 0,
+        "gait": {
+          "travel": 467.66666666665515,
+          "legs": [
+            {
+              "side": 0,
+              "hip": -22,
+              "kneeX": -27.33333333332756,
+              "kneeY": -19.93923101204778,
+              "footX": -30.666666666655118,
+              "footY": -7.8784620240955645
+            },
+            {
+              "side": 1,
+              "hip": -22,
+              "kneeX": -28.66666666667244,
+              "kneeY": -16,
+              "footX": -33.33333333334488,
+              "footY": 0
+            },
+            {
+              "side": 0,
+              "hip": -2,
+              "kneeX": -2.666666666672441,
+              "kneeY": -16,
+              "footX": -3.333333333344882,
+              "footY": 0
+            },
+            {
+              "side": 1,
+              "hip": -2,
+              "kneeX": -1.333333333327559,
+              "kneeY": -19.93923101204778,
+              "footX": -0.666666666655118,
+              "footY": -7.8784620240955645
+            },
+            {
+              "side": 0,
+              "hip": 18,
+              "kneeX": 24.66666666667244,
+              "kneeY": -19.93923101204778,
+              "footX": 29.333333333344882,
+              "footY": -7.8784620240955645
+            },
+            {
+              "side": 1,
+              "hip": 18,
+              "kneeX": 23.33333333332756,
+              "kneeY": -16,
+              "footX": 26.666666666655118,
+              "footY": 0
+            }
+          ],
+          "sole": 760,
+          "rotation": 0,
+          "bite": 0,
+          "brace": 0,
+          "frame": "distance-tripod"
+        }
+      }
+    },
+    {
+      "name": "wall-death",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2071.374999999997,
+        "y": 692.9375,
+        "dir": 1,
+        "hp": 0,
+        "phase": "dead",
+        "warning": 0,
+        "attack": 0,
+        "travel": 469.16666666665515,
+        "gaitTravel": 468.16666666665515,
+        "crawl": null,
+        "recoil": 0,
+        "rotation": 1.5707963267948966,
+        "deadAt": 18.924999999999493,
+        "deathVX": 65,
+        "falling": false,
+        "vy": 157.5
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2072,
+        "sole": 692.9375,
+        "phase": "dead",
+        "dead": true,
+        "y": 520,
+        "floor": 692,
+        "angle": 1.0471975511965976,
+        "hop": 14,
+        "settled": false
+      }
+    },
+    {
+      "name": "corpse-grounded",
+      "seeded": true,
+      "heroes": [
+        {
+          "id": 0,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 1,
+          "hp": 3,
+          "skin": "imagegen90"
+        },
+        {
+          "id": 2,
+          "hp": 3,
+          "skin": "imagegen90"
+        }
+      ],
+      "enemy": {
+        "id": 0,
+        "x": 2087.6249999999923,
+        "y": 760,
+        "dir": 1,
+        "hp": 0,
+        "phase": "dead",
+        "warning": 0,
+        "attack": 0,
+        "travel": 469.16666666665515,
+        "gaitTravel": 468.16666666665515,
+        "crawl": null,
+        "recoil": 0,
+        "rotation": 1.5707963267948966,
+        "deadAt": 18.924999999999493,
+        "deathVX": 65,
+        "falling": false,
+        "vy": 0
+      },
+      "art": {
+        "kind": "lurker",
+        "id": 0,
+        "x": 2088,
+        "sole": 760,
+        "phase": "dead",
+        "dead": true,
+        "y": 638,
+        "floor": 760,
+        "angle": 3.141592653589793,
+        "hop": 0,
+        "settled": true
+      }
+    }
+  ],
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ]
+}

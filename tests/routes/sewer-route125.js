@@ -14,7 +14,7 @@ export function simulateSewerRoute(hz=120){
  move(1,1700);until(1,s=>s.machine.lurkers.every(e=>!e.hp),()=>s.cooldown===0?{action:true}:{},8);
  // Return the portable lamp to the lower hook; leave its focused beam aimed along the rope.
  move(0,2010);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===760,{},2);move(0,1850);tick(0,{interact:true});mark('lamp-hooked');move(0,1530);
- move(2,1800);tick(2,{action:true});move(1,1920);mark('guarded-shot');until(1,s=>s.machine.rope.cut,()=>s.cooldown===0?{action:true}:{},5);until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');
+ move(2,1800);tick(2,{action:true});move(1,1920);tick(1,{right:true});mark('guarded-shot');until(1,s=>s.machine.rope.cut,()=>s.cooldown===0?{action:true}:{},5);until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');
  // Light reveals the real moving animal; arrows retain their normal damage rules.
  until(1,s=>s.machine.lurkers.every(e=>!e.hp),()=>s.cooldown===0?{action:true}:{},8);
  for(const id of [0,1,2]){mark('stream-approach-'+id);until(id,s=>s.machine.captured[id],{right:true},15);mark('stream-caught-'+id);until(id,s=>s.machine.escapeTravel[id]>=200,{},3);mark('stream-swept-'+id);}

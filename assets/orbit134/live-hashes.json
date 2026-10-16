@@ -1,0 +1,20 @@
+{
+  "commit": "b19f666",
+  "checked": [
+    "game.js",
+    "cycle-campaign.js",
+    "engine.js",
+    "cycle-render.js",
+    "campaign-picker95.js",
+    "campaign-menu95.js",
+    "orbit-campaign.js",
+    "level-preview95.js",
+    "scene-render95.js",
+    "world-render.js",
+    "interactions.js",
+    "orbit-render.js",
+    "orbit-view.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

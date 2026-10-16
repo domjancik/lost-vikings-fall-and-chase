@@ -1,5 +1,5 @@
 import {segmentHit} from '../../core/projectile-collision.js';
-import {sewerOccluders} from './light.js?v=sewer129';
+import {sewerOccluders} from './light.js?v=sewer132';
 
 // The same physical walls that hide a source also damp its sound. No camera-space
 // or guessed enemy position: every cue retains its actual world source.

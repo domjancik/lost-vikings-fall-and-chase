@@ -15,12 +15,13 @@ const read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.h
 let mountedFixtures;
 async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await page.screenshot({path:file});const state=await read();if(process.argv.includes('--structure-focus')&&state.round===10){const fixtures=state.art.contacts.filter(a=>a.kind==='rear-fixture');assert.ok(fixtures.length>0);if(mountedFixtures)assert.deepEqual(fixtures,mountedFixtures,'rear fixtures stay registered through camera travel');mountedFixtures=fixtures;}captures.push({file,name,label,...state});}
 await page.exposeBinding('sewerPhoto',async(_,name)=>{
+ if(process.argv.includes('--sewer132-focus')&&!['wall-contact','guarded-shot','lurker-hit','lurker-fall','lurker-dead'].includes(name))return;
  if(process.argv.includes('--structure-focus')&&!['lamphouse','shielded-spray','winch-moving','inspection-open','leaf-clearance','landing-rider-start','outlet-moving','outlet-open'].includes(name))return;
  if(process.argv.includes('--spray-focus')&&name!=='shielded-spray')return;
  if(process.argv.includes('--focus')&&!['lamphouse','winch-moving','outlet-moving','stream-swept-2'].includes(name))return;
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
- for(const [size,zoom,label]of [[process.argv.includes('--structure-focus')?{width:1920,height:800}:{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},2,'portrait'],[{width:844,height:390},2,'landscape']]){
+ for(const [size,zoom,label]of [[process.argv.includes('--structure-focus')?{width:1920,height:800}:{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},process.argv.includes('--sewer132-focus')?1.5:2,'portrait'],[{width:844,height:390},2,'landscape']]){
   await page.setViewportSize(size);for(let attempt=0;attempt<3&&(await read()).camera.zoom!==zoom;attempt++){await page.locator('#zoom').click();await page.waitForTimeout(50);}await page.waitForTimeout(350);await photo(name,label);
  }
  await page.setViewportSize(touch?{width:844,height:390}:{width:1440,height:900});await page.locator('#pause').click();
@@ -88,6 +89,10 @@ try{
    body=body.replace("mark('guarded-shot');", "mark('guarded-shot');move(0,2240);mark('landing-rider-start');");
    body=body.replace("until(1,s=>s.machine.gates[0].pose>=.4", "until(0,s=>s.machine.gates[0].pose>=.4").replace("until(1,s=>s.machine.gates[0].pose===1", "until(0,s=>s.machine.gates[0].pose===1");
    body=body.replace("mark('outlet-open');", "mark('outlet-open');move(0,2120);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===760,{},2);");
+  }
+  if(process.argv.includes('--sewer132-focus')){
+   body=body.replace("move(0,1840);tick(0,{interact:true});", "move(0,2004);mark('wall-contact');move(0,1840);tick(0,{right:true});tick(0,{interact:true});");
+   body=body.replace("until(1,s=>s.machine.lurkers.every(e=>!e.hp),()=>s.cooldown===0?{action:true}:{},8);", "until(1,s=>s.machine.lurkers.every(e=>!e.hp),()=>s.cooldown===0?{action:true}:{},8);mark('lurker-hit');until(1,s=>s.time-s.machine.lurkers[0].deadAt>=.18,{},1);mark('lurker-fall');move(1,2235);mark('lurker-dead');");
   }
   body=body.replace(/s\.heroes\[(\d)\]\.itemSlot=(\d);/g,'await slot($1,$2);').replace(/\b(tick|until|move|mark)\(/g,'await $1(');
   const helpers=`async function play(){

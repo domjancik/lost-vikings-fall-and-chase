@@ -1,0 +1,9 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createState} from '../../src/core/engine.js';
+import {sewerLights,sewerLightAt} from '../../src/levels/sewer/light.js';
+import {visibilityRay} from '../../src/levels/sewer/optics.js';
+const state=()=>{const s=createState(10,'cycle');s.machine.introTime=4;s.items=[];s.machine.lamps.forEach(a=>a.lit=false);s.heroes[0].inventory=['inspectionLamp',null,null,null];return s;};
+test('lamp wick and housing retract before a closed shutter on either side',()=>{for(const [x,face]of [[2004,1],[2076,-1]]){const s=state();Object.assign(s.heroes[0],{x,y:716,face});const lamp=sewerLights(s).find(a=>a.portable);assert.ok(lamp);assert.ok(face===1?lamp.x+12<2020:lamp.x-12>2060);assert.equal(Math.abs(lamp.x%2),0);assert.equal(sewerLightAt(s,face===1?2100:1980,724),0);assert.ok(sewerLightAt(s,x,724)>0);}});
+test('opening a shutter restores the carried lamp offset without a stale clamp',()=>{const s=state();Object.assign(s.heroes[0],{x:2004,y:716,face:1});const before=sewerLights(s).find(a=>a.portable);s.machine.hatch.pose=1;const after=sewerLights(s).find(a=>a.portable);assert.ok(before.x<after.x);assert.equal(after.x,2026);});
+test('an emitter accidentally embedded in masonry cannot illuminate through it',()=>{const s=state();Object.assign(s.heroes[0],{x:2035,y:716,face:1});assert.equal(sewerLights(s).filter(a=>a.portable||a.spill).length,0);assert.equal(sewerLightAt(s,2100,724),0);const wall={x:100,y:0,w:40,h:100};assert.deepEqual(visibilityRay({x:110,y:50,radius:300},0,[wall]),{x:110,y:50});});
+test('light on a wall face can leave outward but never cast a ray inward',()=>{const wall={x:100,y:0,w:40,h:100},lamp={x:100,y:50,radius:300};assert.equal(visibilityRay(lamp,0,[wall]).x,100);assert.equal(visibilityRay(lamp,Math.PI,[wall]).x,-200);});

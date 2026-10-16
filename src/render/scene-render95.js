@@ -1,9 +1,9 @@
-import {drawCycleWorld} from '../campaigns/machines/cycle-render.js?v=sewer130';
+import {drawCycleWorld} from '../campaigns/machines/cycle-render.js?v=sewer132';
 import {drawStoryBackground,drawStoryWorld} from '../campaigns/story/story-render.js?v=transitions126';
-import {drawWorld} from './world-render.js?v=sewer129';
+import {drawWorld} from './world-render.js?v=sewer132';
 import {drawInventoryWorld} from './inventory-render.js?v=sewer125';
 import {drawParallax} from './parallax-render.js?v=zoom127';
-import {platforms,W,H} from '../core/engine.js?v=sewer129';
+import {platforms,W,H} from '../core/engine.js?v=sewer132';
 import {snapPixel} from './pixel-grid.js?v=menu95';
 const image=src=>{const i=new Image();i.src=src+'?v=menu95';return i;};
 const art=image('assets/pixel/arcade-pub.png'),arcade=Array.from({length:5},(_,i)=>image('assets/pixel/arcade-background-'+(i+1)+'.png'));

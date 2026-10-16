@@ -1,9 +1,10 @@
+import {lurkerDeathPose} from './lurker-art.js?v=sewer132';
 import {drawSewerFog} from './fog.js?v=sewer130';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {sewerLights,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer129';
-import {visibilityPolygon} from './optics.js?v=sewer125';
+import {sewerLights,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer132';
+import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
-import {sewerSprayMount} from './campaign.js?v=sewer129';
+import {sewerSprayMount} from './campaign.js?v=sewer132';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
@@ -29,6 +30,11 @@ function flow(c,s){const g=s.machine,j=g.jet,o=s.heroes[2];
  // The floor enters the real outlet channel, whose lower chute is open.
  c.save();outletPath(c);c.clip();c.fillStyle='#163b42';c.fillRect(2700,680,600,420);for(let n=0;n<100;n++){const x=2700+((s.time*220+n*43)%640),dy=Math.max(0,x-2900),y=754+dy*dy*.0015+(n%8-4)*6;c.fillStyle=n%5?'#39686e':'#a1c5bc';c.fillRect(q(x),q(y),12+n%4*4,2);c.fillStyle='#284d55';c.fillRect(q(x-8),q(y+10),22,4);}c.restore();
  for(const h of s.heroes)if(g.captured[h.id]&&!h.sweptAway)for(let n=0;n<6;n++){const x=h.x-24-n*10,y=h.y+32+Math.sin(s.time*8+n)*8;c.fillStyle=n%2?'#9fc5bb':'#477b81';c.fillRect(q(x),q(y),6,2);}
+}
+function deadLurker(c,e,time){
+ const pose=lurkerDeathPose(e,time),image=orbitRaster(props,pose.angle,{size:96,pivotX:32,pivotY:45,crop:[192,192,64,64]});
+ if(image){c.save();c.beginPath();c.rect(pose.x-110,pose.floor-240,220,240);c.clip();c.translate(pose.x,pose.y);if(e.dir>0)c.scale(-1,1);c.drawImage(image,-96,0,192,192);c.restore();}
+ return {kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:'dead',dead:true,...pose};
 }
 export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[];c.imageSmoothingEnabled=false;c.fillStyle='#060707';c.fillRect(camera.x,camera.y,view.width,view.height);
  // Enclosed rear masonry, with quieter recessed service bays behind grilles.
@@ -64,7 +70,7 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[];c.
  for(const h of g.hooks){crop(c,environment,146,68,12,8,h.x-12,h.y-44);c.fillStyle='#8b7960';c.fillRect(q(h.x)-2,q(h.y-30),4,22);contacts.push({kind:'lamp-hook',...h,occupied:g.lamp.hookId===h.id});}
  for(const a of s.items){const n={inspectionLamp:0,lampOil:1,bullseyeLens:2}[a.type];if(n!==undefined)item(c,n,a.x,a.y+44);}
  for(const l of sewerLights(s).filter(a=>a.portable)){item(c,0,l.x,l.y+12);flame(c,l.x,l.y,s.time);if(g.lamp.lens){c.fillStyle='#a4c9cd';c.fillRect(q(l.x+l.face*10),q(l.y-6),4,6);}}
- for(const e of g.lurkers){if(!e.hp){cell(c,props,15,e.x-64,e.y-120,e.dir>0);continue;}const n=e.phase==='warning'?14:e.phase==='recoil'||e.phase==='retreat'?15:12+Math.floor(s.time*6)%2;cell(c,props,n,e.x-64,e.y-120,e.dir>0);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning});}
+ for(const e of g.lurkers){if(!e.hp){contacts.push(deadLurker(c,e,s.time));continue;}const n=e.phase==='warning'?14:e.phase==='recoil'||e.phase==='retreat'?15:12+Math.floor(s.time*6)%2;cell(c,props,n,e.x-64,e.y-120,e.dir>0);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning});}
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
  flow(c,s);contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});

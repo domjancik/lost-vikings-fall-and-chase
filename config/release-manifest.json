@@ -589,6 +589,10 @@
       "output": "sewer-fog.js"
     },
     {
+      "source": "src/levels/sewer/lurker-art.js",
+      "output": "sewer-lurker-art.js"
+    },
+    {
       "source": "src/levels/sewer/render.js",
       "output": "sewer-render.js"
     },

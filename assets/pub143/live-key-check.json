@@ -1,0 +1,96 @@
+{
+  "key": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "errors": [],
+  "captures": 20,
+  "checkpoints": [
+    {
+      "name": "blocked-underloft",
+      "time": 0.675,
+      "erik": {
+        "x": 729.1527777777761,
+        "y": 670,
+        "support": null,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "cart": {
+        "x": 1440,
+        "y": 706,
+        "w": 96,
+        "parked": false
+      }
+    },
+    {
+      "name": "barrel-short",
+      "time": 6.941666666666801,
+      "erik": {
+        "x": 1053.1954861111049,
+        "y": 716,
+        "support": null,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "cart": {
+        "x": 1260,
+        "y": 706,
+        "w": 96,
+        "parked": true
+      }
+    },
+    {
+      "name": "shield-boarded",
+      "time": 14.208333333333167,
+      "erik": {
+        "x": 984.8256944444385,
+        "y": 636,
+        "support": 2,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "cart": {
+        "x": 1260,
+        "y": 706,
+        "w": 96,
+        "parked": true
+      }
+    },
+    {
+      "name": "key-picked",
+      "time": 15.483333333333094,
+      "erik": {
+        "x": 730.7041666666652,
+        "y": 566,
+        "support": null,
+        "inventory": [
+          "hallKey",
+          null,
+          null,
+          null
+        ]
+      },
+      "cart": {
+        "x": 1260,
+        "y": 706,
+        "w": 96,
+        "parked": true
+      }
+    }
+  ]
+}

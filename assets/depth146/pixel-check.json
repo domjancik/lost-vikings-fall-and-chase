@@ -1,0 +1,362 @@
+[
+  {
+    "high": 500,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 500,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 3,
+      "builds": 3,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 0,
+      "y": 730
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 900,
+      "y": 450
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 844,
+      "height": 390
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 1688,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  },
+  {
+    "high": 260,
+    "camera": {
+      "x": 1950,
+      "y": 0
+    },
+    "view": {
+      "width": 430,
+      "height": 780
+    },
+    "changed": 0,
+    "over2": 0,
+    "maxDelta": 0,
+    "cache": {
+      "entries": 4,
+      "builds": 4,
+      "nativeWidth": 1400,
+      "nativeHeight": 600
+    }
+  }
+]

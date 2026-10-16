@@ -1,5 +1,5 @@
 import {farSceneY} from '../../render/vertical-parallax.js?v=vertical65';
-import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
+import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawInteractionArt} from '../../render/interaction-art.js?v=ground51';
 import {platformSupports} from './story-visuals.js?v=ground51';
 import {drawMiddleScenery} from '../../render/midground-render.js?v=edge67';

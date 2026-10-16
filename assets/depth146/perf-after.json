@@ -1,0 +1,133 @@
+{
+  "label": "final",
+  "cpuThrottle": 4,
+  "mobileEmulation": true,
+  "raf": {
+    "p50": 10,
+    "p95": 15.900000005960464
+  },
+  "top": [
+    {
+      "name": "(program)",
+      "file": "",
+      "samples": 296
+    },
+    {
+      "name": "draw",
+      "file": "game.js?v=depth146",
+      "samples": 156
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 52
+    },
+    {
+      "name": "loop",
+      "file": "game.js?v=depth146",
+      "samples": 44
+    },
+    {
+      "name": "fillRect",
+      "file": "",
+      "samples": 18
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 13
+    },
+    {
+      "name": "drawCycleWorld",
+      "file": "cycle-render.js?v=depth146",
+      "samples": 11
+    },
+    {
+      "name": "save",
+      "file": "",
+      "samples": 11
+    },
+    {
+      "name": "playWorldSounds",
+      "file": "game.js?v=depth146",
+      "samples": 11
+    },
+    {
+      "name": "",
+      "file": "audio-events.js?v=alehall135",
+      "samples": 9
+    },
+    {
+      "name": "updateHudBag",
+      "file": "game.js?v=depth146",
+      "samples": 9
+    },
+    {
+      "name": "(garbage collector)",
+      "file": "",
+      "samples": 9
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 8
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 8
+    },
+    {
+      "name": "save",
+      "file": "",
+      "samples": 7
+    },
+    {
+      "name": "updateItemAction",
+      "file": "game.js?v=depth146",
+      "samples": 7
+    },
+    {
+      "name": "cycleStep",
+      "file": "cycle-campaign.js?v=sewer145",
+      "samples": 7
+    },
+    {
+      "name": "(idle)",
+      "file": "",
+      "samples": 7
+    }
+  ],
+  "scenes": [
+    {
+      "camera": {
+        "x": 0,
+        "y": 730
+      },
+      "p50": 1.7000000029802322,
+      "p95": 3.0999999940395355,
+      "drawsPerFrame": 108,
+      "filtersPerFrame": 0
+    },
+    {
+      "camera": {
+        "x": 900,
+        "y": 450
+      },
+      "p50": 1.6000000089406967,
+      "p95": 3.1000000089406967,
+      "drawsPerFrame": 108,
+      "filtersPerFrame": 0
+    },
+    {
+      "camera": {
+        "x": 1950,
+        "y": 0
+      },
+      "p50": 1.5,
+      "p95": 2.9000000059604645,
+      "drawsPerFrame": 108,
+      "filtersPerFrame": 0
+    }
+  ]
+}

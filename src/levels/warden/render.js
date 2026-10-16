@@ -1,10 +1,10 @@
 import {drawBraceSweat} from './strain-effects.js?v=warden105';
 import {CART_ART,cartPlacement,cartPort,cartWheelPlacement,createCartPieces} from './cart-art.js?v=warden105';
-import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=walls101';
+import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {wardenWaveOpacity,laserTrace} from './combat.js?v=warden105';
 import {wardenGeometry,WARDEN_TRACK,wardenLevel} from './campaign.js?v=warden105';
 import {WARDEN_ART as A} from './art.js?v=warden105';
-import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
+import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';

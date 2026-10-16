@@ -1,0 +1,6330 @@
+{
+  "coarse": true,
+  "captures": [
+    {
+      "file": "assets/depth146/scenes/landscape-normal-1x.png",
+      "diagnosticCamera": false,
+      "camera": {
+        "x": 0,
+        "y": 410,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/landscape-middle-1x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 900,
+        "y": 400,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/landscape-upper-1x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 1090,
+        "y": 0,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/landscape-normal-2x.png",
+      "diagnosticCamera": false,
+      "camera": {
+        "x": 0,
+        "y": 692,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/landscape-middle-2x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 900,
+        "y": 400,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/landscape-upper-2x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 1946,
+        "y": 0,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-normal-1x.png",
+      "diagnosticCamera": false,
+      "camera": {
+        "x": 188,
+        "y": 410,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-middle-1x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 900,
+        "y": 400,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-upper-1x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 1950,
+        "y": 0,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-normal-2x.png",
+      "diagnosticCamera": false,
+      "camera": {
+        "x": 296,
+        "y": 692,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-middle-2x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 900,
+        "y": 400,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    },
+    {
+      "file": "assets/depth146/scenes/portrait-upper-2x.png",
+      "diagnosticCamera": true,
+      "camera": {
+        "x": 1950,
+        "y": 0,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "art": {
+        "decor": {
+          "theme": 0,
+          "props": [
+            {
+              "x": 220,
+              "floorY": 940,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 720,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 940,
+                "w": 850
+              }
+            },
+            {
+              "x": 1830,
+              "floorY": 940,
+              "kind": 1,
+              "support": {
+                "x": 1700,
+                "y": 940,
+                "w": 350
+              }
+            },
+            {
+              "x": 1120,
+              "floorY": 1120,
+              "kind": 0,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 2460,
+              "floorY": 1120,
+              "kind": 1,
+              "support": {
+                "x": 0,
+                "y": 1120,
+                "w": 2800
+              }
+            },
+            {
+              "x": 590,
+              "floorY": 500,
+              "kind": 1,
+              "support": {
+                "x": 500,
+                "y": 500,
+                "w": 350
+              }
+            },
+            {
+              "x": 1090,
+              "floorY": 390,
+              "kind": 2,
+              "support": {
+                "x": 1000,
+                "y": 390,
+                "w": 180
+              }
+            },
+            {
+              "x": 1540,
+              "floorY": 260,
+              "kind": 1,
+              "support": {
+                "x": 1460,
+                "y": 260,
+                "w": 220
+              }
+            },
+            {
+              "x": 2310,
+              "floorY": 260,
+              "kind": 0,
+              "support": {
+                "x": 2210,
+                "y": 260,
+                "w": 590
+              }
+            }
+          ],
+          "walls": [],
+          "rooms": [],
+          "roomBorders": [],
+          "wallBackings": [
+            {
+              "room": {
+                "x": 1036,
+                "y": 286,
+                "w": 108,
+                "h": 104,
+                "floorY": 390
+              },
+              "edges": [
+                {
+                  "side": "top",
+                  "start": 1036,
+                  "end": 1144
+                },
+                {
+                  "side": "left",
+                  "start": 286,
+                  "end": 390
+                },
+                {
+                  "side": "right",
+                  "start": 286,
+                  "end": 390
+                }
+              ],
+              "corners": [
+                {
+                  "kind": "top-left",
+                  "x": 1036,
+                  "y": 286
+                },
+                {
+                  "kind": "top-right",
+                  "x": 1144,
+                  "y": 286
+                }
+              ]
+            }
+          ],
+          "ready": true
+        },
+        "renderCache": {
+          "entries": 3,
+          "builds": 3,
+          "nativeWidth": 1400,
+          "nativeHeight": 600
+        },
+        "ready": true,
+        "nativeScene": [
+          1066,
+          600
+        ],
+        "gate": {
+          "x": 2536,
+          "y": 132,
+          "w": 128,
+          "h": 128,
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "floorY": 260,
+          "active": false,
+          "frame": 49,
+          "glow": 0,
+          "aperture": {
+            "x": 2600,
+            "y": 206,
+            "w": 40,
+            "h": 80
+          },
+          "ready": true,
+          "bottom": 260,
+          "gap": 0
+        },
+        "rail": {
+          "active": "lower",
+          "requested": "lower",
+          "queued": false,
+          "y": 542,
+          "points": [
+            [
+              850,
+              982
+            ],
+            [
+              850,
+              542
+            ],
+            [
+              2210,
+              542
+            ],
+            [
+              2210,
+              982
+            ],
+            [
+              850,
+              982
+            ]
+          ],
+          "signals": [
+            {
+              "x": 850,
+              "y": 882,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 754,
+              "rotation": 3
+            },
+            {
+              "x": 850,
+              "y": 626,
+              "rotation": 3
+            },
+            {
+              "x": 950,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1078,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1206,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1334,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1462,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1590,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1718,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1846,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 1974,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2102,
+              "y": 542,
+              "rotation": 0
+            },
+            {
+              "x": 2210,
+              "y": 642,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 770,
+              "rotation": 1
+            },
+            {
+              "x": 2210,
+              "y": 898,
+              "rotation": 1
+            },
+            {
+              "x": 2110,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1982,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1854,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1726,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1598,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1470,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1342,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1214,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 1086,
+              "y": 982,
+              "rotation": 2
+            },
+            {
+              "x": 958,
+              "y": 982,
+              "rotation": 2
+            }
+          ]
+        },
+        "fan": {
+          "frame": 0,
+          "y": 820,
+          "bottom": 940,
+          "surfaceY": 940,
+          "gap": 0
+        },
+        "carrier": {
+          "x": 850,
+          "y": 858
+        },
+        "draft": false,
+        "connections": {
+          "ready": true,
+          "frame": 0,
+          "brake": [
+            [
+              1094,
+              364
+            ],
+            [
+              1200,
+              364
+            ],
+            [
+              1200,
+              882
+            ],
+            [
+              1312,
+              882
+            ]
+          ],
+          "duct": [
+            [
+              1300,
+              518
+            ],
+            [
+              1300,
+              768
+            ],
+            [
+              1360,
+              768
+            ],
+            [
+              1360,
+              832
+            ]
+          ],
+          "selector": [
+            [
+              1632,
+              232
+            ],
+            [
+              1744,
+              232
+            ],
+            [
+              1744,
+              128
+            ],
+            [
+              816,
+              128
+            ],
+            [
+              816,
+              542
+            ],
+            [
+              850,
+              542
+            ]
+          ]
+        }
+      },
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 405.0104166666654,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "shieldArtPose": {
+            "x": 28.675,
+            "y": 8.849999999999994,
+            "rx": 16.970562748477143,
+            "ry": 24,
+            "roll": -0.13962634015954636,
+            "mode": "front",
+            "cell": 8
+          },
+          "x": 210,
+          "y": 896,
+          "vx": 0,
+          "vy": 0,
+          "ground": true,
+          "hp": 3,
+          "dead": false,
+          "inventory": [
+            null,
+            null,
+            null,
+            null
+          ],
+          "itemSlot": 0,
+          "shieldUp": false,
+          "shield": true,
+          "face": 1,
+          "support": null,
+          "climbing": false,
+          "sweptAway": false
+        }
+      ],
+      "machine": {
+        "released": true,
+        "cutAt": 1.8416666666666626,
+        "brake": false,
+        "brakePose": 0,
+        "damper": 0,
+        "damperReleased": false,
+        "selector": false,
+        "selectorPose": 0,
+        "carrier": {
+          "x": 850,
+          "y": 858.25,
+          "w": 160,
+          "segment": 0,
+          "high": 500,
+          "v": 180,
+          "pause": 0,
+          "laps": 0,
+          "support": "cycle-carrier"
+        },
+        "highArrival": false
+      },
+      "time": 4.09166666666666
+    }
+  ],
+  "errors": [],
+  "motion": {
+    "before": {
+      "x": 850,
+      "y": 929.6666666666666,
+      "w": 160,
+      "segment": 0,
+      "high": 500,
+      "v": 77.5,
+      "pause": 0,
+      "laps": 0,
+      "support": "cycle-carrier"
+    },
+    "after": {
+      "x": 850,
+      "y": 861.25,
+      "w": 160,
+      "segment": 0,
+      "high": 500,
+      "v": 180,
+      "pause": 0,
+      "laps": 0,
+      "support": "cycle-carrier"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import {drawShoeRack,shoeRackReady} from './shoe-rack-render.js?v=shoes124';
 import {drawMagneticRefraction} from './field-optics.js?v=lode123';
-import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
+import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {createAtlas} from '../../render/sprite-atlas.js?v=orbit113';
 import {wallBorderPlan} from '../../render/wall-boundaries.js?v=walls101';

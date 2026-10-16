@@ -1,0 +1,133 @@
+{
+  "label": "baseline",
+  "cpuThrottle": 4,
+  "mobileEmulation": true,
+  "raf": {
+    "p50": 28.899999991059303,
+    "p95": 37
+  },
+  "top": [
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 583
+    },
+    {
+      "name": "(program)",
+      "file": "",
+      "samples": 522
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 347
+    },
+    {
+      "name": "draw",
+      "file": "game.js?v=depth146",
+      "samples": 174
+    },
+    {
+      "name": "save",
+      "file": "",
+      "samples": 74
+    },
+    {
+      "name": "loop",
+      "file": "game.js?v=depth146",
+      "samples": 50
+    },
+    {
+      "name": "drawCycleWorld",
+      "file": "cycle-render.js?v=depth146",
+      "samples": 36
+    },
+    {
+      "name": "drawImage",
+      "file": "",
+      "samples": 35
+    },
+    {
+      "name": "save",
+      "file": "",
+      "samples": 33
+    },
+    {
+      "name": "draw",
+      "file": "sprite-atlas.js?v=arc46",
+      "samples": 32
+    },
+    {
+      "name": "(garbage collector)",
+      "file": "",
+      "samples": 32
+    },
+    {
+      "name": "playWorldSounds",
+      "file": "game.js?v=depth146",
+      "samples": 26
+    },
+    {
+      "name": "restore",
+      "file": "",
+      "samples": 23
+    },
+    {
+      "name": "drawConnection",
+      "file": "connection-render.js?v=connections53",
+      "samples": 22
+    },
+    {
+      "name": "",
+      "file": "audio-events.js?v=alehall135",
+      "samples": 19
+    },
+    {
+      "name": "fillRect",
+      "file": "",
+      "samples": 19
+    },
+    {
+      "name": "translate",
+      "file": "",
+      "samples": 16
+    },
+    {
+      "name": "restore",
+      "file": "",
+      "samples": 14
+    }
+  ],
+  "scenes": [
+    {
+      "camera": {
+        "x": 0,
+        "y": 730
+      },
+      "p50": 18,
+      "p95": 23.69999998807907,
+      "drawsPerFrame": 738,
+      "filtersPerFrame": 2
+    },
+    {
+      "camera": {
+        "x": 900,
+        "y": 450
+      },
+      "p50": 16.400000005960464,
+      "p95": 25.099999994039536,
+      "drawsPerFrame": 738,
+      "filtersPerFrame": 2
+    },
+    {
+      "camera": {
+        "x": 1950,
+        "y": 0
+      },
+      "p50": 17.5,
+      "p95": 24.200000002980232,
+      "drawsPerFrame": 738,
+      "filtersPerFrame": 2
+    }
+  ]
+}

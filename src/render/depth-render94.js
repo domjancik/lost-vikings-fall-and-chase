@@ -2,7 +2,7 @@ import {depthPlan} from './depth-layout94.js?v=depth94';
 import {snapPixel as q} from './pixel-grid.js?v=depth94';
 import {wallBorderPlan} from './wall-boundaries.js?v=walls101';
 const sheets=['a','b'].map(name=>{const i=new Image();i.src='assets/depth94/'+name+'-native.png';return i;});
-export const depthReady=()=>sheets.every(i=>i.naturalWidth>0);
+export const depthReady=()=>sheets.every(i=>i.complete&&i.naturalWidth>0);
 function atlas(theme){return{image:sheets[Math.floor(theme/3)],row:theme%3};}
 function cell(c,theme,kind,x,y){const {image,row}=atlas(theme);if(!image.naturalWidth)return;c.imageSmoothingEnabled=false;c.drawImage(image,kind*64,row*64,64,64,q(x),q(y),128,128);}
 function wallTile(c,theme,x,y){const {image,row}=atlas(theme);if(!image.naturalWidth)return;c.imageSmoothingEnabled=false;c.drawImage(image,197,row*64+10,54,52,q(x),q(y),108,104);}

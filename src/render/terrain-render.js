@@ -1,5 +1,6 @@
 import {terrainPlan,terrainMaterial} from './terrain-layout.js?v=terrain48';
 const image=new Image();image.src='assets/terrain48/terrain.png?v=terrain48';
+export const terrainReady=()=>image.complete&&!!image.naturalWidth;
 export function drawTerrain(ctx,s,x,y,w,h){
  const plan=terrainPlan(x,y,w,h),row=terrainMaterial(s.round,s.campaign);
  ({x,y,w,h}=plan.clip);

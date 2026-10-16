@@ -1,5 +1,5 @@
 import {drawShoeRack,shoeRackReady} from '../orbit/shoe-rack-render.js?v=shoes124';
-import {drawTerrain} from '../../render/terrain-render.js';
+import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,drawConnectionTile} from '../../render/connection-render.js';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js';

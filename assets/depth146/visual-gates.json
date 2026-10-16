@@ -1,0 +1,45 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/DEPTH146-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Continuity review of unchanged retained Cycle of Depths art. Fixed planes rasterize at native2world units per pixel,1400x600 for2800x1200world; original source scale, aspect and material detail remain unchanged. No replacement generation, resampling or simplified art."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Independent final18case production-renderer comparison verifies exact zero changed pixels/maxDelta0 across three cameras, three viewports and both rail routes. Cache entries/builds remain3to4. Forced incomplete ladder creates zero entries, then3on completion. Actual12coarse/mobile1x/2x views record errors[]; ordinary sword release and carrier movement remain live."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Exact native before/after equality and inspected actual portrait/landscape scenes preserve the rich midground, grounded supports, ladder, terrain, gate and cable layering. Far x/y parallax and dynamic fan/carrier/gate/signals remain outside the cache. No new clipping seam, floating contact, changed density or flattened material found."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Rendering-only optimization leaves simulation, collision, controls and mechanism timing unchanged. Targeted normal walking/sword release demonstrates the live carrier; diagnostic camera views are explicitly labeled and not claimed as physical full-route traversal. Upper/lower route state render comparisons are exact."
+  },
+  "performanceGate": {
+    "verdict": "accepted",
+    "reason": "Matched complete-art Chrome4xCPU coarse/mobile emulation shows world738to108draw calls, median world16.4–18msto1.5–1.7ms, RAFmedian/p9528.9/37msto10/15.9ms in the final successful budget rerun. Microbench waits for gate/fan foot registration and retains connected ducts/cables; this supersedes exploratory695to65 figures while preserving630saved draws. Repeatable baseline explicitly routes retained original renderer. Final complete-art budget below120draws/frame,0filter assignments. Cache bounded to four1400x600RGBAplanes,13.44MBbase pixel capacity; visible native source crops only. Browser emulation, not an actual iOS-device claim."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/depth146/pixel-check.json",
+    "assets/depth146/cold-load-check.json",
+    "assets/depth146/perf-before.json",
+    "assets/depth146/perf-after.json",
+    "assets/depth146/before-900.png",
+    "assets/depth146/after-900.png",
+    "assets/depth146/scenes/evidence.json",
+    "assets/depth146/scenes/landscape-normal-1x.png",
+    "assets/depth146/scenes/portrait-middle-2x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification"
+  ]
+}

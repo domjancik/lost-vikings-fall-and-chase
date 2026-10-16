@@ -1,4 +1,4 @@
-import {drawTerrain} from './terrain-render.js?v=terrain48';
+import {drawTerrain} from './terrain-render.js?v=depth146';
 import {drawMachine} from './machine-render.js?v=arc46';
 import {machinePose} from './machine-animation.js?v=arc46';
 import {drawVerticalWorld} from './vertical-render.js?v=transitions126';

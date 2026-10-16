@@ -1,0 +1,22 @@
+import fs from 'node:fs';import assert from 'node:assert/strict';import {createRequire} from 'node:module';import {createDevServer} from '../../tools/dev/server.mjs';
+const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json'),{chromium}=require('playwright');
+const server=await createDevServer({built:true});await new Promise(r=>server.listen(0,'127.0.0.1',r));const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});fs.mkdirSync('assets/depth146',{recursive:true});
+try{const page=await browser.newPage();await page.addInitScript(()=>{const d=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,'complete');Object.defineProperty(HTMLImageElement.prototype,'complete',{get(){return this.src.includes('/platform56/ladder.png')&&!window.ladderComplete?false:d.get.call(this);}});});await page.route('**/baseline-cycle-render146.js',route=>route.fulfill({contentType:'text/javascript',body:fs.readFileSync('tests/fixtures/depth146-baseline-render.js','utf8')}));await page.goto('http://127.0.0.1:'+server.address().port);
+ const result=await page.evaluate(async()=>{
+  const {createState}=await import('/engine.js'),{drawCycleWorld:before}=await import('/baseline-cycle-render146.js'),{drawCycleWorld:after}=await import('/cycle-render.js');
+  const s=createState(0,'cycle'),checks=[],shots=[];
+  const coldCanvas=document.createElement('canvas');coldCanvas.width=422;coldCanvas.height=195;const cc=coldCanvas.getContext('2d');cc.scale(.5,.5);let cold,start=performance.now();
+  do{cold=after(cc,s,{x:0,y:730},{width:844,height:390});if(performance.now()-start>6000)throw Error('Cold art did not load');await new Promise(r=>setTimeout(r,25));}while(!cold.fan||!cold.gate.ready||!cold.decor.ready);
+  if(cold.renderCache.entries!==0)throw Error('Incomplete ladder was frozen into cache');window.ladderComplete=true;const warm=after(cc,s,{x:0,y:730},{width:844,height:390});const coldLoad={incompleteEntries:cold.renderCache.entries,completeEntries:warm.renderCache.entries};
+  for(const high of [500,260])for(const camera of [{x:0,y:730},{x:900,y:450},{x:1950,y:0}])for(const view of [{width:844,height:390},{width:1688,height:780},{width:430,height:780}]){
+   s.machine.carrier.high=high;s.machine.released=true;s.machine.highArrival=true;s.machine.brakePose=1;s.machine.damper=1;s.time=high===260?3.4:1.3;
+   const canvases=[before,after].map(draw=>{const canvas=document.createElement('canvas');canvas.width=view.width/2;canvas.height=view.height/2;const c=canvas.getContext('2d');c.imageSmoothingEnabled=false;c.setTransform(.5,0,0,.5,-camera.x/2,-camera.y/2);return {canvas,c,draw};});
+   let cache;for(const {c,draw}of canvases){const start=performance.now();while(!draw(c,s,camera,view).ready){if(performance.now()-start>6000)throw Error('Assets not loaded');await new Promise(r=>setTimeout(r,25));}await new Promise(requestAnimationFrame);c.clearRect(camera.x,camera.y,view.width,view.height);const art=draw(c,s,camera,view);if(draw===after)cache=art.renderCache;}
+   const [a,b]=canvases.map(({canvas,c})=>c.getImageData(0,0,canvas.width,canvas.height).data);let changed=0,over2=0,maxDelta=0;
+   for(let i=0;i<a.length;i+=4){let delta=0;for(let k=0;k<4;k++)delta=Math.max(delta,Math.abs(a[i+k]-b[i+k]));if(delta)changed++;if(delta>2)over2++;maxDelta=Math.max(maxDelta,delta);}
+   if(cache.entries>4||cache.builds>4)throw Error('Unbounded or stale route cache');checks.push({high,camera,view,changed,over2,maxDelta,cache});
+   if(high===260&&view.width===844){for(const [i,{canvas}]of canvases.entries())shots.push({name:(i?'after':'before')+'-'+camera.x,png:canvas.toDataURL()});}
+  }
+  return {checks,shots,coldLoad};
+ });fs.writeFileSync('assets/depth146/pixel-check.json',JSON.stringify(result.checks,null,2));fs.writeFileSync('assets/depth146/cold-load-check.json',JSON.stringify(result.coldLoad,null,2));for(const shot of result.shots)fs.writeFileSync('assets/depth146/'+shot.name+'.png',Buffer.from(shot.png.split(',')[1],'base64'));for(const c of result.checks)assert.equal(c.over2,0,JSON.stringify(c));console.log(JSON.stringify({cases:result.checks.length,maxDelta:Math.max(...result.checks.map(c=>c.maxDelta)),changedPixels:result.checks.reduce((n,c)=>n+c.changed,0),coldLoad:result.coldLoad}));
+}finally{await browser.close();server.close();}

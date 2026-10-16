@@ -1,6 +1,6 @@
 import {createAtlas} from '../../render/sprite-atlas.js?v=freight109';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=freight109';
-import {drawTerrain} from '../../render/terrain-render.js?v=terrain48';
+import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {FREIGHT_ART as ART,inspectorArtFrame} from './art-layout.js?v=freight109';

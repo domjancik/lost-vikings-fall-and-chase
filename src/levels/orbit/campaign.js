@@ -14,6 +14,16 @@ import {magneticMotion,resolveSteelCollisions,magneticPoint,localHeroPoint,recov
 
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 
+// Keep the established travel duration, but start and arrive at rest. Simulation
+// stays continuous; the renderer snaps the resulting position to the native grid.
+function travel(body,key,target,speed,dt){
+ if(body[key]===target)return;
+ const tracks=body.travel||(body.travel={});let track=tracks[key];
+ if(!track||track.target!==target)track=tracks[key]={start:body[key],target,time:0,duration:Math.abs(target-body[key])/speed};
+ track.time=Math.min(track.duration,track.time+dt);const t=Math.min(1,track.time/track.duration);
+ body[key]=t>=1-1e-10?target:track.start+(target-track.start)*t*t*(3-2*t);
+}
+function parkOperator(h){h.vx=0;h.moveX=0;h.magV=0;h.bash=0;h.bashBuffer=0;}
 const floor=(x,y,w)=>({x,y,w});
 
 export const orbitMount=p=>({x:p.x+Math.sin(p.angle)*p.h/2,y:p.y-Math.cos(p.angle)*p.h/2});
@@ -46,7 +56,7 @@ export function orbitSurfaces(s){return[...s.level.floors,...s.level.platforms,.
 
 export function orbitObjects(s){const g=s.machine;return[{id:'orbit-crane-panel',x:1730,y:606,radius:72,title:'DEPARTURE CRANE',reason:g.panelOpen?'Arrows steer the hook. Action clamps, alt releases, use leaves.':'A cracked ceramic cover blocks the panel.',ready:g.panelOpen,done:g.hookDocked,
 
- run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';g.operator=g.operator===s.active?null:s.active;return g.operator===null?'Crane controls released.':g.brakePose<1?'The gantry brake is still clamped. Its short tension rope hangs above the gallery.':'Crane controls engaged.';}}];}
+ run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';g.operator=g.operator===s.active?null:s.active;if(g.operator!==null)parkOperator(s.heroes[g.operator]);return g.operator===null?'Crane controls released.':g.brakePose<1?'The gantry brake is still clamped. Its short tension rope hangs above the gallery.':'Crane controls engaged.';}}];}
 
 const restraintOrder=[0,2,3];
 
@@ -76,15 +86,15 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 
   if(p.phase==='charge'){p.charge=Math.min(1,p.charge+dt/2);if(p.charge===1)p.phase='lift';}
 
-  if(p.phase==='lift'){const y=p.id===0?674:444;p.y=approach(p.y,y,120*dt);if(p.y===y)p.phase=p.id===0?'orbit':'float';}
+  if(p.phase==='lift'){const y=p.id===0?674:444;travel(p,'y',y,120,dt);if(p.y===y)p.phase=p.id===0?'orbit':'float';}
 
-  if(p.phase==='orbit')p.angle+=Math.PI/8*dt;
+  if(p.phase==='orbit'){p.spinV=approach(p.spinV||0,Math.PI/8,Math.PI/8*2.5*dt);p.angle+=p.spinV*dt;}
   if(p.id===0)if(g.sequence>0&&g.sequence<3&&g.plates[0].angle-g.sequenceStartAngle>=Math.PI*2){for(const n of restraintOrder)g.ropeCut[n]=false;g.sequence=0;g.sequenceStartAngle=null;g.sequenceUntil=0;g.resetAt=s.time;message(s,'One revolution elapsed. The three spring switches return.');}
   if(p.phase==='release'){g.releasePose=Math.min(1,g.releasePose+dt/1.1);if(g.releasePose===1)p.phase='dock';}
 
   if(p.phase==='float'&&g.hook.plateId!==p.id)p.angle=approach(p.angle,Math.sin(s.time*.45)*.18,.2*dt);
 
-  if(p.phase==='dock'){p.angle=approach(p.angle,Math.round(p.angle/(Math.PI*2))*Math.PI*2,.75*dt);if(Math.abs(Math.sin(p.angle/2))<.001){p.angle=0;p.x=approach(p.x,1610,150*dt);if(p.x===1610)p.phase='parked';}}
+  if(p.phase==='dock'){travel(p,'angle',Math.round(p.angle/(Math.PI*2))*Math.PI*2,.75,dt);if(Math.abs(Math.sin(p.angle/2))<.001){p.angle=0;travel(p,'x',1610,150,dt);if(p.x===1610)p.phase='parked';}}
 
   p.vx=(p.x-old.x)/dt;p.vy=(p.y-old.y)/dt;
 
@@ -110,7 +120,7 @@ function mechanisms(s,input,dt){const g=s.machine,o=s.heroes[2];
 
  }else{g.hook.vx=approach(g.hook.vx,0,500*dt);g.hook.vy=approach(g.hook.vy,0,500*dt);}
 
- const p=g.plates[1];if(p.phase==='seating'){p.x=approach(p.x,2900,70*dt);p.y=approach(p.y,324,70*dt);p.angle=approach(p.angle,0,.3*dt);if(p.x===2900&&p.y===324)p.phase='parked';}
+ const p=g.plates[1];if(p.phase==='seating'){travel(p,'x',2900,70,dt);travel(p,'y',324,70,dt);travel(p,'angle',0,.3,dt);if(p.x===2900&&p.y===324)p.phase='parked';}
 
  g.brakePose=approach(g.brakePose,g.ropeCut[4]?1:0,dt/.7);g.panelPose=approach(g.panelPose,g.panelOpen?1:0,dt/.65);for(let n=0;n<5;n++){g.ropePose[n]=approach(g.ropePose[n],g.ropeCut[n]?1:0,dt/.65);g.ropeAperture[n]=approach(g.ropeAperture[n],ropeCommand(s,n)?1:0,dt/.2);}g.exitPose=approach(g.exitPose,g.ropeCut[1]?1:0,dt);g.ladderPose=approach(g.ladderPose,g.ropeCut[1]?1:0,dt/1.2);
 
@@ -153,6 +163,7 @@ export function orbitStep(s,input,dt){const g=s.machine,a=s.heroes[s.active];s.t
 
  if(!operating&&a.id===1&&input.action&&s.cooldown===0){const muzzle=localHeroPoint(a,a.face*25,-24),angle=a.rotation||0;a.bow=.28;s.cooldown=.35;s.shots.push({kind:'arrow',x:muzzle.x,y:muzzle.y,v:Math.cos(angle)*a.face*580,vx:Math.cos(angle)*a.face*580,vy:Math.sin(angle)*a.face*580,life:4});}
 
+ if(g.operator!==null)parkOperator(s.heroes[g.operator]);
  mechanisms(s,input,dt);const attached=magneticMotion(s,operating?{}:input,dt),attachedWalk=new Map(attached.map(h=>[h,h.walk])),climbs=[];
 
  for(const h of s.heroes)if(!h.magnet){const ladder=ladderAtHero(s.level,h),active=h.id===s.active;if(active&&!operating){if((input.up||input.down)&&ladder)h.climbing=true;if(input.left||input.right||input.jump)h.climbing=false;}

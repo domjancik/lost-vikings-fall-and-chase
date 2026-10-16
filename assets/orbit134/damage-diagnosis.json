@@ -1,0 +1,18 @@
+{
+  "hitTime": 84.425,
+  "stage": "crew-reunion",
+  "cause": "released orbital scrap crosses operator landing after operation; driver left Erik at panel",
+  "fix": "After crane use, ordinary movement to x1960 then fall to lower recovery floor (feet1180) before the last bow shot and crew reunion.",
+  "gameHazardsUnchanged": true,
+  "failedAttempt": "Parking at x1845 on same landing still exposed Erik to a different release trajectory.",
+  "verification": {
+    "desktop": "desktop-route.json",
+    "won": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "operatorRecoveryTime": 80.59166666667687
+  }
+}

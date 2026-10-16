@@ -6,27 +6,41 @@ import {createDevServer} from '../../../tools/dev/server.mjs';
 const require=createRequire('C:/Users/magne/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright/package.json');
 const {chromium}=require('playwright'),live=!!process.env.ORBIT_LIVE,out=process.env.ORBIT_OUT||'output/orbit113';
 fs.mkdirSync(out+'/captures',{recursive:true});const server=live?null:await createDevServer({built:true});if(server)await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(0,'127.0.0.1',resolve);});
-const touch=process.argv.includes('--touch'),mobile=touch||process.argv.includes('--mobile');
+const touch=process.argv.includes('--touch'),mobile=touch||process.argv.includes('--mobile')||process.argv.includes('--touch-crane');
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}),page=await browser.newPage({viewport:mobile?{width:430,height:780}:{width:1440,height:900},hasTouch:mobile,isMobile:mobile}),errors=[],captures=[];
 if(process.argv.includes('--native'))await page.addInitScript(()=>{window.orbitNative={};const seen=new WeakSet(),draw=CanvasRenderingContext2D.prototype.drawImage;CanvasRenderingContext2D.prototype.drawImage=function(b,...args){if(b instanceof HTMLCanvasElement&&b.dataset.orbitSprite==='spring-switch'&&!seen.has(b)){seen.add(b);window.orbitNative[b.dataset.pose]=b.toDataURL();}return draw.call(this,b,...args);};});
+await page.addInitScript(()=>{window.orbitMotion=[];let last=-1;setInterval(()=>{const d=document.querySelector('#game')?.dataset;if(!d?.puzzle||+d.simTime===last)return;last=+d.simTime;const g=JSON.parse(d.puzzle).machine;if(!g.plates)return;window.orbitMotion.push({time:last,plates:g.plates.map(p=>({x:p.x,y:p.y,angle:p.angle,phase:p.phase})),operator:g.operator,hook:{x:g.hook.x,y:g.hook.y}});},16);});
+await page.exposeBinding('orbitTouchCrane',async()=>{
+ const read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),g:JSON.parse(c.dataset.puzzle).machine}));
+ const before=await read();assert.equal(before.g.operator,0);assert.equal(before.g.hook.plateId,1);
+ await page.locator('[data-key=secondary]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.hook.plateId===null);
+ await page.locator('[data-key=primary]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.hook.plateId===1);
+ const cdp=await page.context().newCDPSession(page);
+ for(const key of ['right','up']){const r=await page.locator('[data-key='+key+']').boundingBox();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:r.x+r.width/2,y:r.y+r.height/2,id:1}]});await page.waitForTimeout(350);await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});}
+ const moved=await read();assert.ok(moved.g.hook.x>before.g.hook.x+20);assert.ok(moved.g.hook.y<before.g.hook.y-20);assert.equal(moved.g.operator,0);assert.equal(moved.heroes[0].x,before.heroes[0].x);
+ await page.locator('[data-key=interact]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.operator===null);
+ await page.locator('[data-key=interact]').tap();await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.operator===0);
+ fs.writeFileSync(out+'/touch-crane.json',JSON.stringify({before,moved,reengaged:await read()},null,2));
+});
 page.on('pageerror',e=>errors.push(e.stack||String(e)));page.on('console',m=>{if(m.type()==='error'&&!m.location().url.endsWith('/favicon.ico'))errors.push(m.text()+' '+m.location().url);else if(m.text().startsWith('ORBIT '))console.log(m.text());});
 await page.exposeBinding('orbitJawPhoto',async(_,proof)=>{const file=out+'/captures/crane-claw-intermediate-native.png';fs.writeFileSync(file,Buffer.from(proof.png.split(',')[1],'base64'));fs.writeFileSync(out+'/claw-intermediate.json',JSON.stringify(proof.state,null,2));captures.push({label:'crane-claw-intermediate',name:'native',file,state:proof.state});});
 await page.exposeBinding('orbitPhoto',async(_,label)=>{
  if(label==='crane-gripped')await page.waitForTimeout(40);
+ if(process.argv.includes('--motion')&&!['receiving-dock','brake-released','crane-gripped','crane-lifting','crew-departure'].includes(label))return;
  const liveFile=out+'/captures/'+label+'-live.png';await page.screenshot({path:liveFile});captures.push({label,name:'live',file:liveFile,state:await page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,art:JSON.parse(c.dataset.cycleArt),attraction:JSON.parse(c.dataset.magneticAttraction||'null'),camera:JSON.parse(c.dataset.camera)}))});
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
  for(const [name,size,zoom]of [['2x',{width:1440,height:900},2],['1x',{width:1440,height:900},1],['portrait',{width:430,height:780},2],['landscape',{width:844,height:390},2]]){
-  if(await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.camera).zoom)!==zoom)await page.locator('#zoom').click();await page.setViewportSize(size);await page.waitForTimeout(400);
+  while(await page.locator('#game').evaluate(c=>JSON.parse(c.dataset.camera).zoom)!==zoom)await page.locator('#zoom').click();await page.setViewportSize(size);await page.waitForTimeout(400);
   const file=out+'/captures/'+label+'-'+name+'.png';await page.screenshot({path:file});captures.push({label,name,file,state:await page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),machine:JSON.parse(c.dataset.puzzle).machine,art:JSON.parse(c.dataset.cycleArt),attraction:JSON.parse(c.dataset.magneticAttraction||'null'),camera:JSON.parse(c.dataset.camera)}))});
  }
  await page.setViewportSize(mobile?{width:430,height:780}:{width:1440,height:900});await page.locator('#pause').click();
 });
 try{
  await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release='+encodeURIComponent(process.env.ORBIT_RELEASE||'orbit122'));await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
- await page.locator('#start-picker [data-campaign-option="cycle"]').click();await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===9&&c.every(i=>i.dataset.ready==='true');});
- assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,9);
+ await page.locator('#start-picker [data-campaign-option="cycle"]').click();await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===11&&c.every(i=>i.dataset.ready==='true');});
+ assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,11);
  await page.locator('#start-picker .level-card[data-round="8"]').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='8'&&JSON.parse(document.querySelector('#game').dataset.cycleArt).ready);
- await page.locator('#restart').click();await page.waitForFunction(()=>+document.querySelector('#game').dataset.simTime<.2);
+ await page.locator('#restart').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');
  if(touch){
   const cdp=await page.context().newCDPSession(page),read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.heroes),camera:JSON.parse(c.dataset.camera),machine:JSON.parse(c.dataset.puzzle).machine}));
   async function hold(key,ms){const r=await page.locator('[data-key="'+key+'"]').boundingBox();await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:r.x+r.width/2,y:r.y+r.height/2,id:1}]});await page.waitForTimeout(ms);await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});}
@@ -45,7 +59,7 @@ try{
   if(s.active!==id){document.querySelectorAll('.hero-card')[id].click();await new Promise(requestAnimationFrame);s=read();}
   const next=new Set(['left','right','up','down'].filter(a=>input[a]).map(a=>({left:'ArrowLeft',right:'ArrowRight',up:'ArrowUp',down:'ArrowDown'})[a]));for(const k of held)if(!next.has(k))key(k,false);for(const k of next)if(!held.has(k))key(k,true);held.clear();for(const k of next)held.add(k);
   const operating=s.machine.operator===id,pulses=[];for(const [field,k]of [['jump',' '],['action',operating?' ':'d'],['sword',operating?'d':'z'],['interact','e'],['item','q']])if(input[field]){key(k,true);pulses.push(k);}
-  const previousSequence=s.machine.sequence,before=s.time,wallStart=performance.now();await new Promise(requestAnimationFrame);while(read().time<=before&&!read().failed&&!read().won){if(performance.now()-wallStart>5000)throw Error('Simulation stopped '+stage+' '+JSON.stringify(read()));await new Promise(requestAnimationFrame);}for(const k of pulses)key(k,false);s=read();if(s.failed&&stage!=='failure-proof')throw Error('Crew lost '+stage+' '+JSON.stringify(s));
+  const previousHP=s.heroes.map(h=>h.hp).join(','),previousSequence=s.machine.sequence,before=s.time,wallStart=performance.now();await new Promise(requestAnimationFrame);while(read().time<=before&&!read().failed&&!read().won){if(performance.now()-wallStart>5000)throw Error('Simulation stopped '+stage+' '+JSON.stringify(read()));await new Promise(requestAnimationFrame);}for(const k of pulses)key(k,false);s=read();if(s.heroes.map(h=>h.hp).join(',')!==previousHP)console.log('ORBIT HIT '+stage+' '+s.time+' '+JSON.stringify(s.heroes));if(s.failed&&stage!=='failure-proof')throw Error('Crew lost '+stage+' '+JSON.stringify(s));
   if(s.machine.sequence>previousSequence){for(const k of held)key(k,false);held.clear();await window.orbitPhoto('pawl-'+s.machine.sequence);s=read();}
   if(s.machine.releasePose>.2&&s.machine.releasePose<.85&&!releaseCaptured){releaseCaptured=true;for(const k of held)key(k,false);held.clear();await window.orbitPhoto('assembly-release');s=read();}
   if(options.retry&&s.machine.resetAt>0&&s.machine.sequence===0&&!resetCaptured){resetCaptured=true;for(const k of held)key(k,false);held.clear();await window.orbitPhoto('switch-return');s=read();}
@@ -56,7 +70,7 @@ try{
  async function move(id,x){await until(id,s=>Math.abs(s.heroes[id].x-x)<3&&Math.abs(s.heroes[id].vx)<16,()=>{const h=s.heroes[id],error=x-h.x,stop=h.vx*h.vx/(2*(h.ground?[2600,2300,2100][id]:1875));return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};});}
  async function railMove(id,u){await until(id,s=>{const h=s.heroes[id];return h.magnet&&Math.abs(h.magnet.u-u)<3&&Math.abs(h.magV)<16;},()=>{const h=s.heroes[id],error=u-(h.magnet?.u??0),v=h.magV||0,stop=v*v/(2*[2600,2300,2100][id]);return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};},15);}
  async function hookMove(x,y){await until(0,s=>s.machine.hookDocked||Math.abs(s.machine.hook.x-x)<3&&Math.abs(s.machine.hook.y-y)<3&&Math.abs(s.machine.hook.vx)<12&&Math.abs(s.machine.hook.vy)<12,()=>{const h=s.machine.hook,input={};for(const [position,v,negative,positive,target]of [['x','vx','left','right',x],['y','vy','up','down',y]]){const error=target-h[position],stop=h[v]*h[v]/1000;if(Math.abs(error)>stop+1)input[error>0?positive:negative]=true;}return input;},8);}
- async function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes,machine:s.machine});console.log('ORBIT '+name+' '+s.time);
+ async function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes,machine:s.machine});console.log('ORBIT '+name+' '+s.time+' HP '+s.heroes.map(h=>h.hp).join(','));
   if(!jawOnly&&(!${process.argv.includes('--exit-aim')}||['exit-aim','crew-departure'].includes(name))&&['equip-service-shoes','push-first-frame','sustained-push','circuit-recovery','circuit-resumed','magnetic-ceiling','magnetic-corner','rotating-bow-restraint','receiving-dock','crane-cover','push-second-frame','overhead-shoes','ceiling-crossing','ceiling-attraction','ceiling-brake','ceiling-brake-aim','brake-released','empty-clamp','crane-gripped','crane-lifting','hook-camera-return','departure-bow-restraint','exit-aim','crew-reunion','crew-departure','danger-proven'].includes(name)){for(const k of held)key(k,false);held.clear();await window.orbitPhoto(name);s=read();}
  }
  `;
@@ -65,6 +79,7 @@ try{
  body=body.replace("await railMove(1,430);","await railMove(1,430);await mark('ceiling-brake-aim');");
  body=body.replace("await until(0,s=>s.machine.hook.plateId===1,{},1);","await until(0,s=>s.machine.hook.plateId===1,{},1);await mark('crane-gripped');");
  body=body.replace("await hookMove(2720,324-s.machine.hook.offset.y);","await hookMove(2720,324-s.machine.hook.offset.y);await mark('crane-lifting');");
+ if(process.argv.includes('--touch-crane'))body=body.replace("await mark('crane-gripped');","await mark('crane-gripped');await window.orbitTouchCrane();s=read();");
  body=body.replace('await move(0,3440);',"await move(0,3290);await mark('crew-departure');await move(0,3440);");
  body=body.replace("if(options.danger){await mark('danger-proven');","if(options.danger){await tick(1,{});await mark('danger-proven');");
  if(process.argv.includes('--feedback')){const end="await mark('magnetic-corner');";body=body.slice(0,body.indexOf(end)+end.length)+"return{feedback:true,hp:s.heroes.map(h=>h.hp),time:s.time,milestones};}";}
@@ -77,5 +92,5 @@ try{
  if(process.argv.includes('--native')){fs.mkdirSync(out+'/native',{recursive:true});const frames=await page.evaluate(()=>window.orbitNative);for(const [key,url]of Object.entries(frames))fs.writeFileSync(out+'/native/switch-'+key.replace(':','-')+'.png',Buffer.from(url.split(',')[1],'base64'));}
  fs.writeFileSync(out+'/route.json',JSON.stringify({result,captures,errors,coarse:await page.evaluate(()=>matchMedia('(pointer:coarse)').matches)},null,2));console.log(JSON.stringify({won:result.won,hp:result.hp,time:result.time,captures:captures.length,errors}));
  }
-}catch(e){await page.screenshot({path:out+'/captures/failure.png'});fs.writeFileSync(out+'/failure.json',JSON.stringify({error:String(e),errors,state:await page.locator('#game').evaluate(c=>({...c.dataset}))},null,2));throw e;}
-finally{await browser.close();server?.close();}
+}catch(e){await page.screenshot({path:out+'/captures/failure.png'});fs.writeFileSync(out+'/failure-captures.json',JSON.stringify(captures));fs.writeFileSync(out+'/failure.json',JSON.stringify({error:String(e),errors,state:await page.locator('#game').evaluate(c=>({...c.dataset}))},null,2));throw e;}
+finally{fs.writeFileSync(out+'/motion.json',JSON.stringify(await page.evaluate(()=>window.orbitMotion)));await browser.close();server?.close();}

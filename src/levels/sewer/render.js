@@ -6,6 +6,7 @@ import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerLightCone,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer136';
 import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
+import {drawSewerWheel} from './wheel.js?v=sewer141';
 import {sewerSprayMount} from './campaign.js?v=sewer136';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
@@ -17,8 +18,6 @@ function pipe(c,x,top,bottom){c.save();c.beginPath();c.rect(x-24,top,48,bottom-t
 function cable(c,points){c.save();c.strokeStyle='#161b1d';c.lineWidth=8;c.beginPath();points.forEach(([x,y],n)=>n?c.lineTo(q(x),q(y)):c.moveTo(q(x),q(y)));c.stroke();c.strokeStyle='#7f6c4a';c.lineWidth=4;c.stroke();for(let n=1;n<points.length;n++){const a=points[n-1],b=points[n],length=Math.hypot(b[0]-a[0],b[1]-a[1]);for(let t=0;t<length;t+=10){const k=t/length;c.fillStyle='#c6a567';c.fillRect(q(a[0]+(b[0]-a[0])*k)-2,q(a[1]+(b[1]-a[1])*k),4,2);}}c.restore();}
 function item(c,n,x,y){if(ready(items))crop(c,items,n*32,0,32,32,x-32,y-56);}
 function flame(c,x,y,time,lit=true){if(!lit)return;const f=Math.floor(time*10),h=6+(f%3)*2;c.fillStyle='#a65222';c.fillRect(q(x)-4,q(y)-h,8,h+2);c.fillStyle='#efaf50';c.fillRect(q(x)-2,q(y)-h+2,4,h);c.fillStyle='#fff0b7';c.fillRect(q(x),q(y)-4,2,4);}
-const wheelCache=new Map();
-function wheel(c,x,y,angle,kind='valve'){if(!ready(props))return;let image=wheelCache.get(kind);if(!image){const b=document.createElement('canvas');b.width=b.height=64;const g=b.getContext('2d');g.imageSmoothingEnabled=false;g.beginPath();g.arc(32,32,kind==='winch'?21:25,0,Math.PI*2);g.clip();if(kind==='winch')g.drawImage(props,64,128,64,64,8,2,64,64);else g.drawImage(props,0,64,64,64,0,0,64,64);image=new Image();image.src=b.toDataURL();wheelCache.set(kind,image);}const b=orbitRaster(image,angle,{size:80,pivotX:32,pivotY:32});if(b)c.drawImage(b,q(x-80),q(y-80),160,160);}
 function shutter(c,x,top,w,height,pose,travel){
  // Native narrow iron strips assemble the actual collision width; no stretched pixels.
  const bottom=top+height,leafY=top-travel*pose;c.save();c.beginPath();c.rect(x,top-200,w,height+200);c.clip();
@@ -51,11 +50,11 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[],li
  const landingY=760-SEWER_LANDING_TRAVEL*g.rope.pose;
  for(const x of [2166,2312])cable(c,[[x,570],[x,landingY+10]]);
  floor(c,2160,landingY,160,20);
- cable(c,[[1050,630],[1050,526],[1196,526],[1196,560-190*g.valve.pose]]);pipe(c,1080,460,640);crop(c,props,20,112,24,12,1026,616);wheel(c,1050,586,g.valve.pose*Math.PI*1.5);contacts.push({kind:'valve',x:1050,y:586,base:640,pose:g.valve.pose});
+ cable(c,[[1050,630],[1050,526],[1196,526],[1196,560-190*g.valve.pose]]);pipe(c,1080,460,640);contacts.push(drawSewerWheel(c,'valve',g.valve.pose));
  const mouth=sewerSprayMount(g.jet);cell(c,environment,13,mouth.x,mouth.y);contacts.push({kind:'spray-mouth',x:g.jet.outletX,y:mouth.y+52,sprite:mouth,jet:{y:g.jet.y,h:g.jet.h},shielded:!!s.heroes[2].sprayBlock,pose:g.jet.pose});
  contacts.push(shutter(c,1180,580,32,180,g.valve.pose,190));
  // Upper winch drives an actual inspection leaf, exposing the physical rope.
- crop(c,grounded,0,0,96,72,1760,512);wheel(c,1824,572,g.hatch.pose*Math.PI*1.5,'winch');cable(c,[[1840,542],[1840,480],[2040,480],[2040,590-SEWER_HATCH_TRAVEL*g.hatch.pose]]);contacts.push({kind:'inspection-winch',x:1824,sole:640,sourceSole:64,pose:g.hatch.pose});contacts.push(shutter(c,2020,600,40,160,g.hatch.pose,SEWER_HATCH_TRAVEL));
+ contacts.push(drawSewerWheel(c,'winch',g.hatch.pose));cable(c,[[1840,542],[1840,480],[2040,480],[2040,590-SEWER_HATCH_TRAVEL*g.hatch.pose]]);contacts.push(shutter(c,2020,600,40,160,g.hatch.pose,SEWER_HATCH_TRAVEL));
  // Golden rope is exposed exactly along x2130 y650..744, at arrow height736.
  cable(c,[[2130,636],[2330,636],[2330,580-160*g.gates[0].pose]]);
  // The severed restraint releases a suspended iron counterweight: its descent
@@ -76,7 +75,7 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[],li
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
  flow(c,s);const globeArt=sewerGlobeArtState(s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});
- return{ready:[environment,props,items,grounded].every(ready)&&(!globeArt||globeArt.ready),mechanic:'sewer',release:'sewer136',contacts,lamps:sewerLights(s),blackAmbient:false,occludedAmbient:true};
+ return{ready:[environment,props,items,grounded].every(ready)&&contacts.filter(a=>a.kind==='valve'||a.kind==='inspection-winch').every(a=>a.ready)&&(!globeArt||globeArt.ready),mechanic:'sewer',release:'sewer141',contacts,lamps:sewerLights(s),blackAmbient:false,occludedAmbient:true};
 }
 let mask;
 export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer')return null;

@@ -667,6 +667,10 @@
     {
       "source": "src/levels/pub/cup-factory.js",
       "output": "pub-cup-factory.js"
+    },
+    {
+      "source": "src/levels/sewer/wheel.js",
+      "output": "sewer-wheel141.js"
     }
   ],
   "files": [
@@ -1026,6 +1030,14 @@
     "assets/sewer136/leg-registration.json",
     "assets/sewer136/visual-gates.json",
     "assets/pub138/visual-gates.json",
-    "assets/pub139/visual-gates.json"
+    "assets/pub139/visual-gates.json",
+    "assets/sewer141/valve-fixed.png",
+    "assets/sewer141/valve-rotor.png",
+    "assets/sewer141/winch-fixed.png",
+    "assets/sewer141/winch-rotor.png",
+    "assets/sewer141/registration.json",
+    "assets/sewer141/valve-axle.png",
+    "assets/sewer141/winch-axle.png",
+    "assets/sewer141/visual-gates.json"
   ]
 }

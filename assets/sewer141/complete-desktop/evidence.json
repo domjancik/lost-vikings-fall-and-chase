@@ -1,0 +1,5787 @@
+{
+  "result": {
+    "won": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "time": 63.47499999999704,
+    "milestones": [
+      {
+        "name": "ceiling-fall",
+        "time": 3.408333333333324,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 155,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 285,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "lamphouse",
+        "time": 3.408333333333324,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 155,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 285,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "unshielded-spray",
+        "time": 6.016666666666755,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 614.5555555555552,
+            "y": 716,
+            "vx": 13.333333333333346,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              "lampOil",
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 285,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "shielded-spray",
+        "time": 10.16666666666673,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 614.5555555555552,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              "lampOil",
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 885.375,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "valve-before",
+        "time": 12.316666666666608,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 990.177083333332,
+            "y": 596,
+            "vx": 27.5,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              "lampOil",
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 885.375,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "valve-moving",
+        "time": 12.799999999999914,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 974.32986111111,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              "lampOil",
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 885.375,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 0.407407407407407
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "valve-closed",
+        "time": 13.333333333333217,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 974.32986111111,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              "lampOil",
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 885.375,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "permanent-refuge",
+        "time": 16.299999999999716,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1530.6145833333464,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 220,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 885.375,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "winch-before",
+        "time": 30.433333333332246,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1880.3020833333355,
+            "y": 596,
+            "vx": -14.166666666666654,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.760416666651,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.25,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": false,
+          "pose": 0,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "winch-moving",
+        "time": 31.016666666665547,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1927.9409722222251,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.760416666651,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.25,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 0.4027777777777773,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "inspection-open",
+        "time": 31.74999999999884,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1927.9409722222251,
+            "y": 596,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "inspectionLamp",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.760416666651,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.25,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "lamp-hooked",
+        "time": 33.49999999999874,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1847.5434027777771,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.760416666651,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1528.25,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "guarded-shot",
+        "time": 39.29999999999841,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1531.3906249999877,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.760416666632,
+            "y": 716,
+            "vx": 2.499999999999993,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": false,
+          "pose": 0
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "outlet-moving",
+        "time": 40.358333333331686,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1531.3906249999877,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 0.45833333333333276
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "outlet-open",
+        "time": 41.42499999999829,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1531.3906249999877,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "stream-approach-0",
+        "time": 42.4916666666649,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1531.3906249999877,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "stream-caught-0",
+        "time": 48.00833333333125,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2782.098958333283,
+            "y": 756,
+            "vx": 210,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "stream-swept-0",
+        "time": 48.949999999997864,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2979.848958333283,
+            "y": 766.8605121527643,
+            "vx": 210,
+            "vy": 55.8942708332981,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "stream-approach-1",
+        "time": 48.949999999997864,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2979.848958333283,
+            "y": 766.8605121527643,
+            "vx": 210,
+            "vy": 55.8942708332981,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1918.7708333332987,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ]
+      },
+      {
+        "name": "stream-caught-1",
+        "time": 53.97499999999758,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2782.1979166667024,
+            "y": 756,
+            "vx": 210,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "name": "stream-swept-1",
+        "time": 54.924999999997524,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2981.6979166667024,
+            "y": 767.3636371527875,
+            "vx": 210,
+            "vy": 57.188541666691705,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "name": "stream-approach-2",
+        "time": 54.924999999997524,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2981.6979166667024,
+            "y": 767.3636371527875,
+            "vx": 210,
+            "vy": 57.188541666691705,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1798.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "name": "stream-caught-2",
+        "time": 61.57499999999715,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.9479166667024,
+            "y": 890.2589062500338,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.896999999999995,
+              "y": 8.47999999999999,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 20
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2784.625,
+            "y": 756,
+            "vx": 210,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "stream-swept-2",
+        "time": 62.50833333333043,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.9479166667024,
+            "y": 890.2589062500338,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.896999999999995,
+              "y": 8.47999999999999,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 20
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2980.625,
+            "y": 767.0694791666666,
+            "vx": 210,
+            "vy": 56.43749999999999,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          true
+        ]
+      },
+      {
+        "name": "swept-away",
+        "time": 63.47499999999704,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.848958333283,
+            "y": 890.1653906249525,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3182.9479166667024,
+            "y": 890.2589062500338,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.896999999999995,
+              "y": 8.47999999999999,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 20
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 3183.625,
+            "y": 890.8994791666667,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": true
+          }
+        ],
+        "valve": {
+          "x": 1050,
+          "y": 596,
+          "pose": 1
+        },
+        "hatch": {
+          "x": 1840,
+          "y": 596,
+          "open": true,
+          "pose": 1,
+          "blocked": false
+        },
+        "rope": {
+          "x": 2130,
+          "y": 650,
+          "w": 10,
+          "h": 94,
+          "cut": true,
+          "pose": 1
+        },
+        "captured": [
+          true,
+          true,
+          true
+        ]
+      }
+    ]
+  },
+  "captures": [
+    {
+      "file": "assets/sewer141/complete-desktop/valve-before-live.png",
+      "name": "valve-before",
+      "label": "live",
+      "camera": {
+        "x": 676,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.38333333333327,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-before-2x.png",
+      "name": "valve-before",
+      "label": "2x",
+      "camera": {
+        "x": 674,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.433333333333268,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-before-1x.png",
+      "name": "valve-before",
+      "label": "1x",
+      "camera": {
+        "x": 358,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 12.433333333333268,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-before-portrait.png",
+      "name": "valve-before",
+      "label": "portrait",
+      "camera": {
+        "x": 882,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.433333333333268,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-before-landscape.png",
+      "name": "valve-before",
+      "label": "landscape",
+      "camera": {
+        "x": 568,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.433333333333268,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-moving-live.png",
+      "name": "valve-moving",
+      "label": "live",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.84999999999991,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.46296296296296247,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-moving-2x.png",
+      "name": "valve-moving",
+      "label": "2x",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.891666666666575,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5092592592592587,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-moving-1x.png",
+      "name": "valve-moving",
+      "label": "1x",
+      "camera": {
+        "x": 342,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 12.891666666666575,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5092592592592587,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-moving-portrait.png",
+      "name": "valve-moving",
+      "label": "portrait",
+      "camera": {
+        "x": 866,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.891666666666575,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5092592592592587,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-moving-landscape.png",
+      "name": "valve-moving",
+      "label": "landscape",
+      "camera": {
+        "x": 552,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.891666666666575,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5092592592592587,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-closed-live.png",
+      "name": "valve-closed",
+      "label": "live",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.391666666666547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-closed-2x.png",
+      "name": "valve-closed",
+      "label": "2x",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.416666666666545,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-closed-1x.png",
+      "name": "valve-closed",
+      "label": "1x",
+      "camera": {
+        "x": 342,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 13.416666666666545,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-closed-portrait.png",
+      "name": "valve-closed",
+      "label": "portrait",
+      "camera": {
+        "x": 866,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.416666666666545,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/valve-closed-landscape.png",
+      "name": "valve-closed",
+      "label": "landscape",
+      "camera": {
+        "x": 552,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.416666666666545,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 974.32986111111,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-before-live.png",
+      "name": "winch-before",
+      "label": "live",
+      "camera": {
+        "x": 1566,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.483333333332244,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1880.2430555555577,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-before-2x.png",
+      "name": "winch-before",
+      "label": "2x",
+      "camera": {
+        "x": 1564,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.53333333333224,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1880.2430555555577,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-before-1x.png",
+      "name": "winch-before",
+      "label": "1x",
+      "camera": {
+        "x": 1248,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 30.53333333333224,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1880.2430555555577,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-before-portrait.png",
+      "name": "winch-before",
+      "label": "portrait",
+      "camera": {
+        "x": 1772,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.53333333333224,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1880.2430555555577,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-before-landscape.png",
+      "name": "winch-before",
+      "label": "landscape",
+      "camera": {
+        "x": 1456,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.53333333333224,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1880.2430555555577,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-moving-live.png",
+      "name": "winch-moving",
+      "label": "live",
+      "camera": {
+        "x": 1612,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.099999999998875,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.4722222222222215,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-moving-2x.png",
+      "name": "winch-moving",
+      "label": "2x",
+      "camera": {
+        "x": 1612,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.133333333332207,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49999999999999917,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-moving-1x.png",
+      "name": "winch-moving",
+      "label": "1x",
+      "camera": {
+        "x": 1296,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.133333333332207,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49999999999999917,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-moving-portrait.png",
+      "name": "winch-moving",
+      "label": "portrait",
+      "camera": {
+        "x": 1818,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.133333333332207,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49999999999999917,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/winch-moving-landscape.png",
+      "name": "winch-moving",
+      "label": "landscape",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.133333333332207,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49999999999999917,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/inspection-open-live.png",
+      "name": "inspection-open",
+      "label": "live",
+      "camera": {
+        "x": 1612,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.799999999998835,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/inspection-open-2x.png",
+      "name": "inspection-open",
+      "label": "2x",
+      "camera": {
+        "x": 1612,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.824999999998834,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/inspection-open-1x.png",
+      "name": "inspection-open",
+      "label": "1x",
+      "camera": {
+        "x": 1296,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.824999999998834,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/inspection-open-portrait.png",
+      "name": "inspection-open",
+      "label": "portrait",
+      "camera": {
+        "x": 1818,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.824999999998834,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/inspection-open-landscape.png",
+      "name": "inspection-open",
+      "label": "landscape",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.824999999998834,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/all-caught-downstream.png",
+      "name": "all-caught",
+      "label": "downstream",
+      "camera": {
+        "x": 2668,
+        "y": 688,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 63.47499999999704,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 3182.848958333283,
+          "y": 890.1653906249525,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 3182.9479166667024,
+          "y": 890.2589062500338,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 3183.625,
+          "y": 890.8994791666667,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": true
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/all-caught-mid-flow.png",
+      "name": "all-caught",
+      "label": "mid-flow",
+      "camera": {
+        "x": 2668,
+        "y": 688,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 63.47499999999704,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 3182.848958333283,
+          "y": 890.1653906249525,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 3182.9479166667024,
+          "y": 890.2589062500338,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 3183.625,
+          "y": 890.8994791666667,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": true
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/all-caught-complete.png",
+      "name": "all-caught",
+      "label": "complete",
+      "camera": {
+        "x": 2668,
+        "y": 688,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 63.47499999999704,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 3182.848958333283,
+          "y": 890.1653906249525,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 3182.9479166667024,
+          "y": 890.2589062500338,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 3183.625,
+          "y": 890.8994791666667,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": true
+    },
+    {
+      "file": "assets/sewer141/complete-desktop/continued-water-entry.png",
+      "name": "continued-water",
+      "label": "entry",
+      "camera": {
+        "x": 0,
+        "y": 292,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 0,
+      "round": 4,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 100,
+          "y": 496,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 155,
+          "y": 496,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 210,
+          "y": 496,
+          "hp": 3
+        }
+      ],
+      "won": false
+    }
+  ],
+  "errors": [],
+  "continuedTo": 4,
+  "receiptScope": "All original capture paths, rendered cameras, health, wheel contacts and route milestones retained; unrelated repeated scene diagnostics omitted. Full raw receipt archived locally under output/sewer141."
+}

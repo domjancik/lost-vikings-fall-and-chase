@@ -1,0 +1,3839 @@
+{
+  "result": {
+    "reversal": true,
+    "hp": [
+      3,
+      3,
+      3
+    ]
+  },
+  "captures": [
+    {
+      "file": "assets/sewer141/reverse-touch/valve-before-live.png",
+      "name": "valve-before",
+      "label": "live",
+      "camera": {
+        "x": 564,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.366666666666605,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-before-2x.png",
+      "name": "valve-before",
+      "label": "2x",
+      "camera": {
+        "x": 672,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.416666666666602,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-before-1x.png",
+      "name": "valve-before",
+      "label": "1x",
+      "camera": {
+        "x": 358,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 12.416666666666602,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-before-portrait.png",
+      "name": "valve-before",
+      "label": "portrait",
+      "camera": {
+        "x": 882,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.416666666666602,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-before-landscape.png",
+      "name": "valve-before",
+      "label": "landscape",
+      "camera": {
+        "x": 568,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.416666666666602,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 990.3402777777765,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-moving-live.png",
+      "name": "valve-moving",
+      "label": "live",
+      "camera": {
+        "x": 548,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.824999999999912,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.4537037037037032,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-moving-2x.png",
+      "name": "valve-moving",
+      "label": "2x",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.883333333333242,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.518518518518518,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-moving-1x.png",
+      "name": "valve-moving",
+      "label": "1x",
+      "camera": {
+        "x": 344,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 12.883333333333242,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.518518518518518,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-moving-portrait.png",
+      "name": "valve-moving",
+      "label": "portrait",
+      "camera": {
+        "x": 866,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.883333333333242,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.518518518518518,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-moving-landscape.png",
+      "name": "valve-moving",
+      "label": "landscape",
+      "camera": {
+        "x": 552,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 12.883333333333242,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.518518518518518,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-closed-live.png",
+      "name": "valve-closed",
+      "label": "live",
+      "camera": {
+        "x": 548,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.366666666666548,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-closed-2x.png",
+      "name": "valve-closed",
+      "label": "2x",
+      "camera": {
+        "x": 658,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.391666666666547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-closed-1x.png",
+      "name": "valve-closed",
+      "label": "1x",
+      "camera": {
+        "x": 344,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 13.391666666666547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-closed-portrait.png",
+      "name": "valve-closed",
+      "label": "portrait",
+      "camera": {
+        "x": 866,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.391666666666547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/valve-closed-landscape.png",
+      "name": "valve-closed",
+      "label": "landscape",
+      "camera": {
+        "x": 554,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 13.391666666666547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 975.3472222222208,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 220,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 885.375,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-before-live.png",
+      "name": "winch-before",
+      "label": "live",
+      "camera": {
+        "x": 1452,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.449999999998912,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1878.326388888891,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-before-2x.png",
+      "name": "winch-before",
+      "label": "2x",
+      "camera": {
+        "x": 1560,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.47499999999891,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1878.326388888891,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-before-1x.png",
+      "name": "winch-before",
+      "label": "1x",
+      "camera": {
+        "x": 1246,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 30.47499999999891,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1878.326388888891,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-before-portrait.png",
+      "name": "winch-before",
+      "label": "portrait",
+      "camera": {
+        "x": 1770,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.47499999999891,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1878.326388888891,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-before-landscape.png",
+      "name": "winch-before",
+      "label": "landscape",
+      "camera": {
+        "x": 1454,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 30.47499999999891,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1878.326388888891,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-moving-live.png",
+      "name": "winch-moving",
+      "label": "live",
+      "camera": {
+        "x": 1500,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.016666666665547,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.45138888888888823,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-moving-2x.png",
+      "name": "winch-moving",
+      "label": "2x",
+      "camera": {
+        "x": 1610,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.066666666665544,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49305555555555475,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-moving-1x.png",
+      "name": "winch-moving",
+      "label": "1x",
+      "camera": {
+        "x": 1296,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.066666666665544,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49305555555555475,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-moving-portrait.png",
+      "name": "winch-moving",
+      "label": "portrait",
+      "camera": {
+        "x": 1818,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.066666666665544,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49305555555555475,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-moving-landscape.png",
+      "name": "winch-moving",
+      "label": "landscape",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.066666666665544,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.49305555555555475,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/inspection-open-live.png",
+      "name": "inspection-open",
+      "label": "live",
+      "camera": {
+        "x": 1500,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.741666666665505,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/inspection-open-2x.png",
+      "name": "inspection-open",
+      "label": "2x",
+      "camera": {
+        "x": 1610,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.774999999998837,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/inspection-open-1x.png",
+      "name": "inspection-open",
+      "label": "1x",
+      "camera": {
+        "x": 1296,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 31.774999999998837,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/inspection-open-portrait.png",
+      "name": "inspection-open",
+      "label": "portrait",
+      "camera": {
+        "x": 1818,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.774999999998837,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/inspection-open-landscape.png",
+      "name": "inspection-open",
+      "label": "landscape",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 31.774999999998837,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1927.9409722222251,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-closing-live.png",
+      "name": "winch-closing",
+      "label": "live",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.64166666666546,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5416666666666683,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-closing-2x.png",
+      "name": "winch-closing",
+      "label": "2x",
+      "camera": {
+        "x": 1614,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.68333333333212,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5069444444444462,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-closing-1x.png",
+      "name": "winch-closing",
+      "label": "1x",
+      "camera": {
+        "x": 1300,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 32.68333333333212,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5069444444444462,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-closing-portrait.png",
+      "name": "winch-closing",
+      "label": "portrait",
+      "camera": {
+        "x": 1822,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.68333333333212,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5069444444444462,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-closing-landscape.png",
+      "name": "winch-closing",
+      "label": "landscape",
+      "camera": {
+        "x": 1508,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 32.68333333333212,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0.5069444444444462,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reset-live.png",
+      "name": "winch-reset",
+      "label": "live",
+      "camera": {
+        "x": 1504,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 34.43333333333202,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reset-2x.png",
+      "name": "winch-reset",
+      "label": "2x",
+      "camera": {
+        "x": 1614,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 34.466666666665354,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reset-1x.png",
+      "name": "winch-reset",
+      "label": "1x",
+      "camera": {
+        "x": 1300,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 34.466666666665354,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reset-portrait.png",
+      "name": "winch-reset",
+      "label": "portrait",
+      "camera": {
+        "x": 1822,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 34.466666666665354,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reset-landscape.png",
+      "name": "winch-reset",
+      "label": "landscape",
+      "camera": {
+        "x": 1508,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 34.466666666665354,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1931.6527777777806,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 0,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reopened-live.png",
+      "name": "winch-reopened",
+      "label": "live",
+      "camera": {
+        "x": 1502,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 36.05833333333193,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1929.6145833333358,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reopened-2x.png",
+      "name": "winch-reopened",
+      "label": "2x",
+      "camera": {
+        "x": 1612,
+        "y": 392,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 36.09166666666526,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1929.6145833333358,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reopened-1x.png",
+      "name": "winch-reopened",
+      "label": "1x",
+      "camera": {
+        "x": 1298,
+        "y": 300,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "time": 36.09166666666526,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1929.6145833333358,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reopened-portrait.png",
+      "name": "winch-reopened",
+      "label": "portrait",
+      "camera": {
+        "x": 1820,
+        "y": 392,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 36.09166666666526,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1929.6145833333358,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    },
+    {
+      "file": "assets/sewer141/reverse-touch/winch-reopened-landscape.png",
+      "name": "winch-reopened",
+      "label": "landscape",
+      "camera": {
+        "x": 1506,
+        "y": 392,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "time": 36.09166666666526,
+      "round": 10,
+      "heroes": [
+        {
+          "id": 0,
+          "skin": "imagegen90",
+          "x": 1929.6145833333358,
+          "y": 596,
+          "hp": 3
+        },
+        {
+          "id": 1,
+          "skin": "imagegen90",
+          "x": 1528.760416666651,
+          "y": 716,
+          "hp": 3
+        },
+        {
+          "id": 2,
+          "skin": "imagegen90",
+          "x": 1528.25,
+          "y": 716,
+          "hp": 3
+        }
+      ],
+      "wheels": [
+        {
+          "kind": "valve",
+          "x": 1050,
+          "y": 580,
+          "axis": [
+            1050,
+            580
+          ],
+          "pivot": [
+            32,
+            34
+          ],
+          "origin": [
+            986,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        },
+        {
+          "kind": "inspection-winch",
+          "x": 1820,
+          "y": 572,
+          "axis": [
+            1820,
+            572
+          ],
+          "pivot": [
+            22,
+            30
+          ],
+          "origin": [
+            1776,
+            512
+          ],
+          "base": 640,
+          "sole": 640,
+          "sourceSole": 64,
+          "pose": 1,
+          "ready": true
+        }
+      ],
+      "won": false
+    }
+  ],
+  "errors": [],
+  "receiptScope": "All original capture paths, rendered cameras, health, wheel contacts and route milestones retained; unrelated repeated scene diagnostics omitted. Full raw receipt archived locally under output/sewer141."
+}

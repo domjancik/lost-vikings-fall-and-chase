@@ -1,0 +1,42 @@
+{
+  "valve": {
+    "source": "assets/sewer125/props-native.png",
+    "crop": [
+      0,
+      64,
+      64,
+      128
+    ],
+    "nativeSize": [
+      64,
+      64
+    ],
+    "pivot": [
+      32,
+      34
+    ],
+    "worldPerPixel": 2,
+    "sourceSole": 64,
+    "moving": "spokes rotate underneath the stationary axle cap; rim, bearings, drum and base remain stationary"
+  },
+  "winch": {
+    "source": "assets/sewer125/props-native.png",
+    "crop": [
+      64,
+      128,
+      144,
+      192
+    ],
+    "nativeSize": [
+      80,
+      64
+    ],
+    "pivot": [
+      22,
+      30
+    ],
+    "worldPerPixel": 2,
+    "sourceSole": 64,
+    "moving": "spokes rotate underneath the stationary axle cap; rim, bearings, drum and base remain stationary"
+  }
+}

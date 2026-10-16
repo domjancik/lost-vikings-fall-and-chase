@@ -1,0 +1,22 @@
+[
+  {
+    "kind": "valve",
+    "pivot": [
+      32,
+      34
+    ],
+    "angles": 72,
+    "stationaryAxleRadius": 5,
+    "renderer": "production drawSewerWheel"
+  },
+  {
+    "kind": "winch",
+    "pivot": [
+      22,
+      30
+    ],
+    "angles": 72,
+    "stationaryAxleRadius": 5,
+    "renderer": "production drawSewerWheel"
+  }
+]

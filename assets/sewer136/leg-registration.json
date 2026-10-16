@@ -1,0 +1,89 @@
+{
+  "nativePixelWorldUnits": 2,
+  "nativeSheet": [
+    64,
+    32
+  ],
+  "cell": [
+    16,
+    16
+  ],
+  "source": "leg-parts-v2-source.png",
+  "sampling": "one nearest-neighbor normalization; alpha<128 removed, remaining material alpha255",
+  "parts": [
+    {
+      "name": "upper",
+      "pivot": [
+        4,
+        7
+      ],
+      "end": [
+        12,
+        7
+      ],
+      "nativeLength": 8
+    },
+    {
+      "name": "shin",
+      "pivot": [
+        4,
+        7
+      ],
+      "end": [
+        13,
+        7
+      ],
+      "nativeLength": 9
+    },
+    {
+      "name": "foot",
+      "pivot": [
+        5,
+        7
+      ],
+      "soleExclusive": 11
+    },
+    {
+      "name": "pin",
+      "pivot": [
+        8,
+        8
+      ]
+    }
+  ],
+  "rows": [
+    "near",
+    "far"
+  ],
+  "body": {
+    "source": "assets/alehall135/globe-native.png",
+    "cropInEach48pxCell": [
+      14,
+      12,
+      20,
+      22
+    ],
+    "pivot": [
+      10,
+      10
+    ],
+    "worldDiameter": 40
+  },
+  "gait": {
+    "legs": 6,
+    "tripods": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ]
+    ],
+    "strideWorld": 24,
+    "footSoleWorld": 760
+  }
+}

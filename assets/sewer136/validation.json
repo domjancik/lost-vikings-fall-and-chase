@@ -1,0 +1,65 @@
+{
+  "tests": {
+    "total": 695,
+    "passed": 695,
+    "failed": 0
+  },
+  "build": {
+    "explicitFiles": 494,
+    "publishFiles": 495,
+    "releaseCheck": "passed",
+    "publishPreflight": "passed"
+  },
+  "desktopRoute": {
+    "time": 63.41666666666371,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "continuedTo": 4,
+    "errors": []
+  },
+  "mobileEntry": {
+    "captures": 24,
+    "errors": [],
+    "controlsResumed": true
+  },
+  "touch": {
+    "actions": [
+      "hero-selection",
+      "move-touch",
+      "use-pickup",
+      "inventory-select",
+      "item-fit-lens",
+      "picker-slot-cycle",
+      "item-toggle-beam"
+    ],
+    "errors": [],
+    "coverage": "targeted held touch movement, selection and inventory; not a manual full mobile route"
+  },
+  "fire": {
+    "seconds": 2.091666666666673,
+    "intensityRange": 0.0845096382811168,
+    "aimRange": 0.017996647897271626,
+    "wickXRange": 2,
+    "wickYRange": 4,
+    "luminanceRange": 1.179025000000017,
+    "samples": 120,
+    "pauseCheck": {
+      "durationMs": 400,
+      "timeBefore": 9.23333333333345,
+      "timeAfter": 9.23333333333345,
+      "identicalLamps": true
+    },
+    "errors": []
+  },
+  "crossCampaignSmoke": {
+    "source": true,
+    "build": true,
+    "campaigns": 3,
+    "previews": 31,
+    "errors": []
+  },
+  "review": "docs/history/SEWER136-REVIEW.md"
+}

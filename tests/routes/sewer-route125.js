@@ -7,7 +7,7 @@ export function simulateSewerRoute(hz=120){
  function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes.map(h=>({x:h.x,y:h.y,hp:h.hp,inventory:[...h.inventory]})),machine:JSON.parse(JSON.stringify(s.machine))});if(globalThis.process?.env.SEWER_TRACE)console.log(name,s.time,s.heroes.map(h=>[Math.round(h.x),Math.round(h.y+44),h.hp]),s.machine.lurkers);}
  mark('ceiling-fall');until(0,s=>s.heroes.every(h=>h.ground),{},3);mark('lamphouse');
  for(const x of [390,445,500]){move(0,x);tick(0,{interact:true});}s.heroes[0].itemSlot=2;tick(0,{item:true});s.heroes[0].itemSlot=0;
- move(2,885);tick(2,{action:true});mark('shielded-spray');move(0,858);tick(0,{jump:true,right:true});until(0,s=>s.heroes[0].x>950,{right:true},2);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===640,{},2);move(0,1050);tick(0,{interact:true});until(0,s=>s.machine.jet.pose===0,{},2);mark('valve-closed');
+ move(0,615);mark('unshielded-spray');move(2,885);tick(2,{action:true});mark('shielded-spray');move(0,858);tick(0,{jump:true,right:true});until(0,s=>s.heroes[0].x>950,{right:true},2);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===640,{},2);move(0,1050);tick(0,{interact:true});until(0,s=>s.machine.jet.pose===0,{},2);mark('valve-closed');
  move(0,1530);s.heroes[0].itemSlot=1;tick(0,{item:true});s.heroes[0].itemSlot=0;tick(0,{item:true});mark('permanent-refuge');
  move(1,1530);move(2,1530);tick(2,{action:true});move(0,1770);tick(0,{jump:true,right:true});until(0,s=>s.heroes[0].x>1840,{right:true},2);until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===640,{},2);move(0,1840);tick(0,{interact:true});until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');
  // Return the portable lamp to the lower hook; leave its focused beam aimed along the rope.

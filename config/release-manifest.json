@@ -635,6 +635,22 @@
     {
       "source": "src/levels/pub/audio.js",
       "output": "alehall-audio.js"
+    },
+    {
+      "source": "src/levels/sewer/globe.js",
+      "output": "sewer-globe.js"
+    },
+    {
+      "source": "src/levels/sewer/globe-art.js",
+      "output": "sewer-globe-art.js"
+    },
+    {
+      "source": "src/levels/sewer/stream.js",
+      "output": "sewer-stream.js"
+    },
+    {
+      "source": "src/levels/sewer/stream-render.js",
+      "output": "sewer-stream-render.js"
     }
   ],
   "files": [
@@ -989,6 +1005,9 @@
     "assets/alehall135/key-icon.png",
     "assets/alehall135/cup-native.png",
     "assets/alehall135/registration.json",
-    "assets/alehall135/visual-gates.json"
+    "assets/alehall135/visual-gates.json",
+    "assets/sewer136/leg-parts-native.png",
+    "assets/sewer136/leg-registration.json",
+    "assets/sewer136/visual-gates.json"
   ]
 }

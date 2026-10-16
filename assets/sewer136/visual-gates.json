@@ -1,0 +1,49 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/SEWER136-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Independently inspected retained leg-parts-v2 source, exact prompt/native guide and processed64x32 component sheet. Deliberate native bronze planes,2px shafts and4px joints retain richness at intended display size. Original accepted20px globe body is unchanged. V3 assembly uses measured pivots and rigid16/18world links; rejected whole atlas and oversized v1 are retained as rejected history."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Inspected actual v3 desktop1x/2x/portrait/landscape and refreshed coarse-mobile entry views, contacts and resumed controls. First visible impact precedes all crew landings; settled pause, powered unfolding, supported walking and disappearance are distinct. Shared curved spray stays connected at the mouth, is intercepted by Olaf's actual front shield and runs down-right to floor.120 unpaused production-browser fire samples confirm small brightness/aim/wick variation, fixed housing and400ms paused stability. Desktop full route63.4167s HP3/3/3 errors[] continues toID4."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Compared raw/native parts with actual small globe assembly against latest adult-scale Vikings. Outward fore/aft knees and darker far links create negative arches instead of crossed gold mass; original smoky globe and tiny making mechanism retain their scale. Native pixel stepping, restrained fire pools and curved subdued water remain consistent with the scene. No detached joint, resized sphere, unsupported resting sole or blanket ambient reveal found."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Independently ran17 focused globe/art/fire/stream regressions and complete ordinary route at60/120Hz; all pass healthy. Parent695/695 suite log inspected. Globe entry is a bounded atmospheric scene with physics continuing and controls clearing at handoff, without inventory or puzzle flags. Shield direction/height/position changes follow geometry; valve/refuge/exit cooperation remains recoverable."
+  },
+  "captureSkin": "imagegen90",
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "publicationAllowed": true,
+  "evidence": [
+    "assets/sewer136/leg-parts-v2-source.png",
+    "assets/sewer136/leg-parts-v2-prompt.txt",
+    "assets/sewer136/leg-parts-native.png",
+    "assets/sewer136/evidence/entry-desktop/entry.json",
+    "assets/sewer136/evidence/entry-mobile/entry.json",
+    "assets/sewer136/evidence/route/evidence.json",
+    "assets/sewer136/evidence/touch/touch.json",
+    "assets/sewer136/evidence/motion/motion.json",
+    "assets/sewer136/evidence/motion/video.json",
+    "docs/history/SEWER136-REVIEW.md"
+  ],
+  "limitations": [
+    "Full ordinary browser completion is desktop. Coarse-mobile entry/camera/action evidence is targeted; it is not a complete manual mobile playthrough.",
+    "Some far-leg overlap is natural in side view; six-chain identity is established across deployment and gait keys, not six unobstructed chains in every still.",
+    "Independent motion review used actual scene keyframes and326-frame browser trace; unedited WebM is retained but was not separately played through by the reviewer.",
+    "Fixed-world canvas photometry includes fog/composition and supports, rather than replaces, emitter metadata and visual inspection."
+  ],
+  "releaseConditions": [
+    "Promote reviewed output evidence to the listed committed assets/sewer136/evidence paths, preserving screenshots, sidecars, traces and unedited WebM.",
+    "Final manifest/build/release validation and live-byte verification"
+  ]
+}

@@ -1,5 +1,5 @@
 import {segmentHit} from '../../core/projectile-collision.js';
-import {sewerOccluders} from './light.js?v=sewer132';
+import {sewerOccluders} from './light.js?v=sewer136';
 
 // The same physical walls that hide a source also damp its sound. No camera-space
 // or guessed enemy position: every cue retains its actual world source.
@@ -10,7 +10,7 @@ export function sewerAcoustics(s,x,y=716){
 }
 export function createSewerSounds(){
  let previous=null,lastDrip=0,lastFlow=0,lastJet=0,lastMotor=0,lastCrawl=new Map();
- const names={ignite:'sewerIgnite',pour:'sewerPour',valve:'sewerValve',chain:'sewerChain',splash:'sewerSplash',steam:'sewerHiss',click:'sewerLamp'};
+ const names={ignite:'sewerIgnite',pour:'sewerPour',valve:'sewerValve',chain:'sewerChain',splash:'sewerSplash',steam:'sewerHiss',click:'sewerLamp',globeBounce:'hallWood',globeWake:'hallGlobe',globeFeet:'sewerLamp'};
  return s=>{
   if(s.level.mechanic!=='sewer'){previous=null;return [];}
   const g=s.machine,out=[];
@@ -21,7 +21,7 @@ export function createSewerSounds(){
    if(g.introTime<.3)cue('sewerWood',230,500,'entry',.9);
    return out;
   }
-  for(const e of g.events)if(e.id>=previous.serial)cue(names[e.name]||e.name,e.x,e.y??716,e.id);
+  for(const e of g.events)if(e.id>=previous.serial)cue(names[e.name]||e.name,e.x,e.y??716,e.id,e.volume??1);
   if(g.landed&&!previous.landed)cue('sewerLand',230,760,'land',.85);
   if(s.time-lastDrip>3.7){
    const h=s.heroes[s.active],x=Math.max(440,Math.min(2540,Math.round(h.x/360)*360+70));

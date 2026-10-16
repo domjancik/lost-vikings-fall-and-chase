@@ -17,7 +17,7 @@ async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await 
 await page.exposeBinding('sewerPhoto',async(_,name)=>{
  if(process.argv.includes('--sewer132-focus')&&!['wall-contact','guarded-shot','lurker-hit','lurker-fall','lurker-dead'].includes(name))return;
  if(process.argv.includes('--structure-focus')&&!['lamphouse','shielded-spray','winch-moving','inspection-open','leaf-clearance','landing-rider-start','outlet-moving','outlet-open'].includes(name))return;
- if(process.argv.includes('--spray-focus')&&name!=='shielded-spray')return;
+ if(process.argv.includes('--spray-focus')&&!['unshielded-spray','shielded-spray'].includes(name))return;
  if(process.argv.includes('--focus')&&!['lamphouse','winch-moving','outlet-moving','stream-swept-2'].includes(name))return;
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
@@ -31,13 +31,14 @@ await page.exposeBinding('sewerSlot',async(_,slot)=>{
  await page.locator('#inventory-slots button[data-slot="'+slot+'"]').click();await page.locator('#close-inventory').click();
 });
 try{
- await reviewNavigate(page,base+'/?campaign=cycle&release=sewer125');
+ await reviewNavigate(page,base+'/?campaign=cycle&release=sewer136');
  const cards=page.locator('#start-picker .level-card');
- assert.deepEqual(await cards.evaluateAll(nodes=>nodes.map(n=>+n.dataset.round)),[0,1,2,3,10,4,5,6,7,8,9]);
+ assert.deepEqual(await cards.evaluateAll(nodes=>nodes.map(n=>+n.dataset.round)),[11,10,4,0,1,2,3,5,6,7,8,9]);
  const sewerCard=page.locator('#start-picker .level-card[data-round="10"]');
  await sewerCard.locator('canvas[data-ready="true"]').waitFor({timeout:60000});
  await sewerCard.click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='10');
  await page.locator('#restart').click();
+ if(!process.argv.includes('--smoke'))await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.puzzle).machine.globe?.phase==='gone');
  if(touchSmoke){
   const cdp=await page.context().newCDPSession(page),actions=[];
   assert.equal(await page.evaluate(()=>matchMedia('(pointer:coarse)').matches),true);

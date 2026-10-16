@@ -6,6 +6,7 @@ import {dropItem,pickupItem,transferItem,useItem} from '../../src/core/inventory
 import {createState,step} from '../../src/core/engine.js';
 import {setupAlehall,alehallObjects,alehallStep} from '../../src/levels/pub/campaign.js';
 import {campaignOrder,campaignNext} from '../../src/campaigns/machines/cycle-order.js';
+import {ALEHALL_CASK} from '../../src/levels/pub/layout.js';
 const fresh=()=>{const s=createState();setupAlehall(s);return s;};
 const run=(s,input={},seconds=1)=>{for(let n=0;n<seconds*120&&!s.won;n++)alehallStep(s,input,1/120);};
 
@@ -19,7 +20,7 @@ test('the Norse alehall opens the machine campaign and falls into sewer then wat
 test('only Olaf front-shield contact pushes the grounded cask sledge, and it has recovery stops',()=>{
  const s=fresh(),g=s.machine,o=s.heroes[2];s.active=2;o.x=g.cart.x+80;o.face=-1;const x=g.cart.x;
  o.shieldUp=true;run(s,{left:true},.4);assert.equal(g.cart.x,x);
- o.x=x+80;o.vx=0;o.shieldUp=false;run(s,{left:true},3);assert.equal(g.cart.x,840);assert.ok(g.cart.parked);
+ o.x=x+80;o.vx=0;o.shieldUp=false;run(s,{left:true},3);assert.equal(g.cart.x,ALEHALL_CASK.park);assert.ok(g.cart.parked);
 });
 test('ale carry requires raised shield and lowering spills only the serving attempt',()=>{
  const s=fresh(),o=s.heroes[2];s.active=2;o.x=1040;o.shieldUp=true;
@@ -61,7 +62,7 @@ test('a closed storeroom is solid and the inventory key opens it continuously',(
 });
 
 test('the hall key can be dropped from a jump, recovered and passed to a friend for the door',()=>{
- const s=fresh(),e=s.heroes[0],b=s.heroes[1];s.active=0;e.x=1450;e.y=600;e.inventory[0]='hallKey';
+ const s=fresh(),e=s.heroes[0],b=s.heroes[1];s.active=0;e.x=1640;e.y=600;e.inventory[0]='hallKey';
  assert.ok(dropItem(s));run(s,{},1);const key=s.items.find(i=>i.type==='hallKey'&&i.id.startsWith('drop-'));
  assert.equal(key.y+44,760);assert.ok(pickupItem(s));b.x=e.x;b.y=e.y;assert.ok(transferItem(s,0,1));
  s.active=1;b.x=1680;b.y=716;assert.ok(useItem(s));assert.equal(s.machine.door.open,true);

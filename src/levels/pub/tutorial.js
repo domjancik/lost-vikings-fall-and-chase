@@ -1,5 +1,6 @@
 import {startBash,bashImpact} from '../../core/bash.js';
 import {segmentHit,shieldHit} from '../../core/projectile-collision.js';
+import {ALEHALL_DELIVERY_X} from './layout.js?v=pub143';
 
 export function invitePractice(s,say){
  const g=s.machine,h=s.heroes[s.active];
@@ -8,7 +9,7 @@ export function invitePractice(s,say){
  const offers=[
   ['loft',h.id===0&&g.cart.parked&&h.x>650&&h.x<1100,'ASTRID','Erik, fetch my loft key. Jump onto Olaf’s raised shield, then up to the loft.',Math.min(h.x,1040)],
   ['dash',h.id===0&&h.x<480&&!g.bashHit,'HAKON','Erik! Take a run at the straw butt. Let us see that head-bash again!',390],
-  ['blade',h.id===1&&h.x>1090&&h.x<1320&&!g.wrapCut,'ASTRID','Baleog, cut the rope lashing on that delivery with your sword, will you?',1230],
+  ['blade',h.id===1&&h.x>ALEHALL_DELIVERY_X-140&&h.x<ALEHALL_DELIVERY_X+90&&!g.wrapCut,'ASTRID','Baleog, cut the rope lashing on that delivery with your sword, will you?',ALEHALL_DELIVERY_X],
   ['bow',h.id===1&&h.x>320&&h.x<1100&&!g.targetHit,'TORSTEN','Baleog! Still land an arrow in the straw? The practice butt is outside.',Math.min(960,h.x+100)],
   ['defense',h.id===2&&g.served&&h.x>1250&&h.x<1500&&!g.defenseBlocks,'HAKON','One empty cup, Olaf! Face me with your shield forward. Ask when you’re ready.',1460]
  ];

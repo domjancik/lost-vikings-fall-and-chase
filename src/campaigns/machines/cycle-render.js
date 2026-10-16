@@ -1,4 +1,4 @@
-import {drawAlehallWorld} from '../../levels/pub/render.js?v=pub139';
+import {drawAlehallWorld} from '../../levels/pub/render.js?v=pub143';
 import {drawSewerWorld} from '../../levels/sewer/render.js?v=sewer141';
 import {drawLodeWorld} from '../../levels/lode/render.js?v=alehall135';
 import {drawOrbitWorld} from "../../levels/orbit/render.js?v=alehall135";

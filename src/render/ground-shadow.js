@@ -1,4 +1,4 @@
-import {alehallSurfaces} from '../levels/pub/campaign.js?v=pub139';
+import {alehallSurfaces} from '../levels/pub/campaign.js?v=pub143';
 // Project beneath the feet onto the closest solid terrain, never onto a fixed offset from the sprite.
 export function groundShadow(state,hero,pubPlatforms){
  let surfaces=state.campaign==='arcade'&&state.round===0?[{x:0,y:610,w:1440},...pubPlatforms]:[...state.level.floors,...state.level.platforms];

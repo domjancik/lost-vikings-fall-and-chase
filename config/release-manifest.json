@@ -671,6 +671,10 @@
     {
       "source": "src/levels/sewer/wheel.js",
       "output": "sewer-wheel141.js"
+    },
+    {
+      "source": "src/levels/pub/layout.js",
+      "output": "alehall-layout143.js"
     }
   ],
   "files": [
@@ -1039,6 +1043,7 @@
     "assets/sewer141/valve-axle.png",
     "assets/sewer141/winch-axle.png",
     "assets/sewer141/visual-gates.json",
-    "assets/water142/visual-gates.json"
+    "assets/water142/visual-gates.json",
+    "assets/pub143/visual-gates.json"
   ]
 }

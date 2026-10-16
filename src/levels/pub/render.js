@@ -2,7 +2,8 @@ import {drawAlehallHearth} from './hearth.js?v=pub139';
 import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub139';
+import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub143';
+import {ALEHALL_DELIVERY_X,ALEHALL_LOFT} from './layout.js?v=pub143';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -62,8 +63,8 @@ export function drawAlehallBerth(c){return alehallBerthSteps.map(step=>{
  // These are solid timber loading blocks, not narrow rails with transparent
  // air below them. Their opaque silhouette is the same volume bodies climb.
  c.save();c.beginPath();c.rect(step.x,step.y,step.w,760-step.y);c.clip();c.fillStyle='#44301f';c.fillRect(step.x,step.y,step.w,760-step.y);
- for(let y=step.y+4;y<760;y+=36)crop(c,architecture,5,20,24,12,18,step.x,y);
- crop(c,architecture,8,20,2,12,5,step.x,step.y);
+ for(let y=step.y+4;y<760;y+=36)for(let x=step.x;x<step.x+step.w;x+=24)crop(c,architecture,5,20,24,Math.min(12,(step.x+step.w-x)/2),18,x,y);
+ for(let x=step.x;x<step.x+step.w;x+=24)crop(c,architecture,8,20,2,Math.min(12,(step.x+step.w-x)/2),5,x,step.y);
  c.fillStyle='#9b7449';c.fillRect(step.x,step.y,step.w,2);c.fillStyle='#302419';c.fillRect(step.x+step.w-2,step.y+2,2,758-step.y);c.restore();
  return {...step,bottom:760,opaque:true,kind:'loading-berth'};
 });}
@@ -73,8 +74,8 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  roomWalls(c,camera,view);terrain(c,s,camera,view);
  const berthTreads=drawAlehallBerth(c);
  // Loft deck is attached to posts that continue to the walking floor.
- for(const x of [648,888])column(c,x,610,760);
- for(let x=640;x<900;x+=128)crop(c,architecture,10,0,20,Math.min(64,(900-x)/2),12,x,610);
+ for(const x of [ALEHALL_LOFT.x+8,ALEHALL_LOFT.x+ALEHALL_LOFT.w-12])column(c,x,ALEHALL_LOFT.y,760);
+ for(let x=ALEHALL_LOFT.x;x<ALEHALL_LOFT.x+ALEHALL_LOFT.w;x+=128)crop(c,architecture,10,0,20,Math.min(64,(ALEHALL_LOFT.x+ALEHALL_LOFT.w-x)/2),ALEHALL_LOFT.h/2,x,ALEHALL_LOFT.y);
  sprite(c,architecture,11,1170,760);const hearth=drawAlehallHearth(c,s,camera,view);
  sprite(c,props,1,1040,760);sprite(c,props,10,1020,710);
  for(const [row,x,phase]of [[0,1040,.1],[1,1350,1.7],[1,1460,3.2],[2,1620,2.3],[3,960,4.4]]){
@@ -89,8 +90,8 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  for(const x of [120,220])column(c,x,650,760);
  // The target face is in front of its fence/backstop, never behind a plank.
  drawPracticeTarget(c,s);
- sprite(c,props,g.wrapPose<.5?6:7,1230,760);
- if(g.wrapPose>0&&g.wrapPose<1){c.save();c.globalAlpha=1-g.wrapPose;sprite(c,props,14,1230+q(g.wrapPose*18),760+q(g.wrapPose*20));c.restore();}
+ sprite(c,props,g.wrapPose<.5?6:7,ALEHALL_DELIVERY_X,760);
+ if(g.wrapPose>0&&g.wrapPose<1){c.save();c.globalAlpha=1-g.wrapPose;sprite(c,props,14,ALEHALL_DELIVERY_X+q(g.wrapPose*18),760+q(g.wrapPose*20));c.restore();}
  if(ready(props.image)){c.save();c.translate(1708,646);c.scale(Math.max(.06,1-g.door.pose),1);props.draw(c,4,-28,0,128,128);c.restore();}
  for(const item of s.items)if(item.type==='hallKey')sprite(c,props,9,item.x,item.y+44);
  // Back room: quiet storage, a single candle and the impossible find on its stool.

@@ -1,0 +1,445 @@
+{
+  "state": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 620,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 690,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": -28.675,
+          "y": 8.295000000000002,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": 0.13962634015954636,
+          "mode": "front",
+          "cell": 11
+        },
+        "rotation": 0,
+        "magnet": null,
+        "boots": false,
+        "x": 1100,
+        "y": 716,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": null,
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "machine": {
+      "phase": "play",
+      "factory": {
+        "clock": 0.09999999999999999,
+        "made": 0,
+        "pile": 8,
+        "flying": []
+      },
+      "invitations": {},
+      "bashHit": false,
+      "bashAt": -10,
+      "bashPose": 0,
+      "defense": {
+        "phase": "idle",
+        "at": 0
+      },
+      "defenseBlocks": 0,
+      "cart": {
+        "x": 1020,
+        "y": 706,
+        "w": 96,
+        "parked": false
+      },
+      "door": {
+        "open": false,
+        "pose": 0
+      },
+      "cups": {
+        "mode": "empty",
+        "at": 0
+      },
+      "served": false,
+      "targetHit": false,
+      "targetPose": 0,
+      "wrapCut": false,
+      "wrapPose": 0,
+      "inspectClock": 0,
+      "crackTime": 0,
+      "fallTime": 0,
+      "bend": 0,
+      "events": [],
+      "eventSerial": 0,
+      "dialogue": {
+        "speaker": "ASTRID",
+        "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+        "x": 1040,
+        "until": 6
+      },
+      "pushing": false
+    },
+    "camera": {
+      "x": 304,
+      "y": 512,
+      "width": 632,
+      "height": 395,
+      "zoom": 2,
+      "look": 0
+    },
+    "art": {
+      "ready": true,
+      "mechanic": "alehall",
+      "contacts": [
+        {
+          "kind": "patron",
+          "row": 0,
+          "x": 1040,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 1,
+          "x": 1350,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 1,
+          "x": 1460,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 2,
+          "x": 1620,
+          "bottom": 760
+        },
+        {
+          "kind": "patron",
+          "row": 3,
+          "x": 960,
+          "bottom": 760
+        },
+        {
+          "kind": "cart",
+          "x": 956,
+          "y": 644,
+          "w": 128,
+          "h": 128,
+          "visibleBottom": 760,
+          "surface": {
+            "x": -10000,
+            "y": 760,
+            "w": 20000
+          },
+          "top": 706
+        }
+      ],
+      "berthTreads": [
+        {
+          "x": 720,
+          "y": 748,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        },
+        {
+          "x": 744,
+          "y": 734,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        },
+        {
+          "x": 768,
+          "y": 720,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        },
+        {
+          "x": 888,
+          "y": 720,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        },
+        {
+          "x": 912,
+          "y": 734,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        },
+        {
+          "x": 936,
+          "y": 748,
+          "w": 24,
+          "bottom": 760,
+          "opaque": true,
+          "kind": "loading-berth"
+        }
+      ],
+      "far": {
+        "x": 130,
+        "y": 490,
+        "w": 768,
+        "h": 384
+      },
+      "hearth": {
+        "opening": {
+          "x": 1140,
+          "y": 706,
+          "w": 54,
+          "h": 10
+        },
+        "flames": [
+          {
+            "x": 1176,
+            "y": 710,
+            "w": 4,
+            "h": 6,
+            "color": "#ad522a"
+          },
+          {
+            "x": 1164,
+            "y": 710,
+            "w": 4,
+            "h": 6,
+            "color": "#d98938"
+          },
+          {
+            "x": 1170,
+            "y": 708,
+            "w": 4,
+            "h": 6,
+            "color": "#e8b961"
+          },
+          {
+            "x": 1172,
+            "y": 708,
+            "w": 4,
+            "h": 6,
+            "color": "#f0d59a"
+          },
+          {
+            "x": 1160,
+            "y": 710,
+            "w": 4,
+            "h": 4,
+            "color": "#ad522a"
+          },
+          {
+            "x": 1160,
+            "y": 710,
+            "w": 4,
+            "h": 6,
+            "color": "#d98938"
+          },
+          {
+            "x": 1182,
+            "y": 708,
+            "w": 4,
+            "h": 8,
+            "color": "#e8b961"
+          },
+          {
+            "x": 1152,
+            "y": 708,
+            "w": 4,
+            "h": 8,
+            "color": "#f0d59a"
+          },
+          {
+            "x": 1186,
+            "y": 710,
+            "w": 4,
+            "h": 4,
+            "color": "#ad522a"
+          },
+          {
+            "x": 1150,
+            "y": 710,
+            "w": 4,
+            "h": 4,
+            "color": "#d98938"
+          },
+          {
+            "x": 1186,
+            "y": 710,
+            "w": 4,
+            "h": 4,
+            "color": "#e8b961"
+          },
+          {
+            "x": 1186,
+            "y": 708,
+            "w": 4,
+            "h": 8,
+            "color": "#f0d59a"
+          },
+          {
+            "x": 1150,
+            "y": 710,
+            "w": 4,
+            "h": 6,
+            "color": "#ad522a"
+          },
+          {
+            "x": 1184,
+            "y": 710,
+            "w": 4,
+            "h": 6,
+            "color": "#d98938"
+          },
+          {
+            "x": 1154,
+            "y": 708,
+            "w": 4,
+            "h": 6,
+            "color": "#e8b961"
+          },
+          {
+            "x": 1176,
+            "y": 708,
+            "w": 4,
+            "h": 6,
+            "color": "#f0d59a"
+          }
+        ],
+        "heat": null,
+        "readbacks": 0
+      },
+      "factory": {
+        "pile": [
+          {
+            "x": 2282,
+            "bottom": 760,
+            "angle": 0,
+            "height": 16
+          },
+          {
+            "x": 2294,
+            "bottom": 760,
+            "angle": 1.5707963267948966,
+            "height": 12
+          },
+          {
+            "x": 2306,
+            "bottom": 760,
+            "angle": 0,
+            "height": 16
+          },
+          {
+            "x": 2318,
+            "bottom": 760,
+            "angle": 0,
+            "height": 16
+          },
+          {
+            "x": 2330,
+            "bottom": 760,
+            "angle": 1.5707963267948966,
+            "height": 12
+          },
+          {
+            "x": 2342,
+            "bottom": 760,
+            "angle": 0,
+            "height": 16
+          },
+          {
+            "x": 2354,
+            "bottom": 760,
+            "angle": 0,
+            "height": 16
+          },
+          {
+            "x": 2366,
+            "bottom": 760,
+            "angle": 1.5707963267948966,
+            "height": 12
+          }
+        ],
+        "flying": [],
+        "made": 0
+      },
+      "phase": "play",
+      "globe": {
+        "frame": 0,
+        "bottom": 734,
+        "diameter": 40
+      },
+      "door": 0,
+      "nativePixel": 2
+    },
+    "round": 11,
+    "transition": "idle"
+  },
+  "errors": []
+}

@@ -1,0 +1,27 @@
+{
+  "commit": "2be7e41",
+  "checked": [
+    "cycle-render.js",
+    "campaign-picker95.js",
+    "game.js",
+    "cycle-campaign.js",
+    "engine.js",
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "world-render.js",
+    "ground-shadow.js",
+    "scene-render95.js",
+    "text-render.js",
+    "interactions.js",
+    "pub-cup-factory.js",
+    "sewer-render.js",
+    "alehall-render.js",
+    "alehall-campaign.js",
+    "sewer-globe-art.js",
+    "pub-hearth.js",
+    "style.css",
+    "release-manifest.json",
+    "assets/pub139/visual-gates.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

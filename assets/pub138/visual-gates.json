@@ -1,0 +1,38 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB138-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Independent inspection of unchanged raw/native alehall135 props/patrons/cup sources; native crops retain matching2world pixel density. No new resampling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Inspected grounded opaque berth, target face/bash, tabletop ordering, warning/flight/block/miss, Erik support2, loft key and collapse in actual1x/2x/coarse-touch scene. Two complete ordinary browser routes HP3/3/3, zero errors, correct fall entry tosewer."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Retained modeled timber/cask/straw/patron volume and period materials; full opaque berth bodies replace thin transparent slivers without flattening source. Currentcomplete Viking set used."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Optional physical practice demonstrates bow/blade/dash/frontshield, actualErik-on-Olaf loft route, safe retryable throws. Social flags never gate the globe; ordinary60/120Hz and browser completion remain healthy."
+  },
+  "captureSkin": "imagegen90",
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "publicationAllowed": true,
+  "evidence": [
+    "assets/pub138/evidence/desktop/route.json",
+    "assets/pub138/evidence/touch/route.json",
+    "assets/pub138/evidence/yard/results.json",
+    "docs/history/PUB138-REVIEW.md"
+  ],
+  "limitations": [
+    "Full mobile browser route uses real touch action taps with keyboard directional movement; not a manual physical-device traversal.",
+    "Some early full-route bash captures were offcamera and are rejected for that purpose; dedicated active-Erik yard captures replace them.",
+    "Selected reviewed screenshot files are retained; full local capture sets remain under ignored output/pub138."
+  ]
+}

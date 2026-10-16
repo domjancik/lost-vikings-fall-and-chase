@@ -6,10 +6,13 @@ export function simulateAlehallRoute(hz=120){const s=createState(11,'cycle'),com
  function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes.map(h=>({...h})),machine:JSON.parse(JSON.stringify(s.machine))});}
  mark('push-sledge');until(2,s=>s.machine.cart.parked,{left:true},6);
  mark('carry-ale');move(2,1040);tick(2,{jump:true});tick(2,{interact:true});until(2,s=>s.machine.cups.mode==='carried',{},2);move(2,1390);tick(2,{interact:true});until(2,s=>s.machine.served,{},2);tick(2,{action:true});
+ mark('shield-practice');tick(2,{right:true,jump:true});tick(2,{interact:true});until(2,s=>s.machine.defense.phase==='missed',{},3);tick(2,{action:true});tick(2,{interact:true});until(2,s=>s.machine.defenseBlocks>0,{},3);
  mark('straw-practice');move(1,350);tick(1,{left:true});tick(1,{action:true});until(1,s=>s.machine.targetHit,{},2);
+ mark('running-bash');move(0,360);until(0,s=>s.heroes[0].x<290,{left:true},2);tick(0,{left:true,action:true});until(0,s=>s.machine.bashHit,{left:true},1);until(0,s=>s.machine.bashPose>.9,{},.3);
  mark('cut-delivery');move(1,1165);tick(1,{right:true});tick(1,{sword:true});until(1,s=>s.machine.wrapCut,{},1);
- mark('loft-key');move(0,850);tick(0,{jump:true,left:true});until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===610,()=>s.heroes[0].x>750?{left:true}:{},2);move(0,730);tick(0,{interact:true});until(0,s=>s.heroes[0].inventory.includes('hallKey'),{},1);
- move(0,1000);until(0,s=>s.heroes[0].ground&&Math.abs(s.heroes[0].y+44-760)<2,{},2);move(0,1680);tick(0,{interact:true});until(0,s=>s.machine.door.pose===1,{},2);
+ mark('shield-step');move(2,1000);tick(2,{jump:true});move(0,1050);tick(0,{jump:true,left:true});until(0,s=>s.heroes[0].support===2,()=>s.heroes[0].x>1000?{left:true}:{},2);
+ mark('loft-key');tick(0,{jump:true,left:true});until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===610,()=>s.heroes[0].x>750?{left:true}:{},2);move(0,730);tick(0,{interact:true});until(0,s=>s.heroes[0].inventory.includes('hallKey'),{},1);
+ move(0,1100);until(0,s=>s.heroes[0].ground&&Math.abs(s.heroes[0].y+44-760)<2,{},2);move(0,1680);tick(0,{interact:true});until(0,s=>s.machine.door.pose===1,{},2);
  mark('room-entry');for(const id of [0,1])move(id,1850+id*40);until(2,s=>s.machine.phase!=='play',{right:true},8);
  until(2,s=>s.machine.phase!=='play',{},1);mark('inspection');until(2,s=>s.won,{},20);mark('fall');
  const compact=[];for(const c of commands){const key=JSON.stringify(c),last=compact.at(-1);if(last?.key===key)last.frames++;else compact.push({key,frames:1});}

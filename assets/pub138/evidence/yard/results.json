@@ -1,0 +1,945 @@
+{
+  "results": [
+    {
+      "mobile": false,
+      "shots": [
+        {
+          "path": "output/pub138/yard/desktop-2x.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 0,
+              "y": 512,
+              "width": 632,
+              "height": 395,
+              "zoom": 2,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.849999999999994,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 8
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.208333333333328,
+              "bashPose": 0.9636207863136554,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.208333333333329
+              },
+              "pushing": false
+            }
+          }
+        },
+        {
+          "path": "output/pub138/yard/desktop-1x.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 0,
+              "y": 288,
+              "width": 1264,
+              "height": 790,
+              "zoom": 1,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.849999999999994,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 8
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.208333333333328,
+              "bashPose": 0.9636207863136554,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.208333333333329
+              },
+              "pushing": false
+            }
+          }
+        },
+        {
+          "path": "output/pub138/yard/desktop-landscape.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 0,
+              "y": 512,
+              "width": 855,
+              "height": 395,
+              "zoom": 2,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.849999999999994,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 8
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.208333333333328,
+              "bashPose": 0.9636207863136554,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.208333333333329
+              },
+              "pushing": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "mobile": true,
+      "shots": [
+        {
+          "path": "output/pub138/yard/touch-2x.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 116,
+              "y": 512,
+              "width": 218,
+              "height": 395,
+              "zoom": 2,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.295000000000002,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 9
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.474999999999994,
+              "bashPose": 0.9887695312499989,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.474999999999994
+              },
+              "pushing": false
+            }
+          }
+        },
+        {
+          "path": "output/pub138/yard/touch-1x.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 6,
+              "y": 288,
+              "width": 436,
+              "height": 790,
+              "zoom": 1,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.295000000000002,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 9
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.474999999999994,
+              "bashPose": 0.9887695312499989,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.474999999999994
+              },
+              "pushing": false
+            }
+          }
+        },
+        {
+          "path": "output/pub138/yard/touch-landscape.png",
+          "state": {
+            "active": 0,
+            "camera": {
+              "x": 0,
+              "y": 512,
+              "width": 855,
+              "height": 395,
+              "zoom": 2,
+              "look": 0
+            },
+            "heroes": [
+              {
+                "id": 0,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 224.7083333333328,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 1,
+                "skin": "imagegen90",
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 690,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "face": 1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              },
+              {
+                "id": 2,
+                "skin": "imagegen90",
+                "shieldArtPose": {
+                  "x": -28.675,
+                  "y": 8.295000000000002,
+                  "rx": 16.970562748477143,
+                  "ry": 24,
+                  "roll": 0.13962634015954636,
+                  "mode": "front",
+                  "cell": 9
+                },
+                "rotation": 0,
+                "magnet": null,
+                "boots": false,
+                "x": 1100,
+                "y": 716,
+                "vx": 0,
+                "vy": 0,
+                "ground": true,
+                "hp": 3,
+                "dead": false,
+                "inventory": [
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "itemSlot": 0,
+                "shieldUp": false,
+                "shield": true,
+                "face": -1,
+                "support": null,
+                "climbing": false,
+                "sweptAway": false
+              }
+            ],
+            "g": {
+              "phase": "play",
+              "invitations": {
+                "bow": true,
+                "dash": true
+              },
+              "bashHit": true,
+              "bashAt": 2.474999999999994,
+              "bashPose": 0.9887695312499989,
+              "defense": {
+                "phase": "idle",
+                "at": 0
+              },
+              "defenseBlocks": 0,
+              "cart": {
+                "x": 1020,
+                "y": 706,
+                "w": 96,
+                "parked": false
+              },
+              "door": {
+                "open": false,
+                "pose": 0
+              },
+              "cups": {
+                "mode": "empty",
+                "at": 0
+              },
+              "served": false,
+              "targetHit": false,
+              "targetPose": 0,
+              "wrapCut": false,
+              "wrapPose": 0,
+              "inspectClock": 0,
+              "crackTime": 0,
+              "fallTime": 0,
+              "bend": 0,
+              "events": [
+                {
+                  "name": "target",
+                  "x": 164,
+                  "id": 0
+                }
+              ],
+              "eventSerial": 1,
+              "dialogue": {
+                "speaker": "HAKON",
+                "text": "Still harder than a ship’s prow! Glad that was only straw.",
+                "x": 390,
+                "until": 6.474999999999994
+              },
+              "pushing": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

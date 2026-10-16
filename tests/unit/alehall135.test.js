@@ -42,7 +42,7 @@ test('entry waits for all three; continuous inspection brings Olaf last and then
  assert.ok(cracked&&broken);assert.ok(s.won);assert.ok(largestStep<10);assert.deepEqual(s.heroes.map(h=>h.hp),[3,3,3]);assert.ok(s.heroes.every(h=>h.y+44>1070));
 });
 
-for(const hz of [60,120])test('ordinary-input alehall route teaches all abilities and clears healthy at '+hz+'Hz',()=>{const r=simulateAlehallRoute(hz);assert.ok(r.won);assert.deepEqual(r.hp,[3,3,3]);});
+for(const hz of [60,120])test('ordinary-input alehall route teaches all abilities and clears healthy at '+hz+'Hz',()=>{const r=simulateAlehallRoute(hz);assert.ok(r.won);assert.deepEqual(r.hp,[3,3,3]);const m=r.milestones.find(m=>m.name==='loft-key');assert.equal(m.heroes[0].support,2);assert.ok(m.machine.bashHit&&m.machine.targetHit&&m.machine.wrapCut&&m.machine.defenseBlocks===1);});
 
 for(const order of [[2,0,1],[1,2,0],[0,1,2]])test('inspection remains recoverable with room entry order '+order.join(','),()=>{
  const s=fresh(),g=s.machine;g.door.open=true;g.door.pose=1;

@@ -655,6 +655,10 @@
     {
       "source": "src/app/campaign-progress.js",
       "output": "campaign-progress.js"
+    },
+    {
+      "source": "src/levels/pub/tutorial.js",
+      "output": "pub-tutorial.js"
     }
   ],
   "files": [
@@ -1012,6 +1016,7 @@
     "assets/alehall135/visual-gates.json",
     "assets/sewer136/leg-parts-native.png",
     "assets/sewer136/leg-registration.json",
-    "assets/sewer136/visual-gates.json"
+    "assets/sewer136/visual-gates.json",
+    "assets/pub138/visual-gates.json"
   ]
 }

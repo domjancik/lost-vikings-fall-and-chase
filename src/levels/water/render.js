@@ -2,7 +2,7 @@ import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/dep
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
 import {drawWaterTerrain,waterTerrainReady} from './terrain.js?v=water92';
-import {drawWaterEffects,drawWaterPlants,waterDecorReady} from './effects.js?v=orbit116';
+import {drawWaterEffects,drawWaterPlants,waterDecorReady} from './effects.js?v=water142';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {snapPixel} from '../../render/pixel-grid.js?v=arc46';
 import {waterAirPockets,waterJet,waterSheltered,waterBanks} from './campaign.js?v=orbit116';

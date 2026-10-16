@@ -8,18 +8,20 @@ const refractedScenes=new WeakMap();
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const rect=(c,color,x,y,w,h)=>{if(w<=0||h<=0)return;c.fillStyle=color;c.fillRect(q(x),q(y),Math.max(2,q(w)),Math.max(2,q(h)));};
 export const waterDecorReady=()=>flora.naturalWidth>0;
-function frond(species,phase){
- const key=species+':'+phase;if(fronds.has(key))return fronds.get(key);
+function frond(species,row,phase,strength){
+ const key=[species,row,phase,strength].join(':');if(fronds.has(key))return fronds.get(key);
  const b=document.createElement('canvas');b.width=40;b.height=48;const c=b.getContext('2d');c.imageSmoothingEnabled=false;
  // Native row displacement models current drag, tapering to ZERO at roots.
- const row=phase<6?0:1;
- for(let y=0;y<48;y++){const bend=Math.round(Math.sin(phase*Math.PI/6+y*.11)*2*Math.pow((47-y)/47,1.7));c.drawImage(flora,species*32,row*48+y,32,1,4+bend,y,32,1);}
+ // Atlas rows are distinct authored foliage, not interchangeable animation
+ // frames. Keep the selected leaves and roots; only bend their native rows.
+ for(let y=0;y<48;y++){const bend=Math.round(Math.sin(phase*Math.PI/6+y*.11)*(strength/2)*Math.pow((47-y)/47,1.7));c.drawImage(flora,species*32,row*48+y,32,1,4+bend,y,32,1);}
  fronds.set(key,b);return b;
 }
 export function drawWaterPlants(c,s){
  if(!flora.naturalWidth)return;
- for(const [x,floor,species]of plants){const wet=s.machine.waterY<floor-8,phase=wet?Math.floor(s.time*3+x*.015)%12:0;
-  c.imageSmoothingEnabled=false;c.drawImage(frond(species,phase),q(x-40),q(floor-92),80,96);
+ for(const [index,[x,floor,species]]of plants.entries()){
+  const strength=Math.round(clamp((floor-s.machine.waterY)/96)*4),phase=strength?Math.floor(s.time*3+x*.015)%12:0;
+  c.imageSmoothingEnabled=false;c.drawImage(frond(species,index%2,phase,strength),q(x-40),q(floor-92),80,96);
  }
  // Attached moss follows structural footing rather than floating in the basin.
  for(const bank of [320,2100])for(let y=580;y<996;y+=38){const side=bank===320?1:-1;rect(c,'#344b3e',bank-2,y,4,10);rect(c,'#263e34',bank+side*2,y+4,2,8);}

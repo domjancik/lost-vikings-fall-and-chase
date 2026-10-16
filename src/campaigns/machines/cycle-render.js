@@ -6,7 +6,7 @@ import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/dep
 import {drawLoomWorld} from '../../levels/loom/render.js?v=loom106';
 import {drawFreightWorld} from '../../levels/freight/render.js?v=orbit113';
 import {drawWardenWorld} from '../../levels/warden/render.js?v=warden105';
-import {drawWaterWorld} from '../../levels/water/render.js?v=orbit116';
+import {drawWaterWorld} from '../../levels/water/render.js?v=water142';
 import {drawClockworkWorld} from '../../levels/clockwork/render.js?v=orbit121';
 import {drawMomentumWorld} from '../../levels/momentum/render.js?v=walls101';
 import {cycleFanConnections} from './cycle-fan-connections.js?v=fan66';

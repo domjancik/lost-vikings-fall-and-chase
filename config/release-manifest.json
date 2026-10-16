@@ -1038,6 +1038,7 @@
     "assets/sewer141/registration.json",
     "assets/sewer141/valve-axle.png",
     "assets/sewer141/winch-axle.png",
-    "assets/sewer141/visual-gates.json"
+    "assets/sewer141/visual-gates.json",
+    "assets/water142/visual-gates.json"
   ]
 }

@@ -19,3 +19,6 @@ An initial desktop route reached the exit but failed its full-health expectation
 Browser-frame samples, not static screenshots alone, establish easing. Touch motion trace: first lift180samples, first/last decile mean speeds37.6/37.0vspeak180; docking203samples,39.4/44.9vspeak225world/s. Unit regressions check first/last individual steps below10world/s and exact arrival. All scene evidence uses imagegen90 (Erik/Baleog vikings90, Olaf olaf111) with per-file skin sidecars.
 
 Retained evidence: assets/orbit134/. Full browser traces and initial failed run: output/orbit134/ (local development records). No new art files are shipped; release asset inputs remain unchanged.
+
+## Publication
+Implementation commit: b19f666. Published existing site `https://united-marsh-6ppd.here.now/?campaign=cycle&release=orbit134`, version `01M515XFXEW7T3VTFR6F05GCX7`. Live verification:14changed modules/manifest match tested build bytes, HTML matches after removing hosting social metadata. Receipt: assets/orbit134/live-hashes.json. Independent review accepted desktop, coarse-touch, motion and contact gates.

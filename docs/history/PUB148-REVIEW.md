@@ -76,3 +76,15 @@ the integrating agent's final release and live-byte verification. The initial
 57.9135second route and paused door screenshots are superseded by the refreshed
 60.0152second route and unpaused doorway views; paused floor-break scenes remain
 explicitly transient-pose evidence.
+
+## Release verification
+
+Runtime commit `9f5f5e8` published as `01M52QYBDQ7WRZ1ADCB0FQAXJM` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=pub148`.
+All753 tests passed; source/build browser smoke covered31previews across four
+campaigns with no errors. Final build contains520explicit files and passes release
+hash and publication-gate checks. Live verification matched10critical files plus
+HTML against the reviewed build. A fresh live ordinary-input doorway check
+captured six desktop/landscape/portrait1x/2x views with current imagegen90 heroes,
+the expected partition geometry and no browser errors. Receipts:
+`assets/pub148/live-hashes.json` and `assets/pub148/live-room-check.json`.

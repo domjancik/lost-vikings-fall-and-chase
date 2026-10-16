@@ -1,0 +1,16 @@
+{
+  "commit": "9f5f5e8",
+  "checked": [
+    "scene-render95.js",
+    "level-preview95.js",
+    "alehall-render.js",
+    "game.js",
+    "campaign-menu95.js",
+    "cycle-render.js",
+    "alehall-scenery144.js",
+    "assets/pub148/visual-gates.json",
+    "assets/alehall135/architecture-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

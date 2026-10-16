@@ -1,0 +1,242 @@
+{
+  "version": "01M52QYBDQ7WRZ1ADCB0FQAXJM",
+  "runtimeCommit": "9f5f5e8",
+  "errors": [],
+  "ordinaryInput": true,
+  "captures": [
+    {
+      "file": "output/pub148/live-room/desktop-1x.png",
+      "camera": {
+        "x": 1054,
+        "y": 288,
+        "width": 1264,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    },
+    {
+      "file": "output/pub148/live-room/desktop-2x.png",
+      "camera": {
+        "x": 1370,
+        "y": 512,
+        "width": 632,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    },
+    {
+      "file": "output/pub148/live-room/landscape-1x.png",
+      "camera": {
+        "x": 690,
+        "y": 288,
+        "width": 1710,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    },
+    {
+      "file": "output/pub148/live-room/landscape-2x.png",
+      "camera": {
+        "x": 1258,
+        "y": 512,
+        "width": 855,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    },
+    {
+      "file": "output/pub148/live-room/portrait-1x.png",
+      "camera": {
+        "x": 1468,
+        "y": 288,
+        "width": 436,
+        "height": 790,
+        "zoom": 1,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    },
+    {
+      "file": "output/pub148/live-room/portrait-2x.png",
+      "camera": {
+        "x": 1576,
+        "y": 512,
+        "width": 218,
+        "height": 395,
+        "zoom": 2,
+        "look": 0
+      },
+      "partition": {
+        "header": {
+          "x": 1680,
+          "y": 480,
+          "w": 720,
+          "h": 166
+        },
+        "doorway": {
+          "x": 1708,
+          "y": 646,
+          "w": 72,
+          "h": 114
+        },
+        "shadow": {
+          "x": 1774,
+          "y": 646,
+          "w": 626,
+          "h": 142,
+          "threshold": 64,
+          "floor": 760
+        },
+        "collision": false
+      },
+      "skin": [
+        "imagegen90",
+        "imagegen90",
+        "imagegen90"
+      ]
+    }
+  ]
+}

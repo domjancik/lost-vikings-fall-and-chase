@@ -84,3 +84,23 @@ settling pause separates gravity bounces from the self-powered hop. The intro
 temporarily widens narrow viewports and quarantines input while physics continues;
 held input is cleared when the globe disappears. Source and gameplay review
 records live in `SEWER136-REVIEW.md`.
+
+## Published verification
+
+Runtime commit `56d62b9` is published at
+`https://united-marsh-6ppd.here.now/?campaign=cycle&release=sewer136`, hosting
+version `01M525JXW5P6G6XAYMM77Z0XA2`. Choose The Last Lamplighter to replay its entry.
+
+All695 tests passed, including healthy60/120Hz ordinary routes. The desktop
+browser route completes in63.4167s with HP3/3/3 and continues to water ID4. Final
+coarse-mobile entry and held touch/inventory checks pass; they are targeted
+checks, not a manual full mobile playthrough. Both source/build cross-campaign
+smokes pass across31 previews. All four independent review gates are accepted.
+
+The494-file build matches source and passed495-file publication preflight. Live
+verification matched22 changed runtime modules/assets plus normalized HTML. A
+fresh public browser replay captured all six globe phases at1x/2x/portrait/
+landscape, with24 captures, no errors and controls resumed. Receipts live under
+`assets/sewer136/{validation,live-hashes,deployment}.json` and `evidence/live/`.
+Original art, rejected alternatives, exact prompts, native guides, scene keys,
+unpaused fire samples and unedited browser recordings remain in version control.

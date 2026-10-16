@@ -1,0 +1,28 @@
+{
+  "commit": "56d62b9",
+  "checked": [
+    "campaign-menu95.js",
+    "cycle-campaign.js",
+    "engine.js",
+    "campaign-picker95.js",
+    "cycle-render.js",
+    "game.js",
+    "sewer-campaign.js",
+    "interactions.js",
+    "level-preview95.js",
+    "scene-render95.js",
+    "sewer-light.js",
+    "world-render.js",
+    "sewer-render.js",
+    "sewer-globe.js",
+    "sewer-globe-art.js",
+    "sewer-stream-render.js",
+    "sewer-stream.js",
+    "sewer-audio.js",
+    "assets/sewer136/leg-parts-native.png",
+    "assets/sewer136/visual-gates.json",
+    "assets/sewer136/leg-registration.json",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

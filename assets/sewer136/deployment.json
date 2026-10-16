@@ -1,0 +1,14 @@
+{
+  "commit": "56d62b9",
+  "siteUrl": "https://united-marsh-6ppd.here.now/",
+  "releaseUrl": "https://united-marsh-6ppd.here.now/?campaign=cycle&release=sewer136",
+  "versionId": "01M525JXW5P6G6XAYMM77Z0XA2",
+  "verifiedFiles": 22,
+  "htmlMatches": true,
+  "liveEntry": {
+    "captures": 24,
+    "errors": [],
+    "controlsResumed": true
+  },
+  "tests": 695
+}

@@ -1,0 +1,15 @@
+{
+  "versionId": "01M52W69SJCCNKQZWVQ3YJZ97M",
+  "runtimeCommit": "3ab646e",
+  "url": "https://united-marsh-6ppd.here.now/?campaign=fall&release=pub151",
+  "captures": 18,
+  "zooms": [
+    1,
+    1.5,
+    2
+  ],
+  "errors": [],
+  "ordinaryInput": true,
+  "skin": "imagegen90",
+  "receipt": "output/pub151/live-dialogue/evidence.json"
+}

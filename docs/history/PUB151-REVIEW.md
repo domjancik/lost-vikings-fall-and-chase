@@ -59,3 +59,16 @@ normal progression. This is browser/coarse evidence, not an iOS hardware claim.
 Source/native continuity gate: accepted. Runtime gate: accepted. Aesthetic gate:
 accepted. Cooperation/story gate: accepted. Publication allowed subject to the
 integrating agent's final build/release and live-byte verification.
+
+## Release verification
+
+Runtime commit `3ab646e` published as `01M52W69SJCCNKQZWVQ3YJZ97M` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=pub151`.
+All776 tests pass. Source/build smoke checks cover four campaigns and31 previews
+each without errors. The526file build passed release integrity and visual
+publication preflight. Live verification matched23critical modules/assets/manifest
+and HTML against the reviewed build. Live ordinary-input dialogue checks repeated
+all18desktop/landscape/portrait views at1x/1.5x/2x, with fitted panel/glyph bounds
+and no browser errors. Receipts: `assets/pub151/live-hashes.json` and
+`assets/pub151/live-check.json`. Full healthy coarse-touch progression and sewer
+fall entry were checked separately against the same reviewed build before release.

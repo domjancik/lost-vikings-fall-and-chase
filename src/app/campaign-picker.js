@@ -2,6 +2,7 @@ import {storyLevels} from '../campaigns/story/story-campaign.js?v=alehall135';
 import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=sewer136';
 import {levels} from '../campaigns/arcade/levels.js?v=menu95';
 export const campaignChoices=[
+ {id:'fall',name:'The Fall & The Chase',levels:cycleLevels},
  {id:'story',name:'The Return Address',levels:storyLevels},
  {id:'cycle',name:'Machine Rooms',levels:cycleLevels},
  {id:'arcade',name:'Arcade Collection',levels}

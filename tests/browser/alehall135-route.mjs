@@ -22,7 +22,7 @@ await page.exposeBinding('pubPhoto',async(_,label)=>{
  await page.setViewportSize(touch?{width:430,height:780}:{width:1440,height:900});await page.waitForTimeout(100);await page.locator('#pause').click();
 });
 try{
- await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now':'http://127.0.0.1:'+server.address().port)+'/?campaign=cycle&release=alehall135');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now':'http://127.0.0.1:'+server.address().port)+'/?campaign=fall&release=alehall135');
  await page.locator('#start-picker .level-card[data-round="11"]').click();await page.waitForFunction(()=>{const d=document.querySelector('#game').dataset;return d.transition==='idle'&&JSON.parse(d.cycleArt||'{}').ready;});
  if(process.argv.includes('--smoke')){await page.screenshot({path:out+'/initial.png'});const state=await read();assert.deepEqual(errors,[]);fs.writeFileSync(out+'/smoke.json',JSON.stringify({state,errors},null,2));console.log(JSON.stringify({round:state.round,artReady:state.art.ready,errors}));}
  else{

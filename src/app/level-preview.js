@@ -2,7 +2,8 @@ import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer136';
 import {createState} from '../core/engine.js?v=sewer136';
 import {drawScene} from '../render/scene-render95.js?v=sewer136';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
-import {previewFrame} from './campaign-picker.js?v=sewer136';
+import {previewFrame} from './campaign-picker.js?v=campaign137';
+import {campaignFamily} from './campaign-progress.js?v=campaign137';
 const cache=new Map();
 // These are the production scene atlases, shared by the browser's image cache.
 // Explicit readiness prevents a slow connection from freezing a partial shot.
@@ -14,7 +15,7 @@ const atlases=['terrain48/terrain','ground51/interaction-frames','campaign46/mac
 // Isolated initial state: no simulation, controls, sound or mutation of the live game.
 export function levelPreview(campaign,round){
  const key=campaign+':'+round;if(cache.has(key))return cache.get(key);
- const state=createState(round,campaign),frame=previewFrame(state),canvas=document.createElement('canvas');
+ const state=createState(round,campaignFamily(campaign)),frame=previewFrame(state),canvas=document.createElement('canvas');
  canvas.width=frame.width/2;canvas.height=frame.height/2;canvas.setAttribute('aria-hidden','true');
  const result={canvas,ready:false};cache.set(key,result);let attempts=0,loadedAt=0;
  function paint(){

@@ -31,9 +31,9 @@ await page.exposeBinding('sewerSlot',async(_,slot)=>{
  await page.locator('#inventory-slots button[data-slot="'+slot+'"]').click();await page.locator('#close-inventory').click();
 });
 try{
- await reviewNavigate(page,base+'/?campaign=cycle&release=sewer136');
+ await reviewNavigate(page,base+'/?campaign=fall&release=sewer136');
  const cards=page.locator('#start-picker .level-card');
- assert.deepEqual(await cards.evaluateAll(nodes=>nodes.map(n=>+n.dataset.round)),[11,10,4,0,1,2,3,5,6,7,8,9]);
+ assert.deepEqual(await cards.evaluateAll(nodes=>nodes.map(n=>+n.dataset.round)),[11,10,4,2,3,7,5,8,9,0]);
  const sewerCard=page.locator('#start-picker .level-card[data-round="10"]');
  await sewerCard.locator('canvas[data-ready="true"]').waitFor({timeout:60000});
  await sewerCard.click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='10');

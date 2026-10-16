@@ -651,6 +651,10 @@
     {
       "source": "src/levels/sewer/stream-render.js",
       "output": "sewer-stream-render.js"
+    },
+    {
+      "source": "src/app/campaign-progress.js",
+      "output": "campaign-progress.js"
     }
   ],
   "files": [

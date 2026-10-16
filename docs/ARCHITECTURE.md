@@ -38,9 +38,13 @@ and runtime assets. `tools/build/` validates the complete import graph before
 cleaning the bounded `dist/` directory, then emits the existing flat public module
 URLs. No build copies every historical asset or relies on stale output.
 
-Machine Rooms uses `src/campaigns/machines/cycle-order.js` for menu, navigation
-and continuation order. Stable level IDs remain unchanged when a new room is
-inserted: Norse alehall ID11 precedes sewer ID10, then Drowned Regulator ID4.
+`src/campaigns/machines/cycle-order.js` controls campaign membership, menu,
+navigation and continuation order. The Fall & The Chase (`fall`) uses stable IDs
+11,10,4,2,3,7,5,8,9,0; Machine Rooms (`cycle`) retains IDs 1 and 6.
+`src/app/campaign-progress.js` maps both groups to the existing `cycle` simulation
+family, gives each its own save key, and migrates valid legacy machine saves.
+Level arrays remain indexed by stable ID; displayed counts use campaign order
+length. Preview rendering must map the selected group to its simulation family.
 
 `npm run dev` serves nested source paths; `npm run build` produces deployable flat
 paths. `npm run release:check` checks emitted bytes against the same manifest.

@@ -14,7 +14,7 @@ test('the cask walking top matches its generated opaque material rather than its
  assert.equal(fresh().machine.cart.y,760-(b[3]-b[1])*art.pixel);
 });
 test('the Norse alehall opens the machine campaign and falls into sewer then water',()=>{
- assert.deepEqual(campaignOrder('cycle',12).slice(0,3),[11,10,4]);assert.equal(campaignNext('cycle',11,12),10);assert.equal(createState(11,'cycle').level.mechanic,'alehall');
+ assert.deepEqual(campaignOrder('fall',12).slice(0,3),[11,10,4]);assert.equal(campaignNext('fall',11,12),10);assert.equal(createState(11,'cycle').level.mechanic,'alehall');
 });
 test('only Olaf front-shield contact pushes the grounded cask sledge, and it has recovery stops',()=>{
  const s=fresh(),g=s.machine,o=s.heroes[2];s.active=2;o.x=g.cart.x+80;o.face=-1;const x=g.cart.x;

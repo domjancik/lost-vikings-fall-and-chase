@@ -8,10 +8,10 @@ import {giveItem,transferItem,dropItem,pickupItem,itemTypes} from '../../src/cor
 import {worldSoundOptions} from '../../src/audio/event-options.js';
 
 test('alehall and sewer precede water without renumbering old levels',()=>{
- const order=campaignOrder('cycle',12);
- assert.deepEqual(order,[11,10,4,0,1,2,3,5,6,7,8,9]);assert.equal(new Set(order).size,12);
- assert.equal(campaignNext('cycle',11,12),10);assert.equal(campaignNext('cycle',10,12),4);assert.equal(campaignPrevious('cycle',4,12),10);
- assert.equal(campaignPosition('cycle',10,12),1);assert.equal(campaignPosition('cycle',4,12),2);assert.equal(campaignNext('cycle',9,12),11);assert.equal(campaignPrevious('cycle',11,12),null);
+ const order=campaignOrder('fall',12);
+ assert.deepEqual(order,[11,10,4,2,3,7,5,8,9,0]);assert.equal(new Set(order).size,10);
+ assert.equal(campaignNext('fall',11,12),10);assert.equal(campaignNext('fall',10,12),4);assert.equal(campaignPrevious('fall',4,12),10);
+ assert.equal(campaignPosition('fall',10,12),1);assert.equal(campaignPosition('fall',4,12),2);assert.equal(campaignNext('fall',0,12),11);assert.equal(campaignPrevious('fall',11,12),null);
 });
 
 test('other campaigns retain their order and debug endpoints',()=>{
@@ -25,7 +25,7 @@ test('dispatch preserves water and magnetic identities and puts the sewer before
  assert.equal(createState(8,'cycle').level.mechanic,'orbit');
  assert.equal(createState(9,'cycle').level.mechanic,'lode');
  assert.equal(createState(10,'cycle').level.mechanic,'sewer');
- assert.equal(cycleLevels[campaignNext('cycle',10,cycleLevels.length)].mechanic,'water');
+ assert.equal(cycleLevels[campaignNext('fall',10,cycleLevels.length)].mechanic,'water');
 });
 test('all three lighting items survive standard inventory transfer drop and recovery',()=>{
  for(const [type,icon]of [['inspectionLamp',17],['lampOil',18],['bullseyeLens',19]]){

@@ -17,7 +17,7 @@ async function photo(name){const file=out+'/'+name+'.png';await page.screenshot(
 await page.addInitScript(()=>{localStorage.setItem('last-call-zoom','2');localStorage.setItem('last-call-sound','off');});
 let video;
 try{
- await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=cycle&release=sewer136-motion');
+ await reviewNavigate(page,'http://127.0.0.1:'+server.address().port+'/?campaign=fall&release=sewer136-motion');
  await page.locator('#start-picker .level-card[data-round="10"] canvas[data-ready="true"]').waitFor();
  await page.locator('#start-picker .level-card[data-round="10"]').click();
  const intro=await page.evaluate(async()=>{

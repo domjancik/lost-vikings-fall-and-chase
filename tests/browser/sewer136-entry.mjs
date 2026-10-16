@@ -11,7 +11,7 @@ page.on('pageerror',e=>errors.push(String(e)));
 const state=()=>page.locator('#game').evaluate(c=>({time:+c.dataset.simTime,heroes:JSON.parse(c.dataset.heroes),g:JSON.parse(c.dataset.puzzle).machine,camera:JSON.parse(c.dataset.camera),art:JSON.parse(c.dataset.cycleArt||'{}'),darkness:JSON.parse(c.dataset.sewerDarkness||'{}')}));
 await page.addInitScript(()=>{localStorage.setItem('last-call-zoom','2');localStorage.setItem('last-call-sound','off');});
 try{
- await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now':'http://127.0.0.1:'+server.address().port)+'/?campaign=cycle&release=sewer136');
+ await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now':'http://127.0.0.1:'+server.address().port)+'/?campaign=fall&release=sewer136');
  await page.locator('#start-picker .level-card[data-round="10"] canvas[data-ready="true"]').waitFor();
  await page.locator('#start-picker .level-card[data-round="10"]').click();
  const targets=[['fall',g=>g.phase==='fall'],['bounce',g=>g.phase==='bounce'],['settle',g=>g.phase==='settle'],['unfold',g=>g.phase==='hop'&&g.legs>.6],['six-feet',g=>g.phase==='run'],['darkness',g=>g.phase==='gone']];

@@ -4,6 +4,16 @@ const noise=(frequency,end,duration,volume=.16,delay=0)=>tone(frequency,end,dura
 const metal=(f=720)=>[noise(2800,500,.045,.13),tone(f,f*.97,.34,.1,'sine'),tone(f*2.71,f*2.68,.2,.04,'sine')];
 const chime=(f=440)=>[tone(f,f,.18,.13,'sine'),tone(f*1.25,f*1.25,.2,.1,'sine',.09),tone(f*1.5,f*1.5,.32,.1,'sine',.18)];
 export const effects={
+ hallDoor:[noise(650,160,.6,.07),tone(130,75,.5,.05,'triangle')],
+ hallCups:[noise(1800,600,.05,.05),tone(650,330,.08,.05,'triangle'),tone(480,220,.12,.03,'triangle',.1)],
+ hallRope:[noise(2800,500,.12,.09),noise(800,250,.24,.04,.05)],
+ hallWood:[noise(1100,180,.15,.08),tone(110,65,.2,.055,'triangle')],
+ hallCreak:[noise(850,130,.9,.1),tone(190,65,1.1,.1,'triangle'),tone(93,52,.8,.06,'sine',.25)],
+ hallCollapse:[noise(2800,90,.8,.27),tone(85,25,1.1,.27,'sine'),noise(1800,150,.9,.12,.23)],
+ hallHearth:[noise(1200,350,1.2,.025),noise(2500,1400,.06,.025,.4),noise(1800,800,.08,.02,.8)],
+ hallLyre:[tone(196,192,.65,.045,'triangle'),tone(392,385,.4,.017,'sine'),noise(1200,800,.018,.012)],
+ hallGlobe:[noise(2800,1800,.018,.02),tone(720,560,.05,.012,'triangle',.1)],
+
  // Sewer voices retain a low wet body and restrained, irregular metal transients.
  sewerWood:[noise(3400,320,.14,.27),tone(145,56,.32,.13,'triangle'),noise(1400,110,.5,.16,.06),noise(2500,170,.16,.12,.19)],
  sewerLand:[noise(3300,300,.12,.2),tone(105,43,.22,.22),noise(1800,160,.45,.13,.03)],

@@ -1,9 +1,12 @@
+import {alehallCamera,alehallViewport,alehallStep} from '../levels/pub/campaign.js?v=alehall135';
+import {drawAlehallOverlay} from '../levels/pub/render.js?v=alehall135';
+import {createAlehallSounds} from '../levels/pub/audio.js?v=alehall135';
 import {fullscreenMode,toggleGameFullscreen} from './fullscreen.js?v=ios131';
-import {departureMethod,departureAnchor,arrivalMethod,ENTRY_DURATION,arrivalSpawns,canAdvance,createTravelKeys} from '../render/level-transition.js?v=transitions126';
-import {drawTransitionWarp,drawLevelTransition} from '../render/transition-render.js?v=transitions126';
+import {departureMethod,departureAnchor,arrivalMethod,ENTRY_DURATION,arrivalSpawns,canAdvance,createTravelKeys} from '../render/level-transition.js?v=alehall135';
+import {drawTransitionWarp,drawLevelTransition} from '../render/transition-render.js?v=alehall135';
 import {worldSoundOptions} from '../audio/event-options.js?v=sewer125';
-import {campaignOrder,campaignPosition,campaignNext,campaignPrevious} from '../campaigns/machines/cycle-order.js?v=sewer125';
-import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer132';
+import {campaignOrder,campaignPosition,campaignNext,campaignPrevious} from '../campaigns/machines/cycle-order.js?v=alehall135';
+import {drawSewerDarkness} from '../levels/sewer/render.js?v=alehall135';
 import {createSewerSounds} from '../levels/sewer/audio.js?v=sewer132';
 import {sweptHeroPose} from '../levels/sewer/water-transit.js?v=transitions126';
 import {createLodeSounds} from '../levels/lode/audio.js?v=lode123';
@@ -11,11 +14,11 @@ import {drawMagneticAttraction} from '../levels/orbit/field-optics.js?v=lode123'
 import {drawWorldResources,worldResources} from "./world-resources.js?v=orbit116";
 import {drawHeroFeedback} from "./hero-feedback.js?v=sewer125";
 import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit120";
-import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=orbit134";
+import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=alehall135";
 import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit121";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=orbit134';
-import {drawScene} from '../render/scene-render95.js?v=orbit134';
+import {campaignMenu} from './campaign-menu.js?v=alehall135';
+import {drawScene} from '../render/scene-render95.js?v=alehall135';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=orbit121';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
@@ -23,23 +26,23 @@ import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=orbit121'
 import {setHeroSkin} from '../heroes/hero-art.js?v=orbit121';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=orbit121';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=orbit134';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=alehall135';
 const campaignLevels=c=>c==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundPosition=()=>campaignPosition(campaign,round,levels.length);
 const lastRound=()=>roundPosition()===levels.length-1;
 const nextLevel=()=>levels[campaignNext(campaign,round,levels.length)];
 const roundKey=c=>c==='cycle'?'last-call-cycle52-round':c==='story'?'last-call-story46-round':'last-call-round';
 import {archiveCheckpoint,applyArchiveCheckpoint} from '../campaigns/story/story-custody.js?v=arc46';
-import {storyLevels} from '../campaigns/story/story-campaign.js?v=sewer125';
-import {drawStoryItem} from '../campaigns/story/story-render.js?v=transitions126';
-import {createSoundEvents} from '../audio/audio-events.js?v=transitions126';
+import {storyLevels} from '../campaigns/story/story-campaign.js?v=alehall135';
+import {drawStoryItem} from '../campaigns/story/story-render.js?v=alehall135';
+import {createSoundEvents} from '../audio/audio-events.js?v=alehall135';
 import {createWardenSounds} from '../levels/warden/audio.js?v=warden102';
-import {createSoundLayer} from '../audio/sound-effects.js?v=sewer125';
-import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=sewer125';
+import {createSoundLayer} from '../audio/sound-effects.js?v=alehall135';
+import {hintPreference,worldLabels,itemDescription} from './hint-visibility.js?v=alehall135';
 import {plungerPose} from '../core/plunger.js?v=arc46';
 import {forgeMaterialPose} from '../core/forge-material.js?v=arc46';
-import {itemTypes,useItem,transferItem,dropItem} from '../core/inventory.js?v=sewer125';
-import {drawItemSprite} from '../render/inventory-render.js?v=sewer125';
+import {itemTypes,useItem,transferItem,dropItem} from '../core/inventory.js?v=alehall135';
+import {drawItemSprite} from '../render/inventory-render.js?v=alehall135';
 import {drawBashEffects} from '../core/bash.js?v=arc46';
 import {cameraTarget,cameraLookDirection} from '../render/view-camera.js?v=look58';
 import {drawLabels} from '../render/text-render.js?v=orbit113';
@@ -47,16 +50,16 @@ import {WORLD_PIXEL,rasterSize,snapPixel} from '../render/pixel-grid.js?v=arc46'
 import {drawProjectile,projectilePose,environmentPose} from '../render/environment-animation.js?v=arc46';
 import {viewportSize,storedZoom,nextZoom} from '../render/background-render.js?v=zoom127';
 import {createControls,keyAction,selectHudHero,bindControlSelectionGuards} from './controls.js?v=ios131';
-import {groundShadow} from '../render/ground-shadow.js?v=cycle52';
+import {groundShadow} from '../render/ground-shadow.js?v=alehall135';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit121';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=orbit134';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=orbit134';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=alehall135';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=alehall135';
 bindControlSelectionGuards(document);
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
-let campaign=['story','cycle'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'arcade',levels=campaignLevels(campaign);let round=0;try{round=Math.max(0,Math.min(levels.length-1,Number(localStorage.getItem(roundKey(campaign)))||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),travelKeys=createTravelKeys(),continueKeys=travelKeys.blocked;
+let campaign=['story','cycle','arcade'].includes(new URLSearchParams(location.search).get('campaign'))?new URLSearchParams(location.search).get('campaign'):'cycle',levels=campaignLevels(campaign);let round=campaignOrder(campaign,levels.length)[0];try{const saved=localStorage.getItem(roundKey(campaign));if(saved!==null)round=Math.max(0,Math.min(levels.length-1,Number(saved)||0));}catch{}let s=createState(round,campaign),started=false,paused=false,sound=true,elapsed=0,last=0,toastUntil=0;let carry=null;try{carry=JSON.parse(localStorage.getItem('last-call-story46-custody'));}catch{}const controls=createControls(),travelKeys=createTravelKeys(),continueKeys=travelKeys.blocked;
 let zoom=2;try{zoom=storedZoom(localStorage.getItem('last-call-zoom'));}catch{}let accumulator=0,renderAlpha=1,cameraX=0,cameraY=0,cameraTime=0;const SIM_STEP=1/120;
 const transit=document.createElement('canvas');transit.id='portal-transit';transit.setAttribute('aria-hidden','true');transit.hidden=true;document.querySelector('.viewport').append(transit);let completion=null,arrival=null;document.addEventListener('close',()=>{if(arrival)travelKeys.beginEntry();},true);
 const colors=['#db6b3d','#69b5b2','#dfb952'];const labels=document.createElement('canvas');labels.id='game-labels';labels.setAttribute('aria-hidden','true');canvas.after(labels);let labelQueue=[];
@@ -68,7 +71,7 @@ let selectedSkin=readSkin(localStorage);
 const requestedSkin=new URLSearchParams(location.search).get('skin');
 if(skinOptions.some(option=>option.id===requestedSkin))selectedSkin=saveSkin(localStorage,requestedSkin);
 setHeroSkin(selectedSkin);
-function syncHeroArt(){for(const h of s.heroes){h.lookDirection=h.id===s.active&&!(s.level.mechanic==="orbit"&&s.machine.operator===s.active)?cameraLookDirection(s,{up:controls.has("up"),down:controls.has("down")},paused):0;syncShieldArtPose(h,selectedSkin,animationFor(h));}}
+function syncHeroArt(){for(const h of s.heroes){h.lookDirection=s.level.mechanic==='alehall'&&s.machine.phase==='inspect'&&Math.abs(h.vx)<5?1:h.id===s.active&&!(s.level.mechanic==="orbit"&&s.machine.operator===s.active)?cameraLookDirection(s,{up:controls.has("up"),down:controls.has("down")},paused):0;syncShieldArtPose(h,selectedSkin,animationFor(h));}}
 syncHeroArt();
 function hero(g,h,x,y,scale=1){const sweep=s.level.mechanic==='sewer'?sweptHeroPose(h,s.machine.captured[h.id]?s.machine.escapeTravel[h.id]:null):null;if(scale===1&&sweep)drawMagneticHero(g,{...h,...sweep,skin:selectedSkin});else if(scale===1&&h.magnetSole&&!h.dead)drawMagneticHero(g,{...h,skin:selectedSkin});else drawSprite(g,{...h,skin:selectedSkin},x,y,scale);}
 for(const card of document.querySelectorAll('.hero-card')){const info=card.querySelector('div');info.classList.add('hero-info');const bag=document.createElement('span');bag.className='hud-bag';bag.setAttribute('role','group');bag.setAttribute('aria-label','Carried items');for(let slot=0;slot<4;slot++){const icon=document.createElement('canvas');icon.width=16;icon.height=16;icon.dataset.slot=String(slot);icon.setAttribute('role','img');bag.append(icon);}info.append(bag);mountHeroResource(card);}
@@ -79,14 +82,14 @@ function platform(p){box('#101621',p.x,p.y,p.w,18);box('#896751',p.x,p.y,p.w,5);
 function draw(){
  syncHeroArt();
  labelQueue=[];
- const viewport=orbitViewport(s,viewportSize(canvas.clientWidth,canvas.clientHeight,zoom)),sceneHeight=viewport.height,viewWidth=viewport.width;viewport.mobile=mobileControlsMedia.matches;viewport.uiScale=canvas.clientHeight/sceneHeight;if(viewport.mobile)viewport.insetTop=(document.querySelector('.game-top').getBoundingClientRect().bottom-canvas.getBoundingClientRect().top+12)/viewport.uiScale;if(canvas.width!==Math.round(viewWidth)||canvas.height!==sceneHeight){canvas.width=Math.round(viewWidth);canvas.height=sceneHeight;screen.imageSmoothingEnabled=false;}const native=rasterSize(canvas.width,sceneHeight);if(surface.width!==native.width||surface.height!==native.height){surface.width=native.width;surface.height=native.height;}ctx.imageSmoothingEnabled=false;ctx.setTransform(1/WORLD_PIXEL,0,0,1/WORLD_PIXEL,0,0);canvas.dataset.pixelGrid=String(WORLD_PIXEL);const look=started&&!s.won&&!s.failed&&!(s.level.mechanic==="orbit"&&s.machine.operator===s.active)?cameraLookDirection(s,{up:controls.has('up'),down:controls.has('down')},paused,JSON.parse(canvas.dataset.camera||'{}').look||0):0;const target=cameraTarget(orbitCameraFocus(s,clockworkView(s,viewport).focus),viewport,s.level,look);const cameraDt=cameraTime?Math.min((performance.now()-cameraTime)/1000,.05):0;cameraTime=performance.now();const follow=1-Math.exp(-cameraDt*10);cameraX+=(target.x-cameraX)*follow;cameraY+=(target.y-cameraY)*follow;const worldWidth=s.level.worldWidth??W;cameraX=viewWidth>worldWidth?target.x:Math.max(0,Math.min(worldWidth-viewWidth,cameraX));cameraY=Math.max(s.level.worldTop??0,Math.min((s.level.worldBottom??790)-sceneHeight,cameraY));const camera=snapPixel(cameraX),vertical=Math.min(snapPixel(cameraY),Math.floor(((s.level.worldBottom??790)-sceneHeight)/WORLD_PIXEL)*WORLD_PIXEL);canvas.dataset.camera=JSON.stringify({x:camera,y:vertical,width:viewWidth,height:sceneHeight,zoom,look});ctx.clearRect(0,0,canvas.width,sceneHeight);ctx.save();ctx.translate(-camera,-vertical);canvas.dataset.heroArt=JSON.stringify({ready:!!heroesReady(),release:63});canvas.dataset.campaign=campaign;canvas.dataset.paused=String(paused);canvas.dataset.simTime=String(s.time);canvas.dataset.enemies=JSON.stringify(s.enemies||[]);canvas.dataset.activeHero=String(s.active);canvas.dataset.won=String(s.won);canvas.dataset.failed=String(s.failed);canvas.dataset.items=JSON.stringify(s.items);canvas.dataset.bombs=JSON.stringify(s.bombs);canvas.dataset.round=String(s.round);canvas.dataset.speed=String(Math.round(s.heroes[s.active].vx));canvas.dataset.pose=animationFor(s.heroes[s.active]).pose;canvas.dataset.frame=String(animationFor(s.heroes[s.active]).frame);canvas.dataset.heroes=JSON.stringify(s.heroes.map(h=>({id:h.id,skin:h.skin,shieldArtPose:h.shieldArtPose,rotation:h.rotation,magnet:h.magnet,magnetSole:h.magnetSole,magV:h.magV,boots:h.boots,x:h.x,y:h.y,vx:h.vx,vy:h.vy,ground:h.ground,hp:h.hp,dead:!!h.dead,inventory:h.inventory,itemSlot:h.itemSlot,shieldUp:h.shieldUp,shield:h.shield,face:h.face,support:h.support,climbing:!!h.climbing,air:h.air,underwater:h.underwater,inAirPocket:h.inAirPocket,swimming:h.swimming,swimDistance:h.swimDistance,waterFloat:h.waterFloat,sweptAway:!!h.sweptAway})));canvas.dataset.puzzle=JSON.stringify({crate:s.crate,fuse:s.fuse,key:s.key,power:s.power,latch:s.latch,bridge:s.bridge,relay:s.relay,runeA:s.runeA,runeB:s.runeB,altar:s.altar,turret:s.turret,machine:s.machine});
+ const viewport=alehallViewport(s,orbitViewport(s,viewportSize(canvas.clientWidth,canvas.clientHeight,zoom))),sceneHeight=viewport.height,viewWidth=viewport.width;viewport.mobile=mobileControlsMedia.matches;viewport.uiScale=canvas.clientHeight/sceneHeight;if(viewport.mobile)viewport.insetTop=(document.querySelector('.game-top').getBoundingClientRect().bottom-canvas.getBoundingClientRect().top+12)/viewport.uiScale;if(canvas.width!==Math.round(viewWidth)||canvas.height!==sceneHeight){canvas.width=Math.round(viewWidth);canvas.height=sceneHeight;screen.imageSmoothingEnabled=false;}const native=rasterSize(canvas.width,sceneHeight);if(surface.width!==native.width||surface.height!==native.height){surface.width=native.width;surface.height=native.height;}ctx.imageSmoothingEnabled=false;ctx.setTransform(1/WORLD_PIXEL,0,0,1/WORLD_PIXEL,0,0);canvas.dataset.pixelGrid=String(WORLD_PIXEL);const look=started&&!s.won&&!s.failed&&!(s.level.mechanic==="orbit"&&s.machine.operator===s.active)?cameraLookDirection(s,{up:controls.has('up'),down:controls.has('down')},paused,JSON.parse(canvas.dataset.camera||'{}').look||0):0;const target=cameraTarget(alehallCamera(s,orbitCameraFocus(s,clockworkView(s,viewport).focus)),viewport,s.level,look);const cameraDt=cameraTime?Math.min((performance.now()-cameraTime)/1000,.05):0;cameraTime=performance.now();const follow=1-Math.exp(-cameraDt*10);cameraX+=(target.x-cameraX)*follow;cameraY+=(target.y-cameraY)*follow;const worldWidth=s.level.worldWidth??W;cameraX=viewWidth>worldWidth?target.x:Math.max(0,Math.min(worldWidth-viewWidth,cameraX));cameraY=Math.max(s.level.worldTop??0,Math.min((s.level.worldBottom??790)-sceneHeight,cameraY));const camera=snapPixel(cameraX),vertical=Math.min(snapPixel(cameraY),Math.floor(((s.level.worldBottom??790)-sceneHeight)/WORLD_PIXEL)*WORLD_PIXEL);canvas.dataset.camera=JSON.stringify({x:camera,y:vertical,width:viewWidth,height:sceneHeight,zoom,look});ctx.clearRect(0,0,canvas.width,sceneHeight);ctx.save();ctx.translate(-camera,-vertical);canvas.dataset.heroArt=JSON.stringify({ready:!!heroesReady(),release:63});canvas.dataset.campaign=campaign;canvas.dataset.paused=String(paused);canvas.dataset.simTime=String(s.time);canvas.dataset.enemies=JSON.stringify(s.enemies||[]);canvas.dataset.activeHero=String(s.active);canvas.dataset.won=String(s.won);canvas.dataset.failed=String(s.failed);canvas.dataset.items=JSON.stringify(s.items);canvas.dataset.bombs=JSON.stringify(s.bombs);canvas.dataset.round=String(s.round);canvas.dataset.speed=String(Math.round(s.heroes[s.active].vx));canvas.dataset.pose=animationFor(s.heroes[s.active]).pose;canvas.dataset.frame=String(animationFor(s.heroes[s.active]).frame);canvas.dataset.heroes=JSON.stringify(s.heroes.map(h=>({id:h.id,skin:h.skin,shieldArtPose:h.shieldArtPose,rotation:h.rotation,magnet:h.magnet,magnetSole:h.magnetSole,magV:h.magV,boots:h.boots,x:h.x,y:h.y,vx:h.vx,vy:h.vy,ground:h.ground,hp:h.hp,dead:!!h.dead,inventory:h.inventory,itemSlot:h.itemSlot,shieldUp:h.shieldUp,shield:h.shield,face:h.face,support:h.support,climbing:!!h.climbing,air:h.air,underwater:h.underwater,inAirPocket:h.inAirPocket,swimming:h.swimming,swimDistance:h.swimDistance,waterFloat:h.waterFloat,sweptAway:!!h.sweptAway})));canvas.dataset.puzzle=JSON.stringify({crate:s.crate,fuse:s.fuse,key:s.key,power:s.power,latch:s.latch,bridge:s.bridge,relay:s.relay,runeA:s.runeA,runeB:s.runeB,altar:s.altar,turret:s.turret,machine:s.machine});
  const scene=drawScene(ctx,s,{x:camera,y:vertical},viewport,campaign==='cycle'?text:worldText);for(const key of ['cycleArt','storyBackground','parallax','backgroundEffects','background']){if(scene[key])canvas.dataset[key]=JSON.stringify(scene[key]);else delete canvas.dataset[key];}
  canvas.dataset.plunger=campaign==='arcade'&&s.round===2?JSON.stringify(plungerPose(s)):'';canvas.dataset.forgeMaterial=campaign==='arcade'&&s.round===5?JSON.stringify(forgeMaterialPose(s)):'';canvas.dataset.environment=JSON.stringify(environmentPose(s));canvas.dataset.animations=JSON.stringify(s.heroes.map(h=>({id:h.id,...animationFor(h)})));canvas.dataset.impact=JSON.stringify(s.impact||null);canvas.dataset.shots=JSON.stringify(s.shots.map(p=>({...projectilePose(p,renderAlpha),kind:p.kind,enemy:!!p.enemy})));for(const p of s.shots)if(s.level.mechanic!=='momentum'||p.kind!=='fire')drawProjectile(ctx,p,renderAlpha,s.time);
  const shadows=s.heroes.map(h=>arrival&&arrival.method.kind!=='fall'||h.sweptAway||(s.level.mechanic==='sewer'&&s.machine.captured[h.id])?null:groundShadow(s,{x:(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,y:(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha},platforms));canvas.dataset.shadows=JSON.stringify(shadows);
  for(const [i,shadow] of shadows.entries()){if(!shadow)continue;ctx.fillStyle=`rgba(6,10,17,${shadow.opacity})`;ctx.beginPath();ctx.ellipse(snapPixel(shadow.x),snapPixel(shadow.y-1),snapPixel(shadow.radius),4,0,0,Math.PI*2);ctx.fill();if(i===s.active){ctx.strokeStyle=colors[i]+'88';ctx.lineWidth=1;ctx.stroke();}}
  const attraction=drawMagneticAttraction(ctx,s);if(attraction)canvas.dataset.magneticAttraction=JSON.stringify(attraction);else delete canvas.dataset.magneticAttraction;
- for(const h of heroDrawOrder(s.heroes)){if(h.sweptAway||arrival&&arrival.method.kind!=='fall'||s.won&&completion)continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();}
- drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);const wardenOptics=drawWardenOverlay(ctx,s);if(wardenOptics)canvas.dataset.wardenOptics=JSON.stringify(wardenOptics);else delete canvas.dataset.wardenOptics;
+ for(const h of heroDrawOrder(s.heroes)){if(h.sweptAway||arrival&&arrival.method.kind!=='fall'||s.won&&completion&&s.level.mechanic!=='alehall')continue;ctx.save();if(h.dead){ctx.translate(snapPixel(h.x),snapPixel(h.y+44));ctx.rotate(-Math.PI/2);hero(ctx,h,-22,-22);text('FALLEN',h.x,h.y-25,'#ff8d7f',12);}else{if(h.transferred)ctx.globalAlpha=.3;else if(h.hurt>0&&Math.floor(s.time*16)%2)ctx.globalAlpha=.4;hero(ctx,h,(h.prevX??h.x)+(h.x-(h.prevX??h.x))*renderAlpha,(h.prevY??h.y)+(h.y-(h.prevY??h.y))*renderAlpha);}ctx.restore();}
+ drawAlehallOverlay(ctx,s,{x:camera,y:vertical},viewport,text);drawBashEffects(ctx,s,box,text);drawWaterOverlay(ctx,s);const wardenOptics=drawWardenOverlay(ctx,s);if(wardenOptics)canvas.dataset.wardenOptics=JSON.stringify(wardenOptics);else delete canvas.dataset.wardenOptics;
  const magneticOptics=scene.cycleArt?.magneticOptics;if(magneticOptics)canvas.dataset.magneticOptics=JSON.stringify(magneticOptics);else delete canvas.dataset.magneticOptics;
  const sewerDarkness=drawSewerDarkness(ctx,s,{x:camera,y:vertical},viewport);if(sewerDarkness)canvas.dataset.sewerDarkness=JSON.stringify(sewerDarkness);else delete canvas.dataset.sewerDarkness;
  const travel=arrival||completion?.phase==='exit'&&completion;if(travel){const anchor={x:(travel.anchor.x-camera)/2,y:(travel.anchor.y-vertical)/2};canvas.dataset.transitionOptics=JSON.stringify(drawTransitionWarp(ctx,surface,travel.method,travel.phase,travel.elapsed,anchor));}else delete canvas.dataset.transitionOptics;
@@ -99,10 +102,10 @@ if(!travel)drawWorldResources(ctx,s,text,viewport.uiScale);canvas.dataset.worldR
 }
 function toast(t){document.querySelector('#toast').textContent=t;document.querySelector('#toast').classList.add('show');document.querySelector('#message-label').textContent='MESSAGE';if(hintsVisible)document.querySelector('#clue').classList.add('new-clue');toastUntil=performance.now()+5500;}
 import {createFreightSounds} from '../levels/freight/audio.js?v=orbit113';
-const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds(),freightSounds=createFreightSounds(),orbitSounds=createOrbitSounds(),lodeSounds=createLodeSounds(),sewerSounds=createSewerSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
+const audio=createSoundLayer(),soundEvents=createSoundEvents(),wardenSounds=createWardenSounds(),freightSounds=createFreightSounds(),orbitSounds=createOrbitSounds(),lodeSounds=createLodeSounds(),sewerSounds=createSewerSounds(),alehallSounds=createAlehallSounds();try{sound=localStorage.getItem('last-call-sound')!=='off';}catch{}audio.setEnabled(sound);soundEvents(s);
 function updateSoundButton(){const button=document.querySelector('#sound');button.querySelector('span').textContent=sound?'SOUND ON':'SOUND OFF';button.setAttribute('aria-pressed',String(sound));button.setAttribute('aria-label',sound?'Mute sound effects':'Enable sound effects');button.title=sound?'Sound effects on':'Sound effects off';button.classList.toggle('muted',!sound);}
 updateSoundButton();
-function playWorldSounds(){canvas.dataset.cooldown=String(s.cooldown);const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s),...wardenSounds(s),...freightSounds(s),...orbitSounds(s),...lodeSounds(s),...sewerSounds(s)]){const basePitch=e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1;audio.play(e.name,worldSoundOptions(e,camera,basePitch));}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
+function playWorldSounds(){canvas.dataset.cooldown=String(s.cooldown);const camera=JSON.parse(canvas.dataset.camera||'{"x":0,"width":1440}');for(const e of [...soundEvents(s).filter(e=>s.level.mechanic!=='alehall'||e.name!=='ambient'),...alehallSounds(s),...wardenSounds(s),...freightSounds(s),...orbitSounds(s),...lodeSounds(s),...sewerSounds(s)]){const basePitch=e.name==='step'?[1.2,1,.75][e.id]*(.95+Math.random()*.1):e.name==='ambient'?[.8,1.1,1.8,.55,.85,.6,1.3,.45,1.5,1.2,.65][campaign==='story'?Math.min(s.round,10):s.round]:1;audio.play(e.name,worldSoundOptions(e,camera,basePitch));}canvas.dataset.audio=JSON.stringify(audio.diagnostics);}
 for(const event of ['pointerdown','keydown'])document.addEventListener(event,()=>{if(sound)audio.unlock();},{capture:true});
 document.addEventListener('click',e=>{if(!sound||!e.target.closest('button')||e.target.closest('#sound'))return;audio.unlock().then(()=>audio.play(e.target.closest('#play,#restart,#retry-death,#next-round')?'start':'click'));});
 document.addEventListener('visibilitychange',()=>{audio.setEnabled(sound&&!document.hidden);});
@@ -164,11 +167,11 @@ function updatePortalTransit(now){
  const pose=drawLevelTransition(g,width,height,current.method,current.phase,current.elapsed,anchor,heroes,transitHero);
  canvas.dataset.transitionDetail=JSON.stringify({method:current.method.kind,color:current.method.color,phase:current.phase,elapsed:current.elapsed,progress:pose.progress??Math.min(1,current.elapsed/1.7),anchor,native:[width,height]});
  canvas.dataset.transition=current.phase==='entry'?'arriving':pose.done?'complete':current.method.kind==='water'?'downstream':pose.travel>.1?'tunnel':'entering';
- if(current.phase==='exit'&&pose.done){current.done=true;current.phase='wait';canvas.dataset.transitionDetail=JSON.stringify({...JSON.parse(canvas.dataset.transitionDetail),phase:'wait'});transit.hidden=true;document.body.classList.remove('portal-travel');document.querySelector('#win').hidden=false;canvas.focus({preventScroll:true});audio.play(current.method.kind==='water'?'sewerWater':current.method.kind==='door'?'ambient':current.method.kind==='transfer'?'lens':'arrival');}
+ if(current.phase==='exit'&&pose.done){current.done=true;current.phase='wait';if(s.level.mechanic==='alehall'){continueRound();return;}canvas.dataset.transitionDetail=JSON.stringify({...JSON.parse(canvas.dataset.transitionDetail),phase:'wait'});transit.hidden=true;document.body.classList.remove('portal-travel');document.querySelector('#win').hidden=false;canvas.focus({preventScroll:true});audio.play(current.method.kind==='water'?'sewerWater':current.method.kind==='door'?'ambient':current.method.kind==='transfer'?'lens':'arrival');}
 }
 function advanceLevelTransitions(dt){
  if(arrival){if(!paused){arrival.elapsed+=dt;if(arrival.elapsed>=ENTRY_DURATION){arrival=null;transit.hidden=true;document.body.classList.remove('level-arrival');controls.clear();accumulator=0;canvas.dataset.transition='idle';delete canvas.dataset.transitionDetail;}}}
- else if(completion?.phase==='exit')completion.elapsed+=dt;
+ else if(completion?.phase==='exit'){completion.elapsed+=dt;if(s.level.mechanic==='alehall')alehallStep(s,{},dt);}
 }
 let actionLabelMode=null;function updateActionLabels(){const mode=s.level.mechanic==="orbit"&&s.machine.operator===s.active?"hook":String(s.active);if(mode===actionLabelMode)return;actionLabelMode=mode;if(s.level.mechanic==="orbit"&&s.machine.operator===s.active){document.querySelector("[data-key=primary]").innerHTML="ACTION<small>CLAMP · SPACE/F</small>";document.querySelector("[data-key=secondary]").innerHTML="ALT<small>RELEASE · D</small>";}else{document.querySelector("[data-key=primary]").innerHTML="ACTION<small>"+["JUMP","SWORD","SHIELD ↑"][s.active]+" · SPACE/F</small>";document.querySelector("[data-key=secondary]").innerHTML="ALT<small>"+["BASH","BOW","SHIELD →"][s.active]+" · D</small>";}}
 function consumeGameControls(){if(arrival)return{};const i=controls.consume(s.active);if(s.level.mechanic==="orbit"&&s.machine.operator===s.active)return {...i,action:i.jump||i.sword,sword:i.action,jump:false};return i;}

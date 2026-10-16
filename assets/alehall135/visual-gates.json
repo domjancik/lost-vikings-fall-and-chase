@@ -1,0 +1,43 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/ALEHALL135-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Independently compared corrected retained raw sources, intended native views and opaque3x comparisons. Guided props/patrons regenerated at matching native density; rejected first sources retained. Architecture256/cell64, props256/cell64, patrons224/cell56/adults36-37, globe96/cell48/ball20, coast384x192. Native2worldpixel scale; no grid detector/filter. Open-hearth/rainless-coast imagegen edits preserve source/prompt history; binary128 alpha plus zero hiddenRGB yields clean visible outlines."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "Inspected final desktop/touch1x/2x/portrait/landscape contacts and state evidence: cart706, loft supports, threecups on48world shield, grounded patrons/hearth/bench/globe, local dark-room display, entry/inspection/Olaf approach, sag/break/fall and automatic sewerID10 handoff. Final desktop39.7811s and coarse-actiontouch39.9340s HP3/3/3 errors[]33captures each. Ready imagegen90 sheets verified. Refreshed desktop fixes roof gaps and Baleog gaze; mobile precedes only those minor visual corrections."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Compared sources/native/art-in-scene; regenerated clustered cask bands, timber bevels, straw rings, readable dog/adult faces/palms/cloth retain modeled depth without fine painted grain. Smoky globe/bronze arms/pale cup remain legible; open stone hearth and rainless coastal depth preserve serious Norse warmth. Actual opaque composites corrected false hiddenRGB-fringe diagnosis. No density/richness tradeoff accepted."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Independent focused alehall/brake suites pass: ordinary60/120Hz routes, cart stops and material contact, spill/refill/serve, key/door/drop/recover/transfer, alternate all-three entry orders with optional tasks skipped, continuous inspection/collapse/fall. Actual desktop/touch routes complete healthy; optional ale/yard/delivery never gate story. Locked crane refuses ownership until brake release; release-cable causality preserved."
+  },
+  "captureSkin": "imagegen90",
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "publicationAllowed": true,
+  "evidence": [
+    "assets/alehall135/registration.json",
+    "assets/alehall135/evidence/desktop/route.json",
+    "assets/alehall135/evidence/touch/route.json",
+    "assets/alehall135/evidence/crane/route.json",
+    "docs/history/ALEHALL135-REVIEW.md"
+  ],
+  "limitations": [
+    "Touch route uses actual action taps with keyboard movement, not fully manual touch traversal.",
+    "Mobile captures precede final roof-backing and stopped-gaze corrections; refreshed desktop covers these unchanged-contact visual edits.",
+    "Key drop/recover/transfer edge is regression-tested but not separately browser-photographed.",
+    "First sewer-arrival capture is a transitional obscured frame; handoff confirmed by round10/fall assertions, not new sewer-art approval."
+  ],
+  "releaseConditions": [
+    "Final package/build/release validation and live-byte verification"
+  ]
+}

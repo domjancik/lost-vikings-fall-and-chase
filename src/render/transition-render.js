@@ -1,4 +1,4 @@
-import {transitionPose,transitionHeroPose,distortionBands} from './level-transition.js?v=transitions126';
+import {transitionPose,transitionHeroPose,distortionBands} from './level-transition.js?v=alehall135';
 import {drawTransit,drawPortal} from './portal-effects.js?v=transitions126';
 import {drawWaterTransit} from '../levels/sewer/water-transit.js?v=transitions126';
 let scratch;
@@ -40,6 +40,7 @@ export function drawLevelTransition(ctx,width,height,method,phase,time,anchor,he
   if(method.kind==='transfer')for(const h of heroes){ctx.globalAlpha=p.warp*.4;ctx.fillStyle=method.color;ctx.fillRect(h.x-11,0,22,height);for(let n=0;n<9;n++){ctx.globalAlpha=p.warp*.7;ctx.fillRect(h.x-10,Math.floor((n*41-time*130+height*20)%height),20,2);}}
   ctx.globalAlpha=1;
  }
+ if(method.kind==='fall'){const cover=phase==='entry'?1-p.reveal:Math.max(0,Math.min(1,(time-.6)/.9));ctx.globalAlpha=cover;ctx.fillStyle='#0b100f';ctx.fillRect(0,0,width,height);ctx.globalAlpha=1;}
  if(method.kind==='fall')for(let n=0;n<18;n++){ctx.globalAlpha=(1-p.progress)*.45;ctx.fillStyle=method.color;ctx.fillRect(Math.floor(anchor.x+(n%9-4)*13),Math.floor((n*31+time*100)%height),1,3+n%3*2);}ctx.globalAlpha=1;
  actors(ctx,method,phase,time,anchor,heroes,drawHero);
  if(phase==='entry'&&method.kind==='water')waterArrival(ctx,width,height,time,p.cover);

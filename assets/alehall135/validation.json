@@ -1,0 +1,80 @@
+{
+  "tests": {
+    "total": 678,
+    "passed": 678,
+    "failed": 0
+  },
+  "build": {
+    "explicitFiles": 487,
+    "publishFiles": 488,
+    "releaseCheck": "passed",
+    "publishPreflight": "passed"
+  },
+  "desktop": {
+    "time": 39.7811333333317,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "arrival": {
+      "method": "fall",
+      "color": "#bfa47b",
+      "phase": "entry",
+      "elapsed": 0.024099999999998546,
+      "progress": 0.019279999999998836,
+      "anchor": {
+        "x": 110,
+        "y": 51
+      },
+      "native": [
+        316,
+        198
+      ]
+    },
+    "errors": []
+  },
+  "touch": {
+    "time": 39.933966666665036,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "arrival": {
+      "method": "fall",
+      "color": "#bfa47b",
+      "phase": "entry",
+      "elapsed": 0.018099999999998548,
+      "progress": 0.014479999999998838,
+      "anchor": {
+        "x": 87,
+        "y": 51
+      },
+      "native": [
+        109,
+        198
+      ]
+    },
+    "errors": [],
+    "actions": "actual taps, keyboard movement"
+  },
+  "crane": {
+    "time": 77.80833333334132,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "errors": [],
+    "touchProof": "evidence/crane/touch-crane.json"
+  },
+  "crossCampaignSmoke": {
+    "source": true,
+    "build": true,
+    "campaigns": 3,
+    "previews": 31,
+    "errors": []
+  },
+  "review": "docs/history/ALEHALL135-REVIEW.md"
+}

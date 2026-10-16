@@ -7,12 +7,14 @@ export function departureAnchor(s){
 }
 
 export function departureMethod(s){
+ if(s.level.mechanic==='alehall')return{kind:'fall',color:'#ac8b5c'};
  if(s.level.mechanic==='sewer')return{kind:'water',color:'#82bfc1'};
  if(s.campaign==='story'&&s.round===6)return{kind:'transfer',color:'#d8c58d'};
  if(s.campaign==='story'&&s.round===7)return{kind:'door',color:'#c5dadd'};
  return{kind:'portal',color:s.campaign==='cycle'?'#67efd3':s.campaign==='story'?s.level.accent:'#b399e1'};
 }
 export function arrivalMethod(s,previous=null){
+ if(s.level.mechanic==='alehall')return{kind:'door',color:'#322b25'};
  if(s.level.mechanic==='sewer')return{kind:'fall',color:'#bfa47b'};
  if(previous)return{...previous};
  if(s.campaign==='story'&&s.round===6)return{kind:'portal',color:s.level.accent};

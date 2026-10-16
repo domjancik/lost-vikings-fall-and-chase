@@ -623,6 +623,18 @@
     {
       "source": "src/render/transition-render.js",
       "output": "transition-render.js"
+    },
+    {
+      "source": "src/levels/pub/campaign.js",
+      "output": "alehall-campaign.js"
+    },
+    {
+      "source": "src/levels/pub/render.js",
+      "output": "alehall-render.js"
+    },
+    {
+      "source": "src/levels/pub/audio.js",
+      "output": "alehall-audio.js"
     }
   ],
   "files": [
@@ -968,6 +980,15 @@
     "assets/sewer125/items-native.png",
     "assets/sewer125/icons-native.png",
     "assets/sewer125/registration.json",
-    "assets/sewer125/visual-gates.json"
+    "assets/sewer125/visual-gates.json",
+    "assets/alehall135/architecture-native.png",
+    "assets/alehall135/props-native.png",
+    "assets/alehall135/patrons-native.png",
+    "assets/alehall135/globe-native.png",
+    "assets/alehall135/coast-native.png",
+    "assets/alehall135/key-icon.png",
+    "assets/alehall135/cup-native.png",
+    "assets/alehall135/registration.json",
+    "assets/alehall135/visual-gates.json"
   ]
 }

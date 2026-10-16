@@ -1,5 +1,5 @@
 import {prepareMotion,integrateMotion} from '../../core/movement.js';
-import {pickupItem,useItem,giveItem,message} from '../../core/inventory.js?v=sewer125';
+import {pickupItem,useItem,giveItem,message} from '../../core/inventory.js?v=alehall135';
 import {damage} from '../../core/health.js';
 import {segmentHit} from '../../core/projectile-collision.js';
 import {sewerLightAt,sewerOccluders,sewerLights,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer132';

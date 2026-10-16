@@ -1,6 +1,6 @@
 import {prepareMotion,integrateMotion} from '../../core/movement.js?v=orbit113';
 
-import {pickupItem,useItem,message} from '../../core/inventory.js?v=sewer125';
+import {pickupItem,useItem,message} from '../../core/inventory.js?v=alehall135';
 
 import {damage} from '../../core/health.js?v=orbit113';
 
@@ -54,9 +54,9 @@ export function setupOrbit(s){
 
 export function orbitSurfaces(s){return[...s.level.floors,...s.level.platforms,...magneticRails(s).filter(p=>Math.abs(Math.sin(p.angle))<.015).map(p=>({x:p.x-(p.w-2*p.capRx)/2,y:p.y-p.h/2,w:p.w-2*p.capRx,support:'orbit-'+p.id}))];}
 
-export function orbitObjects(s){const g=s.machine;return[{id:'orbit-crane-panel',x:1730,y:606,radius:72,title:'DEPARTURE CRANE',reason:g.panelOpen?'Arrows steer the hook. Action clamps, alt releases, use leaves.':'A cracked ceramic cover blocks the panel.',ready:g.panelOpen,done:g.hookDocked,
+export function orbitObjects(s){const g=s.machine;return[{id:'orbit-crane-panel',x:1730,y:606,radius:72,title:'DEPARTURE CRANE',reason:!g.panelOpen?'A cracked ceramic cover blocks the panel.':g.brakePose<.999?'BRAKE LOCKED · cut the short tension cable above the gallery.':'Arrows steer the hook. Action clamps, alt releases, use leaves.',ready:g.panelOpen&&g.brakePose>=.999,done:g.hookDocked,
 
- run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';g.operator=g.operator===s.active?null:s.active;if(g.operator!==null)parkOperator(s.heroes[g.operator]);return g.operator===null?'Crane controls released.':g.brakePose<1?'The gantry brake is still clamped. Its short tension rope hangs above the gallery.':'Crane controls engaged.';}}];}
+ run:()=>{if(!g.panelOpen)return 'The cracked ceramic cover needs a running bash.';if(g.brakePose<.999)return 'BRAKE LOCKED · Baleog must cut the short tension cable above the gallery.';g.operator=g.operator===s.active?null:s.active;if(g.operator!==null)parkOperator(s.heroes[g.operator]);return g.operator===null?'Crane controls released.':g.brakePose<1?'The gantry brake is still clamped. Its short tension rope hangs above the gallery.':'Crane controls engaged.';}}];}
 
 const restraintOrder=[0,2,3];
 

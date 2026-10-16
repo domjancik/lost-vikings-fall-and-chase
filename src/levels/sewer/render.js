@@ -4,7 +4,7 @@ import {snapPixel as q} from '../../render/pixel-grid.js';
 import {sewerLights,sewerOccluders,sewerLightAt,sewerFaceLight,SEWER_HATCH_TRAVEL,SEWER_LANDING_TRAVEL} from './light.js?v=sewer132';
 import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
-import {sewerSprayMount} from './campaign.js?v=sewer132';
+import {sewerSprayMount} from './campaign.js?v=alehall135';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}

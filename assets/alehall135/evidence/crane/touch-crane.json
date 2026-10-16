@@ -1,0 +1,854 @@
+{
+  "before": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "magV": 0,
+        "boots": false,
+        "x": 1730.264219014231,
+        "y": 606,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": "orbit-0",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": -6.253927784345267,
+        "magnet": {
+          "plateId": 1,
+          "u": 241.92977484403227,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2099.258546964428,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2626.595079784547,
+          "y": 422.5448383190385
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2627.2386534609373,
+        "y": 378.5542536764452,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": -28.675,
+          "y": 8.849999999999994,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": 0.13962634015954636,
+          "mode": "front",
+          "cell": 8
+        },
+        "rotation": -6.253927784345267,
+        "magnet": {
+          "plateId": 1,
+          "u": 101.46640585366004,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2336,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2486.1918250133385,
+          "y": 418.4358143745258
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2486.8353986897287,
+        "y": 374.44522973193256,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "g": {
+      "plates": [
+        {
+          "id": 0,
+          "x": 1610,
+          "y": 674,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "parked",
+          "charge": 1,
+          "vx": 0,
+          "vy": 0,
+          "travel": {
+            "y": {
+              "start": 1024,
+              "target": 674,
+              "time": 2.916666666666659,
+              "duration": 2.9166666666666665
+            },
+            "angle": {
+              "start": 7.858890372495235,
+              "target": 6.283185307179586,
+              "time": 2.0583333333333287,
+              "duration": 2.100940087087532
+            },
+            "x": {
+              "start": 1120,
+              "target": 1610,
+              "time": 3.2666666666666577,
+              "duration": 3.2666666666666666
+            }
+          },
+          "spinV": 0.39269908169872414
+        },
+        {
+          "id": 1,
+          "x": 2540,
+          "y": 444.0208333333333,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0.029257522834319555,
+          "phase": "hooked",
+          "charge": 1,
+          "vx": 0,
+          "vy": 0,
+          "travel": {
+            "y": {
+              "start": 674,
+              "target": 444,
+              "time": 1.9166666666666623,
+              "duration": 1.9166666666666667
+            }
+          }
+        }
+      ],
+      "sequence": 3,
+      "sequenceUntil": 47.68333333333276,
+      "sequenceStartAngle": 3.146501392111043,
+      "sequenceRecoverUntil": 0,
+      "resetAt": -100,
+      "releaseAt": 43.6833333333315,
+      "releasePose": 1,
+      "brakePose": 1,
+      "ropeCut": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "ropePose": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "ropeAperture": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "panelOpen": true,
+      "panelPose": 1,
+      "operator": 0,
+      "roofs": [
+        {
+          "id": 2,
+          "x": 1890,
+          "y": 552,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "roof",
+          "vx": 0,
+          "vy": 0
+        }
+      ],
+      "hook": {
+        "x": 2540,
+        "y": 419.6666666666667,
+        "vx": 0,
+        "vy": 0,
+        "plateId": 1,
+        "offset": {
+          "x": 0,
+          "y": 24.35416666666663
+        },
+        "grab": 0.2033333333333328,
+        "attempts": 2
+      },
+      "hookDocked": false,
+      "exitPose": 0,
+      "ladderPose": 0,
+      "blocks": 0,
+      "safety": false,
+      "debris": [
+        {
+          "id": 0,
+          "cx": 1120,
+          "cy": 674,
+          "rx": 230,
+          "ry": 180,
+          "clock": 75.75000000000635,
+          "phase": "active",
+          "x": -6196.566493477595,
+          "y": -45727.9800158847,
+          "angle": 61.01939577165356,
+          "escape": 320,
+          "deflectGrace": 0,
+          "vx": -222.34770033101086,
+          "vy": -2726.099426387809,
+          "release": {
+            "at": 43.6833333333315,
+            "x": 933.3830971316921,
+            "y": 568.7860346705417,
+            "vx": -222.34770033079417,
+            "vy": -161.09942638529546
+          }
+        },
+        {
+          "id": 1,
+          "cx": 2540,
+          "cy": 444,
+          "rx": 220,
+          "ry": 140,
+          "clock": 77.75000000000794,
+          "phase": "active",
+          "x": 2755.553943449569,
+          "y": 415.9964028721959,
+          "angle": 62.63046892734112,
+          "escape": 0,
+          "deflectGrace": 0,
+          "vx": 36.03068866608737,
+          "vy": 110.41946620498265
+        }
+      ],
+      "pushContact": null,
+      "lastPawlAt": 43.6833333333315,
+      "lastSwitch": 2,
+      "brakeReleasedAt": 57.44166666666405
+    }
+  },
+  "moved": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "magV": 0,
+        "boots": false,
+        "x": 1730.264219014231,
+        "y": 606,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": "orbit-0",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": -6.283185307179586,
+        "magnet": {
+          "plateId": 1,
+          "u": 241.92977484403227,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2099.258546964428,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2691.0964415106973,
+          "y": 384.24305555555526
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2691.0964415106973,
+        "y": 340.24305555555526,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": -28.675,
+          "y": 7.647500000000008,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": 0.13962634015954636,
+          "mode": "front",
+          "cell": 10
+        },
+        "rotation": -6.283185307179586,
+        "magnet": {
+          "plateId": 1,
+          "u": 101.46640585366004,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2336,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2550.633072520325,
+          "y": 384.24305555555526
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2550.633072520325,
+        "y": 340.24305555555526,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "g": {
+      "plates": [
+        {
+          "id": 0,
+          "x": 1610,
+          "y": 674,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "parked",
+          "charge": 1,
+          "vx": 0,
+          "vy": 0,
+          "travel": {
+            "y": {
+              "start": 1024,
+              "target": 674,
+              "time": 2.916666666666659,
+              "duration": 2.9166666666666665
+            },
+            "angle": {
+              "start": 7.858890372495235,
+              "target": 6.283185307179586,
+              "time": 2.0583333333333287,
+              "duration": 2.100940087087532
+            },
+            "x": {
+              "start": 1120,
+              "target": 1610,
+              "time": 3.2666666666666577,
+              "duration": 3.2666666666666666
+            }
+          },
+          "spinV": 0.39269908169872414
+        },
+        {
+          "id": 1,
+          "x": 2605.166666666665,
+          "y": 408.24305555555526,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "hooked",
+          "charge": 1,
+          "vx": 0,
+          "vy": -135.83333333333485,
+          "travel": {
+            "y": {
+              "start": 674,
+              "target": 444,
+              "time": 1.9166666666666623,
+              "duration": 1.9166666666666667
+            }
+          }
+        }
+      ],
+      "sequence": 3,
+      "sequenceUntil": 47.68333333333276,
+      "sequenceStartAngle": 3.146501392111043,
+      "sequenceRecoverUntil": 0,
+      "resetAt": -100,
+      "releaseAt": 43.6833333333315,
+      "releasePose": 1,
+      "brakePose": 1,
+      "ropeCut": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "ropePose": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "ropeAperture": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "panelOpen": true,
+      "panelPose": 1,
+      "operator": 0,
+      "roofs": [
+        {
+          "id": 2,
+          "x": 1890,
+          "y": 552,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "roof",
+          "vx": 0,
+          "vy": 0
+        }
+      ],
+      "hook": {
+        "x": 2605.166666666665,
+        "y": 383.88888888888863,
+        "vx": 0,
+        "vy": -135.83333333333334,
+        "plateId": 1,
+        "offset": {
+          "x": 0,
+          "y": 24.35416666666663
+        },
+        "grab": 0,
+        "attempts": 3
+      },
+      "hookDocked": false,
+      "exitPose": 0,
+      "ladderPose": 0,
+      "blocks": 0,
+      "safety": false,
+      "debris": [
+        {
+          "id": 0,
+          "cx": 1120,
+          "cy": 674,
+          "rx": 230,
+          "ry": 180,
+          "clock": 76.61666666667371,
+          "phase": "active",
+          "x": -6389.267833764437,
+          "y": -48120.93285208779,
+          "angle": 61.71752747245151,
+          "escape": 320,
+          "deflectGrace": 0,
+          "vx": -222.34770033090172,
+          "vy": -2795.4327597210067,
+          "release": {
+            "at": 43.6833333333315,
+            "x": 933.3830971316921,
+            "y": 568.7860346705417,
+            "vx": -222.34770033079417,
+            "vy": -161.09942638529546
+          }
+        },
+        {
+          "id": 1,
+          "cx": 2540,
+          "cy": 444,
+          "rx": 220,
+          "ry": 140,
+          "clock": 78.6166666666753,
+          "phase": "active",
+          "x": 2733.4101888382547,
+          "y": 510.7196208037649,
+          "angle": 63.328600628139064,
+          "escape": 0,
+          "deflectGrace": 0,
+          "vx": -83.93302147884242,
+          "vy": 99.32445138041658
+        }
+      ],
+      "pushContact": null,
+      "lastPawlAt": 43.6833333333315,
+      "lastSwitch": 2,
+      "brakeReleasedAt": 57.44166666666405
+    }
+  },
+  "reengaged": {
+    "heroes": [
+      {
+        "id": 0,
+        "skin": "imagegen90",
+        "rotation": 0,
+        "magnet": null,
+        "magnetSole": null,
+        "magV": 0,
+        "boots": false,
+        "x": 1730.264219014231,
+        "y": 606,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": 1,
+        "support": "orbit-0",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 1,
+        "skin": "imagegen90",
+        "rotation": -6.283185307179586,
+        "magnet": {
+          "plateId": 1,
+          "u": 241.92977484403227,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2099.258546964428,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2691.0964415106973,
+          "y": 378.45833333333303
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2691.0964415106973,
+        "y": 334.45833333333303,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      },
+      {
+        "id": 2,
+        "skin": "imagegen90",
+        "shieldArtPose": {
+          "x": -28.675,
+          "y": 7.647500000000008,
+          "rx": 16.970562748477143,
+          "ry": 24,
+          "roll": 0.13962634015954636,
+          "mode": "front",
+          "cell": 10
+        },
+        "rotation": -6.283185307179586,
+        "magnet": {
+          "plateId": 1,
+          "u": 101.46640585366004,
+          "attaching": false,
+          "pull": 1,
+          "startX": 2336,
+          "startY": 650
+        },
+        "magnetSole": {
+          "x": 2550.633072520325,
+          "y": 378.45833333333303
+        },
+        "magV": 0,
+        "boots": true,
+        "x": 2550.633072520325,
+        "y": 334.45833333333303,
+        "vx": 0,
+        "vy": 0,
+        "ground": true,
+        "hp": 3,
+        "dead": false,
+        "inventory": [
+          "magneticShoes",
+          null,
+          null,
+          null
+        ],
+        "itemSlot": 0,
+        "shieldUp": false,
+        "shield": true,
+        "face": -1,
+        "support": "orbit-1",
+        "climbing": false,
+        "sweptAway": false
+      }
+    ],
+    "g": {
+      "plates": [
+        {
+          "id": 0,
+          "x": 1610,
+          "y": 674,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "parked",
+          "charge": 1,
+          "vx": 0,
+          "vy": 0,
+          "travel": {
+            "y": {
+              "start": 1024,
+              "target": 674,
+              "time": 2.916666666666659,
+              "duration": 2.9166666666666665
+            },
+            "angle": {
+              "start": 7.858890372495235,
+              "target": 6.283185307179586,
+              "time": 2.0583333333333287,
+              "duration": 2.100940087087532
+            },
+            "x": {
+              "start": 1120,
+              "target": 1610,
+              "time": 3.2666666666666577,
+              "duration": 3.2666666666666666
+            }
+          },
+          "spinV": 0.39269908169872414
+        },
+        {
+          "id": 1,
+          "x": 2605.166666666665,
+          "y": 402.45833333333303,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "hooked",
+          "charge": 1,
+          "vx": 0,
+          "vy": -94.16666666666742,
+          "travel": {
+            "y": {
+              "start": 674,
+              "target": 444,
+              "time": 1.9166666666666623,
+              "duration": 1.9166666666666667
+            }
+          }
+        }
+      ],
+      "sequence": 3,
+      "sequenceUntil": 47.68333333333276,
+      "sequenceStartAngle": 3.146501392111043,
+      "sequenceRecoverUntil": 0,
+      "resetAt": -100,
+      "releaseAt": 43.6833333333315,
+      "releasePose": 1,
+      "brakePose": 1,
+      "ropeCut": [
+        true,
+        false,
+        true,
+        true,
+        true
+      ],
+      "ropePose": [
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "ropeAperture": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "panelOpen": true,
+      "panelPose": 1,
+      "operator": 0,
+      "roofs": [
+        {
+          "id": 2,
+          "x": 1890,
+          "y": 552,
+          "w": 344,
+          "h": 48,
+          "capRx": 16,
+          "angle": 0,
+          "phase": "roof",
+          "vx": 0,
+          "vy": 0
+        }
+      ],
+      "hook": {
+        "x": 2605.166666666665,
+        "y": 378.1041666666664,
+        "vx": 0,
+        "vy": -94.16666666666664,
+        "plateId": 1,
+        "offset": {
+          "x": 0,
+          "y": 24.35416666666663
+        },
+        "grab": 0,
+        "attempts": 3
+      },
+      "hookDocked": false,
+      "exitPose": 0,
+      "ladderPose": 0,
+      "blocks": 0,
+      "safety": false,
+      "debris": [
+        {
+          "id": 0,
+          "cx": 1120,
+          "cy": 674,
+          "rx": 230,
+          "ry": 180,
+          "clock": 76.70000000000711,
+          "phase": "active",
+          "x": -6407.796808792018,
+          "y": -48354.191137620146,
+          "angle": 61.784655520605156,
+          "escape": 320,
+          "deflectGrace": 0,
+          "vx": -222.34770033101086,
+          "vy": -2802.0994263884495,
+          "release": {
+            "at": 43.6833333333315,
+            "x": 933.3830971316921,
+            "y": 568.7860346705417,
+            "vx": -222.34770033079417,
+            "vy": -161.09942638529546
+          }
+        },
+        {
+          "id": 1,
+          "cx": 2540,
+          "cy": 444,
+          "rx": 220,
+          "ry": 140,
+          "clock": 78.7000000000087,
+          "phase": "active",
+          "x": 2725.9418188188856,
+          "y": 518.8252156586461,
+          "angle": 63.39572867629271,
+          "escape": 0,
+          "deflectGrace": 0,
+          "vx": -94.21354869156858,
+          "vy": 95.5180027695178
+        }
+      ],
+      "pushContact": null,
+      "lastPawlAt": 43.6833333333315,
+      "lastSwitch": 2,
+      "brakeReleasedAt": 57.44166666666405
+    }
+  }
+}

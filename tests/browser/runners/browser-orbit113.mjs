@@ -37,8 +37,8 @@ await page.exposeBinding('orbitPhoto',async(_,label)=>{
 });
 try{
  await reviewNavigate(page,(live?'https://united-marsh-6ppd.here.now/':'http://127.0.0.1:'+server.address().port+'/')+'?campaign=cycle&release='+encodeURIComponent(process.env.ORBIT_RELEASE||'orbit122'));await page.evaluate(()=>localStorage.setItem('last-call-story-cards','off'));
- await page.locator('#start-picker [data-campaign-option="cycle"]').click();await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===11&&c.every(i=>i.dataset.ready==='true');});
- assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,11);
+ await page.locator('#start-picker [data-campaign-option="cycle"]').click();await page.waitForFunction(()=>{const c=[...document.querySelectorAll('#start-picker canvas')];return c.length===12&&c.every(i=>i.dataset.ready==='true');});
+ assert.equal(new Set(await page.locator('#start-picker canvas').evaluateAll(c=>c.map(i=>i.toDataURL()))).size,12);
  await page.locator('#start-picker .level-card[data-round="8"]').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.round==='8'&&JSON.parse(document.querySelector('#game').dataset.cycleArt).ready);
  await page.locator('#restart').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.transition==='idle');
  if(touch){
@@ -75,6 +75,7 @@ try{
  }
  `;
  let body=source.slice(bodyStart).replace(/\b(tick|until|move|mark|railMove|hookMove)\(/g,'await $1(');
+ body=body.replace("await mark('ceiling-brake');", "await tick(0,{interact:true});if(s.machine.operator!==null)throw Error('Locked brake stole control');const lockedHook={x:s.machine.hook.x,y:s.machine.hook.y};await tick(0,{right:true});if(s.machine.hook.x!==lockedHook.x||s.machine.hook.y!==lockedHook.y)throw Error('Locked crane moved');await mark('locked-crane-refused');await mark('ceiling-brake');");
  body=body.replace("await railMove(0,420);await railMove(0,100);","await railMove(0,420);await mark('magnetic-ceiling');await railMove(0,344);await mark('magnetic-corner');await railMove(0,100);");
  body=body.replace("await railMove(1,430);","await railMove(1,430);await mark('ceiling-brake-aim');");
  body=body.replace("await until(0,s=>s.machine.hook.plateId===1,{},1);","await until(0,s=>s.machine.hook.plateId===1,{},1);await mark('crane-gripped');");

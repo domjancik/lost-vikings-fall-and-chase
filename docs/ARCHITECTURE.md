@@ -9,7 +9,7 @@
 | `src/campaigns/arcade/` | Original arcade/inventory/vertical worlds |
 | `src/campaigns/story/` | Story campaign, enemies, machinery, world layout and custody |
 | `src/campaigns/machines/` | Machine Rooms dispatch and shared mechanisms |
-| `src/levels/` | Clockwork, sewer, water, Warden, Loom, freight, momentum, refraction, orbit and lode; local mechanics/render/art together |
+| `src/levels/` | Norse pub, clockwork, sewer, water, Warden, Loom, freight, momentum, refraction, orbit and lode; local mechanics/render/art together |
 | `src/heroes/` | Viking animation, procedural and generated skin registration |
 | `src/render/` | Scene composition, terrain, parallax, camera, text and pixel grid |
 | `src/audio/` | Shared sound event processing and recipes |
@@ -40,7 +40,7 @@ URLs. No build copies every historical asset or relies on stale output.
 
 Machine Rooms uses `src/campaigns/machines/cycle-order.js` for menu, navigation
 and continuation order. Stable level IDs remain unchanged when a new room is
-inserted: sewer ID10 precedes Drowned Regulator ID4 in play order.
+inserted: Norse alehall ID11 precedes sewer ID10, then Drowned Regulator ID4.
 
 `npm run dev` serves nested source paths; `npm run build` produces deployable flat
 paths. `npm run release:check` checks emitted bytes against the same manifest.

@@ -1,4 +1,4 @@
-import {departureMethod} from '../render/level-transition.js?v=transitions126';
+import {departureMethod} from '../render/level-transition.js?v=alehall135';
 import {mechanismSnapshot,mechanismSounds} from '../campaigns/story/story-audio.js?v=arc46';
 // Observe simulation changes, not held inputs: effects occur once at their real trigger.
 export function createSoundEvents(){let previous=null,state=null,lastStep=[0,0,0],lastFuse=0,lastMachine=0,lastAmbient=0;return s=>{
@@ -20,7 +20,7 @@ export function createSoundEvents(){let previous=null,state=null,lastStep=[0,0,0
  if(current.bombs>p.bombs)add('bombPlace');if(current.blast!==p.blast&&current.blast!==undefined)add('explosion',s.blast.x);
  if(s.bombs.length&&s.time-lastFuse>Math.max(.09,Math.min(...s.bombs.map(b=>b.fuse))*.22)){add('fuse',s.bombs[0].x);lastFuse=s.time;}
  if(!p.fuse&&s.fuse)add('pickup',675);if(!p.power&&s.power)add('unlock',s.level.exit?.x||1356);if(p.crate&&!s.crate)add('impact',455);if(p.turret&&!s.turret&&s.round===0)add('explosion',1204);
- if(!p.won&&s.won)add(({water:'sewerWater',door:'ambient',transfer:'lens',portal:'portal'})[departureMethod(s).kind],s.level.exit?.x||1356);if(!p.failed&&s.failed&&!events.some(e=>e.name==='death'))add('death');
+ if(!p.won&&s.won)add(({fall:'sewerWood',water:'sewerWater',door:'ambient',transfer:'lens',portal:'portal'})[departureMethod(s).kind],s.level.exit?.x||1356);if(!p.failed&&s.failed&&!events.some(e=>e.name==='death'))add('death');
  const changes={valveClosed:'lever',drainStarted:'pour',chainCut:'chain',halfLanded:'impact',halfPushed:'chain',joined:'unlock',launchAt:'plunger',dockAt:'impact',exitLatched:'bell',pinBroken:'impact',returnAt:'lift',guideClink:'impact',catchEvent:'impact',steerHit:'impact',pushStarted:'chain',highReached:'bell',tileEvent:'chain',bumperAt:'reflect',catchBroken:'impact',upperSet:'lever',lowerSet:'lever',released:'chain',damperReleased:'lever',selector:'lever',plungerAt:'plunger',charged:'unlock',liftOn:'lever',hatch:'unlock',bell:'bell',mirror:'unlock',seal:'chain',brake:'impact',parked:'unlock',signal:'lever',ore:'chain',heat:'forge',air:'pump',ovenMode:'lever',oven:'oven',baked:'bell',lamp:'lens',lens:'lens',angle:'lever',sunset:'bell',ocean:'bell',motor:'chain',gate:'explosion',safe:'unlock',lane:'lever',screen:'chain',chime:'bell',aligned:'unlock',reed:'chain',resonance:'bell',bass:'chain',draftMask:'lift',dispatch:'lever',delivery:'unlock',gallery:'lens',archive:'pickup',restraint:'chain',interlock:'lever',transferMask:'portal',cord:'chain',cable:'chain',staff:'unlock'};
  for(const [key,name] of Object.entries(changes))if(g[key]!==p.g[key]&&g[key]!==undefined&&(key!=='air'||g[key]>p.g[key]))add(name,{valveClosed:940,drainStarted:1900,ore:940,heat:1000,air:520,ovenMode:1000,baked:1000,lane:480}[key]);
  if(current.feedback!==p.feedback&&/no nearby|bag full|already at full|item kept|wrong|move the vikings/i.test(s.feedback?.message||''))add('wrong');

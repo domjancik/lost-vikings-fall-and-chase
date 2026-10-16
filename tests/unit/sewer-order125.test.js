@@ -7,18 +7,13 @@ import {cycleLevels} from '../../src/campaigns/machines/cycle-campaign.js';
 import {giveItem,transferItem,dropItem,pickupItem,itemTypes} from '../../src/core/inventory.js';
 import {worldSoundOptions} from '../../src/audio/event-options.js';
 
-test('sewer precedes the existing water stable ID without renumbering old levels',()=>{
- const order=campaignOrder('cycle',11);
- assert.deepEqual(order,[0,1,2,3,10,4,5,6,7,8,9]);
- assert.equal(new Set(order).size,11);
- assert.equal(campaignNext('cycle',3,11),10);
- assert.equal(campaignNext('cycle',10,11),4);
- assert.equal(campaignPrevious('cycle',4,11),10);
- assert.equal(campaignPosition('cycle',10,11),4);
- assert.equal(campaignPosition('cycle',4,11),5);
- assert.equal(campaignNext('cycle',9,11),0);
- assert.equal(campaignPrevious('cycle',0,11),null);
+test('alehall and sewer precede water without renumbering old levels',()=>{
+ const order=campaignOrder('cycle',12);
+ assert.deepEqual(order,[11,10,4,0,1,2,3,5,6,7,8,9]);assert.equal(new Set(order).size,12);
+ assert.equal(campaignNext('cycle',11,12),10);assert.equal(campaignNext('cycle',10,12),4);assert.equal(campaignPrevious('cycle',4,12),10);
+ assert.equal(campaignPosition('cycle',10,12),1);assert.equal(campaignPosition('cycle',4,12),2);assert.equal(campaignNext('cycle',9,12),11);assert.equal(campaignPrevious('cycle',11,12),null);
 });
+
 test('other campaigns retain their order and debug endpoints',()=>{
  assert.deepEqual(campaignOrder('story',4),[0,1,2,3]);
  assert.equal(campaignNext('story',3,4),0);

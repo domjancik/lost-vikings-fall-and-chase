@@ -2,6 +2,7 @@ import {TRANSIT_DURATION} from '../../render/portal-effects.js?v=transitions126'
 const clamp=v=>Math.max(0,Math.min(1,v));
 export function sweptHeroPose(h,travel){
  if(travel==null||h.sweptAway)return null;
+ if(h.escapePose)return{rotation:h.escapePose.rotation,scale:h.escapePose.scale,magnetSole:{x:h.x,y:h.y+44},ground:false,climbing:false};
  return{rotation:.75*clamp(travel/100),magnetSole:{x:h.x,y:h.y+44},ground:false,climbing:false};
 }
 export function waterTransitPose(elapsed,width,height){

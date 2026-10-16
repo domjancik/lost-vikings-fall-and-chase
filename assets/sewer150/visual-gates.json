@@ -1,0 +1,43 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/SEWER150-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Retained environment-native pipe cell12 independently inspected: source31,27 maps to measured mouth3152,866 at unchanged two-world-units/native-pixel density, conservative clear radius30. Native pipe material/volume and current hero sources preserved. Shared procedural current, native raster rotation and explicit transit recession introduce no painted/downsampled replacement art or permanent hero rescaling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "47 focused tests independently pass: actual finite ribbon contact, above/below/beyond-water rejection,60/120Hz individual continuous journeys, late-origin sole/scale continuity, small visible throat depth, completion/health, captured-world-marker omission and existing shoot/shield/enemy/light/full-route regressions. Final actual coarse/touch route wins at66.2583seconds,3HP each,49captures/errors[], continuation water4. Compact receipt linked rawSHA256/outcome/count independently verified."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Final actual1x/2x/portrait/landscape entry/depth images show all three actors moving head-first inside the rich native dark aperture and shrinking there. Current follows the same bend and converges through an inner wedge to the throat. Rim is behind water/actors; foreground masonry curtain removed, small wakes do not hide actors. Oversized world pips/selection markers are removed only during noninteractive capture while HUD health stays visible.36clearly labeled seeded production-flow images across18states support rendering proof; ordinary route separately proves gameplay."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Physical overlap with finite shared water geometry initiates capture, preserving each actor origin rather than teleporting or suction from dry air. Minimum settling for late origins permits a continuous tip/sink before depth. Each Viking completes its own current journey and remains safe waiting for the others; only all three inside the throat complete the level and continue via water transition. Existing puzzle permissions and normal hazard/shield/weapon behavior retained."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/sewer125/environment-native.png",
+    "assets/sewer150/diagnostic/check.json",
+    "assets/sewer150/diagnostic/hero0-1.7-2x.png",
+    "assets/sewer150/diagnostic/hero1-1.95-1x.png",
+    "assets/sewer150/diagnostic/hero2-1.7-2x.png",
+    "assets/sewer150/route/evidence.json",
+    "assets/sewer150/route/pipe-entry-0-2x.png",
+    "assets/sewer150/route/pipe-depth-0-portrait.png",
+    "assets/sewer150/route/pipe-entry-1-1x.png",
+    "assets/sewer150/route/pipe-entry-2-2x.png",
+    "assets/sewer150/route/pipe-depth-2-landscape.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

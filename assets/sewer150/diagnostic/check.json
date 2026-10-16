@@ -1,0 +1,1576 @@
+{
+  "shots": [
+    "hero0-0-1x",
+    "hero0-0-2x",
+    "hero0-0.55-1x",
+    "hero0-0.55-2x",
+    "hero0-1.25-1x",
+    "hero0-1.25-2x",
+    "hero0-1.7-1x",
+    "hero0-1.7-2x",
+    "hero0-1.95-1x",
+    "hero0-1.95-2x",
+    "hero0-2.3-1x",
+    "hero0-2.3-2x",
+    "hero1-0-1x",
+    "hero1-0-2x",
+    "hero1-0.55-1x",
+    "hero1-0.55-2x",
+    "hero1-1.25-1x",
+    "hero1-1.25-2x",
+    "hero1-1.7-1x",
+    "hero1-1.7-2x",
+    "hero1-1.95-1x",
+    "hero1-1.95-2x",
+    "hero1-2.3-1x",
+    "hero1-2.3-2x",
+    "hero2-0-1x",
+    "hero2-0-2x",
+    "hero2-0.55-1x",
+    "hero2-0.55-2x",
+    "hero2-1.25-1x",
+    "hero2-1.25-2x",
+    "hero2-1.7-1x",
+    "hero2-1.7-2x",
+    "hero2-1.95-1x",
+    "hero2-1.95-2x",
+    "hero2-2.3-1x",
+    "hero2-2.3-2x"
+  ],
+  "checks": [
+    {
+      "id": 0,
+      "t": 0,
+      "hero": {
+        "x": 2790,
+        "y": 716,
+        "hp": 3,
+        "sweptAway": false
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ],
+        "travel": [
+          0,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 0,
+      "t": 0.55,
+      "hero": {
+        "x": 2880.0644581203514,
+        "y": 738.0610982537128,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 2915.4737315626253,
+            "y": 788.5559696373725
+          },
+          "rotation": 1.752202747441746,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 126.50000000000013,
+          "done": false,
+          "sole": {
+            "x": 2880.0644581203514,
+            "y": 782.0610982537128
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ],
+        "travel": [
+          126.50000000000013,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": {
+              "center": {
+                "x": 2915.4737315626253,
+                "y": 788.5559696373725
+              },
+              "rotation": 1.752202747441746,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 126.50000000000013,
+              "done": false,
+              "sole": {
+                "x": 2880.0644581203514,
+                "y": 782.0610982537128
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 0,
+      "t": 1.25,
+      "hero": {
+        "x": 3038.7067737228535,
+        "y": 774.8266683254321,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3072.431543659137,
+            "y": 831.4219012627286
+          },
+          "rotation": 1.9282260747376447,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 289.4166666666665,
+          "done": false,
+          "sole": {
+            "x": 3038.7067737228535,
+            "y": 818.8266683254321
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ],
+        "travel": [
+          289.4166666666665,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": {
+              "center": {
+                "x": 3072.431543659137,
+                "y": 831.4219012627286
+              },
+              "rotation": 1.9282260747376447,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 289.4166666666665,
+              "done": false,
+              "sole": {
+                "x": 3038.7067737228535,
+                "y": 818.8266683254321
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 0,
+      "t": 1.7,
+      "hero": {
+        "x": 3135.8621539931055,
+        "y": 813.8256330258272,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3152.632663824354,
+            "y": 866.2108879414513
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.5208333333333334,
+          "depth": 0.13918125181643384,
+          "total": 496.2149164486955,
+          "travel": 392.91666666666754,
+          "done": false,
+          "sole": {
+            "x": 3135.8621539931055,
+            "y": 857.8256330258272
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ],
+        "travel": [
+          392.91666666666754,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": {
+              "center": {
+                "x": 3152.632663824354,
+                "y": 866.2108879414513
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.5208333333333334,
+              "depth": 0.13918125181643384,
+              "total": 496.2149164486955,
+              "travel": 392.91666666666754,
+              "done": false,
+              "sole": {
+                "x": 3135.8621539931055,
+                "y": 857.8256330258272
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 0,
+      "t": 1.95,
+      "hero": {
+        "x": 3154.0530963979973,
+        "y": 821.6781348761241,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3160.0904799372465,
+            "y": 868.6968266457488
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.1875,
+          "depth": 0.6183479184831052,
+          "total": 496.2149164486955,
+          "travel": 450.4166666666681,
+          "done": false,
+          "sole": {
+            "x": 3154.0530963979973,
+            "y": 865.6781348761241
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ],
+        "travel": [
+          450.4166666666681,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": {
+              "center": {
+                "x": 3160.0904799372465,
+                "y": 868.6968266457488
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.1875,
+              "depth": 0.6183479184831052,
+              "total": 496.2149164486955,
+              "travel": 450.4166666666681,
+              "done": false,
+              "sole": {
+                "x": 3154.0530963979973,
+                "y": 865.6781348761241
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 0,
+      "t": 2.3,
+      "hero": {
+        "x": 3164,
+        "y": 826,
+        "hp": 3,
+        "sweptAway": true,
+        "pose": {
+          "center": {
+            "x": 3164,
+            "y": 870
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0,
+          "depth": 1,
+          "total": 496.2149164486955,
+          "travel": 496.2149164486955,
+          "done": true,
+          "sole": {
+            "x": 3164,
+            "y": 870
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          true,
+          false,
+          false
+        ],
+        "travel": [
+          496.2149164486955,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": {
+              "center": {
+                "x": 3164,
+                "y": 870
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0,
+              "depth": 1,
+              "total": 496.2149164486955,
+              "travel": 496.2149164486955,
+              "done": true,
+              "sole": {
+                "x": 3164,
+                "y": 870
+              }
+            },
+            "hidden": true
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 0,
+      "hero": {
+        "x": 2790,
+        "y": 716,
+        "hp": 3,
+        "sweptAway": false
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ],
+        "travel": [
+          0,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 0.55,
+      "hero": {
+        "x": 2880.0644581203514,
+        "y": 738.0610982537128,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 2915.4737315626253,
+            "y": 788.5559696373725
+          },
+          "rotation": 1.752202747441746,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 126.50000000000013,
+          "done": false,
+          "sole": {
+            "x": 2880.0644581203514,
+            "y": 782.0610982537128
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          true,
+          false
+        ],
+        "travel": [
+          0,
+          126.50000000000013,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": {
+              "center": {
+                "x": 2915.4737315626253,
+                "y": 788.5559696373725
+              },
+              "rotation": 1.752202747441746,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 126.50000000000013,
+              "done": false,
+              "sole": {
+                "x": 2880.0644581203514,
+                "y": 782.0610982537128
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 1.25,
+      "hero": {
+        "x": 3038.7067737228535,
+        "y": 774.8266683254321,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3072.431543659137,
+            "y": 831.4219012627286
+          },
+          "rotation": 1.9282260747376447,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 289.4166666666665,
+          "done": false,
+          "sole": {
+            "x": 3038.7067737228535,
+            "y": 818.8266683254321
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          true,
+          false
+        ],
+        "travel": [
+          0,
+          289.4166666666665,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": {
+              "center": {
+                "x": 3072.431543659137,
+                "y": 831.4219012627286
+              },
+              "rotation": 1.9282260747376447,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 289.4166666666665,
+              "done": false,
+              "sole": {
+                "x": 3038.7067737228535,
+                "y": 818.8266683254321
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 1.7,
+      "hero": {
+        "x": 3135.8621539931055,
+        "y": 813.8256330258272,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3152.632663824354,
+            "y": 866.2108879414513
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.5208333333333334,
+          "depth": 0.13918125181643384,
+          "total": 496.2149164486955,
+          "travel": 392.91666666666754,
+          "done": false,
+          "sole": {
+            "x": 3135.8621539931055,
+            "y": 857.8256330258272
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          true,
+          false
+        ],
+        "travel": [
+          0,
+          392.91666666666754,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": {
+              "center": {
+                "x": 3152.632663824354,
+                "y": 866.2108879414513
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.5208333333333334,
+              "depth": 0.13918125181643384,
+              "total": 496.2149164486955,
+              "travel": 392.91666666666754,
+              "done": false,
+              "sole": {
+                "x": 3135.8621539931055,
+                "y": 857.8256330258272
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 1.95,
+      "hero": {
+        "x": 3154.0530963979973,
+        "y": 821.6781348761241,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3160.0904799372465,
+            "y": 868.6968266457488
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.1875,
+          "depth": 0.6183479184831052,
+          "total": 496.2149164486955,
+          "travel": 450.4166666666681,
+          "done": false,
+          "sole": {
+            "x": 3154.0530963979973,
+            "y": 865.6781348761241
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          true,
+          false
+        ],
+        "travel": [
+          0,
+          450.4166666666681,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": {
+              "center": {
+                "x": 3160.0904799372465,
+                "y": 868.6968266457488
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.1875,
+              "depth": 0.6183479184831052,
+              "total": 496.2149164486955,
+              "travel": 450.4166666666681,
+              "done": false,
+              "sole": {
+                "x": 3154.0530963979973,
+                "y": 865.6781348761241
+              }
+            },
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "t": 2.3,
+      "hero": {
+        "x": 3164,
+        "y": 826,
+        "hp": 3,
+        "sweptAway": true,
+        "pose": {
+          "center": {
+            "x": 3164,
+            "y": 870
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0,
+          "depth": 1,
+          "total": 496.2149164486955,
+          "travel": 496.2149164486955,
+          "done": true,
+          "sole": {
+            "x": 3164,
+            "y": 870
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          true,
+          false
+        ],
+        "travel": [
+          0,
+          496.2149164486955,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": {
+              "center": {
+                "x": 3164,
+                "y": 870
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0,
+              "depth": 1,
+              "total": 496.2149164486955,
+              "travel": 496.2149164486955,
+              "done": true,
+              "sole": {
+                "x": 3164,
+                "y": 870
+              }
+            },
+            "hidden": true
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 0,
+      "hero": {
+        "x": 2790,
+        "y": 716,
+        "hp": 3,
+        "sweptAway": false
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          false
+        ],
+        "travel": [
+          0,
+          0,
+          0
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": null,
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 0.55,
+      "hero": {
+        "x": 2880.0644581203514,
+        "y": 738.0610982537128,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 2915.4737315626253,
+            "y": 788.5559696373725
+          },
+          "rotation": 1.752202747441746,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 126.50000000000013,
+          "done": false,
+          "sole": {
+            "x": 2880.0644581203514,
+            "y": 782.0610982537128
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          true
+        ],
+        "travel": [
+          0,
+          0,
+          126.50000000000013
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": {
+              "center": {
+                "x": 2915.4737315626253,
+                "y": 788.5559696373725
+              },
+              "rotation": 1.752202747441746,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 126.50000000000013,
+              "done": false,
+              "sole": {
+                "x": 2880.0644581203514,
+                "y": 782.0610982537128
+              }
+            },
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 1.25,
+      "hero": {
+        "x": 3038.7067737228535,
+        "y": 774.8266683254321,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3072.431543659137,
+            "y": 831.4219012627286
+          },
+          "rotation": 1.9282260747376447,
+          "scale": 1,
+          "depth": 0,
+          "total": 496.2149164486955,
+          "travel": 289.4166666666665,
+          "done": false,
+          "sole": {
+            "x": 3038.7067737228535,
+            "y": 818.8266683254321
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          true
+        ],
+        "travel": [
+          0,
+          0,
+          289.4166666666665
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": {
+              "center": {
+                "x": 3072.431543659137,
+                "y": 831.4219012627286
+              },
+              "rotation": 1.9282260747376447,
+              "scale": 1,
+              "depth": 0,
+              "total": 496.2149164486955,
+              "travel": 289.4166666666665,
+              "done": false,
+              "sole": {
+                "x": 3038.7067737228535,
+                "y": 818.8266683254321
+              }
+            },
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 1.7,
+      "hero": {
+        "x": 3135.8621539931055,
+        "y": 813.8256330258272,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3152.632663824354,
+            "y": 866.2108879414513
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.5208333333333334,
+          "depth": 0.13918125181643384,
+          "total": 496.2149164486955,
+          "travel": 392.91666666666754,
+          "done": false,
+          "sole": {
+            "x": 3135.8621539931055,
+            "y": 857.8256330258272
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          true
+        ],
+        "travel": [
+          0,
+          0,
+          392.91666666666754
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": {
+              "center": {
+                "x": 3152.632663824354,
+                "y": 866.2108879414513
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.5208333333333334,
+              "depth": 0.13918125181643384,
+              "total": 496.2149164486955,
+              "travel": 392.91666666666754,
+              "done": false,
+              "sole": {
+                "x": 3135.8621539931055,
+                "y": 857.8256330258272
+              }
+            },
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 1.95,
+      "hero": {
+        "x": 3154.0530963979973,
+        "y": 821.6781348761241,
+        "hp": 3,
+        "sweptAway": false,
+        "pose": {
+          "center": {
+            "x": 3160.0904799372465,
+            "y": 868.6968266457488
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0.1875,
+          "depth": 0.6183479184831052,
+          "total": 496.2149164486955,
+          "travel": 450.4166666666681,
+          "done": false,
+          "sole": {
+            "x": 3154.0530963979973,
+            "y": 865.6781348761241
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          true
+        ],
+        "travel": [
+          0,
+          0,
+          450.4166666666681
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": {
+              "center": {
+                "x": 3160.0904799372465,
+                "y": 868.6968266457488
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0.1875,
+              "depth": 0.6183479184831052,
+              "total": 496.2149164486955,
+              "travel": 450.4166666666681,
+              "done": false,
+              "sole": {
+                "x": 3154.0530963979973,
+                "y": 865.6781348761241
+              }
+            },
+            "hidden": false
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "t": 2.3,
+      "hero": {
+        "x": 3164,
+        "y": 826,
+        "hp": 3,
+        "sweptAway": true,
+        "pose": {
+          "center": {
+            "x": 3164,
+            "y": 870
+          },
+          "rotation": 2.0344439357957027,
+          "scale": 0,
+          "depth": 1,
+          "total": 496.2149164486955,
+          "travel": 496.2149164486955,
+          "done": true,
+          "sole": {
+            "x": 3164,
+            "y": 870
+          }
+        }
+      },
+      "outlet": {
+        "kind": "water-outlet",
+        "mouth": {
+          "x": 3152,
+          "y": 866,
+          "radius": 30
+        },
+        "throat": {
+          "x": 3164,
+          "y": 870
+        },
+        "foregroundCover": false,
+        "captureX": 2780,
+        "stream": {
+          "x": 2700,
+          "y": 680,
+          "w": 600,
+          "h": 160,
+          "active": true,
+          "pose": 2.308333333333328
+        },
+        "captured": [
+          false,
+          false,
+          true
+        ],
+        "travel": [
+          0,
+          0,
+          496.2149164486955
+        ],
+        "actors": [
+          {
+            "id": 0,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 1,
+            "pose": null,
+            "hidden": false
+          },
+          {
+            "id": 2,
+            "pose": {
+              "center": {
+                "x": 3164,
+                "y": 870
+              },
+              "rotation": 2.0344439357957027,
+              "scale": 0,
+              "depth": 1,
+              "total": 496.2149164486955,
+              "travel": 496.2149164486955,
+              "done": true,
+              "sole": {
+                "x": 3164,
+                "y": 870
+              }
+            },
+            "hidden": true
+          }
+        ]
+      }
+    }
+  ],
+  "seeded": true,
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ]
+}

@@ -1,6 +1,6 @@
 import {campaignOrder} from '../campaigns/machines/cycle-order.js?v=campaign137';
-import {campaignChoices} from './campaign-picker.js?v=sewer149';
-import {levelPreview} from './level-preview.js?v=sewer149';
+import {campaignChoices} from './campaign-picker.js?v=sewer150';
+import {levelPreview} from './level-preview.js?v=sewer150';
 export function campaignMenu(host,{campaign,onLevel}){
  const nav=document.createElement('nav'),grid=document.createElement('div');
  nav.className='campaign-choices';nav.setAttribute('aria-label','Campaigns');grid.className='level-grid';

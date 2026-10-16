@@ -7,7 +7,9 @@ import {sewerLights,sewerLightCone,sewerOccluders,sewerLightAt,sewerFaceLight,SE
 import {visibilityPolygon} from './optics.js?v=sewer132';
 import {orbitRaster} from '../orbit/raster.js';
 import {drawSewerWheel} from './wheel.js?v=sewer141';
-import {sewerSprayMount} from './campaign.js?v=sewer149';
+import {sewerSprayMount} from './campaign.js?v=sewer150';
+import {SEWER_OUTLET} from './outlet.js?v=sewer150';
+import {drawSewerOutlet} from './outlet-render.js?v=sewer150';
 const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
@@ -25,13 +27,7 @@ function shutter(c,x,top,w,height,pose,travel){
  c.restore();for(const xx of [x-8,x+w])for(let yy=top-160;yy<bottom;yy+=64)crop(c,props,8,135,4,32,xx,yy);
  return{kind:'shutter',x,top,w,height,leafBottom:bottom-travel*pose,pose};
 }
-function outletPath(c){c.beginPath();c.moveTo(2700,740);c.lineTo(2900,738);c.quadraticCurveTo(3080,740,3270,980);c.lineTo(3300,1060);c.lineTo(3150,1060);c.quadraticCurveTo(2980,820,2780,798);c.lineTo(2700,798);c.closePath();}
-function flow(c,s){const g=s.machine;drawSewerSpray(c,s);
-
- // The floor enters the real outlet channel, whose lower chute is open.
- c.save();outletPath(c);c.clip();c.fillStyle='#163b42';c.fillRect(2700,680,600,420);for(let n=0;n<100;n++){const x=2700+((s.time*220+n*43)%640),dy=Math.max(0,x-2900),y=754+dy*dy*.0015+(n%8-4)*6;c.fillStyle=n%5?'#39686e':'#a1c5bc';c.fillRect(q(x),q(y),12+n%4*4,2);c.fillStyle='#284d55';c.fillRect(q(x-8),q(y+10),22,4);}c.restore();
- for(const h of s.heroes)if(g.captured[h.id]&&!h.sweptAway)for(let n=0;n<6;n++){const x=h.x-24-n*10,y=h.y+32+Math.sin(s.time*8+n)*8;c.fillStyle=n%2?'#9fc5bb':'#477b81';c.fillRect(q(x),q(y),6,2);}
-}
+function flow(c,s){drawSewerSpray(c,s);return drawSewerOutlet(c,s);}
 function deadLurker(c,e,time){
  const pose=lurkerDeathPose(e,time),image=orbitRaster(props,pose.angle,{size:96,pivotX:32,pivotY:45,crop:[192,192,64,64]});
  if(image){c.save();c.beginPath();c.rect(pose.x-110,pose.floor-240,220,240);c.clip();c.translate(pose.x,pose.y);if(e.dir>0)c.scale(-1,1);c.drawImage(image,-96,0,192,192);c.restore();}
@@ -74,22 +70,21 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[],li
  for(const e of g.lurkers){if(!e.hp){contacts.push(deadLurker(c,e,s.time));continue;}const gait=drawLurkerWalk(c,props,e);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning,gait});}
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
- flow(c,s);const globeArt=sewerGlobeArtState(s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});
+ // The retained pipe mouth belongs behind the entering current and actors.
+ // No foreground masonry curtain hides their actual route into its aperture.
+ cell(c,environment,12,SEWER_OUTLET.sprite.x,SEWER_OUTLET.sprite.y);
+ const outlet=flow(c,s);const globeArt=sewerGlobeArtState(s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',...outlet,captureX:SEWER_OUTLET.captureX,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel],actors:s.heroes.map(h=>({id:h.id,pose:h.escapePose||null,hidden:!!h.sweptAway}))});
  return{ready:[environment,props,items,grounded].every(ready)&&contacts.filter(a=>a.kind==='valve'||a.kind==='inspection-winch').every(a=>a.ready)&&(!globeArt||globeArt.ready),mechanic:'sewer',release:'sewer141',contacts,lamps:sewerLights(s),blackAmbient:false,occludedAmbient:true};
 }
 let mask;
 export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer')return null;
  const globeArt=drawSewerGlobe(c,s);
- // Foreground crests cross the lower body, so capture reads as immersion.
+ // Small wakes travel with the submerged actor. They never act as an opaque
+ // cover: position, rotation and recession carry the Viking into the throat.
  for(const h of s.heroes)if(s.machine.captured[h.id]&&!h.sweptAway){
-  const t=s.machine.escapeTravel[h.id],depth=Math.min(24,t*.18),base=h.y+40-depth;
-  const slope=Math.max(0,h.x-2900)*.003,crest=[];
-  for(let n=0;n<12;n++){const dx=-44+n*8;crest.push([q(h.x+dx),q(base+slope*dx+Math.sin(n*2+s.time*10)*4)]);}
-  c.save();outletPath(c);c.clip();c.beginPath();crest.forEach(([x,y],n)=>n?c.lineTo(x,y):c.moveTo(x,y));c.lineTo(q(h.x+44),q(base+depth+60));c.lineTo(q(h.x-44),q(base+depth+60));c.closePath();c.fillStyle='#163b42';c.fill();
-  for(const [n,[x,y]]of crest.entries()){c.fillStyle=n%3?'#5d9295':'#b1cec0';c.fillRect(x,y,n%3?8:4,2);}c.restore();
+  const p=h.escapePose;if(!p)continue;
+  for(let n=0;n<6;n++){const a=s.time*8+n*2,scale=p.scale,x=p.center.x-20*scale+n*6*scale,y=p.center.y+Math.sin(a)*12*scale;c.fillStyle=n%3?'#5d9295':'#b1cec0';c.fillRect(q(x),q(y),Math.max(2,q(6*scale)),2);}
  }
- // Outlet foreground covers actors only after their continuous440world journey.
- if(ready(environment)){for(let y=818;y<1100;y+=120)wall(c,3110,y,190,120);cell(c,environment,12,3090,812);}
  const width=Math.ceil(view.width/2),height=Math.ceil(view.height/2);if(!mask)mask=document.createElement('canvas');if(mask.width!==width||mask.height!==height){mask.width=width;mask.height=height;}const g=mask.getContext('2d');g.setTransform(.5,0,0,.5,-camera.x/2,-camera.y/2);g.globalCompositeOperation='source-over';const fog=drawSewerFog(g,camera,width*2,height*2,s.time);g.globalCompositeOperation='destination-out';
  const lights=sewerLights(s),walls=sewerOccluders(s);let visible=0;
  for(const l of lights){if(l.x+l.radius<camera.x||l.x-l.radius>camera.x+view.width||l.y+l.radius<camera.y||l.y-l.radius>camera.y+view.height)continue;visible++;const points=visibilityPolygon(l,walls);g.save();g.beginPath();points.forEach((p,n)=>n?g.lineTo(q(p.x),q(p.y)):g.moveTo(q(p.x),q(p.y)));g.closePath();g.clip();if(l.focused){g.beginPath();sewerLightCone(l).forEach((p,n)=>n?g.lineTo(q(p.x),q(p.y)):g.moveTo(q(p.x),q(p.y)));g.closePath();g.clip();}const gradient=g.createRadialGradient(l.x,l.y,0,l.x,l.y,l.radius);gradient.addColorStop(0,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(.44,'rgba(0,0,0,'+(l.intensity??1)+')');gradient.addColorStop(1,'rgba(0,0,0,0)');g.fillStyle=gradient;g.fillRect(l.x-l.radius,l.y-l.radius,l.radius*2,l.radius*2);g.restore();}

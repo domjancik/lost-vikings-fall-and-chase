@@ -289,6 +289,15 @@ recovery, shield block, evasion and repeated patrol turns separately. Diagnostic
 must illuminate the actual subject and retain per-frame copies of mutable state;
 dark or stale screenshots do not establish animation/contact quality.
 
+For exits into a physical opening, compare the current/trajectory to the measured
+sprite aperture. The actors must visibly enter it before disappearing; an opaque
+foreground wall or frame cannot hide a mismatched destination. Check capture
+against the actual volume, including jumping above and passing beside/below it,
+and preserve the initial pose for late entry. If bodies recede with depth, world
+markers must follow that presentation or yield to the HUD instead of floating
+full-size outside the opening. Inspect approach, entry and deep states for all
+three heroes in actual gameplay, not only the subsequent screen transition.
+
 ## Era and story continuity
 
 The campaign opening takes place in the Vikings’ own time. The alehall must

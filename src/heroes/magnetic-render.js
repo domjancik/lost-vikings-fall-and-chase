@@ -24,9 +24,10 @@ function raster(h,pose,frame,phase){
  }
  g.putImageData(out,0,0);return remember(rotations,rotatedKey,c,128);
 }
-// The physics sole and raster pivot are the same point. Rotation never scales
-// the actor or interpolates foreground pixels across a contrasting edge.
-export function drawMagneticHero(ctx,h){
+// The physics sole and raster pivot are the same point. Rotation preserves
+// size; explicit transit depth may scale the raster on the native pixel grid.
+export function drawMagneticHero(ctx,h,scale=1){
  const {pose,frame}=animationFor(h),image=raster(h,pose,frame,magneticRasterPhase(h.rotation||0));
- const sole=h.magnetSole;ctx.drawImage(image,snapPixel(sole.x-CENTER*2),snapPixel(sole.y-CENTER*2),SIZE*2,SIZE*2);
+ const sole=h.magnetSole,size=snapPixel(SIZE*2*scale),pivot=snapPixel(CENTER*2*scale);
+ if(size>0)ctx.drawImage(image,snapPixel(sole.x-pivot),snapPixel(sole.y-pivot),size,size);
 }

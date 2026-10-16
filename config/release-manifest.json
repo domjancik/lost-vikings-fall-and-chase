@@ -581,6 +581,14 @@
       "output": "sewer-campaign.js"
     },
     {
+      "source": "src/levels/sewer/outlet.js",
+      "output": "sewer-outlet150.js"
+    },
+    {
+      "source": "src/levels/sewer/outlet-render.js",
+      "output": "sewer-outlet-render150.js"
+    },
+    {
       "source": "src/levels/sewer/lurkers.js",
       "output": "sewer-lurkers149.js"
     },
@@ -1066,6 +1074,7 @@
     "assets/depth146/visual-gates.json",
     "assets/pub147/visual-gates.json",
     "assets/pub148/visual-gates.json",
-    "assets/sewer149/visual-gates.json"
+    "assets/sewer149/visual-gates.json",
+    "assets/sewer150/visual-gates.json"
   ]
 }

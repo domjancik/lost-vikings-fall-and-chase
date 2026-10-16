@@ -5,22 +5,22 @@ import {drawAlehallOverlay} from '../levels/pub/render.js?v=pub148';
 import {createAlehallSounds} from '../levels/pub/audio.js?v=pub138';
 import {fullscreenMode,toggleGameFullscreen} from './fullscreen.js?v=ios131';
 import {departureMethod,departureAnchor,arrivalMethod,ENTRY_DURATION,arrivalSpawns,canAdvance,createTravelKeys} from '../render/level-transition.js?v=alehall135';
-import {drawTransitionWarp,drawLevelTransition} from '../render/transition-render.js?v=alehall135';
+import {drawTransitionWarp,drawLevelTransition} from '../render/transition-render.js?v=sewer150';
 import {worldSoundOptions} from '../audio/event-options.js?v=sewer125';
 import {campaignOrder,campaignPosition,campaignNext,campaignPrevious} from '../campaigns/machines/cycle-order.js?v=campaign137';
-import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer149';
+import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer150';
 import {createSewerSounds} from '../levels/sewer/audio.js?v=sewer136';
-import {sweptHeroPose} from '../levels/sewer/water-transit.js?v=transitions126';
+import {sweptHeroPose} from '../levels/sewer/water-transit.js?v=sewer150';
 import {createLodeSounds} from '../levels/lode/audio.js?v=lode123';
 import {drawMagneticAttraction} from '../levels/orbit/field-optics.js?v=lode123';
 import {drawWorldResources,worldResources} from "./world-resources.js?v=orbit116";
-import {drawHeroFeedback} from "./hero-feedback.js?v=sewer125";
+import {drawHeroFeedback} from "./hero-feedback.js?v=sewer150";
 import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit120";
 import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=alehall135";
-import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit121";
+import {drawMagneticHero} from "../heroes/magnetic-render.js?v=sewer150";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=sewer149';
-import {drawScene} from '../render/scene-render95.js?v=sewer149';
+import {campaignMenu} from './campaign-menu.js?v=sewer150';
+import {drawScene} from '../render/scene-render95.js?v=sewer150';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=orbit121';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=depth146';
 import {drawWaterOverlay} from '../levels/water/render.js?v=depth146';
@@ -28,7 +28,7 @@ import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=orbit121'
 import {setHeroSkin} from '../heroes/hero-art.js?v=orbit121';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=depth146';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=sewer149';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=sewer150';
 const campaignLevels=c=>campaignFamily(c)==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundPosition=()=>campaignPosition(campaign,round,levels.length);
 const lastRound=()=>roundPosition()===campaignOrder(campaign,levels.length).length-1;
@@ -56,8 +56,8 @@ import {groundShadow} from '../render/ground-shadow.js?v=pub147';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit121';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=sewer149';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=sewer149';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=sewer150';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=sewer150';
 bindControlSelectionGuards(document);
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
@@ -75,7 +75,7 @@ if(skinOptions.some(option=>option.id===requestedSkin))selectedSkin=saveSkin(loc
 setHeroSkin(selectedSkin);
 function syncHeroArt(){for(const h of s.heroes){h.lookDirection=s.level.mechanic==='alehall'&&s.machine.phase==='inspect'&&Math.abs(h.vx)<5?1:h.id===s.active&&!(s.level.mechanic==="orbit"&&s.machine.operator===s.active)?cameraLookDirection(s,{up:controls.has("up"),down:controls.has("down")},paused):0;syncShieldArtPose(h,selectedSkin,animationFor(h));}}
 syncHeroArt();
-function hero(g,h,x,y,scale=1){const sweep=s.level.mechanic==='sewer'?sweptHeroPose(h,s.machine.captured[h.id]?s.machine.escapeTravel[h.id]:null):null;if(scale===1&&sweep)drawMagneticHero(g,{...h,...sweep,skin:selectedSkin});else if(scale===1&&h.magnetSole&&!h.dead)drawMagneticHero(g,{...h,skin:selectedSkin});else drawSprite(g,{...h,skin:selectedSkin},x,y,scale);}
+function hero(g,h,x,y,scale=1){const sweep=s.level.mechanic==='sewer'?sweptHeroPose(h,s.machine.captured[h.id]?s.machine.escapeTravel[h.id]:null):null;if(scale===1&&sweep)drawMagneticHero(g,{...h,...sweep,skin:selectedSkin},sweep.scale??1);else if(scale===1&&h.magnetSole&&!h.dead)drawMagneticHero(g,{...h,skin:selectedSkin});else drawSprite(g,{...h,skin:selectedSkin},x,y,scale);}
 for(const card of document.querySelectorAll('.hero-card')){const info=card.querySelector('div');info.classList.add('hero-info');const bag=document.createElement('span');bag.className='hud-bag';bag.setAttribute('role','group');bag.setAttribute('aria-label','Carried items');for(let slot=0;slot<4;slot++){const icon=document.createElement('canvas');icon.width=16;icon.height=16;icon.dataset.slot=String(slot);icon.setAttribute('role','img');bag.append(icon);}info.append(bag);mountHeroResource(card);}
 function updateHudBag(h,card){let badge=card.querySelector('.magnet-status');if(!badge){badge=document.createElement('span');badge.className='magnet-status';card.append(badge);}badge.hidden=!h.inventory.includes('magneticShoes');badge.textContent=h.boots?'MAG ON':'MAG OFF';badge.classList.toggle('on',!!h.boots);badge.title=h.boots?'Magnetic shoes engaged. Use their inventory slot to release.':'Use magnetic shoes from their inventory slot to engage.';const icons=card.querySelectorAll('.hud-bag canvas');icons.forEach((icon,slot)=>{const type=h.inventory[slot],selected=slot===h.itemSlot,label=(type?itemTypes[type].name:'Empty')+(selected?' · selected':'')+(type==='magneticShoes'&&h.boots?' · equipped':'');icon.dataset.item=type||'';icon.classList.toggle('selected',selected);icon.setAttribute('aria-label','Slot '+(slot+1)+': '+label);icon.title=label;const key=campaign+':'+(type||'empty')+(type==='magneticShoes'?String(!!h.boots):'');if(icon.dataset.painted!==key){const g=icon.getContext('2d');g.imageSmoothingEnabled=false;g.clearRect(0,0,16,16);if(!type||(campaign==='story'?drawStoryItem(g,type,8,14,12,12):drawItemSprite(g,itemTypes[type].icon,8,14,12,12))){icon.dataset.painted=key;if(type==='magneticShoes'&&h.boots){g.fillStyle='#8edee5';g.fillRect(1,15,14,1);g.fillRect(1,14,1,1);g.fillRect(14,14,1,1);}}}});}
 function paintPortraits(){for(let i=0;i<3;i++){const g=document.querySelector('#portrait'+i).getContext('2d');g.clearRect(0,0,64,64);g.imageSmoothingEnabled=false;hero(g,{id:i,face:1,shield:i===2,shieldUp:false,ground:true},32,25,.7);}}

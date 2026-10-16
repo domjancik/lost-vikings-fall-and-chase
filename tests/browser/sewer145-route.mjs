@@ -15,10 +15,11 @@ const read=()=>page.locator('#game').evaluate(c=>({heroes:JSON.parse(c.dataset.h
 let mountedFixtures;
 async function photo(name,label){const file=out+'/'+name+'-'+label+'.png';await page.screenshot({path:file});const state=await read();if(state.round===10){for(const [kind,axis]of [['valve',[1050,580]],['inspection-winch',[1820,572]]]){const wheel=state.art.contacts.find(a=>a.kind===kind);assert.ok(wheel.ready);assert.deepEqual(wheel.axis,axis,'visible axle must remain registered through every intermediate pose');assert.equal(wheel.origin[1]+wheel.sourceSole*2,wheel.sole);}}if(process.argv.includes('--structure-focus')&&state.round===10){const fixtures=state.art.contacts.filter(a=>a.kind==='rear-fixture');assert.ok(fixtures.length>0);if(mountedFixtures)assert.deepEqual(fixtures,mountedFixtures,'rear fixtures stay registered through camera travel');mountedFixtures=fixtures;}captures.push({file,name,label,...state});}
 await page.exposeBinding('sewerPhoto',async(_,name)=>{
+ if(process.argv.includes('--outlet-focus')&&!name.startsWith('pipe-'))return;
  if(process.argv.includes('--sewer132-focus')&&!['wall-contact','guarded-shot','lurker-hit','lurker-fall','lurker-dead'].includes(name))return;
  if(process.argv.includes('--structure-focus')&&!['lamphouse','shielded-spray','winch-moving','inspection-open','leaf-clearance','landing-rider-start','outlet-moving','outlet-open'].includes(name))return;
  if(process.argv.includes('--spray-focus')&&!['unshielded-spray','shielded-spray'].includes(name))return;
- if(!['inspection-open','guarded-shot','outlet-open'].includes(name))return;
+ if(!['inspection-open','guarded-shot','outlet-open'].includes(name)&&!name.startsWith('pipe-'))return;
  await photo(name,'live');
  await page.locator('#pause').click();await page.waitForFunction(()=>document.querySelector('#game').dataset.paused==='true');
  for(const [size,zoom,label]of [[process.argv.includes('--structure-focus')?{width:1920,height:800}:{width:1440,height:900},2,'2x'],[{width:1440,height:900},1,'1x'],[{width:430,height:780},process.argv.includes('--sewer132-focus')?1.5:2,'portrait'],[{width:844,height:390},2,'landscape']]){
@@ -83,6 +84,7 @@ try{
  }else{
   const source=fs.readFileSync('tests/routes/sewer-route125.js','utf8');
   let body=source.slice(source.indexOf(" mark('ceiling-fall')"));
+  if(process.argv.includes('--outlet-focus'))body=body.replace("mark('stream-swept-'+id);", "mark('stream-swept-'+id);until(id,s=>s.machine.escapeTravel[id]>=300,{},3);mark('pipe-approach-'+id);until(id,s=>s.machine.escapeTravel[id]>=395,{},3);mark('pipe-entry-'+id);until(id,s=>s.machine.escapeTravel[id]>=450,{},3);mark('pipe-depth-'+id);until(id,s=>s.heroes[id].sweptAway,{},3);");
   body=body.replace("until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');","until(0,s=>s.machine.hatch.pose>=.4,{},2);mark('winch-moving');until(0,s=>s.machine.hatch.pose===1,{},2);mark('inspection-open');");
   body=body.replace("until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');","until(1,s=>s.machine.gates[0].pose>=.4,{},3);mark('outlet-moving');until(1,s=>s.machine.gates[0].pose===1,{},3);mark('outlet-open');");
   if(process.argv.includes('--structure-focus')){

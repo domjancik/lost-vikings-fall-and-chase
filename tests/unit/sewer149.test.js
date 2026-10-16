@@ -6,7 +6,7 @@ function scene(hz=120){
  const s=createState(10,'cycle');s.time=10;s.machine.introTime=10;s.machine.lamp.lit=false;
  for(const l of s.machine.lamps)l.lit=false;
  s.machine.hatch.open=true;s.machine.hatch.pose=1;
- s.machine.captured=[false,true,true];
+
  Object.assign(s.heroes[0],{x:2050,y:716,ground:true});
  const e=s.machine.lurkers[0];Object.assign(e,{x:2150,y:760,dir:-1});
  return {s,e,run(t){for(let n=0;n<t*hz;n++)step(s,{},1/hz);}};

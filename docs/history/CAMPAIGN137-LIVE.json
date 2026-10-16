@@ -1,0 +1,13 @@
+{
+  "commit": "c421d01",
+  "checked": [
+    "campaign-progress.js",
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "game.js",
+    "campaign-picker95.js",
+    "cycle-order.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

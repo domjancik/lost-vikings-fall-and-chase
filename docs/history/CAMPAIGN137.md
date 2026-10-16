@@ -35,3 +35,11 @@ mobile selection, Machine Rooms membership and its 1/2 to 2/2 counters.
 31 unique previews, movement, hero switching, inventory, zoom, pause, restart,
 mobile layout and gallery pages. Both browser suites report zero errors.
 Screenshots were inspected using the current imagegen90 Viking skin.
+
+Published runtime commit: `c421d01`.
+Hosting version: `01M5268H20A900BEKZZ5N6TKHE`.
+Live URL: https://united-marsh-6ppd.here.now/?campaign=fall&release=campaign137
+Seven changed modules/manifests match production bytes; HTML matches after
+removing hosting social metadata. The live browser suite passes all ten chapter
+loads, save migration/resume, mobile menus and both remaining Machine Rooms,
+with zero browser errors. Hash receipt: `CAMPAIGN137-LIVE.json`.

@@ -1,0 +1,22 @@
+{
+  "commit": "7b68584",
+  "checked": [
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "sewer-render.js",
+    "scene-render95.js",
+    "game.js",
+    "cycle-render.js",
+    "assets/sewer141/winch-fixed.png",
+    "assets/sewer141/winch-rotor.png",
+    "assets/sewer141/valve-fixed.png",
+    "assets/sewer141/registration.json",
+    "assets/sewer141/valve-rotor.png",
+    "sewer-wheel141.js",
+    "assets/sewer141/valve-axle.png",
+    "assets/sewer141/winch-axle.png",
+    "assets/sewer141/visual-gates.json",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

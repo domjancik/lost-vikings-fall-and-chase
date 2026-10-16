@@ -34,4 +34,12 @@ to Drowned Regulator. Coarse-touch reverse/reset route: full3/3/3 health,
 45 captures, no errors. Requested capture zooms are asserted against rendered
 camera values and every scene capture records the current imagegen90 sheets.
 
-Deployment receipts will be appended after publication.
+Published runtime commit: `7b68584`. Hosting version:
+`01M52AZXXSXD3FD78T4SN6VX0D`.
+
+Live URL: https://united-marsh-6ppd.here.now/?campaign=fall&release=sewer141
+
+Public verification confirms16 critical module/asset/manifest hashes and HTML
+match the verified build. A fresh public browser opens the sewer with release
+sewer141 and repeats all144 production-renderer stationary-cap pose checks.
+Receipts: `assets/sewer141/live-hashes.json` and `live-rotation-check.json`.

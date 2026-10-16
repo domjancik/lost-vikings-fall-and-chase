@@ -38,3 +38,13 @@ the actual production engine, scene/darkness and imagegen90 heroes: lit contact
 reduces HP3→2 with immunity; the front shield yields recoil and preserves HP3.
 Sixteen native gait poses retain the original material comparison, while192
 production raster checks prove zero pixels at/below the exclusive floor row.
+
+Published runtime commit: `df20bfe`. Hosting version:
+`01M52FE1XZCBRYWCZG0XS0V9ME`.
+
+Live URL: https://united-marsh-6ppd.here.now/?campaign=fall&release=sewer145
+
+Public verification matches16 critical module/native-art/gate/manifest hashes and
+HTML to the accepted build. The deployed production-engine seeded diagnostic
+again records lit-contact HP2 with temporary immunity and front-shield recoil
+HP3/blocks1. Receipts: assets/sewer145/live-hashes.json and live-contact-check.json.

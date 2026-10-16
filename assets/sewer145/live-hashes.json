@@ -1,0 +1,22 @@
+{
+  "commit": "df20bfe",
+  "checked": [
+    "cycle-render.js",
+    "engine.js",
+    "game.js",
+    "campaign-picker95.js",
+    "cycle-campaign.js",
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "sewer-campaign.js",
+    "scene-render95.js",
+    "sewer-lurker-art.js",
+    "world-render.js",
+    "interactions.js",
+    "assets/sewer125/props-native.png",
+    "assets/sewer145/visual-gates.json",
+    "sewer-render.js",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

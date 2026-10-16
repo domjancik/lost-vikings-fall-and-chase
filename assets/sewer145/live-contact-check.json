@@ -1,0 +1,22 @@
+[
+  {
+    "mode": "contact",
+    "hp": 2,
+    "afterImmunity": 2,
+    "phase": "retreat",
+    "blocks": 0,
+    "gaitTravel": 19.99999999999818,
+    "skin": "imagegen90",
+    "seeded": true
+  },
+  {
+    "mode": "shield",
+    "hp": 3,
+    "afterImmunity": 3,
+    "phase": "recoil",
+    "blocks": 1,
+    "gaitTravel": 25.270833333333258,
+    "skin": "imagegen90",
+    "seeded": true
+  }
+]

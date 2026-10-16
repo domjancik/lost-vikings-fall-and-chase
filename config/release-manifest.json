@@ -659,6 +659,14 @@
     {
       "source": "src/levels/pub/tutorial.js",
       "output": "pub-tutorial.js"
+    },
+    {
+      "source": "src/levels/pub/hearth.js",
+      "output": "pub-hearth.js"
+    },
+    {
+      "source": "src/levels/pub/cup-factory.js",
+      "output": "pub-cup-factory.js"
     }
   ],
   "files": [
@@ -1017,6 +1025,7 @@
     "assets/sewer136/leg-parts-native.png",
     "assets/sewer136/leg-registration.json",
     "assets/sewer136/visual-gates.json",
-    "assets/pub138/visual-gates.json"
+    "assets/pub138/visual-gates.json",
+    "assets/pub139/visual-gates.json"
   ]
 }

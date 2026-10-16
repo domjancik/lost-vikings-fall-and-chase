@@ -1,6 +1,8 @@
+import {drawAlehallHearth} from './hearth.js?v=pub139';
+import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub138';
+import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub139';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -37,9 +39,9 @@ function terrain(c,s,camera,view){const g=s.machine,hole=g.phase==='crack'||g.ph
   if(g.phase==='fall')for(let n=0;n<32;n++){const t=g.fallTime,x=1990+(n*47)%270+(n%2?1:-1)*t*25,y=760+t*(30+n%7*12)+625*t*t;c.fillStyle=n%3?'#796044':'#b29162';c.fillRect(q(x),q(y),n%2?2:4,2);}
  }
 }
-const globeFrame=t=>[0,0,1,1,2,2,2,3][Math.floor(t*4)%8];
+const globeFrame=s=>cupFactoryFrame(s);
 function globeBottom(s){return 734+(s.machine.phase==='fall'?40*s.machine.fallTime+625*s.machine.fallTime**2:alehallSag(s,2120));}
-function drawGlobe(c,s){return sprite(c,globe,globeFrame(s.time),2120,globeBottom(s),48);}
+function drawGlobe(c,s){return sprite(c,globe,globeFrame(s),2120,globeBottom(s),48);}
 // Cups in flight cross in front of bodies; cups that reached the tabletop
 // belong to the room behind them. Keep a serving attempt's departure fixed.
 export function alehallCupPoses(s){const o=s.heroes[2],cups=s.machine.cups,mode=cups.mode,age=s.time-cups.at,poses=[];
@@ -53,6 +55,7 @@ export function alehallCupPoses(s){const o=s.heroes[2],cups=s.machine.cups,mode=
  }return poses;
 }
 function drawCups(c,s,pass){if(!ready(cup))return;for(const pose of alehallCupPoses(s)){if(pose.pass!==pass)continue;c.save();c.globalAlpha=pose.alpha;c.drawImage(cup,q(pose.x-cup.width),q(pose.y-cup.height*2),cup.width*2,cup.height*2);c.restore();}}
+function drawFactoryCups(c,s){if(!ready(cup))return;const scene=cupFactoryScene(s);for(const p of [...scene.pile,...scene.flying]){c.save();c.translate(q(p.x),q(p.bottom-p.height/2));c.rotate(p.phase==='throw'?Math.round(p.angle*24)/24:p.angle);c.drawImage(cup,-6,-8,16,16);c.restore();}}
 function drawPracticeTarget(c,s){const g=s.machine,sway=q(Math.sin(s.time*7)*g.targetPose*3),lean=g.bashPose||0;c.save();c.translate(164,760);c.rotate(Math.round(-lean*.3*24)/24);sprite(c,props,3,sway,0);c.restore();}
 function drawPracticeCups(c,s){if(!ready(cup))return;for(const p of s.shots){if(p.kind!=='hall-cup')continue;c.save();c.translate(q(p.x),q(p.y));c.rotate(Math.round((p.spin||0)*24)/24);c.drawImage(cup,-cup.width,-cup.height,cup.width*2,cup.height*2);c.restore();}}
 export function drawAlehallBerth(c){return alehallBerthSteps.map(step=>{
@@ -72,7 +75,7 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  // Loft deck is attached to posts that continue to the walking floor.
  for(const x of [648,888])column(c,x,610,760);
  for(let x=640;x<900;x+=128)crop(c,architecture,10,0,20,Math.min(64,(900-x)/2),12,x,610);
- sprite(c,architecture,11,1170,760);fire(c,s.time,1170,724);
+ sprite(c,architecture,11,1170,760);const hearth=drawAlehallHearth(c,s,camera,view);
  sprite(c,props,1,1040,760);sprite(c,props,10,1020,710);
  for(const [row,x,phase]of [[0,1040,.1],[1,1350,1.7],[1,1460,3.2],[2,1620,2.3],[3,960,4.4]]){
   let frame=row===0?(g.cups.mode==='loading'?Math.min(3,Math.floor((s.time-g.cups.at)*4)):Math.floor((s.time+phase)/3)%4):Math.floor(s.time*(row===3?3:1.2)+phase)%4;
@@ -91,17 +94,17 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  if(ready(props.image)){c.save();c.translate(1708,646);c.scale(Math.max(.06,1-g.door.pose),1);props.draw(c,4,-28,0,128,128);c.restore();}
  for(const item of s.items)if(item.type==='hallKey')sprite(c,props,9,item.x,item.y+44);
  // Back room: quiet storage, a single candle and the impossible find on its stool.
- sprite(c,props,12,1850,730);sprite(c,props,2,2120,globeBottom(s)+26);drawGlobe(c,s);
+ sprite(c,props,12,1850,730);sprite(c,props,2,2120,globeBottom(s)+26);drawGlobe(c,s);drawFactoryCups(c,s);
  contacts.push({kind:'cart',...sprite(c,props,0,g.cart.x,760),top:g.cart.y});
- return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,berthTreads,far,phase:g.phase,globe:{frame:globeFrame(s.time),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
+ return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,berthTreads,far,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
 }
 let darkness;
 export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mechanic!=='alehall')return null;const g=s.machine,mode=g.cups.mode;
  drawCups(c,s,'overlay');
  drawPracticeCups(c,s);
  darkness??=document.createElement('canvas');const w=Math.ceil(view.width/2),h=Math.ceil(view.height/2);if(darkness.width!==w||darkness.height!==h){darkness.width=w;darkness.height=h;}const d=darkness.getContext('2d');d.clearRect(0,0,w,h);d.globalCompositeOperation='source-over';d.fillStyle='rgba(8,11,13,.9)';d.fillRect(0,0,w,h);d.globalCompositeOperation='destination-out';
- for(const light of [{x:1850,y:702,r:125,light:.8},{x:2120,y:globeBottom(s)-28,r:170,light:.96}]){const x=(light.x-camera.x)/2,y=(light.y-camera.y)/2,r=light.r/2,a=d.createRadialGradient(x,y,0,x,y,r);a.addColorStop(0,`rgba(0,0,0,${light.light})`);a.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=a;d.fillRect(x-r,y-r,r*2,r*2);}
- c.save();c.beginPath();c.rect(1774,390,626,860);c.clip();c.drawImage(darkness,camera.x,camera.y,w*2,h*2);c.restore();drawGlobe(c,s);fire(c,s.time,1850,704,.35);
- if(g.dialogue&&s.time<g.dialogue.until){const words=(g.dialogue.speaker+': '+g.dialogue.text).split(' '),lines=[''];for(const word of words){if(lines.at(-1).length+word.length>39)lines.push(word);else lines[lines.length-1]+=(lines.at(-1)?' ':'')+word;}const x=g.phase==='play'?g.dialogue.x:2120,y=g.phase==='play'?650:Math.min(630,s.heroes[0].y-90);lines.forEach((line,n)=>text(line,x,y+n*17,'#e4d7b7',10));}
+ for(const light of [{x:1850,y:702,r:125,light:.8},{x:2120,y:globeBottom(s)-28,r:310,light:.96}]){const x=(light.x-camera.x)/2,y=(light.y-camera.y)/2,r=light.r/2,a=d.createRadialGradient(x,y,0,x,y,r);a.addColorStop(0,`rgba(0,0,0,${light.light})`);a.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=a;d.fillRect(x-r,y-r,r*2,r*2);}
+ c.save();c.beginPath();c.rect(1774,390,626,860);c.clip();c.drawImage(darkness,camera.x,camera.y,w*2,h*2);c.restore();fire(c,s.time,1850,704,.35);
+ if(g.dialogue&&s.time<g.dialogue.until){const words=(g.dialogue.speaker+': '+g.dialogue.text).split(' '),lines=[''];for(const word of words){if(lines.at(-1).length+word.length>39)lines.push(word);else lines[lines.length-1]+=(lines.at(-1)?' ':'')+word;}const x=g.phase==='play'?g.dialogue.x:2120,y=g.phase==='play'?650:Math.min(630,s.heroes[0].y-90);lines.forEach((line,n)=>text(line,x,y+n*17,'#e4d7b7',10,0,100));}
  return {phase:g.phase,cups:mode,darkRoom:true,readbacks:0};
 }

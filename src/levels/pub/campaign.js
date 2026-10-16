@@ -1,3 +1,4 @@
+import {createCupFactory,stepCupFactory} from './cup-factory.js?v=pub139';
 import {invitePractice,startCupPractice,bashPractice,cupPracticeStep} from './tutorial.js?v=pub138';
 import {prepareMotion,integrateMotion} from '../../core/movement.js';
 import {pickupItem,useItem,message} from '../../core/inventory.js?v=alehall135';
@@ -16,7 +17,7 @@ export function setupAlehall(s){
  s.campaign='cycle';s.round=11;s.level=alehallLevel;s.crate=false;s.turret=false;s.enemies=[];s.shots=[];s.items=[{id:'hall-key',type:'hallKey',x:730,y:566}];
  for(const h of s.heroes)Object.assign(h,{x:[620,690,1100][h.id],y:716,ground:true,vx:0,vy:0,support:null,rotation:0,boots:false,magnet:null});
  Object.assign(s.heroes[2],{face:-1,shield:true,shieldUp:false});
- s.machine={phase:'play',invitations:{},bashHit:false,bashAt:-10,bashPose:0,defense:{phase:'idle',at:0},defenseBlocks:0,cart:{x:1020,y:706,w:96,parked:false},door:{open:false,pose:0},cups:{mode:'empty',at:0},served:false,targetHit:false,targetPose:0,wrapCut:false,wrapPose:0,inspectClock:0,crackTime:0,fallTime:0,bend:0,events:[],eventSerial:0,dialogue:{speaker:'ASTRID',text:'You know where the cask belongs, Olaf. Your places are still warm.',x:1040,until:6}};
+ s.machine={phase:'play',factory:createCupFactory(),invitations:{},bashHit:false,bashAt:-10,bashPose:0,defense:{phase:'idle',at:0},defenseBlocks:0,cart:{x:1020,y:706,w:96,parked:false},door:{open:false,pose:0},cups:{mode:'empty',at:0},served:false,targetHit:false,targetPose:0,wrapCut:false,wrapPose:0,inspectClock:0,crackTime:0,fallTime:0,bend:0,events:[],eventSerial:0,dialogue:{speaker:'ASTRID',text:'You know where the cask belongs, Olaf. Your places are still warm.',x:1040,until:6}};
  s.itemAction=(type,h,slot)=>{if(type!=='hallKey'||Math.abs(h.x-1730)>85||Math.abs(h.y-716)>50)return false;s.machine.door.open=true;h.inventory[slot]=null;emit(s,'door',1730);say(s,'ASTRID','The fishers left their find in the back. All three of you should see it.',1730,5);return true;};
 }
 export function alehallObjects(s){const g=s.machine;return[
@@ -57,8 +58,9 @@ function cinematic(s,dt){const g=s.machine,velocities=s.heroes.map(h=>h.vx);prep
  else g.fallTime+=dt;
  integrateMotion(s,alehallSurfaces(s),[],dt);s.won=g.phase==='fall'&&s.heroes.every(h=>h.y+44>1070);
 }
-export function alehallCamera(s,fallback){if(s.level.mechanic!=='alehall'||s.machine.phase==='play')return fallback;return {x:2085,y:s.heroes.reduce((n,h)=>n+h.y,0)/3,vx:0,vy:0};}
+export function alehallCamera(s,fallback){if(s.level.mechanic!=='alehall'||s.machine.phase==='play')return fallback;return {x:2120,y:s.heroes.reduce((n,h)=>n+h.y,0)/3,vx:0,vy:0};}
 export function alehallStep(s,input,dt){const g=s.machine,a=s.heroes[s.active];s.time+=dt;s.cooldown=Math.max(0,s.cooldown-dt);
+ if(stepCupFactory(s,dt))emit(s,'cupLand',2324);
  if(g.phase!=='play'){cinematic(s,dt);return;}
  for(const h of s.heroes)h.swing=Math.max(0,(h.swing||0)-dt);
  prepareMotion(s,input,dt);bashPractice(s,dt,say,emit);g.pushing=false;pushCart(s,dt);
@@ -76,4 +78,4 @@ export function alehallStep(s,input,dt){const g=s.machine,a=s.heroes[s.active];s
  if(g.door.pose===1&&s.heroes.every(h=>h.x>1820&&h.y+44>735&&h.y+44<775)){g.phase='inspect';g.inspectClock=0;Object.assign(s.heroes[2],{shieldUp:false,shield:true});if(['carried','loading'].includes(g.cups.mode))g.cups={mode:'spilled',at:s.time};emit(s,'inspect',2120);}
 }
 
-export function alehallViewport(s,view){if(s.level.mechanic!=='alehall'||s.machine.phase==='play'||view.width>=440)return view;return {...view,width:440,height:Math.round(view.height*440/view.width)};}
+export function alehallViewport(s,view){if(s.level.mechanic!=='alehall'||s.machine.phase==='play'||view.width>=560)return view;return {...view,width:560,height:Math.round(view.height*560/view.width)};}

@@ -21,6 +21,12 @@ The critique subagent must record two separate verdicts in the review log:
   silhouettes, outlines, noise, alpha, mirrored poses, equipment bounds,
   stable frame registration and actual visible contacts.
 
+Capture labels must match the authoritative rendered `camera.zoom` and view
+dimensions. Wait for each zoom click to change the rendered value before clicking
+again; assert the requested value before capture. Reject stale/duplicate apparent
+scales and empty transition frames as visibility evidence. File names or a zoom
+request alone do not establish actual1x/2x proof.
+
 Record dimensions and source/capture paths with both verdicts. Missing evidence
 or a failed verdict blocks publication of the affected assets. Correct the art
 and repeat the affected review. Dimensions, alpha tests and level completion

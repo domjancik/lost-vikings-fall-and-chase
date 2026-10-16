@@ -4,9 +4,9 @@ export function drawLabels(canvas,labels,camera,scale,dpr=1,cameraY=0){
  const w=Math.round(width*dpr),h=Math.round(height*dpr);if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}
  g.setTransform(dpr,0,0,dpr,0,0);g.clearRect(0,0,width,height);g.textAlign='center';g.lineJoin='round';
  const visible=[];
- for(const label of labels){const p=labelLayout(label,camera,scale,cameraY);if(p.x<0||p.x>width||p.y<0||p.y>height)continue;
+ for(const label of [...labels].sort((a,b)=>(a.priority||0)-(b.priority||0))){const p=labelLayout(label,camera,scale,cameraY);if(p.x<0||p.x>width||p.y<0||p.y>height)continue;
   g.font=`700 ${p.fontSize}px ui-monospace, monospace`;const textWidth=g.measureText(label.t).width;const x=textWidth<width-16?Math.max(textWidth/2+8,Math.min(width-textWidth/2-8,p.x)):width/2;
-  g.save();g.translate(x,p.y);g.rotate(label.angle||0);g.lineWidth=3;g.strokeStyle='rgba(5,10,16,.95)';g.strokeText(label.t,0,0,width-16);g.fillStyle=label.c;g.fillText(label.t,0,0,width-16);g.restore();visible.push({text:label.t,fontSize:p.fontSize});
+  g.save();g.translate(x,p.y);g.rotate(label.angle||0);g.lineWidth=3;g.strokeStyle='rgba(5,10,16,.95)';g.strokeText(label.t,0,0,width-16);g.fillStyle=label.c;g.fillText(label.t,0,0,width-16);g.restore();visible.push({text:label.t,fontSize:p.fontSize,priority:label.priority||0});
  }
  canvas.dataset.labels=JSON.stringify(visible);canvas.dataset.minFont=String(visible.length?Math.min(...visible.map(l=>l.fontSize)):11);
 }

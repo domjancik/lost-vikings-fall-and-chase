@@ -1,5 +1,5 @@
 import {drawSewerSpray} from './stream-render.js?v=sewer136';
-import {drawSewerGlobe} from './globe-art.js?v=sewer136';
+import {drawSewerGlobe,sewerGlobeArtState} from './globe-art.js?v=pub139';
 import {lurkerDeathPose} from './lurker-art.js?v=sewer132';
 import {drawSewerFog} from './fog.js?v=sewer130';
 import {snapPixel as q} from '../../render/pixel-grid.js';
@@ -75,11 +75,12 @@ export function drawSewerWorld(c,s,camera,view){const g=s.machine,contacts=[],li
  for(const e of g.lurkers){if(!e.hp){contacts.push(deadLurker(c,e,s.time));continue;}const n=e.phase==='warning'?14:e.phase==='recoil'||e.phase==='retreat'?15:12+Math.floor(s.time*6)%2;cell(c,props,n,e.x-64,e.y-120,e.dir>0);contacts.push({kind:'lurker',id:e.id,x:e.x,sole:e.y,phase:e.phase,warning:e.warning});}
  // Moisture has no self-light: it only becomes visible inside real lamp pools.
  for(let n=0;n<28;n++){const x=430+n*91,y=584+(s.time*50+n*29)%176;c.fillStyle='#728b83';c.fillRect(q(x),q(y),2,4);}for(let x=0;x<2700;x+=86){c.fillStyle='#526766';c.fillRect(x,758,18,2);}
- flow(c,s);const globeArt=drawSewerGlobe(c,s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});
+ flow(c,s);const globeArt=sewerGlobeArtState(s);contacts.push({kind:'creation-globe',...globeArt});contacts.push({kind:'water-outlet',captureX:2780,stream:g.stream,captured:[...g.captured],travel:[...g.escapeTravel]});
  return{ready:[environment,props,items,grounded].every(ready)&&(!globeArt||globeArt.ready),mechanic:'sewer',release:'sewer136',contacts,lamps:sewerLights(s),blackAmbient:false,occludedAmbient:true};
 }
 let mask;
 export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer')return null;
+ const globeArt=drawSewerGlobe(c,s);
  // Foreground crests cross the lower body, so capture reads as immersion.
  for(const h of s.heroes)if(s.machine.captured[h.id]&&!h.sweptAway){
   const t=s.machine.escapeTravel[h.id],depth=Math.min(24,t*.18),base=h.y+40-depth;
@@ -109,5 +110,5 @@ export function drawSewerDarkness(c,s,camera,view){if(s.level.mechanic!=='sewer'
  // The front-facing cap receives the light at its upper edge; the solid slab
  // still occludes everything behind/below it. This is surface lighting, not fill.
  for(const f of sewerOccluders(s).filter(a=>['floor','platform','landing'].includes(a.kind)))for(let x=Math.max(f.x,Math.floor(camera.x/16)*16);x<Math.min(f.x+f.w,camera.x+view.width);x+=16){const strength=Math.max(sewerLightAt(s,x+8,f.y-2),f.kind==='landing'?sewerFaceLight(s,f,f.y+10)*.75:0);if(strength<.02)continue;c.save();c.globalAlpha=strength*.86;c.beginPath();c.rect(x,f.y,Math.min(16,f.x+f.w-x),20);c.clip();floor(c,Math.floor(x/120)*120,f.y,120,20);c.restore();}
- return{ambient:0,lights:visible,occluders:walls.length,native:[width,height],readbacks:0,fog};
+ return{globe:globeArt,globePass:'foreground',ambient:0,lights:visible,occluders:walls.length,native:[width,height],readbacks:0,fog};
 }

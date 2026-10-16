@@ -50,5 +50,7 @@ export function drawSewerGlobe(c,s){
   c.save();c.beginPath();c.rect(g.x-80,q(g.y+20-8*g.legs),160,120);c.clip();
   for(const leg of legs.filter(a=>a.near))drawLeg(c,leg);c.restore();
  }
- c.restore();return {phase:g.phase,ready:body.complete&&body.naturalWidth>0&&parts.every(a=>a.complete&&a.naturalWidth>0),nativePixel:2,bodyDiameter:40,legCount:g.legs>.01?6:0,legs:legs.map(a=>({...a,visible:g.legs>.01}))};
+ c.restore();return sewerGlobeArtState(s);
 }
+
+export function sewerGlobeArtState(s){const g=s.machine.globe;if(!g||g.phase==='gone')return null;const legs=sewerGlobeRig(g);return {phase:g.phase,ready:body.complete&&body.naturalWidth>0&&parts.every(a=>a.complete&&a.naturalWidth>0),nativePixel:2,bodyDiameter:40,legCount:g.legs>.01?6:0,legs:legs.map(a=>({...a,visible:g.legs>.01}))};}

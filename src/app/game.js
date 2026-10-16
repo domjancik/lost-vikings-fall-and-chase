@@ -1,14 +1,14 @@
 import {campaignFamily,campaignRoundKey,resumeRound} from './campaign-progress.js?v=campaign137';
 import {sewerGlobeCamera,sewerGlobeViewport,sewerGlobeIntro} from '../levels/sewer/globe.js?v=sewer136';
-import {alehallCamera,alehallViewport,alehallStep} from '../levels/pub/campaign.js?v=pub138';
-import {drawAlehallOverlay} from '../levels/pub/render.js?v=pub138';
+import {alehallCamera,alehallViewport,alehallStep} from '../levels/pub/campaign.js?v=pub139';
+import {drawAlehallOverlay} from '../levels/pub/render.js?v=pub139';
 import {createAlehallSounds} from '../levels/pub/audio.js?v=pub138';
 import {fullscreenMode,toggleGameFullscreen} from './fullscreen.js?v=ios131';
 import {departureMethod,departureAnchor,arrivalMethod,ENTRY_DURATION,arrivalSpawns,canAdvance,createTravelKeys} from '../render/level-transition.js?v=alehall135';
 import {drawTransitionWarp,drawLevelTransition} from '../render/transition-render.js?v=alehall135';
 import {worldSoundOptions} from '../audio/event-options.js?v=sewer125';
 import {campaignOrder,campaignPosition,campaignNext,campaignPrevious} from '../campaigns/machines/cycle-order.js?v=campaign137';
-import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer136';
+import {drawSewerDarkness} from '../levels/sewer/render.js?v=pub139';
 import {createSewerSounds} from '../levels/sewer/audio.js?v=sewer136';
 import {sweptHeroPose} from '../levels/sewer/water-transit.js?v=transitions126';
 import {createLodeSounds} from '../levels/lode/audio.js?v=lode123';
@@ -19,8 +19,8 @@ import {createOrbitSounds} from "../levels/orbit/audio.js?v=orbit120";
 import {orbitCameraFocus,orbitViewport} from "../levels/orbit/view.js?v=alehall135";
 import {drawMagneticHero} from "../heroes/magnetic-render.js?v=orbit121";
 import {mountHeroResource,updateHeroResource} from './hero-resources.js?v=orbit116';
-import {campaignMenu} from './campaign-menu.js?v=pub138';
-import {drawScene} from '../render/scene-render95.js?v=pub138';
+import {campaignMenu} from './campaign-menu.js?v=pub139';
+import {drawScene} from '../render/scene-render95.js?v=pub139';
 import {syncShieldArtPose} from '../heroes/hero-shield-registration.js?v=orbit121';
 import {drawWardenOverlay} from '../levels/warden/render.js?v=warden105';
 import {drawWaterOverlay} from '../levels/water/render.js?v=orbit116';
@@ -28,7 +28,7 @@ import {readSkin,saveSkin,skinOptions} from '../heroes/hero-skins.js?v=orbit121'
 import {setHeroSkin} from '../heroes/hero-art.js?v=orbit121';
 import {clockworkView} from '../levels/clockwork/view.js?v=momentum72';
 import {drawClockworkInset} from '../levels/clockwork/render.js?v=orbit121';
-import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=pub138';
+import {cycleLevels} from '../campaigns/machines/cycle-campaign.js?v=pub139';
 const campaignLevels=c=>campaignFamily(c)==='cycle'?cycleLevels:c==='story'?storyLevels:arcadeLevels;
 const roundPosition=()=>campaignPosition(campaign,round,levels.length);
 const lastRound=()=>roundPosition()===campaignOrder(campaign,levels.length).length-1;
@@ -47,17 +47,17 @@ import {itemTypes,useItem,transferItem,dropItem} from '../core/inventory.js?v=al
 import {drawItemSprite} from '../render/inventory-render.js?v=alehall135';
 import {drawBashEffects} from '../core/bash.js?v=arc46';
 import {cameraTarget,cameraLookDirection} from '../render/view-camera.js?v=look58';
-import {drawLabels} from '../render/text-render.js?v=orbit113';
+import {drawLabels} from '../render/text-render.js?v=pub139';
 import {WORLD_PIXEL,rasterSize,snapPixel} from '../render/pixel-grid.js?v=arc46';
 import {drawProjectile,projectilePose,environmentPose} from '../render/environment-animation.js?v=arc46';
 import {viewportSize,storedZoom,nextZoom} from '../render/background-render.js?v=zoom127';
 import {createControls,keyAction,selectHudHero,bindControlSelectionGuards} from './controls.js?v=ios131';
-import {groundShadow} from '../render/ground-shadow.js?v=pub138';
+import {groundShadow} from '../render/ground-shadow.js?v=pub139';
 import {drawSprite,animationFor,heroesReady,whenHeroesReady} from '../heroes/sprite-render.js?v=orbit121';
 import {heroDrawOrder} from '../heroes/hero-render-order.js?v=platform56r3';
 import {levels as arcadeLevels} from '../campaigns/arcade/levels.js?v=arc46';
-import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=pub138';
-import {createState,step,platforms,W,H} from '../core/engine.js?v=pub138';
+import {objective,nearbyInteraction,debugState} from '../core/interactions.js?v=pub139';
+import {createState,step,platforms,W,H} from '../core/engine.js?v=pub139';
 bindControlSelectionGuards(document);
 const mobileControlsMedia=window.matchMedia('(max-width:960px), (pointer:coarse)');
 const canvas=document.querySelector('#game'),screen=canvas.getContext('2d'),surface=document.createElement('canvas'),ctx=surface.getContext('2d');ctx.imageSmoothingEnabled=false;screen.imageSmoothingEnabled=false;
@@ -66,7 +66,7 @@ let zoom=2;try{zoom=storedZoom(localStorage.getItem('last-call-zoom'));}catch{}l
 const transit=document.createElement('canvas');transit.id='portal-transit';transit.setAttribute('aria-hidden','true');transit.hidden=true;document.querySelector('.viewport').append(transit);let completion=null,arrival=null;document.addEventListener('close',()=>{if(arrival)travelKeys.beginEntry();},true);
 const colors=['#db6b3d','#69b5b2','#dfb952'];const labels=document.createElement('canvas');labels.id='game-labels';labels.setAttribute('aria-hidden','true');canvas.after(labels);let labelQueue=[];
 function box(c,x,y,w,h){ctx.fillStyle=c;ctx.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));}
-function text(t,x,y,c='#eee2b8',size=12,angle=0){labelQueue.push({t,x,y,c,size,angle});}
+function text(t,x,y,c='#eee2b8',size=12,angle=0,priority=0){labelQueue.push({t,x,y,c,size,angle,priority});}
 let hintsVisible=false;try{hintsVisible=hintPreference(localStorage.getItem('last-call-hints'));}catch{}
 const worldText=worldLabels(text,()=>hintsVisible);
 let selectedSkin=readSkin(localStorage);

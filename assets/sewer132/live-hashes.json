@@ -1,0 +1,23 @@
+{
+  "commit": "4da00fd",
+  "checked": [
+    "campaign-picker95.js",
+    "cycle-render.js",
+    "engine.js",
+    "game.js",
+    "cycle-campaign.js",
+    "campaign-menu95.js",
+    "sewer-light.js",
+    "level-preview95.js",
+    "world-render.js",
+    "interactions.js",
+    "scene-render95.js",
+    "sewer-campaign.js",
+    "sewer-audio.js",
+    "sewer-render.js",
+    "sewer-optics.js",
+    "release-manifest.json",
+    "sewer-lurker-art.js"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

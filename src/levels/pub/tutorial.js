@@ -42,9 +42,9 @@ export function invitePractice(s,say){
   'Try the key at the door beyond me.',
   'Stand beside the storeroom door and press {use} to unlock it.']],
  ['find',g.door.open&&h.x>1420,'RUNA',1620,[
-  'Bring all three of you through. I want you to see what we hauled ashore.',
-  'Something is making cups in there. All three of you should look.',
-  'Walk each Viking through the open door into the back room.']]
+  'I left it on the stool. I couldn’t bring myself to throw it back.',
+  'It kept making cups, even under a cloth.',
+  'Ask the others what they make of it. I’ve run out of guesses.']]
  ];
  for(const [id,ready,speaker,x,lines]of offers){
   if(!ready||Math.abs(h.x-x)>360)continue;

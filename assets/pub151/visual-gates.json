@@ -1,0 +1,46 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB151-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Retained patrons-native source inspected directly: no generated/resampled art, native density remains two world units per pixel. Musician row3 now Halldor1540 inside the roof, Torsten440 uses cloaked spectator row1. Detailed source material, adult scale and floor760 contacts preserved. Halldor has visible clearance from Hakon/Runa and lyre sound follows his actual registry position."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "27 focused tests independently pass for measured same-canvas speech, speaker anchors, minimum text/short panels, musician/audio position, unchanged story, repeated invitations and healthy60/120Hz routes. Independently checked all18actual1x/1.5x/2x panel/glyph bounds and current-skin receipts; errors[]. Coarse-touch full route wins60.275seconds, all heroes3HP,8captures/errors[], sewer fall entry. Durable rawSHA256/result/arrival/count/touch flag independently verified."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Actual desktop/landscape/portrait views show readable glyphs inside coherently scaled fitted panels, with bounded wrapping and real speaker attachment. No text/background scaling mismatch remains. Sheltered musician is grounded, richly shaded and clearly separated from nearby patrons; instrument no longer in rain. Familiar Norse hall visual language and latest Viking sheets remain coherent."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Exact Runa net account and fishers-find opening clause preserved. Repeated story lines convey natural curiosity about the object and cups, replacing robotic party-count instructions. Existing collaborative key/door/inspection/fall mechanics remain clearable with no new hidden social-task gate."
+  },
+  "nativeWorldPixel": 2,
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/patrons-native.png",
+    "assets/alehall135/registration.json",
+    "assets/pub151/dialogue/evidence.json",
+    "assets/pub151/dialogue/yard-desktop-1x.png",
+    "assets/pub151/dialogue/yard-landscape-1.5x.png",
+    "assets/pub151/dialogue/yard-landscape-2x.png",
+    "assets/pub151/dialogue/yard-portrait-2x.png",
+    "assets/pub151/dialogue/fisher-desktop-2x.png",
+    "assets/pub151/dialogue/fisher-landscape-1.5x.png",
+    "assets/pub151/dialogue/fisher-portrait-1x.png",
+    "assets/pub151/dialogue/fisher-portrait-1.5x.png",
+    "assets/pub151/dialogue/fisher-portrait-2x.png",
+    "assets/pub151/route-check.json"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

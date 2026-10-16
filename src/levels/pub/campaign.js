@@ -1,6 +1,6 @@
-import {speakerAnchor} from './dialogue.js?v=pub147';
+import {speakerAnchor} from './dialogue.js?v=pub151';
 import {createCupFactory,stepCupFactory} from './cup-factory.js?v=pub139';
-import {invitePractice,startCupPractice,bashPractice,cupPracticeStep} from './tutorial.js?v=pub147';
+import {invitePractice,startCupPractice,bashPractice,cupPracticeStep} from './tutorial.js?v=pub151';
 import {prepareMotion,integrateMotion} from '../../core/movement.js';
 import {pickupItem,useItem,message} from '../../core/inventory.js?v=alehall135';
 import {segmentHit} from '../../core/projectile-collision.js';
@@ -19,7 +19,7 @@ export function setupAlehall(s){
  for(const h of s.heroes)Object.assign(h,{x:[620,690,ALEHALL_CASK.start+80][h.id],y:716,ground:true,vx:0,vy:0,support:null,rotation:0,boots:false,magnet:null});
  Object.assign(s.heroes[2],{face:-1,shield:true,shieldUp:false});
  s.machine={phase:'play',factory:createCupFactory(),invitations:{},bashHit:false,bashAt:-10,bashPose:0,defense:{phase:'idle',at:0},defenseBlocks:0,cart:{x:ALEHALL_CASK.start,y:ALEHALL_CASK.top,w:ALEHALL_CASK.w,parked:false},door:{open:false,pose:0},cups:{mode:'empty',at:0},served:false,targetHit:false,targetPose:0,wrapCut:false,wrapPose:0,inspectClock:0,crackTime:0,fallTime:0,bend:0,events:[],eventSerial:0,dialogue:{speaker:'ASTRID',text:'You know where the cask belongs, Olaf. Your places are still warm.',x:1040,until:6,kind:'opener'}};
- s.itemAction=(type,h,slot)=>{if(type!=='hallKey'||Math.abs(h.x-1730)>85||Math.abs(h.y-716)>50)return false;s.machine.door.open=true;h.inventory[slot]=null;emit(s,'door',1730);say(s,'ASTRID','The fishers left their find in the back. All three of you should see it.',1730,5);return true;};
+ s.itemAction=(type,h,slot)=>{if(type!=='hallKey'||Math.abs(h.x-1730)>85||Math.abs(h.y-716)>50)return false;s.machine.door.open=true;h.inventory[slot]=null;emit(s,'door',1730);say(s,'ASTRID','The fishers left their find in the back. Mind the cups underfoot.',1730,5);return true;};
 }
 export function alehallObjects(s){const g=s.machine;return[
  {id:'ale',x:1040,y:716,radius:65,title:'ASTRID / ALE',ready:true,run:()=>{const o=s.heroes[s.active];if(o.id===2&&o.shieldUp&&!['loading','carried','serving'].includes(g.cups.mode)&&!g.served){g.cups={mode:'loading',at:s.time};emit(s,'pour',1040);say(s,'ASTRID','Steady now. Three cups for the usual table.',1040);}else say(s,'ASTRID',g.served?'They were asking after you. Sit with them a while.':'Raise your shield, Olaf. I will put the cups on it.',1040);return 'Astrid looks up from the ale jug.';}},

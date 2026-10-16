@@ -1,4 +1,4 @@
-import {alehallLevel,setupAlehall,alehallStep,alehallObjects,alehallSurfaces} from '../../levels/pub/campaign.js?v=pub147';
+import {alehallLevel,setupAlehall,alehallStep,alehallObjects,alehallSurfaces} from '../../levels/pub/campaign.js?v=pub151';
 import {sewerLevel,setupSewer,sewerStep,sewerObjects,sewerSurfaces} from '../../levels/sewer/campaign.js?v=sewer150';
 import {lodeLevel,setupLode,lodeStep,lodeObjects,lodeSurfaces} from '../../levels/lode/campaign.js?v=alehall135';
 import {orbitLevel,setupOrbit,orbitStep,orbitObjects,orbitSurfaces} from "../../levels/orbit/campaign.js?v=alehall135";

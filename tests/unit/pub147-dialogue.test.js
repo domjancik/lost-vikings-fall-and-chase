@@ -7,7 +7,7 @@ import fs from 'node:fs';
 test('speech follows the actual NPC or Viking, not the location of the task',()=>{
  const s=createState(11,'cycle');say(s,'ASTRID','That delivery is ready.',1550);assert.equal(s.machine.dialogue.x,PUB_PEOPLE.ASTRID.x);
  s.heroes[2].x=2114;s.heroes[2].y=726;assert.deepEqual(speakerAnchor(s,'OLAF'),{x:2114,y:684});
- const layout=dialogueLayout(s,{x:900,y:400},{width:430,height:780,mobile:true});assert.equal(layout.anchor.x,PUB_PEOPLE.ASTRID.x);assert.ok(layout.x-layout.w/2>=910);assert.ok(layout.x+layout.w/2<=1320);
+ const layout=dialogueLayout(s,{x:900,y:400},{width:430,height:780,mobile:true});assert.equal(layout.anchor.x,PUB_PEOPLE.ASTRID.x);assert.equal(layout.kind,'speech');assert.equal(layout.text,'ASTRID: That delivery is ready.');
 });
 test('unfinished lessons repeat with different wording and then explicit controls, completed ones stop',()=>{
  const s=createState(11,'cycle');s.active=1;s.heroes[1].x=400;const messages=[];

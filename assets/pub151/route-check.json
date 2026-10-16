@@ -1,0 +1,4410 @@
+{
+  "source": "output/pub151/route/route.json",
+  "sha256": "8eb73f2967c1880a6b208567cc2e70501509afceecc553651ae38be6b25cd7ab",
+  "result": {
+    "won": true,
+    "hp": [
+      3,
+      3,
+      3
+    ],
+    "time": 60.27499999999722,
+    "milestones": [
+      {
+        "name": "blocked-underloft",
+        "time": 0.7666666666666664,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 732.9861111111094,
+            "y": 670,
+            "vx": 0,
+            "vy": 0,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": -28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": 0.13962634015954636,
+              "mode": "front",
+              "cell": 8
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1100,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 0.7666666666666664,
+            "made": 0,
+            "pile": 8,
+            "flying": []
+          },
+          "invitations": {},
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 1020,
+            "y": 706,
+            "w": 96,
+            "parked": false
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "empty",
+            "at": 0
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [],
+          "eventSerial": 0,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+            "x": 1040,
+            "until": 6,
+            "kind": "opener"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "push-sledge",
+        "time": 1.6416666666666633,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 621.9166666666666,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": -28.675,
+              "y": 7.647500000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": 0.13962634015954636,
+              "mode": "front",
+              "cell": 10
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1100,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 1.6416666666666633,
+            "made": 1,
+            "pile": 8,
+            "flying": [
+              {
+                "id": 0,
+                "x": 2217.5833333333326,
+                "y": 665.2847222222221,
+                "bottom": 665.2847222222221,
+                "angle": 4.450589592585562,
+                "height": 12,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {},
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 1020,
+            "y": 706,
+            "w": 96,
+            "parked": false
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "empty",
+            "at": 0
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [],
+          "eventSerial": 0,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "You know where the cask belongs, Olaf. Your places are still warm.",
+            "x": 1040,
+            "until": 6,
+            "kind": "opener"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "parked-sledge",
+        "time": 2.949999999999992,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 621.9166666666666,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": -28.860000000000003,
+              "y": 9.682500000000005,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": 0.13962634015954636,
+              "mode": "front",
+              "cell": 5
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 920,
+            "y": 716,
+            "vx": -150,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 2.949999999999992,
+            "made": 1,
+            "pile": 9,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "empty",
+            "at": 0
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            }
+          ],
+          "eventSerial": 2,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "That clears the aisle. Thank you.",
+            "x": 1040,
+            "until": 6.941666666666659,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "barrel-short",
+        "time": 4.525000000000015,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 744.2986111111089,
+            "y": 716,
+            "vx": -230,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": -28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": 0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 920,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 4.525000000000015,
+            "made": 2,
+            "pile": 9,
+            "flying": [
+              {
+                "id": 1,
+                "x": 2170.2500000000023,
+                "y": 670.5624999999986,
+                "bottom": 670.5624999999986,
+                "angle": 4.869468613064092,
+                "height": 16,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "empty",
+            "at": 0
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            }
+          ],
+          "eventSerial": 2,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "That clears the aisle. Thank you.",
+            "x": 1040,
+            "until": 6.941666666666659,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "carry-ale",
+        "time": 5.108333333333377,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 619.1597222222223,
+            "y": 716,
+            "vx": -13.333333333333346,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": -28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": 0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 920,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 5.108333333333377,
+            "made": 2,
+            "pile": 9,
+            "flying": [
+              {
+                "id": 1,
+                "x": 2269.416666666674,
+                "y": 701.284722222231,
+                "bottom": 701.284722222231,
+                "angle": 1.204277183875818,
+                "height": 16,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "empty",
+            "at": 0
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            }
+          ],
+          "eventSerial": 2,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "That clears the aisle. Thank you.",
+            "x": 1040,
+            "until": 6.941666666666659,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "tray-loaded",
+        "time": 7.133333333333478,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 619.1597222222223,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 37
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1041.625,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 7.133333333333478,
+            "made": 2,
+            "pile": 10,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "carried",
+            "at": 7.11666666666681
+          },
+          "served": false,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            }
+          ],
+          "eventSerial": 4,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Steady now. Three cups for the usual table.",
+            "x": 1040,
+            "until": 10.216666666666764,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "shield-practice",
+        "time": 10.541666666666709,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 619.1597222222223,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 19.11666666666667,
+              "y": -5.565555555555562,
+              "rx": 20.784609690826528,
+              "ry": 21.588457268119896,
+              "roll": -0.0930842267730309,
+              "mode": "front",
+              "cell": 49
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1389.5,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 10.541666666666709,
+            "made": 3,
+            "pile": 11,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "idle",
+            "at": 0
+          },
+          "defenseBlocks": 0,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            }
+          ],
+          "eventSerial": 7,
+          "dialogue": {
+            "speaker": "HAKON",
+            "text": "There you are. We thought the rain had washed you away.",
+            "x": 1460,
+            "until": 13.650000000000093,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "straw-practice",
+        "time": 13.549999999999871,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 619.1597222222223,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 690,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1394.9166666666665,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 13.549999999999871,
+            "made": 4,
+            "pile": 12,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": false,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            }
+          ],
+          "eventSerial": 14,
+          "dialogue": {
+            "speaker": "HAKON",
+            "text": "Not a drop on you! That shield still earns its keep.",
+            "x": 1460,
+            "until": 17.54999999999987,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "running-bash",
+        "time": 15.941666666666402,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 619.1597222222223,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 350.7291666666644,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1394.9166666666665,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 15.941666666666402,
+            "made": 5,
+            "pile": 13,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": false,
+          "bashAt": -10,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0.9833333333333333,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            }
+          ],
+          "eventSerial": 17,
+          "dialogue": {
+            "speaker": "TORSTEN",
+            "text": "A steady hand. Some things have not changed.",
+            "x": 440,
+            "until": 19.9416666666664,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "cut-delivery",
+        "time": 17.924999999999624,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 224.3506944444443,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 350.7291666666644,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 9
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1394.9166666666665,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 17.924999999999624,
+            "made": 6,
+            "pile": 13,
+            "flying": [
+              {
+                "id": 5,
+                "x": 2311.8499999999176,
+                "y": 704.7624999999196,
+                "bottom": 704.7624999999196,
+                "angle": 1.0995574287587981,
+                "height": 16,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0.9259259259258864,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": false,
+          "wrapPose": 0,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            }
+          ],
+          "eventSerial": 18,
+          "dialogue": {
+            "speaker": "TORSTEN",
+            "text": "Still harder than a ship’s prow! Glad that was only straw.",
+            "x": 440,
+            "until": 21.7916666666663,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "delivery-open",
+        "time": 23.791666666665957,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 224.3506944444443,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1394.9166666666665,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 23.791666666665957,
+            "made": 8,
+            "pile": 15,
+            "flying": [
+              {
+                "id": 7,
+                "x": 2179.2499999998845,
+                "y": 662.2013888889419,
+                "bottom": 662.2013888889419,
+                "angle": 4.45058959259002,
+                "height": 16,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            }
+          ],
+          "eventSerial": 21,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Good. The clean cups can dry by the hearth.",
+            "x": 1040,
+            "until": 26.98333333333267,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "shield-step",
+        "time": 23.791666666665957,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 224.3506944444443,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.295000000000002,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 11
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1394.9166666666665,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 23.791666666665957,
+            "made": 8,
+            "pile": 15,
+            "flying": [
+              {
+                "id": 7,
+                "x": 2179.2499999998845,
+                "y": 662.2013888889419,
+                "bottom": 662.2013888889419,
+                "angle": 4.45058959259002,
+                "height": 16,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            }
+          ],
+          "eventSerial": 21,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Good. The clean cups can dry by the hearth.",
+            "x": 1040,
+            "until": 26.98333333333267,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "shield-boarded",
+        "time": 31.158333333332205,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 984.5850694444376,
+            "y": 636,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": 2,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 35
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 999.5833333333331,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 31.158333333332205,
+            "made": 10,
+            "pile": 17,
+            "flying": [
+              {
+                "id": 9,
+                "x": 2318,
+                "y": 735.6016887689797,
+                "bottom": 735.6016887689797,
+                "angle": 1.5707963267948966,
+                "height": 12,
+                "phase": "bounce"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            }
+          ],
+          "eventSerial": 23,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Erik, fetch my loft key. Jump onto Olaf’s raised shield, then up to the loft.",
+            "x": 1040,
+            "until": 34.716666666665674,
+            "kind": "invitation"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "loft-key",
+        "time": 31.158333333332205,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 984.5850694444376,
+            "y": 636,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": 2,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 35
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 999.5833333333331,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 31.158333333332205,
+            "made": 10,
+            "pile": 17,
+            "flying": [
+              {
+                "id": 9,
+                "x": 2318,
+                "y": 735.6016887689797,
+                "bottom": 735.6016887689797,
+                "angle": 1.5707963267948966,
+                "height": 12,
+                "phase": "bounce"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            }
+          ],
+          "eventSerial": 23,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Erik, fetch my loft key. Jump onto Olaf’s raised shield, then up to the loft.",
+            "x": 1040,
+            "until": 34.716666666665674,
+            "kind": "invitation"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "key-picked",
+        "time": 32.4749999999988,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 728.6718749999977,
+            "y": 566,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              "hallKey",
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 34
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 999.5833333333331,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 32.4749999999988,
+            "made": 10,
+            "pile": 18,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": false,
+            "pose": 0
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 0
+            },
+            {
+              "name": "park",
+              "x": 840,
+              "id": 1
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 2
+            },
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 23
+            }
+          ],
+          "eventSerial": 24,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "Erik, fetch my loft key. Jump onto Olaf’s raised shield, then up to the loft.",
+            "x": 1040,
+            "until": 34.716666666665674,
+            "kind": "invitation"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "door-open",
+        "time": 37.69166666666517,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1679.2413194444623,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 35
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 999.5833333333331,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 37.69166666666517,
+            "made": 12,
+            "pile": 20,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            },
+            "door": {
+              "count": 1,
+              "last": 35.55833333333196
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": true,
+            "pose": 1
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 23
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 24
+            },
+            {
+              "name": "door",
+              "x": 1730,
+              "id": 25
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 26
+            }
+          ],
+          "eventSerial": 27,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "The fishers left their find in the back. Mind the cups underfoot.",
+            "x": 1040,
+            "until": 41.79166666666522,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "room-entry",
+        "time": 39.566666666665064,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1679.2413194444623,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1195.9791666666674,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 0,
+              "y": -36,
+              "rx": 24,
+              "ry": 6.000000000000001,
+              "roll": 0,
+              "mode": "overhead",
+              "cell": 35
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 999.5833333333331,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": true,
+            "shield": true,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "play",
+          "factory": {
+            "clock": 39.566666666665064,
+            "made": 13,
+            "pile": 20,
+            "flying": [
+              {
+                "id": 12,
+                "x": 2146.7999999996428,
+                "y": 692.0888888891968,
+                "bottom": 692.0888888891968,
+                "angle": 7.435102613505957,
+                "height": 12,
+                "phase": "throw"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            },
+            "door": {
+              "count": 1,
+              "last": 35.55833333333196
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": true,
+            "pose": 1
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "pour",
+              "x": 1040,
+              "id": 3
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 4
+            },
+            {
+              "name": "pour",
+              "x": 1390,
+              "id": 5
+            },
+            {
+              "name": "served",
+              "x": 1390,
+              "id": 6
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 23
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 24
+            },
+            {
+              "name": "door",
+              "x": 1730,
+              "id": 25
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 26
+            }
+          ],
+          "eventSerial": 27,
+          "dialogue": {
+            "speaker": "ASTRID",
+            "text": "The fishers left their find in the back. Mind the cups underfoot.",
+            "x": 1040,
+            "until": 41.79166666666522,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "inspection",
+        "time": 50.1249999999978,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1851.5885416666904,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1892.2395833332992,
+            "y": 716,
+            "vx": 0,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.675,
+              "y": 8.849999999999994,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 51
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 1820.833333333333,
+            "y": 716,
+            "vx": 150,
+            "vy": 0,
+            "ground": true,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "inspect",
+          "factory": {
+            "clock": 50.1249999999978,
+            "made": 16,
+            "pile": 23,
+            "flying": [
+              {
+                "id": 15,
+                "x": 2326,
+                "y": 728.6648743963779,
+                "bottom": 728.6648743963779,
+                "angle": 0,
+                "height": 16,
+                "phase": "bounce"
+              }
+            ]
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            },
+            "door": {
+              "count": 1,
+              "last": 35.55833333333196
+            },
+            "find": {
+              "count": 1,
+              "last": 41.8083333333316
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": true,
+            "pose": 1
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 0,
+          "crackTime": 0,
+          "fallTime": 0,
+          "bend": 0,
+          "events": [
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 7
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 8
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 9
+            },
+            {
+              "name": "cupReady",
+              "x": 1460,
+              "id": 10
+            },
+            {
+              "name": "cupLand",
+              "x": 1361.599999999989,
+              "id": 11
+            },
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 23
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 24
+            },
+            {
+              "name": "door",
+              "x": 1730,
+              "id": 25
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 26
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 27
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 28
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 29
+            },
+            {
+              "name": "inspect",
+              "x": 2120,
+              "id": 30
+            }
+          ],
+          "eventSerial": 31,
+          "dialogue": {
+            "speaker": "RUNA",
+            "text": "I left it on the stool. I couldn’t bring myself to throw it back.",
+            "x": 1620,
+            "until": 47.8083333333316,
+            "kind": "invitation"
+          },
+          "pushing": false
+        }
+      },
+      {
+        "name": "fall",
+        "time": 60.27499999999722,
+        "heroes": [
+          {
+            "id": 0,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2048.8658813139136,
+            "y": 1032.9166666666667,
+            "vx": 0,
+            "vy": 873.3333333333325,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 1,
+            "skin": "imagegen90",
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2186.872610162638,
+            "y": 1032.9166666666667,
+            "vx": 0,
+            "vy": 873.3333333333325,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "face": -1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          },
+          {
+            "id": 2,
+            "skin": "imagegen90",
+            "shieldArtPose": {
+              "x": 28.822999999999997,
+              "y": 9.960000000000008,
+              "rx": 16.970562748477143,
+              "ry": 24,
+              "roll": -0.13962634015954636,
+              "mode": "front",
+              "cell": 21
+            },
+            "rotation": 0,
+            "magnet": null,
+            "boots": false,
+            "x": 2091.204157540672,
+            "y": 1037.7054666428082,
+            "vx": 0,
+            "vy": 873.3333333333325,
+            "ground": false,
+            "hp": 3,
+            "dead": false,
+            "inventory": [
+              null,
+              null,
+              null,
+              null
+            ],
+            "itemSlot": 0,
+            "shieldUp": false,
+            "shield": true,
+            "face": 1,
+            "support": null,
+            "climbing": false,
+            "sweptAway": false
+          }
+        ],
+        "machine": {
+          "phase": "fall",
+          "factory": {
+            "clock": 60.27499999999722,
+            "made": 18,
+            "pile": 26,
+            "flying": []
+          },
+          "invitations": {
+            "push": {
+              "count": 1,
+              "last": 1.6499999999999966
+            },
+            "blade": {
+              "count": 1,
+              "last": 22.416666666666035
+            },
+            "loft": {
+              "count": 1,
+              "last": 28.716666666665677
+            },
+            "door": {
+              "count": 1,
+              "last": 35.55833333333196
+            },
+            "find": {
+              "count": 1,
+              "last": 41.8083333333316
+            }
+          },
+          "bashHit": true,
+          "bashAt": 17.7916666666663,
+          "bashPose": 0,
+          "defense": {
+            "phase": "blocked",
+            "at": 13.549999999999871
+          },
+          "defenseBlocks": 1,
+          "cart": {
+            "x": 840,
+            "y": 706,
+            "w": 96,
+            "parked": true
+          },
+          "door": {
+            "open": true,
+            "pose": 1
+          },
+          "cups": {
+            "mode": "served",
+            "at": 10.45833333333338
+          },
+          "served": true,
+          "targetHit": true,
+          "targetPose": 0,
+          "wrapCut": true,
+          "wrapPose": 1,
+          "inspectClock": 4.966666666666703,
+          "crackTime": 1.7083333333333297,
+          "fallTime": 0.6583333333333334,
+          "bend": 18,
+          "events": [
+            {
+              "name": "cupThrow",
+              "x": 1460,
+              "id": 12
+            },
+            {
+              "name": "cupBlock",
+              "x": 1440.6087131212616,
+              "id": 13
+            },
+            {
+              "name": "cupLand",
+              "x": 1575.6087131212616,
+              "id": 14
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 15
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 16
+            },
+            {
+              "name": "target",
+              "x": 164,
+              "id": 17
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 18
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 19
+            },
+            {
+              "name": "cut",
+              "x": 1260,
+              "id": 20
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 21
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 22
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 23
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 24
+            },
+            {
+              "name": "door",
+              "x": 1730,
+              "id": 25
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 26
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 27
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 28
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 29
+            },
+            {
+              "name": "inspect",
+              "x": 2120,
+              "id": 30
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 31
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 32
+            },
+            {
+              "name": "cupLand",
+              "x": 2324,
+              "id": 33
+            },
+            {
+              "name": "creak",
+              "x": 2120,
+              "id": 34
+            },
+            {
+              "name": "collapse",
+              "x": 2120,
+              "id": 35
+            }
+          ],
+          "eventSerial": 36,
+          "dialogue": {
+            "speaker": "ERIK",
+            "text": "Back! The boards—",
+            "x": 2048,
+            "until": 60.90833333333069,
+            "kind": "reaction"
+          },
+          "pushing": false
+        }
+      }
+    ]
+  },
+  "arrival": {
+    "method": "fall",
+    "color": "#bfa47b",
+    "phase": "entry",
+    "elapsed": 0.049899999999994185,
+    "progress": 0.03991999999999535,
+    "anchor": {
+      "x": 91,
+      "y": 104
+    },
+    "native": [
+      250,
+      453
+    ]
+  },
+  "errors": [],
+  "touchActions": true,
+  "captures": 8
+}

@@ -1,9 +1,9 @@
-import {PUB_PEOPLE,dialogueLayout} from './dialogue.js?v=pub147';
+import {PUB_PEOPLE,dialogueLayout} from './dialogue.js?v=pub151';
 import {drawAlehallHearth} from './hearth.js?v=pub139';
 import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {alehallSag} from './campaign.js?v=pub147';
+import {alehallSag} from './campaign.js?v=pub151';
 import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,alehallDryingCups} from './layout.js?v=pub147';
 import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub148';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
@@ -122,9 +122,6 @@ export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mecha
  for(const light of [{x:1850,y:702,r:125,light:.8},{x:2120,y:globeBottom(s)-28,r:310,light:.96}]){const x=(light.x-camera.x)/2,y=(light.y-camera.y)/2,r=light.r/2,a=d.createRadialGradient(x,y,0,x,y,r);a.addColorStop(0,`rgba(0,0,0,${light.light})`);a.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=a;d.fillRect(x-r,y-r,r*2,r*2);}
  c.drawImage(darkness,camera.x,camera.y,w*2,h*2);fire(c,s.time,1850,704,.35);
  const speech=dialogueLayout(s,camera,view);
- if(speech){const {anchor,x,y,w,h,lines}=speech;
-  c.fillStyle='#141713e8';c.fillRect(x-w/2,y-8,w,h+4);c.strokeStyle='#b49a73';c.lineWidth=2;c.beginPath();c.moveTo(x,y+h-4);c.lineTo(anchor.x,anchor.y);c.stroke();
-  lines.forEach((line,n)=>text(line,x,y+6+n*16,'#e4d7b7',10,0,100));
- }
+ if(speech)text(speech.text,speech.anchor.x,speech.anchor.y,'#e4d7b7',speech.size,0,100,{kind:'speech',maxWidth:speech.maxWidth,insetTop:speech.insetTop});
  return {phase:g.phase,cups:mode,darkRoom:true,readbacks:0,speech};
 }

@@ -47,3 +47,15 @@ carrier motion, then12 verified1x/2x portrait/landscape views; remote camera vie
 are explicitly labeled as diagnostics. All heroes remain healthy; errors[].
 
 Evidence: assets/depth146. Independent gates: DEPTH146-REVIEW.md.
+
+Published runtime commit: `2fe70ef`. Hosting version:
+`01M52GP8AMWJQVYJGJFV0N0W5H`.
+
+Live URL: https://united-marsh-6ppd.here.now/?campaign=fall&release=depth146
+
+Public verification matches22 critical module/native-art/gate/manifest hashes
+and HTML against the accepted build. The live complete-art4×CPU mobile run
+passes the same108draws/zero-filter budget at all three camera regions. World
+median1.6–1.9ms; actual app RAFmedian/p9512.1/16.6ms. Public timing variation is
+recorded separately from the matched local comparison. Receipts:
+assets/depth146/live-hashes.json and live-perf.json.

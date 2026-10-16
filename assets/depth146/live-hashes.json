@@ -1,0 +1,28 @@
+{
+  "commit": "2fe70ef",
+  "checked": [
+    "depth-render94.js",
+    "level-preview95.js",
+    "game.js",
+    "cycle-render.js",
+    "clockwork-render.js",
+    "campaign-menu95.js",
+    "terrain-render.js",
+    "momentum-render.js",
+    "scene-render95.js",
+    "refraction-render.js",
+    "story-render.js",
+    "warden-render.js",
+    "native-scene-cache146.js",
+    "world-render.js",
+    "water-render.js",
+    "freight-render.js",
+    "lode-render.js",
+    "orbit-render.js",
+    "assets/depth146/visual-gates.json",
+    "release-manifest.json",
+    "assets/terrain48/terrain.png",
+    "assets/cycle52/scene.png"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

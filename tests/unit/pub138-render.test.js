@@ -1,8 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 globalThis.Image??=class{complete=false;naturalWidth=0;};
-const {alehallCupPoses,drawAlehallBerth}=await import('../../src/levels/pub/render.js');
-const {alehallBerthSteps}=await import('../../src/levels/pub/campaign.js');
+const {alehallCupPoses}=await import('../../src/levels/pub/render.js');
 const state=(mode,time=0,from={x:1390,y:716})=>({time,heroes:[{},{},{x:1390,y:716}],machine:{cups:{mode,at:0,from}}});
 
 test('served ale belongs behind the heroes and remains anchored to its table',()=>{
@@ -25,11 +24,4 @@ test('each cup switches behind the heroes as soon as it lands, before serving co
 
 test('empty cups produce no visible carried or tabletop copies',()=>{
  assert.deepEqual(alehallCupPoses(state('empty')),[]);
-});
-
-test('every physical loading tread has a fully opaque body to the ground',()=>{
- const fills=[],c=new Proxy({fillRect:(x,y,w,h)=>fills.push({x,y,w,h})},{get:(o,k)=>o[k]??(()=>{})});
- const treads=drawAlehallBerth(c);assert.equal(treads.length,6);
- assert.deepEqual(treads.map(({x,y,w})=>({x,y,w})),alehallBerthSteps);
- for(const tread of treads){assert.equal(tread.bottom,760);assert.equal(tread.opaque,true);for(const n of [tread.x,tread.y,tread.w,tread.bottom])assert.equal(n%2,0);assert.ok(fills.some(p=>p.x===tread.x&&p.y===tread.y&&p.w===tread.w&&p.h===760-tread.y),'entire climbable block must have opaque backing');}
 });

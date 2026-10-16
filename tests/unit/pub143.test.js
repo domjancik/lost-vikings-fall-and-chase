@@ -23,7 +23,7 @@ for(const hz of [60,120]){
   const s=createState(11,'cycle'),h=s.heroes[0];s.active=2;
   for(let n=0;n<hz*5&&!s.machine.cart.parked;n++)step(s,{left:true},1/hz);
   assert.ok(s.machine.cart.parked);
-  s.active=0;Object.assign(h,{x:s.machine.cart.x,y:s.machine.cart.y-44,ground:true,vx:0,vy:0,support:'hall-cart'});
+  s.active=0;Object.assign(h,{x:s.machine.cart.x,y:716,ground:true,vx:0,vy:0,support:null});
   let landedLoft=false;
   for(let n=0;n<hz*2;n++){
    step(s,{jump:n===0,left:h.x>730,interact:true},1/hz);
@@ -36,7 +36,7 @@ for(const hz of [60,120]){
   let actualDashes=0;
   for(const edgeOffset of [-18,-12,-6,0,6,12,18])for(const bashOffset of [-1,0,8,16,24,32,40,48,56,64]){
    const s=createState(11,'cycle'),h=s.heroes[0];s.active=0;s.machine.cart.x=ALEHALL_CASK.park;s.machine.cart.parked=true;
-   Object.assign(h,{x:ALEHALL_CASK.park+30,y:ALEHALL_CASK.top-44,vx:-230,vy:0,ground:true,support:'hall-cart'});
+   Object.assign(h,{x:ALEHALL_CASK.park+30,y:716,vx:-230,vy:0,ground:true,support:null});
    let jumped=-1,bashRequested=false,dashed=false;
    for(let n=0;n<hz*2;n++){
     const jump=jumped<0&&h.x<=ALEHALL_CASK.park-ALEHALL_CASK.w/2-15+edgeOffset;

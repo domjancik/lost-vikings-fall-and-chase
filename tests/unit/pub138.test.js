@@ -1,18 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {createState,step} from '../../src/core/engine.js';
-import {alehallObjects,alehallSurfaces,alehallBerthSteps} from '../../src/levels/pub/campaign.js';
+import {alehallObjects} from '../../src/levels/pub/campaign.js';
 import {ALEHALL_CASK,ALEHALL_DELIVERY_X} from '../../src/levels/pub/layout.js';
 const fresh=()=>createState(11,'cycle');
 const run=(s,input={},seconds=.1)=>{for(let n=0;n<seconds*120;n++)step(s,input,1/120);};
-test('the sled berth has explicitly authored small walkable treads',()=>{
- const s=fresh();s.machine.cart.x=ALEHALL_CASK.park;
- assert.deepEqual(alehallSurfaces(s).filter(p=>p.y>706&&p.y<760),alehallBerthSteps);
- assert.ok(alehallBerthSteps.every(p=>p.y>=720&&p.y<=748&&p.w>0));
- assert.ok(alehallBerthSteps.filter(p=>p.y===748).every(p=>p.w===36),'broad lowest treads allow walking up from the parked pushing position');
-});
 test('nearby patrons volunteer bow, sword, key and run-bash invitations without USE or hints',()=>{
- for(const [id,x,flags,word]of [[1,900,{},'arrow'],[1,ALEHALL_DELIVERY_X-60,{targetHit:true},'lashing'],[0,940,{cart:{x:ALEHALL_CASK.park,y:706,w:96,parked:true}},'shield'],[0,390,{},'run']]){
+ for(const [id,x,flags,word]of [[1,700,{},'arrow'],[1,ALEHALL_DELIVERY_X-60,{targetHit:true},'lashing'],[0,940,{cart:{x:ALEHALL_CASK.park,y:706,w:96,parked:true}},'shield'],[0,390,{},'run']]){
   const s=fresh();s.active=id;s.heroes[id].x=x;s.time=8;Object.assign(s.machine,flags);run(s,{},.05);
   assert.match(s.machine.dialogue.text,new RegExp(word,'i'));
  }

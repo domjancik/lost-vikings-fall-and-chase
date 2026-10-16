@@ -1,8 +1,8 @@
 import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer145';
-import {createState} from '../core/engine.js?v=sewer145';
-import {drawScene} from '../render/scene-render95.js?v=depth146';
+import {createState} from '../core/engine.js?v=pub147';
+import {drawScene} from '../render/scene-render95.js?v=pub147';
 import {drawWaterOverlay} from '../levels/water/render.js?v=depth146';
-import {previewFrame} from './campaign-picker.js?v=sewer145';
+import {previewFrame} from './campaign-picker.js?v=pub147';
 import {campaignFamily} from './campaign-progress.js?v=campaign137';
 const cache=new Map();
 // These are the production scene atlases, shared by the browser's image cache.

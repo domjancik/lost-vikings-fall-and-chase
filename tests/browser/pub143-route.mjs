@@ -1,4 +1,4 @@
-import {ALEHALL_CASK} from '../../src/levels/pub/layout.js';
+import {ALEHALL_CASK,ALEHALL_DELIVERY_X} from '../../src/levels/pub/layout.js';
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
 import {createRequire} from 'node:module';
@@ -44,7 +44,7 @@ try{
   async function move(id,x){await until(id,s=>Math.abs(s.heroes[id].x-x)<3&&Math.abs(s.heroes[id].vx)<15,()=>{const h=s.heroes[id],error=x-h.x,stop=h.vx*h.vx/(2*[2600,2300,2100][id]);return Math.abs(error)>stop+2?{[error>0?'right':'left']:true}:{};});}
   async function mark(name){stage=name;milestones.push({name,time:s.time,heroes:s.heroes,machine:s.machine});console.log('HALL '+name+' '+s.time);if(['blocked-underloft','parked-sledge','barrel-short','shield-boarded','key-picked','delivery-open','fall'].includes(name)){for(const k of held)key(k,false);held.clear();await window.pubPhoto(name);s=read();}}
   `;
-  let body=source.slice(bodyStart,bodyEnd).replace(/\b(tick|until|move|mark)\(/g,'await $1(');
+  let body=source.slice(bodyStart,bodyEnd).replaceAll('ALEHALL_DELIVERY_X',String(ALEHALL_DELIVERY_X)).replace(/\b(tick|until|move|mark)\(/g,'await $1(');
   body=body.replace("await until(2,s=>s.machine.cups.mode==='carried',{},2);","await until(2,s=>s.machine.cups.mode==='carried',{},2);await mark('tray-loaded');");
   body=body.replace("await until(1,s=>s.machine.wrapCut,{},1);","await until(1,s=>s.machine.wrapCut,{},1);await mark('delivery-open');");
   body=body.replace("await until(0,s=>s.heroes[0].inventory.includes('hallKey'),{},1);","await until(0,s=>s.heroes[0].inventory.includes('hallKey'),{},1);await mark('key-picked');");

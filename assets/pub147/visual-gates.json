@@ -1,0 +1,44 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB147-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Unchanged retained native patrons, props and cup sheets independently inspected. Native detail, volume, palette and adult scale preserved; no generated or resampled replacement art. Cask and packing stand remain grounded at their retained size."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "33 focused tests independently pass. Final ordinary-input targeted runs record18coarse/mobile and14desktop1x/2x views,9200/8688tracked frames with every hero sole min=max760 and errors[]. Accepted full coarse-context route wins at57.899seconds with3HP each,33captures/errors[] and correct fall-entry transition. Refreshed targeted captures establish final corrected NPC head anchors and current dialogue; full-route speech imagery predates that correction."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Final actual landscape/portrait views show Torsten clearly beside Baleog with named speech attached to the patron's measured head, long keyboard/touch lessons wrapped inside view bounds, uninterrupted floor where steps were removed, and native cups on the opened drying stand beside the hearth. Retained art richness and native grid remain intact. Earlier occluded Torsten and offscreen portrait stand captures were rejected and replaced."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Explicit user pass-through item contract supersedes old solid barrel/berth choice. Only active grounded front-shield Olaf pushes; raised shield passes, other heroes neither block nor ride the barrel. Real loft/door collision and shield-assisted key route remain. Repeated optional lessons vary and escalate to actual controls, stop after completion including fetched/dropped key, and do not gate globe entry."
+  },
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/props-native.png",
+    "assets/alehall135/patrons-native.png",
+    "assets/alehall135/cup-native.png",
+    "assets/alehall135/registration.json",
+    "assets/pub147/route-check.json",
+    "assets/pub147/pass/evidence.json",
+    "assets/pub147/desktop-pass/evidence.json",
+    "assets/pub147/pass/torsten-explicit-bow-2x.png",
+    "assets/pub147/pass/portrait-bow-2x.png",
+    "assets/pub147/pass/cups-drying-hearth-2x.png",
+    "assets/pub147/pass/portrait-drying-cups-2x.png",
+    "assets/pub147/desktop-pass/torsten-explicit-bow-1x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

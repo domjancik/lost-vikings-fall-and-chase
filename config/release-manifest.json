@@ -683,6 +683,10 @@
     {
       "source": "src/render/native-scene-cache.js",
       "output": "native-scene-cache146.js"
+    },
+    {
+      "source": "src/levels/pub/dialogue.js",
+      "output": "alehall-dialogue147.js"
     }
   ],
   "files": [
@@ -1055,6 +1059,7 @@
     "assets/pub143/visual-gates.json",
     "assets/pub144/visual-gates.json",
     "assets/sewer145/visual-gates.json",
-    "assets/depth146/visual-gates.json"
+    "assets/depth146/visual-gates.json",
+    "assets/pub147/visual-gates.json"
   ]
 }

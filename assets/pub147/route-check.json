@@ -1,0 +1,201 @@
+{
+  "won": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "time": 57.89863333333067,
+  "milestones": [
+    {
+      "name": "blocked-underloft",
+      "time": 0.7249999999999999,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "push-sledge",
+      "time": 1.5583333333333302,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "parked-sledge",
+      "time": 2.8499999999999925,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "barrel-short",
+      "time": 4.375000000000007,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "carry-ale",
+      "time": 5.058333333333374,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "tray-loaded",
+      "time": 6.958333333333469,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "shield-practice",
+      "time": 10.300000000000056,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "straw-practice",
+      "time": 13.208333333333224,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "running-bash",
+      "time": 15.55833333333309,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "cut-delivery",
+      "time": 17.524999999999647,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "delivery-open",
+      "time": 23.30833333333265,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "shield-step",
+      "time": 23.35833333333265,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "shield-boarded",
+      "time": 30.574999999998905,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "loft-key",
+      "time": 30.61666666666557,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "key-picked",
+      "time": 31.883333333332164,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "door-open",
+      "time": 37.10833333333187,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "room-entry",
+      "time": 37.10833333333187,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "inspection",
+      "time": 47.608333333331274,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "name": "fall",
+      "time": 57.783333333330695,
+      "hp": [
+        3,
+        3,
+        3
+      ]
+    }
+  ],
+  "captures": 33,
+  "arrival": {
+    "method": "fall",
+    "color": "#bfa47b",
+    "phase": "entry",
+    "elapsed": 0.10289999999999418,
+    "progress": 0.08231999999999534,
+    "anchor": {
+      "x": 95,
+      "y": 104
+    },
+    "native": [
+      250,
+      453
+    ]
+  },
+  "errors": [],
+  "touchActions": true,
+  "notes": "Ordinary control full route; earlier speech-anchor screenshots superseded by final pass/desktop-pass evidence."
+}

@@ -1,10 +1,11 @@
+import {PUB_PEOPLE,dialogueLayout} from './dialogue.js?v=pub147';
 import {drawAlehallHearth} from './hearth.js?v=pub139';
 import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {alehallSag,alehallBerthSteps} from './campaign.js?v=pub143';
-import {ALEHALL_DELIVERY_X,ALEHALL_LOFT} from './layout.js?v=pub143';
-import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking} from './scenery.js?v=pub144';
+import {alehallSag} from './campaign.js?v=pub147';
+import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,alehallDryingCups} from './layout.js?v=pub147';
+import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking} from './scenery.js?v=pub147';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -67,46 +68,37 @@ function drawCups(c,s,pass){if(!ready(cup))return;for(const pose of alehallCupPo
 function drawFactoryCups(c,s){if(!ready(cup))return;const scene=cupFactoryScene(s);for(const p of [...scene.pile,...scene.flying]){c.save();c.translate(q(p.x),q(p.bottom-p.height/2));c.rotate(p.phase==='throw'?Math.round(p.angle*24)/24:p.angle);c.drawImage(cup,-6,-8,16,16);c.restore();}}
 function drawPracticeTarget(c,s){const g=s.machine,sway=q(Math.sin(s.time*7)*g.targetPose*3),lean=g.bashPose||0;c.save();c.translate(164,760);c.rotate(Math.round(-lean*.3*24)/24);sprite(c,props,3,sway,0);c.restore();}
 function drawPracticeCups(c,s){if(!ready(cup))return;for(const p of s.shots){if(p.kind!=='hall-cup')continue;c.save();c.translate(q(p.x),q(p.y));c.rotate(Math.round((p.spin||0)*24)/24);c.drawImage(cup,-cup.width,-cup.height,cup.width*2,cup.height*2);c.restore();}}
-export function drawAlehallBerth(c){return alehallBerthSteps.map(step=>{
- // These are solid timber loading blocks, not narrow rails with transparent
- // air below them. Their opaque silhouette is the same volume bodies climb.
- c.save();c.beginPath();c.rect(step.x,step.y,step.w,760-step.y);c.clip();c.fillStyle='#44301f';c.fillRect(step.x,step.y,step.w,760-step.y);
- for(let y=step.y+4;y<760;y+=36)for(let x=step.x;x<step.x+step.w;x+=24)crop(c,architecture,5,20,24,Math.min(12,(step.x+step.w-x)/2),18,x,y);
- for(let x=step.x;x<step.x+step.w;x+=24)crop(c,architecture,8,20,2,Math.min(12,(step.x+step.w-x)/2),5,x,step.y);
- c.fillStyle='#9b7449';c.fillRect(step.x,step.y,step.w,2);c.fillStyle='#302419';c.fillRect(step.x+step.w-2,step.y+2,2,758-step.y);c.restore();
- return {...step,bottom:760,opaque:true,kind:'loading-berth'};
-});}
 export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];c.imageSmoothingEnabled=false;c.fillStyle='#47575c';c.fillRect(camera.x,camera.y,view.width,view.height);
  const far=alehallCoastPlacement(camera);if(ready(coast))c.drawImage(coast,far.x,far.y,far.w,far.h);
  const windowScenery=drawAlehallWindowScenery(c,coast,camera);
  for(let n=0;n<36;n++){const x=q((n*71-s.time*24+20000)%540),y=q(420+(n*39+s.time*180)%340);c.fillStyle='#a0b0ae66';c.fillRect(x,y,2,8);}
  const loftWall=roomWalls(c,camera,view);terrain(c,s,camera,view);
- const berthTreads=drawAlehallBerth(c);
  // Loft deck is attached to posts that continue to the walking floor.
  for(const x of [ALEHALL_LOFT.x+8,ALEHALL_LOFT.x+ALEHALL_LOFT.w-12])column(c,x,ALEHALL_LOFT.y,760);
  for(let x=ALEHALL_LOFT.x;x<ALEHALL_LOFT.x+ALEHALL_LOFT.w;x+=128)crop(c,architecture,10,0,20,Math.min(64,(ALEHALL_LOFT.x+ALEHALL_LOFT.w-x)/2),ALEHALL_LOFT.h/2,x,ALEHALL_LOFT.y);
  sprite(c,architecture,11,1170,760);const hearth=drawAlehallHearth(c,s,camera,view);
  sprite(c,props,1,1040,760);sprite(c,props,10,1020,710);
- for(const [row,x,phase]of [[0,1040,.1],[1,1350,1.7],[1,1460,3.2],[2,1620,2.3],[3,960,4.4]]){
+ for(const [name,{row,x,phase}]of Object.entries(PUB_PEOPLE)){
   let frame=row===0?(g.cups.mode==='loading'?Math.min(3,Math.floor((s.time-g.cups.at)*4)):Math.floor((s.time+phase)/3)%4):Math.floor(s.time*(row===3?3:1.2)+phase)%4;
   if(x===1460&&g.defense?.phase==='windup')frame=Math.min(3,Math.floor(Math.max(0,s.time-g.defense.at)/1.2*4));
   else if(x===1460&&g.defense?.phase==='flight')frame=3;
-  const p=sprite(c,patrons,row*4+frame,x,760,56);if(p)contacts.push({kind:'patron',row,x,bottom:p.visibleBottom});
+  const p=sprite(c,patrons,row*4+frame,x,760,56);if(p)contacts.push({kind:'patron',name,row,x,bottom:p.visibleBottom});
  }
- sprite(c,props,1,1390,760);drawCups(c,s,'world');sprite(c,props,2,1290,760);sprite(c,props,11,620,760);
+ sprite(c,props,1,1390,760);drawCups(c,s,'world');sprite(c,props,11,620,760);
  beam(c,116,704,96);
  // The straw backstop and fenced empty lane keep shots away from inhabitants.
  for(const x of [120,220])column(c,x,650,760);
  // The target face is in front of its fence/backstop, never behind a plank.
  drawPracticeTarget(c,s);
  sprite(c,props,g.wrapPose<.5?6:7,ALEHALL_DELIVERY_X,760);
+ const dryingCups=alehallDryingCups(g);if(ready(cup))for(const p of dryingCups){c.save();c.globalAlpha=p.alpha;c.drawImage(cup,q(p.x-cup.width),p.bottom-cup.height*2,cup.width*2,cup.height*2);c.restore();}
  if(g.wrapPose>0&&g.wrapPose<1){c.save();c.globalAlpha=1-g.wrapPose;sprite(c,props,14,ALEHALL_DELIVERY_X+q(g.wrapPose*18),760+q(g.wrapPose*20));c.restore();}
  if(ready(props.image)){c.save();c.translate(1708,646);c.scale(Math.max(.06,1-g.door.pose),1);props.draw(c,4,-28,0,128,128);c.restore();}
  for(const item of s.items)if(item.type==='hallKey')sprite(c,props,9,item.x,item.y+44);
  // Back room: quiet storage, a single candle and the impossible find on its stool.
  sprite(c,props,12,1850,730);sprite(c,props,2,2120,globeBottom(s)+26);drawGlobe(c,s);drawFactoryCups(c,s);
- contacts.push({kind:'cart',...sprite(c,props,0,g.cart.x,760),top:g.cart.y});
- return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,berthTreads,far,windowScenery,loftWall,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
+ contacts.push({kind:'cart',...sprite(c,props,0,g.cart.x,760),artTop:g.cart.y,collision:false,walkable:false,pushable:true});
+ return {ready:[architecture.image,props.image,patrons.image,globe.image,coast,cup].every(ready),mechanic:'alehall',contacts,dryingCups,far,windowScenery,loftWall,hearth,factory:cupFactoryScene(s),phase:g.phase,globe:{frame:globeFrame(s),bottom:globeBottom(s),diameter:40},door:g.door.pose,nativePixel:2};
 }
 let darkness;
 export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mechanic!=='alehall')return null;const g=s.machine,mode=g.cups.mode;
@@ -115,6 +107,10 @@ export function drawAlehallOverlay(c,s,camera,view,text=()=>{}){if(s.level.mecha
  darkness??=document.createElement('canvas');const w=Math.ceil(view.width/2),h=Math.ceil(view.height/2);if(darkness.width!==w||darkness.height!==h){darkness.width=w;darkness.height=h;}const d=darkness.getContext('2d');d.clearRect(0,0,w,h);d.globalCompositeOperation='source-over';d.fillStyle='rgba(8,11,13,.9)';d.fillRect(0,0,w,h);d.globalCompositeOperation='destination-out';
  for(const light of [{x:1850,y:702,r:125,light:.8},{x:2120,y:globeBottom(s)-28,r:310,light:.96}]){const x=(light.x-camera.x)/2,y=(light.y-camera.y)/2,r=light.r/2,a=d.createRadialGradient(x,y,0,x,y,r);a.addColorStop(0,`rgba(0,0,0,${light.light})`);a.addColorStop(1,'rgba(0,0,0,0)');d.fillStyle=a;d.fillRect(x-r,y-r,r*2,r*2);}
  c.save();c.beginPath();c.rect(1774,390,626,860);c.clip();c.drawImage(darkness,camera.x,camera.y,w*2,h*2);c.restore();fire(c,s.time,1850,704,.35);
- if(g.dialogue&&s.time<g.dialogue.until){const words=(g.dialogue.speaker+': '+g.dialogue.text).split(' '),lines=[''];for(const word of words){if(lines.at(-1).length+word.length>39)lines.push(word);else lines[lines.length-1]+=(lines.at(-1)?' ':'')+word;}const x=g.phase==='play'?g.dialogue.x:2120,y=g.phase==='play'?650:Math.min(630,s.heroes[0].y-90);lines.forEach((line,n)=>text(line,x,y+n*17,'#e4d7b7',10,0,100));}
- return {phase:g.phase,cups:mode,darkRoom:true,readbacks:0};
+ const speech=dialogueLayout(s,camera,view);
+ if(speech){const {anchor,x,y,w,h,lines}=speech;
+  c.fillStyle='#141713e8';c.fillRect(x-w/2,y-8,w,h+4);c.strokeStyle='#b49a73';c.lineWidth=2;c.beginPath();c.moveTo(x,y+h-4);c.lineTo(anchor.x,anchor.y);c.stroke();
+  lines.forEach((line,n)=>text(line,x,y+6+n*16,'#e4d7b7',10,0,100));
+ }
+ return {phase:g.phase,cups:mode,darkRoom:true,readbacks:0,speech};
 }

@@ -1,4 +1,5 @@
 import {createState,step} from '../../src/core/engine.js';
+import {ALEHALL_DELIVERY_X} from '../../src/levels/pub/layout.js';
 export function simulateAlehallRoute(hz=120){const s=createState(11,'cycle'),commands=[],milestones=[];let stage='start';
  function tick(id,input={}){s.active=id;step(s,input,1/hz);commands.push({id,...input});if(s.failed)throw Error('Crew lost '+stage);}
  function until(id,predicate,input={},seconds=20){const end=s.time+seconds;while(!predicate(s)){if(s.won)return;if(s.time>end)throw Error('Timeout '+stage+' '+JSON.stringify({heroes:s.heroes,machine:s.machine}));tick(id,typeof input==='function'?input(s):input);}}
@@ -9,7 +10,7 @@ export function simulateAlehallRoute(hz=120){const s=createState(11,'cycle'),com
  mark('shield-practice');tick(2,{right:true,jump:true});tick(2,{interact:true});until(2,s=>s.machine.defense.phase==='missed',{},3);tick(2,{action:true});tick(2,{interact:true});until(2,s=>s.machine.defenseBlocks>0,{},3);
  mark('straw-practice');move(1,350);tick(1,{left:true});tick(1,{action:true});until(1,s=>s.machine.targetHit,{},2);
  mark('running-bash');move(0,360);until(0,s=>s.heroes[0].x<290,{left:true},2);tick(0,{left:true,action:true});until(0,s=>s.machine.bashHit,{left:true},1);until(0,s=>s.machine.bashPose>.9,{},.3);
- mark('cut-delivery');move(1,1485);tick(1,{right:true});tick(1,{sword:true});until(1,s=>s.machine.wrapCut,{},1);
+ mark('cut-delivery');move(1,ALEHALL_DELIVERY_X-65);tick(1,{right:true});tick(1,{sword:true});until(1,s=>s.machine.wrapCut,{},1);
  mark('shield-step');tick(2,{jump:true});move(2,1000);move(0,1050);tick(0,{jump:true,left:true});until(0,s=>s.heroes[0].support===2,()=>s.heroes[0].x>1000?{left:true}:{},2);
  mark('loft-key');tick(0,{jump:true,left:true});until(0,s=>s.heroes[0].ground&&s.heroes[0].y+44===610,()=>s.heroes[0].x>750?{left:true}:{},2);move(0,730);tick(0,{interact:true});until(0,s=>s.heroes[0].inventory.includes('hallKey'),{},1);
  move(0,1680);tick(0,{interact:true});until(0,s=>s.machine.door.pose===1,{},2);

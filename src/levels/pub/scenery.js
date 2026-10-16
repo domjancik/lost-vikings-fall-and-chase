@@ -1,5 +1,5 @@
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {ALEHALL_LOFT} from './layout.js';
+import {ALEHALL_LOFT} from './layout.js?v=pub147';
 
 export const ALEHALL_WINDOWS=[{x:1192,y:534,w:66,h:38},{x:1512,y:534,w:66,h:38}];
 export const alehallCoastPlacement=camera=>({x:q(camera.x*.82-120),y:q(310+camera.y*.35),w:768,h:384});

@@ -10,7 +10,7 @@ import {ALEHALL_CASK} from '../../src/levels/pub/layout.js';
 const fresh=()=>{const s=createState();setupAlehall(s);return s;};
 const run=(s,input={},seconds=1)=>{for(let n=0;n<seconds*120&&!s.won;n++)alehallStep(s,input,1/120);};
 
-test('the cask walking top matches its generated opaque material rather than its canvas',()=>{
+test('the cask art top matches its generated opaque material rather than its canvas',()=>{
  const art=JSON.parse(fs.readFileSync('assets/alehall135/registration.json')),b=art.atlases.props.cells[0].bounds;
  assert.equal(fresh().machine.cart.y,760-(b[3]-b[1])*art.pixel);
 });

@@ -272,3 +272,15 @@ lighting. Check heads rising below slabs, lateral entry and falling landings.
 A raised leaf remains physical in its raised position; require actual body
 clearance along the intended route and around the full range of lifting landings.
 Do not accept a route that depends on walking or jumping through an opaque slab.
+
+## Era and story continuity
+
+The campaign opening takes place in the Vikings’ own time. The alehall must
+establish their lived-in Norse home and existing relationships before the uncanny
+find. Reject modern pubs, neon, arcade cabinets, electric fixtures and imported
+machine-room assets in the opening. Inspect architecture, props, tasks, dialogue
+and transitions together; material richness does not excuse an anachronistic
+scene. The monumental sewer/mechanical world beneath is an unfamiliar discovery,
+not ordinary village infrastructure. Source concepts may contain mistakes and
+are never blanket approval to reproduce them. The mystery must not depend on
+arbitrary social-task flags; serving and practice can teach through optional play.

@@ -12,8 +12,11 @@ introducing new mechanisms; novelty must retain clear threats, readable material
 and earned changes of view.
 
 Start with why this place exists, what its mechanism processes, why it obstructs
-the crew and what changes when they leave. The preferred arc moves from an arcade
-pub into the machines, deeper systems/cyberspace, then a meaningful higher reality;
+the crew and what changes when they leave. The opening is set in the Vikings’ own time: a lived-in Norse alehall, familiar
+people and period materials. Modern pubs, neon, arcades and electricity do not
+belong in their home world. The recovered uncanny object introduces the unknown.
+The broader arc descends into machines and deeper systems/cyberspace, then
+reaches a meaningful higher reality;
 each new environment should express a new idea, not rename an old level. Serious
 worldbuilding can live in architecture, machinery, wear and consequences instead
 of long arbitrary lore blurbs. Human service doors, stairs and workspaces keep

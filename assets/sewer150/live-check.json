@@ -1,0 +1,469 @@
+{
+  "version": "01M52V1S2Q3EJYZ6CA12N5T9VP",
+  "runtimeCommit": "0f78ff2",
+  "seeded": true,
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "checks": [
+    {
+      "id": 0,
+      "time": 0,
+      "hp": 3,
+      "sweptAway": false,
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 0,
+      "time": 0.55,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 2915.4737315626253,
+          "y": 788.5559696373725
+        },
+        "rotation": 1.752202747441746,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 126.50000000000013,
+        "done": false,
+        "sole": {
+          "x": 2880.0644581203514,
+          "y": 782.0610982537128
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 0,
+      "time": 1.25,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3072.431543659137,
+          "y": 831.4219012627286
+        },
+        "rotation": 1.9282260747376447,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 289.4166666666665,
+        "done": false,
+        "sole": {
+          "x": 3038.7067737228535,
+          "y": 818.8266683254321
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 0,
+      "time": 1.7,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3152.632663824354,
+          "y": 866.2108879414513
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.5208333333333334,
+        "depth": 0.13918125181643384,
+        "total": 496.2149164486955,
+        "travel": 392.91666666666754,
+        "done": false,
+        "sole": {
+          "x": 3135.8621539931055,
+          "y": 857.8256330258272
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 0,
+      "time": 1.95,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3160.0904799372465,
+          "y": 868.6968266457488
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.1875,
+        "depth": 0.6183479184831052,
+        "total": 496.2149164486955,
+        "travel": 450.4166666666681,
+        "done": false,
+        "sole": {
+          "x": 3154.0530963979973,
+          "y": 865.6781348761241
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 0,
+      "time": 2.3,
+      "hp": 3,
+      "sweptAway": true,
+      "pose": {
+        "center": {
+          "x": 3164,
+          "y": 870
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0,
+        "depth": 1,
+        "total": 496.2149164486955,
+        "travel": 496.2149164486955,
+        "done": true,
+        "sole": {
+          "x": 3164,
+          "y": 870
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 0,
+      "hp": 3,
+      "sweptAway": false,
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 0.55,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 2915.4737315626253,
+          "y": 788.5559696373725
+        },
+        "rotation": 1.752202747441746,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 126.50000000000013,
+        "done": false,
+        "sole": {
+          "x": 2880.0644581203514,
+          "y": 782.0610982537128
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 1.25,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3072.431543659137,
+          "y": 831.4219012627286
+        },
+        "rotation": 1.9282260747376447,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 289.4166666666665,
+        "done": false,
+        "sole": {
+          "x": 3038.7067737228535,
+          "y": 818.8266683254321
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 1.7,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3152.632663824354,
+          "y": 866.2108879414513
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.5208333333333334,
+        "depth": 0.13918125181643384,
+        "total": 496.2149164486955,
+        "travel": 392.91666666666754,
+        "done": false,
+        "sole": {
+          "x": 3135.8621539931055,
+          "y": 857.8256330258272
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 1.95,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3160.0904799372465,
+          "y": 868.6968266457488
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.1875,
+        "depth": 0.6183479184831052,
+        "total": 496.2149164486955,
+        "travel": 450.4166666666681,
+        "done": false,
+        "sole": {
+          "x": 3154.0530963979973,
+          "y": 865.6781348761241
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 1,
+      "time": 2.3,
+      "hp": 3,
+      "sweptAway": true,
+      "pose": {
+        "center": {
+          "x": 3164,
+          "y": 870
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0,
+        "depth": 1,
+        "total": 496.2149164486955,
+        "travel": 496.2149164486955,
+        "done": true,
+        "sole": {
+          "x": 3164,
+          "y": 870
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 0,
+      "hp": 3,
+      "sweptAway": false,
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 0.55,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 2915.4737315626253,
+          "y": 788.5559696373725
+        },
+        "rotation": 1.752202747441746,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 126.50000000000013,
+        "done": false,
+        "sole": {
+          "x": 2880.0644581203514,
+          "y": 782.0610982537128
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 1.25,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3072.431543659137,
+          "y": 831.4219012627286
+        },
+        "rotation": 1.9282260747376447,
+        "scale": 1,
+        "depth": 0,
+        "total": 496.2149164486955,
+        "travel": 289.4166666666665,
+        "done": false,
+        "sole": {
+          "x": 3038.7067737228535,
+          "y": 818.8266683254321
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 1.7,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3152.632663824354,
+          "y": 866.2108879414513
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.5208333333333334,
+        "depth": 0.13918125181643384,
+        "total": 496.2149164486955,
+        "travel": 392.91666666666754,
+        "done": false,
+        "sole": {
+          "x": 3135.8621539931055,
+          "y": 857.8256330258272
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 1.95,
+      "hp": 3,
+      "sweptAway": false,
+      "pose": {
+        "center": {
+          "x": 3160.0904799372465,
+          "y": 868.6968266457488
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0.1875,
+        "depth": 0.6183479184831052,
+        "total": 496.2149164486955,
+        "travel": 450.4166666666681,
+        "done": false,
+        "sole": {
+          "x": 3154.0530963979973,
+          "y": 865.6781348761241
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    },
+    {
+      "id": 2,
+      "time": 2.3,
+      "hp": 3,
+      "sweptAway": true,
+      "pose": {
+        "center": {
+          "x": 3164,
+          "y": 870
+        },
+        "rotation": 2.0344439357957027,
+        "scale": 0,
+        "depth": 1,
+        "total": 496.2149164486955,
+        "travel": 496.2149164486955,
+        "done": true,
+        "sole": {
+          "x": 3164,
+          "y": 870
+        }
+      },
+      "foregroundCover": false,
+      "mouth": {
+        "x": 3152,
+        "y": 866,
+        "radius": 30
+      }
+    }
+  ]
+}

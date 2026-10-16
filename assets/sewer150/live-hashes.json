@@ -1,0 +1,30 @@
+{
+  "commit": "0f78ff2",
+  "checked": [
+    "campaign-picker95.js",
+    "engine.js",
+    "cycle-render.js",
+    "cycle-campaign.js",
+    "game.js",
+    "campaign-menu95.js",
+    "level-preview95.js",
+    "interactions.js",
+    "magnetic-render.js",
+    "hero-feedback.js",
+    "world-render.js",
+    "scene-render95.js",
+    "sewer-render.js",
+    "sewer-outlet-render150.js",
+    "transition-render.js",
+    "sewer-outlet150.js",
+    "sewer-campaign.js",
+    "sewer-water-transit.js",
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/sewer150/visual-gates.json",
+    "release-manifest.json",
+    "assets/sewer125/environment-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

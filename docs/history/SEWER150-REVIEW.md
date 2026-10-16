@@ -101,3 +101,17 @@ current, makes its own complete visible journey and remains safe while the crew
 follows; all three reaching the throat triggers the onward water transition.
 Original shoot/shield/enemy/light/inventory regressions remain green. Publication
 allowed subject to integrating-agent final build/release and live-byte checks.
+
+## Release verification
+
+Runtime commit `0f78ff2` published as `01M52V1S2Q3EJYZ6CA12N5T9VP` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=sewer150`.
+All769 tests passed. Source/build browser smoke covered four campaigns and31
+previews without errors. Final525file build passed release integrity and visual
+publication checks. Live verification matched24critical modules/assets/manifest
+and HTML against the reviewed build. The live seeded production diagnostic
+repeated18states/36images across all three heroes, confirming visible depth
+entry and completion inside the measured opening with no foreground cover.
+This live diagnostic is separate from the healthy normal-input touch route
+recorded above. Receipts: `assets/sewer150/live-hashes.json` and
+`assets/sewer150/live-check.json`.

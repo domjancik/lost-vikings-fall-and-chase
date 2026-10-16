@@ -133,3 +133,16 @@ depending on braking direction; this does not change runtime puzzle permissions.
 Earlier failed and67.6083second route variants are superseded. Final runtime,
 aesthetic and cooperation gates are accepted again, and publicationAllowed is
 restored subject to final release/live verification.
+
+## Release verification
+
+Runtime commit `0d147cb` published as `01M52SJ7N3BKBP869X2AZF06CM` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=sewer149`.
+All762 tests passed. Source/build browser smoke covered four campaigns and31
+previews without errors. Final522file build passed integrity and publication
+gate checks. Live hashes matched17critical modules/assets/manifest plus HTML.
+The live seeded production-render diagnostic repeated12states/24images:
+Erik takes bite damage3→2, Olaf blocks at3HP, the wall route returns to the
+floor and a killed climber settles on the ground. This is a live diagnostic,
+separate from the local ordinary-input coarse-touch completion recorded above.
+Receipts: `assets/sewer149/live-hashes.json` and `assets/sewer149/live-check.json`.

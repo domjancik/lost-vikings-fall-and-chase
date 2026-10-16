@@ -1,0 +1,211 @@
+{
+  "version": "01M52SJ7N3BKBP869X2AZF06CM",
+  "runtimeCommit": "0d147cb",
+  "seeded": true,
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "checks": [
+    {
+      "name": "bite-warning",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2150,
+        "y": 760,
+        "phase": "warning"
+      }
+    },
+    {
+      "name": "bite-active",
+      "hp": [
+        2,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2150,
+        "y": 760,
+        "phase": "attack"
+      }
+    },
+    {
+      "name": "shield-brace",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2150,
+        "y": 760,
+        "phase": "warning"
+      }
+    },
+    {
+      "name": "shield-block",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2155.0625,
+        "y": 760,
+        "phase": "recoil"
+      }
+    },
+    {
+      "name": "wall-turn",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2064.5,
+        "y": 760,
+        "phase": "climb",
+        "rotation": 1.5707963267948966,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 0
+        }
+      }
+    },
+    {
+      "name": "wall-ascent",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2060,
+        "y": 716,
+        "phase": "climb",
+        "rotation": 1.5707963267948966,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 1
+        }
+      }
+    },
+    {
+      "name": "upper-corner",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2060,
+        "y": 602,
+        "phase": "climb",
+        "rotation": 1.5707963267948966,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 1
+        }
+      }
+    },
+    {
+      "name": "shutter-top",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2029,
+        "y": 600,
+        "phase": "climb",
+        "rotation": 0,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": -1,
+          "stage": 3
+        }
+      }
+    },
+    {
+      "name": "wall-descent",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2060,
+        "y": 631,
+        "phase": "climb",
+        "rotation": 1.5707963267948966,
+        "crawl": {
+          "wallX": 2020,
+          "top": 600,
+          "dir": 1,
+          "stage": 5,
+          "returning": true
+        }
+      }
+    },
+    {
+      "name": "floor-return",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2097.666666666655,
+        "y": 760,
+        "phase": "patrol",
+        "rotation": 0,
+        "crawl": null
+      }
+    },
+    {
+      "name": "wall-death",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2071.374999999997,
+        "y": 692.9375,
+        "phase": "dead",
+        "rotation": 1.5707963267948966,
+        "crawl": null
+      }
+    },
+    {
+      "name": "corpse-grounded",
+      "hp": [
+        3,
+        3,
+        3
+      ],
+      "enemy": {
+        "x": 2087.6249999999923,
+        "y": 760,
+        "phase": "dead",
+        "rotation": 1.5707963267948966,
+        "crawl": null
+      }
+    }
+  ]
+}

@@ -11,7 +11,7 @@ export function createControls(){
  };
 }
 
-// Only HUD re-selection cycles a bag. Keyboard hero keys keep their old meaning.
+// Re-selecting a Viking cycles their bag, from HUD buttons or number shortcuts.
 export function selectHudHero(s,id){
  if(!Number.isInteger(id)||!s.heroes[id])return false;
  if(s.active===id){const h=s.heroes[id];h.itemSlot=((h.itemSlot||0)+1)%(h.inventory?.length||4);return true;}

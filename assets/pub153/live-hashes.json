@@ -1,0 +1,19 @@
+{
+  "commit": "89d1f3b",
+  "checked": [
+    "game.js",
+    "cycle-render.js",
+    "campaign-menu95.js",
+    "alehall-render.js",
+    "scene-render95.js",
+    "level-preview95.js",
+    "alehall-scenery144.js",
+    "assets/alehall135/coast-native.png",
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/pub153/visual-gates.json",
+    "assets/olaf111/olaf-native.png",
+    "release-manifest.json"
+  ],
+  "html": "Matches after removing hosting social metadata"
+}

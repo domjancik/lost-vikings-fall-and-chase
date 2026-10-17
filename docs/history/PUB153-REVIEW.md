@@ -57,3 +57,13 @@ accepted. Cooperation/control gate: accepted. Localized illumination restores
 the intended mysterious discovery while preserving clearable progression and
 readable interactions. Publication allowed subject to integrating-agent final
 build/release and live-byte checks.
+## Publication verification
+
+Runtime commit `89d1f3b` published as `01M54KQPNQRAXDDRM9XW5W7507` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=pub153`.
+All781tests passed. Final528file build passed integrity and visual-gate preflight.
+Live13critical files and HTML match the reviewed build. The complete live touch
+route wins in57.4621seconds with3HP per Viking,12room-entry/inspection/collapse
+captures, errors[] and the correct fall entry into the sewer. Lighting stays
+localized while the original native art, soil footprint and puzzle logic remain.
+Receipts: `assets/pub153/live-check.json` and `assets/pub153/live-hashes.json`.

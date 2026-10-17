@@ -1,0 +1,30 @@
+{
+  "versionId": "01M54KQPNQRAXDDRM9XW5W7507",
+  "runtimeCommit": "89d1f3b",
+  "url": "https://united-marsh-6ppd.here.now/?campaign=fall&release=pub153",
+  "won": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "time": 57.46209999999737,
+  "captures": 12,
+  "arrival": {
+    "method": "fall",
+    "color": "#bfa47b",
+    "phase": "entry",
+    "elapsed": 0.06660000000000582,
+    "progress": 0.05328000000000466,
+    "anchor": {
+      "x": 93,
+      "y": 104
+    },
+    "native": [
+      250,
+      453
+    ]
+  },
+  "errors": [],
+  "receipt": "output/pub153/live/route.json"
+}

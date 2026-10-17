@@ -3,9 +3,9 @@ import {drawAlehallHearth} from './hearth.js?v=pub139';
 import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
 import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-import {alehallSag} from './campaign.js?v=pub151';
-import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,alehallDryingCups} from './layout.js?v=pub147';
-import {ALEHALL_WINDOWS,ALEHALL_ROOM_LIGHTING,alehallRoomLights,alehallCoastPlacement,drawAlehallSky,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub153';
+import {alehallSag} from './campaign.js?v=pub154';
+import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,ALEHALL_DRYER,alehallDryingCups} from './layout.js?v=pub154';
+import {ALEHALL_WINDOWS,ALEHALL_ROOM_LIGHTING,alehallRoomLights,alehallCoastPlacement,drawAlehallSky,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub154';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -97,6 +97,7 @@ export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];
  drawPracticeTarget(c,s);
  sprite(c,props,g.wrapPose<.5?6:7,ALEHALL_DELIVERY_X,760);
  const dryingCups=alehallDryingCups(g);if(ready(cup))for(const p of dryingCups){c.save();c.globalAlpha=p.alpha;c.drawImage(cup,q(p.x-cup.width),p.bottom-cup.height*2,cup.width*2,cup.height*2);c.restore();}
+ if(dryingCups.length){const rim=ALEHALL_DRYER.front;crop(c,props,7,rim.x,rim.y,rim.w,rim.h,ALEHALL_DELIVERY_X-64+rim.x*2,ALEHALL_DRYER.bottom+(rim.y-ALEHALL_DRYER.footRow)*2);}
  if(g.wrapPose>0&&g.wrapPose<1){c.save();c.globalAlpha=1-g.wrapPose;sprite(c,props,14,ALEHALL_DELIVERY_X+q(g.wrapPose*18),760+q(g.wrapPose*20));c.restore();}
  if(ready(props.image)){c.save();c.translate(1708,646);c.scale(Math.max(.06,1-g.door.pose),1);props.draw(c,4,-28,0,128,128);c.restore();}
  for(const item of s.items)if(item.type==='hallKey')sprite(c,props,9,item.x,item.y+44);

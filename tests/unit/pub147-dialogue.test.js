@@ -18,7 +18,7 @@ test('unfinished lessons repeat with different wording and then explicit control
 });
 test('cask returns to its original area and opened clean cups visibly dry beside the hearth',()=>{
  assert.equal(ALEHALL_CASK.start,1020);assert.equal(ALEHALL_CASK.park,840);assert.ok(Math.abs(ALEHALL_DELIVERY_X-1170)<120);
- assert.deepEqual(alehallDryingCups({wrapPose:0}),[]);const cups=alehallDryingCups({wrapPose:1});assert.equal(cups.length,3);assert.ok(cups.every(p=>p.alpha===1&&p.bottom===724));
+ assert.deepEqual(alehallDryingCups({wrapPose:0}),[]);const cups=alehallDryingCups({wrapPose:1});assert.equal(cups.length,3);assert.ok(cups.every(p=>p.alpha===1&&p.bottom===710));
 });
 test('a fetched then dropped key does not revive the loft-jumping lesson',()=>{
  const s=createState(11,'cycle');s.active=0;s.machine.cart.parked=true;Object.assign(s.heroes[0],{x:730,y:566});assert.ok(pickupItem(s));s.heroes[0].y=716;assert.ok(dropItem(s));s.heroes[0].x=940;s.time=20;s.machine.dialogue=null;

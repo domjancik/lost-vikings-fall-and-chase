@@ -1,10 +1,10 @@
 import {speakerAnchor} from './dialogue.js?v=pub151';
 import {createCupFactory,stepCupFactory} from './cup-factory.js?v=pub139';
-import {invitePractice,startCupPractice,bashPractice,cupPracticeStep} from './tutorial.js?v=pub151';
+import {invitePractice,startCupPractice,bashPractice,cupPracticeStep} from './tutorial.js?v=pub154';
 import {prepareMotion,integrateMotion} from '../../core/movement.js';
 import {pickupItem,useItem,message} from '../../core/inventory.js?v=alehall135';
 import {segmentHit} from '../../core/projectile-collision.js';
-import {ALEHALL_LOFT,ALEHALL_CASK,ALEHALL_DELIVERY_X} from './layout.js?v=pub147';
+import {ALEHALL_LOFT,ALEHALL_CASK,ALEHALL_DELIVERY_X} from './layout.js?v=pub154';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
 const floor=(x,y,w)=>({x,y,w});

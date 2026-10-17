@@ -1,0 +1,41 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB154-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Retained native props cell7 basin and cup source independently inspected. Foot row57, opening22,26,20,6 and front crop16,31,33,17 match the actual material. Source art/density2/scale unchanged; exact grounded origin reused for front-rim occlusion rather than a detached painted overlay."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "19 focused tests independently pass for measured packing/base/rim overlap and existing dialogue/optional blade task/key/door/healthy60/120Hz routes. Actual ordinary-input open-basin proof includes4coarse/touch and2desktop1x/2x views,7215/6788traced frames with every sole min=max760, errors[]. Latestskin sidecars inspected."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Actual landscape1x/2x, portrait2x and desktop2x views show three gold cup tops inside the upper dark basin with their lower bases hidden by the retained native front lip. Former cups pasted below the opening are gone. Bowl volume, wrapped body, grounded stand and separation from hearth flame remain coherent; no source detail or material flattening."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Registration/occlusion-only correction changes no collision, blade interaction, inventory, teaching or progression gate. Existing ordinary sword use opens the stand and reveals drying cups; all other shared mechanics retained."
+  },
+  "nativeWorldPixel": 2,
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/props-native.png",
+    "assets/alehall135/cup-native.png",
+    "assets/pub154/pass/evidence.json",
+    "assets/pub154/desktop-pass/evidence.json",
+    "assets/pub154/pass/cups-drying-hearth-1x.png",
+    "assets/pub154/pass/cups-drying-hearth-2x.png",
+    "assets/pub154/pass/portrait-drying-cups-2x.png",
+    "assets/pub154/desktop-pass/cups-drying-hearth-2x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

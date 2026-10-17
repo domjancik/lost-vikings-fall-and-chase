@@ -1,6 +1,6 @@
 import {startBash,bashImpact} from '../../core/bash.js';
 import {segmentHit,shieldHit} from '../../core/projectile-collision.js';
-import {ALEHALL_DELIVERY_X} from './layout.js?v=pub147';
+import {ALEHALL_DELIVERY_X} from './layout.js?v=pub154';
 
 export function invitePractice(s,say){
  const g=s.machine,h=s.heroes[s.active],key=s.heroes.some(a=>a.inventory.includes('hallKey'))||g.door.open||!s.items.some(a=>a.id==='hall-key');

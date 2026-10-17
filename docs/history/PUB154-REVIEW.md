@@ -37,3 +37,13 @@ vikings90 Erik/Baleog and Olaf111. Source/native continuity, runtime, aesthetic
 and cooperation/control gates are accepted. This is a registration/occlusion-only
 correction and adds no collision or task gate. Publication allowed subject to
 integrating-agent final build/release and live-byte checks.
+## Publication verification
+
+Runtime commit `e1d96b2` is live as `01M54MB6CHYAGQFN4R40XXE0M5` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=pub154`.
+All782tests pass. Final529file build passed release integrity and visual-gate
+preflight. Live22critical files and HTML match the reviewed build. Live ordinary
+touch checks captured four landscape/portrait1x/2x basin views with errors[];
+7119frame floor trace remains760for all heroes. Desktop two views were inspected
+separately before release. Receipts: `assets/pub154/live-hashes.json` and
+`assets/pub154/live-check.json`.

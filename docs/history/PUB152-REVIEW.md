@@ -63,3 +63,15 @@ Source/native continuity gate: accepted. Runtime gate: accepted. Aesthetic gate:
 accepted. Cooperation/control gate: unchanged/accepted. Initial black and later
 streaked pictures are rejected development iterations and superseded by final
 views. Publication allowed subject to final build/release/live-byte verification.
+## Publication receipt
+
+Runtime commit `5d017c8` is live as version `01M54K7NZ5P5RV0SCXTA1EASQ8`
+at `https://united-marsh-6ppd.here.now/?campaign=fall&release=pub152`.
+All780 tests pass. Source/build smoke covered four campaigns and31previews
+each without errors. Final527file build passed release integrity and visual
+preflight. Live13critical files and HTML matched the reviewed release.
+Live browser checks repeated18ordinary-input desktop/landscape/portrait views
+at1x/1.5x/2x with errors[] and actual sky pixel `[101,114,133,255]`, confirming
+opaque decoded storm sky above the preserved panorama. Receipts:
+`assets/pub152/live-hashes.json` and `assets/pub152/live-check.json`.
+

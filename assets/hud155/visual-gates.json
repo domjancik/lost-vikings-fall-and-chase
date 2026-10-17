@@ -1,0 +1,44 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/HUD155-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "HUD-only change generates/replaces/processes no game sprites and preserves native density2, retained room/hero art and camera composition. Latest imagegen90 source sheets retained."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "23 focused tests independently pass for pub/sewer classifier, arrivals/departures/continuation/restoration and existing healthy routes/story/light. Final actual coarse-touch route wins57.6364seconds,3HP each,12captures/errors[], sewer fall entry and hudRestoredtrue. Actual DOM receipts confirm visible topbar, hidden/inert lower HUD in cinematic and restoration in normalplay. Arcade/story/fall entry matrix independently inspected, errors[]."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Final inspection2x/floorbreakportrait scenes retain only top controls and readable story dialogue, clearing crew/touch/hint/world markers/resources and selected ring. Large pause banner is suppressed during cinematic; top resume icon remains. Plain room-entry and post-orb sewer HUD visibly return. Rich native scene art/dark discovery remains unchanged. Superseded unsafe-port and older pause-overlay evidence is not final proof."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Shared lifecycle covers pub scripts, sewer orb introduction and all arrivals/completions including wait. Hidden groups are inert/ariahidden and held controls clear at boundaries; restoration precedes ordinary play. Top controls remain available, story dialogue retained, no puzzle or collision change."
+  },
+  "nativeWorldPixel": 2,
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/hud155/touch/route.json",
+    "assets/hud155/touch/room-entry-landscape.png",
+    "assets/hud155/touch/inspection-2x.png",
+    "assets/hud155/touch/floor-break-portrait.png",
+    "assets/hud155/touch/sewer-arrival.png",
+    "assets/hud155/touch/sewer-play-hud-restored.png",
+    "assets/hud155/entries/evidence.json",
+    "assets/hud155/entries/arcade-entry.png",
+    "assets/hud155/entries/story-entry.png",
+    "assets/hud155/entries/fall-entry.png",
+    "assets/hud155/entries/fall-playing.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

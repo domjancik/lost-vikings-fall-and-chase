@@ -138,3 +138,7 @@ button,button *,.mobile-controls,.mobile-controls *,.crew,.crew *,.game-top,.gam
 
 /* Scene dialogue stays above crew health and touch overlays. Title/modal layers remain above it. */
 #game-labels{z-index:8}
+
+/* Cinematic dialogue remains in-scene; gameplay chrome leaves the picture. */
+body.cinematic .below,body.cinematic .mobile-controls,body.cinematic .game-bottom{visibility:hidden;pointer-events:none}
+body.cinematic .game-top{visibility:visible;opacity:1;pointer-events:auto;z-index:40}

@@ -1,0 +1,13 @@
+{
+  "skin": "imagegen90",
+  "sheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "url": "about:blank",
+  "viewport": {
+    "width": 430,
+    "height": 780
+  }
+}

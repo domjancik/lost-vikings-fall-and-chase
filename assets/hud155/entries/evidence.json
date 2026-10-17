@@ -1,0 +1,128 @@
+{
+  "captures": [
+    {
+      "campaign": "arcade",
+      "entry": {
+        "cinematic": "true",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          }
+        ]
+      },
+      "playing": {
+        "cinematic": "false",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          }
+        ]
+      }
+    },
+    {
+      "campaign": "story",
+      "entry": {
+        "cinematic": "true",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          }
+        ]
+      },
+      "playing": {
+        "cinematic": "false",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          }
+        ]
+      }
+    },
+    {
+      "campaign": "fall",
+      "entry": {
+        "cinematic": "true",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          },
+          {
+            "visible": "hidden",
+            "inert": true
+          }
+        ]
+      },
+      "playing": {
+        "cinematic": "false",
+        "top": "visible",
+        "opacity": "1",
+        "lower": [
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          },
+          {
+            "visible": "visible",
+            "inert": false
+          }
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

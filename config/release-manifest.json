@@ -5,6 +5,10 @@
   ],
   "modules": [
     {
+      "source": "src/app/cinematic-hud.js",
+      "output": "cinematic-hud.js"
+    },
+    {
       "source": "src/audio/audio-events.js",
       "output": "audio-events.js"
     },
@@ -1079,6 +1083,7 @@
     "assets/pub151/visual-gates.json",
     "assets/pub152/visual-gates.json",
     "assets/pub153/visual-gates.json",
-    "assets/pub154/visual-gates.json"
+    "assets/pub154/visual-gates.json",
+    "assets/hud155/visual-gates.json"
   ]
 }

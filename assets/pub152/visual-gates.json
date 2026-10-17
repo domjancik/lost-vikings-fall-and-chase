@@ -1,0 +1,42 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB152-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Original384x192native coast independently inspected and remains768x384world at density2, unchanged scale/aspect/placement. Only a64native-row top-edge continuation is added before the original image. Exact join row retained; altitude-dependent horizontal diffusion converges to the source average storm-sky tone. No stretched/reflected mountains, regeneration, resampling or loss of original coastal detail."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "12 focused tests independently pass, including image.complete guard against blank early cache, viewport-top coverage and exact source join colors. Final evidence records18actual ordinary-input desktop/landscape/portrait1/1.5/2x views/errors[] with per-capture production-canvas skyPixel checks and current-skin sidecars. Shared far-plane snapped x/y anchoring preserves the join through camera/zoom changes."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Final desktop1x/1.5x, portrait1x/2x and landscape1x/2x views independently inspected. Quiet gray-blue upper sky meets retained clouds without black hard cut or stretched vertical columns. Original rich mountains/harbor/settlement remain intact and crisp; no ghost duplicate or reflected mountain extension. Initial black-cache and streaked iterations were rejected and replaced before acceptance."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "Scenery-only sky continuation changes no collision, puzzle, inventory, story or character mechanics. Existing grounded environment and latest adult-scale heroes preserved; no full-route claim is needed for this isolated visual correction."
+  },
+  "nativeWorldPixel": 2,
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/coast-native.png",
+    "assets/pub152/views/evidence.json",
+    "assets/pub152/views/yard-desktop-1x.png",
+    "assets/pub152/views/yard-desktop-1.5x.png",
+    "assets/pub152/views/yard-landscape-1x.png",
+    "assets/pub152/views/yard-landscape-2x.png",
+    "assets/pub152/views/yard-portrait-1x.png",
+    "assets/pub152/views/yard-portrait-2x.png",
+    "assets/pub152/views/fisher-desktop-1x.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

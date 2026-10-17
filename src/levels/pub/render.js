@@ -5,7 +5,7 @@ import {createAtlas} from '../../render/sprite-atlas.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {alehallSag} from './campaign.js?v=pub151';
 import {ALEHALL_DELIVERY_X,ALEHALL_LOFT,alehallDryingCups} from './layout.js?v=pub147';
-import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub148';
+import {ALEHALL_WINDOWS,alehallCoastPlacement,drawAlehallSky,drawAlehallWindowScenery,alehallLoftBacking,alehallRoomPartition,alehallRoomShade} from './scenery.js?v=pub152';
 const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
@@ -74,7 +74,7 @@ function drawFactoryCups(c,s){if(!ready(cup))return;const scene=cupFactoryScene(
 function drawPracticeTarget(c,s){const g=s.machine,sway=q(Math.sin(s.time*7)*g.targetPose*3),lean=g.bashPose||0;c.save();c.translate(164,760);c.rotate(Math.round(-lean*.3*24)/24);sprite(c,props,3,sway,0);c.restore();}
 function drawPracticeCups(c,s){if(!ready(cup))return;for(const p of s.shots){if(p.kind!=='hall-cup')continue;c.save();c.translate(q(p.x),q(p.y));c.rotate(Math.round((p.spin||0)*24)/24);c.drawImage(cup,-cup.width,-cup.height,cup.width*2,cup.height*2);c.restore();}}
 export function drawAlehallWorld(c,s,camera,view){const g=s.machine,contacts=[];c.imageSmoothingEnabled=false;c.fillStyle='#47575c';c.fillRect(camera.x,camera.y,view.width,view.height);
- const far=alehallCoastPlacement(camera);if(ready(coast))c.drawImage(coast,far.x,far.y,far.w,far.h);
+ drawAlehallSky(c,coast,camera,view);const far=alehallCoastPlacement(camera);if(ready(coast))c.drawImage(coast,far.x,far.y,far.w,far.h);
  const windowScenery=drawAlehallWindowScenery(c,coast,camera);
  for(let n=0;n<36;n++){const x=q((n*71-s.time*24+20000)%540),y=q(420+(n*39+s.time*180)%340);c.fillStyle='#a0b0ae66';c.fillRect(x,y,2,8);}
  const loftWall=roomWalls(c,camera,view);terrain(c,s,camera,view);

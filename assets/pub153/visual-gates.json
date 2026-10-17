@@ -1,0 +1,41 @@
+{
+  "reviewVersion": 2,
+  "review": "docs/history/PUB153-REVIEW.md",
+  "sourceGate": {
+    "verdict": "accepted",
+    "reason": "Unchanged retained native architecture/props/globe sources at two-world-units/native-pixel density, preserving dimensions, palette, material and adult scale. Lighting-only adjustment uses existing local candle/orb positions and header construction; no generated replacement, processing or resampling."
+  },
+  "runtimeGate": {
+    "verdict": "accepted",
+    "reason": "27 focused tests independently pass for local-light gaps/readable centers/mainhall isolation plus existing geometry, key/door, dialogue/story and healthy60/120Hz routes. Final actual coarse-touch route wins58.1765seconds,3HP each,12scene captures/errors[] and correct sewer fall entry. Current-skin1x/2x/portrait/landscape views independently inspected."
+  },
+  "aestheticGate": {
+    "verdict": "accepted",
+    "reason": "Direct old/new comparison confirms removal of room-wide orb wash. Actual room-entry1x and inspection/floorbreak2x/mobile views show dark gaps/corners, restrained header, readable orb/candle pools and legible crew/stool/breaking boards. Rich native timber persists; main hall remains warm and floor/soil mask boundary stays physically causal rather than a black ground split."
+  },
+  "cooperationGate": {
+    "verdict": "accepted",
+    "reason": "No collision, story, inventory, social-task or puzzle-permission change. Existing physical doorway, crew inspection and collapse remain clearable with full health; local lighting restores discovery atmosphere without hiding the relevant orb or floor event."
+  },
+  "nativeWorldPixel": 2,
+  "captureSkin": "imagegen90",
+  "publicationAllowed": true,
+  "resolvedSkinSheets": [
+    "assets/vikings90/erik-native.png",
+    "assets/vikings90/baleog-native.png",
+    "assets/olaf111/olaf-native.png"
+  ],
+  "evidence": [
+    "assets/alehall135/architecture-native.png",
+    "assets/alehall135/globe-native.png",
+    "assets/pub153/touch/route.json",
+    "assets/pub153/touch/room-entry-1x.png",
+    "assets/pub153/touch/inspection-2x.png",
+    "assets/pub153/touch/inspection-portrait.png",
+    "assets/pub153/touch/floor-break-2x.png",
+    "assets/pub153/touch/floor-break-landscape.png"
+  ],
+  "releaseConditions": [
+    "Final build/release and live-byte verification by integrating agent"
+  ]
+}

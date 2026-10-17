@@ -54,6 +54,8 @@ export const alehallRoomPartition=()=>({
  collision:false
 });
 const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
+export const ALEHALL_ROOM_LIGHTING={ambient:.96,headerBrightness:.35};
+export const alehallRoomLights=globeY=>[{x:1850,y:702,r:70,light:.68},{x:2120,y:globeY,r:110,light:.78}];
 export function alehallRoomShade(x,y){
  const p=alehallRoomPartition().shadow;
  if(x<p.x||x>=p.x+p.w||y<p.y||y>=p.y+p.h)return 0;

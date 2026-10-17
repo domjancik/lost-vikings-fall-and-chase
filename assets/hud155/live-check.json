@@ -1,0 +1,20 @@
+{
+  "versionId": "01M54N85X2JYH94ZRFAXN6A7Y9",
+  "runtimeCommit": "b775e73",
+  "url": "https://united-marsh-6ppd.here.now/?campaign=fall&release=hud155",
+  "won": true,
+  "hp": [
+    3,
+    3,
+    3
+  ],
+  "time": 57.51209999999737,
+  "sceneCaptures": 12,
+  "hudRestored": true,
+  "entryCampaigns": 3,
+  "errors": [],
+  "receipts": [
+    "output/hud155/live/route.json",
+    "output/hud155/live-entries/evidence.json"
+  ]
+}

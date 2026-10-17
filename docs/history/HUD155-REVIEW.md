@@ -57,3 +57,14 @@ gate: accepted. Aesthetic gate: accepted. Cooperation/control gate: accepted.
 The HUD yields during noninteractive scenes and returns before ordinary play;
 top controls retain access to pause/settings. Publication allowed subject to
 integrating-agent final build/release and live-byte verification.
+## Publication verification
+
+Runtime commit `b775e73` published as `01M54N85X2JYH94ZRFAXN6A7Y9` at
+`https://united-marsh-6ppd.here.now/?campaign=fall&release=hud155`.
+All784tests pass. Final531file build passed release integrity and visual-gate
+preflight. Live9critical modules/styles/assets/manifest and HTML matched the
+reviewed build. Live entry checks pass for arcade/story/tavern. The live normal
+touch route wins57.5121seconds with3HP each,12cutscene/gameplay HUD assertions,
+errors[] and confirmed HUD restoration after the sewer globe intro. Story speech
+and top controls remain visible; pause feedback stays inside the top bar.
+Receipts: `assets/hud155/live-check.json` and `assets/hud155/live-hashes.json`.

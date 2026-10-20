@@ -1,5 +1,5 @@
 {
-  "scope": "Historical43asset pack; no current runtime art replaced",
+  "scope": "Historical 43-asset pixel pack; no current runtime art replaced",
   "upstreamCommit": "ef376e57e1c272633ca2dbf5f29ec3fcf6596465",
   "patchSha256": "7d00529c5b895a98f5731cccfa6e86412c70e6464563d6ac4240980a451e1c18",
   "environment": {
@@ -18,7 +18,7 @@
   },
   "sourceCount": 41,
   "targetCount": 43,
-  "independentFullRuns": 2,
+  "independentFullRuns": 3,
   "matchingDecodedHashes": 43,
   "matchingPngHashes": 43,
   "sourceCellColorViolations": 0,
@@ -31,6 +31,16 @@
   },
   "reports": [
     "output/pixel156/clean-run-a/report.json",
-    "output/pixel156/clean-run-b/report.json"
-  ]
+    "output/pixel156/clean-run-b/report.json",
+    "output/pixel156/clean-project/output/pixel-rebuild/report.json"
+  ],
+  "cleanProjectCheckout": {
+    "commit": "10d66eb",
+    "kind": "Separate sparse Git clone containing committed tooling and all required original sources",
+    "submoduleFetchedFromPublicUpstream": true,
+    "setupPatch": "applied, then idempotently already-applied",
+    "matchingDecodedHashes": 43,
+    "matchingPngHashes": 43,
+    "privateGeneratedCacheRequired": false
+  }
 }

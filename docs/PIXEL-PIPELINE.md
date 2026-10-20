@@ -145,3 +145,14 @@ details that were designed at the wrong resolution. Compare original, processed
 and real gameplay images through the [visual review gate](standards/VISUAL-REVIEW-GATE.md)
 before choosing to ship any rebuilt asset. This tooling update does not replace
 the live game's artwork.
+
+## Verification recorded in this repository
+
+The documented setup was tested with a fresh Python virtual environment and a
+separate clean project checkout whose submodule was fetched from public upstream.
+All 43 assets rebuilt successfully from the checked-in originals. Three full
+runs matched all 43 decoded RGBA hashes and PNG-file hashes; existing-output
+validation also passed. Six setup/safety/repeatability tests, two reconstruction
+regression tests and the game's 784 Node tests passed. See the
+[reproduction receipt](history/PIXEL156-REPRODUCTION.json) for the validated
+environment and scope.

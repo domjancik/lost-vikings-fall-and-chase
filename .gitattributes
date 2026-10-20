@@ -3,5 +3,5 @@
 *.mjs text eol=lf
 *.py text eol=lf
 *.md text eol=lf
-*.patch text eol=lf
+*.patch text eol=lf whitespace=-blank-at-eol
 *.png binary

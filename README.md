@@ -157,6 +157,16 @@ the owner's credentials. Adapt the publisher for your own deployment.
 
 ## Credits and scope
 
+### With love for the original
+
+Huge props to the original **The Lost Vikings** and the people who created it.
+It is a beloved game, and the reason this project exists: three memorable heroes
+with beautifully complementary abilities, clever puzzles, expressive pixel art
+and the satisfaction of getting everyone through together. This project is a
+fan's tribute to that spirit of cooperation, discovery and character. All credit
+for the original game, its characters and the foundational idea belongs to its
+creators.
+
 This is an unofficial fan-inspired experiment, not affiliated with the creators
 or rights holders of *The Lost Vikings*. AI-generated assets, project-authored
 code and historical tooling coexist here; public availability does not change

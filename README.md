@@ -14,6 +14,22 @@ rough edges, uneven art and animation, bugs and unfinished design. Automated
 checks and recorded playthroughs help; they do not make every level or mobile
 browser fully validated.
 
+## Screenshots
+
+Current in-engine captures, using the latest Viking sprites. Review-camera framing
+shows the larger environments and mechanisms; these are not concept images.
+
+**Ember Freight** — layered industrial scenery, active machinery and the city above
+the depot.
+
+![Ember Freight: iron walkways, fans, cargo machinery and a layered night-time city](docs/screenshots/ember-freight.png)
+
+| Inside the Clockwork | The Fourfold Warden |
+| --- | --- |
+| ![Inside the Clockwork: the three Vikings beneath a tall service tower, with two halves of a giant wheel](docs/screenshots/inside-the-clockwork.png) | ![The Fourfold Warden: a four-legged clockwork guardian and its maintenance carriage](docs/screenshots/the-fourfold-warden.png) |
+| **The Familiar Hearth** — the campaign's lived-in Norse alehall | **Scrap Orbit** — magnetic platforms, crane machinery and giant gears |
+| ![The Familiar Hearth: Vikings and regulars around the hearth in a timber-built Norse tavern](docs/screenshots/the-familiar-hearth.png) | ![Scrap Orbit: suspended magnetic machinery and huge gears against a star-filled sky](docs/screenshots/scrap-orbit.png) |
+
 ## The game
 
 Switch between Erik (running, jumping and bashing), Baleog (sword and bow), and

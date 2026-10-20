@@ -1,0 +1,16 @@
+{
+  "upstreamRepository": "https://github.com/Retro-Diffusion/pixel-art-fixer.git",
+  "upstreamCommit": "ef376e57e1c272633ca2dbf5f29ec3fcf6596465",
+  "file": "python/pixelfixer/reconstruct.py",
+  "originalSha256": "205c495d17ba243c7612e35cf83f3ab9587abcde8c8e6c36b0169bdef201ddd5",
+  "patchedSha256": "95bf40ea413d15679784c325a6125c310445c7a9dd4847953e2eb9770e64c795",
+  "patch": "tools/art/pixel/patches/nonnegative-cell-weights.patch",
+  "patchSha256": "7d00529c5b895a98f5731cccfa6e86412c70e6464563d6ac4240980a451e1c18",
+  "python": "3.12",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "opencv-python": "5.0.0.93",
+    "Pillow": "12.3.0"
+  }
+}

@@ -1,0 +1,18 @@
+diff --git a/python/pixelfixer/reconstruct.py b/python/pixelfixer/reconstruct.py
+index e9771b2..4a3ac3e 100644
+--- a/python/pixelfixer/reconstruct.py
++++ b/python/pixelfixer/reconstruct.py
+@@ -297,8 +297,11 @@ def two_stage_pack(rgba: np.ndarray, cols: int, rows: int,
+     # triangular centre weight within each even cell
+     fx = (np.arange(w) + 0.5 - ix * (w / cols)) / (w / cols)
+     fy = (np.arange(h) + 0.5 - iy * (h / rows)) / (h / rows)
+-    wx = 1.0 - 2.0 * np.abs(fx - 0.5)
+-    wy = 1.0 - 2.0 * np.abs(fy - 0.5)
++    # Fractional cell sizes can put a source pixel's centre beyond the
++    # assigned cell edge. Negative votes are not valid averaging weights:
++    # they extrapolate colours and create repeating black/colored speckles.
++    wx = np.maximum(0.0, 1.0 - 2.0 * np.abs(fx - 0.5))
++    wy = np.maximum(0.0, 1.0 - 2.0 * np.abs(fy - 0.5))
+     wgt = (wy[:, None] * wx[None, :]).ravel() + 1e-4
+ 
+     # stage 1: winning label per cell

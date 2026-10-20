@@ -1,8 +1,9 @@
-import sys,unittest
+import os,sys,unittest
 from pathlib import Path
 from unittest.mock import patch
 import numpy as np
-sys.path.insert(0,str(Path('tools/pixel-art-fixer/python').resolve()))
+ROOT=Path(__file__).resolve().parents[3]
+sys.path.insert(0,str(Path(os.environ.get('PIXEL_FIXER_ROOT',ROOT/'tools/pixel-art-fixer')).resolve()/'python'))
 from pixelfixer.reconstruct import two_stage_pack
 
 class PackingColorTests(unittest.TestCase):

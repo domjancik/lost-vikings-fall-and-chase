@@ -1,0 +1,36 @@
+{
+  "scope": "Historical43asset pack; no current runtime art replaced",
+  "upstreamCommit": "ef376e57e1c272633ca2dbf5f29ec3fcf6596465",
+  "patchSha256": "7d00529c5b895a98f5731cccfa6e86412c70e6464563d6ac4240980a451e1c18",
+  "environment": {
+    "python": "3.12.8",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "opencv-python": "5.0.0.93",
+      "Pillow": "12.3.0"
+    },
+    "upstreamCommit": "ef376e57e1c272633ca2dbf5f29ec3fcf6596465",
+    "patchSha256": "7d00529c5b895a98f5731cccfa6e86412c70e6464563d6ac4240980a451e1c18",
+    "seed": 42,
+    "opencvThreads": 1
+  },
+  "sourceCount": 41,
+  "targetCount": 43,
+  "independentFullRuns": 2,
+  "matchingDecodedHashes": 43,
+  "matchingPngHashes": 43,
+  "sourceCellColorViolations": 0,
+  "checks": {
+    "setupAndSafetyTests": 6,
+    "pixelRegressionTests": 2,
+    "nodeTests": 784,
+    "unpatchedUpstreamFractionalGridTest": "failed as expected",
+    "patchedUpstreamFractionalGridTest": "passed"
+  },
+  "reports": [
+    "output/pixel156/clean-run-a/report.json",
+    "output/pixel156/clean-run-b/report.json"
+  ]
+}

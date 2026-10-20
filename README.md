@@ -127,11 +127,16 @@ npm run release:check
 
 `npm run test:browser` runs the maintained browser smoke script. Some browser and
 art tools currently reference the original development machine's runtime paths;
-those need adapting to your local environment. The optional historical
-pixel-art-fixer checkout is a submodule; initialize it only if using those tools:
+those need adapting to your local environment. The pixel-fixing pipeline now has
+a reproducible setup independent of those machine-specific paths: a pinned
+submodule, a tracked reconstruction patch, exact Python dependencies, original
+inputs and repeatability checks. See
+[Reproducing the pixel-fixing pipeline](docs/PIXEL-PIPELINE.md) for complete
+instructions. Initial setup starts with:
 
 ```sh
 git submodule update --init tools/pixel-art-fixer
+python tools/art/pixel/setup-pixel-fixer.py
 ```
 
 ## Repository and release layout

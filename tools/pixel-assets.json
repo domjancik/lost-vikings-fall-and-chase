@@ -5,7 +5,9 @@
       512,
       256
     ],
-    "source": "generated/exec-226b3b77-20fd-425a-bf66-fed19c538b4d.png"
+    "source": "assets/pixel-sources44/exec-226b3b77-20fd-425a-bf66-fed19c538b4d.png",
+    "originalSourceReference": "generated/exec-226b3b77-20fd-425a-bf66-fed19c538b4d.png",
+    "sourceSha256": "b40903986302239fe780a1866d4b5381df56a588e1c0f8d952edebeb49aa9a88"
   },
   {
     "target": "assets/pixel/story-far.png",
@@ -13,7 +15,9 @@
       1024,
       512
     ],
-    "source": "generated/exec-10435759-0761-438c-a32b-739d04c8d1dd.png"
+    "source": "assets/pixel-sources44/exec-10435759-0761-438c-a32b-739d04c8d1dd.png",
+    "originalSourceReference": "generated/exec-10435759-0761-438c-a32b-739d04c8d1dd.png",
+    "sourceSha256": "190cd5fecd9487e9983506393404c672055c30fbfbce9878dadc8421ddb52f4f"
   },
   {
     "target": "assets/pixel/story-near.png",
@@ -21,7 +25,9 @@
       1024,
       512
     ],
-    "source": "generated/exec-f1f0010c-2de2-4f71-9675-2b16eda3b9f4.png"
+    "source": "assets/pixel-sources44/exec-f1f0010c-2de2-4f71-9675-2b16eda3b9f4.png",
+    "originalSourceReference": "generated/exec-f1f0010c-2de2-4f71-9675-2b16eda3b9f4.png",
+    "sourceSha256": "bd3e0e8b3657b23fbe288662f0ceb2870ba5a042d2930f57b149e92eb775c64a"
   },
   {
     "target": "assets/pixel/story-enemies.png",
@@ -29,7 +35,9 @@
       512,
       512
     ],
-    "source": "generated/exec-2ea621b5-ef7b-4d81-86e3-48ab40524f3a.png"
+    "source": "assets/pixel-sources44/exec-2ea621b5-ef7b-4d81-86e3-48ab40524f3a.png",
+    "originalSourceReference": "generated/exec-2ea621b5-ef7b-4d81-86e3-48ab40524f3a.png",
+    "sourceSha256": "ce1ca2059cf072f43e90234ca37ab0e9b6d888ae11aa8b57b4e2e7a4cbcb3fae"
   },
   {
     "target": "assets/pixel/story-doors.png",
@@ -37,7 +45,9 @@
       512,
       256
     ],
-    "source": "generated/exec-a7e1b778-3d77-451f-837f-768135294ca5.png"
+    "source": "assets/pixel-sources44/exec-a7e1b778-3d77-451f-837f-768135294ca5.png",
+    "originalSourceReference": "generated/exec-a7e1b778-3d77-451f-837f-768135294ca5.png",
+    "sourceSha256": "6f1b2e9f0e9e63bbacd53f56f394c9bdd309f07854e6867d28bdb11dd0a997e4"
   },
   {
     "target": "assets/pixel/machine-states.png",
@@ -45,7 +55,9 @@
       512,
       384
     ],
-    "source": "generated/exec-b294503f-cd0d-46bd-b31f-3cf1494dbeab.png"
+    "source": "assets/pixel-sources44/exec-b294503f-cd0d-46bd-b31f-3cf1494dbeab.png",
+    "originalSourceReference": "generated/exec-b294503f-cd0d-46bd-b31f-3cf1494dbeab.png",
+    "sourceSha256": "ce7997376ac686d9afd332a9ecd98bfbbf9c819dcab9edca4413bc05b39a77dd"
   },
   {
     "target": "assets/pixel/vertical-props.png",
@@ -53,7 +65,9 @@
       512,
       256
     ],
-    "source": "generated/exec-ae6ea3ae-2dce-4238-a984-011dfb295e0c.png"
+    "source": "assets/pixel-sources44/exec-ae6ea3ae-2dce-4238-a984-011dfb295e0c.png",
+    "originalSourceReference": "generated/exec-ae6ea3ae-2dce-4238-a984-011dfb295e0c.png",
+    "sourceSha256": "0b86413a62dc8521e74d2b659f0c34d81d16d0033816e7cd67dd68762344bb6d"
   },
   {
     "target": "assets/pixel/depth-far-9.png",
@@ -61,7 +75,9 @@
       720,
       720
     ],
-    "source": "generated/exec-006443f2-b73b-495e-b068-9df71b7ed77d.png"
+    "source": "assets/pixel-sources44/exec-006443f2-b73b-495e-b068-9df71b7ed77d.png",
+    "originalSourceReference": "generated/exec-006443f2-b73b-495e-b068-9df71b7ed77d.png",
+    "sourceSha256": "931792957b6419da03f95dd2ffefa2a67ae0b927162306b5ee99da0a6a80e6ec"
   },
   {
     "target": "assets/pixel/depth-near-9.png",
@@ -69,7 +85,9 @@
       720,
       720
     ],
-    "source": "generated/exec-75818ceb-0d4f-464a-9be5-2ecef814af3f.png"
+    "source": "assets/pixel-sources44/exec-75818ceb-0d4f-464a-9be5-2ecef814af3f.png",
+    "originalSourceReference": "generated/exec-75818ceb-0d4f-464a-9be5-2ecef814af3f.png",
+    "sourceSha256": "d0c54b8f545df25b442c02e38af08feee997bbf3d4b5682301a20d0dd0fb0d62"
   },
   {
     "target": "assets/pixel/depth-far-10.png",
@@ -77,7 +95,9 @@
       720,
       720
     ],
-    "source": "generated/exec-38e65d68-9e7f-4027-a262-d5fe906e9eac.png"
+    "source": "assets/pixel-sources44/exec-38e65d68-9e7f-4027-a262-d5fe906e9eac.png",
+    "originalSourceReference": "generated/exec-38e65d68-9e7f-4027-a262-d5fe906e9eac.png",
+    "sourceSha256": "38cee38ec7ef77d88345e61d29ac0d82695941a5963b0a9f1eee11089eee2ce9"
   },
   {
     "target": "assets/pixel/depth-near-10.png",
@@ -85,7 +105,9 @@
       720,
       720
     ],
-    "source": "generated/exec-38973054-74b9-49fc-ab33-876c2ffaa2ae.png"
+    "source": "assets/pixel-sources44/exec-38973054-74b9-49fc-ab33-876c2ffaa2ae.png",
+    "originalSourceReference": "generated/exec-38973054-74b9-49fc-ab33-876c2ffaa2ae.png",
+    "sourceSha256": "767da186ab1977328771946bde6f55b0cf728f8d566d00593abcb4e23e5e66b0"
   },
   {
     "target": "assets/pixel/depth-near-0.png",
@@ -93,7 +115,9 @@
       720,
       480
     ],
-    "source": "generated/exec-58a68064-0f10-479f-a8bc-0443da0e0a8c.png"
+    "source": "assets/pixel-sources44/exec-58a68064-0f10-479f-a8bc-0443da0e0a8c.png",
+    "originalSourceReference": "generated/exec-58a68064-0f10-479f-a8bc-0443da0e0a8c.png",
+    "sourceSha256": "82907acf3b55b3cb8630d31c3fbeba29ec62db0fa4127a045d982b8866645987"
   },
   {
     "target": "assets/pixel/depth-near-1.png",
@@ -101,7 +125,9 @@
       720,
       405
     ],
-    "source": "generated/exec-073fe7f4-346b-4a26-8b63-ff4b58ac4e95.png"
+    "source": "assets/pixel-sources44/exec-073fe7f4-346b-4a26-8b63-ff4b58ac4e95.png",
+    "originalSourceReference": "generated/exec-073fe7f4-346b-4a26-8b63-ff4b58ac4e95.png",
+    "sourceSha256": "9226523851d7a532dead29067e5ae0cdb66727cede53ce0c977ad3652329c035"
   },
   {
     "target": "assets/pixel/depth-near-2.png",
@@ -109,7 +135,9 @@
       720,
       405
     ],
-    "source": "generated/exec-a183ec17-aec0-4812-90e3-b1964ac1d5fc.png"
+    "source": "assets/pixel-sources44/exec-a183ec17-aec0-4812-90e3-b1964ac1d5fc.png",
+    "originalSourceReference": "generated/exec-a183ec17-aec0-4812-90e3-b1964ac1d5fc.png",
+    "sourceSha256": "b9a1cdfa43ff5ac317937212f4d4dd9b4de6b7bfb98389126fb90575a1c01851"
   },
   {
     "target": "assets/pixel/depth-near-3.png",
@@ -117,7 +145,9 @@
       720,
       405
     ],
-    "source": "generated/exec-f85cfbbb-c6bb-4495-a3d4-07f40f6f028c.png"
+    "source": "assets/pixel-sources44/exec-f85cfbbb-c6bb-4495-a3d4-07f40f6f028c.png",
+    "originalSourceReference": "generated/exec-f85cfbbb-c6bb-4495-a3d4-07f40f6f028c.png",
+    "sourceSha256": "26fd3c5d8271c8306a0ad2a8ca376f8519c404ea83ced65d7e373a1647dfefef"
   },
   {
     "target": "assets/pixel/depth-near-4.png",
@@ -125,7 +155,9 @@
       720,
       405
     ],
-    "source": "generated/exec-05bdd9d3-8540-474b-9cc0-85d008e70aa9.png"
+    "source": "assets/pixel-sources44/exec-05bdd9d3-8540-474b-9cc0-85d008e70aa9.png",
+    "originalSourceReference": "generated/exec-05bdd9d3-8540-474b-9cc0-85d008e70aa9.png",
+    "sourceSha256": "74eeb61ca5a26ba31539c37c615b217473e61375104e2af14dabf4850db57531"
   },
   {
     "target": "assets/pixel/depth-near-5.png",
@@ -133,7 +165,9 @@
       720,
       405
     ],
-    "source": "generated/exec-5a60799c-c42a-4364-948f-ad43283b3183.png"
+    "source": "assets/pixel-sources44/exec-5a60799c-c42a-4364-948f-ad43283b3183.png",
+    "originalSourceReference": "generated/exec-5a60799c-c42a-4364-948f-ad43283b3183.png",
+    "sourceSha256": "23fd648614beaeaaa33ce9e8abc0b7bba7b5b7d0b2d21bed7122c6ec88537395"
   },
   {
     "target": "assets/pixel/depth-near-6.png",
@@ -141,7 +175,9 @@
       720,
       360
     ],
-    "source": "generated/exec-a9becb87-2a9e-4271-8f99-c85874876ab0.png"
+    "source": "assets/pixel-sources44/exec-a9becb87-2a9e-4271-8f99-c85874876ab0.png",
+    "originalSourceReference": "generated/exec-a9becb87-2a9e-4271-8f99-c85874876ab0.png",
+    "sourceSha256": "d278d3df10dc30246e67148f3652d863c81b2b093c1c0ce1730c1a299ff2d330"
   },
   {
     "target": "assets/pixel/depth-near-7.png",
@@ -149,7 +185,9 @@
       720,
       360
     ],
-    "source": "generated/exec-d5917ce1-a83e-41c8-a82c-26acf7e1eedd.png"
+    "source": "assets/pixel-sources44/exec-d5917ce1-a83e-41c8-a82c-26acf7e1eedd.png",
+    "originalSourceReference": "generated/exec-d5917ce1-a83e-41c8-a82c-26acf7e1eedd.png",
+    "sourceSha256": "180304f8881196ecd3006266a8e531210db39dcf938933ab528a17e1dbb03bfc"
   },
   {
     "target": "assets/pixel/depth-near-8.png",
@@ -157,7 +195,9 @@
       720,
       360
     ],
-    "source": "generated/exec-bf0f0cf3-ac79-4206-80e0-fcd6ef467940.png"
+    "source": "assets/pixel-sources44/exec-bf0f0cf3-ac79-4206-80e0-fcd6ef467940.png",
+    "originalSourceReference": "generated/exec-bf0f0cf3-ac79-4206-80e0-fcd6ef467940.png",
+    "sourceSha256": "8d2c05e65a38a88788440ad66ee706869e65b70bda672a0e0db1ce9516909f32"
   },
   {
     "target": "assets/pixel/depth-far-0.png",
@@ -165,7 +205,9 @@
       720,
       405
     ],
-    "source": "generated/exec-d3a1624e-a40e-471e-bbd0-bab7198c547b.png"
+    "source": "assets/pixel-sources44/exec-d3a1624e-a40e-471e-bbd0-bab7198c547b.png",
+    "originalSourceReference": "generated/exec-d3a1624e-a40e-471e-bbd0-bab7198c547b.png",
+    "sourceSha256": "36ae0dc1ba5ccf5eac9084e5c1474a568c547df827d7e0a2b750f7fc34e99847"
   },
   {
     "target": "assets/pixel/depth-far-1.png",
@@ -173,7 +215,9 @@
       720,
       405
     ],
-    "source": "generated/exec-e2cc7e8e-9685-4444-a172-2cef9873eb6d.png"
+    "source": "assets/pixel-sources44/exec-e2cc7e8e-9685-4444-a172-2cef9873eb6d.png",
+    "originalSourceReference": "generated/exec-e2cc7e8e-9685-4444-a172-2cef9873eb6d.png",
+    "sourceSha256": "0f31478a1e9f297827c58b6ee029f0db9f0cf26a4c7f86f783fe71d75d33b108"
   },
   {
     "target": "assets/pixel/depth-far-2.png",
@@ -181,7 +225,9 @@
       720,
       405
     ],
-    "source": "generated/exec-db8d9923-3886-433d-9ec6-a884892972b0.png"
+    "source": "assets/pixel-sources44/exec-db8d9923-3886-433d-9ec6-a884892972b0.png",
+    "originalSourceReference": "generated/exec-db8d9923-3886-433d-9ec6-a884892972b0.png",
+    "sourceSha256": "8e3d8e451bb54742b9fc723b83fe6301c2bcee3cbf83c205753549f1ee451510"
   },
   {
     "target": "assets/pixel/depth-far-3.png",
@@ -189,7 +235,9 @@
       720,
       405
     ],
-    "source": "generated/exec-2dcf3c40-f235-4b90-9143-6ea803a79089.png"
+    "source": "assets/pixel-sources44/exec-2dcf3c40-f235-4b90-9143-6ea803a79089.png",
+    "originalSourceReference": "generated/exec-2dcf3c40-f235-4b90-9143-6ea803a79089.png",
+    "sourceSha256": "fc3320b8258db152333a937f6819dba7e8c4ea84ed37f7f2b516e0929176baed"
   },
   {
     "target": "assets/pixel/depth-far-4.png",
@@ -197,7 +245,9 @@
       720,
       405
     ],
-    "source": "generated/exec-bccbaf11-acd6-472e-985d-c3d012f5990c.png"
+    "source": "assets/pixel-sources44/exec-bccbaf11-acd6-472e-985d-c3d012f5990c.png",
+    "originalSourceReference": "generated/exec-bccbaf11-acd6-472e-985d-c3d012f5990c.png",
+    "sourceSha256": "a16f9ec3d2781a572b44665092740228bb0ccc072baca448ce93263bc0c2706b"
   },
   {
     "target": "assets/pixel/depth-far-5.png",
@@ -205,7 +255,9 @@
       720,
       405
     ],
-    "source": "generated/exec-639eacd5-bc98-4a09-b341-b16f4af1db87.png"
+    "source": "assets/pixel-sources44/exec-639eacd5-bc98-4a09-b341-b16f4af1db87.png",
+    "originalSourceReference": "generated/exec-639eacd5-bc98-4a09-b341-b16f4af1db87.png",
+    "sourceSha256": "ec0475b0eba330ec29fb43128bb73cda02a27f15fed85aa55323ed8a3e3e4976"
   },
   {
     "target": "assets/pixel/depth-far-6.png",
@@ -213,7 +265,9 @@
       720,
       360
     ],
-    "source": "generated/exec-b37bdc09-5015-43e2-8d2d-5118ad1a9a56.png"
+    "source": "assets/pixel-sources44/exec-b37bdc09-5015-43e2-8d2d-5118ad1a9a56.png",
+    "originalSourceReference": "generated/exec-b37bdc09-5015-43e2-8d2d-5118ad1a9a56.png",
+    "sourceSha256": "2024e247efcdead0e02ff98e74989ec8e596ec395b24a0df65432329d7baf889"
   },
   {
     "target": "assets/pixel/depth-far-7.png",
@@ -221,7 +275,9 @@
       720,
       360
     ],
-    "source": "generated/exec-8230c6bb-5250-461a-9721-0f5a3c491dc5.png"
+    "source": "assets/pixel-sources44/exec-8230c6bb-5250-461a-9721-0f5a3c491dc5.png",
+    "originalSourceReference": "generated/exec-8230c6bb-5250-461a-9721-0f5a3c491dc5.png",
+    "sourceSha256": "240377432caa4618e94c1b934c3e048a6f679c598963616ac2c56ea5ecacdb61"
   },
   {
     "target": "assets/pixel/depth-far-8.png",
@@ -229,7 +285,9 @@
       720,
       360
     ],
-    "source": "generated/exec-15fa49fc-9fe7-45d4-a5ff-e39b14b82776.png"
+    "source": "assets/pixel-sources44/exec-15fa49fc-9fe7-45d4-a5ff-e39b14b82776.png",
+    "originalSourceReference": "generated/exec-15fa49fc-9fe7-45d4-a5ff-e39b14b82776.png",
+    "sourceSha256": "3c80c70daa775ce0b7e3ed59901dc085dc0ddcf4949b52f5e50f3064994601c3"
   },
   {
     "target": "assets/pixel/inventory-sprites.png",
@@ -495,7 +553,8 @@
           240
         ]
       }
-    ]
+    ],
+    "sourceSha256": "3ac4d3febc3c4f55109796718223f9fbc080e143adffb465635d599a70ff1e6a"
   },
   {
     "target": "assets/pixel/inventory-background-1.png",
@@ -509,7 +568,8 @@
       0,
       1024,
       480
-    ]
+    ],
+    "sourceSha256": "af5d8542a08b899a6489e50a3f471a5acd453015b2b9290fbdfa163bde5fd94d"
   },
   {
     "target": "assets/pixel/inventory-background-2.png",
@@ -523,7 +583,8 @@
       480,
       1024,
       970
-    ]
+    ],
+    "sourceSha256": "af5d8542a08b899a6489e50a3f471a5acd453015b2b9290fbdfa163bde5fd94d"
   },
   {
     "target": "assets/pixel/inventory-background-3.png",
@@ -537,7 +598,8 @@
       970,
       1024,
       1536
-    ]
+    ],
+    "sourceSha256": "af5d8542a08b899a6489e50a3f471a5acd453015b2b9290fbdfa163bde5fd94d"
   },
   {
     "target": "assets/pixel/arcade-pub.png",
@@ -545,7 +607,8 @@
       720,
       480
     ],
-    "source": "assets/arcade-pub.png"
+    "source": "assets/arcade-pub.png",
+    "sourceSha256": "ff773bfc3d897ddc54c02d5cd1e82ff12821fc44b312bd73b1c12e51ab514634"
   },
   {
     "target": "assets/pixel/arcade-background-1.png",
@@ -553,7 +616,8 @@
       720,
       405
     ],
-    "source": "assets/arcade-background-1.png"
+    "source": "assets/arcade-background-1.png",
+    "sourceSha256": "3a5f2b6b4feedb909e13488941623842a5d03846eb7039882a90cf63fb055072"
   },
   {
     "target": "assets/pixel/arcade-background-2.png",
@@ -561,7 +625,8 @@
       720,
       405
     ],
-    "source": "assets/arcade-background-2.png"
+    "source": "assets/arcade-background-2.png",
+    "sourceSha256": "59c80e1bd5c580191f5e85ac3404d579608b783d22001f5dc602ea2d11d1314f"
   },
   {
     "target": "assets/pixel/arcade-background-3.png",
@@ -569,7 +634,8 @@
       720,
       405
     ],
-    "source": "assets/arcade-background-3.png"
+    "source": "assets/arcade-background-3.png",
+    "sourceSha256": "bbd9ce51fa9e11edbf33ad5f7a3359f305d8bc9508d7ac2e324be8204fe50c51"
   },
   {
     "target": "assets/pixel/arcade-background-4.png",
@@ -577,7 +643,8 @@
       720,
       405
     ],
-    "source": "assets/arcade-background-4.png"
+    "source": "assets/arcade-background-4.png",
+    "sourceSha256": "7a4513fc291b5e0ac82a0a770805efa17673619c98e6760734c8d7b038c04fe0"
   },
   {
     "target": "assets/pixel/arcade-background-5.png",
@@ -585,7 +652,8 @@
       720,
       405
     ],
-    "source": "assets/arcade-background-5.png"
+    "source": "assets/arcade-background-5.png",
+    "sourceSha256": "45cecfab142faa6f4b09f67769192ba7c31730bf68a049ad85ad56590c83dda3"
   },
   {
     "target": "assets/pixel/foreground-tiles.png",
@@ -593,7 +661,8 @@
       360,
       270
     ],
-    "source": "assets/foreground-tiles.png"
+    "source": "assets/foreground-tiles.png",
+    "sourceSha256": "5a72dafb100c60cb8c65a6f51da501c2f960506ce4990d24fe728b487f7de8f8"
   },
   {
     "target": "assets/pixel/world-objects.png",
@@ -601,7 +670,8 @@
       256,
       384
     ],
-    "source": "assets/world-objects.png"
+    "source": "assets/world-objects.png",
+    "sourceSha256": "e871d1d5ca0258e7e3e17bb9daadb6513816e485b9781d493af732b392d8a3e4"
   },
   {
     "target": "assets/pixel/puzzle-machines.png",
@@ -609,7 +679,8 @@
       495,
       198
     ],
-    "source": "assets/puzzle-machines.png"
+    "source": "assets/puzzle-machines.png",
+    "sourceSha256": "f48fd5da769b7591fe46d5fcd65425a1f7051fc3bc5b2cef4fc80c0fb932b55f"
   },
   {
     "target": "assets/pixel/parallax-scenes.png",
@@ -617,6 +688,7 @@
       720,
       480
     ],
-    "source": "assets/parallax-scenes.png"
+    "source": "assets/parallax-scenes.png",
+    "sourceSha256": "f6dfaad6dd98eb7557028cdf6fc29b03136962914ea3e097ae922facddd49d3d"
   }
 ]

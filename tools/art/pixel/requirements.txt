@@ -1,0 +1,5 @@
+# Validated with CPython 3.12.8. Upstream pixelfixer comes from the pinned submodule.
+numpy==2.5.3
+scipy==1.18.1
+opencv-python==5.0.0.93
+Pillow==12.3.0

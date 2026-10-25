@@ -1,0 +1,34 @@
+{
+  "status": "Brainstorm only; not runtime art or a playable level",
+  "generator": "Built-in image_gen",
+  "brief": "docs/history/PATTERN-NURSERY-CONCEPT.md",
+  "outputs": [
+    {
+      "image": "assets/concepts/pattern-nursery/01-pattern-nursery-overview.png",
+      "prompt": "assets/concepts/pattern-nursery/01-pattern-nursery-overview.prompt.txt",
+      "originalGeneratedFilename": "exec-dd9964be-f870-41d2-a44b-dd295c9818e6.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "58e36dc1c6a1510315396e3cc1b5500c255abec89ccea3ce15193d711e82ba61",
+      "promptSha256": "a63200901d43757e0f76d653e67271e9ed7a29a9577576909a1981d0cbec1791"
+    },
+    {
+      "image": "assets/concepts/pattern-nursery/02-cooperative-transformations.png",
+      "prompt": "assets/concepts/pattern-nursery/02-cooperative-transformations.prompt.txt",
+      "originalGeneratedFilename": "exec-5be1549e-5ed6-403f-855b-d00cb412f72a.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "3985658092654b7fa9b4e8aad4e331b22a2bd5961f7b6f6bb69a63ba2e81fd96",
+      "promptSha256": "32a5fe9bdf274d44559339cafcde8ea1a60a20a2d491f67e2c1baf8f1a2f8443"
+    },
+    {
+      "image": "assets/concepts/pattern-nursery/03-samurai-rule-chamber.png",
+      "prompt": "assets/concepts/pattern-nursery/03-samurai-rule-chamber.prompt.txt",
+      "originalGeneratedFilename": "exec-2a947959-a930-4198-922e-40c2fbf576fe.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "e3086426898cf83abd41bb6a55a4ef3503c23b31aa1db1810651ca715453e262",
+      "promptSha256": "6dc869dfb62ba70a664e902bf2265bd5c93acf9c672c639bb97aac440febbf49"
+    }
+  ]
+}

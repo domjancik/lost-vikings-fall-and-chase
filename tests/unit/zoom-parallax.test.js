@@ -8,5 +8,5 @@ test('parallax layers move at distinct speeds on the shared grid',()=>{const a=p
 test('labels follow the vertical camera at 2x zoom',()=>{const p=labelLayout({x:650,y:468,size:10},600,2,350);assert.equal(p.y,236);});
 
 
-test('zoom cycles overview, intermediate and exploration and restores every option',()=>{assert.deepEqual([1,1.5,2].map(nextZoom),[1.5,2,1]);for(const z of [1,1.5,2])assert.equal(storedZoom(String(z)),z);for(const z of [null,'','bad','0','3'])assert.equal(storedZoom(z),2);});
+test('zoom cycles overview, intermediate and exploration and restores every option',()=>{assert.deepEqual([1,1.5,2].map(nextZoom),[1.5,2,1]);for(const z of [1,1.5,2])assert.equal(storedZoom(String(z)),z);for(const z of [null,'','bad','0','3'])assert.equal(storedZoom(z),1.5);});
 test('fractional zoom has stable integer canvas dimensions on desktop and mobile',()=>{for(const [w,h] of [[1440,900],[844,390],[430,780]]){const v=viewportSize(w,h,1.5);assert.ok(Number.isInteger(v.width));assert.ok(Number.isInteger(v.height));assert.ok(Math.abs(v.height-790/1.5)<1);assert.ok(Math.abs(v.width/v.height-w/h)<.002);}});

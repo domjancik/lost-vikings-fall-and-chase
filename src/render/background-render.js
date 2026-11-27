@@ -1,5 +1,5 @@
 const ZOOM_LEVELS=[1,1.5,2];
-export function storedZoom(value){const zoom=Number(value);return ZOOM_LEVELS.includes(zoom)?zoom:2;}
+export function storedZoom(value){const zoom=Number(value);return ZOOM_LEVELS.includes(zoom)?zoom:1.5;}
 export function nextZoom(zoom){return ZOOM_LEVELS[(ZOOM_LEVELS.indexOf(zoom)+1)%ZOOM_LEVELS.length];}
 // Use a centered source crop, with one scale factor for both axes.
 export function coverRect(sourceWidth,sourceHeight,width,height){

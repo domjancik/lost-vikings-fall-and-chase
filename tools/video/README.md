@@ -20,7 +20,9 @@ levels. Raw clips, the shot list, chapter metadata and the final video go into
 Gameplay runs at 60 simulation/render samples per second. Captures wait for scene
 and character readiness, fail on resource errors, and use the latest Viking skin.
 Level tours use 2.4-second eased pans and wider views bounded by each world's
-height. Mechanics demonstrations record active input, including shield jumps,
+height. The earlier collections share three brief mosaic cards. The Fall & The
+Chase keeps individual level shots, including the held-lantern walk for its sewer.
+Mechanics demonstrations record active input, including shield jumps,
 rail switching and magnetic attachment/walking, with their outcomes checked.
 The intro and mechanics demonstrations stage production simulation states, then
 advance them with ordinary controls and physics.

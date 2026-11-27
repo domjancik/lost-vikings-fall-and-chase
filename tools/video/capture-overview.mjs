@@ -37,6 +37,8 @@ const shots=[
  ['63','current','fall',11,520,390,'THE FAMILIAR HEARTH','A shield becomes a platform','Erik jumps from Olaf onto the loft'],
  ['64','current','fall',8,1450,350,'SCRAP ORBIT','Magnetic shoes in motion','Attach to the ceiling and walk around its edge'],
  ['65','current','fall',10,2338,570,'THE LAST LAMPLIGHTER','Follow the current','The outlet carries the crew into its throat'],
+ ['66','current','fall',3,400,140,'INSIDE THE CLOCKWORK','Carry a companion','Olaf floats Baleog across the chasm'],
+ ['67','current','fall',4,480,400,'THE DROWNED REGULATOR','Hold back the intake','Olaf shelters Erik while he swims to the valve'],
 ];
 const tour=[];
 for(const id of ['arcade','story','cycle','fall']){
@@ -78,6 +80,7 @@ const server=http.createServer(async(req,res)=>{try{
   data=data.replace(/function draw\(\)\s*\{/,m=>m+'globalThis.__timelapseState=s;');
   data=data.replace("for(const key of ['cycleArt'","canvas.dataset.sceneReady=String(scene.ready);for(const key of ['cycleArt'");
   if(tour.some(t=>t.id===id))data=data.replaceAll('viewportSize(canvas.clientWidth,canvas.clientHeight,zoom)','viewportSize(canvas.clientWidth,canvas.clientHeight,zoom/Math.min(1.35,Math.max(1,((s.level.worldBottom??790)-(s.level.worldTop??0))/790)))');
+  if(id==='67')data=data.replaceAll('viewportSize(canvas.clientWidth,canvas.clientHeight,zoom)','viewportSize(canvas.clientWidth,canvas.clientHeight,zoom/1.2)');
  }
  res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream'});res.end(data);
  }catch(e){res.writeHead(404);res.end('Not found');}});
@@ -88,7 +91,7 @@ async function capture(shot){
  const [id,version,campaign,round,x,y,title,era,note]=shot;
  const page=await browser.newPage(id==='24'?{viewport:{width:430,height:780},hasTouch:true,isMobile:true}:{viewport:{width:1440,height:790}}),errors=[];page.on('pageerror',e=>errors.push(e.message));page.on('response',r=>{if(r.status()>=400)errors.push(r.status()+' '+r.url());});page.on('requestfailed',r=>errors.push(r.failure().errorText+' '+r.url()));
  try{
- await page.addInitScript(({campaign,round,zoom})=>{for(const [k,v]of Object.entries({'last-call-zoom':zoom,'last-call-sound':'off','last-call-story-cards':'off','last-call-round':round,'last-call-cycle52-round':round,'last-call-story46-round':round}))localStorage.setItem(k,String(v));},{campaign,round,zoom:['21','23','25','29','63'].includes(id)?2:['27','28','64','65'].includes(id)?1.5:1});
+ await page.addInitScript(({campaign,round,zoom})=>{for(const [k,v]of Object.entries({'last-call-zoom':zoom,'last-call-sound':'off','last-call-story-cards':'off','last-call-round':round,'last-call-cycle52-round':round,'last-call-story46-round':round}))localStorage.setItem(k,String(v));},{campaign,round,zoom:['21','23','25','29','63'].includes(id)?2:['27','28','64','65','66','67'].includes(id)?1.5:1});
  await page.addInitScript(()=>{
  const raf=window.requestAnimationFrame.bind(window),cancel=window.cancelAnimationFrame.bind(window),real=performance.now.bind(performance);
  let manual=false, stamp=0, sequence=0;const queue=new Map();
@@ -135,12 +138,23 @@ async function capture(shot){
  const tourShot=tour.find(shot=>shot.id===id);
  if(tourShot)await page.evaluate(()=>{
   const s=globalThis.__timelapseState;s.noHazards=true;
-  if(s.level.mechanic==='sewer'){Object.assign(s.machine.lamp,{lit:true,focused:true,lens:true,hookId:'inspection'});s.items=s.items.filter(i=>i.type!=='inspectionLamp');}
   const c=document.querySelector('#game'),view=JSON.parse(c.dataset.camera);
   const top=s.level.worldTop??0,bottom=s.level.worldBottom??790;
   const floors=[...(s.level.floors||[]),...(s.level.platforms||[])];
   const middle=floors.length?floors.reduce((sum,p)=>sum+p.y,0)/floors.length:610;
   globalThis.__tourBounds={width:Math.max(0,(s.level.worldWidth??1440)-view.width),y:Math.max(top,Math.min(bottom-view.height,middle-view.height*.64))};
+ });
+ if(id==='54'||id==='67')await page.evaluate(id=>{
+  const s=globalThis.__timelapseState;s.active=0;s.noHazards=true;s.machine.shelter=1;
+  Object.assign(s.heroes[2],{x:710,y:496,prevX:710,prevY:496,ground:false,shield:true,shieldUp:true,shieldPose:1,waterFloat:true,vx:0,vy:0});
+  Object.assign(s.heroes[1],{x:950,y:856,prevX:950,prevY:856,ground:true,vx:0,vy:0});
+  const x=id==='67'?650:1030,y=id==='67'?880:800;
+  Object.assign(s.heroes[0],{x,y,prevX:x,prevY:y,ground:false,vx:0,vy:0});
+ },id);
+ if(id==='66')await page.evaluate(()=>{
+  const s=globalThis.__timelapseState;s.active=2;
+  Object.assign(s.heroes[2],{x:540,y:336,prevX:540,prevY:336,ground:true,vx:0,vy:0,shield:true,shieldUp:true,shieldPose:1,face:1});
+  Object.assign(s.heroes[1],{x:540,y:256,prevX:540,prevY:256,ground:true,support:2,vx:0,vy:0,face:1});
  });
  if(id==='62')await page.evaluate(async()=>{
   const s=globalThis.__timelapseState,{spherePose}=await import('./momentum-campaign.js');
@@ -177,12 +191,19 @@ async function capture(shot){
  await page.evaluate(()=>window.__lockCapture());
  const target=path.join(out,selected.includes('--preview')?'preview':'frames',id);await mkdir(target,{recursive:true});
  const state=await page.evaluate(()=>{const c=document.querySelector('#game'),s=globalThis.__timelapseState;return{camera:c.dataset.camera?JSON.parse(c.dataset.camera):{x:0,y:0,width:c.width,height:c.height},size:[c.width,c.height],level:s?.level?.name??null};});
- const frames=selected.includes('--preview')?1:tourShot?144:id==='27'?114:['23','28'].includes(id)?300:id==='62'?270:['63','64'].includes(id)?240:180;
+ const frames=selected.includes('--preview')?1:tourShot?144:id==='27'?114:['23','28','66','67'].includes(id)?300:id==='62'?270:['63','64'].includes(id)?240:180;
  const encoder=spawn('ffmpeg',['-v','error','-y','-f','image2pipe','-framerate','60','-c:v','png','-i','-','-c:v','libx264rgb','-preset','ultrafast','-crf','0','-threads','2',path.join(target,'capture.mkv')],{stdio:['pipe','ignore','inherit'],windowsHide:true});
  const done=once(encoder,'exit');
+ let valveUsed=false;
  if(id==='01'||id==='02'||id==='03')await page.keyboard.down('ArrowRight');
  for(let i=0;i<frames;i++){
   if(tourShot)await page.evaluate(({i,frames})=>{const b=globalThis.__tourBounds,t=i/(frames-1),ease=t*t*(3-2*t);globalThis.__tourView={x:Math.round((.25+.5*ease)*b.width/2)*2,y:Math.round(b.y/2)*2};},{i,frames});
+  if(['54','66','67'].includes(id)&&i===10)await page.keyboard.down('ArrowRight');
+  if(id==='54'&&i===110)await page.keyboard.up('ArrowRight');
+  if(id==='66'&&i===205)await page.keyboard.up('ArrowRight');
+  if(id==='67'&&!valveUsed&&await page.evaluate(()=>globalThis.__timelapseState.heroes[0].x>=1070)){
+   await page.keyboard.up('ArrowRight');await page.keyboard.press('e');valveUsed=true;
+  }
   if(id==='62'&&i===20)await page.keyboard.press('Space');
   if(id==='62'&&i===23)await page.keyboard.down('ArrowLeft');
   if(id==='62'&&i===60)await page.keyboard.up('ArrowLeft');
@@ -206,10 +227,12 @@ async function capture(shot){
  encoder.stdin.end();if((await done)[0]!==0)throw Error('Capture encoding failed');
  if(errors.length)throw Error('Capture contains loading or script errors: '+errors.join(', '));
  const finalHero=await page.evaluate(()=>{const s=globalThis.__timelapseState,h=s?.heroes[s.active];return h?{x:h.x,y:h.y,dead:h.dead,rotation:h.rotation,magnet:h.magnet,boots:h.boots,support:h.support}:null;});
- const mechanism=await page.evaluate(()=>{const g=globalThis.__timelapseState?.machine;return g?{steerHit:g.steerHit,branch:g.ball?.branch,ball:g.ball?{x:g.ball.x,y:g.ball.y}:null}:null;});
+ const mechanism=await page.evaluate(()=>{const s=globalThis.__timelapseState,g=s?.machine;return g?{steerHit:g.steerHit,branch:g.ball?.branch,ball:g.ball?{x:g.ball.x,y:g.ball.y}:null,valveClosed:g.valveClosed,companions:s.heroes.map(h=>({id:h.id,x:h.x,y:h.y,support:h.support}))}:null;});
  if(id==='62'&&(!mechanism.steerHit||mechanism.branch!=='upper'))throw Error('Momentum demonstration did not switch the rail');
  if(id==='63'&&(Math.abs(finalHero.y-566)>1||finalHero.x<640||finalHero.x>900))throw Error('Shield demonstration did not land on the loft');
  if(id==='64'&&(!finalHero.boots||finalHero.magnet?.plateId!==2||Math.abs(finalHero.rotation)<3))throw Error('Magnetic demonstration did not round the ceiling rail');
+ if(id==='66'&&(finalHero.x<920||Math.abs(finalHero.y-606)>1||mechanism.companions[1].support!==2))throw Error('Shield ferry did not carry Baleog to the gallery');
+ if(id==='67'&&!mechanism.valveClosed)throw Error('Sheltered swim did not close the valve');
  const result={id,version,title,era,note,requestedCamera:[x,y],...state,frames,errors,finalHero,mechanism};
  results.push(result);await writeFile(path.join(target,'capture.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
  }catch(error){console.error(id,version,error.message,errors);process.exitCode=1;}

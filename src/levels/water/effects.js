@@ -1,4 +1,4 @@
-import {loadImage} from '../../render/image-loader.js';
+import {loadImage,imageReady} from '../../render/image-loader.js';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=arc46';
 import {waterAirPockets,waterJet} from './campaign.js?v=orbit116';
 import {waterRefractionBands,waterFlowPhase} from './optics.js?v=orbit116';
@@ -8,7 +8,7 @@ const fronds=new Map(),lightFrames=new Map(),worlds=new WeakMap();
 const refractedScenes=new WeakMap();
 const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
 const rect=(c,color,x,y,w,h)=>{if(w<=0||h<=0)return;c.fillStyle=color;c.fillRect(q(x),q(y),Math.max(2,q(w)),Math.max(2,q(h)));};
-export const waterDecorReady=()=>flora.naturalWidth>0;
+export const waterDecorReady=()=>imageReady(flora);
 function frond(species,row,phase,strength){
  const key=[species,row,phase,strength].join(':');if(fronds.has(key))return fronds.get(key);
  const b=document.createElement('canvas');b.width=40;b.height=48;const c=b.getContext('2d');c.imageSmoothingEnabled=false;
@@ -19,7 +19,7 @@ function frond(species,row,phase,strength){
  fronds.set(key,b);return b;
 }
 export function drawWaterPlants(c,s){
- if(!flora.naturalWidth)return;
+ if(!imageReady(flora))return;
  for(const [index,[x,floor,species]]of plants.entries()){
   const strength=Math.round(clamp((floor-s.machine.waterY)/96)*4),phase=strength?Math.floor(s.time*3+x*.015)%12:0;
   c.imageSmoothingEnabled=false;c.drawImage(frond(species,index%2,phase,strength),q(x-40),q(floor-92),80,96);

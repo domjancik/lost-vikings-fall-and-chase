@@ -26,7 +26,7 @@ def frame(i,n):
         if i in streams:
             old_proc,_,_=streams.pop(i);old_proc.stdout.close();old_proc.wait()
         meta=json.loads((p/'capture.json').read_text(encoding='utf8')); w,h=meta['size']
-        proc=subprocess.Popen(['ffmpeg','-v','error','-threads','1','-i',str(p/'capture.mkv'),'-f','rawvideo','-pix_fmt','rgb24','-'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
+        proc=subprocess.Popen(['ffmpeg','-v','error','-threads','1','-filter_threads','1','-i',str(p/'capture.mkv'),'-threads','1','-f','rawvideo','-pix_fmt','rgb24','-'],stdout=subprocess.PIPE,stderr=subprocess.DEVNULL)
         streams[i]=(proc,w,h)
     proc,w,h=streams[i];data=proc.stdout.read(w*h*3)
     if len(data)!=w*h*3:raise RuntimeError(f'Incomplete capture {i}/{n}')
@@ -66,6 +66,18 @@ def pair(ch,title,caption,a,b,labels,n):
     o=board(ch,title,caption)
     for j,(clip,text) in enumerate(zip([a,b],labels)):
         x=68+j*907;label(o,x,204,text);place(o,clip(n),(x,256,877,640));
+    return o
+
+def collection(shots,title,n):
+    o=board('ACT I / EARLIER COLLECTIONS',title,'Earlier worlds and mechanism experiments.')
+    cols=2 if len(shots)<=2 else 4
+    rows=math.ceil(len(shots)/cols)
+    cell_w=(1784-22*(cols-1))//cols
+    cell_h=(785-22*(rows-1))//rows
+    for i,shot in enumerate(shots):
+        x=68+(i%cols)*(cell_w+22);y=180+(i//cols)*(cell_h+22)
+        ImageDraw.Draw(o).text((x,y),shot['name'].title(),font=bold(19 if cols==4 else 25),fill=white)
+        place(o,frame(shot['id'],n),(x,y+32,cell_w,cell_h-38))
     return o
 
 def ui(n):
@@ -145,13 +157,19 @@ add(3,lambda n:pair('ACT I / MATCHED CAMERA','The Warden, then and now','Same ar
 add(3,lambda n:pair('ACT I / MATCHED CAMERA','Inside the Clockwork','Same tower, same camera. Extra device detail and the revised Viking sprites come into view.',lambda q:frame('05',q),lambda q:frame('06',q),['Revision 69','Current build'],n),'Matched Clockwork camera 0,100')
 live('ACT I / CURRENT BUILD','Ember Freight','The climb reveals a night skyline above the machinery.','12',2.5)
 live('ACT I / CURRENT BUILD','The Familiar Hearth','The campaign now opens in a Norse tavern before descending into the machine worlds.','11',2.5)
-for shot in json.loads((root/'tour.json').read_text(encoding='utf8')):
-    live('ACT I / LEVEL TOUR',shot['name'].title(),shot['group'],shot['id'],2.4)
+tour_shots=json.loads((root/'tour.json').read_text(encoding='utf8'))
+for group in ['arcade','story','cycle']:
+    members=[shot for shot in tour_shots if shot['campaign']==group]
+    add(2.4,lambda n,members=members:collection(members,members[0]['group'],n),f'Earlier collection overview: {group}')
+for shot in [shot for shot in tour_shots if shot['campaign']=='fall']:
+    key='23' if shot['id']=='53' else shot['id']
+    live('ACT I / THE FALL & THE CHASE',shot['name'].title(),shot['group'],key,2.4)
 
 chapter('ACT II','Mechanics in motion','Platforming and puzzles built around the crew’s different abilities.')
 live('ACT II / COOPERATION','Olaf makes a platform','Erik jumps from Olaf’s raised shield and lands on the loft.','63',3.5)
+live('ACT II / COOPERATION','Carry a companion','Baleog rides Olaf’s raised shield across the chasm and down to the service gallery.','66',5)
 live('ACT II / COOPERATION','Inside the Clockwork','Erik drives the gear while the split view keeps the carriage and crew visible.','26')
-live('ACT II / TRAVERSAL','The Drowned Regulator','Erik swims below the surface while the water refracts the background.','21')
+live('ACT II / COOPERATION','The Drowned Regulator','Olaf shelters the intake while Erik swims below the bulkhead and closes its valve.','67',5)
 live('ACT II / MOMENTUM','The Momentum Works','Baleog strikes the spring guide, then steps clear as the wheel takes the upper rail.','62',4.5)
 live('ACT II / TRAVERSAL','Scrap Orbit','Baleog activates his shoes, is pulled up to the ceiling, then walks around its edge.','64',4)
 live('ACT II / COMBAT','The Fourfold Warden','The guardian tracks its target, fires and sends shockwaves across the floor.','22')
@@ -184,7 +202,7 @@ audio=root/'overview-score.wav'
 with wave.open(str(audio),'wb') as wf:
     wf.setnchannels(1);wf.setsampwidth(2);wf.setframerate(rate);wf.writeframes((np.clip(signal,-1,1)*32767).astype('<i2').tobytes())
 
-target=root/'Lost Vikings - Development Overview 60fps - Slow Tour.mp4'
+target=root/'Lost Vikings - Development Overview 60fps - Cooperation.mp4'
 proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1920x1080','-r',str(fps),'-i','-','-i',str(audio),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','6','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
 cursor=0;listings=[]
 for count,maker,desc in clips:

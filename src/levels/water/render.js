@@ -1,4 +1,4 @@
-import {loadImage} from '../../render/image-loader.js';
+import {loadImage,imageReady} from '../../render/image-loader.js';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
@@ -12,12 +12,12 @@ import {WATER92,water92GroundPlacement,water92Port,drawWater92Pontoon,drawWater9
 const exitAtlas=createAtlas('assets/gate61/gate.png',1,1);
 const scene=loadImage('assets/water92/scene-native.png'),ladder=loadImage('assets/platform56/ladder.png');
 const rect=(c,color,x,y,w,h)=>{c.fillStyle=color;c.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
-function ladderDraw(c,l){if(!ladder.naturalWidth)return;for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,l.x-24,y,48,h);}}
+function ladderDraw(c,l){if(!imageReady(ladder))return;for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,l.x-24,y,48,h);}}
 export function drawWaterWorld(c,s,camera,viewport){
  const g=s.machine,f=g.float,placements=[];
  rect(c,'#0a1b28',camera.x,camera.y,viewport.width,viewport.height);
  // Preserve the scene's actual authored density. Its foundation stays beneath the basin floor.
- if(scene.naturalWidth){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,x=snapPixel(camera.x*.78),y=snapPixel(1120-h+camera.y*.12);c.drawImage(scene,x,y,w,h);}
+ if(imageReady(scene)){const w=scene.naturalWidth*2,h=scene.naturalHeight*2,x=snapPixel(camera.x*.78),y=snapPixel(1120-h+camera.y*.12);c.drawImage(scene,x,y,w,h);}
  const decor=drawDepthMidground(c,s);
  // The overhead intake has a complete pipe route, not a floating emitter.
  const intake=water92NozzlePlacement(710,444).inlet;
@@ -48,6 +48,6 @@ export function drawWaterWorld(c,s,camera,viewport){
  placements.push(pontoon,valve,crank,sluice);
  // Portal is powered by the receding water, with a moving interior and fixed grounded pedestal.
  const pose={x:2236,y:412,w:128,h:128},place=exitAtlas.placement(0,pose,[{x:2100,y:540,w:300}]);if(place){drawCycleGateField(c,{...place,active:s.power,glow:.8,frame:Math.floor(s.time*12),aperture:{x:place.x+64,y:place.y+74,w:40,h:80}});exitAtlas.drawGrounded(c,0,pose,[{x:2100,y:540,w:300}]);placements.push({cell:'portal',x:2300,visibleBottom:place.visibleBottom,floorY:540});}
- return {decor,ready:depthReady()&&!!(water92Ready()&&waterTerrainReady()&&waterDecorReady()&&scene.naturalWidth&&ladder.naturalWidth&&exitAtlas.image.naturalWidth&&connectionsReady()),waterY:g.waterY,jet:waterJet(s),sheltered:waterSheltered(s),placements,cradle,crank,sluice,valve,pontoon,nozzle,airPockets:waterAirPockets(s),floatDeck:f.y,gateBottom:bottom,sourceDensity:'generated96px native devices and128px cradle; two world units per source pixel'};
+ return {decor,ready:depthReady()&&!!(water92Ready()&&waterTerrainReady()&&waterDecorReady()&&imageReady(scene)&&imageReady(ladder)&&imageReady(exitAtlas.image)&&connectionsReady()),waterY:g.waterY,jet:waterJet(s),sheltered:waterSheltered(s),placements,cradle,crank,sluice,valve,pontoon,nozzle,airPockets:waterAirPockets(s),floatDeck:f.y,gateBottom:bottom,sourceDensity:'generated96px native devices and128px cradle; two world units per source pixel'};
 }
 export function drawWaterOverlay(c,s){drawWaterEffects(c,s);if(s.level.mechanic==='water')drawWater92NozzleLip(c,710,444);}

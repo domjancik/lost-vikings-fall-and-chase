@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 
 test('each water plant keeps its authored leaves throughout a complete sway cycle',async()=>{
  const previousImage=globalThis.Image,previousDocument=globalThis.document;
- globalThis.Image=class extends EventTarget{naturalWidth=128;};
+ globalThis.Image=class extends EventTarget{naturalWidth=128;complete=true;set src(value){queueMicrotask(()=>this.dispatchEvent(new Event('load')));}};
  globalThis.document={createElement:()=>{
   const rows=[];
   return{rows,getContext:()=>({drawImage:(_image,_sx,sy)=>rows.push(sy)})};

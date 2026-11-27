@@ -11,7 +11,7 @@ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
 const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'});
 const page=await browser.newPage({viewport:{width:1440,height:900}});
 const failures=new Map(),errors=[];
-const paths=['warden102/parts-native.png','warden89/scene-native.png','warden105/cart-native.png','gate61/gate.png','clockwork71/tower.png','terrain48/terrain.png','depth94/a-native.png','vikings90/erik-native.png'];
+const paths=['warden102/parts-native.png','warden89/scene-native.png','warden105/cart-native.png','gate61/gate.png','clockwork71/tower.png','terrain48/terrain.png','depth94/a-native.png','vikings90/erik-native.png','water92/machines-native.png','water92/flora-native.png','water92/nozzle-native.png','water92/cradle-native.png'];
 try{
  page.on('pageerror',error=>errors.push(error.message));
  await page.route('**/assets/**',async route=>{
@@ -29,6 +29,12 @@ try{
  await page.waitForFunction(()=>{
   const canvas=document.querySelector('#game');
   return JSON.parse(canvas.dataset.cycleArt||'{}').ready&&JSON.parse(canvas.dataset.heroArt||'{}').ready;
+ },null,{timeout:10000});
+ await page.locator('#rounds').click();
+ await page.locator('#round-picker .level-card[data-round="4"]').click();
+ await page.waitForFunction(()=>{
+  const canvas=document.querySelector('#game');
+  return canvas.dataset.round==='4'&&JSON.parse(canvas.dataset.cycleArt||'{}').ready;
  },null,{timeout:10000});
  for(const path of paths){const count=[...failures].find(([url])=>url.endsWith('/'+path))?.[1]||0;assert.ok(count>=2,`${path} must recover after its first failed request`);}
  assert.deepEqual(errors,[]);

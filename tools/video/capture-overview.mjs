@@ -39,6 +39,7 @@ const shots=[
  ['65','current','fall',10,2338,570,'THE LAST LAMPLIGHTER','Follow the current','The outlet carries the crew into its throat'],
  ['66','current','fall',3,400,140,'INSIDE THE CLOCKWORK','Carry a companion','Olaf floats Baleog across the chasm'],
  ['67','current','fall',4,480,400,'THE DROWNED REGULATOR','Hold back the intake','Olaf shelters Erik while he swims to the valve'],
+ ['68','current','fall',5,850,220,'THE FOURFOLD WARDEN','Three-part takedown','Brace the foot, bash the latch, shoot the exposed eye'],
 ];
 const tour=[];
 for(const id of ['arcade','story','cycle','fall']){
@@ -177,6 +178,14 @@ async function capture(shot){
   Object.assign(g.rope,{cut:true,pose:1});for(const gate of g.gates)Object.assign(gate,{open:true,pose:1});
   s.heroes.forEach((h,i)=>Object.assign(h,{x:2790+i*30,y:740,prevX:2790+i*30,prevY:740,ground:false,vx:0,vy:0,shieldUp:false}));
  });
+ if(id==='68')await page.evaluate(()=>{
+  const s=globalThis.__timelapseState,g=s.machine;s.active=2;s.noHazards=true;
+  Object.assign(g,{cycle:4.4,activeLeg:3,footX:1490,footY:760,kneel:0,engaged:true});
+  Object.assign(g.laser,{phase:'cooldown',age:0,target:null});
+  Object.assign(s.heroes[2],{x:1490,y:896,prevX:1490,prevY:896,ground:true,shield:true,shieldUp:false,vx:0,vy:0});
+  Object.assign(s.heroes[0],{x:1230,y:516,prevX:1230,prevY:516,ground:true,support:'warden-spine',face:1,vx:0,vy:0});
+  Object.assign(s.heroes[1],{x:1940,y:656,prevX:1940,prevY:656,ground:true,climbing:false,face:-1,vx:0,vy:0});
+ });
  if(id==='21'){
   await page.keyboard.down('ArrowRight');await page.waitForFunction(()=>globalThis.__timelapseState.heroes[0].x>460);await page.keyboard.up('ArrowRight');
   await page.keyboard.down('ArrowDown');await page.waitForFunction(()=>globalThis.__timelapseState.heroes[0].y>930);await page.keyboard.up('ArrowDown');
@@ -191,13 +200,24 @@ async function capture(shot){
  await page.evaluate(()=>window.__lockCapture());
  const target=path.join(out,selected.includes('--preview')?'preview':'frames',id);await mkdir(target,{recursive:true});
  const state=await page.evaluate(()=>{const c=document.querySelector('#game'),s=globalThis.__timelapseState;return{camera:c.dataset.camera?JSON.parse(c.dataset.camera):{x:0,y:0,width:c.width,height:c.height},size:[c.width,c.height],level:s?.level?.name??null};});
- const frames=selected.includes('--preview')?1:tourShot?144:id==='27'?114:['23','28','66','67'].includes(id)?300:id==='62'?270:['63','64'].includes(id)?240:180;
+ const frames=selected.includes('--preview')?1:tourShot?144:id==='68'?420:id==='27'?114:['23','28','66','67'].includes(id)?300:id==='62'?270:['63','64'].includes(id)?240:180;
  const encoder=spawn('ffmpeg',['-v','error','-y','-f','image2pipe','-framerate','60','-c:v','png','-i','-','-c:v','libx264rgb','-preset','ultrafast','-crf','0','-threads','2',path.join(target,'capture.mkv')],{stdio:['pipe','ignore','inherit'],windowsHide:true});
  const done=once(encoder,'exit');
  let valveUsed=false;
+ const takedown={};
  if(id==='01'||id==='02'||id==='03')await page.keyboard.down('ArrowRight');
  for(let i=0;i<frames;i++){
   if(tourShot)await page.evaluate(({i,frames})=>{const b=globalThis.__tourBounds,t=i/(frames-1),ease=t*t*(3-2*t);globalThis.__tourView={x:Math.round((.25+.5*ease)*b.width/2)*2,y:Math.round(b.y/2)*2};},{i,frames});
+  if(id==='68'){
+   const g=await page.evaluate(()=>{const g=globalThis.__timelapseState.machine;return{braced:g.braced,kneel:g.kneel,exposure:g.exposure,shutter:g.shutter,disabled:g.disabled};});
+   if(i===10)await page.keyboard.press('Space');
+   if(g.braced&&takedown.braced===undefined)takedown.braced=i/60;
+   if(g.kneel>.99&&i>=120&&takedown.running===undefined){await page.keyboard.press('1');await page.keyboard.down('ArrowRight');takedown.running=i/60;}
+   if(takedown.running!==undefined&&i/60-takedown.running>.4&&takedown.bash===undefined){await page.keyboard.press('d');takedown.bash=i/60;}
+   if(g.exposure>0&&takedown.latched===undefined){await page.keyboard.up('ArrowRight');takedown.latched=i/60;}
+   if(g.shutter>.99&&i>=228&&takedown.latched!==undefined&&takedown.shot===undefined){await page.keyboard.press('2');await page.keyboard.press('d');takedown.shot=i/60;}
+   if(g.disabled&&takedown.disabled===undefined)takedown.disabled=i/60;
+  }
   if(['54','66','67'].includes(id)&&i===10)await page.keyboard.down('ArrowRight');
   if(id==='54'&&i===110)await page.keyboard.up('ArrowRight');
   if(id==='66'&&i===205)await page.keyboard.up('ArrowRight');
@@ -233,7 +253,8 @@ async function capture(shot){
  if(id==='64'&&(!finalHero.boots||finalHero.magnet?.plateId!==2||Math.abs(finalHero.rotation)<3))throw Error('Magnetic demonstration did not round the ceiling rail');
  if(id==='66'&&(finalHero.x<920||Math.abs(finalHero.y-606)>1||mechanism.companions[1].support!==2))throw Error('Shield ferry did not carry Baleog to the gallery');
  if(id==='67'&&!mechanism.valveClosed)throw Error('Sheltered swim did not close the valve');
- const result={id,version,title,era,note,requestedCamera:[x,y],...state,frames,errors,finalHero,mechanism};
+ if(id==='68'&&takedown.disabled===undefined)throw Error('Three-Viking takedown failed: '+JSON.stringify(takedown));
+ const result={id,version,title,era,note,requestedCamera:[x,y],...state,frames,errors,finalHero,mechanism,...(id==='68'?{takedown}:{})};
  results.push(result);await writeFile(path.join(target,'capture.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
  }catch(error){console.error(id,version,error.message,errors);process.exitCode=1;}
  finally{await page.close();}

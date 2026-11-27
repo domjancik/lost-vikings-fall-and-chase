@@ -1,5 +1,5 @@
 from pathlib import Path
-import json, math, subprocess, wave
+import io, json, math, subprocess, wave
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageSequence, ImageEnhance
 
@@ -47,14 +47,34 @@ def board(ch,title,caption):
     d.text((68,1023),caption,font=regular(26),fill=muted)
     return o
 def label(o,x,y,s,color=gold): ImageDraw.Draw(o).text((x,y),s,font=bold(24),fill=color)
+ending_image=None
+def ending_montage():
+    global ending_image
+    if ending_image is not None:return ending_image.copy()
+    o=Image.new('RGB',(W,H),ink);d=ImageDraw.Draw(o)
+    d.text((68,28),'A FAN PROJECT INSPIRED BY THE LOST VIKINGS',font=bold(23),fill=gold)
+    scenes=[('11',1,'The Familiar Hearth'),('23',1.8,'The Last Lamplighter'),('67',2.1,'The Drowned Regulator'),('66',2,'Inside the Clockwork'),('12',1,'Ember Freight'),('68',4.4,'The Fourfold Warden')]
+    for i,(key,time,title) in enumerate(scenes):
+        raw=subprocess.check_output(['ffmpeg','-v','error','-threads','1','-ss',str(time),'-i',str(root/'frames'/key/'capture.mkv'),'-frames:v','1','-threads','1','-f','image2pipe','-c:v','png','-'])
+        still=Image.open(io.BytesIO(raw)).convert('RGB')
+        x=68+(i%3)*600;y=90+(i//3)*342
+        place(o,still,(x,y,582,318),True)
+        d.rectangle((x,y+284,x+582,y+318),fill=panel)
+        d.text((x+12,y+289),title,font=bold(21),fill=white)
+    d.text((W//2,820),'Still in the making.',font=serif(64),fill=white,anchor='mt')
+    d.text((W//2,910),'The creation orb’s story is unfolding.',font=serif(38),fill=white,anchor='mt')
+    d.text((W//2,1008),'github.com/domjancik/lost-vikings-fall-and-chase',font=regular(26),fill=muted,anchor='mt')
+    ending_image=o
+    return o.copy()
+
 def card(n,last=False):
-    o=fit(old('28' if last else '12',n),(0,0,W,H),True).convert('RGB'); o=ImageEnhance.Brightness(o).enhance(.43 if not last else .30)
+    if last:return ending_montage()
+    o=fit(old('12',n),(0,0,W,H),True).convert('RGB'); o=ImageEnhance.Brightness(o).enhance(.43)
     d=ImageDraw.Draw(o);d.rectangle((0,0,1120,H),fill='#11171e');d.line((82,245,1012,245),fill=gold,width=3)
-    d.text((82,264),'A FAN PROJECT INSPIRED BY THE LOST VIKINGS' if last else 'DEVELOPMENT OVERVIEW',font=bold(24),fill=gold)
-    d.text((77,343),'Still in the making.' if last else 'Lost Vikings',font=serif(86 if last else 120),fill=white)
-    if not last:d.text((82,492),'The Fall & The Chase',font=serif(61),fill=white)
-    else:d.text((82,500),'The creation orb’s story is unfolding.',font=serif(40),fill=white)
-    d.text((86,625),'github.com/domjancik/lost-vikings-fall-and-chase' if last else 'Three Vikings. One escape plan at a time.',font=regular(32),fill=white)
+    d.text((82,264),'DEVELOPMENT OVERVIEW',font=bold(24),fill=gold)
+    d.text((77,343),'Lost Vikings',font=serif(120),fill=white)
+    d.text((82,492),'The Fall & The Chase',font=serif(61),fill=white)
+    d.text((86,625),'Three Vikings. One escape plan at a time.',font=regular(32),fill=white)
     return o
 
 def gameplay(ch,title,caption,clip,n):
@@ -172,7 +192,7 @@ live('ACT II / COOPERATION','Inside the Clockwork','Erik drives the gear while t
 live('ACT II / COOPERATION','The Drowned Regulator','Olaf shelters the intake while Erik swims below the bulkhead and closes its valve.','67',5)
 live('ACT II / MOMENTUM','The Momentum Works','Baleog strikes the spring guide, then steps clear as the wheel takes the upper rail.','62',4.5)
 live('ACT II / TRAVERSAL','Scrap Orbit','Baleog activates his shoes, is pulled up to the ceiling, then walks around its edge.','64',4)
-live('ACT II / COMBAT','The Fourfold Warden','The guardian tracks its target, fires and sends shockwaves across the floor.','22')
+live('ACT II / COOPERATION','The Fourfold Warden','Olaf braces the foot. Erik bashes the latch. Baleog shoots the exposed eye.','68',7)
 
 chapter('ACT III','Under the hood','Light, interface, animation and the pixel grid.')
 live('ACT III / LIGHT','The Last Lamplighter','Walking turns the lantern beam, moving the shadows through the flickering haze.','23',5)
@@ -202,7 +222,7 @@ audio=root/'overview-score.wav'
 with wave.open(str(audio),'wb') as wf:
     wf.setnchannels(1);wf.setsampwidth(2);wf.setframerate(rate);wf.writeframes((np.clip(signal,-1,1)*32767).astype('<i2').tobytes())
 
-target=root/'Lost Vikings - Development Overview 60fps - Cooperation.mp4'
+target=root/'Lost Vikings - Development Overview 60fps - Warden Takedown.mp4'
 proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1920x1080','-r',str(fps),'-i','-','-i',str(audio),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','6','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
 cursor=0;listings=[]
 for count,maker,desc in clips:

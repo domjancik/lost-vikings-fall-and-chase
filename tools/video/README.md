@@ -24,6 +24,8 @@ height. The earlier collections share three brief mosaic cards. The Fall & The
 Chase keeps individual level shots, including the held-lantern walk for its sewer.
 Mechanics demonstrations record active input, including shield jumps,
 rail switching and magnetic attachment/walking, with their outcomes checked.
+Shot 68 records the full Warden sequence and verifies that Olaf's brace, Erik's
+latch strike and Baleog's eye shot reach the disabled state.
 The intro and mechanics demonstrations stage production simulation states, then
 advance them with ordinary controls and physics.
 Revision 89 receives the current retry loader and complete-image cache guards
@@ -31,3 +33,5 @@ through the capture server, retaining its original renderer and artwork.
 Its cached sprite canvases must also contain visible pixels before recording.
 The final verifier checks frame count, resolution, frame rate and chapter markers,
 then decodes the whole video to catch corrupt frames.
+The five-second ending holds a fixed six-scene montage and the unfolding-story
+message through the last frame.

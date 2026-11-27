@@ -194,7 +194,7 @@ async function capture(shot){
  if(id==='23'){for(const other of s.heroes)other.inventory=other.inventory.map(item=>item==='inspectionLamp'?null:item);h.inventory[0]='inspectionLamp';s.machine.lamp.hookId=null;s.items=s.items.filter(i=>i.type!=='inspectionLamp');Object.assign(s.machine.lamp,{lit:true,focused:true,lens:true});s.machine.lurkers=[];}
  else{Object.assign(s.machine,{engaged:true,cycle:3.45,footY:760});s.machine.laser={phase:'track',age:.1,target:{x,y:y+22}};}
  },id);
- if(id==='26')await page.evaluate(()=>{const s=globalThis.__timelapseState,g=s.machine;Object.assign(g.wheel,{x:2612,y:840,mode:'docked',occupied:true,occupant:0});g.joined=true;g.half.mode='joined';g.drive=.24;g.carrier.x=1640+1060*g.drive/.75;g.carrier.y=920;for(const h of s.heroes.slice(1)){h.x=g.carrier.x+35+h.id*34;h.prevX=h.x;h.y=h.prevY=876;h.ground=true;h.support='clock-carriage';}});
+ if(id==='26')await page.evaluate(()=>{const s=globalThis.__timelapseState,g=s.machine;Object.assign(g.wheel,{x:2460,y:840,mode:'docked',occupied:true,occupant:0});g.joined=true;g.half.mode='joined';g.drive=.24;g.carrier.x=1640+1060*g.drive/.75;g.carrier.y=920;for(const h of s.heroes.slice(1)){h.x=g.carrier.x+35+h.id*34;h.prevX=h.x;h.y=h.prevY=876;h.ground=true;h.support='clock-carriage';}});
  if(id==='25')await page.keyboard.down('ArrowLeft');
  if(id==='26')await page.keyboard.down('ArrowRight');
  await page.evaluate(()=>window.__lockCapture());

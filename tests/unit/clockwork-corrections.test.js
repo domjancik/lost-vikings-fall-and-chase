@@ -38,3 +38,10 @@ test('the short tower ladder reaches a real winding action which arms the arch c
  Object.assign(o,{x:450,y:256,ground:true,climbing:true});step(s,{interact:true},1/120);assert.ok(s.machine.winding);assert.ok(!s.machine.catchWound);
  for(let n=0;n<180;n++)step(s,{},1/120);assert.ok(s.machine.catchWound);
 });
+
+test('docked runner wheel stays in its housing and never shares a transmission axle',()=>{
+ const s=createState(3,'cycle'),b=s.machine.wheel;Object.assign(b,{x:2612,y:840,mode:'docked',occupied:true,occupant:0});
+ step(s,{right:true},1/120);
+ assert.deepEqual({x:b.x,y:b.y},{x:2460,y:840});
+ for(const axle of clock.clockGearCenters)assert.equal(Math.hypot(b.x-axle.x,b.y-axle.y)>=152,true);
+});

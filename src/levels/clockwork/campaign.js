@@ -6,8 +6,9 @@ import {refractionArt} from '../refraction/art-layout.js?v=refraction62';
 const approach=(a,b,d)=>a+Math.sign(b-a)*Math.min(Math.abs(b-a),d);
 const smooth=t=>t*t*(3-2*t);
 export const CLOCK_RADIUS=80;
+export const clockWheelDock=Object.freeze({x:2460,y:840});
 export const clockGearCenters=[{x:2612,y:840},{x:2612,y:688},{x:2764,y:688}];
-export const clockGearPath=[[2460,840],...clockGearCenters.map(p=>[p.x,p.y]),[2764,510],[2830,510]];
+export const clockGearPath=[[clockWheelDock.x,clockWheelDock.y],...clockGearCenters.map(p=>[p.x,p.y]),[2764,510],[2830,510]];
 export const clockCupFloor=dx=>Math.sqrt(2500-Math.min(50,Math.abs(dx)+8)**2)-2;
 export const clockworkLevel={name:'INSIDE THE CLOCKWORK',subtitle:'One runner. Two passengers. A machine that learns to let go.',
  story:['A broken balance wheel divides the tower from its escapement. The upper half still hangs in the service gallery.','The clock has no motor left. It has three visitors.'],
@@ -78,10 +79,10 @@ function advanceWheel(s,input,dt){const g=s.machine,b=g.wheel,old={x:b.x,y:b.y};
    b.vy=-700*820/(2*b.vx);b.y=840;b.flightT=0;g.launchAt=s.time;}
  }else if(b.mode==='flight'){
   b.flightT+=dt;b.x+=b.vx*dt;b.y=840+b.vy*b.flightT+350*b.flightT*b.flightT;
-  if(old.x<2460&&b.x>=2460&&b.flightT>0){b.x=2460;b.y=840;b.v=0;b.mode='docking';b.dockT=0;g.dockAt=s.time;}
+  if(old.x<2460&&b.x>=2460&&b.flightT>0){Object.assign(b,clockWheelDock);b.v=0;b.mode='docking';b.dockT=0;g.dockAt=s.time;}
   else if(b.y>=1180){b.y=1180;b.mode='stranded';b.v=0;}
  }else if(b.mode==='docking'){
-  b.dockT+=dt;if(b.dockT>=.75){b.mode='docked';feedback(s,'Wheel meshed. Run to drive the carriage; release to brake.');}
+  Object.assign(b,clockWheelDock);b.dockT+=dt;if(b.dockT>=.75){b.mode='docked';feedback(s,'Wheel meshed. Run to drive the carriage; release to brake.');}
  }else if(b.mode==='recall'){
   const target=b.returnStage===0?{x:b.x,y:840}:{x:1640,y:840},dx=target.x-b.x,dy=target.y-b.y,d=Math.hypot(dx,dy),travel=Math.min(d,200*dt);
   if(d){b.x+=dx/d*travel;b.y+=dy/d*travel;}if(travel===d){b.returnStage++;if(b.returnStage===2){b.p=1640;b.mode='loading';b.load=0;b.launchSpeed=500;}}
@@ -91,6 +92,7 @@ function advanceWheel(s,input,dt){const g=s.machine,b=g.wheel,old={x:b.x,y:b.y};
 function advanceTrain(s,input,dt){const g=s.machine,c=g.carrier,old={x:c.x,y:c.y},counterOld=g.counter.y,b=g.wheel;
  if(g.winding&&!g.catchWound){g.windPose=Math.min(1,g.windPose+dt/1.2);if(g.windPose===1){g.catchWound=true;feedback(s,'Arch catch wound. Its spring can lift and hold the returning half.');}}
  if(b.mode==='docked'&&!g.pinBroken){
+  Object.assign(b,clockWheelDock);
   const dir=s.active===(b.occupant??0)?Number(!!input.right)-Number(!!input.left):0;
   g.driveV=approach(g.driveV,dir*.045,(dir?.12:.4)*dt);g.drive=Math.max(0,Math.min(1,g.drive+g.driveV*dt));b.angle+=g.driveV*dt*36;
   if(g.drive===1){if(!g.exitLatched)feedback(s,'Upper ratchet locked. The red retaining pin is exposed.');g.exitLatched=true;g.driveV=0;s.power=true;}

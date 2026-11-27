@@ -48,11 +48,12 @@ def board(ch,title,caption):
     return o
 def label(o,x,y,s,color=gold): ImageDraw.Draw(o).text((x,y),s,font=bold(24),fill=color)
 def card(n,last=False):
-    o=fit(old('13' if last else '12',n),(0,0,W,H),True).convert('RGB'); o=ImageEnhance.Brightness(o).enhance(.43 if not last else .30)
+    o=fit(old('28' if last else '12',n),(0,0,W,H),True).convert('RGB'); o=ImageEnhance.Brightness(o).enhance(.43 if not last else .30)
     d=ImageDraw.Draw(o);d.rectangle((0,0,1120,H),fill='#11171e');d.line((82,245,1012,245),fill=gold,width=3)
     d.text((82,264),'A FAN PROJECT INSPIRED BY THE LOST VIKINGS' if last else 'DEVELOPMENT OVERVIEW',font=bold(24),fill=gold)
     d.text((77,343),'Still in the making.' if last else 'Lost Vikings',font=serif(86 if last else 120),fill=white)
     if not last:d.text((82,492),'The Fall & The Chase',font=serif(61),fill=white)
+    else:d.text((82,500),'The creation orb’s story is unfolding.',font=serif(40),fill=white)
     d.text((86,625),'github.com/domjancik/lost-vikings-fall-and-chase' if last else 'Three Vikings. One escape plan at a time.',font=regular(32),fill=white)
     return o
 
@@ -145,19 +146,19 @@ add(3,lambda n:pair('ACT I / MATCHED CAMERA','Inside the Clockwork','Same tower,
 live('ACT I / CURRENT BUILD','Ember Freight','The climb reveals a night skyline above the machinery.','12',2.5)
 live('ACT I / CURRENT BUILD','The Familiar Hearth','The campaign now opens in a Norse tavern before descending into the machine worlds.','11',2.5)
 for shot in json.loads((root/'tour.json').read_text(encoding='utf8')):
-    live('ACT I / LEVEL TOUR',shot['name'].title(),shot['group'],shot['id'],.8)
+    live('ACT I / LEVEL TOUR',shot['name'].title(),shot['group'],shot['id'],2.4)
 
 chapter('ACT II','Mechanics in motion','Platforming and puzzles built around the crew’s different abilities.')
-still('ACT II / COOPERATION','Olaf makes a platform','His raised shield gets Erik to the tavern loft.','assets/pub143/accepted-desktop/shield-boarded-2x.png',2.5)
+live('ACT II / COOPERATION','Olaf makes a platform','Erik jumps from Olaf’s raised shield and lands on the loft.','63',3.5)
 live('ACT II / COOPERATION','Inside the Clockwork','Erik drives the gear while the split view keeps the carriage and crew visible.','26')
 live('ACT II / TRAVERSAL','The Drowned Regulator','Erik swims below the surface while the water refracts the background.','21')
-still('ACT II / MOMENTUM','The Momentum Works','A guide lever redirects the rolling flywheel through the machine works.','output/playwright/momentum72-guide-moving.png',2.5)
-add(3,lambda n:pair('ACT II / TRAVERSAL','Scrap Orbit','Magnetic boots let Baleog take a firing position on the underside.',lambda _:image('assets/orbit122/route/captures/magnetic-ceiling-2x.png'),lambda q:frame('13',q),['Magnetic traversal','Orbital machinery'],n),'Magnetic traversal and animated Scrap Orbit')
+live('ACT II / MOMENTUM','The Momentum Works','Baleog strikes the spring guide, then steps clear as the wheel takes the upper rail.','62',4.5)
+live('ACT II / TRAVERSAL','Scrap Orbit','Baleog activates his shoes, is pulled up to the ceiling, then walks around its edge.','64',4)
 live('ACT II / COMBAT','The Fourfold Warden','The guardian tracks its target, fires and sends shockwaves across the floor.','22')
 
 chapter('ACT III','Under the hood','Light, interface, animation and the pixel grid.')
 live('ACT III / LIGHT','The Last Lamplighter','Walking turns the lantern beam, moving the shadows through the flickering haze.','23',5)
-add(3,lambda n:pair('ACT III / OPTICS','Pressure waves and water flow','Shockwaves distort the scene; sewer currents carry the crew into a pipe.',lambda _:image('assets/warden104/evidence/wave-1.95-2x.png'),lambda _:image('assets/sewer150/route/pipe-depth-2-2x.png'),['Warden · shockwave','Sewer · outlet current'],n),'Effect review captures')
+add(3,lambda n:pair('ACT III / OPTICS','Pressure waves and water flow','Shockwaves distort the scene; sewer currents carry the crew into a pipe.',lambda q:frame('22',q),lambda q:frame('65',q),['Warden · shockwave','Sewer · outlet current'],n),'Moving shockwave and outlet-current demonstrations')
 add(5,ui,'Historical HUD through current controls and cutscene layout')
 still('ACT III / VISUAL BRAINSTORM','Explore the possibilities','Describe a cooperative problem, generate alternatives, then prototype and review the chosen mechanism.','assets/freight109/concepts-raw.png',3)
 add(3,lambda n:pair('ACT III / VISUAL BRAINSTORM','Inside the Clockwork','The visual sketch works through the half-wheel assembly and Erik driving the machinery.',lambda _:image('assets/clockwork69/brainstorm.png'),lambda q:frame('26',q),['ImageGen puzzle sketch','Implemented wheel and carriage'],n),'Clockwork visual brainstorm to implementation')
@@ -167,7 +168,7 @@ add(5,workflow,'Erik: pose guide, selected image generation, registered native c
 add(5,loops,'Original animation loops, at their authored timing')
 live('ACT III / ANIMATION','Back in the game','The finished Erik sprite, running and jumping in the tavern.','25')
 add(5,grid,f'Actual scenery comparison at identical scale; source crop {crop}')
-add(3,lambda n:card(n,True),'End credit')
+add(5,lambda n:card(n,True),'End credit')
 
 TOTAL=sum(frames for frames,_,_ in clips)
 duration=TOTAL/fps
@@ -183,7 +184,7 @@ audio=root/'overview-score.wav'
 with wave.open(str(audio),'wb') as wf:
     wf.setnchannels(1);wf.setsampwidth(2);wf.setframerate(rate);wf.writeframes((np.clip(signal,-1,1)*32767).astype('<i2').tobytes())
 
-target=root/'Lost Vikings - Development Overview 60fps - Archive Fixed.mp4'
+target=root/'Lost Vikings - Development Overview 60fps - Slow Tour.mp4'
 proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1920x1080','-r',str(fps),'-i','-','-i',str(audio),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','6','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
 cursor=0;listings=[]
 for count,maker,desc in clips:

@@ -1,6 +1,7 @@
+import {loadImage} from '../../render/image-loader.js';
 import {rotateNativeRaster,rotorFrameIndex} from './rotor.js?v=orbit113';
 import {FREIGHT_HARDWARE as ART,fanPlacement,burnerPlacement} from './hardware-layout.js?v=orbit113';
-const load=name=>{const image=new Image();image.src='assets/freight112/'+name+'-native.png?v=freight112';return image;};
+const load=name=>loadImage('assets/freight112/'+name+'-native.png?v=freight112');
 const housing=load('fan-housing'),rotor=load('fan-rotor'),burner=load('burner-body'),mouth=load('burner-mouth');
 const rotorFrames=new Map();let rotorData=null;
 function rotorFrame(frame){

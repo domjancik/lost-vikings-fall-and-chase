@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-globalThis.Image??=class{complete=false;naturalWidth=0;};
+globalThis.Image??=class extends EventTarget{complete=false;naturalWidth=0;};
 const {alehallCupPoses}=await import('../../src/levels/pub/render.js');
 const state=(mode,time=0,from={x:1390,y:716})=>({time,heroes:[{},{},{x:1390,y:716}],machine:{cups:{mode,at:0,from}}});
 

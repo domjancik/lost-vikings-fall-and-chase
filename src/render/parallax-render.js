@@ -1,9 +1,10 @@
+import {loadImage} from './image-loader.js';
 import {drawBackground} from './background-render.js?v=zoom127';
 import {depthScenes,depthLayout} from './background-depth.js?v=vertical65';
 import {snapPixel} from './pixel-grid.js?v=arc46';
 import {drawBackgroundEffects} from './background-effects.js?v=zoom127';
-const images=new Map();let fxAtlas;function effectAtlas(){if(!fxAtlas){fxAtlas=new Image();fxAtlas.src='assets/pixel/background-fx.png?v=pipeline44';}return fxAtlas;}
-function sceneImages(round){if(!images.has(round)){const scene=depthScenes[round],far=new Image(),near=new Image();far.src=scene.farSource+'?v=pipeline44';near.src=scene.nearSource+'?v=pipeline44';images.set(round,{far,near});}return images.get(round);}
+const images=new Map();let fxAtlas;function effectAtlas(){if(!fxAtlas){fxAtlas=loadImage('assets/pixel/background-fx.png?v=pipeline44');}return fxAtlas;}
+function sceneImages(round){if(!images.has(round)){const scene=depthScenes[round],far=loadImage(scene.farSource+'?v=pipeline44'),near=loadImage(scene.nearSource+'?v=pipeline44');images.set(round,{far,near});}return images.get(round);}
 const ready=image=>!!image&&(image.naturalWidth===undefined?image.width>0:image.complete&&image.naturalWidth>0);
 export function groundedLayer(camera,size,visibleFraction,ground=610){const height=snapPixel(size*visibleFraction),y=snapPixel(ground-camera.y-height);return {y,height,bottom:y+height,ground};}
 export function drawParallax(ctx,image,atlas,round,camera,view,assets={}){const {far,near}=assets.far&&assets.near?assets:sceneImages(round),layout=depthLayout(round,camera,view),loaded=ready(far)&&ready(near);ctx.save();ctx.translate(camera.x,camera.y);ctx.globalAlpha=1;let crop;const effects=[],animate=Number.isFinite(assets.time),atlasFx=animate?(assets.effects||effectAtlas()):null;

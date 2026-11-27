@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
@@ -9,7 +10,7 @@ import {waterAirPockets,waterJet,waterSheltered,waterBanks} from './campaign.js?
 import {waterCompressorHose} from './connections.js?v=water92';
 import {WATER92,water92GroundPlacement,water92Port,drawWater92Pontoon,drawWater92Bell,drawWater92Crank,drawWater92Valve,drawWater92Sluice,drawWater92Gate,drawWater92Nozzle,drawWater92NozzleLip,water92NozzlePlacement,drawWater92Cradle,water92Ready} from './art.js?v=water92';
 const exitAtlas=createAtlas('assets/gate61/gate.png',1,1);
-const scene=new Image(),ladder=new Image();scene.src='assets/water92/scene-native.png';ladder.src='assets/platform56/ladder.png';
+const scene=loadImage('assets/water92/scene-native.png'),ladder=loadImage('assets/platform56/ladder.png');
 const rect=(c,color,x,y,w,h)=>{c.fillStyle=color;c.fillRect(snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));};
 function ladderDraw(c,l){if(!ladder.naturalWidth)return;for(let y=l.top;y<l.bottom;y+=26){const h=Math.min(26,l.bottom-y);c.drawImage(ladder,0,0,24,h/2,l.x-24,y,48,h);}}
 export function drawWaterWorld(c,s,camera,viewport){

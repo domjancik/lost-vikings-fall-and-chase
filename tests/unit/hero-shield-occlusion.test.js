@@ -1,7 +1,7 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 test('front shield face occludes the gripping hand instead of being painted behind it',async()=>{
  const oldImage=globalThis.Image,oldDocument=globalThis.document;
- globalThis.Image=class{constructor(){this.complete=true;this.naturalWidth=512;}set src(v){queueMicrotask(()=>this.onload());}};
+ globalThis.Image=class extends EventTarget{constructor(){super();this.complete=true;this.naturalWidth=512;}set src(v){queueMicrotask(()=>{this.onload?.();this.dispatchEvent(new Event('load'));});}};
  globalThis.document={createElement:()=>({getContext:()=>({drawImage(){},getImageData:()=>({data:new Uint8ClampedArray(14*24*4).fill(255)})})})};
  try{const {whenHeroesReady,drawHeroArt}=await import('../../src/heroes/hero-art.js');await whenHeroesReady();const paint=[];
  const ctx={save(){},restore(){},translate(){},scale(){},drawImage(){paint.push('body');},fillRect(){paint.push('shield');}};

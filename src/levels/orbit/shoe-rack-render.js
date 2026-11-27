@@ -1,5 +1,6 @@
+import {loadImage} from '../../render/image-loader.js';
 import {shoeRackPlan} from './shoe-rack-layout.js?v=shoes124';
-const load=name=>{const i=new Image();i.src='assets/shoes124/'+name+'-native.png?v=shoes124';return i;};
+const load=name=>loadImage('assets/shoes124/'+name+'-native.png?v=shoes124');
 const rack=load('rack'),boots=load('boots');
 export const shoeRackReady=()=>[rack,boots].every(i=>i.complete&&i.naturalWidth>0);
 export function drawShoeRack(c,s){const p=shoeRackPlan(s);c.imageSmoothingEnabled=false;

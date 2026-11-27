@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawSewerSpray} from './stream-render.js?v=sewer136';
 import {drawSewerGlobe,sewerGlobeArtState} from './globe-art.js?v=pub139';
 import {lurkerDeathPose,drawLurkerWalk} from './lurker-art.js?v=sewer149';
@@ -10,7 +11,7 @@ import {drawSewerWheel} from './wheel.js?v=sewer141';
 import {sewerSprayMount} from './campaign.js?v=sewer150';
 import {SEWER_OUTLET} from './outlet.js?v=sewer150';
 import {drawSewerOutlet} from './outlet-render.js?v=sewer150';
-const load=name=>{const i=new Image();i.src='assets/sewer125/'+name+'-native.png?v=sewer125';return i;};
+const load=name=>loadImage('assets/sewer125/'+name+'-native.png?v=sewer125');
 const environment=load('environment'),props=load('props'),items=load('items'),grounded=load('grounded'),ready=i=>i.complete&&i.naturalWidth>0;
 function crop(c,image,sx,sy,w,h,x,y){if(ready(image))c.drawImage(image,sx,sy,w,h,q(x),q(y),w*2,h*2);}
 function cell(c,image,n,x,y,flip=false){if(!ready(image))return;c.save();c.translate(q(x),q(y));if(flip){c.translate(128,0);c.scale(-1,1);}c.drawImage(image,n%4*64,Math.floor(n/4)*64,64,64,0,0,128,128);c.restore();}

@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {CLOCK_RADIUS,clockRail,clockLiftPlacement,clockCatchPose,clockGearCenters,clockGearPath,steamPhase} from './campaign.js?v=clockwork71';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
@@ -8,7 +9,7 @@ import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate6
 import {drawSprite} from '../../heroes/sprite-render.js?v=orbit121';
 const parts=createAtlas('assets/clockwork69/parts.png',4,2),machine=createAtlas('assets/clockwork69/machine.png',4,2),dock=createAtlas('assets/clockwork69/dock.png',4,1),pin=createAtlas('assets/clockwork69/pin.png',4,1),gate=createAtlas('assets/gate61/gate.png',1,1);
 const tower=createAtlas('assets/clockwork71/tower.png',2,2);
-const load=src=>{const i=new Image();i.src=src;return i;};
+const load=src=>loadImage(src);
 const scene=load('assets/clockwork69/scene.png'),catchArt=load('assets/clockwork69/catch.png'),ladder=load('assets/platform56/ladder.png'),lift=load('assets/refraction62/lift.png'),connection=load('assets/connections53/connections.png');
 const rotated=new Map();
 function wheelRaster(angle){const deg=((Math.round(angle*180/Math.PI)%360)+360)%360;if(rotated.has(deg))return rotated.get(deg);if(!parts.image.complete)return null;

@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {backdropY} from '../../render/vertical-parallax.js?v=vertical65';
 import {refractionArt} from './art-layout.js?v=refraction62';
@@ -8,7 +9,7 @@ import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=connections53';
 import {snapPixel} from '../../render/pixel-grid.js?v=arc46';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate61';
-const load=n=>{const i=new Image();i.src='assets/refraction62/'+n+'.png';return i;};
+const load=n=>loadImage('assets/refraction62/'+n+'.png');
 const scene=load('scene'),plate=load('reflector'),base=load('base'),lift=load('lift');
 const machines=createAtlas('assets/refraction62/machines.png',4,3),emitter=createAtlas('assets/refraction62/emitter.png',1,1),gate=createAtlas('assets/gate61/gate.png',1,1);
 const frames=new Map();

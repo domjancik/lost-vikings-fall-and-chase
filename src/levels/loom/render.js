@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {createAtlas} from '../../render/sprite-atlas.js?v=loom96';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=loom96';
 import {loomGuides,loomTargetPose,loomBeater} from './campaign.js?v=loom96';
@@ -6,12 +7,12 @@ import {LOOM_GUIDE} from './guide.js?v=loom98';
 import {weaveReveal,THREAD} from './weave.js?v=loom106';
 import {drawConnection,connectionsReady} from '../../render/connection-render.js?v=loom96';
 import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=loom96';
-const load=name=>{const i=new Image();i.src='assets/level96/'+name+'-native.png?v=loom96';return i;};
+const load=name=>loadImage('assets/level96/'+name+'-native.png?v=loom96');
 const parts=createAtlas('assets/level96/parts-native.png?v=loom96',5,3),terrain=load('terrain'),far=load('far'),middle=load('middle'),bobbin=load('bobbin');
-const cloth=new Image();cloth.src='assets/loom106/cloth-native.png?v=loom106';
-const ladder=new Image();ladder.src='assets/platform56/ladder.png?v=loom96';
+const cloth=loadImage('assets/loom106/cloth-native.png?v=loom106');
+const ladder=loadImage('assets/platform56/ladder.png?v=loom96');
 const portal=createAtlas('assets/gate61/gate.png?v=loom96',1,1);
-const guideImage=new Image();guideImage.src='assets/loom98/guide-native.png?v=loom98';
+const guideImage=loadImage('assets/loom98/guide-native.png?v=loom98');
 const rasters=new Map();
 // Rotations happen on the native raster. No interpolated outlines or fractional pixels.
 function rotor(n,angle,faceOnly=false){

@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawDepthMidground,drawDepthWallFaces,depthReady} from '../../render/depth-render94.js?v=depth146';
 import {railPoint,BALL_RADIUS,laserPhase,momentumLiftPlacement} from './campaign.js?v=momentum72';
 import {createAtlas} from '../../render/sprite-atlas.js?v=fan66';
@@ -9,7 +10,7 @@ import {drawCycleGateField} from '../../campaigns/machines/cycle-gate.js?v=gate6
 const relay=createAtlas('assets/momentum68/relay.png',4,4),hazards=createAtlas('assets/momentum68/hazards.png',4,4),gate=createAtlas('assets/gate61/gate.png',1,1);
 const rollingBall=createAtlas('assets/momentum72/ball.png',8,8);
 const furnace=createAtlas('assets/momentum68/furnace.png',4,1),bumper=createAtlas('assets/momentum68/bumper.png',4,1);
-const load=src=>{const i=new Image();i.src=src;return i;};
+const load=src=>loadImage(src);
 const scene=load('assets/momentum68/scene.png'),tiles=load('assets/momentum68/tiles.png'),arm=load('assets/momentum68/arm.png'),ladder=load('assets/platform56/ladder.png'),lift=load('assets/refraction62/lift.png');
 const armFrames=new Map();
 const railImage=load('assets/connections53/connections.png'),railCache=new Map();

@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {PUB_PEOPLE,dialogueLayout} from './dialogue.js?v=pub151';
 import {drawAlehallHearth} from './hearth.js?v=pub139';
 import {cupFactoryScene,cupFactoryFrame} from './cup-factory.js?v=pub139';
@@ -10,8 +11,8 @@ const architecture=createAtlas('assets/alehall135/architecture-native.png',4,4);
 const props=createAtlas('assets/alehall135/props-native.png',4,4);
 const patrons=createAtlas('assets/alehall135/patrons-native.png',4,4);
 const globe=createAtlas('assets/alehall135/globe-native.png',2,2);
-const coast=new Image();coast.src='assets/alehall135/coast-native.png';
-const cup=new Image();cup.src='assets/alehall135/cup-native.png';
+const coast=loadImage('assets/alehall135/coast-native.png');
+const cup=loadImage('assets/alehall135/cup-native.png');
 const ready=i=>i.complete&&i.naturalWidth>0;
 const visible=(x,w,c,v)=>x+w>=c.x&&x<=c.x+v.width;
 function sprite(c,atlas,n,x,bottom,cell=64){return atlas.drawGrounded(c,n,{x:q(x-cell),y:bottom-cell*2,w:cell*2,h:cell*2},[{x:-10000,y:bottom,w:20000}]);}

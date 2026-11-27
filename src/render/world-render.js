@@ -1,3 +1,4 @@
+import {loadImage} from './image-loader.js';
 import {drawTerrain} from './terrain-render.js?v=depth146';
 import {drawMachine} from './machine-render.js?v=arc46';
 import {machinePose} from './machine-animation.js?v=arc46';
@@ -11,7 +12,7 @@ import {snapPixel,snapAngle,animationTime,spritePose} from './pixel-grid.js?v=ar
 import {environmentPose} from './environment-animation.js?v=arc46';
 import {interactionObjects,nearbyInteraction} from '../core/interactions.js?v=pub154';
 function sheet(src,cols,rows){
- const img=new Image(),cells=[];img.src=src;
+ const img=loadImage(src),cells=[];
  img.onload=()=>{const c=document.createElement('canvas');c.width=img.width;c.height=img.height;const g=c.getContext('2d',{willReadFrequently:true});g.drawImage(img,0,0);const data=g.getImageData(0,0,c.width,c.height).data;
  for(let row=0;row<rows;row++)for(let col=0;col<cols;col++){const x0=Math.floor(col*c.width/cols),y0=Math.floor(row*c.height/rows),x1=Math.floor((col+1)*c.width/cols),y1=Math.floor((row+1)*c.height/rows);let left=x1,right=x0,top=y1,bottom=y0;for(let y=y0;y<y1;y++)for(let x=x0;x<x1;x++)if(data[(y*c.width+x)*4+3]>30){left=Math.min(left,x);right=Math.max(right,x);top=Math.min(top,y);bottom=Math.max(bottom,y);}cells[row*cols+col]={x:left,y:top,w:right-left+1,h:bottom-top+1};}};
  return {draw(ctx,row,col,x,y,w,h){const p=cells[row*cols+col];if(!p||p.w<1)return;ctx.drawImage(img,p.x,p.y,p.w,p.h,snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));},part(ctx,row,col,u,v,uw,vh,x,y,w,h){const p=cells[row*cols+col];if(!p||p.w<1)return;ctx.drawImage(img,p.x+p.w*u,p.y+p.h*v,p.w*uw,p.h*vh,snapPixel(x),snapPixel(y),snapPixel(w),snapPixel(h));},get ready(){return cells.length===cols*rows;}};

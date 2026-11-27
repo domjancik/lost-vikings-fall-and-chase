@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-globalThis.Image??=class{complete=false;naturalWidth=0;};
+globalThis.Image??=class extends EventTarget{complete=false;naturalWidth=0;};
 const {sewerGlobeRig}=await import('../../src/levels/sewer/globe-art.js');
 const globe=(distance=0)=>({phase:'run',x:400+distance,y:716,legs:1,distance,rotation:0,legCount:6});
 test('globe rig has six distinct legs with three near and three far articulated chains',()=>{const legs=sewerGlobeRig(globe());assert.equal(legs.length,6);assert.equal(legs.filter(a=>a.near).length,3);assert.equal(new Set(legs.map(a=>a.foot.x+":"+a.foot.y)).size,6);for(const a of legs){assert.ok(Math.abs(Math.hypot(a.knee.x-a.hip.x,a.knee.y-a.hip.y)-16)<.001);assert.ok(Math.abs(Math.hypot(a.ankle.x-a.knee.x,a.ankle.y-a.knee.y)-18)<.001);assert.ok(a.foot.y<=760);}});

@@ -1,8 +1,9 @@
+import {loadImage} from '../../render/image-loader.js';
 import {snapPixel as q} from '../../render/pixel-grid.js';
 import {orbitRaster} from '../orbit/raster.js';
-const body=new Image();body.src='assets/alehall135/globe-native.png';
+const body=loadImage('assets/alehall135/globe-native.png');
 // Distinct image keys retain each component's bounded native rotation cache.
-const parts=Array.from({length:8},()=>{const image=new Image();image.src='assets/sewer136/leg-parts-native.png';return image;});
+const parts=Array.from({length:8},()=>{const image=loadImage('assets/sewer136/leg-parts-native.png');return image;});
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const mix=(a,b,t)=>a+(b-a)*t;
 const point=(x,y)=>({x,y});

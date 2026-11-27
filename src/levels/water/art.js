@@ -1,9 +1,10 @@
+import {loadImage} from '../../render/image-loader.js';
 // Generated source registration. One native pixel always spans two world units.
 import {waterBellPocket} from './bell-geometry.js?v=water92';
-const sheet=new Image();sheet.src='assets/water92/machines-native.png';
-const nozzle=new Image();nozzle.src='assets/water92/nozzle-native.png';
-const link=new Image();link.src='assets/water87/link-native.png';
-const cradle=new Image();cradle.src='assets/water92/cradle-native.png';
+const sheet=loadImage('assets/water92/machines-native.png');
+const nozzle=loadImage('assets/water92/nozzle-native.png');
+const link=loadImage('assets/water87/link-native.png');
+const cradle=loadImage('assets/water92/cradle-native.png');
 const snap=n=>Math.round(n/2)*2;
 const CELL=96,BASE=92;
 export const WATER92={cell:CELL,baseline:BASE,pixelWorld:2,

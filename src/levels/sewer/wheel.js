@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {orbitRaster} from '../orbit/raster.js';
 
 const mounts={
@@ -8,7 +9,7 @@ export function sewerWheelMount(kind){return mounts[kind];}
 const images=new Map();
 function layers(kind){
  if(!images.has(kind))images.set(kind,['fixed','rotor','axle'].map(layer=>{
-  const image=new Image();image.src=`assets/sewer141/${kind}-${layer}.png`;return image;
+  const image=loadImage(`assets/sewer141/${kind}-${layer}.png`);return image;
  }));
  return images.get(kind);
 }

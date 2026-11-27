@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {drawShoeRack,shoeRackReady} from '../orbit/shoe-rack-render.js?v=shoes124';
 import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
 import {drawConnection,drawConnectionTile} from '../../render/connection-render.js';
@@ -7,7 +8,7 @@ import {orbitRaster} from '../orbit/raster.js';
 import {railContact} from '../orbit/magnetic.js';
 import {lodeBallastPoint,lodeControl} from './campaign.js?v=alehall135';
 import {snapPixel as q} from '../../render/pixel-grid.js';
-const load=path=>{const i=new Image();i.src='assets/'+path;return i;};
+const load=path=>loadImage('assets/'+path);
 const far=load('lode123/far-native.png'),middle=load('lode123/middle-native.png'),stator=load('lode123/stator-native.png'),kit=load('lode123/kit-native.png');
 const hardware=load('orbit121/hardware-native.png'),plate=load('orbit121/plate-native.png'),ladder=load('platform56/ladder.png');
 const gate=createAtlas('assets/gate61/gate.png',1,1),ready=i=>i.complete&&i.naturalWidth;

@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {createAtlas} from '../../render/sprite-atlas.js?v=freight109';
 import {snapPixel as q} from '../../render/pixel-grid.js?v=freight109';
 import {drawTerrain} from '../../render/terrain-render.js?v=depth146';
@@ -7,7 +8,7 @@ import {FREIGHT_ART as ART,inspectorArtFrame} from './art-layout.js?v=freight109
 import {drawFreightFan,drawFreightBurner,freightHardwareReady} from './hardware-render.js?v=orbit113';
 import {drawFreightWindRefraction} from './wind-refraction.js?v=orbit113';
 import {freightFanFeedRoute,freightBurnerFeedRoute} from './hardware-layout.js?v=orbit113';
-const load=path=>{const i=new Image();i.src='assets/'+path+'?v=freight109';return i;};
+const load=path=>loadImage('assets/'+path+'?v=freight109');
 const far=load('freight109/far-native.png'),middle=load('freight109/middle-native.png'),cart=load('freight109/cart-native.png'),cell=load('freight109/cell-native.png'),ladder=load('platform56/ladder.png');
 const parts=createAtlas('assets/freight109/machines-native.png?v=freight109',4,4),inspectors=createAtlas('assets/freight109/inspector-native.png?v=freight109',4,2);
 const legacy=createAtlas('assets/level96/parts-native.png?v=freight109',5,3),portal=createAtlas('assets/gate61/gate.png?v=freight109',1,1);

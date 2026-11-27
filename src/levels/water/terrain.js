@@ -1,5 +1,6 @@
+import {loadImage} from '../../render/image-loader.js';
 import {terrainPlan} from '../../render/terrain-layout.js?v=terrain48';
-const tiles=new Image();tiles.src='assets/water92/terrain-native.png';
+const tiles=loadImage('assets/water92/terrain-native.png');
 export const waterTerrainReady=()=>tiles.naturalWidth>0;
 export function drawWaterTerrain(c,x,y,w,h){
  const plan=terrainPlan(x,y,w,h);c.save();c.beginPath();c.rect(x,y,w,h);c.clip();

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {createState} from '../../src/core/engine.js';
 test('canopy reveal retains full-resolution crop sources after scene cache changes',async()=>{
  const previous=globalThis.Image;
- globalThis.Image=class{complete=true;naturalWidth=768;naturalHeight=512;width=768;height=512;};
+ globalThis.Image=class extends EventTarget{complete=true;naturalWidth=768;naturalHeight=512;width=768;height=512;};
  try{
   const {drawStoryBackground,drawStoryWorld}=await import('../../src/campaigns/story/story-render.js');
   const calls=[],ctx=new Proxy({drawImage(...args){calls.push(args);}},{get:(o,k)=>o[k]||(()=>{})});
@@ -19,7 +19,7 @@ test('canopy reveal retains full-resolution crop sources after scene cache chang
 });
 test('pub furniture keeps authored world scale across viewport and zoom changes',async()=>{
  const previous=globalThis.Image;
- globalThis.Image=class{complete=true;naturalWidth=768;naturalHeight=512;};
+ globalThis.Image=class extends EventTarget{complete=true;naturalWidth=768;naturalHeight=512;};
  try{
   const {drawStoryBackground}=await import('../../src/campaigns/story/story-render.js');
   const ctx=new Proxy({},{get:()=>()=>{}}),s=createState(7,'story');

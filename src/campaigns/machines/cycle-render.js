@@ -1,3 +1,4 @@
+import {loadImage} from '../../render/image-loader.js';
 import {createNativeSceneCache} from '../../render/native-scene-cache.js?v=depth146';
 import {drawAlehallWorld} from '../../levels/pub/render.js?v=pub154';
 import {drawSewerWorld} from '../../levels/sewer/render.js?v=sewer150';
@@ -20,9 +21,9 @@ import {drawTerrain,terrainReady} from '../../render/terrain-render.js?v=depth14
 import {snapPixel} from '../../render/pixel-grid.js?v=arc46';
 import {drawConnection,drawConnectionTile,connectionsReady} from '../../render/connection-render.js?v=connections53';
 const atlas=createAtlas('assets/cycle52/machines.png',4,4),fan=createAtlas('assets/cycle52/fan.png',4,1),gate=createAtlas('assets/gate61/gate.png',1,1);
-const load=name=>{const i=new Image();i.src='assets/cycle52/'+name+'.png';return i;};
-const scene=load('scene'),ladder=new Image(),carrier=load('carrier');
-ladder.src='assets/platform56/ladder.png';
+const load=name=>loadImage('assets/cycle52/'+name+'.png');
+const scene=load('scene'),ladder=loadImage('assets/platform56/ladder.png'),carrier=load('carrier');
+
 const fixed=createNativeSceneCache({width:2800,height:1200,limit:4});
 export function drawCycleWorld(ctx,s,camera,viewport,text=()=>{}){
  if(s.level.mechanic==='alehall')return drawAlehallWorld(ctx,s,camera,viewport);

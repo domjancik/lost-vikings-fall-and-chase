@@ -1,4 +1,5 @@
 import {heroAnimationCell,HERO_CELL,HERO_ORIGIN} from './hero-frames.js?v=orbit121';
+import {loadImage,whenImageReady} from '../render/image-loader.js';
 import {imagegen81} from './imagegen81-registration.js?v=trial82';
 import {shieldTransform} from './hero-geometry.js?v=vikings70';
 import {snapPixel} from '../render/pixel-grid.js?v=arc46';
@@ -20,9 +21,8 @@ function ensureLoaded(){
  shield=load('assets/vikings63/shield.png');
 }
 function load(src){
- const image=new Image();
- const promise=new Promise((resolve,reject)=>{image.onload=()=>resolve(image);image.onerror=()=>reject(new Error(`Character asset failed: ${src}`));});
- image.src=src;return {image,promise};
+ const image=loadImage(src);
+ return {image,promise:whenImageReady(image)};
 }
 const selectedGenerated=()=>['current','imagegen90'].includes(selectedSkin)?[...imagegen90,...(selectedSkin==='imagegen90'&&erikSwim?[erikSwim]:[])]:selectedSkin==='imagegen88'?imagegen88:[];
 export const heroesReady=()=>sheets.length===3&&[...sheets,...locomotion,...trial,...native85,shield,...selectedGenerated()].every(a=>a.image.complete&&a.image.naturalWidth);

@@ -1,3 +1,4 @@
+import {loadImage} from '../render/image-loader.js';
 import {drawSewerDarkness} from '../levels/sewer/render.js?v=sewer150';
 import {createState} from '../core/engine.js?v=pub154';
 import {drawScene} from '../render/scene-render95.js?v=pub154';
@@ -10,7 +11,7 @@ const cache=new Map();
 const atlases=['terrain48/terrain','ground51/interaction-frames','campaign46/machines',
  'pixel/foreground-tiles','pixel/world-objects','pixel/puzzle-machines','pixel/inventory-sprites',
  'pixel/machine-states','pixel/background-fx','pixel/vertical-props'].map(path=>{
- const image=new Image();image.src='assets/'+path+'.png?v=menu95';return image;
+ const image=loadImage('assets/'+path+'.png?v=menu95');return image;
 });
 // Isolated initial state: no simulation, controls, sound or mutation of the live game.
 export function levelPreview(campaign,round){

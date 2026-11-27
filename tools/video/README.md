@@ -33,5 +33,6 @@ through the capture server, retaining its original renderer and artwork.
 Its cached sprite canvases must also contain visible pixels before recording.
 The final verifier checks frame count, resolution, frame rate and chapter markers,
 then decodes the whole video to catch corrupt frames.
-The five-second ending holds a fixed six-scene montage and the unfolding-story
-message through the last frame.
+The five-second ending holds a fixed project collage of gameplay, motion guides,
+generated character art, animation sheets, tile/connection atlases, boss parts,
+brainstorms, pixel-grid comparisons and UI, with the unfolding-story message.

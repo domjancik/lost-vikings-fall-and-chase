@@ -1,12 +1,14 @@
 from pathlib import Path
 import io, json, math, subprocess, wave
 import numpy as np
+from functools import lru_cache
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageSequence, ImageEnhance
 
 root=Path(__file__).resolve().parents[2]/'output'/'overview-60'
 W,H=1920,1080
 fps=60
 ink='#10151b'; panel='#202933'; gold='#edbb75'; white='#f3ead7'; muted='#b4c0c8'; blue='#8cdad9'
+@lru_cache(maxsize=64)
 def font(name,size): return ImageFont.truetype(f'C:/Windows/Fonts/{name}.ttf',size)
 regular=lambda n:font('segoeui',n)
 bold=lambda n:font('seguisb',n)
@@ -53,14 +55,49 @@ def ending_montage():
     if ending_image is not None:return ending_image.copy()
     o=Image.new('RGB',(W,H),ink);d=ImageDraw.Draw(o)
     d.text((68,28),'A FAN PROJECT INSPIRED BY THE LOST VIKINGS',font=bold(23),fill=gold)
-    scenes=[('11',1,'The Familiar Hearth'),('23',1.8,'The Last Lamplighter'),('67',2.1,'The Drowned Regulator'),('66',2,'Inside the Clockwork'),('12',1,'Ember Freight'),('68',4.4,'The Fourfold Warden')]
-    for i,(key,time,title) in enumerate(scenes):
+    def capture_still(key,time):
         raw=subprocess.check_output(['ffmpeg','-v','error','-threads','1','-ss',str(time),'-i',str(root/'frames'/key/'capture.mkv'),'-frames:v','1','-threads','1','-f','image2pipe','-c:v','png','-'])
-        still=Image.open(io.BytesIO(raw)).convert('RGB')
-        x=68+(i%3)*600;y=90+(i//3)*342
-        place(o,still,(x,y,582,318),True)
-        d.rectangle((x,y+284,x+582,y+318),fill=panel)
-        d.text((x+12,y+289),title,font=bold(21),fill=white)
+        return Image.open(io.BytesIO(raw)).convert('RGB')
+    def artifact(path,crop=None,trim=False):
+        im=image(path)
+        if crop:im=im.crop(crop)
+        if trim:
+            bounds=im.getchannel('A').point(lambda a:255 if a>=128 else 0).getbbox()
+            if bounds:im=im.crop(bounds)
+        return im
+    def tile(col,row,cols,rows,title,im,cover=False):
+        x=68+col*299;y=90+row*172
+        width=cols*287+(cols-1)*12;height=rows*160+(rows-1)*12
+        d.rectangle((x,y,x+width,y+height),fill=panel)
+        place(o,im,(x+5,y+5,width-10,height-31),cover)
+        d.text((x+9,y+height-22),title,font=bold(18),fill=white)
+
+    tile(0,0,1,1,'The Familiar Hearth',capture_still('11',1),True)
+    tile(1,0,1,1,'Touch controls',artifact('assets/hud155/touch/sewer-play-hud-restored.png',(0,470,430,780)))
+    tile(2,0,1,2,'Motion guide',artifact('assets/vikings90/erik-walk-3-guide.png',trim=True))
+    tile(3,0,1,2,'ImageGen character render',artifact('assets/vikings90/erik-walk-3-raw-v5.png',trim=True))
+    tile(4,0,2,1,'Erik animation frames',artifact('assets/vikings90/erik-native.png',(0,0,640,80)))
+    tile(0,1,2,1,'Visual puzzle brainstorm',artifact('assets/clockwork69/brainstorm.png'))
+    tile(4,1,2,1,'Baleog animation frames',artifact('assets/vikings90/baleog-native.png',(0,0,640,80)))
+
+    tile(0,2,1,1,'Ground tile set',artifact('assets/terrain48/terrain.png'))
+    tile(1,2,1,1,'Cable and pipe connections',artifact('assets/connections53/connections.png'))
+    tile(2,2,1,1,'Olaf motion guide',artifact('assets/olaf111/walk-reference-native.png'))
+    tile(3,2,1,1,'Olaf native poses',artifact('assets/olaf111/olaf-native.png',(0,0,640,160)))
+    tile(4,2,1,1,'Water and refraction',capture_still('67',2.1),True)
+    tile(5,2,1,1,'Rolling animation sheet',artifact('assets/momentum72/ball.png'))
+
+    tile(0,3,1,1,'The Fourfold Warden',capture_still('68',4.4),True)
+    tile(1,3,1,1,'Midground sprite atlas',artifact('assets/depth94/a-native.png'))
+    tile(2,3,1,1,'Articulated boss parts',artifact('assets/warden102/parts-native.png'))
+    comparison=Image.new('RGB',(274,132),panel);cd=ImageDraw.Draw(comparison)
+    for i,side in enumerate(['before','after']):
+        sample=Image.frombytes('RGBA',(375,250),Path(f'output/scene67-{side}-6.rgba').read_bytes()).crop((122,142,174,172))
+        place(comparison,sample,(i*140,0,132,96))
+        cd.text((i*140+4,102),side.title(),font=bold(17),fill=white)
+    tile(3,3,1,1,'Contrast-aware pixel grid',comparison)
+    tile(4,3,1,1,'Ember Freight',capture_still('12',1),True)
+    tile(5,3,1,1,'Creation orb states',artifact('assets/alehall135/globe-native.png'))
     d.text((W//2,820),'Still in the making.',font=serif(64),fill=white,anchor='mt')
     d.text((W//2,910),'The creation orb’s story is unfolding.',font=serif(38),fill=white,anchor='mt')
     d.text((W//2,1008),'github.com/domjancik/lost-vikings-fall-and-chase',font=regular(26),fill=muted,anchor='mt')
@@ -222,7 +259,7 @@ audio=root/'overview-score.wav'
 with wave.open(str(audio),'wb') as wf:
     wf.setnchannels(1);wf.setsampwidth(2);wf.setframerate(rate);wf.writeframes((np.clip(signal,-1,1)*32767).astype('<i2').tobytes())
 
-target=root/'Lost Vikings - Development Overview 60fps - Warden Takedown.mp4'
+target=root/'Lost Vikings - Development Overview 60fps - Project Montage.mp4'
 proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1920x1080','-r',str(fps),'-i','-','-i',str(audio),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','6','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
 cursor=0;listings=[]
 for count,maker,desc in clips:

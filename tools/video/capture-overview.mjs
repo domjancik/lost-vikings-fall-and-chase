@@ -46,7 +46,27 @@ const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=
 const server=http.createServer(async(req,res)=>{try{
  const u=new URL(req.url,'http://localhost'),[,id,...segments]=decodeURIComponent(u.pathname).split('/'),shot=shots.find(s=>s[0]===id);if(!shot)throw Error();
  const version=shot[1],root=path.resolve(version==='current'?'dist':version==='prototype'||version==='baseline'?path.join(out,'..','timelapse',version):path.join(archive,version));
- const file=path.resolve(root,segments.join('/')||'index.html');if(!file.startsWith(root+path.sep))throw Error();let data=await readFile(file);
+ const file=path.resolve(root,segments.join('/')||'index.html');if(!file.startsWith(root+path.sep))throw Error();
+ const archivedLoader=version==='warden89'&&segments.join('/')==='image-loader.js';
+ let data=await readFile(archivedLoader?path.resolve('dist/image-loader.js'):file);
+ // Apply the production loading fix while serving the historical capture.
+ // Cache complete sprites with the original rendering and component geometry.
+ if(version==='warden89'&&path.basename(file)==='warden-render.js'){
+  let source=data.toString('utf8');
+  const oldLoader='const load=p=>{const i=new Image();i.src=p;return i;};';
+  if(!source.includes(oldLoader))throw Error('Archived Warden loader changed');
+  source=source.replace(oldLoader,"import {loadImage,imageReady} from './image-loader.js';\nconst load=loadImage;");
+  source=source.replace(/if\(!([a-zA-Z]+)\.naturalWidth\)return/g,'if(!imageReady($1))return');
+  source=source.replace('if(scene.naturalWidth)','if(imageReady(scene))');
+  source=source.replace('&&brokenLens.naturalWidth','&&imageReady(brokenLens)');
+  source=source.replace('cache=new Map();','cache=new Map();globalThis.__archivedWardenCache=cache;');
+  data=source;
+ }
+ if(version==='warden89'&&path.basename(file)==='sprite-atlas.js'){
+  data="import {loadImage} from './image-loader.js';\n"+data.toString('utf8')
+   .replace('const image=new Image(),cells=[],feet=[];','const image=loadImage(src),cells=[],feet=[];')
+   .replace(';image.src=src;return {image,',';return {image,');
+ }
  if(file===path.join(root,'game.js')&&version!=='prototype'){
   const js=data.toString('utf8'),re=/const camera=snapPixel\(cameraX\),vertical=Math\.min\(snapPixel\(cameraY\),Math\.floor\(\(\(s\.level\.worldBottom\?\?790\)-sceneHeight\)\/WORLD_PIXEL\)\*WORLD_PIXEL\)/;
   if(!re.test(js))throw Error('Camera source changed');
@@ -84,6 +104,18 @@ async function capture(shot){
   if(errors.length)throw Error('Warden assets failed to load: '+errors.join(', '));
  }
  await page.waitForTimeout(550);
+ if(version==='warden89'){
+  await page.waitForFunction(()=>JSON.parse(document.querySelector('#game').dataset.cycleArt||'{}').ready,null,{timeout:20000});
+  await page.evaluate(()=>{
+   const cache=globalThis.__archivedWardenCache;
+   if(!cache?.size)throw Error('Archived Warden has no rendered components');
+   for(const [name,canvas]of cache){
+    const pixels=canvas.getContext('2d').getImageData(0,0,canvas.width,canvas.height).data;
+    let visible=false;for(let i=3;i<pixels.length;i+=4)if(pixels[i]){visible=true;break;}
+    if(!visible)throw Error('Archived Warden cached a blank sprite: '+name);
+   }
+  });
+ }
  if(version==='current')await page.waitForFunction(()=>document.querySelector('#game').dataset.sceneReady==='true'&&JSON.parse(document.querySelector('#game').dataset.heroArt||'{}').ready,null,{timeout:20000});
  if(id==='27')await page.evaluate(()=>{
   const s=globalThis.__timelapseState,g=s.machine;

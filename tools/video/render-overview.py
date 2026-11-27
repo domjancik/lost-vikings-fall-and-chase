@@ -183,7 +183,7 @@ audio=root/'overview-score.wav'
 with wave.open(str(audio),'wb') as wf:
     wf.setnchannels(1);wf.setsampwidth(2);wf.setframerate(rate);wf.writeframes((np.clip(signal,-1,1)*32767).astype('<i2').tobytes())
 
-target=root/'Lost Vikings - Development Overview 60fps - Complete.mp4'
+target=root/'Lost Vikings - Development Overview 60fps - Archive Fixed.mp4'
 proc=subprocess.Popen(['ffmpeg','-hide_banner','-loglevel','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s','1920x1080','-r',str(fps),'-i','-','-i',str(audio),'-c:v','libx264','-preset','veryfast','-crf','18','-threads','6','-pix_fmt','yuv420p','-c:a','aac','-b:a','160k','-movflags','+faststart','-shortest',str(target)],stdin=subprocess.PIPE)
 cursor=0;listings=[]
 for count,maker,desc in clips:

@@ -20,5 +20,8 @@ levels. Raw clips, the shot list, chapter metadata and the final video go into
 Gameplay runs at 60 simulation/render samples per second. Captures wait for scene
 and character readiness, fail on resource errors, and use the latest Viking skin.
 The intro, Warden and Clockwork demonstrations stage production simulation states.
+Revision 89 receives the current retry loader and complete-image cache guards
+through the capture server, retaining its original renderer and artwork.
+Its cached sprite canvases must also contain visible pixels before recording.
 The final verifier checks frame count, resolution, frame rate and chapter markers,
 then decodes the whole video to catch corrupt frames.
